@@ -1,6 +1,8 @@
 // =====================================================================
 // Dashboard utama – render tabel + Forever Pocket + modal detail.
 // =====================================================================
+(function () {
+"use strict";
 
 const { compositeSignal, ethicsAdjustedScore, ethicsBadge, signalBar,
         buildForeverPocket, SIGNAL_WEIGHTS } = window.SIGNAL_LIB;
@@ -233,3 +235,4 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+})();
