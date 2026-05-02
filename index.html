@@ -39,23 +39,34 @@
     <section class="card">
       <h2>Daftar Saham &amp; Sinyal</h2>
       <div class="controls">
-        <label>Mode filter:
+        <label>Mode filter
           <select id="mode-select">
             <option value="strict">Strict — buang afiliasi kuat</option>
             <option value="balanced" selected>Balanced — buang kuat, penalti sedang</option>
             <option value="loose">Loose — tampilkan semua, hanya tag</option>
           </select>
         </label>
-        <label>Sektor:
+        <label>Sektor
           <select id="sector-filter"></select>
         </label>
-        <label>Cari:
-          <input type="text" id="search-input" placeholder="Ticker atau nama…" />
+        <label>Urutkan
+          <select id="sort-select">
+            <option value="adjScore-desc" selected>Skor (tinggi → rendah)</option>
+            <option value="adjScore-asc">Skor (rendah → tinggi)</option>
+            <option value="ticker-asc">Ticker (A-Z)</option>
+            <option value="ethics-asc">Etika (paling bersih dulu)</option>
+            <option value="ethics-desc">Etika (paling beresiko dulu)</option>
+            <option value="technical-desc">Teknikal (terkuat)</option>
+            <option value="profile-desc">Profil (terkuat)</option>
+          </select>
         </label>
-        <span class="pill">Klik baris untuk detail</span>
+        <label>Cari
+          <input type="text" id="search-input" inputmode="search" autocapitalize="characters" placeholder="Ticker atau nama…" />
+        </label>
+        <span class="pill">Klik baris/kartu untuk detail</span>
       </div>
 
-      <div style="overflow-x:auto; margin-top: 14px;">
+      <div class="table-wrap" style="overflow-x:auto; margin-top: 14px;">
         <table>
           <thead>
             <tr>
@@ -73,6 +84,8 @@
           <tbody id="stocks-tbody"></tbody>
         </table>
       </div>
+
+      <div class="stocks-mobile" id="stocks-mobile"></div>
       <p class="note">
         Bobot skor komposit: Teknikal 25% · Sentimen 15% · Berita 15% · Kebijakan 15% · Profil 30%.
         Skor ditampilkan di skala 0-100 setelah penalti etis (Balanced: −25 untuk eksposur sedang, eksposur kuat dieliminasi).

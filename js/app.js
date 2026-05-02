@@ -63,6 +63,38 @@ function renderRow(stock) {
   return tr;
 }
 
+function miniSig(label, score) {
+  const cls = score > 20 ? "up" : score < -20 ? "down" : "flat";
+  return el("div", { className: "sig " + cls }, [
+    el("div", { className: "lbl" }, label),
+    el("div", { className: "val" }, (score >= 0 ? "+" : "") + score)
+  ]);
+}
+
+function renderMobileCard(stock) {
+  const adj = ethicsAdjustedScore(stock, state.mode);
+  if (adj === null) return null;
+  const badge = ethicsBadge(stock.ethics.israelTie);
+  const s = stock.signals;
+  return el("div", { className: "stock-card", onClick: () => openDetail(stock) }, [
+    el("div", { className: "row1" }, [
+      el("span", { className: "ticker" }, stock.ticker),
+      el("span", { className: "score" }, String(adj))
+    ]),
+    el("div", { className: "row2" }, [
+      el("span", { className: "name" }, stock.name),
+      el("span", { className: "badge badge-" + badge.color }, badge.label)
+    ]),
+    el("div", { className: "signals-mini" }, [
+      miniSig("Tek", s.technical),
+      miniSig("Sen", s.sentiment),
+      miniSig("Ber", s.news),
+      miniSig("Keb", s.policy),
+      miniSig("Pro", s.profile)
+    ])
+  ]);
+}
+
 function applyFilters(universe) {
   return universe.filter(s => {
     if (state.sector !== "ALL" && s.sector !== state.sector) return false;
@@ -98,15 +130,28 @@ function sortRows(stocks) {
 
 function renderTable() {
   const tbody = $("#stocks-tbody");
+  const mobile = $("#stocks-mobile");
   tbody.innerHTML = "";
+  mobile.innerHTML = "";
   const filtered = applyFilters(window.STOCK_UNIVERSE);
   const sorted = sortRows(filtered);
   let visible = 0;
   for (const s of sorted) {
     const row = renderRow(s);
-    if (row) { tbody.append(row); visible++; }
+    const card = renderMobileCard(s);
+    if (row)  { tbody.append(row);   visible++; }
+    if (card) mobile.append(card);
+  }
+  if (!visible) {
+    mobile.append(el("div", { className: "stocks-empty" },
+      "Tidak ada saham yang cocok dengan filter."));
   }
   $("#kpi-visible").textContent = visible;
+  // Update sort indicators
+  document.querySelectorAll("th[data-sort]").forEach(th => {
+    th.classList.toggle("sorted", th.dataset.sort === state.sortKey);
+    th.classList.toggle("asc", th.dataset.sort === state.sortKey && state.sortDir === "asc");
+  });
 }
 
 function renderKPIs() {
@@ -210,6 +255,13 @@ function init() {
     state.search = e.target.value; renderTable();
   });
 
+  $("#sort-select").addEventListener("change", e => {
+    const [k, d] = e.target.value.split("-");
+    state.sortKey = k;
+    state.sortDir = d;
+    renderTable();
+  });
+
   document.querySelectorAll("th[data-sort]").forEach(th => {
     th.addEventListener("click", () => {
       const k = th.dataset.sort;
@@ -218,6 +270,10 @@ function init() {
       } else {
         state.sortKey = k; state.sortDir = "desc";
       }
+      // Sync sort dropdown
+      const sel = $("#sort-select");
+      const v = state.sortKey + "-" + state.sortDir;
+      if ([...sel.options].some(o => o.value === v)) sel.value = v;
       renderTable();
     });
   });
