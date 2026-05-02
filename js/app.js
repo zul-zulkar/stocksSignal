@@ -98,17 +98,77 @@ function sortRows(stocks) {
   });
 }
 
+function miniSig(label, score) {
+  const { pct, color } = signalBar(score);
+  const valColor = score > 20 ? "var(--up)" : score < -20 ? "var(--down)" : "var(--flat)";
+  const pill = el("div", { className: "sig-pill" });
+  const barWrap = el("div", { className: "sig-bar" });
+  const barFill = el("div", { className: "sig-bar-fill" });
+  barFill.style.width = pct + "%";
+  barFill.style.background = color;
+  barWrap.append(barFill);
+  const valEl = el("div", { className: "sig-val" }, (score >= 0 ? "+" : "") + score);
+  valEl.style.color = valColor;
+  pill.append(el("span", { className: "sig-label" }, label), barWrap, valEl);
+  return pill;
+}
+
+function renderMobileCard(stock) {
+  const adj = ethicsAdjustedScore(stock, state.mode);
+  if (adj === null) return null;
+  const badge = ethicsBadge(stock.ethics.israelTie);
+  const card = el("div", { className: "stock-card", onClick: () => openDetail(stock) });
+  card.append(
+    el("div", { className: "row1" }, [
+      el("span", { className: "ticker" }, stock.ticker),
+      el("span", { className: "card-score" }, String(adj))
+    ]),
+    el("div", { className: "row2" }, [
+      el("span", { className: "cname" }, stock.name),
+      el("span", { className: "badge badge-" + badge.color }, badge.label)
+    ]),
+    el("div", { className: "signals-mini" }, [
+      miniSig("Tek", stock.signals.technical),
+      miniSig("Sen", stock.signals.sentiment),
+      miniSig("Brt", stock.signals.news),
+      miniSig("Keb", stock.signals.policy),
+      miniSig("Pro", stock.signals.profile)
+    ])
+  );
+  return card;
+}
+
+function updateSortUI() {
+  document.querySelectorAll("th[data-sort]").forEach(th => {
+    th.classList.remove("sorted", "asc");
+    if (th.dataset.sort === state.sortKey) {
+      th.classList.add("sorted");
+      if (state.sortDir === "asc") th.classList.add("asc");
+    }
+  });
+  const sel = $("#sort-select");
+  if (sel) sel.value = state.sortKey + "|" + state.sortDir;
+}
+
 function renderTable() {
   const tbody = $("#stocks-tbody");
+  const mobileList = $("#stocks-mobile");
   tbody.innerHTML = "";
+  mobileList.innerHTML = "";
   const filtered = applyFilters(window.STOCK_UNIVERSE);
   const sorted = sortRows(filtered);
   let visible = 0;
   for (const s of sorted) {
     const row = renderRow(s);
-    if (row) { tbody.append(row); visible++; }
+    if (row) {
+      tbody.append(row);
+      const card = renderMobileCard(s);
+      if (card) mobileList.append(card);
+      visible++;
+    }
   }
   $("#kpi-visible").textContent = visible;
+  updateSortUI();
 }
 
 function renderKPIs() {
@@ -222,6 +282,12 @@ function init() {
       }
       renderTable();
     });
+  });
+
+  $("#sort-select").addEventListener("change", e => {
+    const [key, dir] = e.target.value.split("|");
+    state.sortKey = key; state.sortDir = dir;
+    renderTable();
   });
 
   $("#modal-close").addEventListener("click", closeDetail);
