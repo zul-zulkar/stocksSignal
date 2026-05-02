@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pluang Stock Signal · Filter Etis Palestina</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1><span class="palestine-flag" aria-hidden="true"></span>Pluang Stock Signal</h1>
+    <p>Dashboard sinyal saham AS yang tersedia di Pluang, dengan filter etis terhadap afiliasi Israel dan dukungan kedaulatan Palestina.</p>
+  </header>
+
+  <main>
+    <!-- KPI -->
+    <section class="card">
+      <div class="kpi-row">
+        <div class="kpi"><div class="lbl">Total Universe</div>            <div class="val" id="kpi-total">0</div></div>
+        <div class="kpi"><div class="lbl">Bersih / Eksposur Rendah</div>  <div class="val" id="kpi-clean">0</div></div>
+        <div class="kpi"><div class="lbl">Berafiliasi Kuat (di-flag)</div><div class="val" id="kpi-flagged">0</div></div>
+        <div class="kpi"><div class="lbl">Tampil Sekarang</div>           <div class="val" id="kpi-visible">0</div></div>
+      </div>
+    </section>
+
+    <!-- Forever Pocket -->
+    <section class="card">
+      <h2>Forever Pocket – Kandidat Saham Long-Term</h2>
+      <p class="subtitle">Saham bersih/eksposur rendah dengan profil kualitas tinggi & yield/likuiditas memadai. Cocok dimasukkan ke fitur <em>Pocket</em> Pluang untuk akumulasi rutin (DCA).</p>
+      <div class="forever-grid" id="forever-grid"></div>
+      <p class="note">Kriteria: <strong>israelTie ∈ {none, low}</strong>, <strong>profile signal ≥ 60</strong>, dan <strong>(dividen ≥ 1% atau market cap ≥ $200B)</strong>. Diurutkan berdasar skor komposit setelah penalti etis.</p>
+    </section>
+
+    <!-- Tabel utama -->
+    <section class="card">
+      <h2>Daftar Saham &amp; Sinyal</h2>
+      <div class="controls">
+        <label>Mode filter:
+          <select id="mode-select">
+            <option value="strict">Strict — buang afiliasi kuat</option>
+            <option value="balanced" selected>Balanced — buang kuat, penalti sedang</option>
+            <option value="loose">Loose — tampilkan semua, hanya tag</option>
+          </select>
+        </label>
+        <label>Sektor:
+          <select id="sector-filter"></select>
+        </label>
+        <label>Cari:
+          <input type="text" id="search-input" placeholder="Ticker atau nama…" />
+        </label>
+        <span class="pill">Klik baris untuk detail</span>
+      </div>
+
+      <div style="overflow-x:auto; margin-top: 14px;">
+        <table>
+          <thead>
+            <tr>
+              <th data-sort="ticker">Saham</th>
+              <th data-sort="sector">Sektor</th>
+              <th data-sort="ethics">Etika</th>
+              <th data-sort="technical">Teknikal</th>
+              <th data-sort="sentiment">Sentimen</th>
+              <th data-sort="news">Berita</th>
+              <th data-sort="policy">Kebijakan</th>
+              <th data-sort="profile">Profil</th>
+              <th data-sort="adjScore">Skor</th>
+            </tr>
+          </thead>
+          <tbody id="stocks-tbody"></tbody>
+        </table>
+      </div>
+      <p class="note">
+        Bobot skor komposit: Teknikal 25% · Sentimen 15% · Berita 15% · Kebijakan 15% · Profil 30%.
+        Skor ditampilkan di skala 0-100 setelah penalti etis (Balanced: −25 untuk eksposur sedang, eksposur kuat dieliminasi).
+      </p>
+    </section>
+  </main>
+
+  <div class="disclaimer">
+    <strong>Disclaimer.</strong> Dashboard ini disusun untuk membantu pengguna menyaring saham berdasar kriteria etis pribadi (afiliasi Israel) dan agregasi sinyal publik. <em>Bukan</em> nasihat investasi atau fatwa keagamaan. Penilaian etika merujuk pada laporan publik BDS Movement, AFSC Investigate, Who Profits Research Center, laporan PBB OHCHR, dan media kredibel — kondisi perusahaan bisa berubah, lakukan verifikasi mandiri. Sinyal default bersifat baseline kualitatif; untuk data live jalankan <code>scripts/fetch_signals.py</code>.
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-bg" id="modal-bg">
+    <div class="modal">
+      <button class="close" id="modal-close" aria-label="Tutup">×</button>
+      <h3 id="modal-title">—</h3>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="data/stocks.js"></script>
+  <script src="js/signals.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
