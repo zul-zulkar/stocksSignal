@@ -1,0 +1,13 @@
+# Daftar ticker baru dari Pluang yang ingin ditambahkan ke dashboard.
+# Format: satu ticker per baris.
+# Baris yang diawali # diabaikan.
+# Ticker yang sudah ada di stocks.js akan di-skip otomatis.
+#
+# Contoh:
+# UBER
+# LYFT
+# SPOT
+# ABNB   ← sudah ada di stocks.js, akan di-skip
+#
+# Isi daftar ticker di bawah ini:
+
