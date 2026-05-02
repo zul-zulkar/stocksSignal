@@ -1,0 +1,2 @@
+# stocksSignal
+Info saham
