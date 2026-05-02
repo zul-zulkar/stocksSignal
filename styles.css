@@ -245,9 +245,21 @@ tr.row-clickable:hover { background: var(--panel-2); }
   padding: 0;
 }
 .modal .section { margin-top: 18px; }
-.modal .section h4 { margin: 0 0 8px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
+.modal .section h4 { margin: 0 0 10px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
 .modal ul { margin: 4px 0 0 16px; padding: 0; }
 .modal li { margin-bottom: 5px; font-size: 13px; }
+
+/* Signal detail rows inside modal */
+.signal-detail-row { margin-bottom: 12px; }
+.sd-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; }
+.sd-label  { font-size: 12px; font-weight: 600; }
+.sd-score  { font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.sd-bar-wrap { height: 6px; background: var(--panel-2); border-radius: 3px; overflow: hidden; margin-bottom: 4px; }
+.sd-bar-fill { height: 100%; border-radius: 3px; transition: width 0.3s ease; }
+.sd-desc { font-size: 11px; color: var(--muted); line-height: 1.5; }
+
+.composite-row { display: flex; gap: 6px; font-size: 12px; margin-top: 6px; color: var(--muted); }
+.composite-row strong { color: var(--text); }
 
 @keyframes slideUp {
   from { transform: translateY(40px); opacity: 0; }
