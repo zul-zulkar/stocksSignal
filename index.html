@@ -28,6 +28,168 @@
       </div>
     </section>
 
+    <!-- Panduan Dashboard -->
+    <section class="card">
+      <details class="guide-panel">
+        <summary class="guide-summary">
+          <span class="guide-title">&#9432; Panduan &amp; Glosarium Dashboard</span>
+          <span class="guide-hint">Tap untuk buka / tutup</span>
+        </summary>
+
+        <div class="guide-body">
+
+          <!-- Cara Membaca Skor -->
+          <div class="guide-section">
+            <h3 class="guide-h3">Cara Membaca Skor Komposit (0–100)</h3>
+            <p class="guide-p">Setiap saham mendapat <strong>skor komposit</strong> dari 0 hingga 100 yang merangkum 7 faktor sinyal sekaligus. Skor sudah disesuaikan dengan penalti etis sesuai mode yang dipilih.</p>
+            <div class="score-guide-grid">
+              <div class="sg-item sg-red">   <span class="sg-range">0 – 30</span>  <span class="sg-label">Sinyal Lemah — hindari atau pantau saja</span></div>
+              <div class="sg-item sg-orange"><span class="sg-range">31 – 45</span> <span class="sg-label">Sinyal Moderat Negatif — perlu kehati-hatian</span></div>
+              <div class="sg-item sg-yellow"><span class="sg-range">46 – 55</span> <span class="sg-label">Netral — belum ada arah yang jelas</span></div>
+              <div class="sg-item sg-green"> <span class="sg-range">56 – 70</span> <span class="sg-label">Sinyal Positif — layak dipertimbangkan</span></div>
+              <div class="sg-item sg-teal">  <span class="sg-range">71 – 100</span><span class="sg-label">Sinyal Kuat — kombinasi faktor yang baik</span></div>
+            </div>
+            <p class="guide-note">&#9888; Skor bukan rekomendasi beli/jual. Selalu lakukan riset mandiri sebelum berinvestasi.</p>
+          </div>
+
+          <!-- 7 Indikator -->
+          <div class="guide-section">
+            <h3 class="guide-h3">7 Indikator Sinyal (masing-masing −100 … +100)</h3>
+            <p class="guide-p">Setiap indikator diukur pada skala −100 (sangat negatif) hingga +100 (sangat positif). Indikator digabung dengan bobot berbeda untuk membentuk skor komposit.</p>
+            <div class="indicator-grid">
+              <div class="ind-card">
+                <div class="ind-header"><span class="ind-name">Teknikal</span><span class="ind-weight">bobot 15%</span></div>
+                <div class="ind-desc">Gabungan <strong>RSI(14)</strong>, <strong>SMA50 vs SMA200</strong> (golden/death cross), dan momentum 1 bulan. Mengukur kekuatan tren harga jangka pendek–menengah.</div>
+                <div class="ind-source">Sumber: data harga historis otomatis via yfinance</div>
+              </div>
+              <div class="ind-card">
+                <div class="ind-header"><span class="ind-name">Momentum</span><span class="ind-weight">bobot 15%</span></div>
+                <div class="ind-desc">Return harga <strong>6 bulan</strong> saham dibandingkan benchmark <strong>S&amp;P 500</strong>. Mengikuti <em>Fama-French Momentum Factor</em> — saham yang sudah naik cenderung terus naik (dan sebaliknya).</div>
+                <div class="ind-source">Metodologi: Fama &amp; French (1993) · Jegadeesh &amp; Titman (1993)</div>
+              </div>
+              <div class="ind-card">
+                <div class="ind-header"><span class="ind-name">Sentimen</span><span class="ind-weight">bobot 10%</span></div>
+                <div class="ind-desc">Konsensus rating analis (Strong Buy / Buy / Hold / Sell) dan tingkat <em>short interest</em>. Sentimen positif berarti mayoritas analis rekomendasikan beli.</div>
+                <div class="ind-source">Sumber: diisi manual dari Bloomberg, Reuters, Refinitiv</div>
+              </div>
+              <div class="ind-card">
+                <div class="ind-header"><span class="ind-name">Berita</span><span class="ind-weight">bobot 10%</span></div>
+                <div class="ind-desc">Analisis heuristik judul berita terkini. Kata kunci positif (<em>beat, upgrade, surge</em>) vs negatif (<em>miss, downgrade, lawsuit, boycott</em>) dihitung secara otomatis.</div>
+                <div class="ind-source">Sumber: berita terkini via yfinance · diperbarui otomatis</div>
+              </div>
+              <div class="ind-card">
+                <div class="ind-header"><span class="ind-name">Makro / Kebijakan</span><span class="ind-weight">bobot 15%</span></div>
+                <div class="ind-desc">Kondisi makroekonomi dan kebijakan yang memengaruhi sektor saham: suku bunga Fed, nilai tukar USD, regulasi pemerintah, serta siklus ekonomi (ekspansi/kontraksi).</div>
+                <div class="ind-source">Sumber: diisi manual — bersifat kualitatif, diperbarui periodik</div>
+              </div>
+              <div class="ind-card">
+                <div class="ind-header"><span class="ind-name">Kualitas / Profil</span><span class="ind-weight">bobot 20%</span></div>
+                <div class="ind-desc">Kualitas fundamental perusahaan: <strong>ukuran (market cap)</strong>, <strong>margin keuntungan</strong>, ada tidaknya <strong>dividen</strong>, dan tingkat <strong>utang (debt-to-equity)</strong>. Perusahaan besar, profitable, berdividen, utang wajar = skor tinggi.</div>
+                <div class="ind-source">Metodologi: AQR "Quality Minus Junk" (Asness et al.) · data via yfinance</div>
+              </div>
+              <div class="ind-card">
+                <div class="ind-header"><span class="ind-name">Valuasi</span><span class="ind-weight">bobot 15%</span></div>
+                <div class="ind-desc"><strong>Forward P/E</strong> (harga dibagi estimasi laba tahun depan) dibandingkan rata-rata historis S&amp;P 500 (~20×). P/E lebih rendah = skor positif (murah/wajar). P/E sangat tinggi = skor negatif (mahal).</div>
+                <div class="ind-source">Metodologi: Research Affiliates value factor · data via yfinance</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter Etika -->
+          <div class="guide-section">
+            <h3 class="guide-h3">Status Etika — Filter Afiliasi Israel</h3>
+            <p class="guide-p">Setiap saham dinilai berdasarkan laporan publik tentang keterlibatan perusahaan dengan apartheid dan pendudukan Israel di Palestina.</p>
+            <div class="ethics-guide-grid">
+              <div class="eg-item">
+                <span class="badge badge-green">Bersih</span>
+                <span class="eg-desc">Tidak ada keterlibatan atau afiliasi yang diketahui dari sumber publik terpercaya.</span>
+              </div>
+              <div class="eg-item">
+                <span class="badge badge-yellow">Eksposur Rendah</span>
+                <span class="eg-desc">Eksposur tidak langsung atau sangat minimal — misalnya produk umum yang juga dibeli pemerintah Israel.</span>
+              </div>
+              <div class="eg-item">
+                <span class="badge badge-orange">Terlibat Sedang</span>
+                <span class="eg-desc">Ada indikasi afiliasi cukup jelas namun bukan bisnis inti perusahaan.</span>
+              </div>
+              <div class="eg-item">
+                <span class="badge badge-red">Afiliasi Kuat</span>
+                <span class="eg-desc">Terbukti aktif menyokong melalui kontrak, investasi, atau pernyataan publik. Masuk daftar <em>blacklist</em> BDS Movement atau laporan Who Profits.</span>
+              </div>
+            </div>
+            <p class="guide-note">Sumber penilaian: BDS Movement · AFSC Investigate · Who Profits Research Center · UN OHCHR · laporan media kredibel. Kondisi perusahaan bisa berubah — lakukan verifikasi mandiri.</p>
+          </div>
+
+          <!-- Mode Tampilan -->
+          <div class="guide-section">
+            <h3 class="guide-h3">Mode Tampilan (Filter Etis)</h3>
+            <div class="mode-guide-grid">
+              <div class="mg-item">
+                <div class="mg-name">Strict</div>
+                <div class="mg-desc">Saham dengan afiliasi kuat (<em>high</em>) <strong>disembunyikan</strong> sepenuhnya dari daftar.</div>
+              </div>
+              <div class="mg-item mg-active">
+                <div class="mg-name">Balanced <span class="mg-default">(default)</span></div>
+                <div class="mg-desc">Saham dengan afiliasi kuat mendapat <strong>penalti −30 poin</strong> dari skor komposit, namun tetap tampil.</div>
+              </div>
+              <div class="mg-item">
+                <div class="mg-name">Loose</div>
+                <div class="mg-desc">Semua saham ditampilkan <strong>tanpa penalti</strong> — berguna untuk melihat murni sinyal keuangan.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Forever Pocket -->
+          <div class="guide-section">
+            <h3 class="guide-h3">Forever Pocket — Kandidat Long-Term / DCA</h3>
+            <p class="guide-p">Daftar saham yang lolos kriteria ketat untuk akumulasi jangka panjang (strategi <em>buy &amp; hold</em> atau DCA rutin via fitur Pocket di Pluang).</p>
+            <p class="guide-p"><strong>Kriteria lolos:</strong></p>
+            <ul class="guide-list">
+              <li>Status etika: <strong>Bersih</strong> atau <strong>Eksposur Rendah</strong> (israelTie = none / low)</li>
+              <li>Skor Kualitas / Profil: <strong>≥ 60</strong> dari 100</li>
+              <li>Memenuhi salah satu: <strong>dividen ≥ 1%</strong> atau <strong>market cap ≥ $200 miliar</strong></li>
+            </ul>
+            <p class="guide-p">Diurutkan berdasarkan skor komposit setelah penalti etis. Bukan berarti selalu layak beli sekarang — cek juga kondisi valuasi saat ini.</p>
+          </div>
+
+          <!-- Glosarium -->
+          <div class="guide-section">
+            <h3 class="guide-h3">Glosarium Istilah</h3>
+            <div class="glossary-grid">
+              <div class="gl-item"><span class="gl-term">RSI</span><span class="gl-def">Relative Strength Index. Indikator momentum 0–100. Di bawah 30 = <em>oversold</em> (terlalu murah/jenuh jual), di atas 70 = <em>overbought</em> (terlalu mahal/jenuh beli).</span></div>
+              <div class="gl-item"><span class="gl-term">SMA</span><span class="gl-def">Simple Moving Average. Rata-rata harga penutupan selama N hari. SMA50 (50 hari) dan SMA200 (200 hari) umum dipakai untuk melihat tren.</span></div>
+              <div class="gl-item"><span class="gl-term">Golden Cross</span><span class="gl-def">SMA50 melewati SMA200 dari bawah ke atas — sinyal tren naik jangka menengah.</span></div>
+              <div class="gl-item"><span class="gl-term">Death Cross</span><span class="gl-def">SMA50 melewati SMA200 dari atas ke bawah — sinyal tren turun jangka menengah.</span></div>
+              <div class="gl-item"><span class="gl-term">P/E Forward</span><span class="gl-def">Price-to-Earnings Forward. Harga saham dibagi estimasi laba per saham untuk 12 bulan ke depan. Makin rendah, makin "murah" secara relatif.</span></div>
+              <div class="gl-item"><span class="gl-term">Market Cap</span><span class="gl-def">Kapitalisasi pasar. Harga saham × jumlah saham beredar. Ukuran besar kecilnya perusahaan di bursa. &gt;$200B = mega-cap.</span></div>
+              <div class="gl-item"><span class="gl-term">FCF</span><span class="gl-def">Free Cash Flow (Arus Kas Bebas). Uang tunai yang tersisa setelah belanja modal (capex). Perusahaan dengan FCF tinggi umumnya lebih sehat.</span></div>
+              <div class="gl-item"><span class="gl-term">Moat</span><span class="gl-def">Keunggulan kompetitif yang sulit ditiru pesaing (dari istilah "parit" di sekitar benteng). Contoh: merek kuat, biaya beralih tinggi, efek jaringan.</span></div>
+              <div class="gl-item"><span class="gl-term">DCA</span><span class="gl-def">Dollar Cost Averaging. Strategi beli rutin dengan nominal tetap terlepas dari harga. Mengurangi risiko beli di waktu yang salah.</span></div>
+              <div class="gl-item"><span class="gl-term">Dividen Yield</span><span class="gl-def">Persentase dividen tahunan dibagi harga saham. Misal saham $100 bayar dividen $3/tahun → yield = 3%.</span></div>
+              <div class="gl-item"><span class="gl-term">Short Interest</span><span class="gl-def">Persentase saham yang sedang di-<em>short</em> (dijual terlebih dahulu oleh trader yang bertaruh harga turun). Short interest tinggi bisa jadi sinyal negatif.</span></div>
+              <div class="gl-item"><span class="gl-term">Debt-to-Equity</span><span class="gl-def">Rasio total utang dibagi ekuitas pemegang saham. Makin tinggi = makin besar ketergantungan pada utang. Umumnya &lt;1 lebih aman, &gt;2 perlu waspada.</span></div>
+              <div class="gl-item"><span class="gl-term">Benchmark</span><span class="gl-def">Indeks pembanding, dalam dashboard ini menggunakan S&amp;P 500 (^GSPC) — indeks 500 perusahaan terbesar AS. Dipakai untuk mengukur momentum relatif.</span></div>
+              <div class="gl-item"><span class="gl-term">BDS Movement</span><span class="gl-def">Boycott, Divestment, Sanctions. Gerakan sipil internasional yang mendesak boikot perusahaan yang mendukung pendudukan Israel di Palestina.</span></div>
+            </div>
+          </div>
+
+          <!-- Cara Update -->
+          <div class="guide-section">
+            <h3 class="guide-h3">Cara Data Diperbarui</h3>
+            <p class="guide-p">Sinyal keuangan (teknikal, momentum, berita, kualitas, valuasi) diperbarui <strong>otomatis setiap Senin pagi</strong> via GitHub Actions. Prosesnya:</p>
+            <ol class="guide-list">
+              <li>GitHub Actions menjalankan <code>scripts/fetch_signals.py</code> di cloud</li>
+              <li>Script mengunduh data live dari yfinance (Yahoo Finance)</li>
+              <li>File <code>data/stocks.js</code> diperbarui dan di-commit otomatis</li>
+              <li>GitHub Pages men-deploy ulang dashboard dalam beberapa menit</li>
+            </ol>
+            <p class="guide-p">Sinyal <strong>Sentimen</strong> dan <strong>Makro</strong> bersifat kualitatif — diperbarui manual sesuai kondisi terkini.</p>
+          </div>
+
+        </div><!-- /guide-body -->
+      </details>
+    </section>
+
     <!-- Forever Pocket -->
     <section class="card">
       <h2>Forever Pocket – Kandidat Saham Long-Term</h2>
