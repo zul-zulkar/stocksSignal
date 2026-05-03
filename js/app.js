@@ -268,7 +268,7 @@ function renderKPIs() {
 function renderForever() {
   const grid = $("#forever-grid");
   grid.innerHTML = "";
-  const list = buildForeverPocket(window.STOCK_UNIVERSE, 10);
+  const list = buildForeverPocket(window.STOCK_UNIVERSE, 30);
   for (const { stock, score } of list) {
     const badge = ethicsBadge(stock.ethics.israelTie);
     const dyield = stock.fundamentals.dividendYield;
@@ -340,8 +340,8 @@ function radarChart(signals, size) {
     return '<circle cx="' + x + '" cy="' + y + '" r="3" fill="#4ade80" stroke="#0f1117" stroke-width="1.2"/>';
   }).join("");
 
-  const labelOffset = R * 0.44;
-  const fs = Math.round(size * 0.046);
+  const labelOffset = R * 0.46;
+  const fs = Math.round(size * 0.056);
   const lblEls = labels.map((l, i) => {
     const x = (cx + (R + labelOffset) * Math.cos(angles[i])).toFixed(1);
     const y = (cy + (R + labelOffset) * Math.sin(angles[i])).toFixed(1);
@@ -452,7 +452,7 @@ function openDetail(stock) {
   // ── Panel 0: Ringkasan ────────────────────────────────────
   const p0 = el("div", { className: "tab-panel" });
   const radarDiv = el("div", { className: "radar-wrap" });
-  radarDiv.innerHTML = radarChart(s, 220);
+  radarDiv.innerHTML = radarChart(s, 260);
   p0.append(radarDiv);
   p0.append(el("div", { className: "composite-row" }, [
     el("span", {}, "Sinyal tertinggi: "),
