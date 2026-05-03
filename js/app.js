@@ -304,12 +304,16 @@ function populateSectorFilter() {
 // ---------- Radar chart (pure SVG) ----------
 function radarChart(signals, size) {
   size = size || 200;
-  const cx = size / 2, cy = size / 2, R = size * 0.38;
+  const cx = size / 2, cy = size / 2, R = size * 0.35;
   const keys   = ["technical","momentum","sentiment","news","policy","profile","valuation"];
   const labels = ["Teknikal","Momentum","Sentimen","Berita","Makro","Kualitas","Valuasi"];
   const N = keys.length;
   const angles = keys.map((_, i) => -Math.PI / 2 + (Math.PI * 2 * i / N));
   const norm = v => Math.max(0.02, Math.min(1, (v + 100) / 200));
+
+  // Expand viewBox beyond SVG size so labels have room without clipping
+  const pad = Math.round(size * 0.18);
+  const vb = (-pad) + " " + (-pad) + " " + (size + pad * 2) + " " + (size + pad * 2);
 
   const gridLevels = [0.25, 0.5, 0.75, 1];
   const grid = gridLevels.map(r => {
@@ -336,24 +340,29 @@ function radarChart(signals, size) {
     return '<circle cx="' + x + '" cy="' + y + '" r="3" fill="#4ade80" stroke="#0f1117" stroke-width="1.2"/>';
   }).join("");
 
-  const labelOffset = size * 0.145;
+  const labelOffset = R * 0.44;
+  const fs = Math.round(size * 0.046);
   const lblEls = labels.map((l, i) => {
     const x = (cx + (R + labelOffset) * Math.cos(angles[i])).toFixed(1);
     const y = (cy + (R + labelOffset) * Math.sin(angles[i])).toFixed(1);
     const score = signals[keys[i]] || 0;
     const col = score > 20 ? "#4ade80" : score < -20 ? "#ef4444" : "#8a93a6";
-    return '<text x="' + x + '" y="' + y + '" text-anchor="middle" dominant-baseline="middle" fill="' + col + '" font-size="' + (size * 0.048) + '" font-family="sans-serif" font-weight="600">' + l + '</text>';
+    return '<text x="' + x + '" y="' + y + '" text-anchor="middle" dominant-baseline="middle" fill="' + col + '" font-size="' + fs + '" font-family="sans-serif" font-weight="600">' + l + '</text>';
   }).join("");
 
-  return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 ' + size + ' ' + size + '">' + grid + axes + dataPolygon + dots + lblEls + '</svg>';
+  return '<svg width="' + size + '" height="' + size + '" viewBox="' + vb + '">' + grid + axes + dataPolygon + dots + lblEls + '</svg>';
 }
 
-// ---------- TradingView mini chart ----------
+// ---------- Finviz price chart (img, no iframe restrictions) ----------
 function tvChart(ticker) {
-  const sym = encodeURIComponent(ticker.replace(".", "-"));
-  const src = "https://www.tradingview.com/mini-symbol-overview/?symbol=" + sym + "&theme=dark&interval=W&hide_legend=false";
-  return '<div class="tv-chart-wrap"><iframe src="' + src + '" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe></div>'
-       + '<div class="tv-note">Grafik dari TradingView · Membutuhkan koneksi internet</div>';
+  const sym = ticker.replace(/\./g, "-").replace(/[^A-Za-z0-9\-]/g, "");
+  const imgSrc = "https://finviz.com/chart.ashx?t=" + sym + "&ty=c&ta=1&p=d";
+  const href   = "https://finviz.com/quote.ashx?t=" + sym;
+  return '<div class="chart-wrap">'
+       + '<a href="' + href + '" target="_blank" rel="noopener noreferrer">'
+       + '<img src="' + imgSrc + '" alt="Chart ' + ticker + '" class="finviz-chart" loading="lazy">'
+       + '</a></div>'
+       + '<div class="tv-note">Grafik dari Finviz · Klik untuk buka detail · Membutuhkan koneksi internet</div>';
 }
 
 // ---------- Fund table row helper ----------
@@ -573,6 +582,36 @@ function init() {
 
   $("#modal-close").addEventListener("click", closeDetail);
   $("#modal-bg").addEventListener("click", e => { if (e.target.id === "modal-bg") closeDetail(); });
+
+  // Sidebar scroll-to-section buttons
+  function scrollTo(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  ["sb-kpi","sb-forever","sb-stocks"].forEach(id => {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+    const target = btn.dataset.target;
+    btn.addEventListener("click", () => scrollTo(target));
+  });
+  const sbGuide = document.getElementById("sb-guide");
+  if (sbGuide) {
+    sbGuide.addEventListener("click", () => {
+      const details = document.querySelector("#section-guide details");
+      if (details && !details.open) details.open = true;
+      scrollTo("section-guide");
+    });
+  }
+
+  // Hide sidebar when modal is open so it doesn't overlap on mobile
+  const modalBg = $("#modal-bg");
+  const sidebarEl = document.getElementById("sidebar");
+  if (sidebarEl) {
+    const obs = new MutationObserver(() => {
+      sidebarEl.style.display = modalBg.classList.contains("show") ? "none" : "";
+    });
+    obs.observe(modalBg, { attributes: true, attributeFilter: ["class"] });
+  }
 
   renderKPIs();
   renderForever();

@@ -19,7 +19,7 @@
 
   <main>
     <!-- KPI -->
-    <section class="card">
+    <section class="card" id="section-kpi">
       <div class="kpi-row">
         <div class="kpi"><div class="lbl">Total Universe</div>            <div class="val" id="kpi-total">0</div></div>
         <div class="kpi"><div class="lbl">Bersih / Eksposur Rendah</div>  <div class="val" id="kpi-clean">0</div></div>
@@ -29,7 +29,7 @@
     </section>
 
     <!-- Panduan Dashboard -->
-    <section class="card">
+    <section class="card" id="section-guide">
       <details class="guide-panel">
         <summary class="guide-summary">
           <span class="guide-title">&#9432; Panduan &amp; Glosarium Dashboard</span>
@@ -191,7 +191,7 @@
     </section>
 
     <!-- Forever Pocket -->
-    <section class="card">
+    <section class="card" id="section-forever">
       <h2>Forever Pocket – Kandidat Saham Long-Term</h2>
       <p class="subtitle">Saham bersih/eksposur rendah dengan profil kualitas tinggi & yield/likuiditas memadai. Cocok dimasukkan ke fitur <em>Pocket</em> Pluang untuk akumulasi rutin (DCA).</p>
       <div class="forever-grid" id="forever-grid"></div>
@@ -199,7 +199,7 @@
     </section>
 
     <!-- Tabel utama -->
-    <section class="card">
+    <section class="card" id="section-stocks">
       <h2>Daftar Saham &amp; Sinyal</h2>
       <div class="controls">
         <label><span>Mode:</span>
@@ -261,6 +261,30 @@
   <div class="disclaimer">
     <strong>Disclaimer.</strong> Dashboard ini disusun untuk membantu pengguna menyaring saham berdasar kriteria etis pribadi (afiliasi Israel) dan agregasi sinyal publik. <em>Bukan</em> nasihat investasi atau fatwa keagamaan. Penilaian etika merujuk pada laporan publik BDS Movement, AFSC Investigate, Who Profits Research Center, laporan PBB OHCHR, dan media kredibel — kondisi perusahaan bisa berubah, lakukan verifikasi mandiri. Sinyal default bersifat baseline kualitatif; untuk data live jalankan <code>scripts/fetch_signals.py</code>.
   </div>
+
+  <!-- Sidebar nav -->
+  <nav class="sidebar" id="sidebar">
+    <button class="sb-btn" id="sb-kpi"     data-target="section-kpi">
+      <span class="sb-icon">&#9680;</span>
+      <span class="sb-label">Stats</span>
+    </button>
+    <button class="sb-btn" id="sb-guide"   data-target="section-guide">
+      <span class="sb-icon">&#9432;</span>
+      <span class="sb-label">Panduan</span>
+    </button>
+    <button class="sb-btn" id="sb-forever" data-target="section-forever">
+      <span class="sb-icon">&#8734;</span>
+      <span class="sb-label">Forever</span>
+    </button>
+    <button class="sb-btn" id="sb-stocks"  data-target="section-stocks">
+      <span class="sb-icon">&#8801;</span>
+      <span class="sb-label">Daftar</span>
+    </button>
+    <a class="sb-btn" href="compare.html">
+      <span class="sb-icon">&#9878;</span>
+      <span class="sb-label">Banding</span>
+    </a>
+  </nav>
 
   <!-- Modal -->
   <div class="modal-bg" id="modal-bg">

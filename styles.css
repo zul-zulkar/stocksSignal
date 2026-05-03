@@ -53,7 +53,7 @@ header .palestine-flag::before {
 
 /* ── Layout ── */
 main {
-  padding: 20px 28px;
+  padding: 20px 88px 20px 28px;
   padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
   display: grid;
   grid-template-columns: 1fr;
@@ -392,7 +392,7 @@ details[open] .guide-hint { opacity: 0; }
   header h1 { font-size: 17px; }
   header p  { font-size: 11px; }
 
-  main { padding: 12px; gap: 12px; }
+  main { padding: 12px 12px calc(64px + env(safe-area-inset-bottom, 0px)); gap: 12px; }
 
   .card { padding: 14px 12px; border-radius: 10px; }
   .card h2 { font-size: 14px; margin-bottom: 8px; }
@@ -727,4 +727,89 @@ details[open] .guide-hint { opacity: 0; }
   .cmp-signal-row { grid-template-columns: 64px 1fr 1fr; gap: 6px; }
   .csr-label { font-size: 10px; }
   .cmp-fund-row { grid-template-columns: 64px 1fr 1fr; }
+}
+
+/* ══════════════════════════════════════════════
+   SIDEBAR NAV
+   ══════════════════════════════════════════════ */
+.sidebar {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 40;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 6px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.45);
+}
+.sb-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 52px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s, border-color 0.15s;
+  text-decoration: none;
+  padding: 4px 2px;
+  gap: 3px;
+}
+.sb-btn:hover {
+  color: var(--text);
+  background: var(--panel-2);
+  border-color: var(--border);
+  text-decoration: none;
+}
+.sb-icon { font-size: 17px; line-height: 1; }
+.sb-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
+
+@media (max-width: 720px) {
+  .sidebar {
+    right: auto;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: none;
+    flex-direction: row;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid var(--border);
+    padding: 4px 8px;
+    padding-bottom: calc(4px + env(safe-area-inset-bottom, 0px));
+    justify-content: space-around;
+    gap: 0;
+    background: rgba(22, 26, 35, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .sb-btn { width: auto; flex: 1; height: 48px; border-radius: 8px; border-color: transparent !important; }
+}
+
+/* ══════════════════════════════════════════════
+   FINVIZ CHART (replaces TradingView iframe)
+   ══════════════════════════════════════════════ */
+.chart-wrap {
+  width: 100%;
+  background: var(--panel-2);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  line-height: 0;
+}
+.finviz-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
