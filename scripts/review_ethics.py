@@ -1010,28 +1010,36 @@ def patch_block(block: str, tie: str, rationale: str, sources: list[str]) -> str
 def main() -> int:
     text = STOCKS_JS.read_text(encoding="utf-8")
 
-    # Temukan semua blok yang masih "unknown"
-    block_pattern = re.compile(
-        r'(\{[^{}]*?ticker:\s*"([^"]+)"[^{}]*?israelTie:\s*"unknown"[^{}]*?\})',
-        re.DOTALL,
+    # Temukan semua ticker dengan israelTie: "unknown".
+    # Pattern melewati header fields (no '}' before ethics:{}) lalu masuk ethics block.
+    unknown_tickers = re.findall(
+        r'ticker:\s*"([^"]+)"[^}]*?ethics:\s*\{[^}]*israelTie:\s*"unknown"',
+        text, re.DOTALL,
     )
 
-    matches = list(block_pattern.finditer(text))
-    if not matches:
+    if not unknown_tickers:
         print("Tidak ada entri PERLU_REVIEW yang ditemukan.")
         return 0
 
-    print(f"Ditemukan {len(matches)} entri untuk direview...\n")
+    print(f"Ditemukan {len(unknown_tickers)} entri untuk direview...\n")
 
     updated = etf_count = known_count = default_count = 0
 
-    for m in matches:
-        block_orig = m.group(1)
-        ticker     = m.group(2)
+    for ticker in unknown_tickers:
+        # Temukan posisi entri ini dan batasnya (sampai ticker berikutnya)
+        pos = text.find(f'ticker: "{ticker}"')
+        if pos < 0:
+            continue
+        next_pos = text.find('ticker: "', pos + len(ticker) + 10)
+        entry_end = next_pos if next_pos > 0 else len(text)
+        entry = text[pos:entry_end]
+
+        # Pastikan masih ada "unknown" (mungkin sudah diupdate iterasi sebelumnya)
+        if 'israelTie: "unknown"' not in entry:
+            continue
 
         # Lapisan 1: ETF
-        # Ambil nama dari blok
-        name_match = re.search(r'name:\s*"([^"]+)"', block_orig)
+        name_match = re.search(r'name:\s*"([^"]+)"', entry)
         name = name_match.group(1) if name_match else ""
 
         if is_etf(ticker, name):
@@ -1053,11 +1061,11 @@ def main() -> int:
             sources   = ["(auto-default: tidak ada laporan spesifik ditemukan)"]
             default_count += 1
 
-        new_block = patch_block(block_orig, tie, rationale, sources)
-        if new_block != block_orig:
-            text = text.replace(block_orig, new_block, 1)
+        new_entry = patch_block(entry, tie, rationale, sources)
+        if new_entry != entry:
+            text = text[:pos] + new_entry + text[entry_end:]
             updated += 1
-            status = "ETF" if etf_count and tie == "none" and "ETF" in sources[0] else tie.upper()
+            status = "ETF" if "ETF" in sources[0] else tie.upper()
             print(f"  [{status:8}] {ticker:8} {name[:40]}")
 
     STOCKS_JS.write_text(text, encoding="utf-8")

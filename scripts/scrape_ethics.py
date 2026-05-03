@@ -337,30 +337,40 @@ def merge_results(results: list[dict]) -> tuple[str, str, list[str]]:
 def apply_to_stocks_js(scraped: dict[str, dict]) -> int:
     text = STOCKS_JS.read_text(encoding="utf-8")
 
-    block_pattern = re.compile(
-        r'(\{[^{}]*?ticker:\s*"([^"]+)"[^{}]*?israelTie:\s*"unknown"[^{}]*?\})',
-        re.DOTALL,
+    # Pattern melewati header fields (no '}') lalu masuk ethics block
+    unknown_tickers = re.findall(
+        r'ticker:\s*"([^"]+)"[^}]*?ethics:\s*\{[^}]*israelTie:\s*"unknown"',
+        text, re.DOTALL,
     )
 
     count = 0
-    for m in block_pattern.finditer(text):
-        ticker = m.group(2)
+    for ticker in unknown_tickers:
         if ticker not in scraped:
             continue
         data = scraped[ticker]
-        block_orig = m.group(1)
+
+        # Temukan posisi dan batas entri ini
+        pos = text.find(f'ticker: "{ticker}"')
+        if pos < 0:
+            continue
+        next_pos = text.find('ticker: "', pos + len(ticker) + 10)
+        entry_end = next_pos if next_pos > 0 else len(text)
+        entry = text[pos:entry_end]
+
+        if 'israelTie: "unknown"' not in entry:
+            continue
 
         tie       = data["tie"]
         rationale = data["rationale"].replace("\\", "\\\\").replace('"', '\\"')
         src_list  = data["sources"]
         src_str   = ", ".join(f'"{s.replace(chr(34), chr(92)+chr(34))}"' for s in src_list)
 
-        new_block = re.sub(r'israelTie:\s*"unknown".*', f'israelTie: "{tie}"', block_orig)
-        new_block = re.sub(r'rationale:\s*"Belum dikaji[^"]*"', f'rationale: "{rationale}"', new_block)
-        new_block = re.sub(r'sources:\s*\["PERLU_REVIEW"\]', f'sources: [{src_str}]', new_block)
+        new_entry = re.sub(r'israelTie:\s*"unknown"[^\n]*', f'israelTie: "{tie}"', entry)
+        new_entry = re.sub(r'rationale:\s*"Belum dikaji[^"]*"', f'rationale: "{rationale}"', new_entry)
+        new_entry = re.sub(r'sources:\s*\["PERLU_REVIEW"\]', f'sources: [{src_str}]', new_entry)
 
-        if new_block != block_orig:
-            text = text.replace(block_orig, new_block, 1)
+        if new_entry != entry:
+            text = text[:pos] + new_entry + text[entry_end:]
             count += 1
 
     STOCKS_JS.write_text(text, encoding="utf-8")
@@ -384,9 +394,10 @@ def main() -> int:
         todo = [(tk.upper(), tk.upper()) for tk in args.tickers]
     else:
         # Baca dari stocks.js
+        # Pattern melewati header fields (no '}' sebelum ethics:{}) lalu masuk ethics block
         text = STOCKS_JS.read_text(encoding="utf-8")
         matches = re.findall(
-            r'ticker:\s*"([^"]+)"[^{}]*?name:\s*"([^"]+)"[^{}]*?israelTie:\s*"unknown"',
+            r'ticker:\s*"([^"]+)"[^}]*?name:\s*"([^"]+)"[^}]*?ethics:\s*\{[^}]*israelTie:\s*"unknown"',
             text, re.DOTALL,
         )
         todo = [(tk, nm) for tk, nm in matches]
