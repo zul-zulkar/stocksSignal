@@ -365,7 +365,7 @@ def apply_to_stocks_js(scraped: dict[str, dict]) -> int:
         src_list  = data["sources"]
         src_str   = ", ".join(f'"{s.replace(chr(34), chr(92)+chr(34))}"' for s in src_list)
 
-        new_entry = re.sub(r'israelTie:\s*"unknown"[^\n]*', f'israelTie: "{tie}"', entry)
+        new_entry = re.sub(r'israelTie:\s*"unknown"[^\n]*', f'israelTie: "{tie}",', entry)
         new_entry = re.sub(r'rationale:\s*"Belum dikaji[^"]*"', f'rationale: "{rationale}"', new_entry)
         new_entry = re.sub(r'sources:\s*\["PERLU_REVIEW"\]', f'sources: [{src_str}]', new_entry)
 

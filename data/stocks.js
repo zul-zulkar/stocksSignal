@@ -692,7 +692,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GOOG", name: "Alphabet Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -703,7 +703,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AVGO", name: "Broadcom Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -714,7 +714,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LLY", name: "Eli Lilly and Company", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -725,7 +725,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MU", name: "Micron Technology, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -736,7 +736,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CSCO", name: "Cisco Systems, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Cisco: menyediakan infrastruktur jaringan untuk pemerintah dan lembaga Israel. Tidak secara langsung di daftar BDS utama namun ada kontrak dengan entitas pemerintah Israel.",
       sources: ["Who Profits (partial)", "AFSC Investigate", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -747,7 +747,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PLTR", name: "Palantir Technologies Inc.", sector: "Technology",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "Palantir Technologies: platform AI/data analytics digunakan IDF (Project Maven-level). CEO Alex Karp secara terbuka menyatakan dukungan untuk Israel. Masuk target kampanye 'No Tech for Genocide'.",
       sources: ["The Guardian (2024)", "AFSC Investigate", "Drop Palantir campaign", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -758,7 +758,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LRCX", name: "Lam Research Corporation", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Lam Research: peralatan semikonduktor, beberapa pelanggan di Israel. Tidak ada laporan khusus.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -769,7 +769,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HSBC", name: "HSBC Holdings plc", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "HSBC: bank global yang memfasilitasi transaksi keuangan untuk entitas Israel dan underwriting obligasi pemerintah Israel.",
       sources: ["AFSC Investigate (financial)", "Who Profits (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -780,7 +780,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMAT", name: "Applied Materials, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Applied Materials: pemasok peralatan semikonduktor ke pabrik di Israel. Tidak spesifik untuk militer.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -791,7 +791,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MS", name: "Morgan Stanley", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Morgan Stanley: underwriting obligasi Israel, investasi di perusahaan-perusahaan yang beroperasi di wilayah pendudukan.",
       sources: ["Who Profits (financial)", "AFSC Investigate", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -802,7 +802,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GE", name: "GE Aerospace", sector: "Industrials",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "GE Aerospace (General Electric): mesin jet F110 dan F404 yang digunakan di jet tempur Israel (F-16, F-15). Pemasok komponen signifikan untuk IAF.",
       sources: ["AFSC Investigate", "Federation of American Scientists", "Defense contracts", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -813,7 +813,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GEV", name: "GE Vernova Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "GE Vernova: spin-off GE untuk energi. Tidak terlibat langsung di militer namun proyek infrastruktur energi di Israel.",
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -824,7 +824,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AZN", name: "AstraZeneca PLC", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AstraZeneca: tidak ada laporan signifikan terkait Israel. Berkantor pusat di Inggris/Swedia.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -835,7 +835,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NVS", name: "Novartis AG", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Novartis: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -846,7 +846,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GS", name: "The Goldman Sachs Group, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Goldman Sachs: underwriter utama obligasi pemerintah Israel, manajemen aset dengan eksposur besar ke perusahaan Israel, kantor di Tel Aviv.",
       sources: ["Who Profits", "AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -857,7 +857,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PM", name: "Philip Morris International Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Philip Morris International: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -868,7 +868,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TXN", name: "Texas Instruments Incorporated", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Texas Instruments: fasilitas manufaktur di Israel (Migdal Haemek). Komponen semikonduktor umum.",
       sources: ["Company filings", "Who Profits (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -879,7 +879,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RY", name: "Royal Bank of Canada", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Royal Bank of Canada: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -890,7 +890,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SHEL", name: "Shell plc", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Shell: tidak ada laporan signifikan terkait afiliasi Israel.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -901,7 +901,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WFC", name: "Wells Fargo & Company", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Wells Fargo: investasi dan pembiayaan untuk perusahaan-perusahaan yang beroperasi di wilayah pendudukan Israel.",
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -912,7 +912,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LIN", name: "Linde plc", sector: "Basic Materials",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Linde: gas industri, operasi di Israel. Tidak spesifik untuk militer.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -923,7 +923,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KLAC", name: "KLA Corporation", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "KLA Corporation: peralatan inspeksi semikonduktor, penjualan ke fasilitas chip Israel. Tidak ada laporan keterlibatan militer langsung.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -934,7 +934,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARM", name: "Arm Holdings plc", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Arm Holdings: arsitektur chip digunakan di perangkat Israel namun sebagai IP universal.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -945,7 +945,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TM", name: "Toyota Motor Corporation", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Toyota Motor: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -956,7 +956,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AXP", name: "American Express Company", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "American Express: tidak ada laporan signifikan terkait afiliasi Israel.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -967,7 +967,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ANET", name: "Arista Networks, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Arista Networks: jaringan komputasi, tidak ada kontrak militer Israel yang terdokumentasi. Memiliki operasi kecil di Israel.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -978,7 +978,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "C", name: "Citigroup Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Citigroup: layanan perbankan korporat dan underwriting untuk entitas Israel. Kantor di Tel Aviv.",
       sources: ["AFSC Investigate (financial)", "Who Profits (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -989,7 +989,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TMUS", name: "T-Mobile US, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "T-Mobile US: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1000,7 +1000,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TTE", name: "TotalEnergies SE", sector: "Energy",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "TotalEnergies: pengembangan ladang gas di lepas pantai Israel dan Siprus. Tidak di daftar BDS utama.",
       sources: ["Company disclosures", "Reuters", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1011,7 +1011,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NEE", name: "NextEra Energy, Inc.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "NextEra Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1022,7 +1022,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BHP", name: "BHP Group Limited", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "BHP Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1033,7 +1033,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SAP", name: "SAP SE", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "SAP SE: perangkat lunak ERP digunakan oleh perusahaan dan entitas pemerintah Israel. Tidak spesifik militer, tapi ada kehadiran operasional di Israel.",
       sources: ["Company disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1044,7 +1044,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ADI", name: "Analog Devices, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -1055,7 +1055,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QCOM", name: "QUALCOMM Incorporated", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Qualcomm: pusat R&D signifikan di Israel (Haifa, Tel Aviv). Komponen chip digunakan di perangkat militer namun bukan target boikot utama.",
       sources: ["Company R&D disclosures", "Who Profits (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1066,7 +1066,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMGN", name: "Amgen Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Amgen: akuisisi perusahaan biotek Israel (deCODE Genetics tidak Israel; Teva partnership). Tidak ada laporan keterlibatan militer.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1077,7 +1077,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TD", name: "The Toronto-Dominion Bank", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Toronto-Dominion Bank: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1088,7 +1088,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SAN", name: "Banco Santander, S.A.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Banco Santander: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1099,7 +1099,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TJX", name: "The TJX Companies, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "TJX Companies: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1110,7 +1110,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SHOP", name: "Shopify Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Shopify: perusahaan Kanada, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1121,7 +1121,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ETN", name: "Eaton Corporation plc", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Eaton: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1132,7 +1132,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BLK", name: "BlackRock, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "BlackRock: pemegang saham besar di banyak perusahaan yang masuk daftar Who Profits dan BDS, termasuk pemasok senjata.",
       sources: ["AFSC Investigate", "BlackRock shareholder records", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1143,7 +1143,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GILD", name: "Gilead Sciences, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Gilead Sciences: tidak ada laporan signifikan terkait afiliasi Israel.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1154,7 +1154,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "STX", name: "Seagate Technology Holdings plc", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Seagate Technology: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1165,7 +1165,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ISRG", name: "Intuitive Surgical, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Intuitive Surgical: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1176,7 +1176,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SCHW", name: "The Charles Schwab Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -1187,7 +1187,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UNP", name: "Union Pacific Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Union Pacific: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1198,7 +1198,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DE", name: "Deere & Company", sector: "Industrials",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Deere & Co (John Deere): peralatan berat digunakan di proyek konstruksi di wilayah pendudukan, namun tidak seprofil Caterpillar. Lebih sedikit terdokumentasi.",
       sources: ["Who Profits (partial)", "Media reports", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1209,7 +1209,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ABT", name: "Abbott Laboratories", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Abbott Laboratories: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1220,7 +1220,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BX", name: "Blackstone Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Blackstone: investasi properti dan infrastruktur yang mencakup aset di Israel.",
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1231,7 +1231,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "APP", name: "AppLovin Corporation", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AppLovin: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1242,7 +1242,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UBER", name: "Uber Technologies, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Uber: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1253,7 +1253,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "COP", name: "ConocoPhillips", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ConocoPhillips: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1264,7 +1264,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PANW", name: "Palo Alto Networks, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Palo Alto Networks: layanan keamanan siber untuk pemerintah Israel. Beberapa produk digunakan oleh entitas militer/intelijen Israel.",
       sources: ["AFSC Investigate (partial)", "Reuters (2023)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1275,7 +1275,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WDC", name: "Western Digital Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Western Digital: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1286,7 +1286,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BUD", name: "Anheuser-Busch InBev SA/NV", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AB InBev: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1297,7 +1297,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MRVL", name: "Marvell Technology, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Marvell Technology: beberapa R&D di Israel pasca akuisisi. Tidak ada kontrak militer terdokumentasi.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1308,7 +1308,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SCCO", name: "Southern Copper Corporation", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Southern Copper: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1319,7 +1319,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DELL", name: "Dell Technologies Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Dell Technologies: pusat R&D di Beersheba (Israel). Menyediakan infrastruktur IT umum.",
       sources: ["Company R&D disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1330,7 +1330,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GLW", name: "Corning Incorporated", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -1341,7 +1341,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PBR", name: "Petróleo Brasileiro S.A. - Petrobras", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Petrobras: perusahaan Brazil, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1352,7 +1352,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HON", name: "Honeywell International Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Honeywell: komponen avionik dan sistem pertahanan yang digunakan dalam platform militer Israel. Tidak di daftar BDS utama namun eksposur signifikan.",
       sources: ["AFSC Investigate", "Defense contract records", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1363,7 +1363,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PLD", name: "Prologis, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Prologis: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1374,7 +1374,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UL", name: "Unilever PLC", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Unilever: sebelumnya memiliki Ben & Jerry's yang menghentikan penjualan di wilayah pendudukan Israel (2021). Kemudian menjual merek tersebut ke franchisee Israel yang melanjutkan penjualan.",
       sources: ["BBC News (2021-2022)", "BDS Movement", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1385,7 +1385,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BTI", name: "British American Tobacco p.l.c.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "British American Tobacco: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1396,7 +1396,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CB", name: "Chubb Limited", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Chubb: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1407,7 +1407,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPGI", name: "S&P Global Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "S&P Global: rating obligasi Israel. Tidak ada keterlibatan langsung lebih jauh.",
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1418,7 +1418,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VRT", name: "Vertiv Holdings Co", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Vertiv Holdings: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1429,7 +1429,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MO", name: "Altria Group, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Altria Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1440,7 +1440,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DHR", name: "Danaher Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Danaher: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1451,7 +1451,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BBVA", name: "Banco Bilbao Vizcaya Argentaria, S.A.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "BBVA: bank Spanyol, tidak ada laporan signifikan terkait Israel.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1462,7 +1462,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "COF", name: "Capital One Financial Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Capital One: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1473,7 +1473,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ENB", name: "Enbridge Inc.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Enbridge: perusahaan Kanada, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1484,7 +1484,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BMY", name: "Bristol-Myers Squibb Company", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Bristol-Myers Squibb: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1495,7 +1495,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PGR", name: "The Progressive Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Progressive: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1506,7 +1506,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NEM", name: "Newmont Corporation", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Newmont: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1517,7 +1517,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SONY", name: "Sony Group Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Sony Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1528,7 +1528,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CRWD", name: "CrowdStrike Holdings, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "CrowdStrike: beberapa laporan tentang layanan keamanan siber ke entitas pemerintah Israel. Tidak masuk daftar BDS utama.",
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1539,7 +1539,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SYK", name: "Stryker Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Stryker: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1550,7 +1550,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SNY", name: "Sanofi", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Sanofi: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1561,7 +1561,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CEG", name: "Constellation Energy Corporation", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Constellation Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1572,7 +1572,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PWR", name: "Quanta Services, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Quanta Services: kontraktor infrastruktur AS, tidak ada laporan Israel.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1583,7 +1583,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACN", name: "Accenture plc", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Accenture: layanan konsultasi IT ke berbagai pemerintah termasuk Israel. Tidak spesifik militer.",
       sources: ["Company disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1594,7 +1594,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "INTU", name: "Intuit Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Intuit: pusat R&D di Israel (akuisisi beberapa startup Israel). Produk keuangan konsumen.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1605,7 +1605,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VRTX", name: "Vertex Pharmaceuticals Incorporated", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Vertex Pharmaceuticals: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1616,7 +1616,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EQIX", name: "Equinix, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Equinix: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1627,7 +1627,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BMO", name: "Bank of Montreal", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Bank of Montreal: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1638,7 +1638,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CVS", name: "CVS Health Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "CVS Health: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1649,7 +1649,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MDT", name: "Medtronic plc", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Medtronic: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1660,7 +1660,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GSK", name: "GSK plc", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "GSK (GlaxoSmithKline): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1671,7 +1671,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DUK", name: "Duke Energy Corporation", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Duke Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1682,7 +1682,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MCK", name: "McKesson Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "McKesson: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1693,7 +1693,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EQNR", name: "Equinor ASA", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Equinor: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1704,7 +1704,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CNQ", name: "Canadian Natural Resources Limited", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Canadian Natural Resources: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1715,7 +1715,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CMCSA", name: "Comcast Corporation", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Comcast: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1726,7 +1726,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HCA", name: "HCA Healthcare, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "HCA Healthcare: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1737,7 +1737,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HWM", name: "Howmet Aerospace Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -1748,7 +1748,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BNS", name: "The Bank of Nova Scotia", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Bank of Nova Scotia: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1759,7 +1759,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CDNS", name: "Cadence Design Systems, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Cadence Design Systems: R&D di Israel. Perangkat lunak EDA digunakan industri chip.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1770,7 +1770,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MAR", name: "Marriott International, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Marriott: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1781,7 +1781,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NOW", name: "ServiceNow, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ServiceNow: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1792,7 +1792,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FDX", name: "FedEx Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "FedEx: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1803,7 +1803,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MELI", name: "MercadoLibre, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "MercadoLibre: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1814,7 +1814,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SNPS", name: "Synopsys, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Synopsys: R&D semikonduktor di Israel. Tidak ada laporan keterlibatan militer.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1825,7 +1825,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KKR", name: "KKR & Co. Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "KKR: portofolio investasi mencakup perusahaan dengan operasi di Israel.",
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1836,7 +1836,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WMB", name: "The Williams Companies, Inc.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Williams Companies: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1847,7 +1847,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WM", name: "Waste Management, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Waste Management: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1858,7 +1858,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BK", name: "The Bank of New York Mellon Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Bank of New York Mellon: layanan kustodian untuk aset Israel. Tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1869,7 +1869,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AEM", name: "Agnico Eagle Mines Limited", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Agnico Eagle Mines: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1880,7 +1880,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UPS", name: "United Parcel Service, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "UPS: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1891,7 +1891,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPOT", name: "Spotify Technology S.A.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Spotify: berkantor pusat di Swedia, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1902,7 +1902,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JCI", name: "Johnson Controls International plc", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -1913,7 +1913,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "USB", name: "U.S. Bancorp", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "U.S. Bancorp: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1924,7 +1924,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ADP", name: "Automatic Data Processing, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Automatic Data Processing: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1935,7 +1935,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SLB", name: "SLB N.V.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "SLB (Schlumberger): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1946,7 +1946,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMT", name: "American Tower Corporation", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "American Tower: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1957,7 +1957,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BSX", name: "Boston Scientific Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Boston Scientific: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1968,7 +1968,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CSX", name: "CSX Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "CSX Corporation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1979,7 +1979,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ING", name: "ING Groep N.V.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ING Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -1990,7 +1990,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "E", name: "Eni S.p.A.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Eni: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2001,7 +2001,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FCX", name: "Freeport-McMoRan Inc.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Freeport-McMoRan: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2012,7 +2012,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MRSH", name: "Marsh & McLennan Companies, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -2023,7 +2023,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BCS", name: "Barclays PLC", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Barclays: tidak ada laporan signifikan terkait Israel.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2034,7 +2034,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SU", name: "Suncor Energy Inc.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Suncor Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2045,7 +2045,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MCO", name: "Moody's Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Moody's: rating obligasi Israel.",
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2056,7 +2056,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MDLZ", name: "Mondelez International, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Mondelez: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2067,7 +2067,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MPWR", name: "Monolithic Power Systems, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Monolithic Power Systems: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2078,7 +2078,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EMR", name: "Emerson Electric Co.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Emerson Electric: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2089,7 +2089,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NET", name: "Cloudflare, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Cloudflare: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2100,7 +2100,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DASH", name: "DoorDash, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "DoorDash: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2111,7 +2111,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MNST", name: "Monster Beverage Corporation", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Monster Beverage: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2122,7 +2122,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "APO", name: "Apollo Global Management, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Apollo Global Management: investasi di sektor pertahanan dan infrastruktur dengan eksposur ke Israel.",
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2133,7 +2133,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CI", name: "The Cigna Group", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Cigna: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2144,7 +2144,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EOG", name: "EOG Resources, Inc.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "EOG Resources: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2155,7 +2155,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AEP", name: "American Electric Power Company, Inc.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "American Electric Power: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2166,7 +2166,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MMM", name: "3M Company", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -2177,7 +2177,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VLO", name: "Valero Energy Corporation", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Valero Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2188,7 +2188,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ROST", name: "Ross Stores, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Ross Stores: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2199,7 +2199,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ITW", name: "Illinois Tool Works Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Illinois Tool Works: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2210,7 +2210,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "REGN", name: "Regeneron Pharmaceuticals, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Regeneron: co-founder secara publik mendukung Israel. Tidak ada kontrak militer.",
       sources: ["Public statements", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2221,7 +2221,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ECL", name: "Ecolab Inc.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Ecolab: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2232,7 +2232,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NTES", name: "NetEase, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "NetEase: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2243,7 +2243,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HLT", name: "Hilton Worldwide Holdings Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Hilton: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2254,7 +2254,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MPC", name: "Marathon Petroleum Corporation", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Marathon Petroleum: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2265,7 +2265,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MSI", name: "Motorola Solutions, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -2276,7 +2276,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KMI", name: "Kinder Morgan, Inc.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Kinder Morgan: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2287,7 +2287,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RCL", name: "Royal Caribbean Cruises Ltd.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Royal Caribbean: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2298,7 +2298,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NSC", name: "Norfolk Southern Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Norfolk Southern: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2309,7 +2309,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PSX", name: "Phillips 66", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Phillips 66: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2320,7 +2320,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NU", name: "Nu Holdings Ltd.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Nu Holdings: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2331,7 +2331,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DLR", name: "Digital Realty Trust, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -2342,7 +2342,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NOK", name: "Nokia Oyj", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -2353,7 +2353,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VALE", name: "Vale S.A.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Vale: perusahaan Brazil, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2364,7 +2364,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BKR", name: "Baker Hughes Company", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Baker Hughes: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2375,7 +2375,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CTAS", name: "Cintas Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Cintas: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2386,7 +2386,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CNI", name: "Canadian National Railway Company", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Canadian National Railway: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2397,7 +2397,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "APD", name: "Air Products and Chemicals, Inc.", sector: "Basic Materials",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Air Products: proyek infrastruktur gas di kawasan termasuk Israel. Tidak ada laporan khusus BDS.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2408,7 +2408,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AON", name: "Aon plc", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Aon: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2419,7 +2419,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ASX", name: "ASE Technology Holding Co., Ltd.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ASE Technology (Taiwan): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2430,7 +2430,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HOOD", name: "Robinhood Markets, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Robinhood: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2441,7 +2441,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPG", name: "Simon Property Group, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Simon Property Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2452,7 +2452,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FIX", name: "Comfort Systems USA, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -2463,7 +2463,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MFC", name: "Manulife Financial Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Manulife Financial: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2474,7 +2474,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "B", name: "Barrick Mining Corporation", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -2485,7 +2485,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FTNT", name: "Fortinet, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Fortinet: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2496,7 +2496,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MSTR", name: "Strategy Inc", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -2507,7 +2507,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RACE", name: "Ferrari N.V.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Ferrari: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2518,7 +2518,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KEYS", name: "Keysight Technologies, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Keysight Technologies: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2529,7 +2529,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DB", name: "Deutsche Bank Aktiengesellschaft", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Deutsche Bank: operasi perbankan di Israel, termasuk layanan untuk perusahaan-perusahaan yang beroperasi di wilayah pendudukan.",
       sources: ["Who Profits (partial)", "AFSC Investigate", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2540,7 +2540,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AZO", name: "AutoZone, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AutoZone: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2551,7 +2551,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FANG", name: "Diamondback Energy, Inc.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Diamondback Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2562,7 +2562,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LHX", name: "L3Harris Technologies, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "L3Harris Technologies: sistem elektronik militer dan komunikasi yang digunakan IDF. Pemasok langsung ke angkatan bersenjata Israel.",
       sources: ["AFSC Investigate", "Who Profits", "Defense contracts", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2573,7 +2573,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OXY", name: "Occidental Petroleum Corporation", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Occidental Petroleum: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2584,7 +2584,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AFL", name: "Aflac Incorporated", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Aflac: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2595,7 +2595,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MPLX", name: "MPLX LP", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "MPLX LP: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2606,7 +2606,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WPM", name: "Wheaton Precious Metals Corp.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Wheaton Precious Metals: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2617,7 +2617,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "D", name: "Dominion Energy, Inc.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Dominion Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2628,7 +2628,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ALL", name: "The Allstate Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Allstate: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2639,7 +2639,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CVNA", name: "Carvana Co.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Carvana: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2650,7 +2650,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CVE", name: "Cenovus Energy Inc.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Cenovus Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2661,7 +2661,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GWW", name: "W.W. Grainger, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "W.W. Grainger: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2672,7 +2672,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TER", name: "Teradyne, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Teradyne: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2683,7 +2683,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PSA", name: "Public Storage", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Public Storage: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2694,7 +2694,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AME", name: "AMETEK, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AMETEK: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2705,7 +2705,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SE", name: "Sea Limited", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Sea Limited: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2716,7 +2716,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VST", name: "Vistra Corp.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Vistra Corp: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2727,7 +2727,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NDAQ", name: "Nasdaq, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Nasdaq Inc: bursa saham umum. Nasdaq Israel adalah afiliasi terpisah.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2738,7 +2738,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ADSK", name: "Autodesk, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Autodesk: R&D di Israel, perangkat lunak desain digunakan secara umum termasuk di Israel.",
       sources: ["Company disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2749,7 +2749,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XEL", name: "Xcel Energy Inc.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Xcel Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2760,7 +2760,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NUE", name: "Nucor Corporation", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Nucor: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2771,7 +2771,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MCHP", name: "Microchip Technology Incorporated", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -2782,7 +2782,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EA", name: "Electronic Arts Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Electronic Arts: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2793,7 +2793,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "INFY", name: "Infosys Limited", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Infosys: perusahaan India, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2804,7 +2804,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "COIN", name: "Coinbase Global, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Coinbase: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2815,7 +2815,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DDOG", name: "Datadog, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Datadog: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2826,7 +2826,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ZTS", name: "Zoetis Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -2837,7 +2837,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "STM", name: "STMicroelectronics N.V.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "STMicroelectronics: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2848,7 +2848,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CLS", name: "Celestica Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Celestica: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2859,7 +2859,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SNOW", name: "Snowflake Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Snowflake: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2870,7 +2870,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AU", name: "AngloGold Ashanti plc", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AngloGold Ashanti: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2881,7 +2881,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GRMN", name: "Garmin Ltd.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Garmin: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2892,7 +2892,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EBAY", name: "eBay Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "eBay: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2903,7 +2903,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CAH", name: "Cardinal Health, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Cardinal Health: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2914,7 +2914,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ROK", name: "Rockwell Automation, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Rockwell Automation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2925,7 +2925,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RKLB", name: "Rocket Lab Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Rocket Lab: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2936,7 +2936,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PYPL", name: "PayPal Holdings, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "PayPal: telah mendiskriminasi pengguna Palestina — memblokir akun dan layanan di Gaza/Tepi Barat sementara layanan Israel berjalan normal.",
       sources: ["Human Rights Watch (2021)", "Mondoweiss", "Electronic Intifada", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2947,7 +2947,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DAL", name: "Delta Air Lines, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Delta Air Lines: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2958,7 +2958,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IDXX", name: "IDEXX Laboratories, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "IDEXX Laboratories: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2969,7 +2969,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DEO", name: "Diageo plc", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Diageo: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2980,7 +2980,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MT", name: "ArcelorMittal S.A.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ArcelorMittal: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -2991,7 +2991,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "YUM", name: "Yum! Brands, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Yum! Brands: KFC dan Pizza Hut beroperasi di Israel melalui franchisee. KFC Israel mendistribusikan makanan gratis ke tentara Israel (Oktober 2023).",
       sources: ["Times of Israel (2023)", "BDS Movement campaign", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3002,7 +3002,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ODFL", name: "Old Dominion Freight Line, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Old Dominion Freight: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3013,7 +3013,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MSCI", name: "MSCI Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "MSCI Inc: penyedia indeks, Israel termasuk dalam indeks EM/DM standar.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3024,7 +3024,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XYZ", name: "Block, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -3035,7 +3035,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DHI", name: "D.R. Horton, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "D.R. Horton: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3046,7 +3046,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BDX", name: "Becton, Dickinson and Company", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Becton Dickinson: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3057,7 +3057,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CMG", name: "Chipotle Mexican Grill, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Chipotle: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3068,7 +3068,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AIG", name: "American International Group, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "American International Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3079,7 +3079,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KR", name: "The Kroger Co.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Kroger: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3090,7 +3090,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TRI", name: "Thomson Reuters Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -3101,7 +3101,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BIDU", name: "Baidu, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -3112,7 +3112,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ED", name: "Consolidated Edison, Inc.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Consolidated Edison: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3123,7 +3123,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JD", name: "JD.com, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "JD.com: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3134,7 +3134,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TTWO", name: "Take-Two Interactive Software, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Take-Two Interactive: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3145,7 +3145,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ALNY", name: "Alnylam Pharmaceuticals, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Alnylam Pharmaceuticals: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3156,7 +3156,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NBIS", name: "Nebius Group N.V.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Nebius Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3167,7 +3167,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CCI", name: "Crown Castle Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Crown Castle: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3178,7 +3178,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KB", name: "KB Financial Group Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "KB Financial (Korea): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3189,7 +3189,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GFI", name: "Gold Fields Limited", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Gold Fields: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3200,7 +3200,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HPE", name: "Hewlett Packard Enterprise Company", sector: "Technology",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "HP Enterprise: menyediakan sistem biometrik dan infrastruktur IT untuk checkpoint militer Israel di Tepi Barat. Pisah dari HP Inc namun mewarisi kontrak serupa.",
       sources: ["Who Profits database", "AFSC Investigate", "Don't Buy Into Occupation report", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3211,7 +3211,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IRM", name: "Iron Mountain Incorporated", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Iron Mountain: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3222,7 +3222,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PUK", name: "Prudential plc", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Prudential plc (UK): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3233,7 +3233,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LYV", name: "Live Nation Entertainment, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Live Nation Entertainment: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3244,7 +3244,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CPNG", name: "Coupang, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Coupang: perusahaan Korea/AS, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3255,7 +3255,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HSY", name: "The Hershey Company", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Hershey: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3266,7 +3266,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CCL", name: "Carnival Corporation & plc", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Carnival: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3277,7 +3277,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JBL", name: "Jabil Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Jabil: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3288,7 +3288,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ADM", name: "Archer-Daniels-Midland Company", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Archer-Daniels-Midland: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3299,7 +3299,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ALC", name: "Alcon Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -3310,7 +3310,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NTR", name: "Nutrien Ltd.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Nutrien: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3321,7 +3321,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LVS", name: "Las Vegas Sands Corp.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Las Vegas Sands: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3332,7 +3332,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SYY", name: "Sysco Corporation", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Sysco: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3343,7 +3343,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KGC", name: "Kinross Gold Corporation", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Kinross Gold: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3354,7 +3354,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HAL", name: "Halliburton Company", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Halliburton: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3365,7 +3365,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PRU", name: "Prudential Financial, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Prudential Financial: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3376,7 +3376,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CRDO", name: "Credo Technology Group Holding Ltd", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Credo Technology: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3387,7 +3387,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HBAN", name: "Huntington Bancshares Incorporated", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -3398,7 +3398,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TCOM", name: "Trip.com Group Limited", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Trip.com: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3409,7 +3409,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PAYX", name: "Paychex, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Paychex: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3420,7 +3420,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WDAY", name: "Workday, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Workday: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3431,7 +3431,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NRG", name: "NRG Energy, Inc.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "NRG Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3442,7 +3442,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AXON", name: "Axon Enterprise, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Axon Enterprise: produk penegakan hukum, ada kemungkinan penjualan ke Israel namun tidak terdokumentasi spesifik.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3453,7 +3453,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "A", name: "Agilent Technologies, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Agilent Technologies: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3464,7 +3464,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RBLX", name: "Roblox Corporation", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Roblox: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3475,7 +3475,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RDDT", name: "Reddit, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Reddit: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3486,7 +3486,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MTB", name: "M&T Bank Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "M&T Bank: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3497,7 +3497,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VICI", name: "VICI Properties Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "VICI Properties: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3508,7 +3508,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DVN", name: "Devon Energy Corporation", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Devon Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3519,7 +3519,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ATO", name: "Atmos Energy Corporation", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Atmos Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3530,7 +3530,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MTZ", name: "MasTec, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "MasTec: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3541,7 +3541,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UMC", name: "United Microelectronics Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "United Microelectronics (Taiwan): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3552,7 +3552,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ZM", name: "Zoom Communications, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Zoom Video: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3563,7 +3563,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DOV", name: "Dover Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Dover Corporation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3574,7 +3574,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RJF", name: "Raymond James Financial, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Raymond James Financial: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3585,7 +3585,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EXPE", name: "Expedia Group, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Expedia: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3596,7 +3596,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UAL", name: "United Airlines Holdings, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "United Airlines: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3607,7 +3607,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EXR", name: "Extra Space Storage Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Extra Space Storage: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3618,7 +3618,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RMD", name: "ResMed Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ResMed: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3629,7 +3629,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OTIS", name: "Otis Worldwide Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -3640,7 +3640,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EC", name: "Ecopetrol S.A.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -3651,7 +3651,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DOW", name: "Dow Inc.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Dow Inc: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3662,7 +3662,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TPR", name: "Tapestry, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tapestry: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3673,7 +3673,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EL", name: "The Estée Lauder Companies Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Estée Lauder: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3684,7 +3684,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HUM", name: "Humana Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Humana: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3695,7 +3695,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TWLO", name: "Twilio Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Twilio: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3706,7 +3706,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BIIB", name: "Biogen Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Biogen: R&D di Israel melalui kemitraan. Tidak ada laporan signifikan BDS.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3717,7 +3717,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XYL", name: "Xylem Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -3728,7 +3728,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RYAAY", name: "Ryanair Holdings plc", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Ryanair: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3739,7 +3739,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FE", name: "FirstEnergy Corp.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "FirstEnergy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3750,7 +3750,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KHC", name: "The Kraft Heinz Company", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Kraft Heinz: sebelumnya bagian dari H.J. Heinz yang memiliki pabrik di Israel. Eksposur terbatas pasca merger.",
       sources: ["Historical records", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3761,7 +3761,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CNC", name: "Centene Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Centene: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3772,7 +3772,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FOX", name: "Fox Corporation", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Fox Corporation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3783,7 +3783,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FOXA", name: "Fox Corporation", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Fox Corporation (A): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3794,7 +3794,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SYF", name: "Synchrony Financial", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Synchrony Financial: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3805,7 +3805,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FN", name: "Fabrinet", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Fabrinet: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3816,7 +3816,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DG", name: "Dollar General Corporation", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Dollar General: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3827,7 +3827,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CINF", name: "Cincinnati Financial Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Cincinnati Financial: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3838,7 +3838,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PHG", name: "Koninklijke Philips N.V.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -3849,7 +3849,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AWK", name: "American Water Works Company, Inc.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "American Water Works: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3860,7 +3860,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CTSH", name: "Cognizant Technology Solutions Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Cognizant: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3871,7 +3871,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VRSN", name: "VeriSign, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "VeriSign: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3882,7 +3882,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BNTX", name: "BioNTech SE", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "BioNTech: berkantor pusat di Jerman, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3893,7 +3893,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FTAI", name: "FTAI Aviation Ltd.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -3904,7 +3904,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LYB", name: "LyondellBasell Industries N.V.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "LyondellBasell: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3915,7 +3915,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FIS", name: "Fidelity National Information Services, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -3926,7 +3926,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PPG", name: "PPG Industries, Inc.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "PPG Industries: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3937,7 +3937,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KEY", name: "KeyCorp", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "KeyCorp: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3948,7 +3948,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DXCM", name: "DexCom, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Dexcom: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3959,7 +3959,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JBHT", name: "J.B. Hunt Transport Services, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "J.B. Hunt Transport: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3970,7 +3970,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TEAM", name: "Atlassian Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Atlassian: perusahaan Australia, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3981,7 +3981,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ULTA", name: "Ulta Beauty, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Ulta Beauty: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -3992,7 +3992,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ALB", name: "Albemarle Corporation", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Albemarle: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4003,7 +4003,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FSLR", name: "First Solar, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "First Solar: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4014,7 +4014,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CHD", name: "Church & Dwight Co., Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Church & Dwight: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4025,7 +4025,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PHM", name: "PulteGroup, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "PulteGroup: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4036,7 +4036,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AFRM", name: "Affirm Holdings, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Affirm: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4047,7 +4047,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ZS", name: "Zscaler, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Zscaler: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4058,7 +4058,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TSN", name: "Tyson Foods, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tyson Foods: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4069,7 +4069,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TROW", name: "T. Rowe Price Group, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "T. Rowe Price: manajer aset umum.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4080,7 +4080,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WIT", name: "Wipro Limited", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Wipro: perusahaan India, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4091,7 +4091,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NTAP", name: "NetApp, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "NetApp: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4102,7 +4102,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NMR", name: "Nomura Holdings, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Nomura Holdings: perusahaan Jepang, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4113,7 +4113,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RL", name: "Ralph Lauren Corporation", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Ralph Lauren: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4124,7 +4124,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OMC", name: "Omnicom Group Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Omnicom Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4135,7 +4135,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TEF", name: "TEF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4146,7 +4146,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LEN", name: "Lennar Corporation", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Lennar: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4157,7 +4157,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FUTU", name: "Futu Holdings Limited", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Futu Holdings: perusahaan Hong Kong, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4168,7 +4168,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ENTG", name: "Entegris, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Entegris: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4179,7 +4179,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WSM", name: "Williams-Sonoma, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4190,7 +4190,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DGX", name: "Quest Diagnostics Incorporated", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Quest Diagnostics: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4201,7 +4201,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MDB", name: "MongoDB, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "MongoDB: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4212,7 +4212,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ASTS", name: "AST SpaceMobile, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AST SpaceMobile: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4223,7 +4223,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CHTR", name: "Charter Communications, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Charter Communications: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4234,7 +4234,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SOFI", name: "SoFi Technologies, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "SoFi Technologies: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4245,7 +4245,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CHRW", name: "C.H. Robinson Worldwide, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "C.H. Robinson: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4256,7 +4256,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ILMN", name: "Illumina, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Illumina: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4267,7 +4267,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AS", name: "Amer Sports, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4278,7 +4278,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DKS", name: "DICK'S Sporting Goods, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Dick's Sporting Goods: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4289,7 +4289,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BURL", name: "Burlington Stores, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Burlington Stores: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4300,7 +4300,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GPN", name: "Global Payments Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Global Payments: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4311,7 +4311,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RIVN", name: "Rivian Automotive, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Rivian: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4322,7 +4322,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SNA", name: "Snap-on Incorporated", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Snap-on: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4333,7 +4333,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EXPD", name: "Expeditors International of Washington, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Expeditors International: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4344,7 +4344,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PKG", name: "Packaging Corporation of America", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Packaging Corp: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4355,7 +4355,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "INCY", name: "Incyte Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Incyte: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4366,7 +4366,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LNT", name: "Alliant Energy Corporation", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Alliant Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4377,7 +4377,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HPQ", name: "HP Inc.", sector: "Technology",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "HP Inc (HPQ): spin-off dari Hewlett-Packard. Mewarisi koneksi ke sistem biometrik dan printer di pos pemeriksaan Israel, meski lebih sedikit dari HPE.",
       sources: ["Who Profits (partial)", "BDS Movement", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4388,7 +4388,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DD", name: "DuPont de Nemours, Inc.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "DuPont: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4399,7 +4399,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LUV", name: "Southwest Airlines Co.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Southwest Airlines: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4410,7 +4410,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CF", name: "CF Industries Holdings, Inc.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "CF Industries: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4421,7 +4421,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DLTR", name: "Dollar Tree, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Dollar Tree: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4432,7 +4432,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GIS", name: "General Mills, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "General Mills: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4443,7 +4443,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FFIV", name: "F5, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4454,7 +4454,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BEKE", name: "KE Holdings Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "KE Holdings: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4465,7 +4465,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MRNA", name: "Moderna, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Moderna: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4476,7 +4476,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TSCO", name: "Tractor Supply Company", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tractor Supply: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4487,7 +4487,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CG", name: "The Carlyle Group Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4498,7 +4498,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IOT", name: "Samsara Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Samsara: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4509,7 +4509,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LI", name: "Li Auto Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Li Auto: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4520,7 +4520,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VTRS", name: "Viatris Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Viatris: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4531,7 +4531,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMCR", name: "Amcor plc", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Amcor: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4542,7 +4542,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CDW", name: "CDW Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "CDW Corporation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4553,7 +4553,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "YUMC", name: "Yum China Holdings, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Yum China: operasi terpisah sepenuhnya di China, tidak terkait YUM Brands Israel.",
       sources: ["Company separation disclosure", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4564,7 +4564,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HOLX", name: "Hologic, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Hologic: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4575,7 +4575,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IONQ", name: "IonQ, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "IonQ: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4586,7 +4586,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ESS", name: "Essex Property Trust, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -4597,7 +4597,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NLY", name: "Annaly Capital Management, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Annaly Capital: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4608,7 +4608,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BIP", name: "Brookfield Infrastructure Partners L.P.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Brookfield Infrastructure: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4619,7 +4619,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SMCI", name: "Super Micro Computer, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Super Micro Computer: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4630,7 +4630,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "THC", name: "Tenet Healthcare Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tenet Healthcare: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4641,7 +4641,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ZBH", name: "Zimmer Biomet Holdings, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Zimmer Biomet: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4652,7 +4652,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NIO", name: "NIO Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "NIO Inc: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4663,7 +4663,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BEN", name: "Franklin Resources, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Franklin Templeton: manajer aset umum.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4674,7 +4674,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LULU", name: "lululemon athletica inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Lululemon: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4685,7 +4685,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "H", name: "Hyatt Hotels Corporation", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Hyatt Hotels: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4696,7 +4696,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AKAM", name: "Akamai Technologies, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Akamai Technologies: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4707,7 +4707,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IREN", name: "IREN Limited", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Iris Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4718,7 +4718,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GRAB", name: "Grab Holdings Limited", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Grab Holdings: perusahaan Asia Tenggara, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4729,7 +4729,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XPEV", name: "XPeng Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "XPeng: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4740,7 +4740,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SITM", name: "SiTime Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "SiTime Corporation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4751,7 +4751,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JLL", name: "Jones Lang LaSalle Incorporated", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Jones Lang LaSalle: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4762,7 +4762,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WMG", name: "Warner Music Group Corp.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Warner Music Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4773,7 +4773,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GPC", name: "Genuine Parts Company", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4784,7 +4784,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DECK", name: "Deckers Outdoor Corporation", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Deckers Outdoor: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4795,7 +4795,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LOGI", name: "Logitech International S.A.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Logitech: berkantor pusat di Swiss, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4806,7 +4806,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HII", name: "Huntington Ingalls Industries, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "medium"
+      israelTie: "medium",
       rationale: "Huntington Ingalls Industries: galangan kapal militer AS, membangun kapal perang yang dapat beroperasi di Mediterania (dekat Israel). Tidak secara khusus ditargetkan BDS namun pemasok militer AS.",
       sources: ["AFSC Investigate (defense sector)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4817,7 +4817,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MOD", name: "Modine Manufacturing Company", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4828,7 +4828,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TKO", name: "TKO Group Holdings, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "TKO Group (UFC/WWE): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4839,7 +4839,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TME", name: "Tencent Music Entertainment Group", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tencent Music: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4850,7 +4850,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARCC", name: "Ares Capital Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Ares Capital: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4861,7 +4861,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ASND", name: "Ascendis Pharma A/S", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4872,7 +4872,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MKC", name: "McCormick & Company, Incorporated", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "McCormick: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4883,7 +4883,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HAS", name: "Hasbro, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Hasbro: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4894,7 +4894,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OKTA", name: "Okta, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Okta: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4905,7 +4905,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ALLY", name: "Ally Financial Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Ally Financial: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4916,7 +4916,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BBIO", name: "BridgeBio Pharma, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4927,7 +4927,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NBIX", name: "Neurocrine Biosciences, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4938,7 +4938,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SNN", name: "Smith & Nephew plc", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4949,7 +4949,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "APTV", name: "Aptiv PLC", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -4960,7 +4960,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ALGN", name: "Align Technology, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Align Technology: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4971,7 +4971,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NYT", name: "The New York Times Company", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "New York Times: tidak ada laporan signifikan terkait afiliasi bisnis.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4982,7 +4982,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FIVE", name: "Five Below, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Five Below: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -4993,7 +4993,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BBY", name: "Best Buy Co., Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Best Buy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5004,7 +5004,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AGNC", name: "AGNC Investment Corp.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AGNC Investment: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5015,7 +5015,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SMMT", name: "Summit Therapeutics Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Summit Therapeutics: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5026,7 +5026,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AEG", name: "Aegon Ltd.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Aegon: perusahaan Belanda, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5037,7 +5037,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HUBS", name: "HubSpot, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "HubSpot: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5048,7 +5048,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OKLO", name: "Oklo Inc.", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Oklo Inc: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5059,7 +5059,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SWK", name: "Stanley Black & Decker, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Stanley Black & Decker: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5070,7 +5070,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CHKP", name: "Check Point Software Technologies Ltd.", sector: "Technology",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "Check Point Software Technologies: perusahaan keamanan siber yang berkantor pusat di Tel Aviv, Israel. Pendiri dan mayoritas operasi di Israel.",
       sources: ["Who Profits", "Company headquarters: Tel Aviv", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5081,7 +5081,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MEDP", name: "Medpace Holdings, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5092,7 +5092,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GME", name: "GameStop Corp.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "GameStop: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5103,7 +5103,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "U", name: "Unity Software Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Unity Software: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5114,7 +5114,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HRL", name: "Hormel Foods Corporation", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Hormel Foods: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5125,7 +5125,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ALLE", name: "Allegion plc", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5136,7 +5136,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PINS", name: "Pinterest, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Pinterest: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5147,7 +5147,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMH", name: "American Homes 4 Rent", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "American Homes 4 Rent: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5158,7 +5158,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GDDY", name: "GoDaddy Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "GoDaddy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5169,7 +5169,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IVZ", name: "Invesco Ltd.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -5180,7 +5180,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WMS", name: "Advanced Drainage Systems, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5191,7 +5191,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ONON", name: "On Holding AG", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "On Holding: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5202,7 +5202,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DKNG", name: "DraftKings Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "DraftKings: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5213,7 +5213,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TTD", name: "The Trade Desk, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "The Trade Desk: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5224,7 +5224,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NTNX", name: "Nutanix, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Nutanix: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5235,7 +5235,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DPZ", name: "Domino's Pizza, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Domino's Pizza: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5246,7 +5246,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WYNN", name: "Wynn Resorts, Limited", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Wynn Resorts: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5257,7 +5257,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AFG", name: "American Financial Group, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "American Financial Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5268,7 +5268,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACM", name: "AECOM", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AECOM: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5279,7 +5279,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DOCN", name: "DigitalOcean Holdings, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "DigitalOcean: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5290,7 +5290,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CHWY", name: "Chewy, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Chewy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5301,7 +5301,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SNAP", name: "Snap Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Snap Inc: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5312,7 +5312,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CAVA", name: "CAVA Group, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "CAVA Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5323,7 +5323,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CLX", name: "The Clorox Company", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Clorox: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5334,7 +5334,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WULF", name: "TeraWulf Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "TeraWulf: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5345,7 +5345,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SWKS", name: "Skyworks Solutions, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5356,7 +5356,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ZG", name: "Zillow Group, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Zillow Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5367,7 +5367,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "Z", name: "Zillow Group, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Zillow Group (C): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5378,7 +5378,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SJM", name: "The J. M. Smucker Company", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "J.M. Smucker: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5389,7 +5389,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AES", name: "The AES Corporation", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AES Corporation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5400,7 +5400,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DVA", name: "DaVita Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "DaVita: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5411,7 +5411,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GTLS", name: "Chart Industries, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5422,7 +5422,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HMY", name: "Harmony Gold Mining Company Limited", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Harmony Gold: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5433,7 +5433,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IT", name: "Gartner, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Gartner: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5444,7 +5444,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MGM", name: "MGM Resorts International", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "MGM Resorts: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5455,7 +5455,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RVTY", name: "Revvity, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Revvity: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5466,7 +5466,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LUMN", name: "Lumen Technologies, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Lumen Technologies: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5477,7 +5477,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "APLD", name: "Applied Digital Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Applied Digital: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5488,7 +5488,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BAH", name: "Booz Allen Hamilton Holding Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "Booz Allen Hamilton: firma konsultan pertahanan yang mendukung operasi intelijen dan militer Israel melalui kontrak AS-Israel.",
       sources: ["AFSC Investigate", "Federal contracts database", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5499,7 +5499,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DOCU", name: "DocuSign, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "DocuSign: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5510,7 +5510,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CNM", name: "Core & Main, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5521,7 +5521,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SIRI", name: "Sirius XM Holdings Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Sirius XM: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5532,7 +5532,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CUBE", name: "CubeSmart", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "CubeSmart: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5543,7 +5543,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GAP", name: "The Gap, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5554,7 +5554,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MTCH", name: "Match Group, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Match Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5565,7 +5565,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BILI", name: "Bilibili Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Bilibili: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5576,7 +5576,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BAX", name: "Baxter International Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5587,7 +5587,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WAL", name: "Western Alliance Bancorporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5598,7 +5598,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AGCO", name: "AGCO Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5609,7 +5609,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CELH", name: "Celsius Holdings, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Celsius Holdings: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5620,7 +5620,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HUT", name: "Hut 8 Corp.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Hut 8 Corp: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5631,7 +5631,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "W", name: "Wayfair Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "low"
+      israelTie: "low",
       rationale: "Wayfair: karyawan melakukan walkout (2019) memprotes penjualan furnitur ke kamp detensi. Tidak terkait langsung Israel namun ada preseden aksi kolektif.",
       sources: ["Boston Globe (2019)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5642,7 +5642,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TECH", name: "Bio-Techne Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5653,7 +5653,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NCLH", name: "Norwegian Cruise Line Holdings Ltd.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Norwegian Cruise Line: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5664,7 +5664,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LEVI", name: "Levi Strauss & Co.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5675,7 +5675,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SBSW", name: "Sibanye Stillwater Limited", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Sibanye Stillwater: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5686,7 +5686,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AOS", name: "A. O. Smith Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5697,7 +5697,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MANH", name: "Manhattan Associates, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Manhattan Associates: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5708,7 +5708,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACI", name: "Albertsons Companies, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Albertsons: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5719,7 +5719,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CRL", name: "Charles River Laboratories International, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5730,7 +5730,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NE", name: "Noble Corporation plc", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Noble Corporation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5741,7 +5741,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CYTK", name: "Cytokinetics, Incorporated", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5752,7 +5752,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AAL", name: "American Airlines Group Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "American Airlines: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5763,7 +5763,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NUVL", name: "Nuvalent, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5774,7 +5774,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QBTS", name: "D-Wave Quantum Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "D-Wave Quantum: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5785,7 +5785,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RIG", name: "Transocean Ltd.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Transocean: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5796,7 +5796,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VFC", name: "V.F. Corporation", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "VF Corporation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5807,7 +5807,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SYM", name: "Symbotic Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Symbotic: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5818,7 +5818,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MBLY", name: "Mobileye Global Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "Mobileye: perusahaan teknologi kendaraan otonom yang didirikan di Israel (Jerusalem). Anak perusahaan Intel, berkantor pusat di Jerusalem.",
       sources: ["Company HQ: Jerusalem, Israel", "Intel acquisition disclosure", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5829,7 +5829,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UEC", name: "Uranium Energy Corp.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -5840,7 +5840,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARE", name: "Alexandria Real Estate Equities, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Alexandria Real Estate: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5851,7 +5851,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BIO", name: "Bio-Rad Laboratories, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Bio-Rad Laboratories: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5862,7 +5862,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ICL", name: "ICL Group Ltd", sector: "Basic Materials",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "ICL Group: perusahaan bahan kimia yang berkantor pusat di Tel Aviv, Israel. Operasi utama di Israel termasuk penambangan di Laut Mati.",
       sources: ["Company HQ: Tel Aviv, Israel", "Who Profits", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5873,7 +5873,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RIOT", name: "Riot Platforms, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Riot Platforms: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5884,7 +5884,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VIPS", name: "Vipshop Holdings Limited", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Vipshop: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5895,7 +5895,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CIFR", name: "Cipher Digital Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Cipher Mining: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5906,7 +5906,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CAG", name: "Conagra Brands, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Conagra Brands: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5917,7 +5917,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GXO", name: "GXO Logistics, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "GXO Logistics: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5928,7 +5928,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CORZ", name: "Core Scientific, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Core Scientific: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5939,7 +5939,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HIMS", name: "Hims & Hers Health, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Hims & Hers Health: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5950,7 +5950,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PAYC", name: "Paycom Software, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Paycom Software: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5961,7 +5961,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AXTI", name: "AXT, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AXT Inc: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5972,7 +5972,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CPB", name: "The Campbell's Company", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Campbell Soup: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5983,7 +5983,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ADT", name: "ADT Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ADT Inc: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -5994,7 +5994,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NICE", name: "NICE Ltd.", sector: "Technology",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "NICE Systems: perusahaan teknologi berkantor pusat di Ra'anana, Israel.",
       sources: ["Company HQ: Ra'anana, Israel", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6005,7 +6005,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LW", name: "Lamb Weston Holdings, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6016,7 +6016,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACT", name: "Enact Holdings, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6027,7 +6027,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ETSY", name: "Etsy, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Etsy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6038,7 +6038,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DBX", name: "Dropbox, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Dropbox: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6049,7 +6049,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EPAM", name: "EPAM Systems, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "EPAM Systems: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6060,7 +6060,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RGTI", name: "Rigetti Computing, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Rigetti Computing: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6071,7 +6071,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FLG", name: "Flagstar Bank, National Association", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6082,7 +6082,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CZR", name: "Caesars Entertainment, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6093,7 +6093,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OTEX", name: "Open Text Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6104,7 +6104,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PATH", name: "UiPath, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "UiPath: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6115,7 +6115,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OSCR", name: "Oscar Health, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Oscar Health: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6126,7 +6126,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "YOU", name: "Clear Secure, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6137,7 +6137,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LYFT", name: "Lyft, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Lyft: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6148,7 +6148,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DLB", name: "Dolby Laboratories, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6159,7 +6159,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KMX", name: "CarMax, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "CarMax: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6170,7 +6170,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TGTX", name: "TG Therapeutics, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6181,7 +6181,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GLBE", name: "Global-E Online Ltd.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "Global-E Online: solusi e-commerce cross-border, berkantor pusat di Petah Tikva, Israel.",
       sources: ["Company HQ: Petah Tikva, Israel", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6192,7 +6192,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MATX", name: "Matson, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6203,7 +6203,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OPEN", name: "Opendoor Technologies Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Opendoor: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6214,7 +6214,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "APLS", name: "Apellis Pharmaceuticals, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6225,7 +6225,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DUOL", name: "Duolingo, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Duolingo: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6236,7 +6236,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "M", name: "Macy's, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6247,7 +6247,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BC", name: "Brunswick Corporation", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Brunswick Corporation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6258,7 +6258,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CROX", name: "Crocs, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Crocs: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6269,7 +6269,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MAIN", name: "Main Street Capital Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Main Street Capital: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6280,7 +6280,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ESTC", name: "Elastic N.V.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Elastic NV: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6291,7 +6291,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CRSP", name: "CRISPR Therapeutics AG", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6302,7 +6302,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RELY", name: "Remitly Global, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Remitly Global: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6313,7 +6313,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WIX", name: "Wix.com Ltd.", sector: "Technology",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "Wix.com: platform web hosting yang berkantor pusat di Tel Aviv, Israel. Perusahaan Israel.",
       sources: ["Company HQ: Tel Aviv, Israel", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6324,7 +6324,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ZETA", name: "Zeta Global Holdings Corp.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Zeta Global: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6335,7 +6335,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MMYT", name: "MakeMyTrip Limited", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "MakeMyTrip: perusahaan India, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6346,7 +6346,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PI", name: "Impinj, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Impinj: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6357,7 +6357,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QS", name: "QuantumScape Corporation", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "QuantumScape: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6368,7 +6368,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ENPH", name: "Enphase Energy, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Enphase Energy: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6379,7 +6379,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACHR", name: "Archer Aviation Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Archer Aviation: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6390,7 +6390,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FSLY", name: "Fastly, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Fastly: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6401,7 +6401,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MNSO", name: "MINISO Group Holding Limited", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "MINISO Group: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6412,7 +6412,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CVLT", name: "Commvault Systems, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Commvault: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6423,7 +6423,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KC", name: "Kingsoft Cloud Holdings Limited", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Kingsoft Cloud: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6434,7 +6434,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TDW", name: "Tidewater Inc.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidewater: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6445,7 +6445,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MARA", name: "MARA Holdings, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Marathon Digital: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6456,7 +6456,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LMND", name: "Lemonade, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Lemonade: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6467,7 +6467,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MAT", name: "Mattel, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Mattel: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6478,7 +6478,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PLUG", name: "Plug Power Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Plug Power: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6489,7 +6489,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EPR", name: "EPR Properties", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "EPR Properties: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6500,7 +6500,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VSCO", name: "Victoria's Secret & Co.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6511,7 +6511,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GTLB", name: "GitLab Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "GitLab: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6522,7 +6522,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LBTYK", name: "Liberty Global Ltd.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6533,7 +6533,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SOUN", name: "SoundHound AI, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "SoundHound AI: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6544,7 +6544,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LEU", name: "Centrus Energy Corp.", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6555,7 +6555,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SMR", name: "NuScale Power Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "NuScale Power: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6566,7 +6566,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BBWI", name: "Bath & Body Works, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Bath & Body Works: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6577,7 +6577,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BILL", name: "BILL Holdings, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Bill.com: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6588,7 +6588,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "COCO", name: "The Vita Coco Company, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6599,7 +6599,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ANF", name: "Abercrombie & Fitch Co.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Abercrombie & Fitch: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6610,7 +6610,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACAD", name: "ACADIA Pharmaceuticals Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6621,7 +6621,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MNDY", name: "monday.com Ltd.", sector: "Technology",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "Monday.com: perusahaan SaaS yang berkantor pusat di Tel Aviv, Israel. Perusahaan Israel.",
       sources: ["Company HQ: Tel Aviv, Israel", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6632,7 +6632,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TWST", name: "Twist Bioscience Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6643,7 +6643,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ELF", name: "e.l.f. Beauty, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "e.l.f. Beauty: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6654,7 +6654,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BMI", name: "Badger Meter, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6665,7 +6665,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AAP", name: "Advance Auto Parts, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6676,7 +6676,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BOX", name: "Box, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Box Inc: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6687,7 +6687,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TMDX", name: "TransMedics Group, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "TransMedics Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6698,7 +6698,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACMR", name: "ACM Research, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ACM Research: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6709,7 +6709,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AVNT", name: "Avient Corporation", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6720,7 +6720,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IAC", name: "IAC Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "IAC Inc: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6731,7 +6731,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SKYW", name: "SkyWest, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6742,7 +6742,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TRMD", name: "TORM plc", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6753,7 +6753,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KD", name: "Kyndryl Holdings, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6764,7 +6764,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MANU", name: "Manchester United plc", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Manchester United: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6775,7 +6775,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FIZZ", name: "National Beverage Corp.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6786,7 +6786,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ZIM", name: "ZIM Integrated Shipping Services Ltd.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6797,7 +6797,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BB", name: "BlackBerry Limited", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6808,7 +6808,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMBA", name: "Ambarella, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6819,7 +6819,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UPST", name: "Upstart Holdings, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Upstart Holdings: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6830,7 +6830,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CLSK", name: "CleanSpark, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "CleanSpark: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6841,7 +6841,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WK", name: "Workiva Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Workiva: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6852,7 +6852,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RUN", name: "Sunrun Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Sunrun: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6863,7 +6863,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AWR", name: "American States Water Company", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6874,7 +6874,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RSI", name: "Rush Street Interactive, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6885,7 +6885,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AEHR", name: "Aehr Test Systems, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6896,7 +6896,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TXG", name: "10x Genomics, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6907,7 +6907,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SEZL", name: "Sezzle Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6918,7 +6918,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WU", name: "The Western Union Company", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Western Union: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6929,7 +6929,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BTDR", name: "Bitdeer Technologies Group", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -6940,7 +6940,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WDFC", name: "WD-40 Company", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6951,7 +6951,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SBLK", name: "Star Bulk Carriers Corp.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6962,7 +6962,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PAGS", name: "PagSeguro Digital Ltd.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -6973,7 +6973,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HOG", name: "Harley-Davidson, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Harley-Davidson: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6984,7 +6984,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SLNO", name: "Soleno Therapeutics, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Soleno Therapeutics: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -6995,7 +6995,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EXK", name: "Endeavour Silver Corp.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7006,7 +7006,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RLX", name: "RLX Technology Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7017,7 +7017,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BRZE", name: "Braze, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7028,7 +7028,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UAA", name: "Under Armour, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Under Armour: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7039,7 +7039,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UA", name: "Under Armour, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Under Armour (Class C): tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7050,7 +7050,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SEDG", name: "SolarEdge Technologies, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "SolarEdge Technologies: perusahaan teknologi surya yang didirikan dan berkantor pusat di Israel (Herzliya). Perusahaan Israel yang listing di NASDAQ.",
       sources: ["Company HQ: Herzliya, Israel", "Company disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7061,7 +7061,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DJT", name: "Trump Media & Technology Group Corp.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Trump Media & Technology Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7072,7 +7072,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FIGS", name: "FIGS, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "FIGS: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7083,7 +7083,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACHC", name: "Acadia Healthcare Company, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7094,7 +7094,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMSC", name: "American Superconductor Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7105,7 +7105,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ADMA", name: "ADMA Biologics, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7116,7 +7116,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FRSH", name: "Freshworks Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7127,7 +7127,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LU", name: "Lufax Holding Ltd", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7138,7 +7138,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LCID", name: "Lucid Group, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Lucid Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7149,7 +7149,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VNET", name: "VNET Group, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "VNET Group: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7160,7 +7160,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HTO", name: "H2O America", sector: "Utilities",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7171,7 +7171,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XRAY", name: "DENTSPLY SIRONA Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Dentsply Sirona: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7182,7 +7182,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CPRI", name: "Capri Holdings Limited", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Capri Holdings: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7193,7 +7193,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AXGN", name: "Axogen, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7204,7 +7204,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PTON", name: "Peloton Interactive, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Peloton Interactive: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7215,7 +7215,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ADPT", name: "Adaptive Biotechnologies Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7226,7 +7226,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SAM", name: "The Boston Beer Company, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7237,7 +7237,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARR", name: "ARMOUR Residential REIT, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7248,7 +7248,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EOSE", name: "Eos Energy Enterprises, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7259,7 +7259,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DAC", name: "Danaos Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7270,7 +7270,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QUBT", name: "Quantum Computing Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7281,7 +7281,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MESO", name: "Mesoblast Limited", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7292,7 +7292,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SEM", name: "Select Medical Holdings Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -7303,7 +7303,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GT", name: "The Goodyear Tire & Rubber Company", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7314,7 +7314,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AGRO", name: "Adecoagro S.A.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7325,7 +7325,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WB", name: "Weibo Corporation", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Weibo: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7336,7 +7336,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BBAI", name: "BigBear.ai Holdings, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "BigBear.ai: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7347,7 +7347,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LAC", name: "Lithium Americas Corp.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7358,7 +7358,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WGS", name: "GeneDx Holdings Corp.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7369,7 +7369,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AGYS", name: "Agilysys, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7380,7 +7380,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LTC", name: "LTC Properties, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7391,7 +7391,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RDW", name: "Redwire Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7402,7 +7402,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FMC", name: "FMC Corporation", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7413,7 +7413,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MQ", name: "Marqeta, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7424,7 +7424,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JBLU", name: "JetBlue Airways Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "JetBlue: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7435,7 +7435,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AHCO", name: "AdaptHealth Corp.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7446,7 +7446,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RXRX", name: "Recursion Pharmaceuticals, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7457,7 +7457,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMLX", name: "Amylyx Pharmaceuticals, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7468,7 +7468,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WOLF", name: "Wolfspeed, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7479,7 +7479,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FIVN", name: "Five9, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Five9: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7490,7 +7490,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PAYO", name: "Payoneer Global Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Payoneer: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7501,7 +7501,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HLF", name: "Herbalife Ltd.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7512,7 +7512,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "APPN", name: "Appian Corporation", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Appian: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7523,7 +7523,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ASAN", name: "Asana, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Asana: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7534,7 +7534,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GCT", name: "GigaCloud Technology Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "GigaCloud Technology: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7545,7 +7545,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KSS", name: "Kohl's Corporation", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7556,7 +7556,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IIPR", name: "Innovative Industrial Properties, Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Innovative Industrial Properties: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7567,7 +7567,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ENVX", name: "Enovix Corporation", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Enovix: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7578,7 +7578,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "INOD", name: "Innodata Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7589,7 +7589,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BAND", name: "Bandwidth Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Bandwidth Inc: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7600,7 +7600,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PSEC", name: "Prospect Capital Corporation", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7611,7 +7611,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ABCL", name: "AbCellera Biologics Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7622,7 +7622,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AI", name: "C3.ai, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "C3.ai: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7633,7 +7633,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TRIP", name: "Tripadvisor, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tripadvisor: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7644,7 +7644,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NVAX", name: "Novavax, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7655,7 +7655,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UPWK", name: "Upwork Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7666,7 +7666,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WEN", name: "The Wendy's Company", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Wendy's: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7677,7 +7677,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IQ", name: "iQIYI, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "iQIYI: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7688,7 +7688,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TDOC", name: "Teladoc Health, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Teladoc Health: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7699,7 +7699,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "COUR", name: "Coursera, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Coursera: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7710,7 +7710,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMPL", name: "Amplitude, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Amplitude: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7721,7 +7721,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OXLC", name: "Oxford Lane Capital Corp.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7732,7 +7732,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CRON", name: "Cronos Group Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Cronos Group: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7743,7 +7743,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMPH", name: "Amphastar Pharmaceuticals, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7754,7 +7754,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SLI", name: "Standard Lithium Ltd.", sector: "Basic Materials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7765,7 +7765,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "INMD", name: "InMode Ltd.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7776,7 +7776,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SANA", name: "Sana Biotechnology, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7787,7 +7787,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JMIA", name: "Jumia Technologies AG", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7798,7 +7798,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMC", name: "AMC Entertainment Holdings, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "AMC Entertainment: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7809,7 +7809,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARKO", name: "Arko Corp.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Arko Corp: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7820,7 +7820,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CRSR", name: "Corsair Gaming, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Corsair Gaming: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7831,7 +7831,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TLRY", name: "Tilray Brands, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tilray Brands: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7842,7 +7842,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EH", name: "EHang Holdings Limited", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "EHang Holdings: perusahaan China, tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7853,7 +7853,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NRDS", name: "NerdWallet, Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7864,7 +7864,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NEGG", name: "Newegg Commerce, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7875,7 +7875,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FCEL", name: "FuelCell Energy, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7886,7 +7886,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DNUT", name: "Krispy Kreme, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Krispy Kreme: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7897,7 +7897,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AIV", name: "Apartment Investment and Management Company", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7908,7 +7908,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VITL", name: "Vital Farms, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7919,7 +7919,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TASK", name: "TaskUs, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7930,7 +7930,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TDUP", name: "ThredUp Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7941,7 +7941,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GEMI", name: "Gemini Space Station, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7952,7 +7952,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DNA", name: "Ginkgo Bioworks Holdings, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7963,7 +7963,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BMBL", name: "Bumble Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7974,7 +7974,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SFIX", name: "Stitch Fix, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -7985,7 +7985,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BTBT", name: "Bit Digital, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Bit Digital: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -7996,7 +7996,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PUBM", name: "PubMatic, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "PubMatic: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8007,7 +8007,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CGC", name: "Canopy Growth Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Canopy Growth: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8018,7 +8018,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BBW", name: "Build-A-Bear Workshop, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8029,7 +8029,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BYND", name: "Beyond Meat, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Beyond Meat: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8040,7 +8040,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FVRR", name: "Fiverr International Ltd.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Fiverr International: berkantor pusat di Tel Aviv, Israel — perusahaan Israel.",
       sources: ["Company HQ: Tel Aviv, Israel", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8051,7 +8051,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ATOM", name: "Atomera Incorporated", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8062,7 +8062,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OSPN", name: "OneSpan Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8073,7 +8073,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FUBO", name: "FuboTV Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Fubo TV: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8084,7 +8084,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NNDM", name: "Nano Dimension Ltd.", sector: "Technology",
     ethics: {
-      israelTie: "high"
+      israelTie: "high",
       rationale: "Nano Dimension: perusahaan Israel yang berkantor pusat di Nes Ziona. Manufaktur elektronik aditif, sebagian untuk aplikasi pertahanan.",
       sources: ["Company HQ: Nes Ziona, Israel", "Company disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8095,7 +8095,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HNST", name: "The Honest Company, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8106,7 +8106,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TCPC", name: "BlackRock TCP Capital Corp.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8117,7 +8117,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ASPN", name: "Aspen Aerogels, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8128,7 +8128,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "OTLY", name: "Oatly Group AB", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8139,7 +8139,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CLPT", name: "ClearPoint Neuro, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8150,7 +8150,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EGHT", name: "8x8, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8161,7 +8161,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MLAC", name: "Mountain Lake Acquisition Corp.", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8172,7 +8172,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "API", name: "Agora, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8183,7 +8183,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ANGI", name: "Angi Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Angi Inc: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8194,7 +8194,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ABEO", name: "Abeona Therapeutics Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8205,7 +8205,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GPRO", name: "GoPro, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "GoPro: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8216,7 +8216,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPCE", name: "Virgin Galactic Holdings, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8227,7 +8227,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FNKO", name: "Funko, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8238,7 +8238,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HRTX", name: "Heron Therapeutics, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8249,7 +8249,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARQQ", name: "Arqit Quantum Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8260,7 +8260,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KLTR", name: "Kaltura, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8271,7 +8271,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACB", name: "Aurora Cannabis Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8282,7 +8282,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VERI", name: "Veritone, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8293,7 +8293,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PLBY", name: "Playboy, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8304,7 +8304,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ONL", name: "Orion Properties Inc.", sector: "Real Estate",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8315,7 +8315,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RENT", name: "Rent the Runway, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8326,7 +8326,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BYRN", name: "Byrna Technologies Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8337,7 +8337,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SKLZ", name: "Skillz Inc.", sector: "Communication Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8348,7 +8348,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EXFY", name: "Expensify, Inc.", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8359,7 +8359,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMWL", name: "American Well Corporation", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8370,7 +8370,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "INO", name: "Inovio Pharmaceuticals, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8381,7 +8381,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GGR", name: "Gogoro Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8392,7 +8392,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FLNA", name: "Filana Therapeutics, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8403,7 +8403,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PRTS", name: "CarParts.com, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8414,7 +8414,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BIRD", name: "Allbirds, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8425,7 +8425,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "INDO", name: "Indonesia Energy Corporation Limited", sector: "Energy",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8436,7 +8436,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FLUX", name: "Flux Power Holdings, Inc.", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8447,7 +8447,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CTXR", name: "Citius Pharmaceuticals, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8458,7 +8458,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SLAI", name: "SOLAI Limited", sector: "Technology",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8469,7 +8469,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BNGO", name: "Bionano Genomics, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8480,7 +8480,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SMX", name: "SMX (Security Matters) Public Limited Company", sector: "Industrials",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8491,7 +8491,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ATER", name: "Aterian, Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8502,7 +8502,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ENVB", name: "Enveric Biosciences, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8513,7 +8513,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NUWE", name: "Nuwellis, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8524,7 +8524,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QVCAQ", name: "QVC Group Inc.", sector: "Consumer Cyclical",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8535,7 +8535,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XXII", name: "22nd Century Group, Inc.", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tidak ditemukan dalam laporan publik BDS Movement, Who Profits, AFSC Investigate, atau media kredibel yang mengaitkan perusahaan ini dengan pendudukan Israel. Klasifikasi default konservatif — lakukan verifikasi mandiri.",
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
@@ -8546,7 +8546,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BF.B", name: "Brown-Forman Corporation", sector: "Consumer Defensive",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Brown-Forman: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8557,7 +8557,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FCNCA", name: "First Citizens BancShares, Inc.", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8568,7 +8568,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TEM", name: "Tempus AI, Inc.", sector: "Healthcare",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "Tempus AI: tidak ada laporan signifikan.",
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
@@ -8579,7 +8579,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACP", name: "Abrdn Income Credit Strategies Fund", sector: "Financial Services",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8590,7 +8590,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SLV", name: "iShares Silver Trust", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8601,7 +8601,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VTV", name: "Vanguard Value Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8612,7 +8612,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PGX", name: "Invesco Preferred ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8623,7 +8623,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VIG", name: "Vanguard Dividend Appreciation Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8634,7 +8634,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TLT", name: "iShares 20+ Year Treasury Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8645,7 +8645,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BND", name: "Vanguard Total Bond Market Index Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8656,7 +8656,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QQQ", name: "Invesco QQQ Trust", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8667,7 +8667,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SMH", name: "VanEck Semiconductor ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8678,7 +8678,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IEF", name: "iShares 7-10 Year Treasury Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8689,7 +8689,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MBB", name: "iShares MBS ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8700,7 +8700,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ICLN", name: "iShares Global Clean Energy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8711,7 +8711,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IGOV", name: "iShares International Treasury Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8722,7 +8722,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VNQI", name: "Vanguard Global ex-U.S. Real Estate Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8733,7 +8733,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SKYY", name: "First Trust Cloud Computing ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8744,7 +8744,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VTIP", name: "Vanguard Short-Term Inflation-Protected Securities Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8755,7 +8755,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BNDX", name: "Vanguard Total International Bond Index Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8766,7 +8766,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PDBC", name: "Invesco Optimum Yield Diversified Commodity Strategy No K-1 ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8777,7 +8777,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CIBR", name: "First Trust NASDAQ Cybersecurity ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8788,7 +8788,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BOTZ", name: "Global X Robotics & Artificial Intelligence ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8799,7 +8799,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPY", name: "State Street SPDR S&P 500 ETF Trust", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8810,7 +8810,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DIA", name: "State Street SPDR Dow Jones Industrial Average ETF Trust", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8821,7 +8821,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XLE", name: "State Street Energy Select Sector SPDR ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8832,7 +8832,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XLV", name: "State Street Health Care Select Sector SPDR ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8843,7 +8843,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XLF", name: "State Street Financial Select Sector SPDR ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8854,7 +8854,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XLP", name: "State Street Consumer Staples Select Sector SPDR ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8865,7 +8865,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XLU", name: "State Street Utilities Select Sector SPDR ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8876,7 +8876,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XLY", name: "State Street Consumer Discretionary Select Sector SPDR ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8887,7 +8887,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XLB", name: "State Street Materials Select Sector SPDR ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8898,7 +8898,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IWM", name: "iShares Russell 2000 ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8909,7 +8909,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VTI", name: "Vanguard Total Stock Market Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8920,7 +8920,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LQD", name: "iShares iBoxx $ Investment Grade Corporate Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8931,7 +8931,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VGT", name: "Vanguard Information Technology Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8942,7 +8942,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VNQ", name: "Vanguard Real Estate Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8953,7 +8953,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FXI", name: "iShares China Large-Cap ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8964,7 +8964,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VWO", name: "Vanguard Emerging Markets Stock Index Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8975,7 +8975,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "USO", name: "United States Oil Fund, LP", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8986,7 +8986,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GDX", name: "VanEck Gold Miners ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -8997,7 +8997,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DBA", name: "Invesco DB Agriculture Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9008,7 +9008,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VEA", name: "Vanguard FTSE Developed Markets Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9019,7 +9019,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AOR", name: "iShares Core 60/40 Balanced Allocation ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9030,7 +9030,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EIDO", name: "iShares MSCI Indonesia ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9041,7 +9041,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ACWI", name: "iShares MSCI ACWI ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9052,7 +9052,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HDV", name: "iShares Core High Dividend ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9063,7 +9063,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPLV", name: "Invesco S&P 500 Low Volatility ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9074,7 +9074,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPHD", name: "Invesco S&P 500 High Dividend Low Volatility ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9085,7 +9085,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARKK", name: "ARK Innovation ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9096,7 +9096,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JPIN", name: "JPMorgan Diversified Return International Equity ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9107,7 +9107,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BLOK", name: "Amplify Blockchain Technology ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9118,7 +9118,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GLD", name: "SPDR Gold Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9129,7 +9129,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IBIT", name: "iShares Bitcoin Trust ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9140,7 +9140,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TQQQ", name: "ProShares UltraPro QQQ", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9151,7 +9151,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TSLL", name: "Direxion Daily TSLA Bull 2X Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9162,7 +9162,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SQQQ", name: "ProShares UltraPro Short QQQ", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9173,7 +9173,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CONL", name: "GraniteShares 2x Long COIN Daily ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9184,7 +9184,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SOXS", name: "Direxion Daily Semiconductor Bear 3X Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9195,7 +9195,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BITO", name: "ProShares Bitcoin ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9206,7 +9206,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NVDL", name: "GraniteShares 2x Long NVDA Daily ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9217,7 +9217,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SGOV", name: "iShares 0-3 Month Treasury Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9228,7 +9228,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SOXL", name: "Direxion Daily Semiconductor Bull 3X Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9239,7 +9239,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VCIT", name: "Vanguard Intermediate-Term Corporate Bond Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9250,7 +9250,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VXUS", name: "Vanguard Total International Stock Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9261,7 +9261,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QYLD", name: "Global X NASDAQ 100 Covered Call ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9272,7 +9272,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWZ", name: "iShares MSCI Brazil ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9283,7 +9283,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MSTU", name: "T-Rex 2X Long MSTR Daily Target ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9294,7 +9294,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VCSH", name: "Vanguard Short-Term Corporate Bond Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9305,7 +9305,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JEPQ", name: "JPMorgan Nasdaq Equity Premium Income ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9316,7 +9316,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EMB", name: "iShares J.P. Morgan USD Emerging Markets Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9327,7 +9327,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SOXX", name: "iShares Semiconductor ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9338,7 +9338,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWY", name: "iShares MSCI South Korea ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9349,7 +9349,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SHY", name: "iShares 1-3 Year Treasury Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9360,7 +9360,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KWEB", name: "KraneShares CSI China Internet ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9371,7 +9371,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MCHI", name: "iShares MSCI China ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9382,7 +9382,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HYG", name: "iShares iBoxx $ High Yield Corporate Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9393,7 +9393,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XBI", name: "State Street SPDR S&P Biotech ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9404,7 +9404,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XLK", name: "State Street Technology Select Sector SPDR ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9415,7 +9415,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QQQM", name: "Invesco NASDAQ 100 ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9426,7 +9426,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FNGU", name: "MicroSectors FANG+ 3X Leveraged", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9437,7 +9437,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BOIL", name: "ProShares Ultra Bloomberg Natural Gas", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9448,7 +9448,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UNG", name: "United States Natural Gas Fund, LP", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9459,7 +9459,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XLRE", name: "State Street Real Estate Select Sector SPDR ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9470,7 +9470,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KOLD", name: "ProShares UltraShort Bloomberg Natural Gas", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9481,7 +9481,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IEI", name: "iShares 3-7 Year Treasury Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9492,7 +9492,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IEMG", name: "iShares Core MSCI Emerging Markets ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9503,7 +9503,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BUG", name: "Global X Cybersecurity ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9514,7 +9514,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MSTZ", name: "T-Rex 2X Inverse MSTR Daily Target ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9525,7 +9525,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SCHG", name: "Schwab U.S. Large-Cap Growth ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9536,7 +9536,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AIQ", name: "Global X Artificial Intelligence & Technology ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9547,7 +9547,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BITU", name: "Proshares Ultra Bitcoin ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9558,7 +9558,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "USIG", name: "iShares Broad USD Investment Grade Corporate Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9569,7 +9569,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NVDY", name: "YieldMax NVDA Option Income Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9580,7 +9580,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IEFA", name: "iShares Core MSCI EAFE ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9591,7 +9591,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VT", name: "Vanguard Total World Stock Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9602,7 +9602,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWT", name: "iShares MSCI Taiwan ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9613,7 +9613,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VYMI", name: "Vanguard International High Dividend Yield Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9624,7 +9624,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IAU", name: "iShares Gold Trust", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9635,7 +9635,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AGQ", name: "ProShares Ultra Silver", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9646,7 +9646,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "COPX", name: "Global X Copper Miners ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9657,7 +9657,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TMF", name: "Direxion Daily 20+ Year Treasury Bull 3X Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9668,7 +9668,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWJ", name: "iShares MSCI Japan ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9679,7 +9679,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWH", name: "iShares MSCI Hong Kong ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9690,7 +9690,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "URA", name: "Global X Uranium ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9701,7 +9701,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWA", name: "iShares MSCI Australia ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9712,7 +9712,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "YINN", name: "Direxion Daily FTSE China Bull 3X Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9723,7 +9723,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XHB", name: "State Street SPDR S&P Homebuilders ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9734,7 +9734,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VOO", name: "Vanguard S&P 500 ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9745,7 +9745,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QLD", name: "ProShares Ultra QQQ", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9756,7 +9756,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GDXJ", name: "VanEck Junior Gold Miners ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9767,7 +9767,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPYI", name: "Neos S&P 500(R) High Income ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9778,7 +9778,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AGG", name: "iShares Core U.S. Aggregate Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9789,7 +9789,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SGOL", name: "abrdn Physical Gold Shares ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9800,7 +9800,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UGL", name: "ProShares Ultra Gold", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9811,7 +9811,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JEPI", name: "JPMorgan Equity Premium Income ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9822,7 +9822,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IVV", name: "iShares Core S&P 500 ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9833,7 +9833,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XRT", name: "State Street SPDR S&P Retail ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9844,7 +9844,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QQQE", name: "Direxion NASDAQ-100 Equal Weighted Index Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9855,7 +9855,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JNK", name: "State Street SPDR Bloomberg High Yield Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9866,7 +9866,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MAGS", name: "Roundhill Magnificent Seven ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9877,7 +9877,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWU", name: "iShares MSCI United Kingdom ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9888,7 +9888,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "UPRO", name: "ProShares UltraPro S&P500", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9899,7 +9899,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AAAU", name: "Goldman Sachs Physical Gold ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9910,7 +9910,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JETS", name: "U.S. Global Jets ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9921,7 +9921,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPXL", name: "Direxion Daily S&P500 Bull 3X Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9932,7 +9932,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "INDA", name: "iShares MSCI India ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9943,7 +9943,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "URNM", name: "Sprott Uranium Miners ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9954,7 +9954,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FEPI", name: "REX FANG & Innovation Equity Premium Income ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9965,7 +9965,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TAN", name: "Invesco Solar ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9976,7 +9976,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "YMAX", name: "YieldMax Universe Fund of Option Income ETFs", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9987,7 +9987,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "REMX", name: "VanEck Rare Earth and Strategic Metals ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -9998,7 +9998,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWC", name: "iShares MSCI Canada ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10009,7 +10009,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PPLT", name: "abrdn Physical Platinum Shares ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10020,7 +10020,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SJNK", name: "State Street SPDR Bloomberg Short Term High Yield Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10031,7 +10031,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DBC", name: "Invesco DB Commodity Index Tracking Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10042,7 +10042,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPMO", name: "Invesco S&P 500 Momentum ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10053,7 +10053,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SHLD", name: "Global X Defense Tech ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10064,7 +10064,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "JPST", name: "JPMorgan Ultra-Short Income ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10075,7 +10075,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "USD", name: "ProShares Ultra Semiconductors", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10086,7 +10086,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BNO", name: "United States Brent Oil Fund, LP", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10097,7 +10097,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EMLC", name: "VanEck J.P. Morgan EM Local Currency Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10108,7 +10108,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AIPI", name: "REX AI Equity Premium Income ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10119,7 +10119,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MSTY", name: "Yieldmax MSTR Option Income Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10130,7 +10130,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TIP", name: "iShares TIPS Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10141,7 +10141,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWG", name: "iShares MSCI Germany ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10152,7 +10152,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CLOU", name: "Global X Cloud Computing ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10163,7 +10163,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QTEC", name: "First Trust NASDAQ-100-Technology Sector Index Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10174,7 +10174,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "LIT", name: "Global X Lithium & Battery Tech ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10185,7 +10185,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CPER", name: "United States Copper Index Fund, LP", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10196,7 +10196,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TLH", name: "iShares 10-20 Year Treasury Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10207,7 +10207,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CWEB", name: "Direxion Daily CSI China Internet Bull 2X Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10218,7 +10218,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VUG", name: "Vanguard Growth Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10229,7 +10229,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PALL", name: "abrdn Physical Palladium Shares ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10240,7 +10240,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMZY", name: "YieldMax AMZN Option Income Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10251,7 +10251,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BIL", name: "State Street SPDR Bloomberg 1-3 Month T-Bill ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10262,7 +10262,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AVUV", name: "Avantis US Small Cap Value ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10273,7 +10273,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AVDV", name: "Avantis International Small Cap Value ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10284,7 +10284,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DRIV", name: "Global X Autonomous & Electric Vehicles ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10295,7 +10295,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "TSLY", name: "YieldMax TSLA Option Income Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10306,7 +10306,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SLVO", name: "UBS ETRACS Silver Shares Covered Call ETN", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10317,7 +10317,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "DBO", name: "Invesco DB Oil Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10328,7 +10328,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QCLN", name: "First Trust NASDAQ Clean Edge Green Energy Index Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10339,7 +10339,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CONY", name: "YieldMax COIN Option Income Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10350,7 +10350,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FLOT", name: "iShares Floating Rate Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10361,7 +10361,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "YMAG", name: "YieldMax Magnificent 7 Fund of Option Income ETFs", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10372,7 +10372,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWS", name: "iShares MSCI Singapore ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10383,7 +10383,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HLAL", name: "Wahed FTSE USA Shariah ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10394,7 +10394,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "PBW", name: "Invesco WilderHill Clean Energy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10405,7 +10405,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SPUS", name: "SP Funds S&P 500 Sharia Industry Exclusions ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10416,7 +10416,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARKW", name: "ARK Next Generation Internet ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10427,7 +10427,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VNM", name: "VanEck Vietnam ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10438,7 +10438,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ROBO", name: "Robo Global Robotics and Automation Index ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10449,7 +10449,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWQ", name: "iShares MSCI France ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10460,7 +10460,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VOOG", name: "Vanguard S&P 500 Growth Index Fund ETF Shares", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10471,7 +10471,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWI", name: "iShares MSCI Italy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10482,7 +10482,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "VUSB", name: "Vanguard Ultra-Short Bond ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10493,7 +10493,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SDIV", name: "Global X SuperDividend ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10504,7 +10504,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "THD", name: "iShares MSCI Thailand ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10515,7 +10515,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "MGK", name: "Vanguard Mega Cap Growth Index Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10526,7 +10526,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "FLRN", name: "State Street SPDR Bloomberg Investment Grade Floating Rate ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10537,7 +10537,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QDTE", name: "Roundhill Innovation-100 0DTE Covered Call Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10548,7 +10548,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARKF", name: "ARK Blockchain & Fintech Innovation ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10559,7 +10559,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BITQ", name: "Bitwise Crypto Industry Innovators ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10570,7 +10570,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "USOI", name: "UBS ETRACS Crude Oil Shares Covered Call ETN", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10581,7 +10581,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWP", name: "iShares MSCI Spain ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10592,7 +10592,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "WEAT", name: "Teucrium Wheat Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10603,7 +10603,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IXN", name: "iShares Global Tech ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10614,7 +10614,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "HACK", name: "Amplify Cybersecurity ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10625,7 +10625,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "BTCO", name: "Invesco Galaxy Bitcoin ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10636,7 +10636,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARGT", name: "Global X MSCI Argentina ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10647,7 +10647,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EZA", name: "iShares MSCI South Africa ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10658,7 +10658,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARKQ", name: "ARK Autonomous Technology & Robotics ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10669,7 +10669,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "EWM", name: "iShares MSCI Malaysia ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10680,7 +10680,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ESPO", name: "VanEck Video Gaming and eSports ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10691,7 +10691,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "AMDY", name: "YieldMax AMD Option Income Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10702,7 +10702,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARKG", name: "ARK Genomic Revolution ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10713,7 +10713,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "RDTE", name: "Roundhill Russell 2000 0DTE Covered Call Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10724,7 +10724,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KTEC", name: "KraneShares Hang Seng TECH Index ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10735,7 +10735,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GSG", name: "iShares S&P GSCI Commodity-Indexed Trust", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10746,7 +10746,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "IDRV", name: "iShares Self-Driving EV and Tech ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10757,7 +10757,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "QDTY", name: "YieldMax Nasdaq 100 0DTE Covered Call Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10768,7 +10768,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "NVDW", name: "Roundhill ETF Trust - Roundhill NVDA WeeklyPay ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10779,7 +10779,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CORN", name: "Teucrium Corn Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10790,7 +10790,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "CTEC", name: "Global X ClimateTech ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10801,7 +10801,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "SOYB", name: "Teucrium Soybean Fund", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10812,7 +10812,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "KARS", name: "KraneShares Electric Vehicles and Future Mobility Index ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10823,7 +10823,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ARKX", name: "ARK Space & Defense Innovation ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10834,7 +10834,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "ASEA", name: "Global X FTSE Southeast Asia ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10845,7 +10845,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "XDTE", name: "Roundhill S&P 500 0DTE Covered Call Strategy ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
@@ -10856,7 +10856,7 @@ window.STOCK_UNIVERSE = [
   {
     ticker: "GPTY", name: "YieldMax AI & Tech Portfolio Option Income ETF", sector: "Other",
     ethics: {
-      israelTie: "none"
+      israelTie: "none",
       rationale: "ETF / dana indeks — tidak mengikat ke satu perusahaan spesifik, bukan target boikot BDS.",
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"

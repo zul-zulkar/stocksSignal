@@ -988,8 +988,8 @@ def patch_block(block: str, tie: str, rationale: str, sources: list[str]) -> str
     src_str = ", ".join(f'"{js_escape(s)}"' for s in sources)
 
     block = re.sub(
-        r'israelTie:\s*"unknown".*',
-        f'israelTie: "{tie}"',
+        r'israelTie:\s*"unknown"[^\n]*',
+        f'israelTie: "{tie}",',
         block,
     )
     block = re.sub(
