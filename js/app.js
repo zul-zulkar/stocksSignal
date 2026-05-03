@@ -301,6 +301,72 @@ function populateSectorFilter() {
 }
 
 // ---------- Modal detail ----------
+// ---------- Radar chart (pure SVG) ----------
+function radarChart(signals, size) {
+  size = size || 200;
+  const cx = size / 2, cy = size / 2, R = size * 0.38;
+  const keys   = ["technical","momentum","sentiment","news","policy","profile","valuation"];
+  const labels = ["Teknikal","Momentum","Sentimen","Berita","Makro","Kualitas","Valuasi"];
+  const N = keys.length;
+  const angles = keys.map((_, i) => -Math.PI / 2 + (Math.PI * 2 * i / N));
+  const norm = v => Math.max(0.02, Math.min(1, (v + 100) / 200));
+
+  const gridLevels = [0.25, 0.5, 0.75, 1];
+  const grid = gridLevels.map(r => {
+    const pts = angles.map(a => (cx + r * R * Math.cos(a)).toFixed(1) + "," + (cy + r * R * Math.sin(a)).toFixed(1)).join(" ");
+    return '<polygon points="' + pts + '" fill="none" stroke="#262c3a" stroke-width="' + (r === 1 ? "1.2" : "0.8") + '"/>';
+  }).join("");
+
+  const axes = angles.map(a => {
+    const x2 = (cx + R * Math.cos(a)).toFixed(1);
+    const y2 = (cy + R * Math.sin(a)).toFixed(1);
+    return '<line x1="' + cx + '" y1="' + cy + '" x2="' + x2 + '" y2="' + y2 + '" stroke="#262c3a" stroke-width="0.8"/>';
+  }).join("");
+
+  const dataPts = keys.map((k, i) => {
+    const v = norm(signals[k] || 0);
+    return (cx + v * R * Math.cos(angles[i])).toFixed(1) + "," + (cy + v * R * Math.sin(angles[i])).toFixed(1);
+  }).join(" ");
+  const dataPolygon = '<polygon points="' + dataPts + '" fill="rgba(74,222,128,0.18)" stroke="#4ade80" stroke-width="1.5" stroke-linejoin="round"/>';
+
+  const dots = keys.map((k, i) => {
+    const v = norm(signals[k] || 0);
+    const x = (cx + v * R * Math.cos(angles[i])).toFixed(1);
+    const y = (cy + v * R * Math.sin(angles[i])).toFixed(1);
+    return '<circle cx="' + x + '" cy="' + y + '" r="3" fill="#4ade80" stroke="#0f1117" stroke-width="1.2"/>';
+  }).join("");
+
+  const labelOffset = size * 0.145;
+  const lblEls = labels.map((l, i) => {
+    const x = (cx + (R + labelOffset) * Math.cos(angles[i])).toFixed(1);
+    const y = (cy + (R + labelOffset) * Math.sin(angles[i])).toFixed(1);
+    const score = signals[keys[i]] || 0;
+    const col = score > 20 ? "#4ade80" : score < -20 ? "#ef4444" : "#8a93a6";
+    return '<text x="' + x + '" y="' + y + '" text-anchor="middle" dominant-baseline="middle" fill="' + col + '" font-size="' + (size * 0.048) + '" font-family="sans-serif" font-weight="600">' + l + '</text>';
+  }).join("");
+
+  return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 ' + size + ' ' + size + '">' + grid + axes + dataPolygon + dots + lblEls + '</svg>';
+}
+
+// ---------- TradingView mini chart ----------
+function tvChart(ticker) {
+  const sym = encodeURIComponent(ticker.replace(".", "-"));
+  const src = "https://www.tradingview.com/mini-symbol-overview/?symbol=" + sym + "&theme=dark&interval=W&hide_legend=false";
+  return '<div class="tv-chart-wrap"><iframe src="' + src + '" allowtransparency="true" frameborder="0" scrolling="no" loading="lazy"></iframe></div>'
+       + '<div class="tv-note">Grafik dari TradingView · Membutuhkan koneksi internet</div>';
+}
+
+// ---------- Fund table row helper ----------
+function fundRow(label, value, sub) {
+  const tr = el("tr", {}, [
+    el("td", {}, label),
+    el("td", {}, sub
+      ? [value, el("span", { className: "td-sub" }, sub)]
+      : value),
+  ]);
+  return tr;
+}
+
 function signalDetailRow(key, score) {
   const meta = SIGNAL_META[key] || { label: key };
   const { pct, color } = signalBar(score);
@@ -322,34 +388,105 @@ function signalDetailRow(key, score) {
 }
 
 function openDetail(stock) {
-  const adj = ethicsAdjustedScore(stock, state.mode);
-  const badge = ethicsBadge(stock.ethics.israelTie);
-  const f = stock.fundamentals;
-  const s = stock.signals;
+  const adj       = ethicsAdjustedScore(stock, state.mode);
+  const badge     = ethicsBadge(stock.ethics.israelTie);
+  const f         = stock.fundamentals;
+  const s         = stock.signals;
+  const composite = compositeSignal(stock);
+
+  // Header
   $("#modal-title").textContent = stock.ticker + " — " + stock.name;
   const body = $("#modal-body");
   body.innerHTML = "";
 
-  // Etika
+  // Subtitle (sector)
+  body.append(el("div", { className: "modal-sector" }, stock.sector));
+
+  // Score header strip
+  const scoreColor = v => v >= 60 ? "up" : v >= 40 ? "flat" : "down";
   body.append(
-    el("div", { className: "section" }, [
-      el("h4", {}, "Status Etika"),
-      el("span", { className: "badge badge-" + badge.color }, badge.label),
-      el("p", {}, stock.ethics.rationale),
-      el("div", { className: "note" }, "Sumber: " + stock.ethics.sources.join(" · ")),
+    el("div", { className: "modal-score-header" }, [
+      el("div", { className: "msh-item" }, [
+        el("div", { className: "msh-val " + scoreColor(composite) }, String(composite)),
+        el("div", { className: "msh-lbl" }, "Komposit"),
+      ]),
+      el("div", { className: "msh-item" }, [
+        el("div", { className: "msh-val " + (adj === null ? "excl" : scoreColor(adj)) }, adj === null ? "✗" : String(adj)),
+        el("div", { className: "msh-lbl" }, "Etis (" + state.mode + ")"),
+      ]),
+      el("div", { className: "msh-item" }, [
+        el("span", { className: "badge badge-" + badge.color }, badge.label),
+        el("div", { className: "msh-lbl" }, "Etika"),
+      ]),
+      el("div", { className: "msh-item" }, [
+        el("div", { className: "msh-val flat" }, f.marketCapB >= 1 ? "$" + f.marketCapB + "B" : "—"),
+        el("div", { className: "msh-lbl" }, "Mkt Cap"),
+      ]),
     ])
   );
 
-  // Sinyal detail — 7 faktor
-  const sigSection = el("div", { className: "section" });
-  sigSection.append(el("h4", {}, "Sinyal Detail (−100 … +100)"));
-  for (const key of ["technical","momentum","sentiment","news","policy","profile","valuation"]) {
-    sigSection.append(signalDetailRow(key, s[key] || 0));
+  // Tab nav
+  const tabLabels = ["Ringkasan", "Grafik Harga", "Detail Sinyal", "Profil & Etika"];
+  const tabNav    = el("div", { className: "modal-tabs" });
+  const panels    = [];
+
+  function switchTab(i) {
+    tabNav.querySelectorAll(".tab-btn").forEach((b, j) => b.classList.toggle("active", j === i));
+    panels.forEach((p, j) => p.style.display = j === i ? "" : "none");
   }
-  // Skor komposit
-  const composite = compositeSignal(stock);
-  sigSection.append(
-    el("div", { className: "composite-row" }, [
+  tabLabels.forEach((lbl, i) => {
+    const btn = el("button", { className: "tab-btn" + (i === 0 ? " active" : ""), onClick: () => switchTab(i) }, lbl);
+    tabNav.append(btn);
+  });
+  body.append(tabNav);
+
+  // ── Panel 0: Ringkasan ────────────────────────────────────
+  const p0 = el("div", { className: "tab-panel" });
+  const radarDiv = el("div", { className: "radar-wrap" });
+  radarDiv.innerHTML = radarChart(s, 220);
+  p0.append(radarDiv);
+  p0.append(el("div", { className: "composite-row" }, [
+    el("span", {}, "Sinyal tertinggi: "),
+    el("strong", {}, (() => {
+      const best = Object.entries(s).reduce((a, b) => b[1] > a[1] ? b : a);
+      const meta = SIGNAL_META[best[0]] || { label: best[0] };
+      return meta.label + " (" + (best[1] >= 0 ? "+" : "") + best[1] + ")";
+    })()),
+  ]));
+  p0.append(el("div", { className: "composite-row" }, [
+    el("span", {}, "Sinyal terendah: "),
+    el("strong", {}, (() => {
+      const worst = Object.entries(s).reduce((a, b) => b[1] < a[1] ? b : a);
+      const meta  = SIGNAL_META[worst[0]] || { label: worst[0] };
+      return meta.label + " (" + (worst[1] >= 0 ? "+" : "") + worst[1] + ")";
+    })()),
+  ]));
+  p0.append(
+    el("a", {
+      href: "compare.html?a=" + encodeURIComponent(stock.ticker),
+      className: "compare-link-btn",
+    }, ["⚖ Bandingkan " + stock.ticker + " dengan saham lain"])
+  );
+  panels.push(p0);
+
+  // ── Panel 1: Grafik Harga ─────────────────────────────────
+  const p1 = el("div", { className: "tab-panel", style: "display:none" });
+  p1.innerHTML = tvChart(stock.ticker);
+  panels.push(p1);
+
+  // ── Panel 2: Detail Sinyal ────────────────────────────────
+  const p2 = el("div", { className: "tab-panel", style: "display:none" });
+  p2.append(el("div", { className: "note" }, "Skala −100 (sangat bearish) hingga +100 (sangat bullish). Klik baris untuk deskripsi."));
+  const SIGNAL_KEYS = ["technical","momentum","sentiment","news","policy","profile","valuation"];
+  for (const key of SIGNAL_KEYS) {
+    const row = signalDetailRow(key, s[key] || 0);
+    if ((s[key] || 0) === Math.max(...SIGNAL_KEYS.map(k => s[k] || 0))) {
+      row.classList.add("highlight");
+    }
+    p2.append(row);
+  }
+  p2.append(
+    el("div", { className: "composite-row", style: "margin-top:14px; padding-top:10px; border-top:1px solid var(--border)" }, [
       el("span", {}, "Skor komposit (0–100):"),
       el("strong", {}, " " + composite),
     ]),
@@ -358,23 +495,50 @@ function openDetail(stock) {
       el("strong", {}, " " + (adj === null ? "DIKECUALIKAN" : adj)),
     ])
   );
-  body.append(sigSection);
+  panels.push(p2);
 
-  // Fundamental
-  body.append(
+  // ── Panel 3: Profil & Etika ───────────────────────────────
+  const p3 = el("div", { className: "tab-panel", style: "display:none" });
+
+  // Ethics
+  p3.append(
     el("div", { className: "section" }, [
-      el("h4", {}, "Fundamental"),
-      el("ul", {}, [
-        el("li", {}, "Market cap: $" + f.marketCapB + "B"),
-        el("li", {}, "Dividen yield: " + (f.dividendYield ? f.dividendYield.toFixed(2) + "%" : "—")),
-        el("li", {}, "Payout ratio: " + (f.payoutRatio ? f.payoutRatio + "%" : "—")),
-      ]),
-    ]),
-    el("div", { className: "note" },
-      "Penilaian etika berbasis BDS Movement, AFSC Investigate, Who Profits, laporan 'Don't Buy Into Occupation', dan media kredibel. " +
-      "Sinyal adalah baseline kualitatif — jalankan scripts/fetch_signals.py untuk data live.")
+      el("h4", {}, "Status Etika"),
+      el("div", { style: "margin-bottom:8px" }, el("span", { className: "badge badge-" + badge.color }, badge.label)),
+      el("p", { style: "font-size:13px;line-height:1.6;margin:0 0 8px" }, stock.ethics.rationale),
+      el("div", { className: "note" }, "Sumber: " + (stock.ethics.sources || []).join(" · ")),
+    ])
   );
 
+  // Fundamentals
+  const dy  = f.dividendYield ? f.dividendYield.toFixed(2) + "%" : "—";
+  const pr  = f.payoutRatio   ? f.payoutRatio + "%" : "—";
+  const cap = f.marketCapB >= 1000 ? "$" + (f.marketCapB / 1000).toFixed(2) + "T" : "$" + f.marketCapB + "B";
+  const capCategory = f.marketCapB >= 200 ? "Mega cap" : f.marketCapB >= 10 ? "Large cap" : f.marketCapB >= 2 ? "Mid cap" : "Small cap";
+
+  p3.append(
+    el("div", { className: "section" }, [
+      el("h4", {}, "Fundamental"),
+      el("table", { className: "fund-table" }, [
+        fundRow("Market Cap", cap, capCategory),
+        fundRow("Sektor", stock.sector),
+        fundRow("Dividen Yield", dy, f.dividendYield > 0 ? (f.dividendYield >= 4 ? "Tinggi" : f.dividendYield >= 2 ? "Moderat" : "Rendah") : null),
+        fundRow("Payout Ratio", pr, pr !== "—" && f.payoutRatio <= 60 ? "Aman" : pr !== "—" && f.payoutRatio > 80 ? "Tinggi" : null),
+        fundRow("Kualitas (skor)", (s.profile >= 0 ? "+" : "") + s.profile + " / 100", getSignalDesc("profile", s.profile)),
+        fundRow("Valuasi (skor)",  (s.valuation >= 0 ? "+" : "") + s.valuation + " / 100", getSignalDesc("valuation", s.valuation)),
+      ]),
+    ])
+  );
+
+  p3.append(
+    el("div", { className: "note", style: "margin-top:14px" },
+      "Data sinyal diperbarui oleh scripts/fetch_signals.py (yfinance). " +
+      "Penilaian etika merujuk BDS Movement, AFSC Investigate, Who Profits, OHCHR, dan media kredibel — verifikasi mandiri diperlukan.")
+  );
+  panels.push(p3);
+
+  // Mount panels
+  panels.forEach(p => body.append(p));
   $("#modal-bg").classList.add("show");
 }
 
