@@ -36,12 +36,23 @@ start index.html      # Windows
 
 Atau host gratis di GitHub Pages — dashboard ini fully static (HTML+CSS+JS, tanpa build step).
 
-### 2. (Opsional) Refresh data live
+### 2. Refresh data otomatis (cron)
+Workflow `.github/workflows/refresh-and-deploy.yml` berjalan **4× sehari** mengelilingi jam pasar AS (pre-market, mid-market, jelang close, post-market WIB). Setiap run:
+1. Tarik harga & fundamental dari Yahoo Finance via `yfinance`.
+2. Hitung ulang sinyal **teknikal**, **berita**, **profil**.
+3. Commit perubahan ke `main` (kalau ada diff).
+4. Auto-deploy ke GitHub Pages.
+
+Jadi setiap kali Anda buka URL di HP, data sudah segar (maksimum lag ~6 jam). Badge di header menampilkan status "Segar / Mulai usang / Lama".
+
+Manual trigger juga bisa: tab **Actions** → pilih workflow → **Run workflow**.
+
+### 3. (Opsional) Refresh manual lokal
 ```bash
 pip install -r requirements.txt
 python scripts/fetch_signals.py
 ```
-Script akan menarik data dari Yahoo Finance dan memperbarui sinyal **teknikal**, **berita**, **profil**, plus fundamental (dividen, market cap, payout ratio) di `data/stocks.js`. Sinyal **sentimen** dan **kebijakan** tetap manual karena bersifat kualitatif.
+Berguna kalau ingin menambah ticker baru lalu langsung lihat sinyalnya tanpa menunggu cron.
 
 ### 3. Pakai di Pluang
 - Buka tab **Forever Pocket** di dashboard.
@@ -113,19 +124,36 @@ Penilaian afiliasi Israel mengacu pada laporan publik yang kredibel:
 
 ---
 
+## 🔄 Kenapa scraping tidak di client?
+
+**Singkat: CORS.** Browser memblok JS dari fetch langsung ke Yahoo Finance, Reuters, dll. — server-server itu tidak mengirim header `Access-Control-Allow-Origin: *`. Workaround yang ada semuanya kompromi:
+
+| Pendekatan | Pro | Kontra |
+|------------|-----|--------|
+| **GitHub Actions cron (dipakai di sini)** | Gratis, reliable, audit trail via git, no key terekspos | Refresh tidak real-time (max 4×/hari) |
+| Client + API key (Alpha Vantage dll) | Real-time saat buka halaman | Key kelihatan di DevTools, rate limit ketat (5 req/menit) |
+| Client + CORS proxy publik | Tanpa setup | Proxy bisa mati/lambat, traffic terbaca pihak ketiga |
+| Vercel/Cloudflare Workers proxy | Cepat, key tersembunyi | Butuh akun & setup deploy tambahan |
+| Scrape HTML di browser | — | Diblok same-origin policy, tidak mungkin |
+
+Untuk dashboard yang hanya butuh refresh ~6 jam sekali (saham jangka panjang, bukan day trading), **GitHub Actions cron adalah pilihan paling sehat**. Saham AS tutup malam WIB, jadi refresh post-close sudah cukup untuk keputusan harian.
+
 ## 📁 Struktur file
 
 ```
 .
-├── index.html              # Halaman dashboard
-├── styles.css              # Styling
+├── index.html                              # Halaman dashboard
+├── styles.css                              # Styling (incl. mobile)
 ├── data/
-│   └── stocks.js           # Universe + dataset etika
+│   ├── stocks.js                           # Universe + dataset etika
+│   └── meta.js                             # Timestamp last-refresh (auto-generated)
 ├── js/
-│   ├── signals.js          # Logic skor komposit & filter
-│   └── app.js              # Render UI, sortir, modal
+│   ├── signals.js                          # Logic skor komposit & filter
+│   └── app.js                              # Render UI, sortir, modal
 ├── scripts/
-│   └── fetch_signals.py    # (Opsional) refresh data live
+│   └── fetch_signals.py                    # Refresh data (dipanggil cron)
+├── .github/workflows/
+│   └── refresh-and-deploy.yml              # Cron 4×/hari → scrape → commit → deploy
 ├── requirements.txt
 └── README.md
 ```

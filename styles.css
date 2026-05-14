@@ -51,6 +51,23 @@ header .palestine-flag::before {
   content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px;
   background: #ed2e38; clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
+.freshness {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 10px;
+  font-size: 11px; color: var(--muted);
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+.freshness .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gray);
+  flex-shrink: 0;
+}
+.freshness .dot.fresh { background: var(--green); box-shadow: 0 0 6px var(--green); }
+.freshness .dot.stale { background: var(--yellow); }
+.freshness .dot.old   { background: var(--down); }
 
 main {
   padding: 24px 32px;

@@ -14,6 +14,10 @@
   <header>
     <h1><span class="palestine-flag" aria-hidden="true"></span>Pluang Stock Signal</h1>
     <p>Dashboard sinyal saham AS yang tersedia di Pluang, dengan filter etis terhadap afiliasi Israel dan dukungan kedaulatan Palestina.</p>
+    <div class="freshness" id="freshness" aria-live="polite">
+      <span class="dot" id="freshness-dot"></span>
+      <span id="freshness-text">Memuat status data…</span>
+    </div>
   </header>
 
   <main>
@@ -107,6 +111,7 @@
   </div>
 
   <script src="data/stocks.js"></script>
+  <script src="data/meta.js"></script>
   <script src="js/signals.js"></script>
   <script src="js/app.js"></script>
 </body>

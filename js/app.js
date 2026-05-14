@@ -241,8 +241,44 @@ function openDetail(stock) {
 
 function closeDetail() { $("#modal-bg").classList.remove("show"); }
 
+// ---------- Freshness badge ----------
+function renderFreshness() {
+  const meta = window.STOCK_META || {};
+  const dot = $("#freshness-dot");
+  const txt = $("#freshness-text");
+  if (!meta.lastUpdated) {
+    dot.className = "dot";
+    txt.textContent = "Data baseline · belum di-refresh otomatis";
+    return;
+  }
+  const updated = new Date(meta.lastUpdated);
+  const ageMs = Date.now() - updated.getTime();
+  const ageH = ageMs / 36e5;
+  let bucket = "fresh", label = "Segar";
+  if (ageH > 36) { bucket = "old";   label = "Lama"; }
+  else if (ageH > 12) { bucket = "stale"; label = "Mulai usang"; }
+  dot.className = "dot " + bucket;
+  const rel = relativeTime(ageMs);
+  const failed = (meta.tickersFailed || []).length;
+  txt.textContent =
+    `${label} · diperbarui ${rel} · ${meta.tickersUpdated}/${meta.tickersTotal} ticker` +
+    (failed ? ` · ${failed} gagal` : "");
+}
+
+function relativeTime(ms) {
+  const s = Math.round(ms / 1000);
+  if (s < 60)    return s + " detik lalu";
+  const m = Math.round(s / 60);
+  if (m < 60)    return m + " menit lalu";
+  const h = Math.round(m / 60);
+  if (h < 24)    return h + " jam lalu";
+  const d = Math.round(h / 24);
+  return d + " hari lalu";
+}
+
 // ---------- Wiring ----------
 function init() {
+  renderFreshness();
   populateSectorFilter();
 
   $("#mode-select").addEventListener("change", e => {
