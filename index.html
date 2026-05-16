@@ -14,9 +14,15 @@
   <header>
     <h1><span class="palestine-flag" aria-hidden="true"></span>Pluang Stock Signal</h1>
     <p>Dashboard sinyal saham AS yang tersedia di Pluang, dengan filter etis terhadap afiliasi Israel dan dukungan kedaulatan Palestina.</p>
-    <div class="freshness" id="freshness" aria-live="polite">
-      <span class="dot" id="freshness-dot"></span>
-      <span id="freshness-text">Memuat status data…</span>
+    <div class="header-actions">
+      <div class="freshness" id="freshness" aria-live="polite">
+        <span class="dot" id="freshness-dot"></span>
+        <span id="freshness-text">Memuat status data…</span>
+      </div>
+      <button class="refresh-btn" id="refresh-btn" aria-label="Refresh data dari Stooq">
+        <span class="ico" aria-hidden="true">↻</span>
+        <span class="lbl">Refresh</span>
+      </button>
     </div>
   </header>
 
@@ -101,7 +107,7 @@
     <strong>Disclaimer.</strong> Dashboard ini disusun untuk membantu pengguna menyaring saham berdasar kriteria etis pribadi (afiliasi Israel) dan agregasi sinyal publik. <em>Bukan</em> nasihat investasi atau fatwa keagamaan. Penilaian etika merujuk pada laporan publik BDS Movement, AFSC Investigate, Who Profits Research Center, laporan PBB OHCHR, dan media kredibel — kondisi perusahaan bisa berubah, lakukan verifikasi mandiri. Sinyal default bersifat baseline kualitatif; untuk data live jalankan <code>scripts/fetch_signals.py</code>.
   </div>
 
-  <!-- Modal -->
+  <!-- Modal detail saham -->
   <div class="modal-bg" id="modal-bg">
     <div class="modal">
       <button class="close" id="modal-close" aria-label="Tutup">×</button>
@@ -110,9 +116,47 @@
     </div>
   </div>
 
+  <!-- Modal PAT setup -->
+  <div class="modal-bg" id="pat-modal-bg">
+    <div class="modal">
+      <h3>Setup GitHub Token</h3>
+      <p id="pat-reason" class="note"></p>
+      <div class="section">
+        <h4>Langkah</h4>
+        <ol style="margin: 6px 0 0 18px; padding: 0; font-size: 13px; line-height: 1.7;">
+          <li>Buka <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
+          <li><strong>Repository access:</strong> Only select repositories → <code>zul-zulkar/stocksSignal</code></li>
+          <li><strong>Permissions → Repository → Contents:</strong> Read and write</li>
+          <li>Generate token, salin (mulai dengan <code>github_pat_</code>)</li>
+          <li>Paste di bawah</li>
+        </ol>
+      </div>
+      <div class="section">
+        <label style="display:block;">
+          <span style="color: var(--muted); font-size: 12px;">Personal Access Token</span>
+          <input type="password" id="pat-input" placeholder="github_pat_…" autocomplete="off" spellcheck="false"
+                 style="width:100%; margin-top: 4px; background: var(--panel-2); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 14px; font-family: monospace;" />
+        </label>
+      </div>
+      <div class="section pat-actions">
+        <button class="btn-primary" id="pat-save">Simpan</button>
+        <button class="btn-secondary" id="pat-cancel">Batal</button>
+        <button class="btn-danger" id="pat-forget">Lupakan PAT</button>
+      </div>
+      <p class="note" style="margin-top: 14px;">
+        Token disimpan di <code>localStorage</code> HP ini saja. Tidak dikirim ke server lain selain api.github.com. Tap <em>Lupakan PAT</em> kalau HP hilang/dipinjam.
+      </p>
+    </div>
+  </div>
+
+  <!-- Toast progress / status -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   <script src="data/stocks.js"></script>
+  <script src="data/signals-overlay.js"></script>
   <script src="data/meta.js"></script>
   <script src="js/signals.js"></script>
+  <script src="js/refresh.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

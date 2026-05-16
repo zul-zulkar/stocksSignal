@@ -241,6 +241,75 @@ function openDetail(stock) {
 
 function closeDetail() { $("#modal-bg").classList.remove("show"); }
 
+// ---------- Refresh client-side ----------
+function showToast(text, kind = "info") {
+  const t = $("#toast");
+  t.textContent = text;
+  t.className = "toast show " + kind;
+}
+function hideToast(delay = 0) {
+  setTimeout(() => $("#toast").classList.remove("show"), delay);
+}
+
+function openPATModal(prefillReason) {
+  $("#pat-reason").textContent = prefillReason || "";
+  $("#pat-input").value = window.REFRESH_LIB.getPAT() || "";
+  $("#pat-modal-bg").classList.add("show");
+  setTimeout(() => $("#pat-input").focus(), 100);
+}
+function closePATModal() { $("#pat-modal-bg").classList.remove("show"); }
+
+async function doRefresh() {
+  const lib = window.REFRESH_LIB;
+  const pat = lib.getPAT();
+  if (!pat) { openPATModal("Untuk commit hasil refresh ke GitHub, paste fine-grained PAT dulu."); return; }
+  const btn = $("#refresh-btn");
+  btn.disabled = true; btn.classList.add("loading");
+  showToast("Mengambil data 0/" + window.STOCK_UNIVERSE.length + "…", "info");
+  try {
+    const tickers = window.STOCK_UNIVERSE.map(s => s.ticker);
+    const { overlay, failed } = await lib.refreshAll(tickers, (done, total, failedCount) => {
+      showToast(`Mengambil data ${done}/${total}${failedCount ? ` · ${failedCount} gagal` : ""}…`, "info");
+    });
+    const updated = Object.keys(overlay).length;
+    if (updated === 0) {
+      showToast("Tidak ada data yang berhasil. Cek koneksi atau ticker.", "error");
+      hideToast(4000); return;
+    }
+    showToast(`Commit ke GitHub… (${updated} ticker)`, "info");
+    const meta = {
+      lastUpdated: new Date().toISOString(),
+      tickersTotal: tickers.length,
+      tickersUpdated: updated,
+      tickersFailed: failed,
+      source: "Stooq (browser refresh)"
+    };
+    await lib.commitOverlay(pat, overlay, meta);
+    // Apply ke memory + re-render
+    window.SIGNAL_OVERLAY = overlay;
+    window.STOCK_META = meta;
+    lib.applyOverlay();
+    renderFreshness();
+    renderKPIs();
+    renderForever();
+    renderTable();
+    showToast(`Selesai · ${updated} ter-refresh${failed.length ? ` · ${failed.length} gagal` : ""}. Pages re-deploy ~1 menit.`, "success");
+    hideToast(5000);
+  } catch (err) {
+    console.error(err);
+    if (/PAT/i.test(err.message)) {
+      showToast(err.message, "error");
+      hideToast(5000);
+      openPATModal(err.message);
+    } else {
+      showToast("Gagal: " + err.message, "error");
+      hideToast(6000);
+    }
+  } finally {
+    btn.disabled = false; btn.classList.remove("loading");
+  }
+}
+
 // ---------- Freshness badge ----------
 function renderFreshness() {
   const meta = window.STOCK_META || {};
@@ -278,8 +347,30 @@ function relativeTime(ms) {
 
 // ---------- Wiring ----------
 function init() {
+  window.REFRESH_LIB.applyOverlay();
   renderFreshness();
   populateSectorFilter();
+
+  $("#refresh-btn").addEventListener("click", doRefresh);
+  $("#pat-save").addEventListener("click", () => {
+    const v = $("#pat-input").value.trim();
+    if (!v) return;
+    window.REFRESH_LIB.setPAT(v);
+    closePATModal();
+    showToast("PAT tersimpan di HP ini. Tap Refresh lagi.", "success");
+    hideToast(3000);
+  });
+  $("#pat-forget").addEventListener("click", () => {
+    window.REFRESH_LIB.clearPAT();
+    $("#pat-input").value = "";
+    showToast("PAT dihapus dari HP ini.", "info");
+    hideToast(2500);
+    closePATModal();
+  });
+  $("#pat-cancel").addEventListener("click", closePATModal);
+  $("#pat-modal-bg").addEventListener("click", e => {
+    if (e.target.id === "pat-modal-bg") closePATModal();
+  });
 
   $("#mode-select").addEventListener("change", e => {
     state.mode = e.target.value; renderTable();
