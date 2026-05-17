@@ -1,7 +1,9 @@
 // =====================================================================
 // Client-side refresh: Stooq → recompute technical → commit ke GitHub
 // =====================================================================
-// Sumber data: https://stooq.com/q/d/l/?s=<sym>.us&i=d (CSV, ber-CORS)
+// Sumber data: https://stooq.com/q/d/l/?s=<sym>.us&i=d (CSV)
+// Stooq TIDAK mengirim CORS headers, jadi fetch via CORS proxy publik
+// (corsproxy.io, fallback allorigins.win).
 // Commit via GitHub Contents API menggunakan PAT yang disimpan di localStorage.
 // Port matematika sinyal teknikal dari scripts/fetch_signals.py.
 // =====================================================================
@@ -84,22 +86,53 @@
     return { closes, lastDate };
   }
 
+  // Stooq tidak punya CORS, jadi rangkai via CORS proxy publik.
+  // Urutan dicoba: direct (jarang sukses), corsproxy.io, allorigins.win.
+  function proxyVariants(stooqUrl) {
+    const enc = encodeURIComponent(stooqUrl);
+    return [
+      stooqUrl,
+      "https://corsproxy.io/?url=" + enc,
+      "https://api.allorigins.win/raw?url=" + enc,
+      "https://api.codetabs.com/v1/proxy?quest=" + enc
+    ];
+  }
+
   async function fetchStooqHistory(ticker, signal) {
     const sym = stooqSymbol(ticker);
-    const url = `https://stooq.com/q/d/l/?s=${sym}&i=d`;
-    const res = await fetch(url, { signal, cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const csv = await res.text();
-    if (csv.startsWith("<") || csv.includes("No data")) {
-      throw new Error("no data");
+    const stooqUrl = `https://stooq.com/q/d/l/?s=${sym}&i=d`;
+    let lastErr = null;
+    for (const url of proxyVariants(stooqUrl)) {
+      try {
+        const res = await fetch(url, { signal, cache: "no-store" });
+        if (!res.ok) { lastErr = new Error(`HTTP ${res.status} via ${hostOf(url)}`); continue; }
+        const csv = await res.text();
+        if (!csv || csv.startsWith("<") || csv.includes("No data") || csv.length < 50) {
+          lastErr = new Error(`empty/HTML response via ${hostOf(url)}`);
+          continue;
+        }
+        const parsed = parseStooqCSV(csv);
+        if (parsed.closes.length < 1) {
+          lastErr = new Error(`parse failed via ${hostOf(url)}`);
+          continue;
+        }
+        return parsed;
+      } catch (e) {
+        lastErr = e instanceof Error ? e : new Error(String(e));
+      }
     }
-    return parseStooqCSV(csv);
+    throw lastErr || new Error("all proxies failed");
+  }
+
+  function hostOf(u) {
+    try { return new URL(u).host; } catch { return "?"; }
   }
 
   // ---------- Refresh orchestrator ----------
   async function refreshAll(tickers, onProgress) {
     const overlay = {};
     const failed = [];
+    const errors = [];
     const batchSize = 5;
     let done = 0;
     for (let i = 0; i < tickers.length; i += batchSize) {
@@ -117,13 +150,19 @@
           };
         } else {
           failed.push(ticker);
+          const reason = r.status === "rejected"
+            ? (r.reason && r.reason.message) || String(r.reason)
+            : `closes=${r.value && r.value.closes.length}`;
+          errors.push({ ticker, reason });
+          if (errors.length <= 5) console.warn(`[refresh] ${ticker}: ${reason}`);
         }
       });
       done += batch.length;
       if (onProgress) onProgress(done, tickers.length, failed.length);
       if (i + batchSize < tickers.length) await new Promise(r => setTimeout(r, 200));
     }
-    return { overlay, failed };
+    const firstError = errors[0] || null;
+    return { overlay, failed, errors, firstError };
   }
 
   // ---------- GitHub Contents API ----------
