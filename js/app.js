@@ -166,34 +166,38 @@ function renderRow(stock) {
   ]);
 }
 
-// ---------- Mobile card ----------
+function miniSig(label, score) {
+  const cls = score > 20 ? "up" : score < -20 ? "down" : "flat";
+  return el("div", { className: "sig " + cls }, [
+    el("div", { className: "lbl" }, label),
+    el("div", { className: "val" }, (score >= 0 ? "+" : "") + score)
+  ]);
+}
+
 function renderMobileCard(stock) {
   const adj = ethicsAdjustedScore(stock, state.mode);
   if (adj === null) return null;
   const badge = ethicsBadge(stock.ethics.israelTie);
   const s = stock.signals;
-  const card = el("div", { className: "stock-card", onClick: () => openDetail(stock) });
-  card.append(
+  return el("div", { className: "stock-card", onClick: () => openDetail(stock) }, [
     el("div", { className: "row1" }, [
       el("span", { className: "ticker" }, stock.ticker),
-      el("span", { className: "card-score" }, String(adj)),
+      el("span", { className: "score" }, String(adj))
     ]),
     el("div", { className: "row2" }, [
-      el("span", { className: "cname" }, stock.name),
-      el("span", { className: "badge badge-" + badge.color }, badge.label),
+      el("span", { className: "name" }, stock.name),
+      el("span", { className: "badge badge-" + badge.color }, badge.label)
     ]),
     el("div", { className: "signals-mini" }, [
-      miniSig("Tek",  s.technical),
-      miniSig("Mom",  s.momentum  || 0),
-      miniSig("Kual", s.profile),
-      miniSig("Val",  s.valuation || 0),
-      miniSig("Makro", s.policy),
+      miniSig("Tek", s.technical),
+      miniSig("Sen", s.sentiment),
+      miniSig("Ber", s.news),
+      miniSig("Keb", s.policy),
+      miniSig("Pro", s.profile)
     ])
-  );
-  return card;
+  ]);
 }
 
-// ---------- Filters & sort ----------
 function applyFilters(universe) {
   return universe.filter(s => {
     if (state.sector !== "ALL" && s.sector !== state.sector) return false;
@@ -240,22 +244,28 @@ function updateSortUI() {
 // ---------- Render ----------
 function renderTable() {
   const tbody = $("#stocks-tbody");
-  const mobileList = $("#stocks-mobile");
+  const mobile = $("#stocks-mobile");
   tbody.innerHTML = "";
-  mobileList.innerHTML = "";
-  const sorted = sortRows(applyFilters(window.STOCK_UNIVERSE));
+  mobile.innerHTML = "";
+  const filtered = applyFilters(window.STOCK_UNIVERSE);
+  const sorted = sortRows(filtered);
   let visible = 0;
   for (const s of sorted) {
     const row = renderRow(s);
-    if (row) {
-      tbody.append(row);
-      const card = renderMobileCard(s);
-      if (card) mobileList.append(card);
-      visible++;
-    }
+    const card = renderMobileCard(s);
+    if (row)  { tbody.append(row);   visible++; }
+    if (card) mobile.append(card);
+  }
+  if (!visible) {
+    mobile.append(el("div", { className: "stocks-empty" },
+      "Tidak ada saham yang cocok dengan filter."));
   }
   $("#kpi-visible").textContent = visible;
-  updateSortUI();
+  // Update sort indicators
+  document.querySelectorAll("th[data-sort]").forEach(th => {
+    th.classList.toggle("sorted", th.dataset.sort === state.sortKey);
+    th.classList.toggle("asc", th.dataset.sort === state.sortKey && state.sortDir === "asc");
+  });
 }
 
 function renderKPIs() {
@@ -553,9 +563,136 @@ function openDetail(stock) {
 
 function closeDetail() { $("#modal-bg").classList.remove("show"); }
 
-// ---------- Init ----------
+// ---------- Refresh client-side ----------
+function showToast(text, kind = "info") {
+  const t = $("#toast");
+  t.textContent = text;
+  t.className = "toast show " + kind;
+}
+function hideToast(delay = 0) {
+  setTimeout(() => $("#toast").classList.remove("show"), delay);
+}
+
+function openPATModal(prefillReason) {
+  $("#pat-reason").textContent = prefillReason || "";
+  $("#pat-input").value = window.REFRESH_LIB.getPAT() || "";
+  $("#pat-modal-bg").classList.add("show");
+  setTimeout(() => $("#pat-input").focus(), 100);
+}
+function closePATModal() { $("#pat-modal-bg").classList.remove("show"); }
+
+async function doRefresh() {
+  const lib = window.REFRESH_LIB;
+  const pat = lib.getPAT();
+  if (!pat) { openPATModal("Untuk commit hasil refresh ke GitHub, paste fine-grained PAT dulu."); return; }
+  const btn = $("#refresh-btn");
+  btn.disabled = true; btn.classList.add("loading");
+  showToast("Mengambil data 0/" + window.STOCK_UNIVERSE.length + "…", "info");
+  try {
+    const tickers = window.STOCK_UNIVERSE.map(s => s.ticker);
+    const { overlay, failed } = await lib.refreshAll(tickers, (done, total, failedCount) => {
+      showToast(`Mengambil data ${done}/${total}${failedCount ? ` · ${failedCount} gagal` : ""}…`, "info");
+    });
+    const updated = Object.keys(overlay).length;
+    if (updated === 0) {
+      showToast("Tidak ada data yang berhasil. Cek koneksi atau ticker.", "error");
+      hideToast(4000); return;
+    }
+    showToast(`Commit ke GitHub… (${updated} ticker)`, "info");
+    const meta = {
+      lastUpdated: new Date().toISOString(),
+      tickersTotal: tickers.length,
+      tickersUpdated: updated,
+      tickersFailed: failed,
+      source: "Stooq (browser refresh)"
+    };
+    await lib.commitOverlay(pat, overlay, meta);
+    // Apply ke memory + re-render
+    window.SIGNAL_OVERLAY = overlay;
+    window.STOCK_META = meta;
+    lib.applyOverlay();
+    renderFreshness();
+    renderKPIs();
+    renderForever();
+    renderTable();
+    showToast(`Selesai · ${updated} ter-refresh${failed.length ? ` · ${failed.length} gagal` : ""}. Pages re-deploy ~1 menit.`, "success");
+    hideToast(5000);
+  } catch (err) {
+    console.error(err);
+    if (/PAT/i.test(err.message)) {
+      showToast(err.message, "error");
+      hideToast(5000);
+      openPATModal(err.message);
+    } else {
+      showToast("Gagal: " + err.message, "error");
+      hideToast(6000);
+    }
+  } finally {
+    btn.disabled = false; btn.classList.remove("loading");
+  }
+}
+
+// ---------- Freshness badge ----------
+function renderFreshness() {
+  const meta = window.STOCK_META || {};
+  const dot = $("#freshness-dot");
+  const txt = $("#freshness-text");
+  if (!meta.lastUpdated) {
+    dot.className = "dot";
+    txt.textContent = "Data baseline · belum di-refresh otomatis";
+    return;
+  }
+  const updated = new Date(meta.lastUpdated);
+  const ageMs = Date.now() - updated.getTime();
+  const ageH = ageMs / 36e5;
+  let bucket = "fresh", label = "Segar";
+  if (ageH > 36) { bucket = "old";   label = "Lama"; }
+  else if (ageH > 12) { bucket = "stale"; label = "Mulai usang"; }
+  dot.className = "dot " + bucket;
+  const rel = relativeTime(ageMs);
+  const failed = (meta.tickersFailed || []).length;
+  txt.textContent =
+    `${label} · diperbarui ${rel} · ${meta.tickersUpdated}/${meta.tickersTotal} ticker` +
+    (failed ? ` · ${failed} gagal` : "");
+}
+
+function relativeTime(ms) {
+  const s = Math.round(ms / 1000);
+  if (s < 60)    return s + " detik lalu";
+  const m = Math.round(s / 60);
+  if (m < 60)    return m + " menit lalu";
+  const h = Math.round(m / 60);
+  if (h < 24)    return h + " jam lalu";
+  const d = Math.round(h / 24);
+  return d + " hari lalu";
+}
+
+// ---------- Wiring ----------
 function init() {
+  window.REFRESH_LIB.applyOverlay();
+  renderFreshness();
   populateSectorFilter();
+
+  $("#refresh-btn").addEventListener("click", doRefresh);
+  $("#pat-save").addEventListener("click", () => {
+    const v = $("#pat-input").value.trim();
+    if (!v) return;
+    window.REFRESH_LIB.setPAT(v);
+    closePATModal();
+    showToast("PAT tersimpan di HP ini. Tap Refresh lagi.", "success");
+    hideToast(3000);
+  });
+  $("#pat-forget").addEventListener("click", () => {
+    window.REFRESH_LIB.clearPAT();
+    $("#pat-input").value = "";
+    showToast("PAT dihapus dari HP ini.", "info");
+    hideToast(2500);
+    closePATModal();
+  });
+  $("#pat-cancel").addEventListener("click", closePATModal);
+  $("#pat-modal-bg").addEventListener("click", e => {
+    if (e.target.id === "pat-modal-bg") closePATModal();
+  });
 
   $("#mode-select").addEventListener("change", e => {
     state.mode = e.target.value; renderTable(); renderForever();
@@ -571,11 +708,25 @@ function init() {
     state.sortKey = key; state.sortDir = dir; renderTable();
   });
 
+  $("#sort-select").addEventListener("change", e => {
+    const [k, d] = e.target.value.split("-");
+    state.sortKey = k;
+    state.sortDir = d;
+    renderTable();
+  });
+
   document.querySelectorAll("th[data-sort]").forEach(th => {
     th.addEventListener("click", () => {
       const k = th.dataset.sort;
-      if (state.sortKey === k) state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
-      else { state.sortKey = k; state.sortDir = "desc"; }
+      if (state.sortKey === k) {
+        state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+      } else {
+        state.sortKey = k; state.sortDir = "desc";
+      }
+      // Sync sort dropdown
+      const sel = $("#sort-select");
+      const v = state.sortKey + "-" + state.sortDir;
+      if ([...sel.options].some(o => o.value === v)) sel.value = v;
       renderTable();
     });
   });

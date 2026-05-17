@@ -1,0 +1,84 @@
+name: Auto-refresh data & deploy
+
+# Cron menarik data terbaru dari Yahoo Finance lalu deploy ke Pages.
+# Jadwal: 4× sehari di sekitar jam buka/tutup pasar AS (UTC).
+# Jam pasar AS: 14:30-21:00 UTC (Senin-Jumat).
+#
+# Catatan: workflow ini juga berjalan saat push ke main; pada event push
+# kami skip scraping (langkah refresh) dan hanya deploy konten yang ada.
+on:
+  schedule:
+    # Sebelum buka pasar (13:00 UTC = 20:00 WIB)
+    - cron: '0 13 * * 1-5'
+    # Tengah hari pasar AS (17:00 UTC = 00:00 WIB hari berikutnya)
+    - cron: '0 17 * * 1-5'
+    # Mendekati tutup pasar (20:30 UTC = 03:30 WIB)
+    - cron: '30 20 * * 1-5'
+    # Setelah tutup pasar (22:00 UTC = 05:00 WIB)
+    - cron: '0 22 * * 1-5'
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      skip_refresh:
+        description: 'Skip refresh data, deploy saja'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # Token default cukup karena permissions: contents: write sudah diset.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        if: github.event_name != 'push' && inputs.skip_refresh != true
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        if: github.event_name != 'push' && inputs.skip_refresh != true
+        run: pip install -r requirements.txt
+
+      - name: Refresh signals from Yahoo Finance
+        if: github.event_name != 'push' && inputs.skip_refresh != true
+        run: python scripts/fetch_signals.py
+        continue-on-error: true
+
+      - name: Commit refreshed data if changed
+        if: github.event_name != 'push' && inputs.skip_refresh != true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore(data): auto-refresh signals [skip ci]"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
