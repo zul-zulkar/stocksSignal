@@ -1,40 +1,50 @@
 // =====================================================================
-// Agregasi sinyal & filter etis.
+// Agregasi sinyal 7-faktor berbasis riset akademis & praktisi:
 //
-// Skor komposit = rata-rata berbobot 5 sinyal:
-//   technical 25%, sentiment 15%, news 15%, policy 15%, profile 30%
-// Lalu di-shift ke 0..100 supaya enak dibaca.
+//   1. technical  (15%) – RSI, SMA crossover, volume
+//   2. momentum   (15%) – Price momentum 3-12 bln (Jegadeesh & Titman 1993,
+//                          Fama-French momentum factor)
+//   3. sentiment  (10%) – Konsensus analis, short interest, social
+//   4. news       (10%) – Aliran berita, earnings surprise
+//   5. policy     (15%) – Makro: siklus suku bunga, USD, tailwind sektor
+//   6. profile    (20%) – Quality factor: FCF, margin, neraca, moat
+//                          (Fama-French profitability + AQR quality)
+//   7. valuation  (15%) – Value factor: P/E vs sektor, PEG, EV/FCF
+//                          (Research Affiliates, GMO value framework)
 //
-// Filter etis (mode):
-//   "strict"   – buang "high".
-//   "balanced" – buang "high"; "medium" diberi penalty 25 poin.
-//   "loose"    – tidak buang apa-apa, hanya tampilkan tag.
+// Referensi metodologi:
+//   Fama & French (2015) 5-factor model; AQR Capital "Quality Minus Junk";
+//   BlackRock factor investing; MSCI Barra multi-factor.
 // =====================================================================
 
 const SIGNAL_WEIGHTS = {
-  technical: 0.25,
-  sentiment: 0.15,
-  news: 0.15,
-  policy: 0.15,
-  profile: 0.30
+  technical: 0.15,
+  momentum:  0.15,
+  sentiment: 0.10,
+  news:      0.10,
+  policy:    0.15,
+  profile:   0.20,
+  valuation: 0.15,
 };
 
 const ETHICS_PENALTY = {
-  high: 100,    // efektif eliminasi
-  medium: 25,
-  low: 5,
-  none: 0,
-  unknown: 10
+  high:    100,   // efektif eliminasi
+  medium:   25,
+  low:       5,
+  none:      0,
+  unknown:  10,
 };
 
 function compositeSignal(stock) {
   const s = stock.signals;
   const raw =
-    s.technical * SIGNAL_WEIGHTS.technical +
-    s.sentiment * SIGNAL_WEIGHTS.sentiment +
-    s.news * SIGNAL_WEIGHTS.news +
-    s.policy * SIGNAL_WEIGHTS.policy +
-    s.profile * SIGNAL_WEIGHTS.profile;
+    (s.technical || 0) * SIGNAL_WEIGHTS.technical +
+    (s.momentum  || 0) * SIGNAL_WEIGHTS.momentum  +
+    (s.sentiment || 0) * SIGNAL_WEIGHTS.sentiment +
+    (s.news      || 0) * SIGNAL_WEIGHTS.news      +
+    (s.policy    || 0) * SIGNAL_WEIGHTS.policy    +
+    (s.profile   || 0) * SIGNAL_WEIGHTS.profile   +
+    (s.valuation || 0) * SIGNAL_WEIGHTS.valuation;
   // raw range -100..+100 → map ke 0..100
   return Math.round((raw + 100) / 2);
 }
@@ -42,25 +52,23 @@ function compositeSignal(stock) {
 function ethicsAdjustedScore(stock, mode = "balanced") {
   const base = compositeSignal(stock);
   const tie = stock.ethics.israelTie;
-  if (mode === "strict" && tie === "high") return null;
+  if (mode === "strict"   && tie === "high") return null;
   if (mode === "balanced" && tie === "high") return null;
-  const penalty =
-    mode === "loose" ? 0 : ETHICS_PENALTY[tie] ?? 0;
+  const penalty = mode === "loose" ? 0 : (ETHICS_PENALTY[tie] ?? 0);
   return Math.max(0, base - penalty);
 }
 
 function ethicsBadge(tie) {
-  return {
+  return ({
     high:    { label: "BERAFILIASI KUAT", color: "red"    },
     medium:  { label: "EKSPOSUR SEDANG",  color: "orange" },
     low:     { label: "EKSPOSUR RENDAH",  color: "yellow" },
     none:    { label: "BERSIH",           color: "green"  },
-    unknown: { label: "BELUM DITINJAU",   color: "gray"   }
-  }[tie] || { label: tie, color: "gray" };
+    unknown: { label: "BELUM DITINJAU",   color: "gray"   },
+  }[tie] || { label: tie, color: "gray" });
 }
 
 function signalBar(score) {
-  // score: -100..+100 → 0..100% dengan warna tergantung tanda
   const pct = Math.round((score + 100) / 2);
   const color = score > 20 ? "var(--up)"
               : score < -20 ? "var(--down)"
@@ -68,11 +76,7 @@ function signalBar(score) {
   return { pct, color };
 }
 
-// Daftar pendek "Forever Pocket" yang lolos filter ketat:
-//   - ethics: none atau low
-//   - profile signal >= 60 (kualitas perusahaan/diversifikasi tinggi)
-//   - dividendYield >= 1.0 ATAU marketCapB >= 200 (mature/likuid)
-// Diurutkan berdasar skor komposit yang sudah dipenalti.
+// Forever Pocket: bersih/eksposur rendah + quality tinggi + yield/size memadai
 function buildForeverPocket(universe, max = 10) {
   return universe
     .filter(s => ["none", "low"].includes(s.ethics.israelTie))
@@ -84,10 +88,10 @@ function buildForeverPocket(universe, max = 10) {
 }
 
 window.SIGNAL_LIB = {
+  SIGNAL_WEIGHTS,
   compositeSignal,
   ethicsAdjustedScore,
   ethicsBadge,
   signalBar,
   buildForeverPocket,
-  SIGNAL_WEIGHTS
 };
