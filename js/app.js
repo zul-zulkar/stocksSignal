@@ -590,13 +590,14 @@ async function doRefresh() {
   showToast("Mengambil data 0/" + window.STOCK_UNIVERSE.length + "…", "info");
   try {
     const tickers = window.STOCK_UNIVERSE.map(s => s.ticker);
-    const { overlay, failed } = await lib.refreshAll(tickers, (done, total, failedCount) => {
+    const { overlay, failed, firstError } = await lib.refreshAll(tickers, (done, total, failedCount) => {
       showToast(`Mengambil data ${done}/${total}${failedCount ? ` · ${failedCount} gagal` : ""}…`, "info");
     });
     const updated = Object.keys(overlay).length;
     if (updated === 0) {
-      showToast("Tidak ada data yang berhasil. Cek koneksi atau ticker.", "error");
-      hideToast(4000); return;
+      const detail = firstError ? ` · ${firstError.ticker}: ${firstError.reason}` : "";
+      showToast("Semua fetch gagal. Cek koneksi / CORS proxy down." + detail, "error");
+      hideToast(8000); return;
     }
     showToast(`Commit ke GitHub… (${updated} ticker)`, "info");
     const meta = {

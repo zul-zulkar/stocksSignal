@@ -38,7 +38,7 @@ Atau host gratis di GitHub Pages — dashboard ini fully static (HTML+CSS+JS, ta
 
 ### 2. Refresh data manual dari HP (rekomendasi)
 
-Tombol **↻ Refresh** di header dashboard menarik harga terbaru dari Stooq (CORS-friendly), menghitung ulang sinyal teknikal (RSI/SMA/momentum), lalu **commit hasilnya ke GitHub** via Contents API. Setiap perangkat yang membuka dashboard akan melihat data yang sama.
+Tombol **↻ Refresh** di header dashboard menarik harga terbaru dari Stooq lewat **CORS proxy publik** (`corsproxy.io`, fallback `allorigins.win` & `codetabs.com`), menghitung ulang sinyal teknikal (RSI/SMA/momentum), lalu **commit hasilnya ke GitHub** via Contents API. Setiap perangkat yang membuka dashboard akan melihat data yang sama.
 
 **Setup sekali saja:**
 
