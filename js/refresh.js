@@ -273,9 +273,12 @@
     throw new Error(`Dispatch → ${res.status}: ${detail.slice(0, 200)}`);
   }
 
-  // Ambil status run terbaru → { status, conclusion, html_url, createdAt }
+  // Ambil status run terbaru KHUSUS workflow refresh.yml yang dipicu manual
+  // (event=workflow_dispatch) → { status, conclusion, html_url, createdAt }.
+  // Penting: jangan pakai endpoint /actions/runs umum, karena bisa mengembalikan
+  // run dari workflow lain (mis. deploy/tests) sehingga status salah lapor.
   async function ghLatestRun(pat) {
-    const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/runs?per_page=1`;
+    const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/runs?per_page=1&event=workflow_dispatch`;
     const res = await fetch(url, { headers: ghHeaders(pat), cache: "no-store" });
     if (!res.ok) throw new Error(`GET runs → ${res.status}`);
     const json = await res.json();

@@ -76,9 +76,17 @@ jobs:
             git push
           fi
 
+      # Langkah deploy Pages via Actions. Jika Settings → Pages memakai
+      # "Deploy from a branch" (bukan GitHub Actions), langkah ini akan error —
+      # continue-on-error mencegah seluruh workflow ditandai GAGAL (merah).
+      # Refresh + commit data di atas tetap berjalan, dan branch-deploy akan
+      # mem-publish perubahan secara otomatis.
       - uses: actions/configure-pages@v5
+        continue-on-error: true
       - uses: actions/upload-pages-artifact@v3
+        continue-on-error: true
         with:
           path: .
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
