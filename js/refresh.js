@@ -128,6 +128,29 @@
     try { return new URL(u).host; } catch { return "?"; }
   }
 
+  // Bangun entri overlay (technical + harga + perubahan) dari deret closes.
+  function overlayEntry(closes, lastDate) {
+    const lastClose = closes[closes.length - 1];
+    const prevClose = closes.length >= 2 ? closes[closes.length - 2] : lastClose;
+    const changePct = prevClose ? (lastClose / prevClose - 1) * 100 : 0;
+    return {
+      technical: computeTechScore(closes),
+      lastClose,
+      prevClose,
+      changePct: Math.round(changePct * 100) / 100,
+      lastDate
+    };
+  }
+
+  // ---------- Refresh satu saham (in-memory, tanpa PAT) ----------
+  async function refreshOne(ticker) {
+    const parsed = await fetchStooqHistory(ticker);
+    if (!parsed || parsed.closes.length < 200) {
+      throw new Error(`data tidak cukup untuk ${ticker} (butuh ≥200 hari)`);
+    }
+    return overlayEntry(parsed.closes, parsed.lastDate);
+  }
+
   // ---------- Refresh orchestrator ----------
   async function refreshAll(tickers, onProgress) {
     const overlay = {};
@@ -143,11 +166,7 @@
       results.forEach((r, idx) => {
         const ticker = batch[idx];
         if (r.status === "fulfilled" && r.value.closes.length >= 200) {
-          overlay[ticker] = {
-            technical: computeTechScore(r.value.closes),
-            lastClose: r.value.closes[r.value.closes.length - 1],
-            lastDate:  r.value.lastDate
-          };
+          overlay[ticker] = overlayEntry(r.value.closes, r.value.lastDate);
         } else {
           failed.push(ticker);
           const reason = r.status === "rejected"
@@ -234,6 +253,42 @@
     await ghPutFile(pat, "data/meta.js", serializeMeta(meta), msg);
   }
 
+  // ---------- Trigger pipeline lengkap (GitHub Actions) ----------
+  const WORKFLOW_FILE = "refresh.yml";
+
+  // Jalankan ulang scrape penuh (semua sinyal + data analis) di cloud.
+  // Butuh PAT dengan izin Actions: Read and write.
+  async function ghDispatchWorkflow(pat, ref = BRANCH) {
+    const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/dispatches`;
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { ...ghHeaders(pat), "Content-Type": "application/json" },
+      body: JSON.stringify({ ref })
+    });
+    if (res.status === 204) return true;
+    const detail = await res.text();
+    if (res.status === 401) throw new Error("PAT tidak valid untuk Actions.");
+    if (res.status === 403) throw new Error("PAT ditolak. Tambah izin Actions: Read and write untuk repo ini.");
+    if (res.status === 404) throw new Error("Workflow tidak ditemukan / PAT tak punya akses Actions.");
+    throw new Error(`Dispatch → ${res.status}: ${detail.slice(0, 200)}`);
+  }
+
+  // Ambil status run terbaru → { status, conclusion, html_url, createdAt }
+  async function ghLatestRun(pat) {
+    const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/runs?per_page=1`;
+    const res = await fetch(url, { headers: ghHeaders(pat), cache: "no-store" });
+    if (!res.ok) throw new Error(`GET runs → ${res.status}`);
+    const json = await res.json();
+    const run = (json.workflow_runs || [])[0];
+    if (!run) return null;
+    return {
+      status:     run.status,       // queued | in_progress | completed
+      conclusion: run.conclusion,   // success | failure | null
+      html_url:   run.html_url,
+      createdAt:  run.created_at,
+    };
+  }
+
   // ---------- Apply overlay ke STOCK_UNIVERSE saat load ----------
   function applyOverlay() {
     const ov = window.SIGNAL_OVERLAY || {};
@@ -248,8 +303,9 @@
 
   window.REFRESH_LIB = {
     getPAT, setPAT, clearPAT,
-    refreshAll, commitOverlay,
-    applyOverlay, computeTechScore, rsi14,
+    refreshAll, refreshOne, commitOverlay,
+    ghDispatchWorkflow, ghLatestRun,
+    applyOverlay, computeTechScore, rsi14, overlayEntry,
     serializeOverlay, serializeMeta,
     stooqSymbol, parseStooqCSV
   };

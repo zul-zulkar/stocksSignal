@@ -25,8 +25,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Apple Israel R&D press", "Who Profits database"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.5, payoutRatio: 15, marketCapB: 3000 },
-    signals: { technical: 25, momentum: 20, sentiment: 30, news: 10, policy: 15, profile: 60, valuation: -10 }
+    fundamentals: { dividendYield: 0.35, payoutRatio: 12.6, marketCapB: 4514 },
+    signals: { technical: 38, momentum: 6, sentiment: 51, news: 0, policy: 15, profile: 65, valuation: -35 }
   },
   {
     ticker: "MSFT", name: "Microsoft Corp.", sector: "Technology",
@@ -36,8 +36,8 @@ window.STOCK_UNIVERSE = [
       sources: ["+972 Magazine", "Who Profits", "AP News (2024)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.7, payoutRatio: 25, marketCapB: 3100 },
-    signals: { technical: 40, momentum: 30, sentiment: 35, news: 5, policy: 10, profile: 70, valuation: -20 }
+    fundamentals: { dividendYield: 0.87, payoutRatio: 20.7, marketCapB: 3095 },
+    signals: { technical: -38, momentum: -70, sentiment: 83, news: 0, policy: 10, profile: 65, valuation: -4 }
   },
   {
     ticker: "GOOGL", name: "Alphabet Inc. (Google)", sector: "Technology",

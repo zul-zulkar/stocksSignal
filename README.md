@@ -22,6 +22,18 @@ Dashboard sinyal saham AS yang tersedia di **Pluang**, dengan filter etis terhad
 - **Forever Pocket** — list 10 saham long-term terbaik yang lolos filter ketat, cocok untuk fitur **Pocket** Pluang (DCA otomatis).
 - **Sortir & cari** berdasar ticker, sektor, atau jenis sinyal.
 
+### 🆕 Fitur pendapatan & interaksi (baru)
+
+- **Rekomendasi Aksi** — setiap saham mendapat badge **BELI KUAT / BELI / TAHAN / KURANGI / HINDARI**, hasil gabungan skor komposit + konsensus analis + upside ke target + valuasi + teknikal + filter etis. Lihat `js/advice.js`.
+- **Data analis riil** — rating konsensus (Strong Buy…Sell), jumlah analis, dan **target harga** ditarik dari yfinance ke `data/analyst.js`. Sinyal **Sentimen** kini terisi otomatis dari `recommendationMean`.
+- **Tampilan (view) cepat**: **Semua · Peluang · Watchlist · Dividen** — segmented tab di desktop, bottom-nav ala app di mobile.
+  - **Peluang** — hanya saham ber-rekomendasi BELI/BELI KUAT.
+  - **Watchlist + Portofolio** — tandai ★, catat lembar & harga beli, lihat untung/rugi + estimasi dividen tahunan (disimpan di `localStorage`).
+  - **Dividen** — diurut yield + estimator pendapatan pasif.
+- **Refresh per-saham** — tombol ↻ di kartu/modal memperbarui harga & teknikal satu saham secara instan (in-memory, tanpa PAT).
+- **Update Penuh** — tombol di header memicu pipeline lengkap di GitHub Actions (`refresh.yml`) via API; butuh PAT izin **Actions: Read and write**.
+- **Mobile-friendly & interaktif** — kartu kaya (harga live, %perubahan, badge aksi), gestur **geser-tutup** modal & **tarik-untuk-refresh**, skeleton loading, animasi angka, serta **tema terang/gelap** (tersimpan).
+
 ---
 
 ## 🚀 Cara pakai
@@ -207,6 +219,25 @@ Edit `data/stocks.js` dan tambahkan blok:
 ```
 
 Lalu jalankan ulang `python scripts/fetch_signals.py` untuk auto-fill bagian numerik.
+
+---
+
+## 🧪 Testing
+
+Logika murni (skor, verdict aksi, watchlist, matematika refresh) punya unit test. Tidak ada build step — test berjalan dengan runner bawaan.
+
+**Python** (fungsi skoring + analis + sentimen + `update_stock_block`):
+```bash
+pip install "pandas>=2.0"        # untuk uji sinyal teknikal (opsional)
+python -m unittest discover -s tests -p "test_*.py" -v
+```
+
+**JavaScript** (`signals.js`, `advice.js`, `refresh.js`, `watchlist.js`) — butuh Node ≥ 18:
+```bash
+node --test tests/js/
+```
+
+Keduanya juga jalan otomatis di CI via `.github/workflows/tests.yml` setiap push & PR.
 
 ---
 

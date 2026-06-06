@@ -21,22 +21,22 @@ Sentimen & makro tetap manual (sumber kualitatif).
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
-try:
-    import yfinance as yf
-    import pandas as pd
-except ImportError:
-    print("Install dulu: pip install -r requirements.txt", file=sys.stderr)
-    raise
+# Catatan: yfinance & pandas di-import secara lazy di dalam fetch()/main()
+# agar modul ini tetap bisa di-import untuk unit test tanpa dependency berat
+# terpasang. Fungsi skoring murni (news/profile/valuation/analyst/sentiment/
+# update_stock_block) tidak butuh keduanya.
 
-ROOT      = Path(__file__).resolve().parent.parent
-STOCKS_JS = ROOT / "data" / "stocks.js"
-META_JS = ROOT / "data" / "meta.js"
+ROOT       = Path(__file__).resolve().parent.parent
+STOCKS_JS  = ROOT / "data" / "stocks.js"
+META_JS    = ROOT / "data" / "meta.js"
+ANALYST_JS = ROOT / "data" / "analyst.js"
 
 # Benchmark untuk momentum relatif
 BENCHMARK = "^GSPC"  # S&P 500
@@ -115,8 +115,8 @@ def profile_score(info: dict) -> int:
     elif margin >= 0.05: score += 5
     elif margin < 0:     score -= 25
 
-    div = info.get("dividendYield") or 0
-    if 0.01 <= div <= 0.07: score += 10
+    div = info.get("dividendYield") or 0   # yfinance: sudah dalam persen (mis. 2.67 = 2.67%)
+    if 1.0 <= div <= 7.0: score += 10
 
     de = info.get("debtToEquity")
     if de is not None and de > 200: score -= 15
@@ -138,27 +138,66 @@ def valuation_score(info: dict) -> int:
 
 
 def fundamentals(info: dict) -> dict:
+    # Catatan unit yfinance (2024+): dividendYield sudah dalam PERSEN
+    # (mis. 2.67 = 2.67%), sedangkan payoutRatio masih pecahan (0.3 = 30%).
     return {
-        "dividendYield": round((info.get("dividendYield") or 0) * 100, 2),
+        "dividendYield": round(info.get("dividendYield") or 0, 2),
         "payoutRatio":   round((info.get("payoutRatio")   or 0) * 100, 1),
         "marketCapB":    round((info.get("marketCap")     or 0) / 1e9, 0),
     }
 
 
+def analyst_block(info: dict) -> dict:
+    """Rekomendasi & target harga konsensus analis (yfinance .info)."""
+    def num(x):
+        try:
+            return round(float(x), 2) if x is not None else None
+        except (TypeError, ValueError):
+            return None
+    return {
+        "rating":      info.get("recommendationKey"),                    # "strong_buy"|"buy"|"hold"|"sell"|...
+        "ratingMean":  num(info.get("recommendationMean")),              # 1.0 (strong buy) .. 5.0 (sell)
+        "numAnalysts": int(info.get("numberOfAnalystOpinions") or 0),
+        "targetMean":  num(info.get("targetMeanPrice")),
+        "targetHigh":  num(info.get("targetHighPrice")),
+        "targetLow":   num(info.get("targetLowPrice")),
+        "price":       num(info.get("currentPrice") or info.get("regularMarketPrice")),
+        "currency":    info.get("currency") or "USD",
+    }
+
+
+def sentiment_from_analyst(an: dict) -> Optional[int]:
+    """
+    Map konsensus analis → sinyal sentimen -100..+100.
+    ratingMean 1.0 (strong buy) → +100, 3.0 (hold) → 0, 5.0 (sell) → -100.
+    Hanya valid jika ada minimal 1 analis & ratingMean tersedia.
+    """
+    if not an or an.get("numAnalysts", 0) < 1 or an.get("ratingMean") is None:
+        return None
+    return max(-100, min(100, round((3 - an["ratingMean"]) * 50)))
+
+
 def fetch(ticker: str, bench_hist: "pd.DataFrame") -> Optional[dict]:
+    import yfinance as yf
     try:
         t    = yf.Ticker(ticker.replace(".", "-"))
         hist = t.history(period="2y", auto_adjust=False)
         info = t.info or {}
         news = t.news or []
-        return {
+        analyst = analyst_block(info)
+        payload = {
             "technical":    technical_score(hist),
             "momentum":     momentum_score(hist, bench_hist),
             "news":         news_score(news),
             "profile":      profile_score(info),
             "valuation":    valuation_score(info),
             "fundamentals": fundamentals(info),
+            "analyst":      analyst,
         }
+        sent = sentiment_from_analyst(analyst)
+        if sent is not None:
+            payload["sentiment"] = sent
+        return payload
     except Exception as exc:
         print(f"  ! gagal {ticker}: {exc}", file=sys.stderr)
         return None
@@ -169,8 +208,12 @@ TICKER_RE = re.compile(r'ticker:\s*"([^"]+)"')
 
 
 def update_stock_block(text: str, ticker: str, payload: dict) -> str:
+    # Catatan: blok tiap saham ditutup oleh "}" pada indentasi 2 spasi
+    # ("\n  }"). Brace bersarang (ethics) ditutup pada indentasi 4 spasi,
+    # jadi anchor "\n  \}" memastikan kita menangkap SELURUH objek saham
+    # (termasuk fundamentals & signals), bukan berhenti di blok ethics.
     pattern = re.compile(
-        r"(\{\s*\n\s*ticker:\s*\"" + re.escape(ticker) + r"\".*?\n\s*\})",
+        r"(\{\s*\n\s*ticker:\s*\"" + re.escape(ticker) + r"\".*?\n  \})",
         re.DOTALL,
     )
     m = pattern.search(text)
@@ -180,7 +223,11 @@ def update_stock_block(text: str, ticker: str, payload: dict) -> str:
     block     = m.group(1)
     new_block = block
 
-    for key in ("technical", "momentum", "news", "profile", "valuation"):
+    # sentiment hanya ditulis bila ada konsensus analis (kalau tidak, biarkan manual)
+    keys = ["technical", "momentum", "news", "profile", "valuation"]
+    if "sentiment" in payload:
+        keys.append("sentiment")
+    for key in keys:
         new_block = re.sub(
             rf"({key}:\s*)(-?\d+)",
             lambda mm, v=payload[key]: f"{mm.group(1)}{int(v)}",
@@ -209,14 +256,60 @@ def write_meta(updated: int, total: int, failed: list[str]) -> None:
     }
     META_JS.write_text(
         "// Auto-generated by scripts/fetch_signals.py — jangan diedit manual.\n"
-        "window.STOCK_META = " + json.dumps(meta, indent=2) + ";\n"
+        "window.STOCK_META = " + json.dumps(meta, indent=2) + ";\n",
+        encoding="utf-8",
     )
     print(f"Metadata ditulis ke {META_JS}")
 
 
+def merge_analyst_file(updates: dict) -> None:
+    """
+    Regenerasi data/analyst.js secara utuh, mempertahankan entri lama
+    untuk ticker yang tidak diproses (mis. saat dipakai --limit).
+    """
+    existing: dict = {}
+    if ANALYST_JS.exists():
+        try:
+            raw = ANALYST_JS.read_text(encoding="utf-8")
+            m = re.search(r"window\.STOCK_ANALYST\s*=\s*(\{.*\})\s*;", raw, re.DOTALL)
+            if m:
+                existing = json.loads(m.group(1))
+        except (UnicodeDecodeError, json.JSONDecodeError, OSError):
+            existing = {}  # file lama korup/tak terbaca → mulai bersih
+    existing.update(updates)
+    ANALYST_JS.write_text(
+        "// Auto-generated by scripts/fetch_signals.py — jangan diedit manual.\n"
+        "window.STOCK_ANALYST = " + json.dumps(existing, indent=2) + ";\n",
+        encoding="utf-8",
+    )
+    print(f"Data analis ditulis ke {ANALYST_JS} ({len(updates)} diperbarui, {len(existing)} total)")
+
+
 def main() -> int:
-    text    = STOCKS_JS.read_text(encoding="utf-8")
-    tickers = TICKER_RE.findall(text)
+    # --limit N: proses N ticker pertama saja (untuk uji cepat)
+    limit: Optional[int] = None
+    args = sys.argv[1:]
+    for i, a in enumerate(args):
+        if a == "--limit" and i + 1 < len(args):
+            try:
+                limit = int(args[i + 1])
+            except ValueError:
+                pass
+        elif a.startswith("--limit="):
+            try:
+                limit = int(a.split("=", 1)[1])
+            except ValueError:
+                pass
+
+    try:
+        import yfinance as yf
+    except ImportError:
+        print("Install dulu: pip install -r requirements.txt", file=sys.stderr)
+        return 1
+
+    text        = STOCKS_JS.read_text(encoding="utf-8")
+    all_tickers = TICKER_RE.findall(text)
+    tickers     = all_tickers[:limit] if limit else all_tickers
     print(f"Mengambil data untuk {len(tickers)} ticker + benchmark S&P500…")
 
     print("  - ^GSPC (benchmark)")
@@ -228,17 +321,20 @@ def main() -> int:
 
     updated = 0
     failed: list[str] = []
+    analyst_updates: dict = {}
     for tk in tickers:
         print(f"  - {tk}")
         payload = fetch(tk, bench_hist)
         if payload is None:
             failed.append(tk)
             continue
-        text    = update_stock_block(text, tk, payload)
+        text = update_stock_block(text, tk, payload)
+        analyst_updates[tk] = payload["analyst"]
         updated += 1
 
-    STOCKS_JS.write_text(text)
-    write_meta(updated, len(tickers), failed)
+    STOCKS_JS.write_text(text, encoding="utf-8")
+    merge_analyst_file(analyst_updates)
+    write_meta(updated, len(all_tickers), failed)
     print(f"Selesai. {updated}/{len(tickers)} ticker diperbarui di {STOCKS_JS}")
     return 0
 
