@@ -28,4 +28,4 @@ jobs:
         with:
           node-version: '20'
       - name: Run JS tests (node:test)
-        run: node --test tests/js/
+        run: node --test tests/js/*.test.cjs
