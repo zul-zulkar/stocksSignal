@@ -8,19 +8,21 @@ Dashboard sinyal saham AS yang tersedia di **Pluang**, dengan filter etis terhad
 
 ## ✨ Fitur
 
-- **Universe saham** populer Pluang (~50 ticker, mudah ditambah).
-- **5 jenis sinyal** per saham:
+- **Universe saham** populer Pluang (~984 ticker, mudah ditambah).
+- **7 faktor sinyal** per saham (masing-masing −100…+100, bobot di [Metodologi](#-metodologi-skor)):
   - **Teknikal** — RSI(14), SMA50/SMA200 crossover, momentum 1 bulan
-  - **Sentimen** — sentimen pasar/analis (kualitatif)
+  - **Momentum** — return 6 bulan relatif vs S&P 500 (Fama-French)
+  - **Sentimen** — konsensus analis (otomatis dari yfinance) & short interest
   - **Berita** — heuristik kata-kunci dari headline yfinance
-  - **Kebijakan** — eksposur regulasi/sanksi/geopolitik
-  - **Profil** — kualitas perusahaan (mkt cap, margin, dividen, leverage)
+  - **Makro/Kebijakan** — eksposur regulasi/sanksi/geopolitik (kualitatif)
+  - **Kualitas/Profil** — market cap, margin, dividen, leverage (quality factor)
+  - **Valuasi** — forward P/E vs rata-rata pasar (value factor)
 - **Filter etis** 3 mode:
   - `strict` – buang semua saham dengan afiliasi Israel kuat.
   - `balanced` – buang afiliasi kuat, beri penalti 25 poin untuk eksposur sedang.
   - `loose` – tampilkan semua, hanya beri tag.
-- **Forever Pocket** — list 10 saham long-term terbaik yang lolos filter ketat, cocok untuk fitur **Pocket** Pluang (DCA otomatis).
-- **Sortir & cari** berdasar ticker, sektor, atau jenis sinyal.
+- **Forever Pocket** — saham long-term terbaik yang lolos filter ketat, cocok untuk fitur **Pocket** Pluang (DCA otomatis).
+- **Sortir & cari** berdasar ticker, sektor, aksi, harga, atau jenis sinyal.
 
 ### 🆕 Fitur pendapatan & interaksi (baru)
 
@@ -39,60 +41,36 @@ Dashboard sinyal saham AS yang tersedia di **Pluang**, dengan filter etis terhad
 ## 🚀 Cara pakai
 
 ### 1. Buka dashboard
-Cukup buka `index.html` di browser:
+Dashboard ini **fully static** (HTML+CSS+JS, tanpa build step) dan di-host gratis di **GitHub Pages**: [zul-zulkar.github.io/stocksSignal](https://zul-zulkar.github.io/stocksSignal/).
+
+Untuk menjalankan lokal, **jangan** buka `index.html` lewat klik dua kali (`file://` membuat data gagal dimuat). Pakai server statis:
 ```bash
-open index.html       # macOS
-xdg-open index.html   # Linux
-start index.html      # Windows
+python -m http.server 8000   # lalu buka http://localhost:8000
 ```
 
-Atau host gratis di GitHub Pages — dashboard ini fully static (HTML+CSS+JS, tanpa build step).
+### 2. Cara data diperbarui
 
-### 2. Refresh data manual dari HP (rekomendasi)
+Ada 3 jalur. **Yang paling andal = dari laptop (B).**
 
-Tombol **↻ Refresh** di header dashboard menarik harga terbaru dari Stooq lewat **CORS proxy publik** (`corsproxy.io`, fallback `allorigins.win` & `codetabs.com`), menghitung ulang sinyal teknikal (RSI/SMA/momentum), lalu **commit hasilnya ke GitHub** via Contents API. Setiap perangkat yang membuka dashboard akan melihat data yang sama.
+**A. Otomatis (terjadwal) — GitHub Actions.** `refresh.yml` jalan **tiap Senin 08:00 WIB**, `refresh-and-deploy.yml` **4× sehari** (hari kerja). Keduanya menjalankan `scripts/fetch_signals.py` (yfinance) lalu commit + deploy.
+> ⚠️ **Catatan penting:** Yahoo Finance sering **rate-limit / blokir IP datacenter GitHub**, jadi sebuah run terjadwal bisa hanya memperbarui sebagian (atau, jarang, nol) ticker. Run terjadwal berikutnya melengkapinya. Skrip punya **safeguard**: kalau 0 ticker berhasil, `data/*` **tidak ditimpa** sehingga dashboard tetap menampilkan status valid terakhir (tak muncul badge keliru "0/984").
+> Catatan billing: kalau Actions akun ter-pause (mis. spending limit), **semua** run + deploy Pages ikut beku sampai dibereskan — lihat [Troubleshooting](#-troubleshooting).
 
-**Setup sekali saja:**
-
-1. **Pages → Deploy from a branch** (Settings → Pages → Source = *Deploy from a branch*, branch = `main`, folder = `/ (root)`). Ini mem-bypass GitHub Actions, jadi tidak terpengaruh status billing.
-2. **Generate fine-grained PAT:**
-   - Buka [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new)
-   - Repository access: **Only select repositories** → `zul-zulkar/stocksSignal`
-   - Permissions → Repository → **Contents: Read and write**
-   - Expiration: 90 hari (atau lebih, sesuai selera)
-   - Generate → salin token (mulai `github_pat_`)
-3. Buka dashboard di HP → tap **Refresh** → modal muncul → paste PAT → Simpan
-4. PAT disimpan di `localStorage` HP. Refresh berikutnya 1-tap, tanpa modal.
-
-**Cara kerja:**
-1. JS browser fetch CSV harian Stooq untuk ~59 ticker (~15 detik, batch 5 paralel)
-2. Hitung skor teknikal client-side (RSI 14, SMA 50/200 cross, momentum 21 hari)
-3. Build object `SIGNAL_OVERLAY`, PUT ke `data/signals-overlay.js` via GitHub API
-4. Update `data/meta.js` dengan timestamp baru
-5. Pages re-deploy otomatis ~30-60 detik kemudian (mode Deploy from branch, no Actions)
-
-**Yang ter-refresh:** sinyal **teknikal** + `lastClose`/`lastDate` per ticker.
-**Yang tidak ter-refresh dari client:** sinyal sentimen, berita, kebijakan, fundamental (dividen/PE/cap), klasifikasi etika. Semuanya tetap manual via `data/stocks.js` atau lewat script Python `scripts/fetch_signals.py` (kalau punya laptop).
-
-**Lupakan PAT?** Buka modal PAT lagi (tap Refresh saat sudah ada PAT akan langsung jalan; untuk membuka modal manual perlu tap Refresh saat PAT belum di-set, atau gunakan DevTools `localStorage.removeItem('githubPAT')`). Ada juga tombol "Lupakan PAT" di dalam modal.
-
-### 3. (Opsional) Refresh dari laptop pakai Python
+**B. Manual dari laptop (paling andal — IP rumah tidak diblokir Yahoo).**
 ```bash
 pip install -r requirements.txt
-python scripts/fetch_signals.py
+python scripts/fetch_signals.py          # ~30–60 menit untuk 984 ticker
 git add data/ && git commit -m "data refresh" && git push
 ```
-Berguna kalau ingin update sinyal selain teknikal (fundamental, news headlines via yfinance) atau menambah ticker baru.
+Ini memperbarui **semua**: teknikal, momentum, berita, kualitas, valuasi, fundamental, **data analis** (`data/analyst.js`), dan sinyal sentimen turunannya. Tambahkan `--limit N` untuk uji cepat.
 
-### 4. (Opsional advanced) Auto-refresh via GitHub Actions
-Workflow `.github/workflows/refresh-and-deploy.yml` bisa di-aktifkan jika billing Actions Anda aktif:
-- Cron 4× sehari (pre/mid/close/post pasar AS)
-- Tarik data lebih lengkap dari Yahoo Finance via `yfinance`
-- Auto-commit + auto-deploy
+**C. Tombol di aplikasi.**
+- **Update Penuh** (header) — memicu `refresh.yml` di GitHub via API. Butuh PAT izin **Actions: Read and write**. (Tetap tunduk pada batasan yfinance↔GitHub di atas.)
+- **Refresh** & **↻ per-saham** — menarik harga+teknikal dari Stooq lewat *CORS proxy publik*. **Rapuh**: proxy sering down, dan di **Safari iOS** kerap muncul "Load failed". Untuk hasil pasti, pakai jalur A/B.
 
-Jika billing terkunci, biarkan dorman — Tombol Refresh di HP sudah cukup untuk DCA jangka panjang.
+**Setup PAT (untuk tombol Refresh/Update Penuh):** [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new) → Only select repositories `zul-zulkar/stocksSignal` → Permissions → **Contents: Read and write** + **Actions: Read and write** → Generate → paste ke modal di dashboard (disimpan di `localStorage` HP saja).
 
-### 5. Pakai di Pluang
+### 3. Pakai di Pluang
 - Buka tab **Forever Pocket** di dashboard.
 - Catat 5–10 ticker teratas.
 - Di app Pluang → fitur **Pocket** → buat pocket baru → masukkan ticker tersebut dengan alokasi yang Anda mau (mis. equal-weight 10% per saham).
@@ -103,16 +81,21 @@ Jika billing terkunci, biarkan dorman — Tombol Refresh di HP sudah cukup untuk
 ## 🧮 Metodologi skor
 
 ### Skor komposit
-Bobot:
-| Sinyal     | Bobot |
-|------------|-------|
-| Teknikal   | 25%   |
-| Sentimen   | 15%   |
-| Berita     | 15%   |
-| Kebijakan  | 15%   |
-| Profil     | 30%   |
+Bobot 7-faktor (metodologi Fama-French momentum & quality, AQR "Quality Minus Junk", value framework Research Affiliates):
+| Sinyal           | Bobot |
+|------------------|-------|
+| Teknikal         | 15%   |
+| Momentum         | 15%   |
+| Sentimen         | 10%   |
+| Berita           | 10%   |
+| Makro/Kebijakan  | 15%   |
+| Kualitas/Profil  | 20%   |
+| Valuasi          | 15%   |
 
-Setiap sinyal di-skor **−100 … +100**. Komposit dipetakan ke skala **0 – 100**.
+Setiap sinyal di-skor **−100 … +100**. Komposit dipetakan ke skala **0 – 100**, lalu dikurangi penalti etis.
+
+### Rekomendasi Aksi
+Skor komposit **bukan** sinyal beli/jual mentah. `js/advice.js` menerjemahkannya jadi verdict **BELI KUAT / BELI / TAHAN / KURANGI / HINDARI** dengan menggabungkan: skor komposit, konsensus analis (`recommendationMean`), upside ke target harga, valuasi, teknikal, dan filter etis. Target harga & % upside diambil dari `data/analyst.js`.
 
 ### Penalti etis
 Setelah komposit dihitung, dikurangi penalti:
@@ -168,32 +151,57 @@ Penilaian afiliasi Israel mengacu pada laporan publik yang kredibel:
 
 | Pendekatan | Pro | Kontra |
 |------------|-----|--------|
-| **GitHub Actions cron (dipakai di sini)** | Gratis, reliable, audit trail via git, no key terekspos | Refresh tidak real-time (max 4×/hari) |
+| **GitHub Actions cron (dipakai di sini)** | Gratis, audit trail via git, no key terekspos | Tidak real-time; **Yahoo sering rate-limit IP runner GitHub** → sebagian/seluruh ticker bisa gagal (run berikutnya melengkapi) |
 | Client + API key (Alpha Vantage dll) | Real-time saat buka halaman | Key kelihatan di DevTools, rate limit ketat (5 req/menit) |
 | Client + CORS proxy publik | Tanpa setup | Proxy bisa mati/lambat, traffic terbaca pihak ketiga |
 | Vercel/Cloudflare Workers proxy | Cepat, key tersembunyi | Butuh akun & setup deploy tambahan |
 | Scrape HTML di browser | — | Diblok same-origin policy, tidak mungkin |
 
-Untuk dashboard yang hanya butuh refresh ~6 jam sekali (saham jangka panjang, bukan day trading), **GitHub Actions cron adalah pilihan paling sehat**. Saham AS tutup malam WIB, jadi refresh post-close sudah cukup untuk keputusan harian.
+Untuk dashboard jangka panjang (bukan day trading), refresh terjadwal sudah cukup. Catatan jujur: karena Yahoo memblokir IP datacenter, refresh **paling andal** tetap dari **laptop** (IP rumah) — lihat [Cara data diperbarui](#2-cara-data-diperbarui) jalur B.
+
+## 🛟 Troubleshooting
+
+**Situs live tidak meng-update padahal sudah `git push`.**
+GitHub Pages "Deploy from a branch" diam-diam memakai Actions (workflow internal *pages build and deployment*). Kalau Actions akun ter-**pause** (mis. *spending limit* tercapai gara-gara repo privat lain memakai menit ber-bayar), **semua** deploy ikut beku — perubahan masuk ke repo tapi situs tetap versi lama. Ciri khas: run Actions `failure` dengan **`steps=0`** (job tak pernah mulai). Repo public itu Actions-nya gratis; periksa **github.com/settings/billing** (spending limit) dan matikan/publik-kan repo privat yang memakai Actions.
+
+**Run terjadwal "gagal" / hanya sebagian ticker ter-update.**
+Wajar — Yahoo me-rate-limit IP runner GitHub. Run terjadwal berikutnya melengkapi. Kalau 0 ticker berhasil, `scripts/fetch_signals.py` **tidak menimpa** `data/*` (dashboard tetap pakai data valid terakhir). Untuk hasil pasti, jalankan dari laptop (jalur B).
+
+**Tombol Refresh / Update Penuh "Load failed" di HP.**
+Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / api.github.com. Coba: matikan *Prevent Cross-Site Tracking*, atau pakai browser/laptop lain. Paling pasti: jalankan workflow langsung dari **tab Actions GitHub** (tombol *Run workflow*), atau refresh dari laptop.
 
 ## 📁 Struktur file
 
 ```
 .
-├── index.html                              # Halaman dashboard
-├── styles.css                              # Styling (incl. mobile)
+├── index.html              # Dashboard utama
+├── compare.html            # Halaman bandingkan 2 saham
+├── styles.css              # Styling + tema terang/gelap (incl. mobile)
 ├── data/
-│   ├── stocks.js                           # Universe + dataset etika (baseline)
-│   ├── signals-overlay.js                  # Overlay sinyal teknikal (di-tulis browser/script)
-│   └── meta.js                             # Timestamp last-refresh
+│   ├── stocks.js           # Universe 984 ticker + dataset etika + 7 sinyal
+│   ├── analyst.js          # Rekomendasi & target harga analis (yfinance)
+│   ├── signals-overlay.js  # Overlay teknikal hasil tombol Refresh (Stooq)
+│   └── meta.js             # Status refresh terakhir
 ├── js/
-│   ├── signals.js                          # Logic skor komposit & filter
-│   ├── refresh.js                          # Tombol refresh: Stooq + commit GitHub
-│   └── app.js                              # Render UI, sortir, modal, wiring
+│   ├── signals.js          # Skor komposit 7-faktor + filter etis + Forever Pocket
+│   ├── advice.js           # Verdict Aksi (Beli/Tahan/Jual) + target/upside
+│   ├── watchlist.js        # Watchlist & portofolio (localStorage)
+│   ├── refresh.js          # Refresh Stooq + commit/dispatch GitHub
+│   ├── app.js              # Render UI, views, modal, gestur, tema, wiring
+│   └── compare.js          # Logika halaman bandingkan
 ├── scripts/
-│   └── fetch_signals.py                    # Refresh dari laptop (yfinance)
+│   ├── fetch_signals.py    # Refresh penuh dari laptop (yfinance) + data analis
+│   ├── review_ethics.py    # Klasifikasi etika cepat (database offline)
+│   ├── scrape_ethics.py    # Scrape etika (Who Profits/BDS/AFSC)
+│   ├── add_tickers.py      # Tambah ticker baru massal
+│   └── run_full_update.py  # Orkestrasi pipeline penuh
+├── tests/
+│   ├── test_fetch_signals.py   # Unit test Python (unittest)
+│   └── js/*.test.cjs           # Unit test JS (node:test, via vm)
 ├── .github/workflows/
-│   └── refresh-and-deploy.yml              # Cron 4×/hari (butuh billing Actions aktif)
+│   ├── refresh.yml             # Cron Senin + dispatch (tombol Update Penuh)
+│   ├── refresh-and-deploy.yml  # Cron 4×/hari + deploy Pages
+│   └── tests.yml               # Jalankan test tiap push/PR
 ├── requirements.txt
 └── README.md
 ```
@@ -214,11 +222,11 @@ Edit `data/stocks.js` dan tambahkan blok:
     palestineSupport: "none"    // documented | statements | none
   },
   fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-  signals: { technical: 0, sentiment: 0, news: 0, policy: 0, profile: 0 }
+  signals: { technical: 0, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: 0, valuation: 0 }
 }
 ```
 
-Lalu jalankan ulang `python scripts/fetch_signals.py` untuk auto-fill bagian numerik.
+Atau pakai `scripts/add_tickers.py` (isi `scripts/new_tickers.txt`, satu ticker per baris). Lalu jalankan `python scripts/fetch_signals.py` untuk auto-fill bagian numerik + data analis.
 
 ---
 
