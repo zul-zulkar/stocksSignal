@@ -28,11 +28,14 @@ jobs:
       - name: Fetch live signals
         run: python scripts/fetch_signals.py
 
+      - name: Build immersive world dataset
+        run: python scripts/build_world_data.py
+
       - name: Commit updated signals
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/stocks.js data/analyst.js data/meta.js
+          git add data/stocks.js data/analyst.js data/meta.js data/world-data.js
           if git diff --staged --quiet; then
             echo "Tidak ada perubahan data — lewati commit."
           else

@@ -63,6 +63,11 @@ jobs:
         run: python scripts/fetch_signals.py
         continue-on-error: true
 
+      - name: Build immersive world dataset
+        if: github.event_name != 'push' && inputs.skip_refresh != true
+        run: python scripts/build_world_data.py
+        continue-on-error: true
+
       - name: Commit refreshed data if changed
         if: github.event_name != 'push' && inputs.skip_refresh != true
         run: |
