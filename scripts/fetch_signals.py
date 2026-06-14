@@ -332,6 +332,14 @@ def main() -> int:
         analyst_updates[tk] = payload["analyst"]
         updated += 1
 
+    if updated == 0:
+        # Semua ticker gagal — lazim di runner GitHub saat Yahoo me-rate-limit
+        # IP datacenter. Jangan timpa data/meta agar status terakhir yang valid
+        # tetap tampil (hindari badge "0/984" yang keliru di dashboard).
+        print("⚠ Tidak ada ticker berhasil (kemungkinan Yahoo memblokir IP runner). "
+              "data/* tidak diubah; status terakhir yang valid dipertahankan.", file=sys.stderr)
+        return 0
+
     STOCKS_JS.write_text(text, encoding="utf-8")
     merge_analyst_file(analyst_updates)
     write_meta(updated, len(all_tickers), failed)
