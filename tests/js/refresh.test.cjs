@@ -34,7 +34,8 @@ test("parseStooqCSV: ekstrak closes & lastDate", () => {
   const R = ctx().REFRESH_LIB;
   const csv = "Date,Open,High,Low,Close,Volume\n2024-01-01,1,2,0.5,1.5,1000\n2024-01-02,1.5,2,1,1.8,1200\n";
   const { closes, lastDate } = R.parseStooqCSV(csv);
-  assert.deepStrictEqual(closes, [1.5, 1.8]);
+  // spread ke array realm-utama agar deepStrictEqual tak menolak karena beda prototype vm
+  assert.deepStrictEqual([...closes], [1.5, 1.8]);
   assert.strictEqual(lastDate, "2024-01-02");
 });
 

@@ -20,7 +20,8 @@ test("toggleWatch: tambah lalu hapus", () => {
 test("setHolding/getHolding; qty 0 menghapus posisi", () => {
   const W = ctx().WATCH_LIB;
   W.setHolding("AAA", 10, 5);
-  assert.deepStrictEqual(W.getHolding("AAA"), { qty: 10, avgPrice: 5 });
+  // spread ke objek realm-utama agar deepStrictEqual tak menolak karena beda prototype vm
+  assert.deepStrictEqual({ ...W.getHolding("AAA") }, { qty: 10, avgPrice: 5 });
   W.setHolding("AAA", 0, 5);
   assert.strictEqual(W.getHolding("AAA"), null);
 });
