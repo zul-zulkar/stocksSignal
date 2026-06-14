@@ -4,120 +4,120 @@ window.STOCK_ANALYST = {
     "rating": "buy",
     "ratingMean": 1.98,
     "numAnalysts": 43,
-    "targetMean": 310.51,
+    "targetMean": 312.72,
     "targetHigh": 400.0,
     "targetLow": 215.0,
-    "price": 307.34,
+    "price": 291.13,
     "currency": "USD"
   },
   "MSFT": {
     "rating": "strong_buy",
     "ratingMean": 1.34,
     "numAnalysts": 55,
-    "targetMean": 560.95,
+    "targetMean": 561.39,
     "targetHigh": 870.0,
     "targetLow": 400.0,
-    "price": 416.67,
+    "price": 390.74,
     "currency": "USD"
   },
   "GOOGL": {
     "rating": "strong_buy",
     "ratingMean": 1.44,
     "numAnalysts": 53,
-    "targetMean": 431.19,
+    "targetMean": 432.83,
     "targetHigh": 515.0,
     "targetLow": 340.0,
-    "price": 368.53,
+    "price": 359.68,
     "currency": "USD"
   },
   "AMZN": {
     "rating": "strong_buy",
-    "ratingMean": 1.35,
-    "numAnalysts": 62,
-    "targetMean": 312.79,
+    "ratingMean": 1.34,
+    "numAnalysts": 63,
+    "targetMean": 312.51,
     "targetHigh": 370.0,
     "targetLow": 207.0,
-    "price": 246.03,
+    "price": 238.55,
     "currency": "USD"
   },
   "META": {
     "rating": "strong_buy",
     "ratingMean": 1.31,
     "numAnalysts": 59,
-    "targetMean": 828.8,
+    "targetMean": 827.32,
     "targetHigh": 1015.0,
-    "targetLow": 700.0,
-    "price": 593.0,
+    "targetLow": 664.46,
+    "price": 566.98,
     "currency": "USD"
   },
   "NVDA": {
     "rating": "strong_buy",
     "ratingMean": 1.29,
     "numAnalysts": 59,
-    "targetMean": 298.42,
+    "targetMean": 298.93,
     "targetHigh": 500.0,
     "targetLow": 180.0,
-    "price": 205.1,
+    "price": 205.19,
     "currency": "USD"
   },
   "INTC": {
     "rating": "hold",
-    "ratingMean": 2.67,
+    "ratingMean": 2.62,
     "numAnalysts": 41,
-    "targetMean": 89.32,
+    "targetMean": 93.12,
     "targetHigh": 150.0,
-    "targetLow": 20.4,
-    "price": 99.17,
+    "targetLow": 45.0,
+    "price": 124.57,
     "currency": "USD"
   },
   "AMD": {
     "rating": "strong_buy",
-    "ratingMean": 1.49,
+    "ratingMean": 1.45,
     "numAnalysts": 48,
-    "targetMean": 482.69,
+    "targetMean": 486.33,
     "targetHigh": 665.0,
     "targetLow": 225.0,
-    "price": 466.38,
+    "price": 511.57,
     "currency": "USD"
   },
   "ORCL": {
     "rating": "buy",
     "ratingMean": 1.51,
     "numAnalysts": 39,
-    "targetMean": 251.2,
+    "targetMean": 255.38,
     "targetHigh": 400.0,
     "targetLow": 155.0,
-    "price": 213.68,
+    "price": 184.13,
     "currency": "USD"
   },
   "IBM": {
     "rating": "buy",
-    "ratingMean": 2.0,
+    "ratingMean": 1.95,
     "numAnalysts": 21,
-    "targetMean": 290.17,
+    "targetMean": 290.89,
     "targetHigh": 390.0,
     "targetLow": 195.0,
-    "price": 284.84,
+    "price": 272.24,
     "currency": "USD"
   },
   "CRM": {
     "rating": "buy",
-    "ratingMean": 1.65,
-    "numAnalysts": 53,
-    "targetMean": 254.99,
+    "ratingMean": 1.66,
+    "numAnalysts": 52,
+    "targetMean": 255.28,
     "targetHigh": 475.0,
     "targetLow": 160.0,
-    "price": 185.66,
+    "price": 165.89,
     "currency": "USD"
   },
   "ADBE": {
-    "rating": "buy",
-    "ratingMean": 2.45,
-    "numAnalysts": 33,
-    "targetMean": 329.81,
+    "rating": "hold",
+    "ratingMean": 2.61,
+    "numAnalysts": 32,
+    "targetMean": 289.68,
     "targetHigh": 487.0,
-    "targetLow": 220.0,
-    "price": 251.44,
+    "targetLow": 190.0,
+    "price": 204.02,
     "currency": "USD"
   },
   "TSM": {
@@ -127,27 +127,27 @@ window.STOCK_ANALYST = {
     "targetMean": 467.84,
     "targetHigh": 600.0,
     "targetLow": 354.0,
-    "price": 415.17,
+    "price": 423.93,
     "currency": "USD"
   },
   "BABA": {
     "rating": "strong_buy",
     "ratingMean": 1.37,
     "numAnalysts": 40,
-    "targetMean": 192.17,
-    "targetHigh": 258.73,
-    "targetLow": 112.65,
-    "price": 121.06,
+    "targetMean": 191.72,
+    "targetHigh": 258.88,
+    "targetLow": 92.18,
+    "price": 112.82,
     "currency": "USD"
   },
   "ASML": {
     "rating": "strong_buy",
     "ratingMean": 1.48,
     "numAnalysts": 15,
-    "targetMean": 1694.95,
-    "targetHigh": 2252.31,
-    "targetLow": 891.8,
-    "price": 1641.74,
+    "targetMean": 1701.91,
+    "targetHigh": 2261.18,
+    "targetLow": 895.31,
+    "price": 1863.55,
     "currency": "USD"
   },
   "SBUX": {
@@ -157,7 +157,7 @@ window.STOCK_ANALYST = {
     "targetMean": 106.25,
     "targetHigh": 137.0,
     "targetLow": 81.0,
-    "price": 95.29,
+    "price": 103.04,
     "currency": "USD"
   },
   "MCD": {
@@ -167,27 +167,27 @@ window.STOCK_ANALYST = {
     "targetMean": 331.29,
     "targetHigh": 407.0,
     "targetLow": 250.0,
-    "price": 279.84,
+    "price": 284.81,
     "currency": "USD"
   },
   "KO": {
     "rating": "buy",
-    "ratingMean": 1.75,
-    "numAnalysts": 23,
-    "targetMean": 86.06,
+    "ratingMean": 1.8,
+    "numAnalysts": 24,
+    "targetMean": 85.97,
     "targetHigh": 92.0,
     "targetLow": 71.38,
-    "price": 79.48,
+    "price": 82.62,
     "currency": "USD"
   },
   "PEP": {
     "rating": "hold",
-    "ratingMean": 2.57,
-    "numAnalysts": 21,
-    "targetMean": 170.57,
+    "ratingMean": 2.58,
+    "numAnalysts": 22,
+    "targetMean": 168.5,
     "targetHigh": 195.0,
     "targetLow": 132.0,
-    "price": 141.92,
+    "price": 144.27,
     "currency": "USD"
   },
   "DIS": {
@@ -197,27 +197,27 @@ window.STOCK_ANALYST = {
     "targetMean": 129.67,
     "targetHigh": 164.0,
     "targetLow": 77.0,
-    "price": 99.71,
+    "price": 100.04,
     "currency": "USD"
   },
   "NFLX": {
     "rating": "buy",
     "ratingMean": 1.68,
     "numAnalysts": 44,
-    "targetMean": 114.56,
+    "targetMean": 114.15,
     "targetHigh": 151.4,
     "targetLow": 80.0,
-    "price": 82.18,
+    "price": 80.34,
     "currency": "USD"
   },
   "WMT": {
     "rating": "strong_buy",
-    "ratingMean": 1.48,
-    "numAnalysts": 42,
-    "targetMean": 137.93,
+    "ratingMean": 1.49,
+    "numAnalysts": 41,
+    "targetMean": 138.37,
     "targetHigh": 155.0,
     "targetLow": 70.0,
-    "price": 118.88,
+    "price": 121.04,
     "currency": "USD"
   },
   "COST": {
@@ -227,17 +227,17 @@ window.STOCK_ANALYST = {
     "targetMean": 1082.33,
     "targetHigh": 1315.0,
     "targetLow": 740.0,
-    "price": 971.87,
+    "price": 982.35,
     "currency": "USD"
   },
   "TGT": {
     "rating": "hold",
     "ratingMean": 2.55,
     "numAnalysts": 33,
-    "targetMean": 131.66,
+    "targetMean": 131.81,
     "targetHigh": 160.0,
     "targetLow": 92.0,
-    "price": 122.57,
+    "price": 135.23,
     "currency": "USD"
   },
   "HD": {
@@ -247,7 +247,7 @@ window.STOCK_ANALYST = {
     "targetMean": 370.18,
     "targetHigh": 430.0,
     "targetLow": 310.0,
-    "price": 310.78,
+    "price": 328.39,
     "currency": "USD"
   },
   "LOW": {
@@ -257,37 +257,37 @@ window.STOCK_ANALYST = {
     "targetMean": 263.73,
     "targetHigh": 300.0,
     "targetLow": 202.0,
-    "price": 210.74,
+    "price": 220.78,
     "currency": "USD"
   },
   "NKE": {
     "rating": "buy",
-    "ratingMean": 2.29,
+    "ratingMean": 2.32,
     "numAnalysts": 33,
-    "targetMean": 60.49,
+    "targetMean": 59.58,
     "targetHigh": 120.0,
     "targetLow": 23.0,
-    "price": 42.98,
+    "price": 44.93,
     "currency": "USD"
   },
   "PG": {
     "rating": "buy",
-    "ratingMean": 2.04,
-    "numAnalysts": 22,
-    "targetMean": 163.77,
+    "ratingMean": 2.08,
+    "numAnalysts": 23,
+    "targetMean": 163.43,
     "targetHigh": 186.0,
     "targetLow": 145.0,
-    "price": 146.54,
+    "price": 149.61,
     "currency": "USD"
   },
   "CL": {
     "rating": "buy",
-    "ratingMean": 2.0,
-    "numAnalysts": 19,
-    "targetMean": 95.84,
+    "ratingMean": 2.05,
+    "numAnalysts": 20,
+    "targetMean": 95.85,
     "targetHigh": 105.0,
     "targetLow": 80.0,
-    "price": 88.58,
+    "price": 89.45,
     "currency": "USD"
   },
   "KMB": {
@@ -297,7 +297,7 @@ window.STOCK_ANALYST = {
     "targetMean": 114.27,
     "targetHigh": 162.0,
     "targetLow": 90.0,
-    "price": 99.04,
+    "price": 102.29,
     "currency": "USD"
   },
   "CVX": {
@@ -307,7 +307,7 @@ window.STOCK_ANALYST = {
     "targetMean": 216.04,
     "targetHigh": 236.0,
     "targetLow": 170.0,
-    "price": 187.31,
+    "price": 187.22,
     "currency": "USD"
   },
   "XOM": {
@@ -317,17 +317,17 @@ window.STOCK_ANALYST = {
     "targetMean": 169.91,
     "targetHigh": 185.0,
     "targetLow": 130.0,
-    "price": 149.92,
+    "price": 147.01,
     "currency": "USD"
   },
   "LMT": {
-    "rating": "hold",
-    "ratingMean": 2.62,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 19,
     "targetMean": 625.16,
     "targetHigh": 756.0,
     "targetLow": 511.0,
-    "price": 523.76,
+    "price": 540.33,
     "currency": "USD"
   },
   "RTX": {
@@ -337,7 +337,7 @@ window.STOCK_ANALYST = {
     "targetMean": 215.73,
     "targetHigh": 242.0,
     "targetLow": 180.0,
-    "price": 180.99,
+    "price": 183.53,
     "currency": "USD"
   },
   "BA": {
@@ -347,17 +347,17 @@ window.STOCK_ANALYST = {
     "targetMean": 270.0,
     "targetHigh": 300.0,
     "targetLow": 230.0,
-    "price": 215.45,
+    "price": 219.05,
     "currency": "USD"
   },
   "GD": {
     "rating": "buy",
-    "ratingMean": 2.17,
+    "ratingMean": 2.12,
     "numAnalysts": 21,
-    "targetMean": 392.22,
+    "targetMean": 393.17,
     "targetHigh": 444.0,
     "targetLow": 313.0,
-    "price": 346.44,
+    "price": 360.22,
     "currency": "USD"
   },
   "NOC": {
@@ -367,27 +367,27 @@ window.STOCK_ANALYST = {
     "targetMean": 696.95,
     "targetHigh": 815.0,
     "targetLow": 603.0,
-    "price": 544.4,
+    "price": 550.33,
     "currency": "USD"
   },
   "CAT": {
     "rating": "buy",
-    "ratingMean": 2.11,
+    "ratingMean": 2.07,
     "numAnalysts": 26,
-    "targetMean": 936.99,
+    "targetMean": 944.1,
     "targetHigh": 1165.0,
     "targetLow": 575.0,
-    "price": 904.28,
+    "price": 910.57,
     "currency": "USD"
   },
   "JPM": {
-    "rating": "buy",
-    "ratingMean": 2.17,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 21,
     "targetMean": 342.19,
     "targetHigh": 391.0,
     "targetLow": 295.0,
-    "price": 312.37,
+    "price": 320.72,
     "currency": "USD"
   },
   "BAC": {
@@ -397,27 +397,27 @@ window.STOCK_ANALYST = {
     "targetMean": 63.16,
     "targetHigh": 71.0,
     "targetLow": 57.5,
-    "price": 53.83,
+    "price": 56.02,
     "currency": "USD"
   },
   "V": {
     "rating": "strong_buy",
     "ratingMean": 1.33,
     "numAnalysts": 36,
-    "targetMean": 398.64,
+    "targetMean": 398.83,
     "targetHigh": 450.0,
-    "targetLow": 323.0,
-    "price": 323.57,
+    "targetLow": 330.0,
+    "price": 322.39,
     "currency": "USD"
   },
   "MA": {
     "rating": "strong_buy",
     "ratingMean": 1.31,
     "numAnalysts": 36,
-    "targetMean": 646.97,
+    "targetMean": 644.89,
     "targetHigh": 735.0,
     "targetLow": 550.0,
-    "price": 491.08,
+    "price": 489.98,
     "currency": "USD"
   },
   "BRK.B": {
@@ -427,7 +427,7 @@ window.STOCK_ANALYST = {
     "targetMean": 520.33,
     "targetHigh": 570.0,
     "targetLow": 481.0,
-    "price": 488.13,
+    "price": 489.25,
     "currency": "USD"
   },
   "JNJ": {
@@ -437,17 +437,17 @@ window.STOCK_ANALYST = {
     "targetMean": 252.87,
     "targetHigh": 285.0,
     "targetLow": 155.0,
-    "price": 232.77,
+    "price": 240.87,
     "currency": "USD"
   },
   "PFE": {
     "rating": "buy",
-    "ratingMean": 2.45,
+    "ratingMean": 2.41,
     "numAnalysts": 27,
     "targetMean": 29.19,
     "targetHigh": 36.0,
     "targetLow": 24.0,
-    "price": 26.04,
+    "price": 26.21,
     "currency": "USD"
   },
   "MRK": {
@@ -457,7 +457,7 @@ window.STOCK_ANALYST = {
     "targetMean": 129.74,
     "targetHigh": 150.0,
     "targetLow": 100.0,
-    "price": 120.79,
+    "price": 119.05,
     "currency": "USD"
   },
   "ABBV": {
@@ -467,67 +467,67 @@ window.STOCK_ANALYST = {
     "targetMean": 253.55,
     "targetHigh": 328.0,
     "targetLow": 184.0,
-    "price": 227.23,
+    "price": 227.73,
     "currency": "USD"
   },
   "UNH": {
     "rating": "buy",
     "ratingMean": 1.64,
     "numAnalysts": 26,
-    "targetMean": 404.85,
+    "targetMean": 407.38,
     "targetHigh": 492.0,
     "targetLow": 287.0,
-    "price": 399.47,
+    "price": 408.52,
     "currency": "USD"
   },
   "NVO": {
     "rating": "buy",
     "ratingMean": 2.36,
     "numAnalysts": 12,
-    "targetMean": 46.9,
-    "targetHigh": 63.62,
-    "targetLow": 39.21,
-    "price": 42.96,
+    "targetMean": 47.29,
+    "targetHigh": 63.86,
+    "targetLow": 40.1,
+    "price": 43.88,
     "currency": "USD"
   },
   "T": {
     "rating": "buy",
-    "ratingMean": 1.96,
-    "numAnalysts": 22,
-    "targetMean": 30.3,
+    "ratingMean": 1.92,
+    "numAnalysts": 23,
+    "targetMean": 30.28,
     "targetHigh": 36.0,
     "targetLow": 25.0,
-    "price": 22.75,
+    "price": 23.58,
     "currency": "USD"
   },
   "VZ": {
     "rating": "buy",
-    "ratingMean": 2.24,
-    "numAnalysts": 22,
-    "targetMean": 51.85,
+    "ratingMean": 2.27,
+    "numAnalysts": 23,
+    "targetMean": 51.9,
     "targetHigh": 71.0,
     "targetLow": 46.0,
-    "price": 45.37,
+    "price": 48.11,
     "currency": "USD"
   },
   "TSLA": {
     "rating": "buy",
     "ratingMean": 2.34,
     "numAnalysts": 41,
-    "targetMean": 419.94,
+    "targetMean": 420.55,
     "targetHigh": 600.0,
     "targetLow": 123.0,
-    "price": 391.0,
+    "price": 406.43,
     "currency": "USD"
   },
   "F": {
     "rating": "hold",
-    "ratingMean": 2.8,
+    "ratingMean": 2.71,
     "numAnalysts": 20,
-    "targetMean": 14.4,
+    "targetMean": 14.7,
     "targetHigh": 20.0,
     "targetLow": 10.0,
-    "price": 14.9,
+    "price": 14.84,
     "currency": "USD"
   },
   "GM": {
@@ -537,7 +537,7 @@ window.STOCK_ANALYST = {
     "targetMean": 94.81,
     "targetHigh": 131.0,
     "targetLow": 59.0,
-    "price": 82.11,
+    "price": 81.5,
     "currency": "USD"
   },
   "BKNG": {
@@ -547,17 +547,17 @@ window.STOCK_ANALYST = {
     "targetMean": 224.41,
     "targetHigh": 298.0,
     "targetLow": 175.0,
-    "price": 165.84,
+    "price": 164.94,
     "currency": "USD"
   },
   "ABNB": {
     "rating": "buy",
     "ratingMean": 2.12,
     "numAnalysts": 37,
-    "targetMean": 156.34,
+    "targetMean": 156.47,
     "targetHigh": 181.0,
     "targetLow": 115.0,
-    "price": 133.54,
+    "price": 132.28,
     "currency": "USD"
   },
   "O": {
@@ -567,7 +567,7 @@ window.STOCK_ANALYST = {
     "targetMean": 68.15,
     "targetHigh": 75.0,
     "targetLow": 61.5,
-    "price": 60.84,
+    "price": 62.72,
     "currency": "USD"
   },
   "SCHD": {
@@ -577,7 +577,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 32.3,
+    "price": 32.82,
     "currency": "USD"
   },
   "VYM": {
@@ -587,57 +587,57 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 158.24,
+    "price": 160.33,
     "currency": "USD"
   },
   "GOOG": {
     "rating": "strong_buy",
     "ratingMean": 1.43,
     "numAnalysts": 14,
-    "targetMean": 407.22,
-    "targetHigh": 460.0,
+    "targetMean": 409.0,
+    "targetHigh": 475.0,
     "targetLow": 195.0,
-    "price": 365.76,
+    "price": 358.16,
     "currency": "USD"
   },
   "AVGO": {
     "rating": "strong_buy",
     "ratingMean": 1.33,
     "numAnalysts": 45,
-    "targetMean": 512.73,
+    "targetMean": 522.06,
     "targetHigh": 650.0,
     "targetLow": 215.88,
-    "price": 385.73,
+    "price": 382.07,
     "currency": "USD"
   },
   "LLY": {
     "rating": "buy",
     "ratingMean": 1.74,
     "numAnalysts": 29,
-    "targetMean": 1215.1,
+    "targetMean": 1215.79,
     "targetHigh": 1500.0,
     "targetLow": 850.0,
-    "price": 1131.42,
+    "price": 1133.0,
     "currency": "USD"
   },
   "MU": {
     "rating": "strong_buy",
     "ratingMean": 1.48,
     "numAnalysts": 40,
-    "targetMean": 739.48,
+    "targetMean": 828.73,
     "targetHigh": 1750.0,
     "targetLow": 249.0,
-    "price": 864.01,
+    "price": 981.61,
     "currency": "USD"
   },
   "CSCO": {
     "rating": "buy",
     "ratingMean": 1.88,
     "numAnalysts": 22,
-    "targetMean": 125.82,
+    "targetMean": 126.95,
     "targetHigh": 150.0,
     "targetLow": 84.98,
-    "price": 121.64,
+    "price": 121.1,
     "currency": "USD"
   },
   "PLTR": {
@@ -647,47 +647,47 @@ window.STOCK_ANALYST = {
     "targetMean": 183.73,
     "targetHigh": 255.0,
     "targetLow": 70.0,
-    "price": 135.53,
+    "price": 127.99,
     "currency": "USD"
   },
   "LRCX": {
     "rating": "buy",
-    "ratingMean": 1.53,
+    "ratingMean": 1.56,
     "numAnalysts": 32,
-    "targetMean": 316.19,
-    "targetHigh": 385.0,
+    "targetMean": 323.38,
+    "targetHigh": 425.0,
     "targetLow": 220.0,
-    "price": 303.28,
+    "price": 366.81,
     "currency": "USD"
   },
   "HSBC": {
     "rating": "buy",
-    "ratingMean": 2.33,
+    "ratingMean": 2.0,
     "numAnalysts": 3,
     "targetMean": 102.0,
     "targetHigh": 108.0,
     "targetLow": 97.0,
-    "price": 90.8,
+    "price": 92.67,
     "currency": "USD"
   },
   "AMAT": {
     "rating": "strong_buy",
     "ratingMean": 1.5,
     "numAnalysts": 36,
-    "targetMean": 511.17,
-    "targetHigh": 575.0,
+    "targetMean": 517.28,
+    "targetHigh": 650.0,
     "targetLow": 358.0,
-    "price": 453.01,
+    "price": 567.25,
     "currency": "USD"
   },
   "MS": {
     "rating": "buy",
     "ratingMean": 2.32,
     "numAnalysts": 21,
-    "targetMean": 203.29,
+    "targetMean": 203.67,
     "targetHigh": 230.0,
     "targetLow": 165.0,
-    "price": 211.93,
+    "price": 214.04,
     "currency": "USD"
   },
   "GE": {
@@ -697,17 +697,17 @@ window.STOCK_ANALYST = {
     "targetMean": 350.95,
     "targetHigh": 405.0,
     "targetLow": 270.0,
-    "price": 328.0,
+    "price": 335.3,
     "currency": "USD"
   },
   "GEV": {
     "rating": "buy",
     "ratingMean": 1.59,
     "numAnalysts": 33,
-    "targetMean": 1216.13,
+    "targetMean": 1211.89,
     "targetHigh": 1424.0,
     "targetLow": 836.0,
-    "price": 933.61,
+    "price": 940.66,
     "currency": "USD"
   },
   "AZN": {
@@ -717,7 +717,7 @@ window.STOCK_ANALYST = {
     "targetMean": 224.49,
     "targetHigh": 245.0,
     "targetLow": 184.0,
-    "price": 185.95,
+    "price": 178.75,
     "currency": "USD"
   },
   "NVS": {
@@ -727,17 +727,17 @@ window.STOCK_ANALYST = {
     "targetMean": 153.87,
     "targetHigh": 180.0,
     "targetLow": 123.0,
-    "price": 149.16,
+    "price": 153.07,
     "currency": "USD"
   },
   "GS": {
     "rating": "hold",
     "ratingMean": 2.6,
     "numAnalysts": 20,
-    "targetMean": 947.6,
+    "targetMean": 951.3,
     "targetHigh": 1050.0,
     "targetLow": 730.0,
-    "price": 1038.68,
+    "price": 1062.75,
     "currency": "USD"
   },
   "PM": {
@@ -747,37 +747,37 @@ window.STOCK_ANALYST = {
     "targetMean": 193.86,
     "targetHigh": 210.0,
     "targetLow": 168.0,
-    "price": 178.29,
+    "price": 184.3,
     "currency": "USD"
   },
   "TXN": {
     "rating": "buy",
     "ratingMean": 2.24,
     "numAnalysts": 33,
-    "targetMean": 290.33,
+    "targetMean": 291.55,
     "targetHigh": 400.0,
     "targetLow": 200.0,
-    "price": 285.06,
+    "price": 301.12,
     "currency": "USD"
   },
   "RY": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 3,
-    "targetMean": 186.81,
-    "targetHigh": 197.17,
-    "targetLow": 167.74,
-    "price": 194.04,
+    "targetMean": 186.07,
+    "targetHigh": 196.38,
+    "targetLow": 167.07,
+    "price": 199.54,
     "currency": "USD"
   },
   "SHEL": {
     "rating": "buy",
-    "ratingMean": 2.06,
+    "ratingMean": 2.13,
     "numAnalysts": 14,
     "targetMean": 99.04,
     "targetHigh": 122.4,
     "targetLow": 59.0,
-    "price": 85.4,
+    "price": 85.66,
     "currency": "USD"
   },
   "WFC": {
@@ -787,37 +787,37 @@ window.STOCK_ANALYST = {
     "targetMean": 96.11,
     "targetHigh": 113.0,
     "targetLow": 85.0,
-    "price": 81.94,
+    "price": 83.73,
     "currency": "USD"
   },
   "LIN": {
     "rating": "buy",
     "ratingMean": 1.63,
     "numAnalysts": 25,
-    "targetMean": 545.04,
+    "targetMean": 545.44,
     "targetHigh": 600.0,
     "targetLow": 400.0,
-    "price": 507.9,
+    "price": 523.57,
     "currency": "USD"
   },
   "KLAC": {
     "rating": "buy",
-    "ratingMean": 1.93,
+    "ratingMean": 2.03,
     "numAnalysts": 29,
-    "targetMean": 1855.14,
-    "targetHigh": 2100.0,
-    "targetLow": 1500.0,
-    "price": 1929.2,
+    "targetMean": 192.62,
+    "targetHigh": 250.0,
+    "targetLow": 150.0,
+    "price": 254.54,
     "currency": "USD"
   },
   "ARM": {
     "rating": "buy",
     "ratingMean": 1.88,
     "numAnalysts": 37,
-    "targetMean": 247.41,
+    "targetMean": 257.3,
     "targetHigh": 500.0,
     "targetLow": 125.0,
-    "price": 342.93,
+    "price": 380.81,
     "currency": "USD"
   },
   "TM": {
@@ -827,27 +827,27 @@ window.STOCK_ANALYST = {
     "targetMean": 256.52,
     "targetHigh": 290.0,
     "targetLow": 230.0,
-    "price": 177.16,
+    "price": 174.95,
     "currency": "USD"
   },
   "AXP": {
     "rating": "buy",
     "ratingMean": 2.28,
     "numAnalysts": 24,
-    "targetMean": 361.57,
+    "targetMean": 361.94,
     "targetHigh": 450.0,
     "targetLow": 285.0,
-    "price": 310.66,
+    "price": 325.44,
     "currency": "USD"
   },
   "ANET": {
     "rating": "strong_buy",
-    "ratingMean": 1.3,
+    "ratingMean": 1.27,
     "numAnalysts": 27,
-    "targetMean": 188.2,
+    "targetMean": 189.13,
     "targetHigh": 220.0,
     "targetLow": 164.0,
-    "price": 154.27,
+    "price": 163.24,
     "currency": "USD"
   },
   "C": {
@@ -857,17 +857,17 @@ window.STOCK_ANALYST = {
     "targetMean": 146.93,
     "targetHigh": 170.0,
     "targetLow": 125.0,
-    "price": 132.47,
+    "price": 139.83,
     "currency": "USD"
   },
   "TMUS": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.61,
     "numAnalysts": 26,
     "targetMean": 260.81,
     "targetHigh": 300.0,
     "targetLow": 212.0,
-    "price": 178.1,
+    "price": 189.1,
     "currency": "USD"
   },
   "TTE": {
@@ -877,37 +877,37 @@ window.STOCK_ANALYST = {
     "targetMean": 97.19,
     "targetHigh": 106.0,
     "targetLow": 77.0,
-    "price": 88.71,
+    "price": 88.02,
     "currency": "USD"
   },
   "NEE": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 19,
-    "targetMean": 98.55,
+    "targetMean": 98.47,
     "targetHigh": 112.0,
     "targetLow": 55.0,
-    "price": 85.84,
+    "price": 85.99,
     "currency": "USD"
   },
   "BHP": {
     "rating": "hold",
     "ratingMean": 3.12,
     "numAnalysts": 7,
-    "targetMean": 68.07,
-    "targetHigh": 89.0,
+    "targetMean": 70.36,
+    "targetHigh": 96.0,
     "targetLow": 56.0,
-    "price": 82.72,
+    "price": 90.82,
     "currency": "USD"
   },
   "SAP": {
     "rating": "buy",
     "ratingMean": 1.56,
     "numAnalysts": 12,
-    "targetMean": 256.5,
+    "targetMean": 256.0,
     "targetHigh": 323.0,
     "targetLow": 200.0,
-    "price": 184.77,
+    "price": 164.18,
     "currency": "USD"
   },
   "ADI": {
@@ -917,7 +917,7 @@ window.STOCK_ANALYST = {
     "targetMean": 451.03,
     "targetHigh": 515.0,
     "targetLow": 363.0,
-    "price": 401.39,
+    "price": 417.79,
     "currency": "USD"
   },
   "QCOM": {
@@ -927,37 +927,37 @@ window.STOCK_ANALYST = {
     "targetMean": 180.48,
     "targetHigh": 300.0,
     "targetLow": 100.0,
-    "price": 215.94,
+    "price": 211.72,
     "currency": "USD"
   },
   "AMGN": {
     "rating": "buy",
     "ratingMean": 2.46,
     "numAnalysts": 30,
-    "targetMean": 352.23,
+    "targetMean": 352.5,
     "targetHigh": 427.0,
     "targetLow": 200.0,
-    "price": 349.58,
+    "price": 355.2,
     "currency": "USD"
   },
   "TD": {
     "rating": "buy",
     "ratingMean": 2.07,
     "numAnalysts": 3,
-    "targetMean": 110.7,
-    "targetHigh": 120.88,
-    "targetLow": 97.65,
-    "price": 113.16,
+    "targetMean": 110.28,
+    "targetHigh": 120.4,
+    "targetLow": 97.25,
+    "price": 117.33,
     "currency": "USD"
   },
   "SAN": {
-    "rating": "hold",
-    "ratingMean": 3.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 3,
     "targetMean": 12.16,
     "targetHigh": 14.3,
     "targetLow": 9.3,
-    "price": 12.15,
+    "price": 12.87,
     "currency": "USD"
   },
   "TJX": {
@@ -967,17 +967,17 @@ window.STOCK_ANALYST = {
     "targetMean": 177.63,
     "targetHigh": 197.0,
     "targetLow": 125.0,
-    "price": 160.71,
+    "price": 168.41,
     "currency": "USD"
   },
   "SHOP": {
     "rating": "buy",
     "ratingMean": 1.75,
     "numAnalysts": 45,
-    "targetMean": 150.11,
+    "targetMean": 149.78,
     "targetHigh": 200.0,
     "targetLow": 105.0,
-    "price": 109.54,
+    "price": 108.24,
     "currency": "USD"
   },
   "ETN": {
@@ -987,57 +987,57 @@ window.STOCK_ANALYST = {
     "targetMean": 451.73,
     "targetHigh": 534.0,
     "targetLow": 321.0,
-    "price": 395.94,
+    "price": 391.39,
     "currency": "USD"
   },
   "BLK": {
     "rating": "buy",
     "ratingMean": 1.59,
     "numAnalysts": 16,
-    "targetMean": 1251.25,
+    "targetMean": 1246.25,
     "targetHigh": 1393.0,
     "targetLow": 1140.0,
-    "price": 995.6,
+    "price": 1032.0,
     "currency": "USD"
   },
   "GILD": {
     "rating": "buy",
-    "ratingMean": 1.65,
-    "numAnalysts": 29,
-    "targetMean": 157.83,
+    "ratingMean": 1.67,
+    "numAnalysts": 28,
+    "targetMean": 157.57,
     "targetHigh": 180.0,
     "targetLow": 122.0,
-    "price": 129.16,
+    "price": 125.59,
     "currency": "USD"
   },
   "STX": {
     "rating": "buy",
     "ratingMean": 1.54,
     "numAnalysts": 22,
-    "targetMean": 856.77,
+    "targetMean": 885.91,
     "targetHigh": 1150.0,
     "targetLow": 545.0,
-    "price": 847.47,
+    "price": 931.04,
     "currency": "USD"
   },
   "ISRG": {
     "rating": "buy",
     "ratingMean": 1.94,
     "numAnalysts": 29,
-    "targetMean": 565.25,
+    "targetMean": 565.08,
     "targetHigh": 750.0,
     "targetLow": 366.0,
-    "price": 422.06,
+    "price": 411.06,
     "currency": "USD"
   },
   "SCHW": {
     "rating": "buy",
     "ratingMean": 1.68,
-    "numAnalysts": 20,
-    "targetMean": 115.85,
+    "numAnalysts": 19,
+    "targetMean": 116.05,
     "targetHigh": 137.0,
     "targetLow": 84.0,
-    "price": 88.84,
+    "price": 91.1,
     "currency": "USD"
   },
   "UNP": {
@@ -1047,7 +1047,7 @@ window.STOCK_ANALYST = {
     "targetMean": 291.73,
     "targetHigh": 330.0,
     "targetLow": 239.0,
-    "price": 272.32,
+    "price": 272.7,
     "currency": "USD"
   },
   "DE": {
@@ -1057,27 +1057,27 @@ window.STOCK_ANALYST = {
     "targetMean": 644.21,
     "targetHigh": 759.0,
     "targetLow": 500.0,
-    "price": 583.44,
+    "price": 577.48,
     "currency": "USD"
   },
   "ABT": {
     "rating": "buy",
     "ratingMean": 1.67,
     "numAnalysts": 24,
-    "targetMean": 117.29,
+    "targetMean": 116.54,
     "targetHigh": 135.0,
     "targetLow": 92.0,
-    "price": 91.07,
+    "price": 88.18,
     "currency": "USD"
   },
   "BX": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 20,
-    "targetMean": 143.65,
+    "targetMean": 143.45,
     "targetHigh": 190.0,
     "targetLow": 116.0,
-    "price": 115.35,
+    "price": 122.79,
     "currency": "USD"
   },
   "APP": {
@@ -1087,7 +1087,7 @@ window.STOCK_ANALYST = {
     "targetMean": 648.1,
     "targetHigh": 860.0,
     "targetLow": 340.0,
-    "price": 557.2,
+    "price": 496.77,
     "currency": "USD"
   },
   "UBER": {
@@ -1097,7 +1097,7 @@ window.STOCK_ANALYST = {
     "targetMean": 104.43,
     "targetHigh": 150.0,
     "targetLow": 70.0,
-    "price": 70.71,
+    "price": 68.85,
     "currency": "USD"
   },
   "COP": {
@@ -1107,137 +1107,137 @@ window.STOCK_ANALYST = {
     "targetMean": 142.77,
     "targetHigh": 183.0,
     "targetLow": 121.0,
-    "price": 117.14,
+    "price": 116.98,
     "currency": "USD"
   },
   "PANW": {
     "rating": "buy",
-    "ratingMean": 1.62,
+    "ratingMean": 1.6,
     "numAnalysts": 50,
-    "targetMean": 306.56,
+    "targetMean": 310.32,
     "targetHigh": 375.0,
     "targetLow": 162.34,
-    "price": 272.05,
+    "price": 279.62,
     "currency": "USD"
   },
   "WDC": {
     "rating": "buy",
     "ratingMean": 1.52,
     "numAnalysts": 23,
-    "targetMean": 529.57,
+    "targetMean": 547.09,
     "targetHigh": 685.0,
     "targetLow": 360.0,
-    "price": 511.72,
+    "price": 562.92,
     "currency": "USD"
   },
   "BUD": {
     "rating": "buy",
-    "ratingMean": 1.55,
+    "ratingMean": 1.64,
     "numAnalysts": 10,
-    "targetMean": 92.73,
+    "targetMean": 92.93,
     "targetHigh": 105.0,
-    "targetLow": 83.0,
-    "price": 78.5,
+    "targetLow": 85.0,
+    "price": 82.91,
     "currency": "USD"
   },
   "MRVL": {
     "rating": "strong_buy",
-    "ratingMean": 1.43,
+    "ratingMean": 1.45,
     "numAnalysts": 41,
-    "targetMean": 233.14,
-    "targetHigh": 321.0,
+    "targetMean": 235.7,
+    "targetHigh": 345.0,
     "targetLow": 110.0,
-    "price": 263.47,
+    "price": 279.7,
     "currency": "USD"
   },
   "SCCO": {
     "rating": "underperform",
     "ratingMean": 3.59,
     "numAnalysts": 16,
-    "targetMean": 163.13,
-    "targetHigh": 232.67,
+    "targetMean": 164.54,
+    "targetHigh": 250.0,
     "targetLow": 125.74,
-    "price": 172.97,
+    "price": 189.79,
     "currency": "USD"
   },
   "DELL": {
     "rating": "buy",
-    "ratingMean": 1.78,
+    "ratingMean": 1.74,
     "numAnalysts": 23,
     "targetMean": 483.83,
     "targetHigh": 700.0,
     "targetLow": 213.0,
-    "price": 394.39,
+    "price": 395.57,
     "currency": "USD"
   },
   "GLW": {
     "rating": "buy",
-    "ratingMean": 1.81,
+    "ratingMean": 1.75,
     "numAnalysts": 15,
     "targetMean": 198.0,
     "targetHigh": 230.0,
     "targetLow": 149.0,
-    "price": 177.58,
+    "price": 179.2,
     "currency": "USD"
   },
   "PBR": {
     "rating": "buy",
-    "ratingMean": 1.73,
+    "ratingMean": 1.79,
     "numAnalysts": 14,
-    "targetMean": 22.84,
+    "targetMean": 22.82,
     "targetHigh": 28.5,
     "targetLow": 17.4,
-    "price": 17.75,
+    "price": 18.38,
     "currency": "USD"
   },
   "HON": {
     "rating": "buy",
     "ratingMean": 2.04,
-    "numAnalysts": 25,
-    "targetMean": 248.3,
+    "numAnalysts": 26,
+    "targetMean": 246.67,
     "targetHigh": 292.0,
     "targetLow": 198.0,
-    "price": 213.97,
+    "price": 220.31,
     "currency": "USD"
   },
   "PLD": {
     "rating": "buy",
-    "ratingMean": 1.96,
+    "ratingMean": 2.0,
     "numAnalysts": 20,
     "targetMean": 152.3,
     "targetHigh": 167.0,
     "targetLow": 130.0,
-    "price": 144.54,
+    "price": 148.74,
     "currency": "USD"
   },
   "UL": {
-    "rating": "buy",
-    "ratingMean": 1.6,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 4,
-    "targetMean": 67.31,
-    "targetHigh": 70.75,
-    "targetLow": 63.86,
-    "price": 56.72,
+    "targetMean": 67.58,
+    "targetHigh": 71.03,
+    "targetLow": 64.11,
+    "price": 58.92,
     "currency": "USD"
   },
   "BTI": {
     "rating": "strong_buy",
     "ratingMean": 1.5,
     "numAnalysts": 5,
-    "targetMean": 67.44,
+    "targetMean": 67.54,
     "targetHigh": 72.0,
     "targetLow": 58.0,
-    "price": 59.72,
+    "price": 62.32,
     "currency": "USD"
   },
   "CB": {
     "rating": "buy",
     "ratingMean": 2.36,
     "numAnalysts": 23,
-    "targetMean": 345.78,
+    "targetMean": 345.04,
     "targetHigh": 385.0,
     "targetLow": 291.0,
-    "price": 326.27,
+    "price": 328.14,
     "currency": "USD"
   },
   "SPGI": {
@@ -1247,67 +1247,67 @@ window.STOCK_ANALYST = {
     "targetMean": 533.76,
     "targetHigh": 575.0,
     "targetLow": 480.0,
-    "price": 424.44,
+    "price": 418.91,
     "currency": "USD"
   },
   "VRT": {
     "rating": "strong_buy",
-    "ratingMean": 1.5,
-    "numAnalysts": 25,
-    "targetMean": 376.8,
+    "ratingMean": 1.44,
+    "numAnalysts": 26,
+    "targetMean": 378.31,
     "targetHigh": 500.0,
     "targetLow": 236.0,
-    "price": 300.51,
+    "price": 302.87,
     "currency": "USD"
   },
   "MO": {
-    "rating": "hold",
-    "ratingMean": 2.62,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 11,
     "targetMean": 70.36,
     "targetHigh": 82.0,
     "targetLow": 59.0,
-    "price": 72.19,
+    "price": 71.94,
     "currency": "USD"
   },
   "DHR": {
     "rating": "strong_buy",
-    "ratingMean": 1.4,
-    "numAnalysts": 22,
-    "targetMean": 244.27,
+    "ratingMean": 1.46,
+    "numAnalysts": 23,
+    "targetMean": 242.35,
     "targetHigh": 310.0,
     "targetLow": 200.0,
-    "price": 184.3,
+    "price": 180.1,
     "currency": "USD"
   },
   "BBVA": {
-    "rating": "hold",
-    "ratingMean": 2.67,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 3,
     "targetMean": 22.85,
     "targetHigh": 28.56,
     "targetLow": 19.0,
-    "price": 22.22,
+    "price": 23.34,
     "currency": "USD"
   },
   "COF": {
     "rating": "buy",
-    "ratingMean": 1.57,
+    "ratingMean": 1.61,
     "numAnalysts": 21,
-    "targetMean": 255.19,
+    "targetMean": 254.67,
     "targetHigh": 310.0,
-    "targetLow": 215.0,
-    "price": 180.67,
+    "targetLow": 214.0,
+    "price": 184.73,
     "currency": "USD"
   },
   "ENB": {
     "rating": "buy",
     "ratingMean": 2.48,
     "numAnalysts": 4,
-    "targetMean": 52.22,
-    "targetHigh": 58.91,
-    "targetLow": 45.79,
-    "price": 56.31,
+    "targetMean": 51.99,
+    "targetHigh": 58.57,
+    "targetLow": 45.61,
+    "price": 56.5,
     "currency": "USD"
   },
   "BMY": {
@@ -1317,57 +1317,57 @@ window.STOCK_ANALYST = {
     "targetMean": 63.08,
     "targetHigh": 75.0,
     "targetLow": 40.0,
-    "price": 57.27,
+    "price": 57.13,
     "currency": "USD"
   },
   "PGR": {
     "rating": "hold",
     "ratingMean": 2.6,
     "numAnalysts": 21,
-    "targetMean": 231.19,
+    "targetMean": 230.86,
     "targetHigh": 331.0,
     "targetLow": 190.0,
-    "price": 204.02,
+    "price": 203.11,
     "currency": "USD"
   },
   "NEM": {
     "rating": "buy",
     "ratingMean": 1.64,
     "numAnalysts": 21,
-    "targetMean": 141.74,
+    "targetMean": 141.93,
     "targetHigh": 175.0,
     "targetLow": 72.0,
-    "price": 99.71,
+    "price": 100.23,
     "currency": "USD"
   },
   "SONY": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "strong_buy",
+    "ratingMean": 1.5,
     "numAnalysts": 4,
     "targetMean": 29.38,
     "targetHigh": 34.0,
     "targetLow": 22.0,
-    "price": 21.89,
+    "price": 20.53,
     "currency": "USD"
   },
   "CRWD": {
     "rating": "buy",
-    "ratingMean": 1.63,
+    "ratingMean": 1.67,
     "numAnalysts": 51,
-    "targetMean": 707.47,
+    "targetMean": 712.37,
     "targetHigh": 850.0,
     "targetLow": 413.0,
-    "price": 671.02,
+    "price": 682.8,
     "currency": "USD"
   },
   "SYK": {
     "rating": "buy",
-    "ratingMean": 1.75,
-    "numAnalysts": 26,
-    "targetMean": 389.93,
+    "ratingMean": 1.7,
+    "numAnalysts": 25,
+    "targetMean": 386.8,
     "targetHigh": 465.0,
     "targetLow": 315.0,
-    "price": 305.66,
+    "price": 312.2,
     "currency": "USD"
   },
   "SNY": {
@@ -1377,17 +1377,17 @@ window.STOCK_ANALYST = {
     "targetMean": 55.9,
     "targetHigh": 63.0,
     "targetLow": 51.0,
-    "price": 45.02,
+    "price": 44.25,
     "currency": "USD"
   },
   "CEG": {
     "rating": "strong_buy",
     "ratingMean": 1.48,
-    "numAnalysts": 20,
-    "targetMean": 367.12,
+    "numAnalysts": 19,
+    "targetMean": 368.43,
     "targetHigh": 441.0,
     "targetLow": 310.0,
-    "price": 254.83,
+    "price": 253.76,
     "currency": "USD"
   },
   "PWR": {
@@ -1397,17 +1397,17 @@ window.STOCK_ANALYST = {
     "targetMean": 761.35,
     "targetHigh": 901.0,
     "targetLow": 420.0,
-    "price": 695.11,
+    "price": 707.74,
     "currency": "USD"
   },
   "ACN": {
     "rating": "buy",
     "ratingMean": 1.93,
     "numAnalysts": 26,
-    "targetMean": 240.51,
+    "targetMean": 236.86,
     "targetHigh": 320.0,
     "targetLow": 180.27,
-    "price": 178.25,
+    "price": 170.28,
     "currency": "USD"
   },
   "INTU": {
@@ -1417,7 +1417,7 @@ window.STOCK_ANALYST = {
     "targetMean": 491.3,
     "targetHigh": 921.0,
     "targetLow": 276.0,
-    "price": 296.76,
+    "price": 276.73,
     "currency": "USD"
   },
   "VRTX": {
@@ -1427,7 +1427,7 @@ window.STOCK_ANALYST = {
     "targetMean": 548.69,
     "targetHigh": 641.0,
     "targetLow": 330.0,
-    "price": 446.83,
+    "price": 444.93,
     "currency": "USD"
   },
   "EQIX": {
@@ -1437,137 +1437,137 @@ window.STOCK_ANALYST = {
     "targetMean": 1197.11,
     "targetHigh": 1350.0,
     "targetLow": 950.0,
-    "price": 1080.95,
+    "price": 1055.85,
     "currency": "USD"
   },
   "BMO": {
     "rating": "hold",
     "ratingMean": 2.64,
     "numAnalysts": 3,
-    "targetMean": 153.43,
-    "targetHigh": 165.47,
-    "targetLow": 141.68,
-    "price": 164.37,
+    "targetMean": 153.07,
+    "targetHigh": 164.8,
+    "targetLow": 141.11,
+    "price": 168.3,
     "currency": "USD"
   },
   "CVS": {
     "rating": "strong_buy",
     "ratingMean": 1.5,
     "numAnalysts": 26,
-    "targetMean": 103.04,
+    "targetMean": 104.5,
     "targetHigh": 140.0,
     "targetLow": 79.0,
-    "price": 95.93,
+    "price": 101.96,
     "currency": "USD"
   },
   "MDT": {
     "rating": "buy",
     "ratingMean": 1.9,
     "numAnalysts": 26,
-    "targetMean": 99.35,
+    "targetMean": 98.0,
     "targetHigh": 121.0,
     "targetLow": 78.0,
-    "price": 81.67,
+    "price": 80.2,
     "currency": "USD"
   },
   "GSK": {
     "rating": "hold",
-    "ratingMean": 2.88,
-    "numAnalysts": 8,
-    "targetMean": 57.94,
+    "ratingMean": 3.14,
+    "numAnalysts": 7,
+    "targetMean": 56.63,
     "targetHigh": 70.0,
     "targetLow": 47.0,
-    "price": 51.52,
+    "price": 53.04,
     "currency": "USD"
   },
   "DUK": {
     "rating": "buy",
     "ratingMean": 2.17,
     "numAnalysts": 18,
-    "targetMean": 138.61,
+    "targetMean": 138.56,
     "targetHigh": 146.0,
     "targetLow": 131.0,
-    "price": 124.22,
+    "price": 124.97,
     "currency": "USD"
   },
   "MCK": {
     "rating": "strong_buy",
     "ratingMean": 1.47,
     "numAnalysts": 15,
-    "targetMean": 949.73,
+    "targetMean": 941.4,
     "targetHigh": 1065.0,
     "targetLow": 812.0,
-    "price": 775.66,
+    "price": 784.05,
     "currency": "USD"
   },
   "EQNR": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 3.33,
     "numAnalysts": 6,
     "targetMean": 37.63,
     "targetHigh": 42.0,
     "targetLow": 33.0,
-    "price": 36.94,
+    "price": 36.18,
     "currency": "USD"
   },
   "CNQ": {
     "rating": "buy",
     "ratingMean": 2.23,
     "numAnalysts": 4,
-    "targetMean": 45.49,
-    "targetHigh": 52.28,
-    "targetLow": 40.62,
-    "price": 45.7,
+    "targetMean": 46.53,
+    "targetHigh": 52.07,
+    "targetLow": 40.46,
+    "price": 45.3,
     "currency": "USD"
   },
   "CMCSA": {
     "rating": "hold",
-    "ratingMean": 2.69,
+    "ratingMean": 2.7,
     "numAnalysts": 21,
-    "targetMean": 32.45,
+    "targetMean": 32.4,
     "targetHigh": 44.0,
     "targetLow": 21.0,
-    "price": 23.82,
+    "price": 24.5,
     "currency": "USD"
   },
   "HCA": {
     "rating": "buy",
     "ratingMean": 1.96,
     "numAnalysts": 21,
-    "targetMean": 506.67,
+    "targetMean": 503.57,
     "targetHigh": 635.0,
     "targetLow": 396.0,
-    "price": 372.13,
+    "price": 387.18,
     "currency": "USD"
   },
   "HWM": {
-    "rating": "strong_buy",
-    "ratingMean": 1.45,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 20,
     "targetMean": 303.23,
     "targetHigh": 340.0,
     "targetLow": 256.56,
-    "price": 251.9,
+    "price": 264.67,
     "currency": "USD"
   },
   "BNS": {
     "rating": "hold",
     "ratingMean": 2.93,
     "numAnalysts": 3,
-    "targetMean": 79.94,
-    "targetHigh": 83.11,
-    "targetLow": 74.95,
-    "price": 80.56,
+    "targetMean": 79.7,
+    "targetHigh": 82.78,
+    "targetLow": 74.65,
+    "price": 83.99,
     "currency": "USD"
   },
   "CDNS": {
     "rating": "strong_buy",
     "ratingMean": 1.48,
     "numAnalysts": 26,
-    "targetMean": 383.94,
+    "targetMean": 385.37,
     "targetHigh": 440.0,
     "targetLow": 275.0,
-    "price": 376.19,
+    "price": 384.96,
     "currency": "USD"
   },
   "MAR": {
@@ -1577,7 +1577,7 @@ window.STOCK_ANALYST = {
     "targetMean": 377.67,
     "targetHigh": 446.0,
     "targetLow": 272.0,
-    "price": 392.51,
+    "price": 402.54,
     "currency": "USD"
   },
   "NOW": {
@@ -1587,17 +1587,17 @@ window.STOCK_ANALYST = {
     "targetMean": 141.86,
     "targetHigh": 236.0,
     "targetLow": 85.0,
-    "price": 112.45,
+    "price": 102.15,
     "currency": "USD"
   },
   "FDX": {
     "rating": "buy",
     "ratingMean": 1.89,
-    "numAnalysts": 26,
-    "targetMean": 382.36,
-    "targetHigh": 479.0,
+    "numAnalysts": 12,
+    "targetMean": 317.62,
+    "targetHigh": 425.0,
     "targetLow": 160.0,
-    "price": 331.0,
+    "price": 338.31,
     "currency": "USD"
   },
   "MELI": {
@@ -1607,7 +1607,7 @@ window.STOCK_ANALYST = {
     "targetMean": 2216.96,
     "targetHigh": 2800.0,
     "targetLow": 1750.0,
-    "price": 1607.8,
+    "price": 1589.6,
     "currency": "USD"
   },
   "SNPS": {
@@ -1617,17 +1617,17 @@ window.STOCK_ANALYST = {
     "targetMean": 560.38,
     "targetHigh": 650.0,
     "targetLow": 403.85,
-    "price": 464.85,
+    "price": 453.89,
     "currency": "USD"
   },
   "KKR": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.52,
     "numAnalysts": 19,
-    "targetMean": 125.64,
+    "targetMean": 125.53,
     "targetHigh": 153.0,
     "targetLow": 104.0,
-    "price": 93.4,
+    "price": 96.24,
     "currency": "USD"
   },
   "WMB": {
@@ -1637,7 +1637,7 @@ window.STOCK_ANALYST = {
     "targetMean": 82.9,
     "targetHigh": 98.0,
     "targetLow": 67.0,
-    "price": 71.96,
+    "price": 72.08,
     "currency": "USD"
   },
   "WM": {
@@ -1647,7 +1647,7 @@ window.STOCK_ANALYST = {
     "targetMean": 256.04,
     "targetHigh": 285.0,
     "targetLow": 210.0,
-    "price": 220.4,
+    "price": 219.45,
     "currency": "USD"
   },
   "BK": {
@@ -1664,70 +1664,70 @@ window.STOCK_ANALYST = {
     "rating": "buy",
     "ratingMean": 1.91,
     "numAnalysts": 15,
-    "targetMean": 250.87,
+    "targetMean": 249.6,
     "targetHigh": 330.0,
     "targetLow": 93.0,
-    "price": 163.66,
+    "price": 162.64,
     "currency": "USD"
   },
   "UPS": {
     "rating": "buy",
-    "ratingMean": 2.21,
-    "numAnalysts": 26,
-    "targetMean": 112.88,
+    "ratingMean": 2.19,
+    "numAnalysts": 25,
+    "targetMean": 113.6,
     "targetHigh": 135.0,
     "targetLow": 75.0,
-    "price": 108.54,
+    "price": 108.1,
     "currency": "USD"
   },
   "SPOT": {
     "rating": "buy",
     "ratingMean": 1.59,
     "numAnalysts": 39,
-    "targetMean": 604.64,
-    "targetHigh": 725.52,
-    "targetLow": 393.78,
-    "price": 496.95,
+    "targetMean": 607.24,
+    "targetHigh": 728.38,
+    "targetLow": 395.32,
+    "price": 482.0,
     "currency": "USD"
   },
   "JCI": {
     "rating": "buy",
-    "ratingMean": 2.14,
-    "numAnalysts": 20,
-    "targetMean": 152.1,
+    "ratingMean": 2.09,
+    "numAnalysts": 21,
+    "targetMean": 154.9,
     "targetHigh": 180.0,
     "targetLow": 111.0,
-    "price": 143.65,
+    "price": 144.96,
     "currency": "USD"
   },
   "USB": {
     "rating": "buy",
-    "ratingMean": 2.05,
+    "ratingMean": 2.1,
     "numAnalysts": 19,
-    "targetMean": 63.55,
+    "targetMean": 63.5,
     "targetHigh": 74.0,
     "targetLow": 57.5,
-    "price": 55.69,
+    "price": 58.94,
     "currency": "USD"
   },
   "ADP": {
     "rating": "hold",
     "ratingMean": 2.72,
     "numAnalysts": 15,
-    "targetMean": 246.33,
+    "targetMean": 246.8,
     "targetHigh": 305.0,
     "targetLow": 190.0,
-    "price": 231.95,
+    "price": 226.21,
     "currency": "USD"
   },
   "SLB": {
     "rating": "buy",
     "ratingMean": 1.62,
     "numAnalysts": 28,
-    "targetMean": 62.21,
+    "targetMean": 62.36,
     "targetHigh": 71.0,
     "targetLow": 43.0,
-    "price": 54.87,
+    "price": 56.18,
     "currency": "USD"
   },
   "AMT": {
@@ -1737,17 +1737,17 @@ window.STOCK_ANALYST = {
     "targetMean": 216.14,
     "targetHigh": 260.0,
     "targetLow": 195.0,
-    "price": 194.12,
+    "price": 187.18,
     "currency": "USD"
   },
   "BSX": {
     "rating": "strong_buy",
     "ratingMean": 1.48,
     "numAnalysts": 30,
-    "targetMean": 78.17,
+    "targetMean": 77.1,
     "targetHigh": 106.0,
     "targetLow": 55.0,
-    "price": 48.55,
+    "price": 46.91,
     "currency": "USD"
   },
   "CSX": {
@@ -1757,47 +1757,47 @@ window.STOCK_ANALYST = {
     "targetMean": 46.16,
     "targetHigh": 52.0,
     "targetLow": 30.0,
-    "price": 46.99,
+    "price": 47.57,
     "currency": "USD"
   },
   "ING": {
-    "rating": "hold",
-    "ratingMean": 2.67,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 3,
     "targetMean": 31.47,
     "targetHigh": 35.5,
     "targetLow": 29.0,
-    "price": 29.67,
+    "price": 30.21,
     "currency": "USD"
   },
   "E": {
-    "rating": "hold",
-    "ratingMean": 2.8,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 5,
     "targetMean": 56.22,
     "targetHigh": 64.3,
     "targetLow": 49.0,
-    "price": 53.8,
+    "price": 53.5,
     "currency": "USD"
   },
   "FCX": {
     "rating": "buy",
     "ratingMean": 1.7,
     "numAnalysts": 22,
-    "targetMean": 68.27,
-    "targetHigh": 77.0,
+    "targetMean": 68.86,
+    "targetHigh": 85.0,
     "targetLow": 31.0,
-    "price": 63.37,
+    "price": 68.41,
     "currency": "USD"
   },
   "MRSH": {
     "rating": "buy",
     "ratingMean": 2.39,
     "numAnalysts": 21,
-    "targetMean": 202.24,
+    "targetMean": 199.86,
     "targetHigh": 236.0,
-    "targetLow": 179.0,
-    "price": 165.44,
+    "targetLow": 176.0,
+    "price": 168.68,
     "currency": "USD"
   },
   "BCS": {
@@ -1807,17 +1807,17 @@ window.STOCK_ANALYST = {
     "targetMean": 26.93,
     "targetHigh": 31.0,
     "targetLow": 23.8,
-    "price": 24.27,
+    "price": 25.47,
     "currency": "USD"
   },
   "SU": {
     "rating": "buy",
     "ratingMean": 2.2,
     "numAnalysts": 3,
-    "targetMean": 63.95,
-    "targetHigh": 71.84,
-    "targetLow": 51.11,
-    "price": 62.22,
+    "targetMean": 63.68,
+    "targetHigh": 71.55,
+    "targetLow": 50.9,
+    "price": 61.6,
     "currency": "USD"
   },
   "MCO": {
@@ -1827,17 +1827,17 @@ window.STOCK_ANALYST = {
     "targetMean": 536.0,
     "targetHigh": 610.0,
     "targetLow": 489.0,
-    "price": 451.35,
+    "price": 447.85,
     "currency": "USD"
   },
   "MDLZ": {
-    "rating": "buy",
-    "ratingMean": 1.92,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 24,
     "targetMean": 67.21,
     "targetHigh": 75.0,
     "targetLow": 55.0,
-    "price": 62.04,
+    "price": 62.99,
     "currency": "USD"
   },
   "MPWR": {
@@ -1847,67 +1847,67 @@ window.STOCK_ANALYST = {
     "targetMean": 1797.14,
     "targetHigh": 2000.0,
     "targetLow": 1500.0,
-    "price": 1481.05,
+    "price": 1577.32,
     "currency": "USD"
   },
   "EMR": {
     "rating": "buy",
-    "ratingMean": 1.96,
-    "numAnalysts": 27,
-    "targetMean": 163.72,
+    "ratingMean": 1.93,
+    "numAnalysts": 28,
+    "targetMean": 164.13,
     "targetHigh": 203.0,
     "targetLow": 104.0,
-    "price": 138.12,
+    "price": 143.07,
     "currency": "USD"
   },
   "NET": {
     "rating": "buy",
     "ratingMean": 1.97,
     "numAnalysts": 31,
-    "targetMean": 236.11,
+    "targetMean": 243.11,
     "targetHigh": 305.0,
-    "targetLow": 135.0,
-    "price": 250.11,
+    "targetLow": 136.0,
+    "price": 228.48,
     "currency": "USD"
   },
   "DASH": {
     "rating": "buy",
     "ratingMean": 1.61,
     "numAnalysts": 42,
-    "targetMean": 245.99,
+    "targetMean": 244.68,
     "targetHigh": 350.0,
     "targetLow": 172.0,
-    "price": 156.8,
+    "price": 150.58,
     "currency": "USD"
   },
   "MNST": {
     "rating": "buy",
-    "ratingMean": 2.04,
-    "numAnalysts": 23,
-    "targetMean": 89.46,
+    "ratingMean": 2.07,
+    "numAnalysts": 24,
+    "targetMean": 89.69,
     "targetHigh": 103.0,
     "targetLow": 64.0,
-    "price": 89.55,
+    "price": 92.83,
     "currency": "USD"
   },
   "APO": {
     "rating": "buy",
     "ratingMean": 1.79,
     "numAnalysts": 16,
-    "targetMean": 150.25,
+    "targetMean": 150.38,
     "targetHigh": 173.0,
     "targetLow": 125.0,
-    "price": 128.03,
+    "price": 133.88,
     "currency": "USD"
   },
   "CI": {
     "rating": "buy",
     "ratingMean": 1.54,
     "numAnalysts": 24,
-    "targetMean": 340.5,
+    "targetMean": 340.92,
     "targetHigh": 400.0,
     "targetLow": 290.0,
-    "price": 289.48,
+    "price": 298.0,
     "currency": "USD"
   },
   "EOG": {
@@ -1917,37 +1917,37 @@ window.STOCK_ANALYST = {
     "targetMean": 160.18,
     "targetHigh": 196.0,
     "targetLow": 136.0,
-    "price": 137.78,
+    "price": 136.65,
     "currency": "USD"
   },
   "AEP": {
     "rating": "buy",
     "ratingMean": 1.96,
     "numAnalysts": 21,
-    "targetMean": 144.52,
+    "targetMean": 144.33,
     "targetHigh": 173.0,
     "targetLow": 129.0,
-    "price": 129.14,
+    "price": 129.23,
     "currency": "USD"
   },
   "MMM": {
     "rating": "buy",
-    "ratingMean": 2.17,
-    "numAnalysts": 17,
-    "targetMean": 172.2,
+    "ratingMean": 2.26,
+    "numAnalysts": 18,
+    "targetMean": 169.91,
     "targetHigh": 209.0,
     "targetLow": 120.0,
-    "price": 153.76,
+    "price": 158.32,
     "currency": "USD"
   },
   "VLO": {
     "rating": "buy",
     "ratingMean": 2.4,
     "numAnalysts": 19,
-    "targetMean": 260.0,
+    "targetMean": 261.21,
     "targetHigh": 300.0,
     "targetLow": 181.0,
-    "price": 255.82,
+    "price": 258.67,
     "currency": "USD"
   },
   "ROST": {
@@ -1957,7 +1957,7 @@ window.STOCK_ANALYST = {
     "targetMean": 256.18,
     "targetHigh": 290.0,
     "targetLow": 176.0,
-    "price": 230.37,
+    "price": 240.13,
     "currency": "USD"
   },
   "ITW": {
@@ -1967,7 +1967,7 @@ window.STOCK_ANALYST = {
     "targetMean": 274.54,
     "targetHigh": 317.0,
     "targetLow": 219.0,
-    "price": 252.72,
+    "price": 257.43,
     "currency": "USD"
   },
   "REGN": {
@@ -1977,27 +1977,27 @@ window.STOCK_ANALYST = {
     "targetMean": 833.31,
     "targetHigh": 1000.0,
     "targetLow": 641.0,
-    "price": 635.45,
+    "price": 612.14,
     "currency": "USD"
   },
   "ECL": {
     "rating": "buy",
     "ratingMean": 1.74,
     "numAnalysts": 21,
-    "targetMean": 316.43,
+    "targetMean": 317.14,
     "targetHigh": 345.0,
-    "targetLow": 260.0,
-    "price": 257.97,
+    "targetLow": 270.0,
+    "price": 265.41,
     "currency": "USD"
   },
   "NTES": {
     "rating": "strong_buy",
     "ratingMean": 1.23,
     "numAnalysts": 31,
-    "targetMean": 162.44,
-    "targetHigh": 201.08,
-    "targetLow": 132.54,
-    "price": 119.48,
+    "targetMean": 162.54,
+    "targetHigh": 201.2,
+    "targetLow": 132.61,
+    "price": 125.82,
     "currency": "USD"
   },
   "HLT": {
@@ -2007,17 +2007,17 @@ window.STOCK_ANALYST = {
     "targetMean": 347.33,
     "targetHigh": 390.0,
     "targetLow": 260.0,
-    "price": 343.1,
+    "price": 345.95,
     "currency": "USD"
   },
   "MPC": {
     "rating": "buy",
     "ratingMean": 2.32,
     "numAnalysts": 18,
-    "targetMean": 265.06,
-    "targetHigh": 335.0,
+    "targetMean": 268.17,
+    "targetHigh": 344.0,
     "targetLow": 186.0,
-    "price": 262.01,
+    "price": 263.58,
     "currency": "USD"
   },
   "MSI": {
@@ -2027,7 +2027,7 @@ window.STOCK_ANALYST = {
     "targetMean": 506.55,
     "targetHigh": 530.0,
     "targetLow": 470.0,
-    "price": 410.34,
+    "price": 412.25,
     "currency": "USD"
   },
   "KMI": {
@@ -2037,7 +2037,7 @@ window.STOCK_ANALYST = {
     "targetMean": 35.33,
     "targetHigh": 43.0,
     "targetLow": 31.0,
-    "price": 31.68,
+    "price": 31.94,
     "currency": "USD"
   },
   "RCL": {
@@ -2047,7 +2047,7 @@ window.STOCK_ANALYST = {
     "targetMean": 336.31,
     "targetHigh": 425.0,
     "targetLow": 255.0,
-    "price": 280.0,
+    "price": 294.38,
     "currency": "USD"
   },
   "NSC": {
@@ -2057,27 +2057,27 @@ window.STOCK_ANALYST = {
     "targetMean": 335.71,
     "targetHigh": 378.0,
     "targetLow": 297.0,
-    "price": 313.45,
+    "price": 313.91,
     "currency": "USD"
   },
   "PSX": {
     "rating": "buy",
     "ratingMean": 2.05,
     "numAnalysts": 19,
-    "targetMean": 190.84,
-    "targetHigh": 215.0,
+    "targetMean": 191.84,
+    "targetHigh": 218.0,
     "targetLow": 138.0,
-    "price": 183.08,
+    "price": 179.45,
     "currency": "USD"
   },
   "NU": {
     "rating": "strong_buy",
     "ratingMean": 1.48,
     "numAnalysts": 21,
-    "targetMean": 18.48,
+    "targetMean": 18.39,
     "targetHigh": 22.0,
     "targetLow": 10.0,
-    "price": 11.97,
+    "price": 12.19,
     "currency": "USD"
   },
   "DLR": {
@@ -2087,27 +2087,27 @@ window.STOCK_ANALYST = {
     "targetMean": 218.72,
     "targetHigh": 250.0,
     "targetLow": 180.0,
-    "price": 186.79,
+    "price": 184.2,
     "currency": "USD"
   },
   "NOK": {
     "rating": "buy",
     "ratingMean": 2.09,
     "numAnalysts": 9,
-    "targetMean": 13.68,
-    "targetHigh": 20.0,
+    "targetMean": 14.89,
+    "targetHigh": 21.0,
     "targetLow": 8.5,
-    "price": 14.38,
+    "price": 14.8,
     "currency": "USD"
   },
   "VALE": {
     "rating": "buy",
     "ratingMean": 2.12,
     "numAnalysts": 25,
-    "targetMean": 17.26,
+    "targetMean": 17.32,
     "targetHigh": 21.0,
     "targetLow": 14.8,
-    "price": 15.23,
+    "price": 15.71,
     "currency": "USD"
   },
   "BKR": {
@@ -2117,7 +2117,7 @@ window.STOCK_ANALYST = {
     "targetMean": 71.24,
     "targetHigh": 85.0,
     "targetLow": 48.0,
-    "price": 62.59,
+    "price": 63.14,
     "currency": "USD"
   },
   "CTAS": {
@@ -2127,17 +2127,17 @@ window.STOCK_ANALYST = {
     "targetMean": 212.41,
     "targetHigh": 255.0,
     "targetLow": 160.0,
-    "price": 179.85,
+    "price": 176.28,
     "currency": "USD"
   },
   "CNI": {
     "rating": "buy",
     "ratingMean": 2.21,
     "numAnalysts": 12,
-    "targetMean": 116.54,
-    "targetHigh": 137.69,
-    "targetLow": 97.22,
-    "price": 120.38,
+    "targetMean": 117.33,
+    "targetHigh": 137.14,
+    "targetLow": 96.83,
+    "price": 118.98,
     "currency": "USD"
   },
   "APD": {
@@ -2147,17 +2147,17 @@ window.STOCK_ANALYST = {
     "targetMean": 327.86,
     "targetHigh": 360.0,
     "targetLow": 275.0,
-    "price": 282.35,
+    "price": 281.62,
     "currency": "USD"
   },
   "AON": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 19,
-    "targetMean": 385.26,
+    "targetMean": 384.11,
     "targetHigh": 436.0,
     "targetLow": 298.0,
-    "price": 328.53,
+    "price": 335.31,
     "currency": "USD"
   },
   "ASX": {
@@ -2167,67 +2167,67 @@ window.STOCK_ANALYST = {
     "targetMean": 38.65,
     "targetHigh": 43.0,
     "targetLow": 36.0,
-    "price": 34.03,
+    "price": 38.12,
     "currency": "USD"
   },
   "HOOD": {
     "rating": "buy",
     "ratingMean": 1.85,
     "numAnalysts": 24,
-    "targetMean": 99.82,
+    "targetMean": 100.86,
     "targetHigh": 155.0,
     "targetLow": 52.0,
-    "price": 82.47,
+    "price": 93.19,
     "currency": "USD"
   },
   "SPG": {
     "rating": "buy",
     "ratingMean": 2.19,
     "numAnalysts": 20,
-    "targetMean": 214.4,
+    "targetMean": 214.55,
     "targetHigh": 250.0,
     "targetLow": 194.0,
-    "price": 210.31,
+    "price": 219.04,
     "currency": "USD"
   },
   "FIX": {
     "rating": "strong_buy",
     "ratingMean": 1.25,
     "numAnalysts": 6,
-    "targetMean": 2026.0,
+    "targetMean": 2048.17,
     "targetHigh": 2200.0,
     "targetLow": 1910.0,
-    "price": 1843.94,
+    "price": 1877.61,
     "currency": "USD"
   },
   "MFC": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.07,
     "numAnalysts": 2,
-    "targetMean": 34.12,
-    "targetHigh": 37.37,
-    "targetLow": 30.87,
-    "price": 38.71,
+    "targetMean": 33.98,
+    "targetHigh": 37.22,
+    "targetLow": 30.74,
+    "price": 40.31,
     "currency": "USD"
   },
   "B": {
     "rating": "buy",
     "ratingMean": 1.96,
     "numAnalysts": 16,
-    "targetMean": 56.24,
+    "targetMean": 56.43,
     "targetHigh": 66.0,
     "targetLow": 31.0,
-    "price": 39.46,
+    "price": 40.2,
     "currency": "USD"
   },
   "FTNT": {
     "rating": "hold",
-    "ratingMean": 2.72,
-    "numAnalysts": 36,
-    "targetMean": 107.86,
-    "targetHigh": 150.0,
+    "ratingMean": 2.7,
+    "numAnalysts": 37,
+    "targetMean": 112.49,
+    "targetHigh": 180.0,
     "targetLow": 70.0,
-    "price": 144.68,
+    "price": 146.3,
     "currency": "USD"
   },
   "MSTR": {
@@ -2237,27 +2237,27 @@ window.STOCK_ANALYST = {
     "targetMean": 351.54,
     "targetHigh": 570.0,
     "targetLow": 163.0,
-    "price": 120.44,
+    "price": 123.97,
     "currency": "USD"
   },
   "RACE": {
     "rating": "strong_buy",
     "ratingMean": 1.43,
     "numAnalysts": 14,
-    "targetMean": 435.86,
-    "targetHigh": 530.26,
-    "targetLow": 379.55,
-    "price": 346.99,
+    "targetMean": 437.57,
+    "targetHigh": 532.35,
+    "targetLow": 381.04,
+    "price": 354.91,
     "currency": "USD"
   },
   "KEYS": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.77,
     "numAnalysts": 13,
     "targetMean": 383.08,
     "targetHigh": 426.0,
     "targetLow": 250.0,
-    "price": 329.83,
+    "price": 350.67,
     "currency": "USD"
   },
   "DB": {
@@ -2267,27 +2267,27 @@ window.STOCK_ANALYST = {
     "targetMean": 39.5,
     "targetHigh": 45.0,
     "targetLow": 35.0,
-    "price": 31.51,
+    "price": 33.31,
     "currency": "USD"
   },
   "AZO": {
     "rating": "strong_buy",
-    "ratingMean": 1.5,
-    "numAnalysts": 23,
-    "targetMean": 3937.61,
+    "ratingMean": 1.48,
+    "numAnalysts": 24,
+    "targetMean": 3969.38,
     "targetHigh": 4800.0,
     "targetLow": 3200.0,
-    "price": 3116.43,
+    "price": 3116.3,
     "currency": "USD"
   },
   "FANG": {
     "rating": "buy",
     "ratingMean": 1.53,
     "numAnalysts": 29,
-    "targetMean": 233.1,
+    "targetMean": 233.34,
     "targetHigh": 277.0,
     "targetLow": 195.0,
-    "price": 192.62,
+    "price": 192.13,
     "currency": "USD"
   },
   "LHX": {
@@ -2297,7 +2297,7 @@ window.STOCK_ANALYST = {
     "targetMean": 381.95,
     "targetHigh": 443.0,
     "targetLow": 300.0,
-    "price": 307.83,
+    "price": 307.79,
     "currency": "USD"
   },
   "OXY": {
@@ -2307,7 +2307,7 @@ window.STOCK_ANALYST = {
     "targetMean": 65.5,
     "targetHigh": 75.0,
     "targetLow": 55.0,
-    "price": 56.93,
+    "price": 56.54,
     "currency": "USD"
   },
   "AFL": {
@@ -2317,7 +2317,7 @@ window.STOCK_ANALYST = {
     "targetMean": 112.43,
     "targetHigh": 130.0,
     "targetLow": 99.0,
-    "price": 118.24,
+    "price": 117.8,
     "currency": "USD"
   },
   "MPLX": {
@@ -2327,7 +2327,7 @@ window.STOCK_ANALYST = {
     "targetMean": 60.71,
     "targetHigh": 73.0,
     "targetLow": 54.0,
-    "price": 56.48,
+    "price": 56.87,
     "currency": "USD"
   },
   "WPM": {
@@ -2337,7 +2337,7 @@ window.STOCK_ANALYST = {
     "targetMean": 181.83,
     "targetHigh": 227.27,
     "targetLow": 157.0,
-    "price": 116.23,
+    "price": 116.1,
     "currency": "USD"
   },
   "D": {
@@ -2347,37 +2347,37 @@ window.STOCK_ANALYST = {
     "targetMean": 69.25,
     "targetHigh": 76.0,
     "targetLow": 64.0,
-    "price": 66.9,
+    "price": 67.91,
     "currency": "USD"
   },
   "ALL": {
     "rating": "buy",
-    "ratingMean": 2.16,
+    "ratingMean": 2.2,
     "numAnalysts": 22,
-    "targetMean": 241.64,
+    "targetMean": 240.55,
     "targetHigh": 295.0,
     "targetLow": 176.0,
-    "price": 221.01,
+    "price": 221.63,
     "currency": "USD"
   },
   "CVNA": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 21,
-    "targetMean": 92.9,
+    "targetMean": 92.1,
     "targetHigh": 120.0,
     "targetLow": 67.0,
-    "price": 66.51,
+    "price": 64.1,
     "currency": "USD"
   },
   "CVE": {
     "rating": "strong_buy",
     "ratingMean": 1.47,
     "numAnalysts": 2,
-    "targetMean": 28.59,
-    "targetHigh": 32.0,
-    "targetLow": 25.17,
-    "price": 28.22,
+    "targetMean": 34.41,
+    "targetHigh": 36.0,
+    "targetLow": 32.82,
+    "price": 28.27,
     "currency": "USD"
   },
   "GWW": {
@@ -2387,37 +2387,37 @@ window.STOCK_ANALYST = {
     "targetMean": 1277.15,
     "targetHigh": 1399.0,
     "targetLow": 930.0,
-    "price": 1300.01,
+    "price": 1315.87,
     "currency": "USD"
   },
   "TER": {
     "rating": "buy",
-    "ratingMean": 1.72,
+    "ratingMean": 1.78,
     "numAnalysts": 17,
     "targetMean": 374.82,
     "targetHigh": 470.0,
     "targetLow": 270.0,
-    "price": 357.93,
+    "price": 403.2,
     "currency": "USD"
   },
   "PSA": {
     "rating": "buy",
     "ratingMean": 2.42,
     "numAnalysts": 16,
-    "targetMean": 318.56,
+    "targetMean": 322.19,
     "targetHigh": 355.0,
     "targetLow": 285.0,
-    "price": 309.68,
+    "price": 325.94,
     "currency": "USD"
   },
   "AME": {
-    "rating": "buy",
-    "ratingMean": 1.7,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 19,
     "targetMean": 259.16,
     "targetHigh": 280.0,
     "targetLow": 217.0,
-    "price": 226.55,
+    "price": 227.12,
     "currency": "USD"
   },
   "SE": {
@@ -2427,27 +2427,27 @@ window.STOCK_ANALYST = {
     "targetMean": 140.5,
     "targetHigh": 195.0,
     "targetLow": 101.0,
-    "price": 86.56,
+    "price": 82.94,
     "currency": "USD"
   },
   "VST": {
     "rating": "strong_buy",
-    "ratingMean": 1.42,
+    "ratingMean": 1.37,
     "numAnalysts": 17,
     "targetMean": 225.29,
     "targetHigh": 320.0,
     "targetLow": 99.0,
-    "price": 148.76,
+    "price": 148.02,
     "currency": "USD"
   },
   "NDAQ": {
     "rating": "buy",
     "ratingMean": 1.71,
     "numAnalysts": 15,
-    "targetMean": 106.47,
+    "targetMean": 106.53,
     "targetHigh": 120.0,
     "targetLow": 82.0,
-    "price": 87.28,
+    "price": 88.98,
     "currency": "USD"
   },
   "ADSK": {
@@ -2457,7 +2457,7 @@ window.STOCK_ANALYST = {
     "targetMean": 319.27,
     "targetHigh": 456.0,
     "targetLow": 235.0,
-    "price": 229.96,
+    "price": 198.43,
     "currency": "USD"
   },
   "XEL": {
@@ -2467,27 +2467,27 @@ window.STOCK_ANALYST = {
     "targetMean": 91.39,
     "targetHigh": 99.0,
     "targetLow": 74.0,
-    "price": 79.04,
+    "price": 79.22,
     "currency": "USD"
   },
   "NUE": {
     "rating": "buy",
     "ratingMean": 1.76,
     "numAnalysts": 15,
-    "targetMean": 249.68,
+    "targetMean": 256.81,
     "targetHigh": 292.0,
     "targetLow": 138.17,
-    "price": 254.39,
+    "price": 266.35,
     "currency": "USD"
   },
   "MCHP": {
     "rating": "buy",
-    "ratingMean": 1.62,
+    "ratingMean": 1.58,
     "numAnalysts": 25,
     "targetMean": 113.24,
     "targetHigh": 135.0,
     "targetLow": 75.0,
-    "price": 88.34,
+    "price": 95.24,
     "currency": "USD"
   },
   "EA": {
@@ -2497,17 +2497,17 @@ window.STOCK_ANALYST = {
     "targetMean": 202.8,
     "targetHigh": 210.0,
     "targetLow": 160.0,
-    "price": 203.0,
+    "price": 203.27,
     "currency": "USD"
   },
   "INFY": {
     "rating": "hold",
-    "ratingMean": 2.69,
+    "ratingMean": 2.62,
     "numAnalysts": 12,
     "targetMean": 14.68,
     "targetHigh": 17.6,
     "targetLow": 10.0,
-    "price": 12.4,
+    "price": 11.74,
     "currency": "USD"
   },
   "COIN": {
@@ -2517,17 +2517,17 @@ window.STOCK_ANALYST = {
     "targetMean": 229.74,
     "targetHigh": 400.0,
     "targetLow": 107.0,
-    "price": 152.4,
+    "price": 159.78,
     "currency": "USD"
   },
   "DDOG": {
     "rating": "strong_buy",
-    "ratingMean": 1.44,
-    "numAnalysts": 47,
-    "targetMean": 225.34,
+    "ratingMean": 1.45,
+    "numAnalysts": 46,
+    "targetMean": 233.06,
     "targetHigh": 320.0,
     "targetLow": 128.85,
-    "price": 234.11,
+    "price": 229.9,
     "currency": "USD"
   },
   "ZTS": {
@@ -2537,47 +2537,47 @@ window.STOCK_ANALYST = {
     "targetMean": 124.59,
     "targetHigh": 160.0,
     "targetLow": 90.0,
-    "price": 79.44,
+    "price": 79.57,
     "currency": "USD"
   },
   "STM": {
     "rating": "buy",
-    "ratingMean": 2.13,
+    "ratingMean": 2.0,
     "numAnalysts": 14,
-    "targetMean": 61.16,
-    "targetHigh": 90.0,
+    "targetMean": 63.69,
+    "targetHigh": 100.0,
     "targetLow": 32.8,
-    "price": 70.72,
+    "price": 77.3,
     "currency": "USD"
   },
   "CLS": {
     "rating": "strong_buy",
     "ratingMean": 1.29,
     "numAnalysts": 18,
-    "targetMean": 441.33,
+    "targetMean": 444.11,
     "targetHigh": 550.0,
     "targetLow": 360.0,
-    "price": 371.71,
+    "price": 393.12,
     "currency": "USD"
   },
   "SNOW": {
     "rating": "strong_buy",
     "ratingMean": 1.49,
     "numAnalysts": 48,
-    "targetMean": 288.43,
+    "targetMean": 291.7,
     "targetHigh": 500.0,
     "targetLow": 110.0,
-    "price": 238.26,
+    "price": 232.78,
     "currency": "USD"
   },
   "AU": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 7,
-    "targetMean": 119.86,
+    "targetMean": 121.29,
     "targetHigh": 155.0,
     "targetLow": 75.0,
-    "price": 84.12,
+    "price": 86.3,
     "currency": "USD"
   },
   "GRMN": {
@@ -2587,17 +2587,17 @@ window.STOCK_ANALYST = {
     "targetMean": 262.43,
     "targetHigh": 325.0,
     "targetLow": 220.0,
-    "price": 236.57,
+    "price": 238.1,
     "currency": "USD"
   },
   "EBAY": {
     "rating": "hold",
-    "ratingMean": 2.65,
-    "numAnalysts": 27,
-    "targetMean": 108.13,
+    "ratingMean": 2.66,
+    "numAnalysts": 28,
+    "targetMean": 107.84,
     "targetHigh": 130.0,
     "targetLow": 65.0,
-    "price": 109.35,
+    "price": 108.61,
     "currency": "USD"
   },
   "CAH": {
@@ -2607,17 +2607,17 @@ window.STOCK_ANALYST = {
     "targetMean": 245.27,
     "targetHigh": 275.0,
     "targetLow": 215.0,
-    "price": 205.71,
+    "price": 223.85,
     "currency": "USD"
   },
   "ROK": {
     "rating": "buy",
-    "ratingMean": 2.21,
-    "numAnalysts": 25,
-    "targetMean": 462.17,
+    "ratingMean": 2.24,
+    "numAnalysts": 26,
+    "targetMean": 463.66,
     "targetHigh": 525.0,
     "targetLow": 282.0,
-    "price": 446.71,
+    "price": 459.34,
     "currency": "USD"
   },
   "RKLB": {
@@ -2627,17 +2627,17 @@ window.STOCK_ANALYST = {
     "targetMean": 105.28,
     "targetHigh": 150.0,
     "targetLow": 60.0,
-    "price": 110.08,
+    "price": 102.39,
     "currency": "USD"
   },
   "PYPL": {
     "rating": "hold",
-    "ratingMean": 2.89,
-    "numAnalysts": 34,
-    "targetMean": 51.35,
+    "ratingMean": 2.88,
+    "numAnalysts": 33,
+    "targetMean": 51.54,
     "targetHigh": 147.39,
     "targetLow": 32.0,
-    "price": 41.29,
+    "price": 41.53,
     "currency": "USD"
   },
   "DAL": {
@@ -2647,7 +2647,7 @@ window.STOCK_ANALYST = {
     "targetMean": 81.81,
     "targetHigh": 105.0,
     "targetLow": 48.0,
-    "price": 79.42,
+    "price": 83.06,
     "currency": "USD"
   },
   "IDXX": {
@@ -2657,17 +2657,17 @@ window.STOCK_ANALYST = {
     "targetMean": 709.14,
     "targetHigh": 805.0,
     "targetLow": 470.0,
-    "price": 562.16,
+    "price": 560.88,
     "currency": "USD"
   },
   "DEO": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.38,
     "numAnalysts": 7,
-    "targetMean": 101.29,
+    "targetMean": 100.43,
     "targetHigh": 130.0,
-    "targetLow": 81.0,
-    "price": 80.43,
+    "targetLow": 76.0,
+    "price": 81.79,
     "currency": "USD"
   },
   "MT": {
@@ -2677,7 +2677,7 @@ window.STOCK_ANALYST = {
     "targetMean": 66.77,
     "targetHigh": 80.0,
     "targetLow": 51.4,
-    "price": 67.21,
+    "price": 70.81,
     "currency": "USD"
   },
   "YUM": {
@@ -2687,17 +2687,17 @@ window.STOCK_ANALYST = {
     "targetMean": 174.23,
     "targetHigh": 200.0,
     "targetLow": 147.0,
-    "price": 150.87,
+    "price": 154.31,
     "currency": "USD"
   },
   "ODFL": {
     "rating": "hold",
     "ratingMean": 2.67,
     "numAnalysts": 22,
-    "targetMean": 217.5,
+    "targetMean": 221.82,
     "targetHigh": 260.0,
     "targetLow": 155.0,
-    "price": 242.57,
+    "price": 245.75,
     "currency": "USD"
   },
   "MSCI": {
@@ -2707,17 +2707,17 @@ window.STOCK_ANALYST = {
     "targetMean": 688.56,
     "targetHigh": 730.0,
     "targetLow": 550.0,
-    "price": 615.46,
+    "price": 599.12,
     "currency": "USD"
   },
   "XYZ": {
     "rating": "buy",
-    "ratingMean": 1.56,
-    "numAnalysts": 41,
-    "targetMean": 90.52,
+    "ratingMean": 1.57,
+    "numAnalysts": 40,
+    "targetMean": 90.4,
     "targetHigh": 119.16,
     "targetLow": 58.0,
-    "price": 68.15,
+    "price": 69.52,
     "currency": "USD"
   },
   "DHI": {
@@ -2727,117 +2727,117 @@ window.STOCK_ANALYST = {
     "targetMean": 165.29,
     "targetHigh": 206.0,
     "targetLow": 123.0,
-    "price": 145.6,
+    "price": 154.09,
     "currency": "USD"
   },
   "BDX": {
     "rating": "buy",
     "ratingMean": 2.2,
     "numAnalysts": 13,
-    "targetMean": 181.23,
+    "targetMean": 180.69,
     "targetHigh": 225.0,
     "targetLow": 150.0,
-    "price": 151.16,
+    "price": 146.24,
     "currency": "USD"
   },
   "CMG": {
     "rating": "buy",
-    "ratingMean": 1.72,
+    "ratingMean": 1.69,
     "numAnalysts": 33,
     "targetMean": 42.88,
     "targetHigh": 52.0,
     "targetLow": 35.0,
-    "price": 29.34,
+    "price": 32.23,
     "currency": "USD"
   },
   "AIG": {
     "rating": "buy",
     "ratingMean": 2.36,
     "numAnalysts": 20,
-    "targetMean": 88.05,
+    "targetMean": 87.8,
     "targetHigh": 101.0,
     "targetLow": 80.0,
-    "price": 75.49,
+    "price": 75.74,
     "currency": "USD"
   },
   "KR": {
     "rating": "buy",
     "ratingMean": 2.08,
     "numAnalysts": 22,
-    "targetMean": 75.45,
+    "targetMean": 75.36,
     "targetHigh": 86.0,
     "targetLow": 61.0,
-    "price": 63.57,
+    "price": 64.71,
     "currency": "USD"
   },
   "TRI": {
     "rating": "buy",
     "ratingMean": 1.78,
     "numAnalysts": 12,
-    "targetMean": 125.16,
-    "targetHigh": 185.87,
+    "targetMean": 123.0,
+    "targetHigh": 160.0,
     "targetLow": 97.0,
-    "price": 86.04,
+    "price": 81.41,
     "currency": "USD"
   },
   "BIDU": {
     "rating": "strong_buy",
     "ratingMean": 1.48,
     "numAnalysts": 33,
-    "targetMean": 180.48,
-    "targetHigh": 274.07,
-    "targetLow": 92.57,
-    "price": 121.66,
+    "targetMean": 180.51,
+    "targetHigh": 274.23,
+    "targetLow": 92.62,
+    "price": 115.77,
     "currency": "USD"
   },
   "ED": {
     "rating": "hold",
     "ratingMean": 3.28,
     "numAnalysts": 16,
-    "targetMean": 110.0,
+    "targetMean": 109.75,
     "targetHigh": 130.0,
     "targetLow": 97.0,
-    "price": 106.26,
+    "price": 107.74,
     "currency": "USD"
   },
   "JD": {
     "rating": "strong_buy",
     "ratingMean": 1.35,
     "numAnalysts": 36,
-    "targetMean": 41.33,
-    "targetHigh": 61.25,
-    "targetLow": 27.1,
-    "price": 28.88,
+    "targetMean": 41.36,
+    "targetHigh": 61.28,
+    "targetLow": 27.12,
+    "price": 28.56,
     "currency": "USD"
   },
   "TTWO": {
     "rating": "strong_buy",
     "ratingMean": 1.21,
     "numAnalysts": 29,
-    "targetMean": 278.83,
+    "targetMean": 279.11,
     "targetHigh": 320.0,
     "targetLow": 170.0,
-    "price": 214.39,
+    "price": 211.75,
     "currency": "USD"
   },
   "ALNY": {
     "rating": "buy",
-    "ratingMean": 1.77,
-    "numAnalysts": 27,
-    "targetMean": 445.81,
-    "targetHigh": 566.0,
+    "ratingMean": 1.79,
+    "numAnalysts": 25,
+    "targetMean": 438.52,
+    "targetHigh": 550.0,
     "targetLow": 310.0,
-    "price": 303.05,
+    "price": 282.85,
     "currency": "USD"
   },
   "NBIS": {
     "rating": "buy",
     "ratingMean": 2.06,
     "numAnalysts": 14,
-    "targetMean": 238.86,
+    "targetMean": 244.07,
     "targetHigh": 380.0,
     "targetLow": 120.0,
-    "price": 227.81,
+    "price": 232.36,
     "currency": "USD"
   },
   "CCI": {
@@ -2847,37 +2847,37 @@ window.STOCK_ANALYST = {
     "targetMean": 99.07,
     "targetHigh": 125.0,
     "targetLow": 85.0,
-    "price": 94.49,
+    "price": 92.16,
     "currency": "USD"
   },
   "KB": {
     "rating": "none",
     "ratingMean": null,
     "numAnalysts": 2,
-    "targetMean": 125.06,
-    "targetHigh": 143.63,
-    "targetLow": 106.49,
-    "price": 107.91,
+    "targetMean": 128.43,
+    "targetHigh": 147.5,
+    "targetLow": 109.36,
+    "price": 107.8,
     "currency": "USD"
   },
   "GFI": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 8,
-    "targetMean": 58.41,
+    "targetMean": 57.53,
     "targetHigh": 75.0,
     "targetLow": 46.0,
-    "price": 36.62,
+    "price": 36.5,
     "currency": "USD"
   },
   "HPE": {
     "rating": "buy",
     "ratingMean": 2.09,
-    "numAnalysts": 20,
-    "targetMean": 60.77,
+    "numAnalysts": 19,
+    "targetMean": 64.13,
     "targetHigh": 80.0,
-    "targetLow": 23.0,
-    "price": 49.2,
+    "targetLow": 28.0,
+    "price": 48.17,
     "currency": "USD"
   },
   "IRM": {
@@ -2887,7 +2887,7 @@ window.STOCK_ANALYST = {
     "targetMean": 131.55,
     "targetHigh": 149.0,
     "targetLow": 44.0,
-    "price": 124.66,
+    "price": 127.24,
     "currency": "USD"
   },
   "PUK": {
@@ -2897,17 +2897,17 @@ window.STOCK_ANALYST = {
     "targetMean": 38.66,
     "targetHigh": 43.36,
     "targetLow": 34.0,
-    "price": 25.49,
+    "price": 26.58,
     "currency": "USD"
   },
   "LYV": {
     "rating": "buy",
-    "ratingMean": 1.54,
+    "ratingMean": 1.58,
     "numAnalysts": 23,
-    "targetMean": 184.78,
+    "targetMean": 185.43,
     "targetHigh": 206.0,
     "targetLow": 145.0,
-    "price": 160.07,
+    "price": 172.51,
     "currency": "USD"
   },
   "CPNG": {
@@ -2917,7 +2917,7 @@ window.STOCK_ANALYST = {
     "targetMean": 26.29,
     "targetHigh": 36.0,
     "targetLow": 12.0,
-    "price": 15.15,
+    "price": 16.82,
     "currency": "USD"
   },
   "HSY": {
@@ -2927,57 +2927,57 @@ window.STOCK_ANALYST = {
     "targetMean": 217.14,
     "targetHigh": 255.0,
     "targetLow": 166.0,
-    "price": 184.58,
+    "price": 181.66,
     "currency": "USD"
   },
   "CCL": {
     "rating": "buy",
     "ratingMean": 1.54,
     "numAnalysts": 24,
-    "targetMean": 34.59,
+    "targetMean": 34.63,
     "targetHigh": 45.0,
     "targetLow": 28.7,
-    "price": 27.41,
+    "price": 29.18,
     "currency": "USD"
   },
   "JBL": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.6,
     "numAnalysts": 9,
-    "targetMean": 316.33,
-    "targetHigh": 384.0,
-    "targetLow": 273.0,
-    "price": 353.24,
+    "targetMean": 358.89,
+    "targetHigh": 425.0,
+    "targetLow": 287.0,
+    "price": 384.82,
     "currency": "USD"
   },
   "ADM": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 3.18,
     "numAnalysts": 10,
     "targetMean": 74.1,
     "targetHigh": 90.0,
     "targetLow": 58.0,
-    "price": 80.92,
+    "price": 80.24,
     "currency": "USD"
   },
   "ALC": {
     "rating": "buy",
     "ratingMean": 1.54,
     "numAnalysts": 15,
-    "targetMean": 88.52,
-    "targetHigh": 112.0,
+    "targetMean": 87.92,
+    "targetHigh": 107.4,
     "targetLow": 66.0,
-    "price": 66.81,
+    "price": 66.85,
     "currency": "USD"
   },
   "NTR": {
     "rating": "buy",
-    "ratingMean": 2.0,
+    "ratingMean": 2.08,
     "numAnalysts": 20,
-    "targetMean": 81.87,
+    "targetMean": 82.07,
     "targetHigh": 96.0,
-    "targetLow": 61.0,
-    "price": 67.2,
+    "targetLow": 65.0,
+    "price": 67.62,
     "currency": "USD"
   },
   "LVS": {
@@ -2987,17 +2987,17 @@ window.STOCK_ANALYST = {
     "targetMean": 69.09,
     "targetHigh": 78.5,
     "targetLow": 59.0,
-    "price": 50.25,
+    "price": 50.67,
     "currency": "USD"
   },
   "SYY": {
     "rating": "buy",
-    "ratingMean": 2.12,
+    "ratingMean": 2.18,
     "numAnalysts": 15,
     "targetMean": 86.87,
     "targetHigh": 100.0,
     "targetLow": 77.0,
-    "price": 76.29,
+    "price": 79.19,
     "currency": "USD"
   },
   "KGC": {
@@ -3007,27 +3007,27 @@ window.STOCK_ANALYST = {
     "targetMean": 40.91,
     "targetHigh": 56.0,
     "targetLow": 10.0,
-    "price": 26.22,
+    "price": 25.58,
     "currency": "USD"
   },
   "HAL": {
     "rating": "buy",
     "ratingMean": 1.85,
     "numAnalysts": 25,
-    "targetMean": 43.88,
+    "targetMean": 44.24,
     "targetHigh": 55.0,
     "targetLow": 31.0,
-    "price": 39.18,
+    "price": 39.6,
     "currency": "USD"
   },
   "PRU": {
     "rating": "hold",
-    "ratingMean": 3.28,
+    "ratingMean": 3.39,
     "numAnalysts": 15,
     "targetMean": 100.47,
     "targetHigh": 117.0,
     "targetLow": 90.0,
-    "price": 104.62,
+    "price": 108.5,
     "currency": "USD"
   },
   "CRDO": {
@@ -3037,37 +3037,37 @@ window.STOCK_ANALYST = {
     "targetMean": 256.3,
     "targetHigh": 300.0,
     "targetLow": 184.0,
-    "price": 206.89,
+    "price": 250.81,
     "currency": "USD"
   },
   "HBAN": {
     "rating": "strong_buy",
     "ratingMean": 1.5,
     "numAnalysts": 17,
-    "targetMean": 19.84,
+    "targetMean": 19.89,
     "targetHigh": 22.5,
     "targetLow": 18.0,
-    "price": 16.52,
+    "price": 17.52,
     "currency": "USD"
   },
   "TCOM": {
     "rating": "strong_buy",
     "ratingMean": 1.28,
     "numAnalysts": 29,
-    "targetMean": 77.05,
-    "targetHigh": 92.49,
-    "targetLow": 61.16,
-    "price": 47.69,
+    "targetMean": 77.1,
+    "targetHigh": 92.54,
+    "targetLow": 61.19,
+    "price": 46.47,
     "currency": "USD"
   },
   "PAYX": {
     "rating": "hold",
-    "ratingMean": 3.26,
-    "numAnalysts": 15,
-    "targetMean": 101.67,
+    "ratingMean": 3.28,
+    "numAnalysts": 14,
+    "targetMean": 102.14,
     "targetHigh": 125.0,
     "targetLow": 90.0,
-    "price": 100.53,
+    "price": 100.63,
     "currency": "USD"
   },
   "WDAY": {
@@ -3077,7 +3077,7 @@ window.STOCK_ANALYST = {
     "targetMean": 171.13,
     "targetHigh": 275.0,
     "targetLow": 115.0,
-    "price": 144.28,
+    "price": 130.8,
     "currency": "USD"
   },
   "NRG": {
@@ -3087,27 +3087,27 @@ window.STOCK_ANALYST = {
     "targetMean": 199.47,
     "targetHigh": 267.0,
     "targetLow": 99.0,
-    "price": 129.2,
+    "price": 125.47,
     "currency": "USD"
   },
   "AXON": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.6,
     "numAnalysts": 18,
     "targetMean": 662.04,
     "targetHigh": 825.0,
     "targetLow": 409.68,
-    "price": 486.12,
+    "price": 441.73,
     "currency": "USD"
   },
   "A": {
-    "rating": "strong_buy",
-    "ratingMean": 1.5,
-    "numAnalysts": 16,
-    "targetMean": 161.0,
+    "rating": "buy",
+    "ratingMean": 1.58,
+    "numAnalysts": 17,
+    "targetMean": 160.35,
     "targetHigh": 185.0,
     "targetLow": 144.0,
-    "price": 135.44,
+    "price": 129.84,
     "currency": "USD"
   },
   "RBLX": {
@@ -3117,7 +3117,7 @@ window.STOCK_ANALYST = {
     "targetMean": 64.81,
     "targetHigh": 105.0,
     "targetLow": 45.0,
-    "price": 41.82,
+    "price": 43.31,
     "currency": "USD"
   },
   "RDDT": {
@@ -3127,7 +3127,7 @@ window.STOCK_ANALYST = {
     "targetMean": 224.92,
     "targetHigh": 300.0,
     "targetLow": 120.0,
-    "price": 173.45,
+    "price": 162.1,
     "currency": "USD"
   },
   "MTB": {
@@ -3137,7 +3137,7 @@ window.STOCK_ANALYST = {
     "targetMean": 233.17,
     "targetHigh": 265.0,
     "targetLow": 205.0,
-    "price": 222.44,
+    "price": 231.88,
     "currency": "USD"
   },
   "VICI": {
@@ -3147,27 +3147,27 @@ window.STOCK_ANALYST = {
     "targetMean": 34.17,
     "targetHigh": 39.0,
     "targetLow": 29.0,
-    "price": 27.86,
+    "price": 28.52,
     "currency": "USD"
   },
   "DVN": {
     "rating": "strong_buy",
-    "ratingMean": 1.42,
-    "numAnalysts": 25,
-    "targetMean": 61.36,
+    "ratingMean": 1.37,
+    "numAnalysts": 26,
+    "targetMean": 61.19,
     "targetHigh": 72.0,
     "targetLow": 44.0,
-    "price": 44.28,
+    "price": 45.31,
     "currency": "USD"
   },
   "ATO": {
     "rating": "hold",
     "ratingMean": 2.86,
     "numAnalysts": 11,
-    "targetMean": 188.45,
+    "targetMean": 186.18,
     "targetHigh": 206.0,
     "targetLow": 170.0,
-    "price": 170.24,
+    "price": 169.96,
     "currency": "USD"
   },
   "MTZ": {
@@ -3177,27 +3177,27 @@ window.STOCK_ANALYST = {
     "targetMean": 473.05,
     "targetHigh": 545.0,
     "targetLow": 256.0,
-    "price": 363.89,
+    "price": 362.97,
     "currency": "USD"
   },
   "UMC": {
-    "rating": "underperform",
-    "ratingMean": 4.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 5,
     "targetMean": 10.36,
     "targetHigh": 12.74,
     "targetLow": 7.4,
-    "price": 19.7,
+    "price": 21.63,
     "currency": "USD"
   },
   "ZM": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 26,
-    "targetMean": 113.92,
+    "targetMean": 115.0,
     "targetHigh": 135.0,
     "targetLow": 79.0,
-    "price": 101.62,
+    "price": 93.68,
     "currency": "USD"
   },
   "DOV": {
@@ -3207,7 +3207,7 @@ window.STOCK_ANALYST = {
     "targetMean": 250.85,
     "targetHigh": 280.0,
     "targetLow": 168.0,
-    "price": 214.76,
+    "price": 217.43,
     "currency": "USD"
   },
   "RJF": {
@@ -3217,7 +3217,7 @@ window.STOCK_ANALYST = {
     "targetMean": 174.0,
     "targetHigh": 198.0,
     "targetLow": 147.0,
-    "price": 151.45,
+    "price": 154.4,
     "currency": "USD"
   },
   "EXPE": {
@@ -3227,7 +3227,7 @@ window.STOCK_ANALYST = {
     "targetMean": 286.32,
     "targetHigh": 409.0,
     "targetLow": 230.0,
-    "price": 228.88,
+    "price": 224.89,
     "currency": "USD"
   },
   "UAL": {
@@ -3237,17 +3237,17 @@ window.STOCK_ANALYST = {
     "targetMean": 132.08,
     "targetHigh": 182.0,
     "targetLow": 95.0,
-    "price": 105.73,
+    "price": 115.52,
     "currency": "USD"
   },
   "EXR": {
     "rating": "buy",
     "ratingMean": 2.33,
     "numAnalysts": 20,
-    "targetMean": 153.6,
+    "targetMean": 154.35,
     "targetHigh": 178.0,
     "targetLow": 140.0,
-    "price": 145.31,
+    "price": 150.6,
     "currency": "USD"
   },
   "RMD": {
@@ -3257,17 +3257,17 @@ window.STOCK_ANALYST = {
     "targetMean": 270.6,
     "targetHigh": 340.0,
     "targetLow": 180.0,
-    "price": 196.04,
+    "price": 194.78,
     "currency": "USD"
   },
   "OTIS": {
     "rating": "buy",
-    "ratingMean": 2.4,
-    "numAnalysts": 14,
-    "targetMean": 94.57,
+    "ratingMean": 2.31,
+    "numAnalysts": 15,
+    "targetMean": 94.2,
     "targetHigh": 120.0,
     "targetLow": 77.0,
-    "price": 70.34,
+    "price": 70.75,
     "currency": "USD"
   },
   "EC": {
@@ -3277,67 +3277,67 @@ window.STOCK_ANALYST = {
     "targetMean": 13.16,
     "targetHigh": 18.0,
     "targetLow": 9.0,
-    "price": 15.15,
+    "price": 16.58,
     "currency": "USD"
   },
   "DOW": {
     "rating": "buy",
     "ratingMean": 2.33,
     "numAnalysts": 16,
-    "targetMean": 42.5,
+    "targetMean": 42.25,
     "targetHigh": 51.0,
     "targetLow": 35.0,
-    "price": 33.97,
+    "price": 33.85,
     "currency": "USD"
   },
   "TPR": {
     "rating": "buy",
     "ratingMean": 1.86,
     "numAnalysts": 19,
-    "targetMean": 165.05,
-    "targetHigh": 200.0,
+    "targetMean": 164.47,
+    "targetHigh": 205.0,
     "targetLow": 88.0,
-    "price": 140.1,
+    "price": 147.42,
     "currency": "USD"
   },
   "EL": {
     "rating": "buy",
-    "ratingMean": 2.4,
-    "numAnalysts": 23,
-    "targetMean": 95.43,
+    "ratingMean": 2.41,
+    "numAnalysts": 25,
+    "targetMean": 95.12,
     "targetHigh": 125.0,
     "targetLow": 70.0,
-    "price": 83.49,
+    "price": 89.68,
     "currency": "USD"
   },
   "HUM": {
     "rating": "hold",
     "ratingMean": 2.58,
     "numAnalysts": 24,
-    "targetMean": 290.08,
+    "targetMean": 301.62,
     "targetHigh": 441.0,
     "targetLow": 195.0,
-    "price": 350.08,
+    "price": 379.22,
     "currency": "USD"
   },
   "TWLO": {
     "rating": "buy",
-    "ratingMean": 1.72,
-    "numAnalysts": 28,
-    "targetMean": 195.44,
-    "targetHigh": 250.0,
+    "ratingMean": 1.73,
+    "numAnalysts": 29,
+    "targetMean": 197.5,
+    "targetHigh": 255.0,
     "targetLow": 120.0,
-    "price": 225.99,
+    "price": 204.08,
     "currency": "USD"
   },
   "BIIB": {
     "rating": "buy",
-    "ratingMean": 2.0,
-    "numAnalysts": 29,
-    "targetMean": 219.44,
+    "ratingMean": 1.97,
+    "numAnalysts": 30,
+    "targetMean": 220.63,
     "targetHigh": 300.0,
     "targetLow": 150.0,
-    "price": 195.34,
+    "price": 200.05,
     "currency": "USD"
   },
   "XYL": {
@@ -3347,27 +3347,27 @@ window.STOCK_ANALYST = {
     "targetMean": 150.65,
     "targetHigh": 183.0,
     "targetLow": 124.0,
-    "price": 109.94,
+    "price": 110.08,
     "currency": "USD"
   },
   "RYAAY": {
     "rating": "strong_buy",
     "ratingMean": 1.2,
     "numAnalysts": 5,
-    "targetMean": 74.5,
+    "targetMean": 74.3,
     "targetHigh": 82.0,
     "targetLow": 61.5,
-    "price": 56.98,
+    "price": 60.33,
     "currency": "USD"
   },
   "FE": {
     "rating": "buy",
     "ratingMean": 2.18,
     "numAnalysts": 13,
-    "targetMean": 52.23,
+    "targetMean": 52.15,
     "targetHigh": 56.0,
     "targetLow": 48.0,
-    "price": 46.42,
+    "price": 47.03,
     "currency": "USD"
   },
   "KHC": {
@@ -3377,17 +3377,17 @@ window.STOCK_ANALYST = {
     "targetMean": 23.47,
     "targetHigh": 42.0,
     "targetLow": 17.0,
-    "price": 22.58,
+    "price": 24.39,
     "currency": "USD"
   },
   "CNC": {
     "rating": "buy",
     "ratingMean": 2.45,
     "numAnalysts": 17,
-    "targetMean": 60.59,
+    "targetMean": 61.35,
     "targetHigh": 80.0,
     "targetLow": 40.0,
-    "price": 62.33,
+    "price": 65.19,
     "currency": "USD"
   },
   "FOX": {
@@ -3397,27 +3397,27 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 59.88,
+    "price": 58.92,
     "currency": "USD"
   },
   "FOXA": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.21,
     "numAnalysts": 17,
-    "targetMean": 73.88,
+    "targetMean": 73.94,
     "targetHigh": 97.0,
     "targetLow": 54.0,
-    "price": 66.89,
+    "price": 65.85,
     "currency": "USD"
   },
   "SYF": {
     "rating": "buy",
     "ratingMean": 1.88,
-    "numAnalysts": 22,
-    "targetMean": 89.41,
+    "numAnalysts": 23,
+    "targetMean": 89.22,
     "targetHigh": 103.0,
     "targetLow": 77.0,
-    "price": 70.84,
+    "price": 73.36,
     "currency": "USD"
   },
   "FN": {
@@ -3427,7 +3427,7 @@ window.STOCK_ANALYST = {
     "targetMean": 749.11,
     "targetHigh": 850.0,
     "targetLow": 635.0,
-    "price": 621.25,
+    "price": 611.01,
     "currency": "USD"
   },
   "DG": {
@@ -3437,7 +3437,7 @@ window.STOCK_ANALYST = {
     "targetMean": 131.24,
     "targetHigh": 175.0,
     "targetLow": 90.0,
-    "price": 103.7,
+    "price": 114.8,
     "currency": "USD"
   },
   "CINF": {
@@ -3447,7 +3447,7 @@ window.STOCK_ANALYST = {
     "targetMean": 181.5,
     "targetHigh": 191.0,
     "targetLow": 172.0,
-    "price": 165.29,
+    "price": 169.01,
     "currency": "USD"
   },
   "PHG": {
@@ -3457,27 +3457,27 @@ window.STOCK_ANALYST = {
     "targetMean": 33.54,
     "targetHigh": 41.0,
     "targetLow": 29.2,
-    "price": 26.11,
+    "price": 26.46,
     "currency": "USD"
   },
   "AWK": {
     "rating": "hold",
     "ratingMean": 2.62,
     "numAnalysts": 11,
-    "targetMean": 135.73,
+    "targetMean": 135.55,
     "targetHigh": 155.0,
     "targetLow": 124.0,
-    "price": 124.47,
+    "price": 126.31,
     "currency": "USD"
   },
   "CTSH": {
     "rating": "buy",
-    "ratingMean": 2.2,
-    "numAnalysts": 27,
-    "targetMean": 72.28,
+    "ratingMean": 2.13,
+    "numAnalysts": 26,
+    "targetMean": 72.29,
     "targetHigh": 93.0,
-    "targetLow": 51.0,
-    "price": 53.21,
+    "targetLow": 55.0,
+    "price": 52.17,
     "currency": "USD"
   },
   "VRSN": {
@@ -3487,17 +3487,17 @@ window.STOCK_ANALYST = {
     "targetMean": 306.25,
     "targetHigh": 355.0,
     "targetLow": 265.0,
-    "price": 294.92,
+    "price": 279.89,
     "currency": "USD"
   },
   "BNTX": {
     "rating": "buy",
     "ratingMean": 1.58,
     "numAnalysts": 19,
-    "targetMean": 122.74,
-    "targetHigh": 155.94,
-    "targetLow": 75.05,
-    "price": 88.08,
+    "targetMean": 123.22,
+    "targetHigh": 156.56,
+    "targetLow": 75.35,
+    "price": 90.54,
     "currency": "USD"
   },
   "FTAI": {
@@ -3507,7 +3507,7 @@ window.STOCK_ANALYST = {
     "targetMean": 350.6,
     "targetHigh": 408.0,
     "targetLow": 319.0,
-    "price": 234.05,
+    "price": 241.96,
     "currency": "USD"
   },
   "LYB": {
@@ -3517,107 +3517,107 @@ window.STOCK_ANALYST = {
     "targetMean": 79.88,
     "targetHigh": 98.0,
     "targetLow": 63.0,
-    "price": 64.5,
+    "price": 64.58,
     "currency": "USD"
   },
   "FIS": {
     "rating": "buy",
-    "ratingMean": 1.96,
-    "numAnalysts": 21,
-    "targetMean": 58.76,
+    "ratingMean": 2.0,
+    "numAnalysts": 20,
+    "targetMean": 58.45,
     "targetHigh": 85.0,
     "targetLow": 37.0,
-    "price": 40.95,
+    "price": 39.2,
     "currency": "USD"
   },
   "PPG": {
     "rating": "buy",
     "ratingMean": 2.22,
     "numAnalysts": 20,
-    "targetMean": 122.75,
-    "targetHigh": 135.0,
+    "targetMean": 123.0,
+    "targetHigh": 140.0,
     "targetLow": 108.0,
-    "price": 113.8,
+    "price": 119.34,
     "currency": "USD"
   },
   "KEY": {
     "rating": "buy",
     "ratingMean": 2.11,
     "numAnalysts": 18,
-    "targetMean": 25.03,
+    "targetMean": 25.01,
     "targetHigh": 43.0,
     "targetLow": 22.0,
-    "price": 21.76,
+    "price": 22.7,
     "currency": "USD"
   },
   "DXCM": {
     "rating": "strong_buy",
     "ratingMean": 1.33,
     "numAnalysts": 24,
-    "targetMean": 83.0,
+    "targetMean": 84.67,
     "targetHigh": 112.0,
     "targetLow": 65.0,
-    "price": 72.86,
+    "price": 75.37,
     "currency": "USD"
   },
   "JBHT": {
     "rating": "buy",
     "ratingMean": 2.04,
     "numAnalysts": 22,
-    "targetMean": 246.14,
+    "targetMean": 250.77,
     "targetHigh": 330.0,
     "targetLow": 171.0,
-    "price": 284.95,
+    "price": 289.36,
     "currency": "USD"
   },
   "TEAM": {
     "rating": "buy",
-    "ratingMean": 1.58,
+    "ratingMean": 1.52,
     "numAnalysts": 31,
-    "targetMean": 143.18,
+    "targetMean": 144.71,
     "targetHigh": 480.0,
-    "targetLow": 80.68,
-    "price": 99.47,
+    "targetLow": 95.0,
+    "price": 88.52,
     "currency": "USD"
   },
   "ULTA": {
     "rating": "buy",
     "ratingMean": 1.81,
     "numAnalysts": 24,
-    "targetMean": 630.17,
+    "targetMean": 627.25,
     "targetHigh": 735.0,
     "targetLow": 450.0,
-    "price": 467.07,
+    "price": 467.74,
     "currency": "USD"
   },
   "ALB": {
     "rating": "buy",
-    "ratingMean": 2.08,
+    "ratingMean": 2.04,
     "numAnalysts": 22,
     "targetMean": 214.51,
     "targetHigh": 264.0,
     "targetLow": 83.28,
-    "price": 155.44,
+    "price": 170.42,
     "currency": "USD"
   },
   "FSLR": {
     "rating": "buy",
     "ratingMean": 2.12,
-    "numAnalysts": 27,
-    "targetMean": 243.59,
-    "targetHigh": 310.0,
+    "numAnalysts": 26,
+    "targetMean": 245.77,
+    "targetHigh": 330.0,
     "targetLow": 150.0,
-    "price": 279.01,
+    "price": 267.31,
     "currency": "USD"
   },
   "CHD": {
     "rating": "buy",
     "ratingMean": 2.24,
     "numAnalysts": 19,
-    "targetMean": 102.26,
+    "targetMean": 102.53,
     "targetHigh": 115.0,
     "targetLow": 74.0,
-    "price": 96.74,
+    "price": 97.56,
     "currency": "USD"
   },
   "PHM": {
@@ -3627,7 +3627,7 @@ window.STOCK_ANALYST = {
     "targetMean": 137.5,
     "targetHigh": 162.0,
     "targetLow": 100.0,
-    "price": 118.4,
+    "price": 123.17,
     "currency": "USD"
   },
   "AFRM": {
@@ -3637,17 +3637,17 @@ window.STOCK_ANALYST = {
     "targetMean": 83.15,
     "targetHigh": 100.0,
     "targetLow": 55.1,
-    "price": 63.61,
+    "price": 66.17,
     "currency": "USD"
   },
   "ZS": {
     "rating": "buy",
     "ratingMean": 1.51,
     "numAnalysts": 45,
-    "targetMean": 193.79,
+    "targetMean": 193.05,
     "targetHigh": 250.0,
     "targetLow": 145.0,
-    "price": 130.78,
+    "price": 129.52,
     "currency": "USD"
   },
   "TSN": {
@@ -3657,17 +3657,17 @@ window.STOCK_ANALYST = {
     "targetMean": 71.08,
     "targetHigh": 81.0,
     "targetLow": 58.0,
-    "price": 58.73,
+    "price": 57.43,
     "currency": "USD"
   },
   "TROW": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 3.38,
     "numAnalysts": 12,
-    "targetMean": 97.42,
-    "targetHigh": 110.0,
+    "targetMean": 97.83,
+    "targetHigh": 111.0,
     "targetLow": 75.0,
-    "price": 105.99,
+    "price": 109.64,
     "currency": "USD"
   },
   "WIT": {
@@ -3677,47 +3677,47 @@ window.STOCK_ANALYST = {
     "targetMean": 2.09,
     "targetHigh": 2.3,
     "targetLow": 1.8,
-    "price": 2.1,
+    "price": 2.2,
     "currency": "USD"
   },
   "NTAP": {
     "rating": "buy",
     "ratingMean": 2.4,
     "numAnalysts": 16,
-    "targetMean": 169.88,
+    "targetMean": 171.75,
     "targetHigh": 200.0,
     "targetLow": 117.0,
-    "price": 167.04,
+    "price": 161.61,
     "currency": "USD"
   },
   "NMR": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 3.0,
     "numAnalysts": 1,
     "targetMean": 9.35,
     "targetHigh": 9.35,
     "targetLow": 9.35,
-    "price": 8.41,
+    "price": 8.73,
     "currency": "USD"
   },
   "RL": {
     "rating": "buy",
     "ratingMean": 1.63,
     "numAnalysts": 16,
-    "targetMean": 427.0,
+    "targetMean": 428.0,
     "targetHigh": 511.0,
-    "targetLow": 219.0,
-    "price": 366.55,
+    "targetLow": 235.0,
+    "price": 403.98,
     "currency": "USD"
   },
   "OMC": {
     "rating": "buy",
     "ratingMean": 2.08,
     "numAnalysts": 12,
-    "targetMean": 102.75,
-    "targetHigh": 146.0,
+    "targetMean": 102.83,
+    "targetHigh": 147.0,
     "targetLow": 79.0,
-    "price": 75.31,
+    "price": 76.68,
     "currency": "USD"
   },
   "TEF": {
@@ -3732,42 +3732,42 @@ window.STOCK_ANALYST = {
   },
   "LEN": {
     "rating": "hold",
-    "ratingMean": 3.42,
+    "ratingMean": 3.47,
     "numAnalysts": 14,
-    "targetMean": 91.5,
+    "targetMean": 89.5,
     "targetHigh": 124.0,
-    "targetLow": 74.0,
-    "price": 90.49,
+    "targetLow": 73.0,
+    "price": 90.3,
     "currency": "USD"
   },
   "FUTU": {
     "rating": "strong_buy",
     "ratingMean": 1.37,
     "numAnalysts": 19,
-    "targetMean": 167.06,
-    "targetHigh": 249.86,
-    "targetLow": 112.03,
-    "price": 92.33,
+    "targetMean": 164.04,
+    "targetHigh": 249.8,
+    "targetLow": 112.0,
+    "price": 97.54,
     "currency": "USD"
   },
   "ENTG": {
-    "rating": "buy",
-    "ratingMean": 2.18,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 10,
     "targetMean": 160.6,
     "targetHigh": 205.0,
     "targetLow": 115.0,
-    "price": 125.41,
+    "price": 150.52,
     "currency": "USD"
   },
   "WSM": {
     "rating": "buy",
-    "ratingMean": 2.27,
+    "ratingMean": 2.23,
     "numAnalysts": 19,
-    "targetMean": 207.0,
-    "targetHigh": 230.0,
+    "targetMean": 209.32,
+    "targetHigh": 250.0,
     "targetLow": 138.0,
-    "price": 204.98,
+    "price": 223.54,
     "currency": "USD"
   },
   "DGX": {
@@ -3777,37 +3777,37 @@ window.STOCK_ANALYST = {
     "targetMean": 223.44,
     "targetHigh": 245.0,
     "targetLow": 184.0,
-    "price": 200.29,
+    "price": 203.06,
     "currency": "USD"
   },
   "MDB": {
     "rating": "buy",
-    "ratingMean": 1.63,
-    "numAnalysts": 37,
-    "targetMean": 395.77,
+    "ratingMean": 1.65,
+    "numAnalysts": 36,
+    "targetMean": 394.68,
     "targetHigh": 545.0,
     "targetLow": 272.64,
-    "price": 350.74,
+    "price": 342.8,
     "currency": "USD"
   },
   "ASTS": {
     "rating": "hold",
     "ratingMean": 2.82,
     "numAnalysts": 9,
-    "targetMean": 82.02,
+    "targetMean": 81.47,
     "targetHigh": 108.0,
     "targetLow": 41.2,
-    "price": 93.6,
+    "price": 82.41,
     "currency": "USD"
   },
   "CHTR": {
     "rating": "hold",
     "ratingMean": 2.9,
-    "numAnalysts": 16,
-    "targetMean": 243.69,
+    "numAnalysts": 17,
+    "targetMean": 239.18,
     "targetHigh": 413.0,
     "targetLow": 124.0,
-    "price": 132.12,
+    "price": 145.82,
     "currency": "USD"
   },
   "SOFI": {
@@ -3817,7 +3817,7 @@ window.STOCK_ANALYST = {
     "targetMean": 21.0,
     "targetHigh": 31.0,
     "targetLow": 12.0,
-    "price": 16.03,
+    "price": 16.58,
     "currency": "USD"
   },
   "CHRW": {
@@ -3827,27 +3827,27 @@ window.STOCK_ANALYST = {
     "targetMean": 197.04,
     "targetHigh": 230.0,
     "targetLow": 90.0,
-    "price": 184.09,
+    "price": 193.74,
     "currency": "USD"
   },
   "ILMN": {
     "rating": "buy",
-    "ratingMean": 2.37,
+    "ratingMean": 2.32,
     "numAnalysts": 18,
-    "targetMean": 143.83,
-    "targetHigh": 180.0,
+    "targetMean": 147.17,
+    "targetHigh": 185.0,
     "targetLow": 95.0,
-    "price": 162.32,
+    "price": 160.97,
     "currency": "USD"
   },
   "AS": {
-    "rating": "strong_buy",
-    "ratingMean": 1.25,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 23,
     "targetMean": 49.72,
     "targetHigh": 63.0,
     "targetLow": 45.0,
-    "price": 34.1,
+    "price": 35.46,
     "currency": "USD"
   },
   "DKS": {
@@ -3857,7 +3857,7 @@ window.STOCK_ANALYST = {
     "targetMean": 249.55,
     "targetHigh": 300.0,
     "targetLow": 169.0,
-    "price": 214.83,
+    "price": 220.99,
     "currency": "USD"
   },
   "BURL": {
@@ -3867,27 +3867,27 @@ window.STOCK_ANALYST = {
     "targetMean": 367.07,
     "targetHigh": 435.0,
     "targetLow": 300.0,
-    "price": 317.05,
+    "price": 338.45,
     "currency": "USD"
   },
   "GPN": {
     "rating": "buy",
-    "ratingMean": 2.36,
-    "numAnalysts": 26,
-    "targetMean": 94.62,
+    "ratingMean": 2.34,
+    "numAnalysts": 25,
+    "targetMean": 94.52,
     "targetHigh": 194.0,
     "targetLow": 60.0,
-    "price": 66.32,
+    "price": 67.71,
     "currency": "USD"
   },
   "RIVN": {
     "rating": "hold",
-    "ratingMean": 2.58,
+    "ratingMean": 2.54,
     "numAnalysts": 26,
     "targetMean": 18.15,
     "targetHigh": 25.0,
     "targetLow": 9.0,
-    "price": 16.35,
+    "price": 16.76,
     "currency": "USD"
   },
   "SNA": {
@@ -3897,17 +3897,17 @@ window.STOCK_ANALYST = {
     "targetMean": 393.17,
     "targetHigh": 445.0,
     "targetLow": 330.0,
-    "price": 379.77,
+    "price": 387.48,
     "currency": "USD"
   },
   "EXPD": {
-    "rating": "hold",
-    "ratingMean": 3.33,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 13,
     "targetMean": 146.38,
     "targetHigh": 181.0,
     "targetLow": 95.0,
-    "price": 160.44,
+    "price": 166.62,
     "currency": "USD"
   },
   "PKG": {
@@ -3917,17 +3917,17 @@ window.STOCK_ANALYST = {
     "targetMean": 235.9,
     "targetHigh": 258.0,
     "targetLow": 167.0,
-    "price": 222.82,
+    "price": 228.23,
     "currency": "USD"
   },
   "INCY": {
     "rating": "buy",
-    "ratingMean": 2.43,
-    "numAnalysts": 24,
-    "targetMean": 107.96,
-    "targetHigh": 135.0,
+    "ratingMean": 2.41,
+    "numAnalysts": 23,
+    "targetMean": 109.09,
+    "targetHigh": 140.0,
     "targetLow": 71.0,
-    "price": 102.38,
+    "price": 108.53,
     "currency": "USD"
   },
   "LNT": {
@@ -3937,17 +3937,17 @@ window.STOCK_ANALYST = {
     "targetMean": 79.12,
     "targetHigh": 85.0,
     "targetLow": 74.0,
-    "price": 72.87,
+    "price": 73.11,
     "currency": "USD"
   },
   "HPQ": {
     "rating": "hold",
-    "ratingMean": 3.29,
+    "ratingMean": 3.24,
     "numAnalysts": 16,
     "targetMean": 22.91,
     "targetHigh": 29.6,
     "targetLow": 18.0,
-    "price": 25.58,
+    "price": 25.24,
     "currency": "USD"
   },
   "DD": {
@@ -3957,7 +3957,7 @@ window.STOCK_ANALYST = {
     "targetMean": 57.07,
     "targetHigh": 64.0,
     "targetLow": 52.0,
-    "price": 46.85,
+    "price": 48.26,
     "currency": "USD"
   },
   "LUV": {
@@ -3967,7 +3967,7 @@ window.STOCK_ANALYST = {
     "targetMean": 45.64,
     "targetHigh": 60.0,
     "targetLow": 30.0,
-    "price": 41.54,
+    "price": 45.47,
     "currency": "USD"
   },
   "CF": {
@@ -3977,107 +3977,107 @@ window.STOCK_ANALYST = {
     "targetMean": 127.63,
     "targetHigh": 150.0,
     "targetLow": 100.0,
-    "price": 113.49,
+    "price": 109.48,
     "currency": "USD"
   },
   "DLTR": {
     "rating": "hold",
-    "ratingMean": 2.73,
-    "numAnalysts": 23,
-    "targetMean": 125.04,
+    "ratingMean": 2.74,
+    "numAnalysts": 24,
+    "targetMean": 125.0,
     "targetHigh": 165.0,
     "targetLow": 85.0,
-    "price": 108.8,
+    "price": 114.0,
     "currency": "USD"
   },
   "GIS": {
     "rating": "hold",
     "ratingMean": 3.1,
     "numAnalysts": 18,
-    "targetMean": 37.56,
+    "targetMean": 37.0,
     "targetHigh": 57.0,
     "targetLow": 30.0,
-    "price": 33.15,
+    "price": 34.51,
     "currency": "USD"
   },
   "FFIV": {
     "rating": "hold",
     "ratingMean": 2.54,
     "numAnalysts": 10,
-    "targetMean": 406.5,
+    "targetMean": 409.0,
     "targetHigh": 490.0,
     "targetLow": 300.0,
-    "price": 393.35,
+    "price": 396.16,
     "currency": "USD"
   },
   "BEKE": {
     "rating": "strong_buy",
     "ratingMean": 1.33,
     "numAnalysts": 21,
-    "targetMean": 22.93,
-    "targetHigh": 27.14,
-    "targetLow": 18.12,
-    "price": 16.08,
+    "targetMean": 22.94,
+    "targetHigh": 27.05,
+    "targetLow": 18.13,
+    "price": 16.89,
     "currency": "USD"
   },
   "MRNA": {
     "rating": "hold",
-    "ratingMean": 2.96,
+    "ratingMean": 3.04,
     "numAnalysts": 20,
-    "targetMean": 43.2,
+    "targetMean": 43.3,
     "targetHigh": 69.0,
     "targetLow": 21.0,
-    "price": 47.44,
+    "price": 49.91,
     "currency": "USD"
   },
   "TSCO": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 27,
-    "targetMean": 46.41,
+    "targetMean": 46.04,
     "targetHigh": 60.0,
     "targetLow": 36.0,
-    "price": 29.78,
+    "price": 31.25,
     "currency": "USD"
   },
   "CG": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.24,
     "numAnalysts": 16,
-    "targetMean": 60.5,
+    "targetMean": 60.38,
     "targetHigh": 75.0,
     "targetLow": 43.0,
-    "price": 43.48,
+    "price": 45.75,
     "currency": "USD"
   },
   "IOT": {
     "rating": "buy",
-    "ratingMean": 1.59,
-    "numAnalysts": 20,
-    "targetMean": 44.78,
-    "targetHigh": 57.6,
+    "ratingMean": 1.62,
+    "numAnalysts": 19,
+    "targetMean": 44.11,
+    "targetHigh": 53.0,
     "targetLow": 30.0,
-    "price": 34.8,
+    "price": 33.66,
     "currency": "USD"
   },
   "LI": {
     "rating": "buy",
-    "ratingMean": 2.43,
-    "numAnalysts": 27,
-    "targetMean": 18.78,
-    "targetHigh": 26.92,
-    "targetLow": 14.01,
-    "price": 14.2,
+    "ratingMean": 2.33,
+    "numAnalysts": 26,
+    "targetMean": 18.68,
+    "targetHigh": 26.94,
+    "targetLow": 14.02,
+    "price": 14.3,
     "currency": "USD"
   },
   "VTRS": {
     "rating": "buy",
-    "ratingMean": 2.09,
-    "numAnalysts": 9,
-    "targetMean": 18.06,
+    "ratingMean": 2.2,
+    "numAnalysts": 8,
+    "targetMean": 17.81,
     "targetHigh": 23.0,
     "targetLow": 12.0,
-    "price": 15.88,
+    "price": 16.48,
     "currency": "USD"
   },
   "AMCR": {
@@ -4087,7 +4087,7 @@ window.STOCK_ANALYST = {
     "targetMean": 48.21,
     "targetHigh": 60.0,
     "targetLow": 41.0,
-    "price": 38.13,
+    "price": 40.6,
     "currency": "USD"
   },
   "CDW": {
@@ -4097,7 +4097,7 @@ window.STOCK_ANALYST = {
     "targetMean": 147.3,
     "targetHigh": 195.0,
     "targetLow": 123.0,
-    "price": 133.04,
+    "price": 132.19,
     "currency": "USD"
   },
   "YUMC": {
@@ -4107,17 +4107,17 @@ window.STOCK_ANALYST = {
     "targetMean": 61.17,
     "targetHigh": 76.0,
     "targetLow": 54.2,
-    "price": 42.88,
+    "price": 44.63,
     "currency": "USD"
   },
   "HOLX": {
-    "rating": "hold",
-    "ratingMean": 3.0,
-    "numAnalysts": 9,
-    "targetMean": 76.67,
-    "targetHigh": 78.0,
-    "targetLow": 76.0,
-    "price": 76.01,
+    "rating": null,
+    "ratingMean": null,
+    "numAnalysts": 0,
+    "targetMean": null,
+    "targetHigh": null,
+    "targetLow": null,
+    "price": null,
     "currency": "USD"
   },
   "IONQ": {
@@ -4127,17 +4127,17 @@ window.STOCK_ANALYST = {
     "targetMean": 67.64,
     "targetHigh": 100.0,
     "targetLow": 44.78,
-    "price": 56.78,
+    "price": 57.85,
     "currency": "USD"
   },
   "ESS": {
     "rating": "hold",
     "ratingMean": 2.65,
     "numAnalysts": 23,
-    "targetMean": 284.59,
+    "targetMean": 286.5,
     "targetHigh": 310.0,
     "targetLow": 239.0,
-    "price": 285.43,
+    "price": 283.75,
     "currency": "USD"
   },
   "NLY": {
@@ -4147,7 +4147,7 @@ window.STOCK_ANALYST = {
     "targetMean": 24.32,
     "targetHigh": 25.0,
     "targetLow": 23.0,
-    "price": 21.22,
+    "price": 22.0,
     "currency": "USD"
   },
   "BIP": {
@@ -4157,27 +4157,27 @@ window.STOCK_ANALYST = {
     "targetMean": 44.18,
     "targetHigh": 57.0,
     "targetLow": 37.0,
-    "price": 38.8,
+    "price": 38.28,
     "currency": "USD"
   },
   "SMCI": {
     "rating": "hold",
-    "ratingMean": 2.83,
+    "ratingMean": 2.84,
     "numAnalysts": 16,
-    "targetMean": 37.62,
+    "targetMean": 37.25,
     "targetHigh": 58.0,
     "targetLow": 15.0,
-    "price": 41.64,
+    "price": 30.46,
     "currency": "USD"
   },
   "THC": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "strong_buy",
+    "ratingMean": 1.45,
     "numAnalysts": 21,
-    "targetMean": 244.57,
+    "targetMean": 243.62,
     "targetHigh": 288.0,
     "targetLow": 210.0,
-    "price": 162.06,
+    "price": 174.66,
     "currency": "USD"
   },
   "ZBH": {
@@ -4187,57 +4187,57 @@ window.STOCK_ANALYST = {
     "targetMean": 98.7,
     "targetHigh": 130.0,
     "targetLow": 83.0,
-    "price": 87.33,
+    "price": 88.57,
     "currency": "USD"
   },
   "NIO": {
     "rating": "buy",
     "ratingMean": 1.92,
-    "numAnalysts": 24,
-    "targetMean": 6.95,
-    "targetHigh": 9.05,
+    "numAnalysts": 25,
+    "targetMean": 7.08,
+    "targetHigh": 10.02,
     "targetLow": 4.02,
-    "price": 5.36,
+    "price": 5.21,
     "currency": "USD"
   },
   "BEN": {
     "rating": "hold",
     "ratingMean": 2.82,
     "numAnalysts": 11,
-    "targetMean": 30.86,
+    "targetMean": 31.23,
     "targetHigh": 37.0,
     "targetLow": 24.0,
-    "price": 31.33,
+    "price": 32.13,
     "currency": "USD"
   },
   "LULU": {
     "rating": "hold",
-    "ratingMean": 2.94,
+    "ratingMean": 3.03,
     "numAnalysts": 25,
-    "targetMean": 144.2,
-    "targetHigh": 295.0,
+    "targetMean": 135.74,
+    "targetHigh": 280.0,
     "targetLow": 88.0,
-    "price": 114.23,
+    "price": 118.77,
     "currency": "USD"
   },
   "H": {
     "rating": "buy",
     "ratingMean": 1.96,
     "numAnalysts": 23,
-    "targetMean": 193.52,
+    "targetMean": 193.83,
     "targetHigh": 221.0,
-    "targetLow": 160.0,
-    "price": 193.06,
+    "targetLow": 165.0,
+    "price": 199.36,
     "currency": "USD"
   },
   "AKAM": {
     "rating": "buy",
-    "ratingMean": 2.16,
+    "ratingMean": 2.12,
     "numAnalysts": 23,
     "targetMean": 159.3,
     "targetHigh": 195.0,
     "targetLow": 87.0,
-    "price": 149.32,
+    "price": 133.5,
     "currency": "USD"
   },
   "IREN": {
@@ -4247,27 +4247,27 @@ window.STOCK_ANALYST = {
     "targetMean": 81.07,
     "targetHigh": 126.0,
     "targetLow": 41.0,
-    "price": 54.35,
+    "price": 59.77,
     "currency": "USD"
   },
   "GRAB": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "strong_buy",
+    "ratingMean": 1.26,
     "numAnalysts": 26,
     "targetMean": 5.97,
     "targetHigh": 8.0,
     "targetLow": 4.1,
-    "price": 3.34,
+    "price": 3.3,
     "currency": "USD"
   },
   "XPEV": {
     "rating": "buy",
-    "ratingMean": 1.74,
+    "ratingMean": 1.7,
     "numAnalysts": 27,
-    "targetMean": 23.31,
-    "targetHigh": 36.7,
-    "targetLow": 15.13,
-    "price": 15.95,
+    "targetMean": 23.28,
+    "targetHigh": 36.72,
+    "targetLow": 15.14,
+    "price": 14.49,
     "currency": "USD"
   },
   "SITM": {
@@ -4277,7 +4277,7 @@ window.STOCK_ANALYST = {
     "targetMean": 827.78,
     "targetHigh": 900.0,
     "targetLow": 750.0,
-    "price": 625.68,
+    "price": 729.89,
     "currency": "USD"
   },
   "JLL": {
@@ -4287,7 +4287,7 @@ window.STOCK_ANALYST = {
     "targetMean": 387.6,
     "targetHigh": 447.0,
     "targetLow": 294.0,
-    "price": 295.71,
+    "price": 299.95,
     "currency": "USD"
   },
   "WMG": {
@@ -4297,17 +4297,17 @@ window.STOCK_ANALYST = {
     "targetMean": 38.12,
     "targetHigh": 46.0,
     "targetLow": 23.0,
-    "price": 29.93,
+    "price": 28.46,
     "currency": "USD"
   },
   "GPC": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.22,
     "numAnalysts": 7,
     "targetMean": 132.43,
     "targetHigh": 145.0,
     "targetLow": 124.0,
-    "price": 98.15,
+    "price": 103.75,
     "currency": "USD"
   },
   "DECK": {
@@ -4317,27 +4317,27 @@ window.STOCK_ANALYST = {
     "targetMean": 126.86,
     "targetHigh": 184.0,
     "targetLow": 90.0,
-    "price": 108.13,
+    "price": 113.83,
     "currency": "USD"
   },
   "LOGI": {
-    "rating": "hold",
-    "ratingMean": 2.7,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 10,
     "targetMean": 113.5,
     "targetHigh": 148.0,
     "targetLow": 86.0,
-    "price": 112.93,
+    "price": 110.81,
     "currency": "USD"
   },
   "HII": {
-    "rating": "buy",
-    "ratingMean": 2.25,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 11,
     "targetMean": 387.91,
     "targetHigh": 435.0,
     "targetLow": 298.0,
-    "price": 293.04,
+    "price": 297.68,
     "currency": "USD"
   },
   "MOD": {
@@ -4347,7 +4347,7 @@ window.STOCK_ANALYST = {
     "targetMean": 340.86,
     "targetHigh": 370.0,
     "targetLow": 325.0,
-    "price": 276.51,
+    "price": 274.5,
     "currency": "USD"
   },
   "TKO": {
@@ -4357,67 +4357,67 @@ window.STOCK_ANALYST = {
     "targetMean": 234.39,
     "targetHigh": 275.0,
     "targetLow": 185.0,
-    "price": 203.49,
+    "price": 203.36,
     "currency": "USD"
   },
   "TME": {
     "rating": "buy",
     "ratingMean": 1.67,
     "numAnalysts": 29,
-    "targetMean": 15.94,
-    "targetHigh": 29.38,
+    "targetMean": 15.95,
+    "targetHigh": 29.39,
     "targetLow": 10.04,
-    "price": 9.08,
+    "price": 9.22,
     "currency": "USD"
   },
   "ARCC": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.71,
     "numAnalysts": 13,
-    "targetMean": 20.85,
+    "targetMean": 20.77,
     "targetHigh": 23.0,
     "targetLow": 19.0,
-    "price": 18.79,
+    "price": 19.26,
     "currency": "USD"
   },
   "ASND": {
     "rating": "strong_buy",
     "ratingMean": 1.24,
     "numAnalysts": 17,
-    "targetMean": 295.22,
-    "targetHigh": 351.6,
-    "targetLow": 250.72,
-    "price": 210.45,
+    "targetMean": 297.24,
+    "targetHigh": 352.99,
+    "targetLow": 251.7,
+    "price": 218.06,
     "currency": "USD"
   },
   "MKC": {
     "rating": "buy",
     "ratingMean": 2.13,
     "numAnalysts": 13,
-    "targetMean": 61.31,
+    "targetMean": 61.23,
     "targetHigh": 77.0,
     "targetLow": 51.0,
-    "price": 47.24,
+    "price": 48.95,
     "currency": "USD"
   },
   "HAS": {
     "rating": "buy",
     "ratingMean": 1.56,
     "numAnalysts": 15,
-    "targetMean": 113.53,
+    "targetMean": 113.07,
     "targetHigh": 125.0,
-    "targetLow": 92.0,
-    "price": 84.18,
+    "targetLow": 85.0,
+    "price": 83.9,
     "currency": "USD"
   },
   "OKTA": {
     "rating": "buy",
     "ratingMean": 1.76,
     "numAnalysts": 43,
-    "targetMean": 118.53,
-    "targetHigh": 141.0,
+    "targetMean": 119.35,
+    "targetHigh": 150.0,
     "targetLow": 75.0,
-    "price": 118.72,
+    "price": 116.29,
     "currency": "USD"
   },
   "ALLY": {
@@ -4427,7 +4427,7 @@ window.STOCK_ANALYST = {
     "targetMean": 54.01,
     "targetHigh": 70.0,
     "targetLow": 46.0,
-    "price": 42.77,
+    "price": 44.37,
     "currency": "USD"
   },
   "BBIO": {
@@ -4437,7 +4437,7 @@ window.STOCK_ANALYST = {
     "targetMean": 102.71,
     "targetHigh": 157.0,
     "targetLow": 76.0,
-    "price": 67.61,
+    "price": 66.8,
     "currency": "USD"
   },
   "NBIX": {
@@ -4447,27 +4447,27 @@ window.STOCK_ANALYST = {
     "targetMean": 192.88,
     "targetHigh": 250.65,
     "targetLow": 144.0,
-    "price": 163.88,
+    "price": 159.76,
     "currency": "USD"
   },
   "SNN": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.4,
     "numAnalysts": 5,
     "targetMean": 34.99,
     "targetHigh": 40.0,
     "targetLow": 30.0,
-    "price": 30.61,
+    "price": 30.57,
     "currency": "USD"
   },
   "APTV": {
     "rating": "strong_buy",
     "ratingMean": 1.43,
     "numAnalysts": 19,
-    "targetMean": 78.47,
-    "targetHigh": 106.0,
+    "targetMean": 78.21,
+    "targetHigh": 94.0,
     "targetLow": 65.0,
-    "price": 68.6,
+    "price": 68.05,
     "currency": "USD"
   },
   "ALGN": {
@@ -4477,27 +4477,27 @@ window.STOCK_ANALYST = {
     "targetMean": 209.07,
     "targetHigh": 240.0,
     "targetLow": 175.0,
-    "price": 167.74,
+    "price": 174.84,
     "currency": "USD"
   },
   "NYT": {
-    "rating": "buy",
-    "ratingMean": 1.9,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 9,
     "targetMean": 84.89,
     "targetHigh": 95.0,
     "targetLow": 66.0,
-    "price": 76.88,
+    "price": 73.38,
     "currency": "USD"
   },
   "FIVE": {
     "rating": "buy",
     "ratingMean": 1.8,
     "numAnalysts": 22,
-    "targetMean": 261.14,
+    "targetMean": 260.68,
     "targetHigh": 325.0,
     "targetLow": 210.0,
-    "price": 190.47,
+    "price": 198.49,
     "currency": "USD"
   },
   "BBY": {
@@ -4507,27 +4507,27 @@ window.STOCK_ANALYST = {
     "targetMean": 78.65,
     "targetHigh": 90.0,
     "targetLow": 60.0,
-    "price": 71.54,
+    "price": 78.53,
     "currency": "USD"
   },
   "AGNC": {
-    "rating": "buy",
-    "ratingMean": 2.5,
+    "rating": "hold",
+    "ratingMean": 2.54,
     "numAnalysts": 8,
     "targetMean": 11.38,
     "targetHigh": 12.5,
     "targetLow": 10.0,
-    "price": 10.17,
+    "price": 10.31,
     "currency": "USD"
   },
   "SMMT": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 13,
-    "targetMean": 28.37,
-    "targetHigh": 44.54,
-    "targetLow": 7.62,
-    "price": 14.77,
+    "targetMean": 28.53,
+    "targetHigh": 44.78,
+    "targetLow": 7.71,
+    "price": 14.01,
     "currency": "USD"
   },
   "AEG": {
@@ -4537,27 +4537,27 @@ window.STOCK_ANALYST = {
     "targetMean": 9.38,
     "targetHigh": 10.0,
     "targetLow": 8.75,
-    "price": 8.24,
+    "price": 8.66,
     "currency": "USD"
   },
   "HUBS": {
     "rating": "buy",
-    "ratingMean": 1.77,
+    "ratingMean": 1.74,
     "numAnalysts": 33,
     "targetMean": 280.16,
     "targetHigh": 450.0,
     "targetLow": 180.0,
-    "price": 212.64,
+    "price": 187.98,
     "currency": "USD"
   },
   "OKLO": {
     "rating": "buy",
     "ratingMean": 1.96,
     "numAnalysts": 19,
-    "targetMean": 88.89,
+    "targetMean": 88.63,
     "targetHigh": 140.0,
     "targetLow": 14.0,
-    "price": 58.09,
+    "price": 57.49,
     "currency": "USD"
   },
   "SWK": {
@@ -4567,7 +4567,7 @@ window.STOCK_ANALYST = {
     "targetMean": 90.54,
     "targetHigh": 120.15,
     "targetLow": 75.0,
-    "price": 78.48,
+    "price": 83.62,
     "currency": "USD"
   },
   "CHKP": {
@@ -4577,7 +4577,7 @@ window.STOCK_ANALYST = {
     "targetMean": 144.32,
     "targetHigh": 201.0,
     "targetLow": 120.0,
-    "price": 135.82,
+    "price": 124.06,
     "currency": "USD"
   },
   "MEDP": {
@@ -4587,7 +4587,7 @@ window.STOCK_ANALYST = {
     "targetMean": 442.83,
     "targetHigh": 495.0,
     "targetLow": 329.0,
-    "price": 454.25,
+    "price": 467.34,
     "currency": "USD"
   },
   "GME": {
@@ -4602,12 +4602,12 @@ window.STOCK_ANALYST = {
   },
   "U": {
     "rating": "buy",
-    "ratingMean": 1.85,
+    "ratingMean": 1.77,
     "numAnalysts": 23,
-    "targetMean": 35.06,
-    "targetHigh": 43.0,
+    "targetMean": 35.28,
+    "targetHigh": 45.0,
     "targetLow": 28.0,
-    "price": 29.17,
+    "price": 27.24,
     "currency": "USD"
   },
   "HRL": {
@@ -4617,97 +4617,97 @@ window.STOCK_ANALYST = {
     "targetMean": 26.5,
     "targetHigh": 30.0,
     "targetLow": 25.0,
-    "price": 23.62,
+    "price": 24.75,
     "currency": "USD"
   },
   "ALLE": {
     "rating": "buy",
-    "ratingMean": 2.46,
-    "numAnalysts": 12,
-    "targetMean": 164.0,
+    "ratingMean": 2.31,
+    "numAnalysts": 13,
+    "targetMean": 164.08,
     "targetHigh": 189.0,
     "targetLow": 142.0,
-    "price": 130.16,
+    "price": 133.97,
     "currency": "USD"
   },
   "PINS": {
     "rating": "buy",
     "ratingMean": 2.05,
     "numAnalysts": 35,
-    "targetMean": 27.72,
+    "targetMean": 27.75,
     "targetHigh": 42.0,
     "targetLow": 21.0,
-    "price": 21.42,
+    "price": 20.21,
     "currency": "USD"
   },
   "AMH": {
     "rating": "buy",
     "ratingMean": 2.17,
     "numAnalysts": 22,
-    "targetMean": 35.27,
+    "targetMean": 35.32,
     "targetHigh": 40.0,
     "targetLow": 29.0,
-    "price": 33.27,
+    "price": 33.29,
     "currency": "USD"
   },
   "GDDY": {
-    "rating": "buy",
-    "ratingMean": 2.12,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 14,
     "targetMean": 114.29,
     "targetHigh": 190.0,
     "targetLow": 83.0,
-    "price": 84.38,
+    "price": 76.24,
     "currency": "USD"
   },
   "IVZ": {
     "rating": "buy",
     "ratingMean": 2.42,
     "numAnalysts": 11,
-    "targetMean": 29.23,
-    "targetHigh": 32.0,
+    "targetMean": 29.59,
+    "targetHigh": 33.0,
     "targetLow": 26.0,
-    "price": 27.35,
+    "price": 28.92,
     "currency": "USD"
   },
   "WMS": {
     "rating": "strong_buy",
-    "ratingMean": 1.22,
-    "numAnalysts": 9,
-    "targetMean": 180.0,
+    "ratingMean": 1.2,
+    "numAnalysts": 10,
+    "targetMean": 179.7,
     "targetHigh": 205.0,
     "targetLow": 150.0,
-    "price": 130.15,
+    "price": 134.95,
     "currency": "USD"
   },
   "ONON": {
     "rating": "buy",
     "ratingMean": 1.62,
     "numAnalysts": 26,
-    "targetMean": 52.5,
-    "targetHigh": 84.64,
-    "targetLow": 23.58,
-    "price": 37.08,
+    "targetMean": 52.61,
+    "targetHigh": 84.62,
+    "targetLow": 23.57,
+    "price": 38.58,
     "currency": "USD"
   },
   "DKNG": {
     "rating": "buy",
-    "ratingMean": 1.57,
+    "ratingMean": 1.6,
     "numAnalysts": 35,
     "targetMean": 34.88,
     "targetHigh": 74.0,
     "targetLow": 20.0,
-    "price": 24.93,
+    "price": 29.0,
     "currency": "USD"
   },
   "TTD": {
-    "rating": "buy",
-    "ratingMean": 2.5,
-    "numAnalysts": 32,
-    "targetMean": 25.34,
-    "targetHigh": 47.0,
+    "rating": "hold",
+    "ratingMean": 2.54,
+    "numAnalysts": 31,
+    "targetMean": 24.45,
+    "targetHigh": 38.0,
     "targetLow": 11.0,
-    "price": 19.95,
+    "price": 19.28,
     "currency": "USD"
   },
   "NTNX": {
@@ -4717,7 +4717,7 @@ window.STOCK_ANALYST = {
     "targetMean": 57.01,
     "targetHigh": 65.0,
     "targetLow": 40.17,
-    "price": 53.64,
+    "price": 49.31,
     "currency": "USD"
   },
   "DPZ": {
@@ -4727,7 +4727,7 @@ window.STOCK_ANALYST = {
     "targetMean": 404.31,
     "targetHigh": 544.0,
     "targetLow": 290.0,
-    "price": 313.99,
+    "price": 323.88,
     "currency": "USD"
   },
   "WYNN": {
@@ -4737,7 +4737,7 @@ window.STOCK_ANALYST = {
     "targetMean": 135.89,
     "targetHigh": 150.0,
     "targetLow": 118.0,
-    "price": 104.48,
+    "price": 107.27,
     "currency": "USD"
   },
   "AFG": {
@@ -4747,7 +4747,7 @@ window.STOCK_ANALYST = {
     "targetMean": 142.83,
     "targetHigh": 158.0,
     "targetLow": 127.0,
-    "price": 132.46,
+    "price": 134.1,
     "currency": "USD"
   },
   "ACM": {
@@ -4757,7 +4757,7 @@ window.STOCK_ANALYST = {
     "targetMean": 106.88,
     "targetHigh": 145.0,
     "targetLow": 90.0,
-    "price": 71.14,
+    "price": 70.12,
     "currency": "USD"
   },
   "DOCN": {
@@ -4767,37 +4767,37 @@ window.STOCK_ANALYST = {
     "targetMean": 178.77,
     "targetHigh": 200.0,
     "targetLow": 135.0,
-    "price": 169.87,
+    "price": 170.44,
     "currency": "USD"
   },
   "CHWY": {
     "rating": "buy",
     "ratingMean": 1.72,
-    "numAnalysts": 20,
-    "targetMean": 38.85,
-    "targetHigh": 48.0,
-    "targetLow": 25.0,
-    "price": 20.64,
+    "numAnalysts": 21,
+    "targetMean": 31.24,
+    "targetHigh": 42.0,
+    "targetLow": 22.0,
+    "price": 19.31,
     "currency": "USD"
   },
   "SNAP": {
     "rating": "hold",
-    "ratingMean": 2.72,
+    "ratingMean": 2.7,
     "numAnalysts": 36,
     "targetMean": 7.63,
     "targetHigh": 15.0,
     "targetLow": 4.0,
-    "price": 5.76,
+    "price": 5.26,
     "currency": "USD"
   },
   "CAVA": {
     "rating": "buy",
-    "ratingMean": 2.0,
+    "ratingMean": 1.93,
     "numAnalysts": 24,
-    "targetMean": 91.79,
+    "targetMean": 92.0,
     "targetHigh": 110.0,
     "targetLow": 55.0,
-    "price": 72.6,
+    "price": 90.99,
     "currency": "USD"
   },
   "CLX": {
@@ -4807,7 +4807,7 @@ window.STOCK_ANALYST = {
     "targetMean": 105.29,
     "targetHigh": 163.0,
     "targetLow": 83.0,
-    "price": 94.14,
+    "price": 96.82,
     "currency": "USD"
   },
   "WULF": {
@@ -4817,67 +4817,67 @@ window.STOCK_ANALYST = {
     "targetMean": 36.5,
     "targetHigh": 66.5,
     "targetLow": 27.0,
-    "price": 24.0,
+    "price": 26.06,
     "currency": "USD"
   },
   "SWKS": {
-    "rating": "none",
-    "ratingMean": null,
-    "numAnalysts": 19,
-    "targetMean": 74.16,
-    "targetHigh": 106.0,
+    "rating": "hold",
+    "ratingMean": 2.83,
+    "numAnalysts": 18,
+    "targetMean": 72.39,
+    "targetHigh": 85.0,
     "targetLow": 55.0,
-    "price": 73.57,
+    "price": 73.97,
     "currency": "USD"
   },
   "ZG": {
     "rating": "buy",
     "ratingMean": 2.08,
     "numAnalysts": 22,
-    "targetMean": 65.27,
+    "targetMean": 62.86,
     "targetHigh": 110.0,
-    "targetLow": 41.0,
-    "price": 35.39,
+    "targetLow": 40.0,
+    "price": 32.22,
     "currency": "USD"
   },
   "Z": {
     "rating": "hold",
     "ratingMean": 2.57,
     "numAnalysts": 6,
-    "targetMean": 63.0,
+    "targetMean": 60.5,
     "targetHigh": 76.0,
-    "targetLow": 50.0,
-    "price": 35.06,
+    "targetLow": 40.0,
+    "price": 32.03,
     "currency": "USD"
   },
   "SJM": {
     "rating": "buy",
     "ratingMean": 2.19,
     "numAnalysts": 17,
-    "targetMean": 115.47,
-    "targetHigh": 134.0,
-    "targetLow": 95.0,
-    "price": 103.54,
+    "targetMean": 121.59,
+    "targetHigh": 135.0,
+    "targetLow": 98.0,
+    "price": 116.49,
     "currency": "USD"
   },
   "AES": {
-    "rating": "none",
-    "ratingMean": null,
-    "numAnalysts": 9,
-    "targetMean": 15.11,
-    "targetHigh": 16.0,
+    "rating": "hold",
+    "ratingMean": 3.0,
+    "numAnalysts": 8,
+    "targetMean": 15.0,
+    "targetHigh": 15.0,
     "targetLow": 15.0,
-    "price": 14.67,
+    "price": 14.68,
     "currency": "USD"
   },
   "DVA": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 2.75,
     "numAnalysts": 7,
     "targetMean": 193.71,
     "targetHigh": 235.0,
     "targetLow": 145.0,
-    "price": 192.16,
+    "price": 208.66,
     "currency": "USD"
   },
   "GTLS": {
@@ -4887,37 +4887,37 @@ window.STOCK_ANALYST = {
     "targetMean": 204.43,
     "targetHigh": 212.0,
     "targetLow": 169.0,
-    "price": 207.31,
+    "price": 206.73,
     "currency": "USD"
   },
   "HMY": {
-    "rating": "buy",
-    "ratingMean": 2.33,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 3,
     "targetMean": 23.01,
     "targetHigh": 27.0,
     "targetLow": 20.04,
-    "price": 15.71,
+    "price": 15.86,
     "currency": "USD"
   },
   "IT": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 2.8,
     "numAnalysts": 13,
-    "targetMean": 167.0,
+    "targetMean": 166.54,
     "targetHigh": 203.0,
     "targetLow": 140.0,
-    "price": 164.02,
+    "price": 148.17,
     "currency": "USD"
   },
   "MGM": {
     "rating": "buy",
     "ratingMean": 2.41,
     "numAnalysts": 18,
-    "targetMean": 46.17,
+    "targetMean": 46.56,
     "targetHigh": 59.0,
     "targetLow": 33.0,
-    "price": 47.51,
+    "price": 48.97,
     "currency": "USD"
   },
   "RVTY": {
@@ -4927,27 +4927,27 @@ window.STOCK_ANALYST = {
     "targetMean": 113.64,
     "targetHigh": 145.0,
     "targetLow": 90.0,
-    "price": 98.37,
+    "price": 99.66,
     "currency": "USD"
   },
   "LUMN": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 3.09,
     "numAnalysts": 10,
     "targetMean": 8.29,
     "targetHigh": 10.0,
     "targetLow": 7.0,
-    "price": 8.91,
+    "price": 8.49,
     "currency": "USD"
   },
   "APLD": {
     "rating": "strong_buy",
     "ratingMean": 1.18,
     "numAnalysts": 11,
-    "targetMean": 66.77,
+    "targetMean": 71.0,
     "targetHigh": 106.0,
     "targetLow": 40.0,
-    "price": 39.62,
+    "price": 42.7,
     "currency": "USD"
   },
   "BAH": {
@@ -4957,17 +4957,17 @@ window.STOCK_ANALYST = {
     "targetMean": 93.77,
     "targetHigh": 160.0,
     "targetLow": 74.0,
-    "price": 79.48,
+    "price": 77.41,
     "currency": "USD"
   },
   "DOCU": {
     "rating": "hold",
     "ratingMean": 2.73,
     "numAnalysts": 18,
-    "targetMean": 59.83,
+    "targetMean": 59.33,
     "targetHigh": 90.0,
     "targetLow": 46.89,
-    "price": 47.26,
+    "price": 45.03,
     "currency": "USD"
   },
   "CNM": {
@@ -4977,7 +4977,7 @@ window.STOCK_ANALYST = {
     "targetMean": 60.6,
     "targetHigh": 75.0,
     "targetLow": 40.0,
-    "price": 51.97,
+    "price": 48.33,
     "currency": "USD"
   },
   "SIRI": {
@@ -4987,17 +4987,17 @@ window.STOCK_ANALYST = {
     "targetMean": 28.0,
     "targetHigh": 45.0,
     "targetLow": 18.0,
-    "price": 27.01,
+    "price": 27.52,
     "currency": "USD"
   },
   "CUBE": {
     "rating": "buy",
     "ratingMean": 2.41,
     "numAnalysts": 15,
-    "targetMean": 42.87,
+    "targetMean": 43.13,
     "targetHigh": 48.0,
-    "targetLow": 39.0,
-    "price": 40.31,
+    "targetLow": 40.0,
+    "price": 41.89,
     "currency": "USD"
   },
   "GAP": {
@@ -5007,7 +5007,7 @@ window.STOCK_ANALYST = {
     "targetMean": 27.55,
     "targetHigh": 40.0,
     "targetLow": 20.0,
-    "price": 21.56,
+    "price": 21.89,
     "currency": "USD"
   },
   "MTCH": {
@@ -5017,17 +5017,17 @@ window.STOCK_ANALYST = {
     "targetMean": 41.06,
     "targetHigh": 51.0,
     "targetLow": 35.0,
-    "price": 34.42,
+    "price": 34.89,
     "currency": "USD"
   },
   "BILI": {
     "rating": "strong_buy",
     "ratingMean": 1.26,
     "numAnalysts": 31,
-    "targetMean": 29.59,
-    "targetHigh": 36.19,
-    "targetLow": 21.11,
-    "price": 17.46,
+    "targetMean": 29.61,
+    "targetHigh": 36.21,
+    "targetLow": 21.12,
+    "price": 17.86,
     "currency": "USD"
   },
   "BAX": {
@@ -5037,17 +5037,17 @@ window.STOCK_ANALYST = {
     "targetMean": 21.54,
     "targetHigh": 40.0,
     "targetLow": 17.0,
-    "price": 19.38,
+    "price": 20.86,
     "currency": "USD"
   },
   "WAL": {
-    "rating": "buy",
-    "ratingMean": 1.8,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 15,
     "targetMean": 88.93,
     "targetHigh": 97.0,
     "targetLow": 79.0,
-    "price": 80.15,
+    "price": 83.67,
     "currency": "USD"
   },
   "AGCO": {
@@ -5057,17 +5057,17 @@ window.STOCK_ANALYST = {
     "targetMean": 128.0,
     "targetHigh": 152.0,
     "targetLow": 105.0,
-    "price": 116.41,
+    "price": 112.49,
     "currency": "USD"
   },
   "CELH": {
     "rating": "buy",
-    "ratingMean": 1.59,
-    "numAnalysts": 20,
-    "targetMean": 61.4,
+    "ratingMean": 1.57,
+    "numAnalysts": 21,
+    "targetMean": 60.57,
     "targetHigh": 85.0,
     "targetLow": 41.0,
-    "price": 28.13,
+    "price": 29.18,
     "currency": "USD"
   },
   "HUT": {
@@ -5077,37 +5077,37 @@ window.STOCK_ANALYST = {
     "targetMean": 119.0,
     "targetHigh": 156.0,
     "targetLow": 70.0,
-    "price": 112.24,
+    "price": 118.86,
     "currency": "USD"
   },
   "W": {
     "rating": "buy",
     "ratingMean": 1.97,
-    "numAnalysts": 28,
-    "targetMean": 93.43,
-    "targetHigh": 144.0,
+    "numAnalysts": 27,
+    "targetMean": 91.74,
+    "targetHigh": 123.0,
     "targetLow": 60.0,
-    "price": 68.35,
+    "price": 77.59,
     "currency": "USD"
   },
   "TECH": {
     "rating": "buy",
-    "ratingMean": 1.73,
-    "numAnalysts": 12,
-    "targetMean": 61.42,
+    "ratingMean": 1.81,
+    "numAnalysts": 13,
+    "targetMean": 61.69,
     "targetHigh": 75.0,
     "targetLow": 49.0,
-    "price": 51.99,
+    "price": 54.0,
     "currency": "USD"
   },
   "NCLH": {
     "rating": "buy",
-    "ratingMean": 2.08,
-    "numAnalysts": 23,
-    "targetMean": 20.96,
+    "ratingMean": 2.04,
+    "numAnalysts": 24,
+    "targetMean": 21.08,
     "targetHigh": 32.0,
     "targetLow": 14.0,
-    "price": 18.75,
+    "price": 19.43,
     "currency": "USD"
   },
   "LEVI": {
@@ -5117,27 +5117,27 @@ window.STOCK_ANALYST = {
     "targetMean": 27.13,
     "targetHigh": 34.0,
     "targetLow": 23.0,
-    "price": 22.53,
+    "price": 24.01,
     "currency": "USD"
   },
   "SBSW": {
     "rating": "buy",
     "ratingMean": 2.25,
     "numAnalysts": 4,
-    "targetMean": 17.05,
-    "targetHigh": 17.76,
-    "targetLow": 16.18,
-    "price": 10.12,
+    "targetMean": 17.35,
+    "targetHigh": 18.06,
+    "targetLow": 16.45,
+    "price": 9.86,
     "currency": "USD"
   },
   "AOS": {
     "rating": "hold",
     "ratingMean": 2.54,
     "numAnalysts": 11,
-    "targetMean": 70.91,
+    "targetMean": 70.45,
     "targetHigh": 84.0,
     "targetLow": 59.0,
-    "price": 57.2,
+    "price": 59.08,
     "currency": "USD"
   },
   "MANH": {
@@ -5147,7 +5147,7 @@ window.STOCK_ANALYST = {
     "targetMean": 184.0,
     "targetHigh": 240.0,
     "targetLow": 145.0,
-    "price": 147.64,
+    "price": 142.92,
     "currency": "USD"
   },
   "ACI": {
@@ -5157,7 +5157,7 @@ window.STOCK_ANALYST = {
     "targetMean": 20.94,
     "targetHigh": 26.0,
     "targetLow": 14.0,
-    "price": 16.36,
+    "price": 15.41,
     "currency": "USD"
   },
   "CRL": {
@@ -5167,7 +5167,7 @@ window.STOCK_ANALYST = {
     "targetMean": 212.27,
     "targetHigh": 265.0,
     "targetLow": 135.0,
-    "price": 181.34,
+    "price": 187.51,
     "currency": "USD"
   },
   "NE": {
@@ -5177,7 +5177,7 @@ window.STOCK_ANALYST = {
     "targetMean": 50.0,
     "targetHigh": 59.0,
     "targetLow": 32.0,
-    "price": 45.41,
+    "price": 46.93,
     "currency": "USD"
   },
   "CYTK": {
@@ -5187,7 +5187,7 @@ window.STOCK_ANALYST = {
     "targetMean": 104.7,
     "targetHigh": 146.0,
     "targetLow": 69.0,
-    "price": 71.48,
+    "price": 70.15,
     "currency": "USD"
   },
   "AAL": {
@@ -5197,17 +5197,17 @@ window.STOCK_ANALYST = {
     "targetMean": 15.53,
     "targetHigh": 24.0,
     "targetLow": 10.0,
-    "price": 13.5,
+    "price": 14.98,
     "currency": "USD"
   },
   "NUVL": {
-    "rating": "strong_buy",
-    "ratingMean": 1.2,
-    "numAnalysts": 19,
-    "targetMean": 143.62,
+    "rating": "hold",
+    "ratingMean": 2.88,
+    "numAnalysts": 16,
+    "targetMean": 128.12,
     "targetHigh": 172.0,
-    "targetLow": 116.0,
-    "price": 90.95,
+    "targetLow": 124.0,
+    "price": 123.25,
     "currency": "USD"
   },
   "QBTS": {
@@ -5217,7 +5217,7 @@ window.STOCK_ANALYST = {
     "targetMean": 36.44,
     "targetHigh": 45.0,
     "targetLow": 19.58,
-    "price": 23.85,
+    "price": 23.37,
     "currency": "USD"
   },
   "RIG": {
@@ -5227,7 +5227,7 @@ window.STOCK_ANALYST = {
     "targetMean": 6.3,
     "targetHigh": 10.0,
     "targetLow": 4.0,
-    "price": 5.95,
+    "price": 6.04,
     "currency": "USD"
   },
   "VFC": {
@@ -5237,17 +5237,17 @@ window.STOCK_ANALYST = {
     "targetMean": 20.21,
     "targetHigh": 40.0,
     "targetLow": 14.0,
-    "price": 16.59,
+    "price": 17.64,
     "currency": "USD"
   },
   "SYM": {
     "rating": "buy",
-    "ratingMean": 2.3,
-    "numAnalysts": 17,
-    "targetMean": 64.87,
+    "ratingMean": 2.26,
+    "numAnalysts": 16,
+    "targetMean": 65.67,
     "targetHigh": 84.0,
     "targetLow": 44.0,
-    "price": 44.02,
+    "price": 41.63,
     "currency": "USD"
   },
   "MBLY": {
@@ -5257,27 +5257,27 @@ window.STOCK_ANALYST = {
     "targetMean": 13.29,
     "targetHigh": 27.0,
     "targetLow": 8.0,
-    "price": 9.47,
+    "price": 9.34,
     "currency": "USD"
   },
   "UEC": {
     "rating": "strong_buy",
     "ratingMean": 1.44,
     "numAnalysts": 9,
-    "targetMean": 19.17,
+    "targetMean": 18.81,
     "targetHigh": 26.75,
     "targetLow": 15.0,
-    "price": 12.65,
+    "price": 11.03,
     "currency": "USD"
   },
   "ARE": {
     "rating": "hold",
-    "ratingMean": 2.81,
+    "ratingMean": 2.94,
     "numAnalysts": 14,
-    "targetMean": 51.14,
+    "targetMean": 51.5,
     "targetHigh": 70.0,
     "targetLow": 42.0,
-    "price": 51.28,
+    "price": 53.17,
     "currency": "USD"
   },
   "BIO": {
@@ -5287,37 +5287,37 @@ window.STOCK_ANALYST = {
     "targetMean": 297.0,
     "targetHigh": 320.0,
     "targetLow": 275.0,
-    "price": 294.32,
+    "price": 285.94,
     "currency": "USD"
   },
   "ICL": {
-    "rating": "hold",
-    "ratingMean": 3.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 4,
     "targetMean": 6.45,
     "targetHigh": 7.0,
     "targetLow": 5.8,
-    "price": 5.6,
+    "price": 5.73,
     "currency": "USD"
   },
   "RIOT": {
     "rating": "strong_buy",
-    "ratingMean": 1.5,
+    "ratingMean": 1.4,
     "numAnalysts": 20,
-    "targetMean": 27.0,
+    "targetMean": 28.55,
     "targetHigh": 45.0,
-    "targetLow": 12.9,
-    "price": 24.66,
+    "targetLow": 20.0,
+    "price": 26.61,
     "currency": "USD"
   },
   "VIPS": {
-    "rating": "buy",
-    "ratingMean": 2.09,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 21,
-    "targetMean": 18.95,
-    "targetHigh": 24.08,
-    "targetLow": 14.28,
-    "price": 13.53,
+    "targetMean": 18.96,
+    "targetHigh": 24.09,
+    "targetLow": 14.29,
+    "price": 13.92,
     "currency": "USD"
   },
   "CIFR": {
@@ -5327,37 +5327,37 @@ window.STOCK_ANALYST = {
     "targetMean": 32.0,
     "targetHigh": 69.0,
     "targetLow": 23.0,
-    "price": 22.45,
+    "price": 24.5,
     "currency": "USD"
   },
   "CAG": {
     "rating": "hold",
     "ratingMean": 3.28,
     "numAnalysts": 17,
-    "targetMean": 14.89,
+    "targetMean": 14.59,
     "targetHigh": 23.0,
     "targetLow": 12.0,
-    "price": 13.01,
+    "price": 13.74,
     "currency": "USD"
   },
   "GXO": {
-    "rating": "strong_buy",
-    "ratingMean": 1.33,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 15,
     "targetMean": 70.67,
     "targetHigh": 90.0,
     "targetLow": 63.0,
-    "price": 48.68,
+    "price": 49.7,
     "currency": "USD"
   },
   "CORZ": {
     "rating": "strong_buy",
-    "ratingMean": 1.31,
-    "numAnalysts": 15,
-    "targetMean": 32.05,
+    "ratingMean": 1.29,
+    "numAnalysts": 16,
+    "targetMean": 32.55,
     "targetHigh": 55.0,
     "targetLow": 25.0,
-    "price": 25.85,
+    "price": 27.6,
     "currency": "USD"
   },
   "HIMS": {
@@ -5367,17 +5367,17 @@ window.STOCK_ANALYST = {
     "targetMean": 26.61,
     "targetHigh": 35.0,
     "targetLow": 21.0,
-    "price": 26.19,
+    "price": 26.82,
     "currency": "USD"
   },
   "PAYC": {
-    "rating": "buy",
-    "ratingMean": 2.4,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 16,
     "targetMean": 151.44,
     "targetHigh": 195.0,
     "targetLow": 120.0,
-    "price": 137.62,
+    "price": 134.52,
     "currency": "USD"
   },
   "AXTI": {
@@ -5387,17 +5387,17 @@ window.STOCK_ANALYST = {
     "targetMean": 96.5,
     "targetHigh": 125.0,
     "targetLow": 73.0,
-    "price": 89.04,
+    "price": 97.18,
     "currency": "USD"
   },
   "CPB": {
     "rating": "hold",
     "ratingMean": 3.3,
     "numAnalysts": 18,
-    "targetMean": 22.06,
+    "targetMean": 21.44,
     "targetHigh": 56.0,
-    "targetLow": 15.0,
-    "price": 21.68,
+    "targetLow": 14.0,
+    "price": 22.81,
     "currency": "USD"
   },
   "ADT": {
@@ -5407,17 +5407,17 @@ window.STOCK_ANALYST = {
     "targetMean": 8.16,
     "targetHigh": 9.0,
     "targetLow": 7.0,
-    "price": 6.79,
+    "price": 6.8,
     "currency": "USD"
   },
   "NICE": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.06,
     "numAnalysts": 14,
-    "targetMean": 132.86,
+    "targetMean": 131.43,
     "targetHigh": 170.0,
     "targetLow": 100.0,
-    "price": 93.14,
+    "price": 88.71,
     "currency": "USD"
   },
   "LW": {
@@ -5427,7 +5427,7 @@ window.STOCK_ANALYST = {
     "targetMean": 46.5,
     "targetHigh": 65.0,
     "targetLow": 40.0,
-    "price": 42.12,
+    "price": 45.38,
     "currency": "USD"
   },
   "ACT": {
@@ -5437,17 +5437,17 @@ window.STOCK_ANALYST = {
     "targetMean": 45.75,
     "targetHigh": 48.0,
     "targetLow": 44.0,
-    "price": 41.79,
+    "price": 42.41,
     "currency": "USD"
   },
   "ETSY": {
     "rating": "hold",
     "ratingMean": 2.57,
     "numAnalysts": 25,
-    "targetMean": 72.28,
+    "targetMean": 72.4,
     "targetHigh": 85.0,
     "targetLow": 58.0,
-    "price": 66.86,
+    "price": 69.48,
     "currency": "USD"
   },
   "DBX": {
@@ -5457,37 +5457,37 @@ window.STOCK_ANALYST = {
     "targetMean": 26.17,
     "targetHigh": 32.0,
     "targetLow": 21.0,
-    "price": 27.52,
+    "price": 27.09,
     "currency": "USD"
   },
   "EPAM": {
-    "rating": "buy",
-    "ratingMean": 2.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 17,
     "targetMean": 146.71,
     "targetHigh": 235.0,
     "targetLow": 110.0,
-    "price": 98.04,
+    "price": 95.38,
     "currency": "USD"
   },
   "RGTI": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.85,
     "numAnalysts": 12,
     "targetMean": 29.24,
     "targetHigh": 40.0,
     "targetLow": 15.91,
-    "price": 20.68,
+    "price": 20.98,
     "currency": "USD"
   },
   "FLG": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.12,
     "numAnalysts": 16,
     "targetMean": 15.72,
     "targetHigh": 17.0,
     "targetLow": 13.0,
-    "price": 14.02,
+    "price": 14.94,
     "currency": "USD"
   },
   "CZR": {
@@ -5497,7 +5497,7 @@ window.STOCK_ANALYST = {
     "targetMean": 31.87,
     "targetHigh": 41.0,
     "targetLow": 27.0,
-    "price": 29.2,
+    "price": 29.49,
     "currency": "USD"
   },
   "OTEX": {
@@ -5507,7 +5507,7 @@ window.STOCK_ANALYST = {
     "targetMean": 29.0,
     "targetHigh": 40.0,
     "targetLow": 25.0,
-    "price": 23.12,
+    "price": 22.23,
     "currency": "USD"
   },
   "PATH": {
@@ -5517,37 +5517,37 @@ window.STOCK_ANALYST = {
     "targetMean": 13.31,
     "targetHigh": 17.0,
     "targetLow": 10.98,
-    "price": 11.24,
+    "price": 10.55,
     "currency": "USD"
   },
   "OSCR": {
     "rating": "hold",
-    "ratingMean": 2.91,
+    "ratingMean": 2.82,
     "numAnalysts": 10,
-    "targetMean": 22.1,
-    "targetHigh": 30.0,
+    "targetMean": 22.6,
+    "targetHigh": 35.0,
     "targetLow": 13.0,
-    "price": 24.51,
+    "price": 28.26,
     "currency": "USD"
   },
   "YOU": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.43,
     "numAnalysts": 7,
     "targetMean": 62.0,
     "targetHigh": 75.0,
     "targetLow": 40.0,
-    "price": 54.52,
+    "price": 50.25,
     "currency": "USD"
   },
   "LYFT": {
     "rating": "hold",
-    "ratingMean": 2.52,
-    "numAnalysts": 36,
-    "targetMean": 18.79,
+    "ratingMean": 2.51,
+    "numAnalysts": 35,
+    "targetMean": 18.64,
     "targetHigh": 30.0,
     "targetLow": 14.0,
-    "price": 13.65,
+    "price": 13.54,
     "currency": "USD"
   },
   "DLB": {
@@ -5557,17 +5557,17 @@ window.STOCK_ANALYST = {
     "targetMean": 78.33,
     "targetHigh": 90.0,
     "targetLow": 60.0,
-    "price": 53.78,
+    "price": 52.52,
     "currency": "USD"
   },
   "KMX": {
     "rating": "hold",
     "ratingMean": 3.0,
     "numAnalysts": 13,
-    "targetMean": 42.15,
+    "targetMean": 42.69,
     "targetHigh": 99.0,
     "targetLow": 19.0,
-    "price": 47.15,
+    "price": 51.26,
     "currency": "USD"
   },
   "TGTX": {
@@ -5577,17 +5577,17 @@ window.STOCK_ANALYST = {
     "targetMean": 48.0,
     "targetHigh": 70.0,
     "targetLow": 17.0,
-    "price": 40.16,
+    "price": 49.52,
     "currency": "USD"
   },
   "GLBE": {
-    "rating": "buy",
-    "ratingMean": 1.54,
+    "rating": "strong_buy",
+    "ratingMean": 1.38,
     "numAnalysts": 13,
-    "targetMean": 45.62,
+    "targetMean": 45.92,
     "targetHigh": 64.0,
-    "targetLow": 34.0,
-    "price": 32.13,
+    "targetLow": 37.0,
+    "price": 32.73,
     "currency": "USD"
   },
   "MATX": {
@@ -5597,17 +5597,17 @@ window.STOCK_ANALYST = {
     "targetMean": 224.0,
     "targetHigh": 230.0,
     "targetLow": 217.0,
-    "price": 187.32,
+    "price": 201.94,
     "currency": "USD"
   },
   "OPEN": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 3.0,
     "numAnalysts": 7,
     "targetMean": 4.82,
     "targetHigh": 8.0,
     "targetLow": 1.0,
-    "price": 4.42,
+    "price": 4.44,
     "currency": "USD"
   },
   "APLS": {
@@ -5624,10 +5624,10 @@ window.STOCK_ANALYST = {
     "rating": "hold",
     "ratingMean": 2.83,
     "numAnalysts": 17,
-    "targetMean": 104.55,
+    "targetMean": 106.31,
     "targetHigh": 145.0,
     "targetLow": 81.0,
-    "price": 109.03,
+    "price": 122.63,
     "currency": "USD"
   },
   "M": {
@@ -5637,7 +5637,7 @@ window.STOCK_ANALYST = {
     "targetMean": 21.5,
     "targetHigh": 27.0,
     "targetLow": 9.0,
-    "price": 22.16,
+    "price": 25.37,
     "currency": "USD"
   },
   "BC": {
@@ -5647,47 +5647,47 @@ window.STOCK_ANALYST = {
     "targetMean": 90.12,
     "targetHigh": 120.0,
     "targetLow": 76.0,
-    "price": 80.4,
+    "price": 82.56,
     "currency": "USD"
   },
   "CROX": {
-    "rating": "hold",
-    "ratingMean": 2.53,
+    "rating": "buy",
+    "ratingMean": 2.4,
     "numAnalysts": 12,
-    "targetMean": 114.33,
-    "targetHigh": 145.0,
+    "targetMean": 119.75,
+    "targetHigh": 150.0,
     "targetLow": 86.0,
-    "price": 119.35,
+    "price": 124.71,
     "currency": "USD"
   },
   "MAIN": {
     "rating": "hold",
-    "ratingMean": 2.75,
+    "ratingMean": 2.86,
     "numAnalysts": 6,
     "targetMean": 57.33,
     "targetHigh": 70.0,
     "targetLow": 50.0,
-    "price": 51.81,
+    "price": 52.02,
     "currency": "USD"
   },
   "ESTC": {
     "rating": "buy",
-    "ratingMean": 2.0,
-    "numAnalysts": 26,
-    "targetMean": 72.77,
-    "targetHigh": 106.0,
+    "ratingMean": 1.97,
+    "numAnalysts": 27,
+    "targetMean": 74.52,
+    "targetHigh": 120.0,
     "targetLow": 53.0,
-    "price": 61.79,
+    "price": 60.35,
     "currency": "USD"
   },
   "CRSP": {
     "rating": "buy",
-    "ratingMean": 2.04,
+    "ratingMean": 1.96,
     "numAnalysts": 21,
-    "targetMean": 82.24,
+    "targetMean": 83.52,
     "targetHigh": 291.0,
-    "targetLow": 33.0,
-    "price": 51.84,
+    "targetLow": 44.0,
+    "price": 49.8,
     "currency": "USD"
   },
   "RELY": {
@@ -5697,27 +5697,27 @@ window.STOCK_ANALYST = {
     "targetMean": 28.56,
     "targetHigh": 33.0,
     "targetLow": 26.0,
-    "price": 18.77,
+    "price": 19.08,
     "currency": "USD"
   },
   "WIX": {
     "rating": "buy",
     "ratingMean": 2.0,
     "numAnalysts": 19,
-    "targetMean": 86.05,
-    "targetHigh": 150.0,
-    "targetLow": 54.0,
-    "price": 52.39,
+    "targetMean": 81.63,
+    "targetHigh": 135.0,
+    "targetLow": 45.0,
+    "price": 45.91,
     "currency": "USD"
   },
   "ZETA": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "strong_buy",
+    "ratingMean": 1.43,
     "numAnalysts": 13,
     "targetMean": 28.31,
     "targetHigh": 44.0,
     "targetLow": 22.0,
-    "price": 22.02,
+    "price": 20.21,
     "currency": "USD"
   },
   "MMYT": {
@@ -5727,7 +5727,7 @@ window.STOCK_ANALYST = {
     "targetMean": 70.4,
     "targetHigh": 85.0,
     "targetLow": 58.0,
-    "price": 44.09,
+    "price": 43.15,
     "currency": "USD"
   },
   "PI": {
@@ -5737,37 +5737,37 @@ window.STOCK_ANALYST = {
     "targetMean": 175.0,
     "targetHigh": 200.0,
     "targetLow": 144.0,
-    "price": 120.93,
+    "price": 132.77,
     "currency": "USD"
   },
   "QS": {
-    "rating": "hold",
-    "ratingMean": 3.44,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 8,
     "targetMean": 7.16,
     "targetHigh": 10.0,
     "targetLow": 2.5,
-    "price": 7.67,
+    "price": 7.09,
     "currency": "USD"
   },
   "ENPH": {
     "rating": "hold",
-    "ratingMean": 2.65,
-    "numAnalysts": 27,
-    "targetMean": 43.64,
+    "ratingMean": 2.53,
+    "numAnalysts": 25,
+    "targetMean": 46.77,
     "targetHigh": 85.0,
     "targetLow": 27.0,
-    "price": 56.07,
+    "price": 54.59,
     "currency": "USD"
   },
   "ACHR": {
-    "rating": "buy",
-    "ratingMean": 1.89,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 9,
     "targetMean": 10.61,
     "targetHigh": 18.0,
     "targetLow": 4.5,
-    "price": 5.54,
+    "price": 5.08,
     "currency": "USD"
   },
   "FSLY": {
@@ -5777,47 +5777,47 @@ window.STOCK_ANALYST = {
     "targetMean": 24.11,
     "targetHigh": 32.0,
     "targetLow": 18.0,
-    "price": 18.07,
+    "price": 18.55,
     "currency": "USD"
   },
   "MNSO": {
     "rating": "strong_buy",
     "ratingMean": 1.33,
     "numAnalysts": 14,
-    "targetMean": 20.75,
-    "targetHigh": 23.82,
-    "targetLow": 16.01,
-    "price": 12.95,
+    "targetMean": 20.76,
+    "targetHigh": 23.84,
+    "targetLow": 16.02,
+    "price": 13.16,
     "currency": "USD"
   },
   "CVLT": {
     "rating": "buy",
     "ratingMean": 1.76,
     "numAnalysts": 15,
-    "targetMean": 133.2,
+    "targetMean": 133.87,
     "targetHigh": 175.0,
     "targetLow": 100.0,
-    "price": 118.68,
+    "price": 127.76,
     "currency": "USD"
   },
   "KC": {
     "rating": "strong_buy",
     "ratingMean": 1.17,
     "numAnalysts": 12,
-    "targetMean": 21.34,
-    "targetHigh": 26.2,
-    "targetLow": 19.04,
-    "price": 11.69,
+    "targetMean": 21.35,
+    "targetHigh": 26.21,
+    "targetLow": 19.05,
+    "price": 10.73,
     "currency": "USD"
   },
   "TDW": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 2.75,
     "numAnalysts": 7,
     "targetMean": 86.57,
     "targetHigh": 117.0,
     "targetLow": 54.0,
-    "price": 72.48,
+    "price": 76.91,
     "currency": "USD"
   },
   "MARA": {
@@ -5827,17 +5827,17 @@ window.STOCK_ANALYST = {
     "targetMean": 17.57,
     "targetHigh": 30.0,
     "targetLow": 7.0,
-    "price": 12.32,
+    "price": 14.08,
     "currency": "USD"
   },
   "LMND": {
     "rating": "hold",
     "ratingMean": 2.91,
     "numAnalysts": 9,
-    "targetMean": 59.56,
+    "targetMean": 62.0,
     "targetHigh": 92.0,
-    "targetLow": 33.0,
-    "price": 51.46,
+    "targetLow": 37.0,
+    "price": 57.49,
     "currency": "USD"
   },
   "MAT": {
@@ -5847,7 +5847,7 @@ window.STOCK_ANALYST = {
     "targetMean": 18.71,
     "targetHigh": 28.0,
     "targetLow": 13.0,
-    "price": 14.08,
+    "price": 14.65,
     "currency": "USD"
   },
   "PLUG": {
@@ -5857,17 +5857,17 @@ window.STOCK_ANALYST = {
     "targetMean": 3.62,
     "targetHigh": 7.0,
     "targetLow": 0.75,
-    "price": 3.21,
+    "price": 2.76,
     "currency": "USD"
   },
   "EPR": {
     "rating": "hold",
-    "ratingMean": 2.75,
-    "numAnalysts": 9,
-    "targetMean": 60.22,
-    "targetHigh": 66.0,
+    "ratingMean": 2.67,
+    "numAnalysts": 10,
+    "targetMean": 61.1,
+    "targetHigh": 70.0,
     "targetLow": 55.0,
-    "price": 57.36,
+    "price": 59.85,
     "currency": "USD"
   },
   "VSCO": {
@@ -5884,10 +5884,10 @@ window.STOCK_ANALYST = {
     "rating": "hold",
     "ratingMean": 2.52,
     "numAnalysts": 23,
-    "targetMean": 33.52,
+    "targetMean": 33.61,
     "targetHigh": 60.0,
     "targetLow": 25.0,
-    "price": 31.12,
+    "price": 27.79,
     "currency": "USD"
   },
   "LBTYK": {
@@ -5897,17 +5897,17 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 11.33,
+    "price": 12.01,
     "currency": "USD"
   },
   "SOUN": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "strong_buy",
+    "ratingMean": 1.25,
     "numAnalysts": 8,
     "targetMean": 14.0,
     "targetHigh": 20.0,
     "targetLow": 8.0,
-    "price": 7.39,
+    "price": 6.9,
     "currency": "USD"
   },
   "LEU": {
@@ -5917,7 +5917,7 @@ window.STOCK_ANALYST = {
     "targetMean": 278.64,
     "targetHigh": 390.0,
     "targetLow": 195.0,
-    "price": 161.78,
+    "price": 162.58,
     "currency": "USD"
   },
   "SMR": {
@@ -5927,7 +5927,7 @@ window.STOCK_ANALYST = {
     "targetMean": 15.36,
     "targetHigh": 25.0,
     "targetLow": 7.0,
-    "price": 10.5,
+    "price": 9.89,
     "currency": "USD"
   },
   "BBWI": {
@@ -5937,17 +5937,17 @@ window.STOCK_ANALYST = {
     "targetMean": 25.57,
     "targetHigh": 54.0,
     "targetLow": 19.0,
-    "price": 17.43,
+    "price": 19.4,
     "currency": "USD"
   },
   "BILL": {
     "rating": "buy",
-    "ratingMean": 1.91,
+    "ratingMean": 2.0,
     "numAnalysts": 21,
-    "targetMean": 54.62,
+    "targetMean": 54.29,
     "targetHigh": 77.0,
-    "targetLow": 42.0,
-    "price": 35.97,
+    "targetLow": 38.0,
+    "price": 33.18,
     "currency": "USD"
   },
   "COCO": {
@@ -5957,7 +5957,7 @@ window.STOCK_ANALYST = {
     "targetMean": 75.11,
     "targetHigh": 85.0,
     "targetLow": 65.0,
-    "price": 74.09,
+    "price": 80.9,
     "currency": "USD"
   },
   "ANF": {
@@ -5967,7 +5967,7 @@ window.STOCK_ANALYST = {
     "targetMean": 111.3,
     "targetHigh": 136.0,
     "targetLow": 78.0,
-    "price": 75.34,
+    "price": 90.57,
     "currency": "USD"
   },
   "ACAD": {
@@ -5977,37 +5977,37 @@ window.STOCK_ANALYST = {
     "targetMean": 31.65,
     "targetHigh": 45.0,
     "targetLow": 17.0,
-    "price": 21.56,
+    "price": 21.09,
     "currency": "USD"
   },
   "MNDY": {
     "rating": "buy",
-    "ratingMean": 1.65,
-    "numAnalysts": 25,
-    "targetMean": 113.56,
-    "targetHigh": 244.0,
+    "ratingMean": 1.68,
+    "numAnalysts": 24,
+    "targetMean": 108.12,
+    "targetHigh": 165.0,
     "targetLow": 75.0,
-    "price": 85.74,
+    "price": 77.57,
     "currency": "USD"
   },
   "TWST": {
     "rating": "strong_buy",
-    "ratingMean": 1.33,
-    "numAnalysts": 8,
-    "targetMean": 64.38,
-    "targetHigh": 80.0,
+    "ratingMean": 1.4,
+    "numAnalysts": 9,
+    "targetMean": 66.67,
+    "targetHigh": 85.0,
     "targetLow": 36.0,
-    "price": 69.22,
+    "price": 76.17,
     "currency": "USD"
   },
   "ELF": {
     "rating": "buy",
-    "ratingMean": 1.76,
-    "numAnalysts": 15,
-    "targetMean": 72.4,
+    "ratingMean": 1.83,
+    "numAnalysts": 16,
+    "targetMean": 71.62,
     "targetHigh": 90.0,
     "targetLow": 50.0,
-    "price": 49.57,
+    "price": 61.15,
     "currency": "USD"
   },
   "BMI": {
@@ -6017,7 +6017,7 @@ window.STOCK_ANALYST = {
     "targetMean": 147.0,
     "targetHigh": 169.0,
     "targetLow": 110.0,
-    "price": 126.53,
+    "price": 131.73,
     "currency": "USD"
   },
   "AAP": {
@@ -6027,7 +6027,7 @@ window.STOCK_ANALYST = {
     "targetMean": 60.37,
     "targetHigh": 70.0,
     "targetLow": 35.0,
-    "price": 56.81,
+    "price": 60.8,
     "currency": "USD"
   },
   "BOX": {
@@ -6037,7 +6037,7 @@ window.STOCK_ANALYST = {
     "targetMean": 32.5,
     "targetHigh": 45.0,
     "targetLow": 25.0,
-    "price": 26.68,
+    "price": 25.39,
     "currency": "USD"
   },
   "TMDX": {
@@ -6047,7 +6047,7 @@ window.STOCK_ANALYST = {
     "targetMean": 116.78,
     "targetHigh": 142.0,
     "targetLow": 75.0,
-    "price": 69.43,
+    "price": 72.91,
     "currency": "USD"
   },
   "ACMR": {
@@ -6057,17 +6057,17 @@ window.STOCK_ANALYST = {
     "targetMean": 85.06,
     "targetHigh": 109.4,
     "targetLow": 70.0,
-    "price": 76.29,
+    "price": 93.95,
     "currency": "USD"
   },
   "AVNT": {
-    "rating": "buy",
-    "ratingMean": 1.57,
-    "numAnalysts": 7,
-    "targetMean": 47.57,
+    "rating": "strong_buy",
+    "ratingMean": 1.5,
+    "numAnalysts": 8,
+    "targetMean": 47.12,
     "targetHigh": 52.0,
     "targetLow": 42.0,
-    "price": 33.94,
+    "price": 37.76,
     "currency": "USD"
   },
   "IAC": {
@@ -6081,13 +6081,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "SKYW": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "strong_buy",
+    "ratingMean": 1.33,
     "numAnalysts": 6,
     "targetMean": 121.5,
     "targetHigh": 150.0,
     "targetLow": 95.0,
-    "price": 84.45,
+    "price": 91.75,
     "currency": "USD"
   },
   "TRMD": {
@@ -6097,7 +6097,7 @@ window.STOCK_ANALYST = {
     "targetMean": 34.5,
     "targetHigh": 35.0,
     "targetLow": 34.0,
-    "price": 28.44,
+    "price": 30.4,
     "currency": "USD"
   },
   "KD": {
@@ -6107,17 +6107,17 @@ window.STOCK_ANALYST = {
     "targetMean": 14.1,
     "targetHigh": 16.5,
     "targetLow": 13.0,
-    "price": 11.62,
+    "price": 11.7,
     "currency": "USD"
   },
   "MANU": {
     "rating": "buy",
     "ratingMean": 1.67,
     "numAnalysts": 3,
-    "targetMean": 25.73,
-    "targetHigh": 30.51,
-    "targetLow": 20.86,
-    "price": 21.95,
+    "targetMean": 25.9,
+    "targetHigh": 30.68,
+    "targetLow": 20.97,
+    "price": 23.21,
     "currency": "USD"
   },
   "FIZZ": {
@@ -6127,17 +6127,17 @@ window.STOCK_ANALYST = {
     "targetMean": 35.0,
     "targetHigh": 35.0,
     "targetLow": 35.0,
-    "price": 36.51,
+    "price": 36.94,
     "currency": "USD"
   },
   "ZIM": {
-    "rating": "hold",
-    "ratingMean": 3.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 4,
     "targetMean": 22.45,
     "targetHigh": 35.0,
     "targetLow": 9.0,
-    "price": 25.24,
+    "price": 26.23,
     "currency": "USD"
   },
   "BB": {
@@ -6147,7 +6147,7 @@ window.STOCK_ANALYST = {
     "targetMean": 5.16,
     "targetHigh": 8.5,
     "targetLow": 4.0,
-    "price": 9.41,
+    "price": 9.19,
     "currency": "USD"
   },
   "AMBA": {
@@ -6157,27 +6157,27 @@ window.STOCK_ANALYST = {
     "targetMean": 93.75,
     "targetHigh": 120.0,
     "targetLow": 80.0,
-    "price": 63.52,
+    "price": 67.78,
     "currency": "USD"
   },
   "UPST": {
     "rating": "buy",
     "ratingMean": 2.13,
     "numAnalysts": 15,
-    "targetMean": 40.2,
+    "targetMean": 40.13,
     "targetHigh": 80.0,
     "targetLow": 20.0,
-    "price": 29.74,
+    "price": 30.5,
     "currency": "USD"
   },
   "CLSK": {
     "rating": "strong_buy",
     "ratingMean": 1.25,
     "numAnalysts": 12,
-    "targetMean": 20.38,
+    "targetMean": 20.62,
     "targetHigh": 26.0,
     "targetLow": 16.0,
-    "price": 15.59,
+    "price": 16.48,
     "currency": "USD"
   },
   "WK": {
@@ -6187,7 +6187,7 @@ window.STOCK_ANALYST = {
     "targetMean": 78.73,
     "targetHigh": 90.0,
     "targetLow": 65.0,
-    "price": 49.13,
+    "price": 48.93,
     "currency": "USD"
   },
   "RUN": {
@@ -6197,7 +6197,7 @@ window.STOCK_ANALYST = {
     "targetMean": 19.26,
     "targetHigh": 30.0,
     "targetLow": 13.0,
-    "price": 13.36,
+    "price": 12.89,
     "currency": "USD"
   },
   "AWR": {
@@ -6207,7 +6207,7 @@ window.STOCK_ANALYST = {
     "targetMean": 76.0,
     "targetHigh": 76.0,
     "targetLow": 76.0,
-    "price": 78.37,
+    "price": 77.77,
     "currency": "USD"
   },
   "RSI": {
@@ -6217,7 +6217,7 @@ window.STOCK_ANALYST = {
     "targetMean": 30.18,
     "targetHigh": 33.0,
     "targetLow": 26.0,
-    "price": 26.14,
+    "price": 29.6,
     "currency": "USD"
   },
   "AEHR": {
@@ -6227,7 +6227,7 @@ window.STOCK_ANALYST = {
     "targetMean": 63.67,
     "targetHigh": 68.0,
     "targetLow": 56.0,
-    "price": 98.45,
+    "price": 108.47,
     "currency": "USD"
   },
   "TXG": {
@@ -6237,7 +6237,7 @@ window.STOCK_ANALYST = {
     "targetMean": 25.77,
     "targetHigh": 32.0,
     "targetLow": 20.0,
-    "price": 31.04,
+    "price": 28.84,
     "currency": "USD"
   },
   "SEZL": {
@@ -6247,7 +6247,7 @@ window.STOCK_ANALYST = {
     "targetMean": 120.33,
     "targetHigh": 141.0,
     "targetLow": 108.0,
-    "price": 116.01,
+    "price": 132.7,
     "currency": "USD"
   },
   "WU": {
@@ -6257,7 +6257,7 @@ window.STOCK_ANALYST = {
     "targetMean": 9.08,
     "targetHigh": 11.0,
     "targetLow": 7.0,
-    "price": 7.48,
+    "price": 7.55,
     "currency": "USD"
   },
   "BTDR": {
@@ -6267,7 +6267,7 @@ window.STOCK_ANALYST = {
     "targetMean": 21.52,
     "targetHigh": 27.0,
     "targetLow": 15.0,
-    "price": 17.47,
+    "price": 17.83,
     "currency": "USD"
   },
   "WDFC": {
@@ -6277,7 +6277,7 @@ window.STOCK_ANALYST = {
     "targetMean": 249.5,
     "targetHigh": 270.0,
     "targetLow": 229.0,
-    "price": 203.39,
+    "price": 223.01,
     "currency": "USD"
   },
   "SBLK": {
@@ -6287,27 +6287,27 @@ window.STOCK_ANALYST = {
     "targetMean": 30.98,
     "targetHigh": 33.0,
     "targetLow": 25.9,
-    "price": 27.32,
+    "price": 27.15,
     "currency": "USD"
   },
   "PAGS": {
-    "rating": "buy",
-    "ratingMean": 2.2,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 14,
-    "targetMean": 11.92,
-    "targetHigh": 14.06,
-    "targetLow": 7.32,
-    "price": 8.53,
+    "targetMean": 12.17,
+    "targetHigh": 14.36,
+    "targetLow": 7.48,
+    "price": 8.96,
     "currency": "USD"
   },
   "HOG": {
     "rating": "hold",
     "ratingMean": 2.62,
     "numAnalysts": 11,
-    "targetMean": 25.45,
+    "targetMean": 25.64,
     "targetHigh": 32.0,
     "targetLow": 15.0,
-    "price": 24.49,
+    "price": 25.64,
     "currency": "USD"
   },
   "SLNO": {
@@ -6327,7 +6327,7 @@ window.STOCK_ANALYST = {
     "targetMean": 16.17,
     "targetHigh": 17.0,
     "targetLow": 15.5,
-    "price": 8.0,
+    "price": 8.59,
     "currency": "USD"
   },
   "RLX": {
@@ -6337,17 +6337,17 @@ window.STOCK_ANALYST = {
     "targetMean": 2.99,
     "targetHigh": 3.59,
     "targetLow": 2.33,
-    "price": 2.0,
+    "price": 2.05,
     "currency": "USD"
   },
   "BRZE": {
-    "rating": "strong_buy",
-    "ratingMean": 1.29,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 20,
     "targetMean": 34.4,
     "targetHigh": 50.0,
     "targetLow": 27.0,
-    "price": 22.91,
+    "price": 21.66,
     "currency": "USD"
   },
   "UAA": {
@@ -6357,7 +6357,7 @@ window.STOCK_ANALYST = {
     "targetMean": 6.28,
     "targetHigh": 12.5,
     "targetLow": 4.0,
-    "price": 5.56,
+    "price": 6.05,
     "currency": "USD"
   },
   "UA": {
@@ -6367,7 +6367,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 5.39,
+    "price": 5.88,
     "currency": "USD"
   },
   "SEDG": {
@@ -6377,7 +6377,7 @@ window.STOCK_ANALYST = {
     "targetMean": 43.38,
     "targetHigh": 100.0,
     "targetLow": 26.0,
-    "price": 63.17,
+    "price": 60.8,
     "currency": "USD"
   },
   "DJT": {
@@ -6387,7 +6387,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 8.27,
+    "price": 7.8,
     "currency": "USD"
   },
   "FIGS": {
@@ -6397,7 +6397,7 @@ window.STOCK_ANALYST = {
     "targetMean": 17.62,
     "targetHigh": 22.0,
     "targetLow": 14.0,
-    "price": 11.87,
+    "price": 11.96,
     "currency": "USD"
   },
   "ACHC": {
@@ -6407,27 +6407,27 @@ window.STOCK_ANALYST = {
     "targetMean": 28.86,
     "targetHigh": 39.0,
     "targetLow": 13.0,
-    "price": 24.48,
+    "price": 24.6,
     "currency": "USD"
   },
   "AMSC": {
-    "rating": "strong_buy",
-    "ratingMean": 1.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 3,
     "targetMean": 65.33,
     "targetHigh": 71.0,
     "targetLow": 58.0,
-    "price": 42.34,
+    "price": 40.02,
     "currency": "USD"
   },
   "ADMA": {
-    "rating": "none",
-    "ratingMean": null,
-    "numAnalysts": 4,
-    "targetMean": 16.75,
-    "targetHigh": 20.0,
+    "rating": "buy",
+    "ratingMean": 1.6,
+    "numAnalysts": 5,
+    "targetMean": 17.6,
+    "targetHigh": 21.0,
     "targetLow": 12.0,
-    "price": 7.97,
+    "price": 8.21,
     "currency": "USD"
   },
   "FRSH": {
@@ -6447,27 +6447,27 @@ window.STOCK_ANALYST = {
     "targetMean": 2.78,
     "targetHigh": 4.39,
     "targetLow": 2.11,
-    "price": 1.45,
+    "price": 1.33,
     "currency": "USD"
   },
   "LCID": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 3.17,
     "numAnalysts": 10,
     "targetMean": 8.4,
     "targetHigh": 17.0,
     "targetLow": 5.0,
-    "price": 5.12,
+    "price": 5.2,
     "currency": "USD"
   },
   "VNET": {
     "rating": "buy",
     "ratingMean": 1.54,
     "numAnalysts": 13,
-    "targetMean": 15.56,
-    "targetHigh": 24.79,
-    "targetLow": 7.52,
-    "price": 8.84,
+    "targetMean": 15.72,
+    "targetHigh": 24.81,
+    "targetLow": 7.53,
+    "price": 8.87,
     "currency": "USD"
   },
   "HTO": {
@@ -6477,7 +6477,7 @@ window.STOCK_ANALYST = {
     "targetMean": 63.71,
     "targetHigh": 67.0,
     "targetLow": 60.0,
-    "price": 57.43,
+    "price": 57.06,
     "currency": "USD"
   },
   "XRAY": {
@@ -6487,7 +6487,7 @@ window.STOCK_ANALYST = {
     "targetMean": 13.4,
     "targetHigh": 17.0,
     "targetLow": 9.0,
-    "price": 10.0,
+    "price": 10.09,
     "currency": "USD"
   },
   "CPRI": {
@@ -6497,17 +6497,17 @@ window.STOCK_ANALYST = {
     "targetMean": 25.72,
     "targetHigh": 45.5,
     "targetLow": 20.0,
-    "price": 18.87,
+    "price": 21.33,
     "currency": "USD"
   },
   "AXGN": {
-    "rating": "strong_buy",
-    "ratingMean": 1.22,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 9,
     "targetMean": 50.78,
     "targetHigh": 55.0,
     "targetLow": 48.0,
-    "price": 42.8,
+    "price": 43.0,
     "currency": "USD"
   },
   "PTON": {
@@ -6517,7 +6517,7 @@ window.STOCK_ANALYST = {
     "targetMean": 8.09,
     "targetHigh": 20.0,
     "targetLow": 4.0,
-    "price": 5.77,
+    "price": 5.55,
     "currency": "USD"
   },
   "ADPT": {
@@ -6527,7 +6527,7 @@ window.STOCK_ANALYST = {
     "targetMean": 20.14,
     "targetHigh": 22.0,
     "targetLow": 18.0,
-    "price": 16.9,
+    "price": 17.6,
     "currency": "USD"
   },
   "SAM": {
@@ -6537,7 +6537,7 @@ window.STOCK_ANALYST = {
     "targetMean": 230.39,
     "targetHigh": 315.0,
     "targetLow": 192.0,
-    "price": 164.72,
+    "price": 181.89,
     "currency": "USD"
   },
   "ARR": {
@@ -6547,17 +6547,17 @@ window.STOCK_ANALYST = {
     "targetMean": 18.38,
     "targetHigh": 19.0,
     "targetLow": 18.0,
-    "price": 17.11,
+    "price": 17.1,
     "currency": "USD"
   },
   "EOSE": {
-    "rating": "buy",
-    "ratingMean": 2.5,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 8,
     "targetMean": 9.62,
     "targetHigh": 18.0,
     "targetLow": 5.0,
-    "price": 7.08,
+    "price": 6.06,
     "currency": "USD"
   },
   "DAC": {
@@ -6567,17 +6567,17 @@ window.STOCK_ANALYST = {
     "targetMean": 157.0,
     "targetHigh": 174.0,
     "targetLow": 140.0,
-    "price": 129.17,
+    "price": 131.3,
     "currency": "USD"
   },
   "QUBT": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.67,
     "numAnalysts": 6,
     "targetMean": 17.83,
     "targetHigh": 27.0,
     "targetLow": 10.0,
-    "price": 9.96,
+    "price": 9.93,
     "currency": "USD"
   },
   "MESO": {
@@ -6587,7 +6587,7 @@ window.STOCK_ANALYST = {
     "targetMean": 35.0,
     "targetHigh": 35.0,
     "targetLow": 35.0,
-    "price": 13.95,
+    "price": 13.93,
     "currency": "USD"
   },
   "SEM": {
@@ -6597,7 +6597,7 @@ window.STOCK_ANALYST = {
     "targetMean": 16.62,
     "targetHigh": 17.0,
     "targetLow": 16.5,
-    "price": 16.54,
+    "price": 16.66,
     "currency": "USD"
   },
   "GT": {
@@ -6607,27 +6607,27 @@ window.STOCK_ANALYST = {
     "targetMean": 7.46,
     "targetHigh": 9.0,
     "targetLow": 6.6,
-    "price": 5.71,
+    "price": 6.4,
     "currency": "USD"
   },
   "AGRO": {
-    "rating": "hold",
-    "ratingMean": 2.86,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 7,
     "targetMean": 13.54,
     "targetHigh": 16.0,
     "targetLow": 7.0,
-    "price": 11.42,
+    "price": 11.65,
     "currency": "USD"
   },
   "WB": {
     "rating": "buy",
     "ratingMean": 2.35,
     "numAnalysts": 16,
-    "targetMean": 9.16,
-    "targetHigh": 13.0,
+    "targetMean": 9.04,
+    "targetHigh": 11.1,
     "targetLow": 6.6,
-    "price": 7.7,
+    "price": 7.64,
     "currency": "USD"
   },
   "BBAI": {
@@ -6637,17 +6637,17 @@ window.STOCK_ANALYST = {
     "targetMean": 5.33,
     "targetHigh": 6.0,
     "targetLow": 5.0,
-    "price": 4.2,
+    "price": 4.02,
     "currency": "USD"
   },
   "LAC": {
     "rating": "hold",
     "ratingMean": 2.73,
     "numAnalysts": 9,
-    "targetMean": 6.09,
+    "targetMean": 5.87,
     "targetHigh": 10.0,
     "targetLow": 4.5,
-    "price": 4.53,
+    "price": 4.55,
     "currency": "USD"
   },
   "WGS": {
@@ -6657,7 +6657,7 @@ window.STOCK_ANALYST = {
     "targetMean": 77.0,
     "targetHigh": 100.0,
     "targetLow": 50.0,
-    "price": 52.21,
+    "price": 59.92,
     "currency": "USD"
   },
   "AGYS": {
@@ -6667,7 +6667,7 @@ window.STOCK_ANALYST = {
     "targetMean": 127.33,
     "targetHigh": 159.0,
     "targetLow": 100.0,
-    "price": 88.52,
+    "price": 90.64,
     "currency": "USD"
   },
   "LTC": {
@@ -6677,7 +6677,7 @@ window.STOCK_ANALYST = {
     "targetMean": 41.14,
     "targetHigh": 45.0,
     "targetLow": 38.0,
-    "price": 36.05,
+    "price": 36.83,
     "currency": "USD"
   },
   "RDW": {
@@ -6687,17 +6687,17 @@ window.STOCK_ANALYST = {
     "targetMean": 15.67,
     "targetHigh": 24.0,
     "targetLow": 7.0,
-    "price": 18.45,
+    "price": 15.12,
     "currency": "USD"
   },
   "FMC": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 2.71,
     "numAnalysts": 16,
-    "targetMean": 17.25,
+    "targetMean": 17.06,
     "targetHigh": 26.0,
     "targetLow": 13.0,
-    "price": 11.64,
+    "price": 11.85,
     "currency": "USD"
   },
   "MQ": {
@@ -6707,7 +6707,7 @@ window.STOCK_ANALYST = {
     "targetMean": 5.24,
     "targetHigh": 7.0,
     "targetLow": 4.5,
-    "price": 3.88,
+    "price": 3.83,
     "currency": "USD"
   },
   "JBLU": {
@@ -6717,7 +6717,7 @@ window.STOCK_ANALYST = {
     "targetMean": 4.95,
     "targetHigh": 8.0,
     "targetLow": 2.0,
-    "price": 4.85,
+    "price": 5.01,
     "currency": "USD"
   },
   "AHCO": {
@@ -6727,7 +6727,7 @@ window.STOCK_ANALYST = {
     "targetMean": 14.0,
     "targetHigh": 18.0,
     "targetLow": 11.0,
-    "price": 9.89,
+    "price": 10.16,
     "currency": "USD"
   },
   "RXRX": {
@@ -6737,57 +6737,57 @@ window.STOCK_ANALYST = {
     "targetMean": 6.64,
     "targetHigh": 10.0,
     "targetLow": 3.0,
-    "price": 3.31,
+    "price": 3.15,
     "currency": "USD"
   },
   "AMLX": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "strong_buy",
+    "ratingMean": 1.17,
     "numAnalysts": 10,
     "targetMean": 23.4,
     "targetHigh": 34.0,
     "targetLow": 19.0,
-    "price": 13.32,
+    "price": 14.59,
     "currency": "USD"
   },
   "WOLF": {
-    "rating": "hold",
-    "ratingMean": 3.5,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 1,
     "targetMean": 40.0,
     "targetHigh": 40.0,
     "targetLow": 40.0,
-    "price": 55.06,
+    "price": 43.14,
     "currency": "USD"
   },
   "FIVN": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.77,
     "numAnalysts": 21,
     "targetMean": 27.81,
     "targetHigh": 47.0,
     "targetLow": 20.0,
-    "price": 23.52,
+    "price": 21.23,
     "currency": "USD"
   },
   "PAYO": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "strong_buy",
+    "ratingMean": 1.4,
     "numAnalysts": 8,
     "targetMean": 7.85,
     "targetHigh": 10.0,
     "targetLow": 6.0,
-    "price": 5.04,
+    "price": 6.75,
     "currency": "USD"
   },
   "HLF": {
-    "rating": "buy",
-    "ratingMean": 2.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 3,
     "targetMean": 18.33,
     "targetHigh": 25.0,
     "targetLow": 9.0,
-    "price": 11.43,
+    "price": 12.09,
     "currency": "USD"
   },
   "APPN": {
@@ -6797,7 +6797,7 @@ window.STOCK_ANALYST = {
     "targetMean": 26.2,
     "targetHigh": 37.0,
     "targetLow": 22.0,
-    "price": 24.73,
+    "price": 24.01,
     "currency": "USD"
   },
   "ASAN": {
@@ -6807,27 +6807,27 @@ window.STOCK_ANALYST = {
     "targetMean": 9.13,
     "targetHigh": 15.0,
     "targetLow": 5.75,
-    "price": 7.84,
+    "price": 7.39,
     "currency": "USD"
   },
   "GCT": {
-    "rating": "buy",
-    "ratingMean": 1.75,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 4,
     "targetMean": 56.75,
     "targetHigh": 73.0,
     "targetLow": 40.0,
-    "price": 31.53,
+    "price": 34.1,
     "currency": "USD"
   },
   "KSS": {
     "rating": "hold",
     "ratingMean": 3.15,
     "numAnalysts": 12,
-    "targetMean": 17.88,
+    "targetMean": 18.08,
     "targetHigh": 41.0,
     "targetLow": 9.0,
-    "price": 15.46,
+    "price": 18.06,
     "currency": "USD"
   },
   "IIPR": {
@@ -6837,7 +6837,7 @@ window.STOCK_ANALYST = {
     "targetMean": 61.75,
     "targetHigh": 90.0,
     "targetLow": 45.0,
-    "price": 58.56,
+    "price": 60.49,
     "currency": "USD"
   },
   "ENVX": {
@@ -6847,17 +6847,17 @@ window.STOCK_ANALYST = {
     "targetMean": 13.1,
     "targetHigh": 25.0,
     "targetLow": 6.0,
-    "price": 7.28,
+    "price": 6.66,
     "currency": "USD"
   },
   "INOD": {
     "rating": "strong_buy",
-    "ratingMean": 1.33,
+    "ratingMean": 1.25,
     "numAnalysts": 4,
     "targetMean": 105.25,
     "targetHigh": 120.0,
     "targetLow": 80.0,
-    "price": 101.97,
+    "price": 100.9,
     "currency": "USD"
   },
   "BAND": {
@@ -6867,7 +6867,7 @@ window.STOCK_ANALYST = {
     "targetMean": 55.75,
     "targetHigh": 70.0,
     "targetLow": 38.0,
-    "price": 72.2,
+    "price": 65.34,
     "currency": "USD"
   },
   "PSEC": {
@@ -6877,7 +6877,7 @@ window.STOCK_ANALYST = {
     "targetMean": 2.0,
     "targetHigh": 2.0,
     "targetLow": 2.0,
-    "price": 2.23,
+    "price": 2.31,
     "currency": "USD"
   },
   "ABCL": {
@@ -6887,7 +6887,7 @@ window.STOCK_ANALYST = {
     "targetMean": 10.43,
     "targetHigh": 13.0,
     "targetLow": 7.0,
-    "price": 5.62,
+    "price": 5.24,
     "currency": "USD"
   },
   "AI": {
@@ -6897,7 +6897,7 @@ window.STOCK_ANALYST = {
     "targetMean": 8.82,
     "targetHigh": 15.0,
     "targetLow": 6.0,
-    "price": 10.43,
+    "price": 10.9,
     "currency": "USD"
   },
   "TRIP": {
@@ -6907,7 +6907,7 @@ window.STOCK_ANALYST = {
     "targetMean": 13.73,
     "targetHigh": 21.0,
     "targetLow": 8.5,
-    "price": 11.86,
+    "price": 12.41,
     "currency": "USD"
   },
   "NVAX": {
@@ -6917,17 +6917,17 @@ window.STOCK_ANALYST = {
     "targetMean": 14.11,
     "targetHigh": 25.0,
     "targetLow": 7.0,
-    "price": 9.49,
+    "price": 8.88,
     "currency": "USD"
   },
   "UPWK": {
-    "rating": "hold",
-    "ratingMean": 2.55,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 9,
     "targetMean": 12.17,
     "targetHigh": 18.0,
     "targetLow": 9.0,
-    "price": 8.76,
+    "price": 8.49,
     "currency": "USD"
   },
   "WEN": {
@@ -6937,27 +6937,27 @@ window.STOCK_ANALYST = {
     "targetMean": 7.84,
     "targetHigh": 13.0,
     "targetLow": 5.0,
-    "price": 6.71,
+    "price": 6.79,
     "currency": "USD"
   },
   "IQ": {
     "rating": "none",
     "ratingMean": null,
     "numAnalysts": 19,
-    "targetMean": 1.54,
+    "targetMean": 1.55,
     "targetHigh": 2.53,
     "targetLow": 0.5,
-    "price": 1.05,
+    "price": 1.03,
     "currency": "USD"
   },
   "TDOC": {
     "rating": "buy",
-    "ratingMean": 2.5,
-    "numAnalysts": 21,
-    "targetMean": 7.24,
+    "ratingMean": 2.48,
+    "numAnalysts": 20,
+    "targetMean": 7.3,
     "targetHigh": 10.0,
     "targetLow": 5.0,
-    "price": 7.05,
+    "price": 7.34,
     "currency": "USD"
   },
   "COUR": {
@@ -6967,7 +6967,7 @@ window.STOCK_ANALYST = {
     "targetMean": 8.0,
     "targetHigh": 10.0,
     "targetLow": 5.5,
-    "price": 5.47,
+    "price": 5.34,
     "currency": "USD"
   },
   "AMPL": {
@@ -6977,27 +6977,27 @@ window.STOCK_ANALYST = {
     "targetMean": 10.65,
     "targetHigh": 18.0,
     "targetLow": 7.0,
-    "price": 7.66,
+    "price": 6.89,
     "currency": "USD"
   },
   "OXLC": {
-    "rating": "strong_buy",
-    "ratingMean": 1.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 1,
     "targetMean": 13.5,
     "targetHigh": 13.5,
     "targetLow": 13.5,
-    "price": 9.63,
+    "price": 9.07,
     "currency": "USD"
   },
   "CRON": {
     "rating": "none",
     "ratingMean": null,
     "numAnalysts": 1,
-    "targetMean": 2.45,
-    "targetHigh": 2.45,
-    "targetLow": 2.45,
-    "price": 2.74,
+    "targetMean": 2.44,
+    "targetHigh": 2.44,
+    "targetLow": 2.44,
+    "price": 2.68,
     "currency": "USD"
   },
   "AMPH": {
@@ -7007,17 +7007,17 @@ window.STOCK_ANALYST = {
     "targetMean": 22.83,
     "targetHigh": 30.0,
     "targetLow": 19.0,
-    "price": 19.74,
+    "price": 20.09,
     "currency": "USD"
   },
   "SLI": {
-    "rating": "strong_buy",
-    "ratingMean": 1.2,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 0,
-    "targetMean": 5.25,
-    "targetHigh": 5.66,
+    "targetMean": 5.23,
+    "targetHigh": 5.64,
     "targetLow": null,
-    "price": 3.47,
+    "price": 3.58,
     "currency": "USD"
   },
   "INMD": {
@@ -7027,7 +7027,7 @@ window.STOCK_ANALYST = {
     "targetMean": 14.33,
     "targetHigh": 15.0,
     "targetLow": 14.0,
-    "price": 13.54,
+    "price": 13.45,
     "currency": "USD"
   },
   "SANA": {
@@ -7041,23 +7041,23 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "JMIA": {
-    "rating": "buy",
-    "ratingMean": 2.0,
+    "rating": "strong_buy",
+    "ratingMean": 1.2,
     "numAnalysts": 5,
-    "targetMean": 14.63,
-    "targetHigh": 17.63,
-    "targetLow": 7.29,
-    "price": 6.54,
+    "targetMean": 14.79,
+    "targetHigh": 17.7,
+    "targetLow": 7.82,
+    "price": 7.08,
     "currency": "USD"
   },
   "AMC": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 2.71,
     "numAnalysts": 6,
-    "targetMean": 1.95,
+    "targetMean": 2.16,
     "targetHigh": 3.0,
     "targetLow": 1.2,
-    "price": 1.79,
+    "price": 2.34,
     "currency": "USD"
   },
   "ARKO": {
@@ -7067,7 +7067,7 @@ window.STOCK_ANALYST = {
     "targetMean": 8.5,
     "targetHigh": 9.0,
     "targetLow": 8.0,
-    "price": 7.49,
+    "price": 8.63,
     "currency": "USD"
   },
   "CRSR": {
@@ -7077,7 +7077,7 @@ window.STOCK_ANALYST = {
     "targetMean": 8.81,
     "targetHigh": 11.0,
     "targetLow": 7.0,
-    "price": 9.01,
+    "price": 8.43,
     "currency": "USD"
   },
   "TLRY": {
@@ -7087,27 +7087,27 @@ window.STOCK_ANALYST = {
     "targetMean": 10.04,
     "targetHigh": 24.0,
     "targetLow": 6.5,
-    "price": 4.94,
+    "price": 4.98,
     "currency": "USD"
   },
   "EH": {
     "rating": "buy",
     "ratingMean": 1.55,
     "numAnalysts": 10,
-    "targetMean": 18.02,
-    "targetHigh": 26.24,
-    "targetLow": 11.11,
-    "price": 7.89,
+    "targetMean": 16.9,
+    "targetHigh": 26.25,
+    "targetLow": 9.72,
+    "price": 6.63,
     "currency": "USD"
   },
   "NRDS": {
-    "rating": "buy",
-    "ratingMean": 2.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 5,
     "targetMean": 12.0,
     "targetHigh": 15.0,
     "targetLow": 9.0,
-    "price": 7.97,
+    "price": 8.5,
     "currency": "USD"
   },
   "NEGG": {
@@ -7117,17 +7117,17 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 17.34,
+    "price": 18.53,
     "currency": "USD"
   },
   "FCEL": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 3.12,
     "numAnalysts": 6,
-    "targetMean": 8.24,
-    "targetHigh": 12.0,
+    "targetMean": 14.71,
+    "targetHigh": 30.0,
     "targetLow": 6.0,
-    "price": 17.33,
+    "price": 16.94,
     "currency": "USD"
   },
   "DNUT": {
@@ -7137,7 +7137,7 @@ window.STOCK_ANALYST = {
     "targetMean": 4.35,
     "targetHigh": 6.0,
     "targetLow": 3.0,
-    "price": 3.51,
+    "price": 4.31,
     "currency": "USD"
   },
   "AIV": {
@@ -7147,7 +7147,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 3.03,
+    "price": 2.88,
     "currency": "USD"
   },
   "VITL": {
@@ -7157,7 +7157,7 @@ window.STOCK_ANALYST = {
     "targetMean": 11.67,
     "targetHigh": 16.0,
     "targetLow": 10.0,
-    "price": 10.04,
+    "price": 10.6,
     "currency": "USD"
   },
   "TASK": {
@@ -7167,7 +7167,7 @@ window.STOCK_ANALYST = {
     "targetMean": 9.5,
     "targetHigh": 13.0,
     "targetLow": 6.0,
-    "price": 5.74,
+    "price": 5.48,
     "currency": "USD"
   },
   "TDUP": {
@@ -7177,17 +7177,17 @@ window.STOCK_ANALYST = {
     "targetMean": 8.04,
     "targetHigh": 10.0,
     "targetLow": 5.7,
-    "price": 4.82,
+    "price": 5.05,
     "currency": "USD"
   },
   "GEMI": {
     "rating": "hold",
-    "ratingMean": 2.7,
-    "numAnalysts": 10,
-    "targetMean": 8.62,
-    "targetHigh": 27.0,
+    "ratingMean": 2.67,
+    "numAnalysts": 9,
+    "targetMean": 6.58,
+    "targetHigh": 10.0,
     "targetLow": 4.0,
-    "price": 4.18,
+    "price": 4.7,
     "currency": "USD"
   },
   "DNA": {
@@ -7197,7 +7197,7 @@ window.STOCK_ANALYST = {
     "targetMean": 8.5,
     "targetHigh": 12.0,
     "targetLow": 5.0,
-    "price": 8.22,
+    "price": 7.89,
     "currency": "USD"
   },
   "BMBL": {
@@ -7207,17 +7207,17 @@ window.STOCK_ANALYST = {
     "targetMean": 4.34,
     "targetHigh": 5.0,
     "targetLow": 3.5,
-    "price": 2.84,
+    "price": 2.72,
     "currency": "USD"
   },
   "SFIX": {
     "rating": "hold",
     "ratingMean": 2.67,
     "numAnalysts": 5,
-    "targetMean": 4.6,
+    "targetMean": 4.7,
     "targetHigh": 6.0,
     "targetLow": 3.0,
-    "price": 3.42,
+    "price": 3.85,
     "currency": "USD"
   },
   "BTBT": {
@@ -7227,7 +7227,7 @@ window.STOCK_ANALYST = {
     "targetMean": 4.6,
     "targetHigh": 7.0,
     "targetLow": 3.0,
-    "price": 1.64,
+    "price": 1.74,
     "currency": "USD"
   },
   "PUBM": {
@@ -7237,27 +7237,27 @@ window.STOCK_ANALYST = {
     "targetMean": 12.89,
     "targetHigh": 21.0,
     "targetLow": 8.0,
-    "price": 11.54,
+    "price": 11.35,
     "currency": "USD"
   },
   "CGC": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 2.57,
     "numAnalysts": 1,
     "targetMean": 1.76,
     "targetHigh": 1.76,
     "targetLow": 1.76,
-    "price": 1.03,
+    "price": 1.0,
     "currency": "USD"
   },
   "BBW": {
-    "rating": "strong_buy",
-    "ratingMean": 1.25,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 4,
     "targetMean": 61.25,
     "targetHigh": 65.0,
     "targetLow": 60.0,
-    "price": 33.97,
+    "price": 32.13,
     "currency": "USD"
   },
   "BYND": {
@@ -7267,17 +7267,17 @@ window.STOCK_ANALYST = {
     "targetMean": 0.7,
     "targetHigh": 1.0,
     "targetLow": 0.5,
-    "price": 0.71,
+    "price": 0.68,
     "currency": "USD"
   },
   "FVRR": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 2.55,
     "numAnalysts": 8,
     "targetMean": 16.25,
     "targetHigh": 26.0,
     "targetLow": 13.0,
-    "price": 10.24,
+    "price": 9.96,
     "currency": "USD"
   },
   "ATOM": {
@@ -7287,7 +7287,7 @@ window.STOCK_ANALYST = {
     "targetMean": 10.0,
     "targetHigh": 10.0,
     "targetLow": 10.0,
-    "price": 8.26,
+    "price": 9.0,
     "currency": "USD"
   },
   "OSPN": {
@@ -7297,7 +7297,7 @@ window.STOCK_ANALYST = {
     "targetMean": 16.25,
     "targetHigh": 22.0,
     "targetLow": 12.0,
-    "price": 14.15,
+    "price": 14.33,
     "currency": "USD"
   },
   "FUBO": {
@@ -7307,7 +7307,7 @@ window.STOCK_ANALYST = {
     "targetMean": 17.0,
     "targetHigh": 23.0,
     "targetLow": 12.0,
-    "price": 9.54,
+    "price": 9.83,
     "currency": "USD"
   },
   "NNDM": {
@@ -7317,17 +7317,17 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 1.56,
+    "price": 1.49,
     "currency": "USD"
   },
   "HNST": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 2.29,
     "numAnalysts": 6,
     "targetMean": 4.07,
     "targetHigh": 5.0,
     "targetLow": 3.4,
-    "price": 3.25,
+    "price": 3.62,
     "currency": "USD"
   },
   "TCPC": {
@@ -7337,7 +7337,7 @@ window.STOCK_ANALYST = {
     "targetMean": 4.17,
     "targetHigh": 5.5,
     "targetLow": 3.5,
-    "price": 3.68,
+    "price": 3.79,
     "currency": "USD"
   },
   "ASPN": {
@@ -7347,17 +7347,17 @@ window.STOCK_ANALYST = {
     "targetMean": 6.35,
     "targetHigh": 8.0,
     "targetLow": 4.0,
-    "price": 5.64,
+    "price": 5.92,
     "currency": "USD"
   },
   "OTLY": {
-    "rating": "buy",
-    "ratingMean": 2.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 6,
     "targetMean": 17.75,
     "targetHigh": 29.0,
     "targetLow": 12.5,
-    "price": 8.19,
+    "price": 8.18,
     "currency": "USD"
   },
   "CLPT": {
@@ -7367,17 +7367,17 @@ window.STOCK_ANALYST = {
     "targetMean": 22.0,
     "targetHigh": 30.0,
     "targetLow": 16.0,
-    "price": 12.89,
+    "price": 13.44,
     "currency": "USD"
   },
   "EGHT": {
-    "rating": "buy",
-    "ratingMean": 2.5,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 4,
     "targetMean": 2.48,
     "targetHigh": 3.0,
     "targetLow": 1.5,
-    "price": 1.89,
+    "price": 1.78,
     "currency": "USD"
   },
   "MLAC": {
@@ -7387,17 +7387,17 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 7.97,
+    "price": 3.12,
     "currency": "USD"
   },
   "API": {
-    "rating": "buy",
-    "ratingMean": 2.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 2,
     "targetMean": 5.8,
     "targetHigh": 6.6,
     "targetLow": 5.0,
-    "price": 4.81,
+    "price": 4.32,
     "currency": "USD"
   },
   "ANGI": {
@@ -7407,17 +7407,17 @@ window.STOCK_ANALYST = {
     "targetMean": 9.5,
     "targetHigh": 14.0,
     "targetLow": 5.0,
-    "price": 5.92,
+    "price": 5.59,
     "currency": "USD"
   },
   "ABEO": {
-    "rating": "strong_buy",
-    "ratingMean": 1.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 7,
     "targetMean": 19.71,
     "targetHigh": 28.0,
     "targetLow": 14.0,
-    "price": 5.46,
+    "price": 5.53,
     "currency": "USD"
   },
   "GPRO": {
@@ -7427,17 +7427,17 @@ window.STOCK_ANALYST = {
     "targetMean": 1.3,
     "targetHigh": 1.3,
     "targetLow": 1.3,
-    "price": 0.9,
+    "price": 0.77,
     "currency": "USD"
   },
   "SPCE": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 2.71,
     "numAnalysts": 5,
     "targetMean": 3.55,
     "targetHigh": 5.0,
     "targetLow": 2.05,
-    "price": 4.38,
+    "price": 3.91,
     "currency": "USD"
   },
   "FNKO": {
@@ -7447,7 +7447,7 @@ window.STOCK_ANALYST = {
     "targetMean": 6.5,
     "targetHigh": 7.0,
     "targetLow": 6.0,
-    "price": 5.1,
+    "price": 5.38,
     "currency": "USD"
   },
   "ARQQ": {
@@ -7457,7 +7457,7 @@ window.STOCK_ANALYST = {
     "targetMean": 60.0,
     "targetHigh": 60.0,
     "targetLow": 60.0,
-    "price": 12.14,
+    "price": 13.6,
     "currency": "USD"
   },
   "KLTR": {
@@ -7467,17 +7467,17 @@ window.STOCK_ANALYST = {
     "targetMean": 3.5,
     "targetHigh": 4.0,
     "targetLow": 3.0,
-    "price": 1.39,
+    "price": 1.4,
     "currency": "USD"
   },
   "ACB": {
     "rating": "buy",
-    "ratingMean": 2.0,
+    "ratingMean": 2.17,
     "numAnalysts": 1,
-    "targetMean": 6.26,
-    "targetHigh": 6.26,
-    "targetLow": 6.26,
-    "price": 3.38,
+    "targetMean": 6.24,
+    "targetHigh": 6.24,
+    "targetLow": 6.24,
+    "price": 3.04,
     "currency": "USD"
   },
   "VERI": {
@@ -7487,7 +7487,7 @@ window.STOCK_ANALYST = {
     "targetMean": 7.38,
     "targetHigh": 10.0,
     "targetLow": 2.5,
-    "price": 1.71,
+    "price": 1.53,
     "currency": "USD"
   },
   "PLBY": {
@@ -7497,7 +7497,7 @@ window.STOCK_ANALYST = {
     "targetMean": 2.83,
     "targetHigh": 4.0,
     "targetLow": 1.5,
-    "price": 1.3,
+    "price": 1.44,
     "currency": "USD"
   },
   "ONL": {
@@ -7507,7 +7507,7 @@ window.STOCK_ANALYST = {
     "targetMean": 3.0,
     "targetHigh": 3.0,
     "targetLow": 3.0,
-    "price": 2.82,
+    "price": 2.79,
     "currency": "USD"
   },
   "RENT": {
@@ -7517,7 +7517,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 3.33,
+    "price": 3.49,
     "currency": "USD"
   },
   "BYRN": {
@@ -7527,7 +7527,7 @@ window.STOCK_ANALYST = {
     "targetMean": 13.67,
     "targetHigh": 21.0,
     "targetLow": 7.5,
-    "price": 5.92,
+    "price": 6.35,
     "currency": "USD"
   },
   "SKLZ": {
@@ -7537,7 +7537,7 @@ window.STOCK_ANALYST = {
     "targetMean": 2.5,
     "targetHigh": 2.5,
     "targetLow": 2.5,
-    "price": 8.43,
+    "price": 8.63,
     "currency": "USD"
   },
   "EXFY": {
@@ -7547,7 +7547,7 @@ window.STOCK_ANALYST = {
     "targetMean": 1.12,
     "targetHigh": 1.25,
     "targetLow": 1.0,
-    "price": 1.15,
+    "price": 1.26,
     "currency": "USD"
   },
   "AMWL": {
@@ -7557,37 +7557,37 @@ window.STOCK_ANALYST = {
     "targetMean": 7.5,
     "targetHigh": 9.0,
     "targetLow": 6.5,
-    "price": 8.62,
+    "price": 9.11,
     "currency": "USD"
   },
   "INO": {
     "rating": "buy",
-    "ratingMean": 2.0,
-    "numAnalysts": 5,
-    "targetMean": 5.86,
+    "ratingMean": 2.25,
+    "numAnalysts": 4,
+    "targetMean": 5.83,
     "targetHigh": 13.0,
     "targetLow": 1.8,
-    "price": 1.07,
+    "price": 1.1,
     "currency": "USD"
   },
   "GGR": {
-    "rating": "hold",
-    "ratingMean": 3.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 0,
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 4.0,
+    "price": 3.85,
     "currency": "USD"
   },
   "FLNA": {
-    "rating": "strong_buy",
-    "ratingMean": 1.5,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 2,
     "targetMean": 6.5,
     "targetHigh": 8.0,
     "targetLow": 5.0,
-    "price": 1.32,
+    "price": 1.25,
     "currency": "USD"
   },
   "PRTS": {
@@ -7597,7 +7597,7 @@ window.STOCK_ANALYST = {
     "targetMean": 10.5,
     "targetHigh": 15.0,
     "targetLow": 6.0,
-    "price": 5.98,
+    "price": 6.95,
     "currency": "USD"
   },
   "BIRD": {
@@ -7607,7 +7607,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 3.83,
+    "price": 3.66,
     "currency": "USD"
   },
   "INDO": {
@@ -7617,7 +7617,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 2.67,
+    "price": 2.61,
     "currency": "USD"
   },
   "FLUX": {
@@ -7627,17 +7627,17 @@ window.STOCK_ANALYST = {
     "targetMean": 5.33,
     "targetHigh": 8.0,
     "targetLow": 2.0,
-    "price": 0.97,
+    "price": 0.85,
     "currency": "USD"
   },
   "CTXR": {
-    "rating": "strong_buy",
-    "ratingMean": 1.0,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 1,
     "targetMean": 4.0,
     "targetHigh": 4.0,
     "targetLow": 4.0,
-    "price": 0.56,
+    "price": 0.54,
     "currency": "USD"
   },
   "SLAI": {
@@ -7647,17 +7647,17 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 0.5,
+    "price": 0.46,
     "currency": "USD"
   },
   "BNGO": {
-    "rating": "strong_buy",
-    "ratingMean": 1.5,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 2,
     "targetMean": 5.0,
     "targetHigh": 6.0,
     "targetLow": 4.0,
-    "price": 1.17,
+    "price": 1.16,
     "currency": "USD"
   },
   "SMX": {
@@ -7667,7 +7667,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 13.05,
+    "price": 13.13,
     "currency": "USD"
   },
   "ATER": {
@@ -7677,7 +7677,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 1.04,
+    "price": 1.2,
     "currency": "USD"
   },
   "ENVB": {
@@ -7687,7 +7687,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 1.8,
+    "price": 1.53,
     "currency": "USD"
   },
   "NUWE": {
@@ -7697,7 +7697,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 0.17,
+    "price": 0.14,
     "currency": "USD"
   },
   "QVCAQ": {
@@ -7707,7 +7707,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 0.19,
+    "price": 0.15,
     "currency": "USD"
   },
   "XXII": {
@@ -7717,27 +7717,27 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 0.46,
+    "price": 6.54,
     "currency": "USD"
   },
   "BF.B": {
     "rating": "hold",
-    "ratingMean": 2.94,
+    "ratingMean": 3.0,
     "numAnalysts": 16,
-    "targetMean": 27.68,
+    "targetMean": 27.77,
     "targetHigh": 37.0,
     "targetLow": 20.0,
-    "price": 26.16,
+    "price": 27.01,
     "currency": "USD"
   },
   "FCNCA": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "hold",
+    "ratingMean": 2.58,
     "numAnalysts": 12,
-    "targetMean": 2212.92,
+    "targetMean": 2211.25,
     "targetHigh": 2475.0,
     "targetLow": 2050.0,
-    "price": 2075.1,
+    "price": 2108.61,
     "currency": "USD"
   },
   "TEM": {
@@ -7747,7 +7747,7 @@ window.STOCK_ANALYST = {
     "targetMean": 66.53,
     "targetHigh": 100.0,
     "targetLow": 35.0,
-    "price": 46.43,
+    "price": 47.82,
     "currency": "USD"
   },
   "ACP": {
@@ -7757,7 +7757,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 5.21,
+    "price": 5.26,
     "currency": "USD"
   },
   "SLV": {
@@ -7767,7 +7767,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 61.57,
+    "price": 61.29,
     "currency": "USD"
   },
   "VTV": {
@@ -7777,7 +7777,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 212.02,
+    "price": 217.09,
     "currency": "USD"
   },
   "PGX": {
@@ -7787,7 +7787,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 10.91,
+    "price": 10.92,
     "currency": "USD"
   },
   "VIG": {
@@ -7797,7 +7797,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 233.28,
+    "price": 235.73,
     "currency": "USD"
   },
   "TLT": {
@@ -7807,7 +7807,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 85.06,
+    "price": 85.77,
     "currency": "USD"
   },
   "BND": {
@@ -7817,7 +7817,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 72.83,
+    "price": 73.24,
     "currency": "USD"
   },
   "QQQ": {
@@ -7827,7 +7827,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 705.06,
+    "price": 721.34,
     "currency": "USD"
   },
   "SMH": {
@@ -7837,7 +7837,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 569.69,
+    "price": 619.96,
     "currency": "USD"
   },
   "IEF": {
@@ -7847,7 +7847,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 93.62,
+    "price": 94.18,
     "currency": "USD"
   },
   "MBB": {
@@ -7857,7 +7857,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 93.74,
+    "price": 94.38,
     "currency": "USD"
   },
   "ICLN": {
@@ -7867,7 +7867,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 21.32,
+    "price": 20.92,
     "currency": "USD"
   },
   "IGOV": {
@@ -7877,7 +7877,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 41.17,
+    "price": 41.5,
     "currency": "USD"
   },
   "VNQI": {
@@ -7887,7 +7887,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 43.96,
+    "price": 45.69,
     "currency": "USD"
   },
   "SKYY": {
@@ -7897,7 +7897,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 140.76,
+    "price": 134.02,
     "currency": "USD"
   },
   "VTIP": {
@@ -7907,7 +7907,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 50.31,
+    "price": 50.35,
     "currency": "USD"
   },
   "BNDX": {
@@ -7917,7 +7917,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 48.01,
+    "price": 48.26,
     "currency": "USD"
   },
   "PDBC": {
@@ -7927,7 +7927,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 17.46,
+    "price": 17.06,
     "currency": "USD"
   },
   "CIBR": {
@@ -7937,7 +7937,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 86.7,
+    "price": 85.33,
     "currency": "USD"
   },
   "BOTZ": {
@@ -7947,7 +7947,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 37.98,
+    "price": 37.12,
     "currency": "USD"
   },
   "SPY": {
@@ -7957,7 +7957,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 737.55,
+    "price": 741.75,
     "currency": "USD"
   },
   "DIA": {
@@ -7967,7 +7967,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 509.7,
+    "price": 513.06,
     "currency": "USD"
   },
   "XLE": {
@@ -7977,7 +7977,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 57.67,
+    "price": 57.55,
     "currency": "USD"
   },
   "XLV": {
@@ -7987,7 +7987,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 153.01,
+    "price": 153.81,
     "currency": "USD"
   },
   "XLF": {
@@ -7997,7 +7997,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 52.3,
+    "price": 53.34,
     "currency": "USD"
   },
   "XLP": {
@@ -8007,7 +8007,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 83.44,
+    "price": 85.82,
     "currency": "USD"
   },
   "XLU": {
@@ -8017,7 +8017,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 44.35,
+    "price": 44.53,
     "currency": "USD"
   },
   "XLY": {
@@ -8027,7 +8027,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 114.86,
+    "price": 116.6,
     "currency": "USD"
   },
   "XLB": {
@@ -8037,7 +8037,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 50.63,
+    "price": 52.18,
     "currency": "USD"
   },
   "IWM": {
@@ -8047,7 +8047,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 281.65,
+    "price": 292.95,
     "currency": "USD"
   },
   "VTI": {
@@ -8057,7 +8057,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 363.38,
+    "price": 366.36,
     "currency": "USD"
   },
   "LQD": {
@@ -8067,7 +8067,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 108.17,
+    "price": 109.01,
     "currency": "USD"
   },
   "VGT": {
@@ -8077,7 +8077,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 115.28,
+    "price": 116.74,
     "currency": "USD"
   },
   "VNQ": {
@@ -8087,7 +8087,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 96.79,
+    "price": 98.51,
     "currency": "USD"
   },
   "FXI": {
@@ -8097,7 +8097,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 34.75,
+    "price": 35.29,
     "currency": "USD"
   },
   "VWO": {
@@ -8107,7 +8107,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 58.03,
+    "price": 59.55,
     "currency": "USD"
   },
   "USO": {
@@ -8117,7 +8117,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 133.02,
+    "price": 125.43,
     "currency": "USD"
   },
   "GDX": {
@@ -8127,7 +8127,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 78.84,
+    "price": 80.03,
     "currency": "USD"
   },
   "DBA": {
@@ -8137,7 +8137,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 26.4,
+    "price": 26.24,
     "currency": "USD"
   },
   "VEA": {
@@ -8147,7 +8147,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 69.17,
+    "price": 71.55,
     "currency": "USD"
   },
   "AOR": {
@@ -8157,7 +8157,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 68.28,
+    "price": 69.12,
     "currency": "USD"
   },
   "EIDO": {
@@ -8167,7 +8167,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 11.23,
+    "price": 12.34,
     "currency": "USD"
   },
   "ACWI": {
@@ -8177,7 +8177,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 154.39,
+    "price": 156.47,
     "currency": "USD"
   },
   "HDV": {
@@ -8187,7 +8187,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 27.49,
+    "price": 27.87,
     "currency": "USD"
   },
   "SPLV": {
@@ -8197,7 +8197,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 73.47,
+    "price": 74.47,
     "currency": "USD"
   },
   "SPHD": {
@@ -8207,7 +8207,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 50.21,
+    "price": 51.59,
     "currency": "USD"
   },
   "ARKK": {
@@ -8217,7 +8217,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 74.49,
+    "price": 75.65,
     "currency": "USD"
   },
   "JPIN": {
@@ -8227,7 +8227,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 72.7,
+    "price": 74.62,
     "currency": "USD"
   },
   "BLOK": {
@@ -8237,7 +8237,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 61.07,
+    "price": 64.04,
     "currency": "USD"
   },
   "GLD": {
@@ -8247,7 +8247,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 396.24,
+    "price": 386.54,
     "currency": "USD"
   },
   "IBIT": {
@@ -8257,7 +8257,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 34.14,
+    "price": 36.04,
     "currency": "USD"
   },
   "TQQQ": {
@@ -8267,7 +8267,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 73.05,
+    "price": 77.52,
     "currency": "USD"
   },
   "TSLL": {
@@ -8277,7 +8277,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 12.72,
+    "price": 13.59,
     "currency": "USD"
   },
   "SQQQ": {
@@ -8287,7 +8287,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 43.19,
+    "price": 40.04,
     "currency": "USD"
   },
   "CONL": {
@@ -8297,7 +8297,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 4.8,
+    "price": 5.21,
     "currency": "USD"
   },
   "SOXS": {
@@ -8307,7 +8307,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 6.84,
+    "price": 4.72,
     "currency": "USD"
   },
   "BITO": {
@@ -8317,7 +8317,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 8.22,
+    "price": 8.65,
     "currency": "USD"
   },
   "NVDL": {
@@ -8327,7 +8327,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 95.91,
+    "price": 95.49,
     "currency": "USD"
   },
   "SGOV": {
@@ -8337,7 +8337,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 100.45,
+    "price": 100.51,
     "currency": "USD"
   },
   "SOXL": {
@@ -8347,7 +8347,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 182.54,
+    "price": 234.68,
     "currency": "USD"
   },
   "VCIT": {
@@ -8357,7 +8357,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 81.91,
+    "price": 82.45,
     "currency": "USD"
   },
   "VXUS": {
@@ -8367,7 +8367,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 83.03,
+    "price": 85.68,
     "currency": "USD"
   },
   "QYLD": {
@@ -8377,7 +8377,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 17.8,
+    "price": 18.09,
     "currency": "USD"
   },
   "EWZ": {
@@ -8387,7 +8387,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 34.01,
+    "price": 35.1,
     "currency": "USD"
   },
   "MSTU": {
@@ -8397,7 +8397,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 3.41,
+    "price": 3.52,
     "currency": "USD"
   },
   "VCSH": {
@@ -8407,7 +8407,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 78.61,
+    "price": 78.91,
     "currency": "USD"
   },
   "JEPQ": {
@@ -8417,7 +8417,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 58.9,
+    "price": 59.86,
     "currency": "USD"
   },
   "EMB": {
@@ -8427,7 +8427,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 95.4,
+    "price": 96.36,
     "currency": "USD"
   },
   "SOXX": {
@@ -8437,7 +8437,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 539.77,
+    "price": 596.25,
     "currency": "USD"
   },
   "EWY": {
@@ -8447,7 +8447,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 175.19,
+    "price": 197.45,
     "currency": "USD"
   },
   "SHY": {
@@ -8457,7 +8457,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 81.86,
+    "price": 82.07,
     "currency": "USD"
   },
   "KWEB": {
@@ -8467,7 +8467,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 26.38,
+    "price": 26.49,
     "currency": "USD"
   },
   "MCHI": {
@@ -8477,7 +8477,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 54.44,
+    "price": 54.83,
     "currency": "USD"
   },
   "HYG": {
@@ -8487,7 +8487,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 79.43,
+    "price": 79.94,
     "currency": "USD"
   },
   "XBI": {
@@ -8497,7 +8497,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 128.67,
+    "price": 133.79,
     "currency": "USD"
   },
   "XLK": {
@@ -8507,7 +8507,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 180.3,
+    "price": 184.8,
     "currency": "USD"
   },
   "QQQM": {
@@ -8517,7 +8517,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 290.35,
+    "price": 297.01,
     "currency": "USD"
   },
   "FNGU": {
@@ -8527,7 +8527,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 26.99,
+    "price": 26.26,
     "currency": "USD"
   },
   "BOIL": {
@@ -8537,7 +8537,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 28.62,
+    "price": 26.76,
     "currency": "USD"
   },
   "UNG": {
@@ -8547,7 +8547,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 11.67,
+    "price": 11.35,
     "currency": "USD"
   },
   "XLRE": {
@@ -8557,7 +8557,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 44.7,
+    "price": 45.36,
     "currency": "USD"
   },
   "KOLD": {
@@ -8567,7 +8567,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 22.26,
+    "price": 23.65,
     "currency": "USD"
   },
   "IEI": {
@@ -8577,7 +8577,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 116.73,
+    "price": 117.21,
     "currency": "USD"
   },
   "IEMG": {
@@ -8587,7 +8587,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 78.63,
+    "price": 82.57,
     "currency": "USD"
   },
   "BUG": {
@@ -8597,7 +8597,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 35.22,
+    "price": 34.11,
     "currency": "USD"
   },
   "MSTZ": {
@@ -8607,7 +8607,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 9.87,
+    "price": 8.99,
     "currency": "USD"
   },
   "SCHG": {
@@ -8617,7 +8617,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 33.75,
+    "price": 33.42,
     "currency": "USD"
   },
   "AIQ": {
@@ -8627,7 +8627,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 62.52,
+    "price": 64.0,
     "currency": "USD"
   },
   "BITU": {
@@ -8637,7 +8637,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 8.73,
+    "price": 9.66,
     "currency": "USD"
   },
   "USIG": {
@@ -8647,7 +8647,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 50.88,
+    "price": 51.2,
     "currency": "USD"
   },
   "NVDY": {
@@ -8657,7 +8657,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 13.0,
+    "price": 12.9,
     "currency": "USD"
   },
   "IEFA": {
@@ -8667,7 +8667,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 95.56,
+    "price": 97.97,
     "currency": "USD"
   },
   "VT": {
@@ -8677,7 +8677,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 153.68,
+    "price": 156.29,
     "currency": "USD"
   },
   "EWT": {
@@ -8687,7 +8687,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 98.08,
+    "price": 102.62,
     "currency": "USD"
   },
   "VYMI": {
@@ -8697,7 +8697,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 98.05,
+    "price": 100.84,
     "currency": "USD"
   },
   "IAU": {
@@ -8707,7 +8707,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 81.22,
+    "price": 79.19,
     "currency": "USD"
   },
   "AGQ": {
@@ -8717,7 +8717,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 92.01,
+    "price": 90.68,
     "currency": "USD"
   },
   "COPX": {
@@ -8727,7 +8727,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 80.64,
+    "price": 85.97,
     "currency": "USD"
   },
   "TMF": {
@@ -8737,7 +8737,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 34.47,
+    "price": 35.17,
     "currency": "USD"
   },
   "EWJ": {
@@ -8747,7 +8747,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 90.72,
+    "price": 92.71,
     "currency": "USD"
   },
   "EWH": {
@@ -8757,7 +8757,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 21.82,
+    "price": 22.0,
     "currency": "USD"
   },
   "URA": {
@@ -8767,7 +8767,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 45.31,
+    "price": 45.52,
     "currency": "USD"
   },
   "EWA": {
@@ -8777,7 +8777,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 28.06,
+    "price": 29.22,
     "currency": "USD"
   },
   "YINN": {
@@ -8787,7 +8787,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 28.56,
+    "price": 29.78,
     "currency": "USD"
   },
   "XHB": {
@@ -8797,7 +8797,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 103.51,
+    "price": 107.59,
     "currency": "USD"
   },
   "VOO": {
@@ -8807,7 +8807,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 678.0,
+    "price": 681.95,
     "currency": "USD"
   },
   "QLD": {
@@ -8817,7 +8817,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 89.54,
+    "price": 93.38,
     "currency": "USD"
   },
   "GDXJ": {
@@ -8827,7 +8827,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 100.59,
+    "price": 104.26,
     "currency": "USD"
   },
   "SPYI": {
@@ -8837,7 +8837,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 52.77,
+    "price": 53.1,
     "currency": "USD"
   },
   "AGG": {
@@ -8847,7 +8847,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 98.17,
+    "price": 98.76,
     "currency": "USD"
   },
   "SGOL": {
@@ -8857,7 +8857,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 41.12,
+    "price": 40.1,
     "currency": "USD"
   },
   "UGL": {
@@ -8867,7 +8867,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 51.18,
+    "price": 48.49,
     "currency": "USD"
   },
   "JEPI": {
@@ -8877,7 +8877,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 55.52,
+    "price": 56.04,
     "currency": "USD"
   },
   "IVV": {
@@ -8887,7 +8887,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 740.91,
+    "price": 745.14,
     "currency": "USD"
   },
   "XRT": {
@@ -8897,7 +8897,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 82.63,
+    "price": 87.73,
     "currency": "USD"
   },
   "QQQE": {
@@ -8907,7 +8907,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 116.22,
+    "price": 119.65,
     "currency": "USD"
   },
   "JNK": {
@@ -8917,7 +8917,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 95.73,
+    "price": 96.3,
     "currency": "USD"
   },
   "MAGS": {
@@ -8927,7 +8927,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 66.51,
+    "price": 64.91,
     "currency": "USD"
   },
   "EWU": {
@@ -8937,7 +8937,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 46.38,
+    "price": 47.16,
     "currency": "USD"
   },
   "UPRO": {
@@ -8947,7 +8947,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 137.53,
+    "price": 139.41,
     "currency": "USD"
   },
   "AAAU": {
@@ -8957,7 +8957,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 42.57,
+    "price": 41.53,
     "currency": "USD"
   },
   "JETS": {
@@ -8967,7 +8967,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 27.94,
+    "price": 29.53,
     "currency": "USD"
   },
   "SPXL": {
@@ -8977,7 +8977,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 262.56,
+    "price": 266.27,
     "currency": "USD"
   },
   "INDA": {
@@ -8987,7 +8987,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 47.34,
+    "price": 48.33,
     "currency": "USD"
   },
   "URNM": {
@@ -8997,7 +8997,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 55.28,
+    "price": 54.58,
     "currency": "USD"
   },
   "FEPI": {
@@ -9007,7 +9007,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 44.1,
+    "price": 43.47,
     "currency": "USD"
   },
   "TAN": {
@@ -9017,7 +9017,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 64.05,
+    "price": 63.03,
     "currency": "USD"
   },
   "YMAX": {
@@ -9027,7 +9027,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 8.04,
+    "price": 7.9,
     "currency": "USD"
   },
   "REMX": {
@@ -9037,7 +9037,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 88.59,
+    "price": 95.5,
     "currency": "USD"
   },
   "EWC": {
@@ -9047,7 +9047,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 58.03,
+    "price": 58.76,
     "currency": "USD"
   },
   "PPLT": {
@@ -9057,7 +9057,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 16.18,
+    "price": 15.54,
     "currency": "USD"
   },
   "SJNK": {
@@ -9067,7 +9067,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 24.89,
+    "price": 25.0,
     "currency": "USD"
   },
   "DBC": {
@@ -9077,7 +9077,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 29.23,
+    "price": 28.55,
     "currency": "USD"
   },
   "SPMO": {
@@ -9087,7 +9087,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 144.28,
+    "price": 152.48,
     "currency": "USD"
   },
   "SHLD": {
@@ -9097,7 +9097,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 63.05,
+    "price": 63.82,
     "currency": "USD"
   },
   "JPST": {
@@ -9107,7 +9107,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 50.41,
+    "price": 50.49,
     "currency": "USD"
   },
   "USD": {
@@ -9117,7 +9117,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 88.68,
+    "price": 98.01,
     "currency": "USD"
   },
   "BNO": {
@@ -9127,7 +9127,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 51.2,
+    "price": 47.82,
     "currency": "USD"
   },
   "EMLC": {
@@ -9137,7 +9137,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 25.15,
+    "price": 25.52,
     "currency": "USD"
   },
   "AIPI": {
@@ -9147,7 +9147,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 37.85,
+    "price": 37.3,
     "currency": "USD"
   },
   "MSTY": {
@@ -9157,7 +9157,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 17.03,
+    "price": 17.33,
     "currency": "USD"
   },
   "TIP": {
@@ -9167,7 +9167,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 109.25,
+    "price": 109.61,
     "currency": "USD"
   },
   "EWG": {
@@ -9177,7 +9177,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 42.11,
+    "price": 42.31,
     "currency": "USD"
   },
   "CLOU": {
@@ -9187,7 +9187,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 23.88,
+    "price": 22.7,
     "currency": "USD"
   },
   "QTEC": {
@@ -9197,7 +9197,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 305.01,
+    "price": 319.77,
     "currency": "USD"
   },
   "LIT": {
@@ -9207,7 +9207,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 78.3,
+    "price": 82.37,
     "currency": "USD"
   },
   "CPER": {
@@ -9217,7 +9217,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 38.08,
+    "price": 39.55,
     "currency": "USD"
   },
   "TLH": {
@@ -9227,7 +9227,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 98.85,
+    "price": 99.64,
     "currency": "USD"
   },
   "CWEB": {
@@ -9237,7 +9237,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 22.27,
+    "price": 22.45,
     "currency": "USD"
   },
   "VUG": {
@@ -9247,7 +9247,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 85.93,
+    "price": 85.27,
     "currency": "USD"
   },
   "PALL": {
@@ -9257,7 +9257,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 22.35,
+    "price": 23.23,
     "currency": "USD"
   },
   "AMZY": {
@@ -9267,7 +9267,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 11.16,
+    "price": 10.83,
     "currency": "USD"
   },
   "BIL": {
@@ -9277,7 +9277,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 91.45,
+    "price": 91.51,
     "currency": "USD"
   },
   "AVUV": {
@@ -9287,7 +9287,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 119.7,
+    "price": 124.38,
     "currency": "USD"
   },
   "AVDV": {
@@ -9297,7 +9297,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 105.99,
+    "price": 106.52,
     "currency": "USD"
   },
   "DRIV": {
@@ -9307,7 +9307,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 38.62,
+    "price": 39.76,
     "currency": "USD"
   },
   "TSLY": {
@@ -9317,7 +9317,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 27.51,
+    "price": 28.25,
     "currency": "USD"
   },
   "SLVO": {
@@ -9327,7 +9327,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 79.9,
+    "price": 79.35,
     "currency": "USD"
   },
   "DBO": {
@@ -9337,7 +9337,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 21.49,
+    "price": 20.46,
     "currency": "USD"
   },
   "QCLN": {
@@ -9347,7 +9347,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 61.39,
+    "price": 61.49,
     "currency": "USD"
   },
   "CONY": {
@@ -9357,7 +9357,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 20.29,
+    "price": 21.0,
     "currency": "USD"
   },
   "FLOT": {
@@ -9367,7 +9367,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 50.93,
+    "price": 50.99,
     "currency": "USD"
   },
   "YMAG": {
@@ -9377,7 +9377,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 12.1,
+    "price": 11.75,
     "currency": "USD"
   },
   "EWS": {
@@ -9387,7 +9387,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 28.67,
+    "price": 29.15,
     "currency": "USD"
   },
   "HLAL": {
@@ -9397,7 +9397,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 70.53,
+    "price": 70.72,
     "currency": "USD"
   },
   "PBW": {
@@ -9407,7 +9407,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 40.78,
+    "price": 40.15,
     "currency": "USD"
   },
   "SPUS": {
@@ -9417,7 +9417,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 56.64,
+    "price": 56.75,
     "currency": "USD"
   },
   "ARKW": {
@@ -9427,7 +9427,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 137.93,
+    "price": 141.28,
     "currency": "USD"
   },
   "VNM": {
@@ -9437,7 +9437,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 17.99,
+    "price": 17.81,
     "currency": "USD"
   },
   "ROBO": {
@@ -9447,7 +9447,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 83.38,
+    "price": 83.0,
     "currency": "USD"
   },
   "EWQ": {
@@ -9457,7 +9457,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 45.36,
+    "price": 46.62,
     "currency": "USD"
   },
   "VOOG": {
@@ -9467,7 +9467,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 80.94,
+    "price": 81.15,
     "currency": "USD"
   },
   "EWI": {
@@ -9477,7 +9477,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 58.04,
+    "price": 60.67,
     "currency": "USD"
   },
   "VUSB": {
@@ -9487,7 +9487,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 49.62,
+    "price": 49.7,
     "currency": "USD"
   },
   "SDIV": {
@@ -9497,7 +9497,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 24.53,
+    "price": 24.95,
     "currency": "USD"
   },
   "THD": {
@@ -9507,7 +9507,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 72.53,
+    "price": 74.53,
     "currency": "USD"
   },
   "MGK": {
@@ -9517,7 +9517,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 87.47,
+    "price": 86.88,
     "currency": "USD"
   },
   "FLRN": {
@@ -9527,7 +9527,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 30.76,
+    "price": 30.79,
     "currency": "USD"
   },
   "QDTE": {
@@ -9537,7 +9537,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 30.19,
+    "price": 30.74,
     "currency": "USD"
   },
   "ARKF": {
@@ -9547,7 +9547,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 38.18,
+    "price": 38.91,
     "currency": "USD"
   },
   "BITQ": {
@@ -9557,7 +9557,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 25.05,
+    "price": 26.78,
     "currency": "USD"
   },
   "USOI": {
@@ -9567,7 +9567,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 54.04,
+    "price": 52.29,
     "currency": "USD"
   },
   "EWP": {
@@ -9577,7 +9577,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 56.79,
+    "price": 58.7,
     "currency": "USD"
   },
   "WEAT": {
@@ -9587,7 +9587,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 22.28,
+    "price": 22.34,
     "currency": "USD"
   },
   "IXN": {
@@ -9597,7 +9597,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 135.29,
+    "price": 139.73,
     "currency": "USD"
   },
   "HACK": {
@@ -9607,7 +9607,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 97.3,
+    "price": 96.05,
     "currency": "USD"
   },
   "BTCO": {
@@ -9617,7 +9617,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 60.01,
+    "price": 63.25,
     "currency": "USD"
   },
   "ARGT": {
@@ -9627,7 +9627,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 91.59,
+    "price": 97.91,
     "currency": "USD"
   },
   "EZA": {
@@ -9637,7 +9637,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 64.37,
+    "price": 66.87,
     "currency": "USD"
   },
   "ARKQ": {
@@ -9647,7 +9647,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 129.6,
+    "price": 129.41,
     "currency": "USD"
   },
   "EWM": {
@@ -9657,7 +9657,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 27.91,
+    "price": 28.15,
     "currency": "USD"
   },
   "ESPO": {
@@ -9667,7 +9667,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 88.11,
+    "price": 87.96,
     "currency": "USD"
   },
   "AMDY": {
@@ -9677,7 +9677,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 50.83,
+    "price": 54.17,
     "currency": "USD"
   },
   "ARKG": {
@@ -9687,7 +9687,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 33.41,
+    "price": 33.47,
     "currency": "USD"
   },
   "RDTE": {
@@ -9697,7 +9697,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 27.77,
+    "price": 28.77,
     "currency": "USD"
   },
   "KTEC": {
@@ -9707,7 +9707,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 13.37,
+    "price": 13.13,
     "currency": "USD"
   },
   "GSG": {
@@ -9717,7 +9717,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 31.59,
+    "price": 30.58,
     "currency": "USD"
   },
   "IDRV": {
@@ -9727,7 +9727,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 40.88,
+    "price": 41.53,
     "currency": "USD"
   },
   "QDTY": {
@@ -9737,7 +9737,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 41.26,
+    "price": 41.55,
     "currency": "USD"
   },
   "NVDW": {
@@ -9747,7 +9747,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 38.12,
+    "price": 37.62,
     "currency": "USD"
   },
   "CORN": {
@@ -9757,7 +9757,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 17.06,
+    "price": 16.8,
     "currency": "USD"
   },
   "CTEC": {
@@ -9767,7 +9767,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 68.59,
+    "price": 66.4,
     "currency": "USD"
   },
   "SOYB": {
@@ -9777,7 +9777,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 24.18,
+    "price": 24.13,
     "currency": "USD"
   },
   "KARS": {
@@ -9787,7 +9787,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 32.74,
+    "price": 33.79,
     "currency": "USD"
   },
   "ARKX": {
@@ -9797,7 +9797,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 34.04,
+    "price": 33.78,
     "currency": "USD"
   },
   "ASEA": {
@@ -9807,7 +9807,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 19.54,
+    "price": 19.93,
     "currency": "USD"
   },
   "XDTE": {
@@ -9817,7 +9817,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 38.81,
+    "price": 38.93,
     "currency": "USD"
   },
   "GPTY": {
@@ -9827,7 +9827,7 @@ window.STOCK_ANALYST = {
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 45.99,
+    "price": 46.65,
     "currency": "USD"
   }
 };
