@@ -114,7 +114,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.09, payoutRatio: 34.3, marketCapB: 554 },
-    signals: { technical: -38, momentum: -30, sentiment: 74, news: 0, policy: 10, profile: 60, valuation: 6 }
+    signals: { technical: -38, momentum: -30, sentiment: 74, news: 0, policy: 10, profile: 60, valuation: 7 }
   },
   {
     ticker: "IBM", name: "International Business Machines", sector: "Technology",
@@ -180,7 +180,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.47, payoutRatio: 25.8, marketCapB: 729 },
-    signals: { technical: 47, momentum: 100, sentiment: 76, news: 0, policy: 5, profile: 65, valuation: -58 }
+    signals: { technical: 47, momentum: 100, sentiment: 76, news: 0, policy: 5, profile: 65, valuation: -57 }
   },
 
   // ---------- KONSUMER & RITEL ----------
