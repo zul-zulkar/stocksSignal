@@ -147,7 +147,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 82 },
-    signals: { technical: -13, momentum: -100, sentiment: 20, news: 0, policy: 0, profile: 35, valuation: 37 }
+    signals: { technical: -13, momentum: -100, sentiment: 19, news: 0, policy: 0, profile: 35, valuation: 37 }
   },
   {
     ticker: "TSM", name: "Taiwan Semiconductor Mfg.", sector: "Technology",
@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.32, payoutRatio: 27.7, marketCapB: 209 },
+    fundamentals: { dividendYield: 0.32, payoutRatio: 27.7, marketCapB: 211 },
     signals: { technical: 44, momentum: 100, sentiment: 73, news: 0, policy: 0, profile: 35, valuation: -43 }
   },
   {
@@ -3415,7 +3415,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.73, payoutRatio: 95.4, marketCapB: 36 },
-    signals: { technical: -34, momentum: -66, sentiment: -14, news: 0, policy: 0, profile: 45, valuation: 8 }
+    signals: { technical: -34, momentum: -66, sentiment: -8, news: 0, policy: 0, profile: 45, valuation: 8 }
   },
   {
     ticker: "WDAY", name: "Workday, Inc.", sector: "Technology",
@@ -3712,7 +3712,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 30 },
-    signals: { technical: 38, momentum: 27, sentiment: 52, news: 0, policy: 0, profile: 25, valuation: 23 }
+    signals: { technical: 38, momentum: 27, sentiment: 52, news: 0, policy: 0, profile: 25, valuation: 24 }
   },
   {
     ticker: "XYL", name: "Xylem Inc.", sector: "Industrials",
@@ -4504,7 +4504,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 20 },
-    signals: { technical: -23, momentum: -100, sentiment: 69, news: 0, policy: 0, profile: 0, valuation: -53 }
+    signals: { technical: -23, momentum: -100, sentiment: 69, news: 0, policy: 0, profile: 0, valuation: -52 }
   },
   {
     ticker: "LI", name: "Li Auto Inc.", sector: "Consumer Cyclical",
@@ -5098,7 +5098,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
-    signals: { technical: 35, momentum: -42, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: 5 }
+    signals: { technical: 44, momentum: -26, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: 6 }
   },
   {
     ticker: "U", name: "Unity Software Inc.", sector: "Technology",
@@ -5681,7 +5681,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.15, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -50, momentum: -100, sentiment: 38, news: 0, policy: 0, profile: -15, valuation: 52 }
+    signals: { technical: -50, momentum: -100, sentiment: 38, news: 0, policy: 0, profile: -15, valuation: 51 }
   },
   {
     ticker: "AOS", name: "A. O. Smith Corporation", sector: "Industrials",
@@ -6769,8 +6769,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: 47, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: -40, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 47, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: -60, valuation: -100 }
   },
   {
     ticker: "FIZZ", name: "National Beverage Corp.", sector: "Consumer Defensive",
