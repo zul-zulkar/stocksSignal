@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.29, payoutRatio: 27.7, marketCapB: 242 },
+    fundamentals: { dividendYield: 0.29, payoutRatio: 27.7, marketCapB: 240 },
     signals: { technical: 20, momentum: 100, sentiment: 73, news: 0, policy: 0, profile: 35, valuation: -58 }
   },
   {
@@ -4899,7 +4899,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 20 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 21 },
     signals: { technical: 53, momentum: 72, sentiment: 62, news: 0, policy: 0, profile: 15, valuation: -22 }
   },
   {
@@ -6769,8 +6769,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 49, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: -60, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
+    signals: { technical: 49, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: -40, valuation: -100 }
   },
   {
     ticker: "FIZZ", name: "National Beverage Corp.", sector: "Consumer Defensive",
@@ -8530,7 +8530,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -45, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -45, valuation: 0 }
+    signals: { technical: -43, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "XXII", name: "22nd Century Group, Inc.", sector: "Consumer Defensive",
