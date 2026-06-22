@@ -4812,7 +4812,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.93, payoutRatio: 35.5, marketCapB: 11 },
-    signals: { technical: -12, momentum: -80, sentiment: 38, news: 0, policy: 0, profile: 10, valuation: 19 }
+    signals: { technical: -12, momentum: -80, sentiment: 38, news: 0, policy: 0, profile: 10, valuation: 18 }
   },
   {
     ticker: "MOD", name: "Modine Manufacturing Company", sector: "Consumer Cyclical",
@@ -8343,7 +8343,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 56, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -45, valuation: 0 }
+    signals: { technical: 41, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "EXFY", name: "Expensify, Inc.", sector: "Technology",
