@@ -113,7 +113,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Forbes", "TechCrunch", "Oracle Israel press"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.14, payoutRatio: 34.3, marketCapB: 475 },
+    fundamentals: { dividendYield: 1.14, payoutRatio: 34.3, marketCapB: 476 },
     signals: { technical: -43, momentum: -72, sentiment: 74, news: 0, policy: 10, profile: 45, valuation: 14 }
   },
   {
@@ -731,7 +731,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.05, payoutRatio: 2.2, marketCapB: 1186 },
-    signals: { technical: 55, momentum: 100, sentiment: 76, news: 0, policy: 0, profile: 65, valuation: 34 }
+    signals: { technical: 55, momentum: 100, sentiment: 76, news: 0, policy: 0, profile: 65, valuation: 33 }
   },
   {
     ticker: "CSCO", name: "Cisco Systems, Inc.", sector: "Technology",
@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.27, payoutRatio: 27.7, marketCapB: 233 },
+    fundamentals: { dividendYield: 0.27, payoutRatio: 27.7, marketCapB: 235 },
     signals: { technical: 48, momentum: 100, sentiment: 71, news: 0, policy: 0, profile: 35, valuation: -55 }
   },
   {
@@ -4393,7 +4393,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.66, payoutRatio: 321.0, marketCapB: 19 },
+    fundamentals: { dividendYield: 1.66, payoutRatio: 321.0, marketCapB: 6 },
     signals: { technical: -38, momentum: 24, sentiment: 70, news: 0, policy: 0, profile: -15, valuation: 6 }
   },
   {
@@ -6077,7 +6077,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.27, payoutRatio: 21.0, marketCapB: 6 },
-    signals: { technical: 37, momentum: 14, sentiment: 44, news: 0, policy: 0, profile: -25, valuation: 30 }
+    signals: { technical: 37, momentum: 14, sentiment: 44, news: 0, policy: 0, profile: -25, valuation: 31 }
   },
   {
     ticker: "CZR", name: "Caesars Entertainment, Inc.", sector: "Consumer Cyclical",
@@ -6121,7 +6121,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: 20, momentum: 100, sentiment: 9, news: 0, policy: 0, profile: -25, valuation: 0 }
+    signals: { technical: 20, momentum: 100, sentiment: 9, news: 0, policy: 0, profile: -25, valuation: -1 }
   },
   {
     ticker: "YOU", name: "Clear Secure, Inc.", sector: "Technology",
