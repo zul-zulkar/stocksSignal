@@ -168,7 +168,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.02, payoutRatio: 17.1, marketCapB: 239 },
+    fundamentals: { dividendYield: 1.02, payoutRatio: 17.1, marketCapB: 240 },
     signals: { technical: -20, momentum: -100, sentiment: 82, news: 0, policy: -15, profile: 50, valuation: 27 }
   },
   {
@@ -1886,7 +1886,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 6.2, payoutRatio: 106.2, marketCapB: 90 },
-    signals: { technical: 44, momentum: -5, sentiment: 40, news: 0, policy: 0, profile: 25, valuation: 20 }
+    signals: { technical: 0, momentum: 0, sentiment: 40, news: 0, policy: 0, profile: 25, valuation: 20 }
   },
   {
     ticker: "SPOT", name: "Spotify Technology S.A.", sector: "Communication Services",
@@ -3271,7 +3271,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.04, payoutRatio: 6.6, marketCapB: 40 },
+    fundamentals: { dividendYield: 1.04, payoutRatio: 6.6, marketCapB: 44 },
     signals: { technical: -34, momentum: -57, sentiment: 72, news: 0, policy: 0, profile: 20, valuation: 27 }
   },
   {
@@ -6769,8 +6769,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 48, momentum: 87, sentiment: 66, news: 0, policy: 0, profile: -60, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
+    signals: { technical: 48, momentum: 87, sentiment: 66, news: 0, policy: 0, profile: -40, valuation: -100 }
   },
   {
     ticker: "FIZZ", name: "National Beverage Corp.", sector: "Consumer Defensive",
