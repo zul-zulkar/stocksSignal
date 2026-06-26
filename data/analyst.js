@@ -6295,7 +6295,7 @@ window.STOCK_ANALYST = {
     "ratingMean": null,
     "numAnalysts": 14,
     "targetMean": 11.92,
-    "targetHigh": 14.07,
+    "targetHigh": 14.06,
     "targetLow": 7.32,
     "price": 9.07,
     "currency": "USD"

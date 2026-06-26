@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.29, payoutRatio: 27.7, marketCapB: 202 },
+    fundamentals: { dividendYield: 0.29, payoutRatio: 27.7, marketCapB: 204 },
     signals: { technical: 43, momentum: 100, sentiment: 73, news: 0, policy: 0, profile: 35, valuation: -39 }
   },
   {
@@ -1302,7 +1302,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.09, payoutRatio: 8.2, marketCapB: 234 },
+    fundamentals: { dividendYield: 0.09, payoutRatio: 8.2, marketCapB: 233 },
     signals: { technical: 58, momentum: 100, sentiment: 78, news: 0, policy: 0, profile: 50, valuation: -69 }
   },
   {
@@ -1357,8 +1357,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate", "Defense contract records", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.06, payoutRatio: 74.1, marketCapB: 147 },
-    signals: { technical: 34, momentum: 39, sentiment: 47, news: 0, policy: 0, profile: 35, valuation: 0 }
+    fundamentals: { dividendYield: 2.06, payoutRatio: 74.1, marketCapB: 74 },
+    signals: { technical: 34, momentum: 39, sentiment: 47, news: 0, policy: 0, profile: 20, valuation: 0 }
   },
   {
     ticker: "PLD", name: "Prologis, Inc.", sector: "Real Estate",
@@ -3415,7 +3415,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.92, payoutRatio: 90.6, marketCapB: 36 },
-    signals: { technical: -40, momentum: -62, sentiment: -5, news: 0, policy: 0, profile: 45, valuation: 13 }
+    signals: { technical: -40, momentum: -62, sentiment: -5, news: 0, policy: 0, profile: 45, valuation: 12 }
   },
   {
     ticker: "WDAY", name: "Workday, Inc.", sector: "Technology",
@@ -6616,7 +6616,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: -63, momentum: -50, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: -24 }
+    signals: { technical: -63, momentum: -50, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: -25 }
   },
   {
     ticker: "MNDY", name: "monday.com Ltd.", sector: "Technology",
@@ -6769,8 +6769,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: 47, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: -40, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 47, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: -60, valuation: -100 }
   },
   {
     ticker: "FIZZ", name: "National Beverage Corp.", sector: "Consumer Defensive",
