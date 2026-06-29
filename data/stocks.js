@@ -5109,7 +5109,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: -49, momentum: -100, sentiment: 62, news: 0, policy: 0, profile: -25, valuation: -3 }
+    signals: { technical: -49, momentum: -100, sentiment: 62, news: 0, policy: 0, profile: -25, valuation: -4 }
   },
   {
     ticker: "HRL", name: "Hormel Foods Corporation", sector: "Consumer Defensive",
