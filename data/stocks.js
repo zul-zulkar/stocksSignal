@@ -830,7 +830,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.67, payoutRatio: 47.7, marketCapB: 285 },
-    signals: { technical: 43, momentum: -30, sentiment: 80, news: 0, policy: 0, profile: 50, valuation: -10 }
+    signals: { technical: 43, momentum: -30, sentiment: 80, news: 0, policy: 0, profile: 50, valuation: -3 }
   },
   {
     ticker: "NVS", name: "Novartis AG", sector: "Healthcare",
@@ -1358,7 +1358,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.25, payoutRatio: 74.1, marketCapB: 70 },
-    signals: { technical: 37, momentum: 14, sentiment: 46, news: 0, policy: 0, profile: 20, valuation: -15 }
+    signals: { technical: 37, momentum: 14, sentiment: 46, news: 0, policy: 0, profile: 20, valuation: -10 }
   },
   {
     ticker: "PLD", name: "Prologis, Inc.", sector: "Real Estate",
@@ -2678,7 +2678,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.11, payoutRatio: 9.1, marketCapB: 67 },
-    signals: { technical: 47, momentum: 100, sentiment: 58, news: 0, policy: 0, profile: 35, valuation: -71 }
+    signals: { technical: 47, momentum: 100, sentiment: 58, news: 0, policy: 0, profile: 35, valuation: -70 }
   },
   {
     ticker: "PSA", name: "Public Storage", sector: "Real Estate",
@@ -4394,7 +4394,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.77, payoutRatio: 321.0, marketCapB: 19 },
-    signals: { technical: 38, momentum: 16, sentiment: 74, news: 0, policy: 0, profile: -15, valuation: 7 }
+    signals: { technical: 38, momentum: 16, sentiment: 74, news: 0, policy: 0, profile: -15, valuation: 2 }
   },
   {
     ticker: "LUV", name: "Southwest Airlines Co.", sector: "Industrials",
@@ -5989,7 +5989,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.38, payoutRatio: 28.9, marketCapB: 5 },
-    signals: { technical: -43, momentum: -83, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 39 }
+    signals: { technical: -43, momentum: -83, sentiment: 30, news: 0, policy: 0, profile: 10, valuation: 39 }
   },
   {
     ticker: "NICE", name: "NICE Ltd.", sector: "Technology",
