@@ -1368,7 +1368,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.07, payoutRatio: 103.0, marketCapB: 131 },
+    fundamentals: { dividendYield: 3.07, payoutRatio: 103.0, marketCapB: 133 },
     signals: { technical: 42, momentum: 0, sentiment: 52, news: 0, policy: 0, profile: 60, valuation: -63 }
   },
   {
@@ -7287,7 +7287,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: -40, momentum: -98, sentiment: 0, news: 0, policy: 0, profile: -45, valuation: 0 }
+    signals: { technical: -40, momentum: -98, sentiment: 66, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "SEM", name: "Select Medical Holdings Corporation", sector: "Healthcare",
@@ -7353,7 +7353,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1 },
-    signals: { technical: -46, momentum: -76, sentiment: 14, news: 0, policy: 0, profile: -20, valuation: 0 }
+    signals: { technical: -46, momentum: -76, sentiment: 12, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "WGS", name: "GeneDx Holdings Corp.", sector: "Healthcare",
