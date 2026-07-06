@@ -302,7 +302,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.2, payoutRatio: 40.6, marketCapB: 125 },
+    fundamentals: { dividendYield: 2.2, payoutRatio: 40.6, marketCapB: 126 },
     signals: { technical: -36, momentum: -64, sentiment: 60, news: 0, policy: 5, profile: 40, valuation: 10 }
   },
   {
@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.36, payoutRatio: 27.7, marketCapB: 196 },
+    fundamentals: { dividendYield: 0.36, payoutRatio: 27.7, marketCapB: 195 },
     signals: { technical: 37, momentum: 100, sentiment: 74, news: 0, policy: 0, profile: 35, valuation: -35 }
   },
   {
@@ -1203,7 +1203,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits (partial)", "Media reports", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.04, payoutRatio: 36.7, marketCapB: 171 },
+    fundamentals: { dividendYield: 1.04, payoutRatio: 36.7, marketCapB: 172 },
     signals: { technical: 36, momentum: 87, sentiment: 44, news: 0, policy: 0, profile: 35, valuation: -23 }
   },
   {
@@ -2788,7 +2788,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.37, payoutRatio: 21.6, marketCapB: 51 },
-    signals: { technical: 27, momentum: -31, sentiment: 5, news: 0, policy: 0, profile: 25, valuation: -3 }
+    signals: { technical: 27, momentum: -31, sentiment: 5, news: 0, policy: 0, profile: 25, valuation: -4 }
   },
   {
     ticker: "INFY", name: "Infosys Limited", sector: "Technology",
@@ -6769,8 +6769,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 38, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: -60, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
+    signals: { technical: 38, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: -40, valuation: -100 }
   },
   {
     ticker: "FIZZ", name: "National Beverage Corp.", sector: "Consumer Defensive",
