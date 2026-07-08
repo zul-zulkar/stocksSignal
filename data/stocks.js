@@ -336,7 +336,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.23, payoutRatio: 80.6, marketCapB: 74 },
-    signals: { technical: 44, momentum: 42, sentiment: 45, news: 0, policy: 5, profile: 20, valuation: -9 }
+    signals: { technical: 44, momentum: 42, sentiment: 45, news: 0, policy: 5, profile: 20, valuation: -8 }
   },
   {
     ticker: "KMB", name: "Kimberly-Clark", sector: "Consumer Defensive",
@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.36, payoutRatio: 27.7, marketCapB: 195 },
+    fundamentals: { dividendYield: 0.36, payoutRatio: 27.7, marketCapB: 193 },
     signals: { technical: 42, momentum: 100, sentiment: 74, news: 0, policy: 0, profile: 35, valuation: -33 }
   },
   {
@@ -1281,7 +1281,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.11, payoutRatio: 2.7, marketCapB: 190 },
-    signals: { technical: 46, momentum: 100, sentiment: 75, news: 0, policy: 0, profile: 50, valuation: -30 }
+    signals: { technical: 46, momentum: 100, sentiment: 75, news: 0, policy: 0, profile: 50, valuation: -29 }
   },
   {
     ticker: "BUD", name: "Anheuser-Busch InBev SA/NV", sector: "Consumer Defensive",
@@ -1380,7 +1380,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.63, payoutRatio: 78.6, marketCapB: 133 },
-    signals: { technical: -38, momentum: -39, sentiment: 70, news: 0, policy: 0, profile: 50, valuation: 12 }
+    signals: { technical: -38, momentum: -39, sentiment: 70, news: 0, policy: 0, profile: 50, valuation: 11 }
   },
   {
     ticker: "BTI", name: "British American Tobacco p.l.c.", sector: "Consumer Defensive",
@@ -1831,7 +1831,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.79, payoutRatio: 25.2, marketCapB: 87 },
-    signals: { technical: -38, momentum: -100, sentiment: 72, news: 0, policy: 0, profile: 25, valuation: 21 }
+    signals: { technical: -38, momentum: -100, sentiment: 72, news: 0, policy: 0, profile: 25, valuation: 22 }
   },
   {
     ticker: "WMB", name: "The Williams Companies, Inc.", sector: "Energy",
@@ -1853,7 +1853,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.49, payoutRatio: 49.5, marketCapB: 94 },
-    signals: { technical: -43, momentum: -3, sentiment: 62, news: 0, policy: 0, profile: 20, valuation: -15 }
+    signals: { technical: -43, momentum: -3, sentiment: 62, news: 0, policy: 0, profile: 20, valuation: -16 }
   },
   {
     ticker: "BK", name: "The Bank of New York Mellon Corporation", sector: "Financial Services",
@@ -6198,7 +6198,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.77, payoutRatio: 10.5, marketCapB: 6 },
-    signals: { technical: 37, momentum: 100, sentiment: 84, news: 0, policy: 0, profile: 15, valuation: 19 }
+    signals: { technical: 37, momentum: 100, sentiment: 84, news: 0, policy: 0, profile: 15, valuation: 20 }
   },
   {
     ticker: "OPEN", name: "Opendoor Technologies Inc.", sector: "Real Estate",
@@ -6769,8 +6769,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 39, momentum: 96, sentiment: 66, news: 0, policy: 0, profile: -60, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
+    signals: { technical: 39, momentum: 96, sentiment: 66, news: 0, policy: 0, profile: -40, valuation: -100 }
   },
   {
     ticker: "FIZZ", name: "National Beverage Corp.", sector: "Consumer Defensive",
