@@ -1380,7 +1380,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.69, payoutRatio: 78.6, marketCapB: 131 },
-    signals: { technical: -39, momentum: -38, sentiment: 70, news: 0, policy: 0, profile: 50, valuation: 12 }
+    signals: { technical: -39, momentum: -38, sentiment: 70, news: 0, policy: 0, profile: 50, valuation: 13 }
   },
   {
     ticker: "BTI", name: "British American Tobacco p.l.c.", sector: "Consumer Defensive",
@@ -2920,7 +2920,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.19, payoutRatio: 55.9, marketCapB: 52 },
-    signals: { technical: 41, momentum: 17, sentiment: 38, news: 0, policy: 0, profile: 35, valuation: -36 }
+    signals: { technical: 41, momentum: 17, sentiment: 38, news: 0, policy: 0, profile: 35, valuation: -35 }
   },
   {
     ticker: "RKLB", name: "Rocket Lab Corporation", sector: "Industrials",
@@ -2986,7 +2986,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.95, payoutRatio: 18.3, marketCapB: 48 },
-    signals: { technical: 36, momentum: 74, sentiment: 50, news: 0, policy: 0, profile: 10, valuation: 33 }
+    signals: { technical: 36, momentum: 74, sentiment: 50, news: 0, policy: 0, profile: 10, valuation: 34 }
   },
   {
     ticker: "YUM", name: "Yum! Brands, Inc.", sector: "Consumer Cyclical",
@@ -7617,7 +7617,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: 53, momentum: 100, sentiment: 84, news: 0, policy: 0, profile: -25, valuation: 0 }
+    signals: { technical: 53, momentum: 100, sentiment: 94, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "AI", name: "C3.ai, Inc.", sector: "Technology",
