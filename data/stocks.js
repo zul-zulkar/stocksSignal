@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.33, payoutRatio: 27.7, marketCapB: 206 },
+    fundamentals: { dividendYield: 0.33, payoutRatio: 27.7, marketCapB: 204 },
     signals: { technical: 51, momentum: 100, sentiment: 74, news: 0, policy: 0, profile: 35, valuation: -39 }
   },
   {
@@ -1203,7 +1203,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits (partial)", "Media reports", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.09, payoutRatio: 36.7, marketCapB: 158 },
+    fundamentals: { dividendYield: 1.09, payoutRatio: 36.7, marketCapB: 159 },
     signals: { technical: 46, momentum: 25, sentiment: 44, news: 0, policy: 0, profile: 35, valuation: -17 }
   },
   {
@@ -1996,7 +1996,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 5.1, payoutRatio: 104.0, marketCapB: 69 },
-    signals: { technical: 34, momentum: 63, sentiment: 10, news: 0, policy: 0, profile: 20, valuation: 33 }
+    signals: { technical: 34, momentum: 63, sentiment: 10, news: 0, policy: 0, profile: 20, valuation: 32 }
   },
   {
     ticker: "FCX", name: "Freeport-McMoRan Inc.", sector: "Basic Materials",
@@ -2656,7 +2656,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.39, payoutRatio: 31.9, marketCapB: 49 },
-    signals: { technical: 34, momentum: 100, sentiment: 76, news: 0, policy: 0, profile: 25, valuation: 26 }
+    signals: { technical: 34, momentum: 100, sentiment: 76, news: 0, policy: 0, profile: 25, valuation: 28 }
   },
   {
     ticker: "GWW", name: "W.W. Grainger, Inc.", sector: "Industrials",
@@ -2733,7 +2733,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.28, payoutRatio: 32.5, marketCapB: 50 },
-    signals: { technical: -44, momentum: -70, sentiment: 64, news: 0, policy: 0, profile: 45, valuation: 0 }
+    signals: { technical: -44, momentum: -70, sentiment: 64, news: 0, policy: 0, profile: 45, valuation: 1 }
   },
   {
     ticker: "ADSK", name: "Autodesk, Inc.", sector: "Technology",
