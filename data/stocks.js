@@ -125,7 +125,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.35, payoutRatio: 59.5, marketCapB: 273 },
-    signals: { technical: -40, momentum: -41, sentiment: 55, news: 0, policy: 0, profile: 35, valuation: -4 }
+    signals: { technical: -40, momentum: -41, sentiment: 52, news: 0, policy: 0, profile: 35, valuation: -4 }
   },
   {
     ticker: "CRM", name: "Salesforce Inc.", sector: "Technology",
@@ -302,7 +302,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.36, payoutRatio: 40.6, marketCapB: 117 },
+    fundamentals: { dividendYield: 2.36, payoutRatio: 40.6, marketCapB: 116 },
     signals: { technical: -37, momentum: -100, sentiment: 60, news: 0, policy: 5, profile: 40, valuation: 13 }
   },
   {
@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.33, payoutRatio: 27.7, marketCapB: 193 },
+    fundamentals: { dividendYield: 0.33, payoutRatio: 27.7, marketCapB: 195 },
     signals: { technical: 42, momentum: 100, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: -33 }
   },
   {
@@ -1358,7 +1358,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.2, payoutRatio: 74.1, marketCapB: 70 },
-    signals: { technical: 42, momentum: -18, sentiment: 48, news: 0, policy: 0, profile: 20, valuation: -7 }
+    signals: { technical: 42, momentum: -18, sentiment: 50, news: 0, policy: 0, profile: 20, valuation: -7 }
   },
   {
     ticker: "PLD", name: "Prologis, Inc.", sector: "Real Estate",
@@ -3965,7 +3965,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.64, payoutRatio: 27.5, marketCapB: 27 },
-    signals: { technical: 34, momentum: 96, sentiment: 48, news: 0, policy: 0, profile: 15, valuation: -28 }
+    signals: { technical: 34, momentum: 96, sentiment: 48, news: 0, policy: 0, profile: 15, valuation: -29 }
   },
   {
     ticker: "TEAM", name: "Atlassian Corporation", sector: "Technology",
@@ -6285,7 +6285,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 6 },
     signals: { technical: -44, momentum: -94, sentiment: 53, news: 0, policy: 0, profile: 25, valuation: 11 }
   },
   {
@@ -6769,8 +6769,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: 33, momentum: 86, sentiment: 66, news: 0, policy: 0, profile: -40, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 33, momentum: 86, sentiment: 66, news: 0, policy: 0, profile: -60, valuation: -100 }
   },
   {
     ticker: "FIZZ", name: "National Beverage Corp.", sector: "Consumer Defensive",
