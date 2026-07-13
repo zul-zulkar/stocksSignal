@@ -406,7 +406,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 175 },
-    signals: { technical: 46, momentum: -38, sentiment: 68, news: 0, policy: -25, profile: 10, valuation: -99 }
+    signals: { technical: 46, momentum: -38, sentiment: 68, news: 0, policy: -25, profile: 10, valuation: -100 }
   },
   {
     ticker: "GD", name: "General Dynamics", sector: "Industrials",
@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.33, payoutRatio: 27.7, marketCapB: 204 },
+    fundamentals: { dividendYield: 0.33, payoutRatio: 27.7, marketCapB: 206 },
     signals: { technical: 51, momentum: 100, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: -38 }
   },
   {
@@ -1314,7 +1314,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.27, payoutRatio: 56.3, marketCapB: 147 },
-    signals: { technical: 45, momentum: 6, sentiment: -34, news: 0, policy: 0, profile: 60, valuation: -15 }
+    signals: { technical: 45, momentum: 6, sentiment: -34, news: 0, policy: 0, profile: 60, valuation: -14 }
   },
   {
     ticker: "DELL", name: "Dell Technologies Inc.", sector: "Technology",
@@ -1666,7 +1666,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.4, payoutRatio: 46.5, marketCapB: 106 },
-    signals: { technical: 41, momentum: -14, sentiment: -7, news: 0, policy: 0, profile: 50, valuation: 27 }
+    signals: { technical: 41, momentum: -14, sentiment: -7, news: 0, policy: 0, profile: 50, valuation: 29 }
   },
   {
     ticker: "DUK", name: "Duke Energy Corporation", sector: "Utilities",
@@ -1699,7 +1699,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.47, payoutRatio: 67.0, marketCapB: 81 },
-    signals: { technical: 31, momentum: 100, sentiment: -17, news: 0, policy: 0, profile: 25, valuation: 32 }
+    signals: { technical: 31, momentum: 100, sentiment: -17, news: 0, policy: 0, profile: 25, valuation: 33 }
   },
   {
     ticker: "CNQ", name: "Canadian Natural Resources Limited", sector: "Energy",
@@ -2007,7 +2007,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.98, payoutRatio: 31.8, marketCapB: 88 },
-    signals: { technical: 42, momentum: 13, sentiment: 65, news: 0, policy: 0, profile: 25, valuation: 14 }
+    signals: { technical: 42, momentum: 13, sentiment: 65, news: 0, policy: 0, profile: 25, valuation: 13 }
   },
   {
     ticker: "MRSH", name: "Marsh & McLennan Companies, Inc.", sector: "Financial Services",
@@ -2282,7 +2282,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.63, payoutRatio: 78.5, marketCapB: 71 },
-    signals: { technical: 40, momentum: 27, sentiment: 44, news: 0, policy: 0, profile: 35, valuation: -4 }
+    signals: { technical: 40, momentum: 27, sentiment: 44, news: 0, policy: 0, profile: 35, valuation: -3 }
   },
   {
     ticker: "RCL", name: "Royal Caribbean Cruises Ltd.", sector: "Consumer Cyclical",
@@ -3910,7 +3910,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 7.31, payoutRatio: 1146.8, marketCapB: 18 },
-    signals: { technical: 35, momentum: 29, sentiment: 14, news: 0, policy: 0, profile: -25, valuation: 35 }
+    signals: { technical: 35, momentum: 29, sentiment: 14, news: 0, policy: 0, profile: -25, valuation: 34 }
   },
   {
     ticker: "FIS", name: "Fidelity National Information Services, Inc.", sector: "Technology",
@@ -4250,7 +4250,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.31, payoutRatio: 50.6, marketCapB: 23 },
+    fundamentals: { dividendYield: 1.3, payoutRatio: 50.6, marketCapB: 23 },
     signals: { technical: 36, momentum: 23, sentiment: 52, news: 0, policy: 0, profile: 20, valuation: -18 }
   },
   {
@@ -4525,7 +4525,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.94, payoutRatio: 960.0, marketCapB: 19 },
+    fundamentals: { dividendYield: 2.95, payoutRatio: 960.0, marketCapB: 19 },
     signals: { technical: 43, momentum: 65, sentiment: 40, news: 0, policy: 0, profile: -15, valuation: 41 }
   },
   {
@@ -5450,7 +5450,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: 37, momentum: 79, sentiment: 29, news: 0, policy: 0, profile: -15, valuation: 0 }
+    signals: { technical: 37, momentum: 79, sentiment: 29, news: 0, policy: 0, profile: -15, valuation: -2 }
   },
   {
     ticker: "RVTY", name: "Revvity, Inc.", sector: "Healthcare",
@@ -6176,7 +6176,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: 46, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: 25, valuation: 3 }
+    signals: { technical: 46, momentum: 100, sentiment: 66, news: 0, policy: 0, profile: 25, valuation: 6 }
   },
   {
     ticker: "GLBE", name: "Global-E Online Ltd.", sector: "Consumer Cyclical",
