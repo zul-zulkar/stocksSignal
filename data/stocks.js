@@ -135,7 +135,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Salesforce press"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.08, payoutRatio: 19.6, marketCapB: 137 },
+    fundamentals: { dividendYield: 1.03, payoutRatio: 19.6, marketCapB: 137 },
     signals: { technical: -39, momentum: -100, sentiment: 69, news: 0, policy: 0, profile: 50, valuation: 27 }
   },
   {
@@ -214,7 +214,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits database", "BDS Movement"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.54, payoutRatio: 64.8, marketCapB: 357 },
+    fundamentals: { dividendYield: 2.52, payoutRatio: 64.8, marketCapB: 357 },
     signals: { technical: 36, momentum: 32, sentiment: 60, news: 0, policy: -10, profile: 60, valuation: -11 }
   },
   {
@@ -291,7 +291,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Forbes", "Public donor records"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.71, payoutRatio: 65.6, marketCapB: 337 },
+    fundamentals: { dividendYield: 2.76, payoutRatio: 65.6, marketCapB: 337 },
     signals: { technical: -38, momentum: -60, sentiment: 53, news: 0, policy: 5, profile: 25, valuation: -2 }
   },
   {
@@ -302,7 +302,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.41, payoutRatio: 40.6, marketCapB: 117 },
+    fundamentals: { dividendYield: 2.41, payoutRatio: 40.6, marketCapB: 116 },
     signals: { technical: -36, momentum: -100, sentiment: 60, news: 0, policy: 5, profile: 40, valuation: 13 }
   },
   {
@@ -359,7 +359,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Reuters", "Who Profits", "BDS Movement"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.04, payoutRatio: 120.4, marketCapB: 362 },
+    fundamentals: { dividendYield: 3.91, payoutRatio: 120.4, marketCapB: 362 },
     signals: { technical: 33, momentum: 12, sentiment: 64, news: 0, policy: -10, profile: 40, valuation: 16 }
   },
   {
@@ -370,7 +370,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.97, payoutRatio: 68.0, marketCapB: 601 },
+    fundamentals: { dividendYield: 2.85, payoutRatio: 68.0, marketCapB: 601 },
     signals: { technical: 35, momentum: 29, sentiment: 36, news: 0, policy: 0, profile: 55, valuation: 19 }
   },
 
@@ -530,7 +530,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.75, payoutRatio: 93.5, marketCapB: 298 },
+    fundamentals: { dividendYield: 2.74, payoutRatio: 93.5, marketCapB: 298 },
     signals: { technical: 43, momentum: 8, sentiment: 57, news: 0, policy: 5, profile: 50, valuation: 22 }
   },
   {
@@ -563,7 +563,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.64, payoutRatio: 42.6, marketCapB: 217 },
+    fundamentals: { dividendYield: 3.66, payoutRatio: 42.6, marketCapB: 217 },
     signals: { technical: -38, momentum: -87, sentiment: 28, news: 0, policy: 5, profile: 60, valuation: 14 }
   },
 
@@ -611,7 +611,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.29, payoutRatio: 64.1, marketCapB: 56 },
+    fundamentals: { dividendYield: 4.33, payoutRatio: 64.1, marketCapB: 56 },
     signals: { technical: 34, momentum: -29, sentiment: 15, news: 0, policy: 0, profile: -20, valuation: 37 }
   },
   {
@@ -708,7 +708,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.65, payoutRatio: 41.3, marketCapB: 1851 },
+    fundamentals: { dividendYield: 0.68, payoutRatio: 41.3, marketCapB: 1851 },
     signals: { technical: 41, momentum: 7, sentiment: 84, news: 0, policy: 0, profile: 65, valuation: 0 }
   },
   {
@@ -763,7 +763,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.3, payoutRatio: 19.1, marketCapB: 433 },
+    fundamentals: { dividendYield: 0.32, payoutRatio: 19.1, marketCapB: 433 },
     signals: { technical: 36, momentum: 100, sentiment: 74, news: 0, policy: 0, profile: 50, valuation: -68 }
   },
   {
@@ -818,7 +818,7 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.18, payoutRatio: 5.1, marketCapB: 286 },
+    fundamentals: { dividendYield: 0.19, payoutRatio: 5.1, marketCapB: 286 },
     signals: { technical: 53, momentum: 100, sentiment: 71, news: 0, policy: 0, profile: 50, valuation: -69 }
   },
   {
@@ -829,7 +829,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.84, payoutRatio: 47.7, marketCapB: 255 },
+    fundamentals: { dividendYield: 1.87, payoutRatio: 47.7, marketCapB: 255 },
     signals: { technical: -34, momentum: -67, sentiment: 70, news: 0, policy: 0, profile: 50, valuation: 6 }
   },
   {
@@ -895,7 +895,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.8, payoutRatio: 45.0, marketCapB: 234 },
+    fundamentals: { dividendYield: 3.72, payoutRatio: 45.0, marketCapB: 234 },
     signals: { technical: 31, momentum: 32, sentiment: 47, news: 0, policy: 0, profile: 40, valuation: 31 }
   },
   {
@@ -906,7 +906,7 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.07, payoutRatio: 27.1, marketCapB: 261 },
+    fundamentals: { dividendYield: 2.05, payoutRatio: 27.1, marketCapB: 261 },
     signals: { technical: -42, momentum: -60, sentiment: 54, news: 0, policy: 0, profile: 60, valuation: 27 }
   },
   {
@@ -1005,7 +1005,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company disclosures", "Reuters", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.37, payoutRatio: 58.8, marketCapB: 180 },
+    fundamentals: { dividendYield: 5.19, payoutRatio: 58.8, marketCapB: 180 },
     signals: { technical: 33, momentum: 56, sentiment: 50, news: 0, policy: 0, profile: 40, valuation: 34 }
   },
   {
@@ -1160,7 +1160,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.34, payoutRatio: 27.7, marketCapB: 199 },
-    signals: { technical: 36, momentum: 100, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: -35 }
+    signals: { technical: 36, momentum: 100, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: -33 }
   },
   {
     ticker: "ISRG", name: "Intuitive Surgical, Inc.", sector: "Healthcare",
@@ -1346,7 +1346,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 10.18, payoutRatio: 41.6, marketCapB: 115 },
+    fundamentals: { dividendYield: 9.86, payoutRatio: 41.6, marketCapB: 115 },
     signals: { technical: 32, momentum: 100, sentiment: 60, news: 0, policy: 0, profile: 50, valuation: 46 }
   },
   {
@@ -1380,7 +1380,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.71, payoutRatio: 78.6, marketCapB: 131 },
-    signals: { technical: -40, momentum: -45, sentiment: 70, news: 0, policy: 0, profile: 50, valuation: 13 }
+    signals: { technical: -40, momentum: -45, sentiment: 70, news: 0, policy: 0, profile: 50, valuation: 12 }
   },
   {
     ticker: "BTI", name: "British American Tobacco p.l.c.", sector: "Consumer Defensive",
@@ -1467,7 +1467,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.59, payoutRatio: 86.1, marketCapB: 126 },
+    fundamentals: { dividendYield: 1.58, payoutRatio: 86.1, marketCapB: 126 },
     signals: { technical: -35, momentum: -66, sentiment: 73, news: 0, policy: 0, profile: 40, valuation: 34 }
   },
   {
@@ -1512,7 +1512,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.12, payoutRatio: 13.1, marketCapB: 101 },
-    signals: { technical: 40, momentum: -80, sentiment: 68, news: 0, policy: 0, profile: 60, valuation: 34 }
+    signals: { technical: 40, momentum: -80, sentiment: 68, news: 0, policy: 0, profile: 60, valuation: 33 }
   },
   {
     ticker: "SONY", name: "Sony Group Corporation", sector: "Technology",
@@ -1676,7 +1676,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.39, payoutRatio: 65.2, marketCapB: 99 },
+    fundamentals: { dividendYield: 3.36, payoutRatio: 65.2, marketCapB: 99 },
     signals: { technical: 41, momentum: 0, sentiment: 39, news: 0, policy: 0, profile: 35, valuation: 7 }
   },
   {
@@ -1687,7 +1687,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.41, payoutRatio: 8.3, marketCapB: 94 },
+    fundamentals: { dividendYield: 0.4, payoutRatio: 8.3, marketCapB: 94 },
     signals: { technical: -43, momentum: -36, sentiment: 76, news: 0, policy: 0, profile: 10, valuation: 12 }
   },
   {
@@ -2017,7 +2017,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.22, payoutRatio: 43.9, marketCapB: 86 },
+    fundamentals: { dividendYield: 2.18, payoutRatio: 43.9, marketCapB: 86 },
     signals: { technical: -42, momentum: -40, sentiment: 30, news: 0, policy: 0, profile: 35, valuation: 12 }
   },
   {
@@ -2050,7 +2050,7 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.85, payoutRatio: 27.6, marketCapB: 86 },
+    fundamentals: { dividendYield: 0.83, payoutRatio: 27.6, marketCapB: 86 },
     signals: { technical: -41, momentum: -52, sentiment: 61, news: 0, policy: 0, profile: 20, valuation: -19 }
   },
   {
@@ -2160,7 +2160,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.81, payoutRatio: 55.6, marketCapB: 73 },
+    fundamentals: { dividendYield: 2.8, payoutRatio: 55.6, marketCapB: 73 },
     signals: { technical: 42, momentum: 25, sentiment: 50, news: 0, policy: 0, profile: 35, valuation: 0 }
   },
   {
@@ -2226,8 +2226,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.06, payoutRatio: 37.4, marketCapB: 76 },
-    signals: { technical: -37, momentum: -28, sentiment: 64, news: 0, policy: 0, profile: 35, valuation: -25 }
+    fundamentals: { dividendYield: 1.07, payoutRatio: 37.4, marketCapB: 76 },
+    signals: { technical: -37, momentum: -28, sentiment: 64, news: 0, policy: 0, profile: 35, valuation: -26 }
   },
   {
     ticker: "NTES", name: "NetEase, Inc.", sector: "Communication Services",
@@ -2248,7 +2248,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.18, payoutRatio: 9.2, marketCapB: 74 },
+    fundamentals: { dividendYield: 0.19, payoutRatio: 9.2, marketCapB: 74 },
     signals: { technical: 41, momentum: 1, sentiment: 42, news: 0, policy: 0, profile: 35, valuation: -33 }
   },
   {
@@ -2270,7 +2270,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.14, payoutRatio: 37.1, marketCapB: 69 },
+    fundamentals: { dividendYield: 1.16, payoutRatio: 37.1, marketCapB: 69 },
     signals: { technical: -40, momentum: -2, sentiment: 68, news: 0, policy: 0, profile: 20, valuation: -7 }
   },
   {
@@ -2347,7 +2347,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.32, payoutRatio: 99.8, marketCapB: 65 },
+    fundamentals: { dividendYield: 1.4, payoutRatio: 99.8, marketCapB: 65 },
     signals: { technical: 28, momentum: 100, sentiment: 46, news: 0, policy: 0, profile: 20, valuation: -11 }
   },
   {
@@ -2424,8 +2424,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.98, payoutRatio: 50.9, marketCapB: 89 },
-    signals: { technical: 45, momentum: 100, sentiment: 100, news: 0, policy: 0, profile: 15, valuation: 0 }
+    fundamentals: { dividendYield: 1.03, payoutRatio: 50.9, marketCapB: 89 },
+    signals: { technical: 45, momentum: 100, sentiment: 100, news: 0, policy: 0, profile: 25, valuation: 0 }
   },
   {
     ticker: "HOOD", name: "Robinhood Markets, Inc.", sector: "Financial Services",
@@ -2512,7 +2512,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.12, payoutRatio: 33.2, marketCapB: 65 },
+    fundamentals: { dividendYield: 1.13, payoutRatio: 33.2, marketCapB: 65 },
     signals: { technical: -37, momentum: -34, sentiment: 78, news: 0, policy: 0, profile: 45, valuation: -29 }
   },
   {
@@ -2556,7 +2556,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.4, payoutRatio: 413.3, marketCapB: 54 },
+    fundamentals: { dividendYield: 2.3, payoutRatio: 413.3, marketCapB: 54 },
     signals: { technical: 36, momentum: 70, sentiment: 78, news: 0, policy: 0, profile: 20, valuation: 27 }
   },
   {
@@ -2589,7 +2589,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.0, payoutRatio: 26.9, marketCapB: 62 },
+    fundamentals: { dividendYield: 1.98, payoutRatio: 26.9, marketCapB: 62 },
     signals: { technical: 35, momentum: 13, sentiment: -3, news: 0, policy: 0, profile: 45, valuation: 11 }
   },
   {
@@ -2611,7 +2611,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.71, payoutRatio: 17.4, marketCapB: 49 },
+    fundamentals: { dividendYield: 0.72, payoutRatio: 17.4, marketCapB: 49 },
     signals: { technical: -38, momentum: -78, sentiment: 84, news: 0, policy: 0, profile: 35, valuation: 1 }
   },
   {
@@ -2622,7 +2622,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.81, payoutRatio: 78.8, marketCapB: 63 },
+    fundamentals: { dividendYield: 3.77, payoutRatio: 78.8, marketCapB: 63 },
     signals: { technical: 31, momentum: 46, sentiment: 9, news: 0, policy: 0, profile: 35, valuation: 3 }
   },
   {
@@ -2699,7 +2699,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.58, payoutRatio: 19.2, marketCapB: 54 },
+    fundamentals: { dividendYield: 0.59, payoutRatio: 19.2, marketCapB: 54 },
     signals: { technical: 43, momentum: 11, sentiment: 65, news: 0, policy: 0, profile: 35, valuation: -19 }
   },
   {
@@ -2754,7 +2754,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.96, payoutRatio: 66.3, marketCapB: 50 },
+    fundamentals: { dividendYield: 2.94, payoutRatio: 66.3, marketCapB: 50 },
     signals: { technical: 41, momentum: 0, sentiment: 79, news: 0, policy: 0, profile: 35, valuation: 6 }
   },
   {
@@ -2941,7 +2941,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Human Rights Watch (2021)", "Mondoweiss", "Electronic Intifada", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.21, payoutRatio: 5.2, marketCapB: 42 },
+    fundamentals: { dividendYield: 1.18, payoutRatio: 5.2, marketCapB: 42 },
     signals: { technical: -37, momentum: -84, sentiment: 4, news: 0, policy: 0, profile: 35, valuation: 35 }
   },
   {
@@ -2974,7 +2974,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.05, payoutRatio: 95.6, marketCapB: 45 },
+    fundamentals: { dividendYield: 4.02, payoutRatio: 95.6, marketCapB: 45 },
     signals: { technical: -40, momentum: -63, sentiment: 44, news: 0, policy: 0, profile: 35, valuation: 21 }
   },
   {
@@ -3018,7 +3018,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.36, payoutRatio: 42.5, marketCapB: 44 },
+    fundamentals: { dividendYield: 1.32, payoutRatio: 42.5, marketCapB: 44 },
     signals: { technical: 37, momentum: -12, sentiment: 74, news: 0, policy: 0, profile: 45, valuation: -20 }
   },
   {
@@ -3040,7 +3040,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.19, payoutRatio: 16.0, marketCapB: 43 },
+    fundamentals: { dividendYield: 1.21, payoutRatio: 16.0, marketCapB: 43 },
     signals: { technical: -38, momentum: -47, sentiment: 24, news: 0, policy: 0, profile: 25, valuation: 22 }
   },
   {
@@ -3117,7 +3117,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.13, payoutRatio: 58.0, marketCapB: 41 },
+    fundamentals: { dividendYield: 3.11, payoutRatio: 58.0, marketCapB: 41 },
     signals: { technical: 38, momentum: 17, sentiment: -16, news: 0, policy: 0, profile: 35, valuation: 8 }
   },
   {
@@ -3128,7 +3128,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.55, payoutRatio: 78.5, marketCapB: 39 },
+    fundamentals: { dividendYield: 3.46, payoutRatio: 78.5, marketCapB: 39 },
     signals: { technical: -48, momentum: -47, sentiment: 79, news: 0, policy: 0, profile: 20, valuation: 39 }
   },
   {
@@ -3227,7 +3227,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.89, payoutRatio: 15.6, marketCapB: 36 },
+    fundamentals: { dividendYield: 1.87, payoutRatio: 15.6, marketCapB: 36 },
     signals: { technical: -40, momentum: -61, sentiment: 84, news: 0, policy: 0, profile: 45, valuation: 20 }
   },
   {
@@ -3337,7 +3337,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.62, payoutRatio: 60.0, marketCapB: 40 },
+    fundamentals: { dividendYield: 2.64, payoutRatio: 60.0, marketCapB: 40 },
     signals: { technical: -42, momentum: 11, sentiment: 34, news: 0, policy: 0, profile: 5, valuation: 9 }
   },
   {
@@ -3392,7 +3392,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.47, payoutRatio: 47.7, marketCapB: 36 },
+    fundamentals: { dividendYield: 3.46, payoutRatio: 47.7, marketCapB: 36 },
     signals: { technical: 35, momentum: -27, sentiment: 66, news: 0, policy: 0, profile: 45, valuation: 31 }
   },
   {
@@ -3546,7 +3546,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.69, payoutRatio: 71.4, marketCapB: 60 },
+    fundamentals: { dividendYield: 1.76, payoutRatio: 71.4, marketCapB: 60 },
     signals: { technical: 50, momentum: 100, sentiment: -38, news: 0, policy: 0, profile: 45, valuation: -27 }
   },
   {
@@ -3689,7 +3689,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.9, payoutRatio: 37.8, marketCapB: 49 },
+    fundamentals: { dividendYield: 0.87, payoutRatio: 37.8, marketCapB: 49 },
     signals: { technical: 7, momentum: 100, sentiment: 25, news: 0, policy: 0, profile: 10, valuation: -17 }
   },
   {
@@ -3744,7 +3744,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.88, payoutRatio: 96.7, marketCapB: 28 },
+    fundamentals: { dividendYield: 3.84, payoutRatio: 96.7, marketCapB: 28 },
     signals: { technical: -45, momentum: 6, sentiment: 38, news: 0, policy: 0, profile: 25, valuation: 9 }
   },
   {
@@ -3843,7 +3843,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.7, payoutRatio: 85.3, marketCapB: 25 },
+    fundamentals: { dividendYield: 3.71, payoutRatio: 85.3, marketCapB: 25 },
     signals: { technical: -34, momentum: -68, sentiment: 20, news: 0, policy: 0, profile: 25, valuation: 21 }
   },
   {
@@ -3920,7 +3920,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.0, payoutRatio: 31.8, marketCapB: 21 },
+    fundamentals: { dividendYield: 4.01, payoutRatio: 31.8, marketCapB: 21 },
     signals: { technical: -37, momentum: -100, sentiment: 47, news: 0, policy: 0, profile: 45, valuation: 42 }
   },
   {
@@ -4107,7 +4107,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.35, payoutRatio: 41.9, marketCapB: 28 },
+    fundamentals: { dividendYield: 3.37, payoutRatio: 41.9, marketCapB: 28 },
     signals: { technical: 11, momentum: -5, sentiment: 100, news: 0, policy: 0, profile: 20, valuation: 7 }
   },
   {
@@ -4151,7 +4151,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.37, payoutRatio: 31.4, marketCapB: 20 },
+    fundamentals: { dividendYield: 2.41, payoutRatio: 31.4, marketCapB: 20 },
     signals: { technical: -40, momentum: -100, sentiment: -22, news: 0, policy: 0, profile: 20, valuation: 21 }
   },
   {
@@ -4371,7 +4371,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.73, payoutRatio: 64.7, marketCapB: 20 },
+    fundamentals: { dividendYield: 2.72, payoutRatio: 64.7, marketCapB: 20 },
     signals: { technical: 40, momentum: 29, sentiment: 57, news: 0, policy: 0, profile: 25, valuation: -2 }
   },
   {
@@ -4393,7 +4393,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.78, payoutRatio: 321.0, marketCapB: 18 },
+    fundamentals: { dividendYield: 1.81, payoutRatio: 321.0, marketCapB: 18 },
     signals: { technical: 40, momentum: -17, sentiment: 74, news: 0, policy: 0, profile: -15, valuation: 6 }
   },
   {
@@ -4636,7 +4636,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 16 },
-    signals: { technical: -31, momentum: -53, sentiment: 78, news: 0, policy: 0, profile: 5, valuation: 28 }
+    signals: { technical: -31, momentum: -53, sentiment: 78, news: 0, policy: 0, profile: 5, valuation: 29 }
   },
   {
     ticker: "ZBH", name: "Zimmer Biomet Holdings, Inc.", sector: "Healthcare",
@@ -4646,7 +4646,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.05, payoutRatio: 24.9, marketCapB: 18 },
+    fundamentals: { dividendYield: 1.02, payoutRatio: 24.9, marketCapB: 18 },
     signals: { technical: -41, momentum: -28, sentiment: 22, news: 0, policy: 0, profile: 15, valuation: 29 }
   },
   {
@@ -4767,7 +4767,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.62, payoutRatio: 89.3, marketCapB: 14 },
+    fundamentals: { dividendYield: 2.64, payoutRatio: 89.3, marketCapB: 14 },
     signals: { technical: 42, momentum: -63, sentiment: 68, news: 0, policy: 0, profile: 0, valuation: 17 }
   },
   {
@@ -4833,7 +4833,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.69, payoutRatio: 100.4, marketCapB: 35 },
+    fundamentals: { dividendYield: 1.72, payoutRatio: 100.4, marketCapB: 35 },
     signals: { technical: -41, momentum: -51, sentiment: 70, news: 0, policy: 0, profile: 20, valuation: -58 }
   },
   {
@@ -4855,7 +4855,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 10.22, payoutRatio: 117.8, marketCapB: 13 },
+    fundamentals: { dividendYield: 10.3, payoutRatio: 117.8, marketCapB: 13 },
     signals: { technical: -46, momentum: -55, sentiment: 64, news: 0, policy: 0, profile: 25, valuation: 30 }
   },
   {
@@ -4888,7 +4888,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.55, payoutRatio: 92.4, marketCapB: 11 },
+    fundamentals: { dividendYield: 3.52, payoutRatio: 92.4, marketCapB: 11 },
     signals: { technical: 43, momentum: -58, sentiment: 76, news: 0, policy: 0, profile: -30, valuation: 23 }
   },
   {
@@ -5009,7 +5009,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 12.94, payoutRatio: 112.5, marketCapB: 13 },
+    fundamentals: { dividendYield: 13.11, payoutRatio: 112.5, marketCapB: 13 },
     signals: { technical: -41, momentum: -32, sentiment: 23, news: 0, policy: 0, profile: 10, valuation: 37 }
   },
   {
@@ -5383,7 +5383,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.94, payoutRatio: 86.1, marketCapB: 12 },
+    fundamentals: { dividendYield: 3.98, payoutRatio: 86.1, marketCapB: 12 },
     signals: { technical: 36, momentum: 1, sentiment: 45, news: 0, policy: 0, profile: -15, valuation: 29 }
   },
   {
@@ -5691,7 +5691,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.35, payoutRatio: 37.3, marketCapB: 8 },
+    fundamentals: { dividendYield: 2.39, payoutRatio: 37.3, marketCapB: 8 },
     signals: { technical: -39, momentum: -74, sentiment: 23, news: 0, policy: 0, profile: 25, valuation: 16 }
   },
   {
@@ -5801,7 +5801,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.15, payoutRatio: 56.2, marketCapB: 7 },
+    fundamentals: { dividendYield: 2.13, payoutRatio: 56.2, marketCapB: 7 },
     signals: { technical: -44, momentum: -78, sentiment: 24, news: 0, policy: 0, profile: 0, valuation: 23 }
   },
   {
@@ -5911,7 +5911,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 10.12, payoutRatio: 79.1, marketCapB: 7 },
+    fundamentals: { dividendYield: 9.77, payoutRatio: 79.1, marketCapB: 7 },
     signals: { technical: -41, momentum: -77, sentiment: -15, news: 0, policy: 0, profile: -25, valuation: 33 }
   },
   {
@@ -6494,7 +6494,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.24, payoutRatio: 109.7, marketCapB: 5 },
+    fundamentals: { dividendYield: 6.22, payoutRatio: 109.7, marketCapB: 5 },
     signals: { technical: 36, momentum: 13, sentiment: 17, news: 0, policy: 0, profile: 35, valuation: 0 }
   },
   {
@@ -6659,7 +6659,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.11, payoutRatio: 34.8, marketCapB: 4 },
+    fundamentals: { dividendYield: 1.14, payoutRatio: 34.8, marketCapB: 4 },
     signals: { technical: -36, momentum: -85, sentiment: 34, news: 0, policy: 0, profile: 25, valuation: -22 }
   },
   {
@@ -6945,7 +6945,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.54, payoutRatio: 59.6, marketCapB: 3 },
+    fundamentals: { dividendYield: 1.62, payoutRatio: 59.6, marketCapB: 3 },
     signals: { technical: 44, momentum: 72, sentiment: 75, news: 0, policy: 0, profile: 25, valuation: -52 }
   },
   {
@@ -6978,7 +6978,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.92, payoutRatio: 37.7, marketCapB: 3 },
+    fundamentals: { dividendYield: 2.89, payoutRatio: 37.7, marketCapB: 3 },
     signals: { technical: 38, momentum: 41, sentiment: 19, news: 0, policy: 0, profile: 15, valuation: 21 }
   },
   {
@@ -7011,7 +7011,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.13, payoutRatio: 103.0, marketCapB: 2 },
+    fundamentals: { dividendYield: 5.08, payoutRatio: 103.0, marketCapB: 2 },
     signals: { technical: -45, momentum: -65, sentiment: 75, news: 0, policy: 0, profile: 35, valuation: 24 }
   },
   {
@@ -7550,7 +7550,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.98, payoutRatio: 21.0, marketCapB: 2 },
+    fundamentals: { dividendYield: 3.02, payoutRatio: 21.0, marketCapB: 2 },
     signals: { technical: -48, momentum: -82, sentiment: -15, news: 0, policy: 0, profile: -10, valuation: 26 }
   },
   {
@@ -7726,7 +7726,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 26.29, payoutRatio: 1215.9, marketCapB: 1 },
+    fundamentals: { dividendYield: 26.13, payoutRatio: 1215.9, marketCapB: 1 },
     signals: { technical: -42, momentum: -100, sentiment: 100, news: 0, policy: 0, profile: -45, valuation: 54 }
   },
   {
