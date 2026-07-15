@@ -180,7 +180,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.49, payoutRatio: 25.8, marketCapB: 700 },
-    signals: { technical: 34, momentum: 100, sentiment: 78, news: 0, policy: 5, profile: 65, valuation: -48 }
+    signals: { technical: 34, momentum: 100, sentiment: 78, news: 0, policy: 5, profile: 65, valuation: -45 }
   },
 
   // ---------- KONSUMER & RITEL ----------
@@ -542,7 +542,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.83, payoutRatio: 326.0, marketCapB: 431 },
-    signals: { technical: 46, momentum: 6, sentiment: 63, news: 0, policy: 5, profile: 40, valuation: 14 }
+    signals: { technical: 46, momentum: 6, sentiment: 63, news: 0, policy: 5, profile: 40, valuation: 15 }
   },
   {
     ticker: "UNH", name: "UnitedHealth Group", sector: "Healthcare",
@@ -708,7 +708,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.67, payoutRatio: 41.3, marketCapB: 1876 },
+    fundamentals: { dividendYield: 0.68, payoutRatio: 41.3, marketCapB: 1876 },
     signals: { technical: 39, momentum: 8, sentiment: 84, news: 0, policy: 0, profile: 65, valuation: 0 }
   },
   {
@@ -1005,7 +1005,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company disclosures", "Reuters", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.21, payoutRatio: 58.8, marketCapB: 179 },
+    fundamentals: { dividendYield: 5.21, payoutRatio: 58.8, marketCapB: 178 },
     signals: { technical: 38, momentum: 44, sentiment: 50, news: 0, policy: 0, profile: 40, valuation: 34 }
   },
   {
@@ -1182,7 +1182,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.27, payoutRatio: 22.5, marketCapB: 179 },
-    signals: { technical: -42, momentum: -23, sentiment: 66, news: 0, policy: 0, profile: 60, valuation: 18 }
+    signals: { technical: -42, momentum: -23, sentiment: 66, news: 0, policy: 0, profile: 60, valuation: 19 }
   },
   {
     ticker: "UNP", name: "Union Pacific Corporation", sector: "Industrials",
@@ -1479,7 +1479,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 5.03, payoutRatio: 128.7, marketCapB: 123 },
-    signals: { technical: 35, momentum: 41, sentiment: 26, news: 0, policy: 0, profile: 50, valuation: -14 }
+    signals: { technical: 35, momentum: 41, sentiment: 26, news: 0, policy: 0, profile: 50, valuation: -13 }
   },
   {
     ticker: "BMY", name: "Bristol-Myers Squibb Company", sector: "Healthcare",
@@ -1687,7 +1687,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.41, payoutRatio: 8.3, marketCapB: 93 },
+    fundamentals: { dividendYield: 0.4, payoutRatio: 8.3, marketCapB: 93 },
     signals: { technical: -41, momentum: -40, sentiment: 76, news: 0, policy: 0, profile: 10, valuation: 12 }
   },
   {
@@ -2040,7 +2040,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.76, payoutRatio: 44.5, marketCapB: 72 },
-    signals: { technical: 36, momentum: 57, sentiment: 45, news: 0, policy: 0, profile: 35, valuation: 26 }
+    signals: { technical: 36, momentum: 57, sentiment: 45, news: 0, policy: 0, profile: 35, valuation: 27 }
   },
   {
     ticker: "MCO", name: "Moody's Corporation", sector: "Financial Services",
@@ -2381,7 +2381,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.98, payoutRatio: 36.7, marketCapB: 77 },
-    signals: { technical: -45, momentum: -29, sentiment: 35, news: 0, policy: 0, profile: 25, valuation: -35 }
+    signals: { technical: -45, momentum: -29, sentiment: 35, news: 0, policy: 0, profile: 25, valuation: -34 }
   },
   {
     ticker: "CNI", name: "Canadian National Railway Company", sector: "Industrials",
@@ -2556,7 +2556,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.31, payoutRatio: 413.3, marketCapB: 53 },
+    fundamentals: { dividendYield: 2.3, payoutRatio: 413.3, marketCapB: 53 },
     signals: { technical: 37, momentum: 55, sentiment: 78, news: 0, policy: 0, profile: 20, valuation: 27 }
   },
   {
@@ -3392,7 +3392,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.46, payoutRatio: 47.7, marketCapB: 37 },
+    fundamentals: { dividendYield: 3.47, payoutRatio: 47.7, marketCapB: 37 },
     signals: { technical: 36, momentum: -17, sentiment: 66, news: 0, policy: 0, profile: 45, valuation: 31 }
   },
   {
@@ -3546,7 +3546,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.76, payoutRatio: 71.4, marketCapB: 63 },
+    fundamentals: { dividendYield: 1.73, payoutRatio: 71.4, marketCapB: 63 },
     signals: { technical: 44, momentum: 100, sentiment: -38, news: 0, policy: 0, profile: 45, valuation: -31 }
   },
   {
@@ -3899,7 +3899,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.73, payoutRatio: 26.9, marketCapB: 22 },
-    signals: { technical: 31, momentum: -81, sentiment: 80, news: 0, policy: 0, profile: 10, valuation: 9 }
+    signals: { technical: 31, momentum: -81, sentiment: 80, news: 0, policy: 0, profile: 10, valuation: 6 }
   },
   {
     ticker: "LYB", name: "LyondellBasell Industries N.V.", sector: "Basic Materials",
@@ -4646,7 +4646,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.02, payoutRatio: 24.9, marketCapB: 17 },
+    fundamentals: { dividendYield: 1.05, payoutRatio: 24.9, marketCapB: 17 },
     signals: { technical: -40, momentum: -22, sentiment: 22, news: 0, policy: 0, profile: 15, valuation: 29 }
   },
   {
@@ -4767,7 +4767,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.64, payoutRatio: 89.3, marketCapB: 15 },
+    fundamentals: { dividendYield: 2.76, payoutRatio: 89.3, marketCapB: 15 },
     signals: { technical: 41, momentum: -62, sentiment: 68, news: 0, policy: 0, profile: 0, valuation: 16 }
   },
   {
@@ -6285,7 +6285,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 6 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
     signals: { technical: -47, momentum: -87, sentiment: 53, news: 0, policy: 0, profile: 25, valuation: 11 }
   },
   {
@@ -7220,8 +7220,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: 46, momentum: 59, sentiment: 75, news: 0, policy: 0, profile: -25, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1 },
+    signals: { technical: 46, momentum: 59, sentiment: 75, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "SAM", name: "The Boston Beer Company, Inc.", sector: "Consumer Defensive",
@@ -7550,7 +7550,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.04, payoutRatio: 21.0, marketCapB: 2 },
+    fundamentals: { dividendYield: 3.02, payoutRatio: 21.0, marketCapB: 2 },
     signals: { technical: -41, momentum: -84, sentiment: -15, news: 0, policy: 0, profile: -10, valuation: 25 }
   },
   {
