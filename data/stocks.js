@@ -5197,7 +5197,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: -41, momentum: -88, sentiment: 70, news: 0, policy: 0, profile: 5, valuation: 8 }
+    signals: { technical: -41, momentum: -88, sentiment: 70, news: 0, policy: 0, profile: 5, valuation: 7 }
   },
   {
     ticker: "DKNG", name: "DraftKings Inc.", sector: "Consumer Cyclical",
