@@ -70,7 +70,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.33, payoutRatio: 7.6, marketCapB: 1634 },
-    signals: { technical: -30, momentum: -13, sentiment: 82, news: 0, policy: 5, profile: 65, valuation: 7 }
+    signals: { technical: -30, momentum: -13, sentiment: 82, news: 0, policy: 5, profile: 65, valuation: 6 }
   },
   {
     ticker: "NVDA", name: "NVIDIA Corp.", sector: "Technology",
@@ -248,7 +248,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 286 },
-    signals: { technical: -32, momentum: -100, sentiment: 64, news: 0, policy: 5, profile: 50, valuation: 6 }
+    signals: { technical: -32, momentum: -100, sentiment: 64, news: 0, policy: 5, profile: 50, valuation: 5 }
   },
   {
     ticker: "WMT", name: "Walmart Inc.", sector: "Consumer Defensive",
@@ -462,7 +462,7 @@ window.STOCK_UNIVERSE = [
       sources: ["DBIO 2023 report"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.85, payoutRatio: 25.9, marketCapB: 434 },
+    fundamentals: { dividendYield: 1.85, payoutRatio: 25.9, marketCapB: 430 },
     signals: { technical: 33, momentum: 23, sentiment: 73, news: 0, policy: 0, profile: 60, valuation: 25 }
   },
   {
@@ -731,7 +731,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.06, payoutRatio: 1.1, marketCapB: 1096 },
-    signals: { technical: 21, momentum: 100, sentiment: 79, news: 0, policy: 0, profile: 65, valuation: 40 }
+    signals: { technical: 21, momentum: 100, sentiment: 79, news: 0, policy: 0, profile: 65, valuation: 41 }
   },
   {
     ticker: "CSCO", name: "Cisco Systems, Inc.", sector: "Technology",
@@ -852,7 +852,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.9, payoutRatio: 26.2, marketCapB: 320 },
-    signals: { technical: 36, momentum: 15, sentiment: 16, news: 0, policy: 0, profile: 45, valuation: 14 }
+    signals: { technical: 36, momentum: 15, sentiment: 16, news: 0, policy: 0, profile: 45, valuation: 15 }
   },
   {
     ticker: "PM", name: "Philip Morris International Inc.", sector: "Consumer Defensive",
@@ -906,7 +906,7 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.09, payoutRatio: 26.2, marketCapB: 269 },
+    fundamentals: { dividendYield: 2.09, payoutRatio: 26.2, marketCapB: 266 },
     signals: { technical: -43, momentum: -30, sentiment: 56, news: 0, policy: 0, profile: 60, valuation: 26 }
   },
   {
@@ -1116,7 +1116,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 160 },
-    signals: { technical: -32, momentum: -84, sentiment: 68, news: 0, policy: 0, profile: 40, valuation: -97 }
+    signals: { technical: -32, momentum: -84, sentiment: 68, news: 0, policy: 0, profile: 40, valuation: -98 }
   },
   {
     ticker: "ETN", name: "Eaton Corporation plc", sector: "Industrials",
@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.37, payoutRatio: 27.7, marketCapB: 202 },
+    fundamentals: { dividendYield: 0.37, payoutRatio: 27.7, marketCapB: 200 },
     signals: { technical: 21, momentum: 100, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: -33 }
   },
   {
@@ -1203,7 +1203,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits (partial)", "Media reports", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.11, payoutRatio: 36.7, marketCapB: 158 },
+    fundamentals: { dividendYield: 1.11, payoutRatio: 36.7, marketCapB: 159 },
     signals: { technical: 41, momentum: 16, sentiment: 44, news: 0, policy: 0, profile: 35, valuation: -17 }
   },
   {
@@ -2260,7 +2260,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.24, payoutRatio: 25.1, marketCapB: 93 },
-    signals: { technical: 20, momentum: 100, sentiment: 34, news: 0, policy: 0, profile: 20, valuation: 24 }
+    signals: { technical: 20, momentum: 100, sentiment: 34, news: 0, policy: 0, profile: 20, valuation: 22 }
   },
   {
     ticker: "MSI", name: "Motorola Solutions, Inc.", sector: "Technology",
@@ -2810,7 +2810,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 46 },
-    signals: { technical: -40, momentum: -100, sentiment: 53, news: 0, policy: 0, profile: 25, valuation: -51 }
+    signals: { technical: -40, momentum: -100, sentiment: 53, news: 0, policy: 0, profile: 25, valuation: -47 }
   },
   {
     ticker: "DDOG", name: "Datadog, Inc.", sector: "Technology",
@@ -4592,7 +4592,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.53, payoutRatio: 115.9, marketCapB: 20 },
-    signals: { technical: 43, momentum: 11, sentiment: 21, news: 0, policy: 0, profile: 45, valuation: -83 }
+    signals: { technical: 42, momentum: 14, sentiment: 21, news: 0, policy: 0, profile: 45, valuation: -84 }
   },
   {
     ticker: "NLY", name: "Annaly Capital Management, Inc.", sector: "Real Estate",
@@ -5032,7 +5032,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 5.12, payoutRatio: 62.8, marketCapB: 14 },
-    signals: { technical: 32, momentum: 39, sentiment: 25, news: 0, policy: 0, profile: 15, valuation: -28 }
+    signals: { technical: 32, momentum: 39, sentiment: 25, news: 0, policy: 0, profile: 15, valuation: 30 }
   },
   {
     ticker: "HUBS", name: "HubSpot, Inc.", sector: "Technology",
@@ -5703,7 +5703,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: -27, momentum: -48, sentiment: 58, news: 0, policy: 0, profile: 15, valuation: -20 }
+    signals: { technical: -27, momentum: -48, sentiment: 58, news: 0, policy: 0, profile: 15, valuation: -19 }
   },
   {
     ticker: "ACI", name: "Albertsons Companies, Inc.", sector: "Consumer Defensive",
@@ -7034,7 +7034,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 3 },
-    signals: { technical: 46, momentum: 59, sentiment: 4, news: 0, policy: 0, profile: -25, valuation: -34 }
+    signals: { technical: 46, momentum: 59, sentiment: 4, news: 0, policy: 0, profile: -25, valuation: -33 }
   },
   {
     ticker: "UA", name: "Under Armour, Inc.", sector: "Consumer Cyclical",
@@ -7297,8 +7297,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 0, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
+    fundamentals: { dividendYield: 0.02, payoutRatio: 23.4, marketCapB: 2 },
+    signals: { technical: 0, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: 0, valuation: 24 }
   },
   {
     ticker: "GT", name: "The Goodyear Tire & Rubber Company", sector: "Consumer Cyclical",
@@ -9542,7 +9542,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.07, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 34, momentum: 30, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
+    signals: { technical: 33, momentum: 30, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "BITU", name: "Proshares Ultra Bitcoin ETF", sector: "Other",
