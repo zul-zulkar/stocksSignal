@@ -103,7 +103,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 901 },
-    signals: { technical: 42, momentum: 100, sentiment: 76, news: 0, policy: 5, profile: 55, valuation: -63 }
+    signals: { technical: 42, momentum: 100, sentiment: 76, news: 0, policy: 5, profile: 55, valuation: -62 }
   },
   {
     ticker: "ORCL", name: "Oracle Corp.", sector: "Technology",
@@ -623,7 +623,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.95, payoutRatio: 23.0, marketCapB: 74 },
-    signals: { technical: 35, momentum: -25, sentiment: 56, news: 0, policy: 0, profile: 10, valuation: 42 }
+    signals: { technical: 35, momentum: -25, sentiment: 56, news: 0, policy: 0, profile: 10, valuation: 43 }
   },
 
   // ---------- AIRLINES & TRAVEL ----------
@@ -819,7 +819,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.19, payoutRatio: 5.1, marketCapB: 265 },
-    signals: { technical: 42, momentum: 100, sentiment: 71, news: 0, policy: 0, profile: 50, valuation: -60 }
+    signals: { technical: 42, momentum: 100, sentiment: 71, news: 0, policy: 0, profile: 50, valuation: -59 }
   },
   {
     ticker: "AZN", name: "AstraZeneca PLC", sector: "Healthcare",
@@ -940,7 +940,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 303 },
-    signals: { technical: 25, momentum: 100, sentiment: 52, news: 0, policy: 0, profile: 40, valuation: -100 }
+    signals: { technical: 25, momentum: 100, sentiment: 52, news: 0, policy: 0, profile: 25, valuation: -100 }
   },
   {
     ticker: "TM", name: "Toyota Motor Corporation", sector: "Consumer Cyclical",
@@ -1314,7 +1314,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.34, payoutRatio: 56.3, marketCapB: 163 },
-    signals: { technical: 40, momentum: -3, sentiment: -34, news: 0, policy: 0, profile: 60, valuation: -20 }
+    signals: { technical: 40, momentum: -3, sentiment: -34, news: 0, policy: 0, profile: 60, valuation: -21 }
   },
   {
     ticker: "DELL", name: "Dell Technologies Inc.", sector: "Technology",
@@ -3865,8 +3865,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.03, payoutRatio: 27.3, marketCapB: 20 },
-    signals: { technical: -31, momentum: -100, sentiment: 42, news: 0, policy: 0, profile: 35, valuation: 39 }
+    fundamentals: { dividendYield: 3.03, payoutRatio: 0, marketCapB: 20 },
+    signals: { technical: -31, momentum: -100, sentiment: 42, news: 0, policy: 0, profile: 20, valuation: 39 }
   },
   {
     ticker: "VRSN", name: "VeriSign, Inc.", sector: "Technology",
@@ -4108,7 +4108,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.3, payoutRatio: 41.9, marketCapB: 29 },
-    signals: { technical: 42, momentum: 1, sentiment: 100, news: 0, policy: 0, profile: 20, valuation: 7 }
+    signals: { technical: 42, momentum: 0, sentiment: 100, news: 0, policy: 0, profile: 20, valuation: 7 }
   },
   {
     ticker: "RL", name: "Ralph Lauren Corporation", sector: "Consumer Cyclical",
@@ -4459,7 +4459,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.67, payoutRatio: 88.1, marketCapB: 18 },
+    fundamentals: { dividendYield: 1.67, payoutRatio: 0, marketCapB: 18 },
     signals: { technical: -33, momentum: -68, sentiment: 81, news: 0, policy: 0, profile: 10, valuation: 17 }
   },
   {
@@ -6670,8 +6670,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.8, payoutRatio: 89.3, marketCapB: 3 },
-    signals: { technical: 42, momentum: 42, sentiment: 0, news: 0, policy: 0, profile: -5, valuation: 18 }
+    fundamentals: { dividendYield: 1.8, payoutRatio: 0, marketCapB: 3 },
+    signals: { technical: 42, momentum: 42, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 18 }
   },
   {
     ticker: "BOX", name: "Box, Inc.", sector: "Technology",
@@ -7100,7 +7100,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: 30, momentum: -13, sentiment: 100, news: 0, policy: 0, profile: 5, valuation: -7 }
+    signals: { technical: 30, momentum: -13, sentiment: 100, news: 0, policy: 0, profile: 5, valuation: -11 }
   },
   {
     ticker: "ADMA", name: "ADMA Biologics, Inc.", sector: "Healthcare",
@@ -7550,7 +7550,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.76, payoutRatio: 21.0, marketCapB: 2 },
+    fundamentals: { dividendYield: 2.76, payoutRatio: 0, marketCapB: 2 },
     signals: { technical: -43, momentum: -8, sentiment: -15, news: 0, policy: 0, profile: 10, valuation: 21 }
   },
   {
@@ -8200,7 +8200,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 51, momentum: 47, sentiment: 100, news: 0, policy: 0, profile: 5, valuation: -8 }
+    signals: { technical: 52, momentum: 39, sentiment: 100, news: 0, policy: 0, profile: 5, valuation: -7 }
   },
   {
     ticker: "GPRO", name: "GoPro, Inc.", sector: "Technology",
