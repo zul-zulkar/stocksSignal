@@ -462,7 +462,7 @@ window.STOCK_UNIVERSE = [
       sources: ["DBIO 2023 report"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.82, payoutRatio: 25.9, marketCapB: 430 },
+    fundamentals: { dividendYield: 1.82, payoutRatio: 25.9, marketCapB: 435 },
     signals: { technical: 34, momentum: 32, sentiment: 73, news: 0, policy: 0, profile: 60, valuation: 25 }
   },
   {
@@ -906,7 +906,7 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.08, payoutRatio: 26.2, marketCapB: 261 },
+    fundamentals: { dividendYield: 2.08, payoutRatio: 26.2, marketCapB: 264 },
     signals: { technical: -40, momentum: -30, sentiment: 56, news: 0, policy: 0, profile: 60, valuation: 27 }
   },
   {
@@ -1159,7 +1159,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.33, payoutRatio: 27.7, marketCapB: 205 },
+    fundamentals: { dividendYield: 0.33, payoutRatio: 27.7, marketCapB: 207 },
     signals: { technical: 30, momentum: 100, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: -36 }
   },
   {
@@ -2315,7 +2315,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.4, payoutRatio: 48.1, marketCapB: 83 },
-    signals: { technical: 46, momentum: 100, sentiment: 48, news: 0, policy: 0, profile: 20, valuation: 26 }
+    signals: { technical: 46, momentum: 100, sentiment: 48, news: 0, policy: 0, profile: 20, valuation: 27 }
   },
   {
     ticker: "NU", name: "Nu Holdings Ltd.", sector: "Financial Services",
@@ -2469,7 +2469,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.1, payoutRatio: 52.0, marketCapB: 72 },
-    signals: { technical: 35, momentum: 33, sentiment: 47, news: 0, policy: 0, profile: 45, valuation: 22 }
+    signals: { technical: 35, momentum: 33, sentiment: 47, news: 0, policy: 0, profile: 45, valuation: 23 }
   },
   {
     ticker: "B", name: "Barrick Mining Corporation", sector: "Basic Materials",
@@ -5032,7 +5032,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 5.06, payoutRatio: 62.8, marketCapB: 13 },
-    signals: { technical: 39, momentum: 33, sentiment: 25, news: 0, policy: 0, profile: 15, valuation: 30 }
+    signals: { technical: 39, momentum: 33, sentiment: 25, news: 0, policy: 0, profile: 15, valuation: -27 }
   },
   {
     ticker: "HUBS", name: "HubSpot, Inc.", sector: "Technology",
@@ -6858,7 +6858,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: -20, momentum: -100, sentiment: 48, news: 0, policy: 0, profile: 0, valuation: 29 }
+    signals: { technical: -20, momentum: -100, sentiment: 48, news: 0, policy: 0, profile: 0, valuation: 33 }
   },
   {
     ticker: "AWR", name: "American States Water Company", sector: "Utilities",
@@ -7297,8 +7297,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.02, payoutRatio: 23.4, marketCapB: 2 },
-    signals: { technical: 0, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: 0, valuation: 24 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 0, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "GT", name: "The Goodyear Tire & Rubber Company", sector: "Consumer Cyclical",
