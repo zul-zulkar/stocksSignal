@@ -484,7 +484,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.64, payoutRatio: 18.2, marketCapB: 487 },
+    fundamentals: { dividendYield: 0.66, payoutRatio: 18.2, marketCapB: 487 },
     signals: { technical: -41, momentum: -6, sentiment: 82, news: 0, policy: 5, profile: 35, valuation: -12 }
   },
   {
@@ -2226,7 +2226,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.09, payoutRatio: 37.4, marketCapB: 76 },
+    fundamentals: { dividendYield: 1.11, payoutRatio: 37.4, marketCapB: 76 },
     signals: { technical: -44, momentum: -36, sentiment: 68, news: 0, policy: 0, profile: 35, valuation: -27 }
   },
   {
@@ -2424,7 +2424,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.13, payoutRatio: 50.9, marketCapB: 80 },
+    fundamentals: { dividendYield: 1.06, payoutRatio: 50.9, marketCapB: 80 },
     signals: { technical: 36, momentum: 100, sentiment: 100, news: 0, policy: 0, profile: 25, valuation: 3 }
   },
   {
@@ -3426,7 +3426,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 36 },
-    signals: { technical: -29, momentum: -97, sentiment: 48, news: 0, policy: 0, profile: 15, valuation: 25 }
+    signals: { technical: -29, momentum: -97, sentiment: 48, news: 0, policy: 0, profile: 15, valuation: 24 }
   },
   {
     ticker: "NRG", name: "NRG Energy, Inc.", sector: "Utilities",
@@ -3547,7 +3547,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.12, payoutRatio: 71.4, marketCapB: 48 },
-    signals: { technical: 30, momentum: 100, sentiment: -38, news: 0, policy: 0, profile: 45, valuation: -10 }
+    signals: { technical: 30, momentum: 100, sentiment: -38, news: 0, policy: 0, profile: 45, valuation: 0 }
   },
   {
     ticker: "ZM", name: "Zoom Communications, Inc.", sector: "Technology",
@@ -5581,7 +5581,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.89, payoutRatio: 307.7, marketCapB: 12 },
+    fundamentals: { dividendYield: 0.92, payoutRatio: 307.7, marketCapB: 12 },
     signals: { technical: 36, momentum: 40, sentiment: 7, news: 0, policy: 0, profile: -25, valuation: 25 }
   },
   {
@@ -6945,7 +6945,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.76, payoutRatio: 59.6, marketCapB: 3 },
+    fundamentals: { dividendYield: 1.75, payoutRatio: 59.6, marketCapB: 3 },
     signals: { technical: 37, momentum: 2, sentiment: 75, news: 0, policy: 0, profile: 25, valuation: -47 }
   },
   {
