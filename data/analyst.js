@@ -6294,9 +6294,9 @@ window.STOCK_ANALYST = {
     "rating": "buy",
     "ratingMean": 2.38,
     "numAnalysts": 16,
-    "targetMean": 11.65,
-    "targetHigh": 15.03,
-    "targetLow": 7.45,
+    "targetMean": 11.66,
+    "targetHigh": 15.05,
+    "targetLow": 7.46,
     "price": 9.64,
     "currency": "USD"
   },
