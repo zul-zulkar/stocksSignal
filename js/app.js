@@ -178,6 +178,31 @@ function priceCell(price, chg) {
   return wrap;
 }
 
+// ---------- Manual edit helpers ----------
+const RL = window.REFRESH_LIB;
+const SIGNAL_KEYS = ["technical","momentum","sentiment","news","policy","profile","valuation"];
+
+function manualEntry(ticker) { return RL.mergedManual()[ticker] || null; }
+
+function isEdited(ticker) {
+  const m = manualEntry(ticker);
+  return !!(m && m.signals && Object.keys(m.signals).length);
+}
+
+function editMark() {
+  return el("span", { className: "edit-mark", title: "Ada edit manual" }, "✏");
+}
+
+// Re-render daftar penuh mahal (984 ticker); saat slider digeser cukup
+// ditunda sebentar supaya drag tetap mulus di HP.
+let heavyTimer = null;
+function scheduleHeavyRender() {
+  clearTimeout(heavyTimer);
+  heavyTimer = setTimeout(() => {
+    renderKPIs(); renderForever(); renderList(); renderPendingBtn();
+  }, 200);
+}
+
 // ---------- Desktop table row ----------
 function renderRow(stock, opts = {}) {
   const adj = ethicsAdjustedScore(stock, state.mode);
@@ -189,7 +214,7 @@ function renderRow(stock, opts = {}) {
   const chg = changeOf(stock.ticker);
   return el("tr", { className: "row-clickable", onClick: () => openDetail(stock) }, [
     el("td", {}, [
-      el("div", { className: "ticker" }, stock.ticker),
+      el("div", { className: "ticker" }, [stock.ticker, isEdited(stock.ticker) ? editMark() : null]),
       el("div", { className: "name" }, stock.name),
     ]),
     el("td", {}, actionBadge(v)),
@@ -242,7 +267,7 @@ function renderMobileCard(stock, opts = {}) {
 
   const card = el("div", { className: "stock-card" + (adj === null ? " excluded" : ""), onClick: () => openDetail(stock) }, [
     el("div", { className: "row1" }, [
-      el("span", { className: "ticker" }, stock.ticker),
+      el("span", { className: "ticker" }, [stock.ticker, isEdited(stock.ticker) ? editMark() : null]),
       actionBadge(v),
       el("span", { className: "spacer" }),
       el("span", { className: "score" + scoreCls(adj) }, adj === null ? "✗" : String(adj)),
@@ -649,7 +674,7 @@ function adviceStrip(v) {
 }
 
 // ---------- Modal detail ----------
-function openDetail(stock) {
+function openDetail(stock, initialTab = 0) {
   stock = UNIVERSE_BY_TICKER[stock.ticker] || stock;
   const adj       = ethicsAdjustedScore(stock, state.mode);
   const badge     = ethicsBadge(stock.ethics.israelTie);
@@ -679,17 +704,20 @@ function openDetail(stock) {
   // Advice strip
   body.append(adviceStrip(verdict));
 
-  // Score header strip
+  // Score header strip — compositeEl & adjEl di-update live saat sinyal diedit
   const scoreColor = v => v >= 60 ? "up" : v >= 40 ? "flat" : "down";
+  const compositeEl = el("div", { className: "msh-val " + scoreColor(composite) }, String(composite));
+  const adjEl = el("div", { className: "msh-val " + (adj === null ? "excl" : scoreColor(adj)) },
+                   adj === null ? "✗" : String(adj));
   const price = ADVICE.priceOf(stock.ticker);
   body.append(
     el("div", { className: "modal-score-header" }, [
       el("div", { className: "msh-item" }, [
-        el("div", { className: "msh-val " + scoreColor(composite) }, String(composite)),
+        compositeEl,
         el("div", { className: "msh-lbl" }, "Komposit"),
       ]),
       el("div", { className: "msh-item" }, [
-        el("div", { className: "msh-val " + (adj === null ? "excl" : scoreColor(adj)) }, adj === null ? "✗" : String(adj)),
+        adjEl,
         el("div", { className: "msh-lbl" }, "Etis (" + state.mode + ")"),
       ]),
       el("div", { className: "msh-item" }, [
@@ -704,7 +732,7 @@ function openDetail(stock) {
   );
 
   // Tab nav
-  const tabLabels = ["Ringkasan", "Grafik Harga", "Detail Sinyal", "Profil & Etika"];
+  const tabLabels = ["Ringkasan", "Grafik Harga", "Detail Sinyal", "Profil & Etika", "✏️ Edit"];
   const tabNav    = el("div", { className: "modal-tabs" });
   const panels    = [];
   function switchTab(i) {
@@ -712,7 +740,7 @@ function openDetail(stock) {
     panels.forEach((p, j) => p.style.display = j === i ? "" : "none");
   }
   tabLabels.forEach((lbl, i) => {
-    tabNav.append(el("button", { className: "tab-btn" + (i === 0 ? " active" : ""), onClick: () => switchTab(i) }, lbl));
+    tabNav.append(el("button", { className: "tab-btn" + (i === initialTab ? " active" : ""), onClick: () => switchTab(i) }, lbl));
   });
   body.append(tabNav);
 
@@ -750,24 +778,30 @@ function openDetail(stock) {
 
   // Panel 2: Detail Sinyal
   const p2 = el("div", { className: "tab-panel", style: "display:none" });
-  p2.append(el("div", { className: "note" }, "Skala −100 (sangat bearish) hingga +100 (sangat bullish). Klik baris untuk deskripsi."));
-  const SIGNAL_KEYS = ["technical","momentum","sentiment","news","policy","profile","valuation"];
-  const maxSig = Math.max(...SIGNAL_KEYS.map(k => s[k] || 0));
-  for (const key of SIGNAL_KEYS) {
-    const row = signalDetailRow(key, s[key] || 0);
-    if ((s[key] || 0) === maxSig) row.classList.add("highlight");
-    p2.append(row);
+  function fillSignalPanel() {
+    p2.innerHTML = "";
+    const sg = stock.signals;
+    const comp = compositeSignal(stock);
+    const a = ethicsAdjustedScore(stock, state.mode);
+    p2.append(el("div", { className: "note" }, "Skala −100 (sangat bearish) hingga +100 (sangat bullish). Klik baris untuk deskripsi."));
+    const maxSig = Math.max(...SIGNAL_KEYS.map(k => sg[k] || 0));
+    for (const key of SIGNAL_KEYS) {
+      const row = signalDetailRow(key, sg[key] || 0);
+      if ((sg[key] || 0) === maxSig) row.classList.add("highlight");
+      p2.append(row);
+    }
+    p2.append(
+      el("div", { className: "composite-row", style: "margin-top:14px; padding-top:10px; border-top:1px solid var(--border)" }, [
+        el("span", {}, "Skor komposit (0–100):"),
+        el("strong", {}, " " + comp),
+      ]),
+      el("div", { className: "composite-row" }, [
+        el("span", {}, "Setelah penalti etis (mode " + state.mode + "):"),
+        el("strong", {}, " " + (a === null ? "DIKECUALIKAN" : a)),
+      ])
+    );
   }
-  p2.append(
-    el("div", { className: "composite-row", style: "margin-top:14px; padding-top:10px; border-top:1px solid var(--border)" }, [
-      el("span", {}, "Skor komposit (0–100):"),
-      el("strong", {}, " " + composite),
-    ]),
-    el("div", { className: "composite-row" }, [
-      el("span", {}, "Setelah penalti etis (mode " + state.mode + "):"),
-      el("strong", {}, " " + (adj === null ? "DIKECUALIKAN" : adj)),
-    ])
-  );
+  fillSignalPanel();
   panels.push(p2);
 
   // Panel 3: Profil & Etika + Analis
@@ -829,7 +863,94 @@ function openDetail(stock) {
   );
   panels.push(p3);
 
+  // Panel 4: Edit manual — semua perhitungan lokal, tanpa jaringan
+  const p4 = el("div", { className: "tab-panel", style: "display:none" });
+
+  function syncLive() {
+    const c = compositeSignal(stock);
+    const a = ethicsAdjustedScore(stock, state.mode);
+    compositeEl.textContent = String(c);
+    compositeEl.className = "msh-val " + scoreColor(c);
+    adjEl.textContent = a === null ? "✗" : String(a);
+    adjEl.className = "msh-val " + (a === null ? "excl" : scoreColor(a));
+    radarDiv.innerHTML = radarChart(stock.signals, 260);
+    fillSignalPanel();
+    scheduleHeavyRender();
+  }
+
+  function buildEditRow(key) {
+    const meta = SIGNAL_META[key] || { label: key };
+    const base = RL.baselineSignal(stock.ticker, key);
+    const cur  = stock.signals[key] || 0;
+
+    const valEl = el("span", { className: "er-val" }, (cur >= 0 ? "+" : "") + cur);
+    const dirty = el("span", { className: "er-dirty" }, "diedit");
+    dirty.style.display = cur === base ? "none" : "";
+    const resetBtn = el("button", { className: "er-reset", type: "button", title: "Kembalikan ke " + base }, "↺");
+
+    const slider = el("input", { type: "range", min: "-100", max: "100", step: "5", className: "edit-slider" });
+    slider.value = String(cur);
+    const num = el("input", { type: "number", min: "-100", max: "100", step: "1",
+                              className: "edit-num", inputmode: "numeric" });
+    num.value = String(cur);
+
+    const desc = el("div", { className: "er-desc" }, getSignalDesc(key, cur));
+
+    function commit(v) {
+      RL.saveDraft(RL.setManualSignal(RL.getDraft(), stock.ticker, key, v));
+      RL.applyLayers();
+      const now = stock.signals[key] || 0;
+      slider.value = String(now);
+      if (document.activeElement !== num) num.value = String(now);
+      valEl.textContent = (now >= 0 ? "+" : "") + now;
+      desc.textContent = getSignalDesc(key, now);
+      dirty.style.display = now === RL.baselineSignal(stock.ticker, key) ? "none" : "";
+      syncLive();
+    }
+
+    slider.addEventListener("input", () => commit(slider.value));
+    num.addEventListener("change", () => commit(num.value));
+    resetBtn.addEventListener("click", () => { num.value = String(base); commit(base); });
+
+    return el("div", { className: "edit-row" }, [
+      el("div", { className: "er-head" }, [
+        el("span", { className: "er-label" }, meta.label),
+        dirty, valEl, resetBtn,
+      ]),
+      el("div", { className: "er-controls" }, [slider, num]),
+      desc,
+    ]);
+  }
+
+  p4.append(el("div", { className: "note" },
+    "Geser slider untuk mengubah nilai faktor. Tersimpan otomatis sebagai draft di HP ini — " +
+    "belum masuk repo sampai kamu tap “✏ Simpan edit” di bagian atas halaman."));
+  for (const key of SIGNAL_KEYS) p4.append(buildEditRow(key));
+
+  const noteArea = el("textarea", { className: "edit-note", rows: "2",
+                                    placeholder: "Catatan (opsional): kenapa nilainya diubah…" });
+  noteArea.value = (manualEntry(stock.ticker) || {}).note || "";
+  noteArea.addEventListener("change", () => {
+    RL.saveDraft(RL.setManualNote(RL.getDraft(), stock.ticker, noteArea.value));
+    renderPendingBtn();
+  });
+  p4.append(el("label", { className: "edit-note-wrap" }, [
+    el("span", { className: "er-label" }, "Catatan"),
+    noteArea,
+  ]));
+
+  const resetAll = el("button", { className: "edit-reset-all", type: "button" }, "↺ Reset semua faktor ke baseline");
+  resetAll.addEventListener("click", () => {
+    RL.saveDraft(RL.resetManual(RL.getDraft(), stock.ticker));
+    RL.applyLayers();
+    renderKPIs(); renderForever(); renderList(); renderPendingBtn();
+    openDetail(stock, 4);   // bangun ulang editor dengan nilai baseline
+  });
+  p4.append(resetAll);
+  panels.push(p4);
+
   panels.forEach(p => body.append(p));
+  switchTab(initialTab);
   $("#modal-bg").classList.add("show");
 }
 
@@ -1011,6 +1132,47 @@ function pollDeep(pat, tries) {
 }
 
 // ---------- Freshness badge ----------
+// ---------- Commit edit manual ke GitHub ----------
+function renderPendingBtn() {
+  const btn = $("#pending-btn");
+  if (!btn) return;
+  const n = RL.draftCount();
+  btn.style.display = n ? "" : "none";
+  const lbl = $("#pending-lbl");
+  if (lbl) lbl.textContent = "Simpan " + n + " edit";
+}
+
+async function doCommitManual() {
+  const pat = RL.getPAT();
+  if (!pat) { openPATModal("Untuk menyimpan edit manual ke GitHub, paste fine-grained PAT dulu."); return; }
+  const btn = $("#pending-btn");
+  const n = RL.draftCount();
+  btn.disabled = true; btn.classList.add("loading");
+  showToast("Menyimpan " + n + " edit ke GitHub…", "info");
+  try {
+    const merged = RL.mergedManual();
+    await RL.commitManual(pat, merged);
+    window.SIGNAL_MANUAL = merged;
+    RL.clearDraft();
+    RL.applyLayers();
+    renderPendingBtn(); renderKPIs(); renderForever(); renderList();
+    showToast("Tersimpan di repo · " + n + " edit. Pages re-deploy ~1 menit.", "success");
+    hideToast(5000);
+  } catch (err) {
+    console.error(err);
+    if (/PAT/i.test(err.message)) {
+      showToast(err.message, "error");
+      hideToast(5000);
+      openPATModal(err.message);
+    } else {
+      showToast("Gagal simpan: " + err.message, "error");
+      hideToast(6000);
+    }
+  } finally {
+    btn.disabled = false; btn.classList.remove("loading");
+  }
+}
+
 function renderFreshness() {
   const meta = window.STOCK_META || {};
   const dot = $("#freshness-dot");
@@ -1115,11 +1277,12 @@ function setupPullToRefresh() {
 function init() {
   initTheme();
   indexUniverse();
-  window.REFRESH_LIB.applyOverlay();
+  RL.applyLayers();
   renderFreshness();
   populateSectorFilter();
 
   $("#refresh-btn").addEventListener("click", doRefresh);
+  $("#pending-btn").addEventListener("click", doCommitManual);
   $("#deep-update-btn").addEventListener("click", doDeepUpdate);
   $("#theme-toggle").addEventListener("click", toggleTheme);
 
@@ -1183,6 +1346,7 @@ function init() {
   setupModalSwipe();
   setupPullToRefresh();
 
+  renderPendingBtn();
   renderKPIs();
   renderForever();
   setView("all");

@@ -262,6 +262,9 @@ function run() {
 document.addEventListener("DOMContentLoaded", function () {
   if (!window.STOCK_UNIVERSE) return;
 
+  // Pakai angka yang sama dengan dashboard: baseline + overlay auto + edit manual.
+  if (window.REFRESH_LIB) window.REFRESH_LIB.applyLayers();
+
   buildDatalist();
 
   $("go-btn").addEventListener("click", run);
