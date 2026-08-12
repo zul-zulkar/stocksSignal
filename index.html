@@ -253,7 +253,12 @@
             <option value="loose">Loose — tampilkan semua</option>
           </select>
         </label>
-        <label>Sektor
+        <button type="button" class="chip-select" id="sector-chip" aria-haspopup="dialog">
+          <span class="cs-lbl">Sektor</span>
+          <span class="cs-val" id="sector-chip-val">Semua</span>
+          <span class="cs-caret" aria-hidden="true">⌄</span>
+        </button>
+        <label class="visually-hidden">Sektor
           <select id="sector-filter"></select>
         </label>
         <label>Urutkan
@@ -354,6 +359,15 @@
     </div>
   </div>
 
+  <!-- Bottom sheet (pilihan) -->
+  <div class="modal-bg sheet-bg" id="sheet-bg">
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+      <div class="sheet-grip" aria-hidden="true"></div>
+      <h3 class="sheet-title" id="sheet-title">Pilih</h3>
+      <div class="sheet-list" id="sheet-list"></div>
+    </div>
+  </div>
+
   <!-- Toast progress / status -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -364,6 +378,9 @@
   <nav class="bottom-nav" id="bottom-nav" aria-label="Navigasi tampilan">
     <button class="bn-item active" data-view="all">      <span class="bn-ico">📋</span><span class="bn-lbl">Semua</span></button>
     <button class="bn-item"        data-view="peluang">  <span class="bn-ico">🎯</span><span class="bn-lbl">Peluang</span></button>
+    <button class="bn-fab" id="bn-update" aria-label="Perbarui data lewat GitHub Actions" title="Perbarui Data">
+      <span class="ico" aria-hidden="true">⟳</span>
+    </button>
     <button class="bn-item"        data-view="watchlist"><span class="bn-ico">⭐</span><span class="bn-lbl">Watchlist</span></button>
     <button class="bn-item"        data-view="dividen">  <span class="bn-ico">💰</span><span class="bn-lbl">Dividen</span></button>
   </nav>

@@ -587,6 +587,17 @@ function renderForever() {
   }
 }
 
+// Satu jalur untuk mengganti sektor, dipakai chip maupun <select>.
+function setSector(value) {
+  state.sector = value;
+  const sel = $("#sector-filter");
+  if (sel && sel.value !== value) sel.value = value;
+  const chipVal = $("#sector-chip-val");
+  if (chipVal) chipVal.textContent = value === "ALL" ? "Semua" : value;
+  renderList();
+  if (state.view === "dividen") renderDividendEstimator();
+}
+
 function populateSectorFilter() {
   const sectors = [...new Set(window.STOCK_UNIVERSE.map(s => s.sector))].sort();
   const sel = $("#sector-filter");
@@ -916,10 +927,62 @@ function openDetail(stock) {
   panels.push(p3);
 
   panels.forEach(p => body.append(p));
+
+  // Action bar menempel di dasar — adaptasi dari Jual/Beli milik Pluang.
+  // Kita bukan broker, jadi dua aksi nyata yang kita punya yang dipasang:
+  // menandai watchlist dan membandingkan. Keduanya tadinya terkubur di
+  // dalam modal dan hilang begitu kamu menggulir.
+  const barStar = el("button", { className: "da-btn da-outline", type: "button" },
+    (watched ? "★ Di watchlist" : "☆ Watchlist"));
+  barStar.addEventListener("click", () => {
+    const on = WATCH.toggleWatch(stock.ticker);
+    barStar.textContent = on ? "★ Di watchlist" : "☆ Watchlist";
+    starBtn.classList.toggle("on", on);
+    starBtn.textContent = on ? "★" : "☆";
+    renderList();
+  });
+  const modalEl = $("#modal-bg").querySelector(".modal");
+  modalEl.querySelectorAll(".detail-actions").forEach(n => n.remove());
+  modalEl.append(el("div", { className: "detail-actions" }, [
+    barStar,
+    el("a", {
+      className: "da-btn da-solid",
+      href: "compare.html?a=" + encodeURIComponent(stock.ticker),
+    }, "⚖ Bandingkan"),
+  ]));
+
   $("#modal-bg").classList.add("show");
 }
 
 function closeDetail() { $("#modal-bg").classList.remove("show"); }
+
+// ---------- Bottom sheet ----------
+// Pola sheet Pluang: muncul dari bawah, sudut atas membulat, daftar pilihan
+// dengan bingkai + centang pada yang aktif. Sengaja generik supaya bisa
+// dipakai untuk pilihan lain, bukan cuma sektor.
+function openSheet({ title, options, current, onPick }) {
+  const bg   = $("#sheet-bg");
+  const list = $("#sheet-list");
+  $("#sheet-title").textContent = title;
+  list.innerHTML = "";
+  for (const opt of options) {
+    const value = typeof opt === "string" ? opt : opt.value;
+    const label = typeof opt === "string" ? opt : opt.label;
+    const active = value === current;
+    const row = el("button", {
+      className: "sheet-opt" + (active ? " active" : ""),
+      type: "button",
+      "aria-pressed": active ? "true" : "false",
+    }, [
+      el("span", { className: "so-label" }, label),
+      active ? el("span", { className: "so-check", "aria-hidden": "true" }, "✓") : null,
+    ]);
+    row.addEventListener("click", () => { closeSheet(); onPick(value); });
+    list.append(row);
+  }
+  bg.classList.add("show");
+}
+function closeSheet() { $("#sheet-bg").classList.remove("show"); }
 
 // ---------- Toast ----------
 function showToast(text, kind = "info", link = null) {
@@ -1021,12 +1084,24 @@ function deepStartedAt() {
   } catch { return null; }
 }
 
+// Aksi Perbarui Data punya dua pemicu — tombol header dan FAB bottom nav.
+// Keduanya harus menunjukkan status yang sama supaya tidak ada yang terlihat
+// bisa ditekan padahal pipeline sedang jalan.
+function updateBtns() {
+  return [$("#deep-update-btn"), $("#bn-update")].filter(Boolean);
+}
+function setUpdateBusy(busy) {
+  for (const b of updateBtns()) {
+    b.disabled = busy;
+    b.classList.toggle("loading", busy);
+  }
+}
+
 async function doDeepUpdate() {
   const lib = window.REFRESH_LIB;
   const pat = lib.getPAT();
   if (!pat) { openPATModal("Untuk memperbarui data di server, paste PAT dengan izin Actions: Read and write."); return; }
-  const btn = $("#deep-update-btn");
-  btn.disabled = true; btn.classList.add("loading");
+  setUpdateBusy(true);
   showToast("Memicu pipeline di GitHub Actions…", "info");
   try {
     await lib.ghDispatchWorkflow(pat);
@@ -1037,7 +1112,7 @@ async function doDeepUpdate() {
   } catch (e) {
     showToast("Gagal memicu: " + e.message, "error");
     hideToast(8000);
-    btn.disabled = false; btn.classList.remove("loading");
+    setUpdateBusy(false);
     if (/PAT|Actions/i.test(e.message)) openPATModal(e.message);
   }
 }
@@ -1050,8 +1125,7 @@ function deepElapsedLabel(elapsedMs) {
 }
 
 function pollDeep(pat, startedAt) {
-  const btn = $("#deep-update-btn");
-  const stop = () => { btn.disabled = false; btn.classList.remove("loading"); deepClear(); };
+  const stop = () => { setUpdateBusy(false); deepClear(); };
   const elapsed = Date.now() - startedAt;
 
   if (elapsed > DEEP_TIMEOUT_MS) {
@@ -1097,8 +1171,7 @@ function resumeDeepPoll() {
   if (Date.now() - startedAt > DEEP_TIMEOUT_MS) { deepClear(); return; }
   const pat = window.REFRESH_LIB.getPAT();
   if (!pat) { deepClear(); return; }
-  const btn = $("#deep-update-btn");
-  btn.disabled = true; btn.classList.add("loading");
+  setUpdateBusy(true);
   showToast(`Melanjutkan pantauan pipeline · ${deepElapsedLabel(Date.now() - startedAt)}…`, "info");
   pollDeep(pat, startedAt);
 }
@@ -1248,8 +1321,22 @@ function init() {
     state.mode = e.target.value; renderList(); renderForever();
   });
   $("#sector-filter").addEventListener("change", e => {
-    state.sector = e.target.value; renderList();
-    if (state.view === "dividen") renderDividendEstimator();
+    setSector(e.target.value);
+  });
+  // Chip membuka bottom sheet; <select> aslinya tetap ada (tersembunyi)
+  // supaya jalur keyboard tetap jalan dan kode lain tidak perlu diubah.
+  $("#sector-chip").addEventListener("click", () => {
+    const sectors = [...new Set(window.STOCK_UNIVERSE.map(x => x.sector))].sort();
+    openSheet({
+      title: "Sektor",
+      current: state.sector,
+      options: [{ value: "ALL", label: "Semua Sektor" },
+                ...sectors.map(x => ({ value: x, label: x }))],
+      onPick: setSector,
+    });
+  });
+  $("#sheet-bg").addEventListener("click", e => {
+    if (e.target.id === "sheet-bg") closeSheet();
   });
   $("#search-input").addEventListener("input", e => {
     state.search = e.target.value; renderList();
@@ -1267,6 +1354,9 @@ function init() {
   document.querySelectorAll(".view-tab, .bn-item").forEach(b => {
     b.addEventListener("click", () => setView(b.dataset.view));
   });
+  // FAB tengah: aksi utama yang sama dengan tombol di header, tapi tetap
+  // terjangkau saat header sudah tergulir keluar layar.
+  $("#bn-update").addEventListener("click", doDeepUpdate);
 
   document.querySelectorAll("th[data-sort]").forEach(th => {
     th.addEventListener("click", () => {
