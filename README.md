@@ -96,7 +96,9 @@ Tap sebuah saham → tab **✏️ Edit** → geser slider untuk mengubah nilai 7
 | 3. manual | `data/signals-manual.js` | subset bebas dari 7 faktor |
 | 4. draft | `localStorage` | edit yang belum di-commit |
 
-Edit manual **tidak pernah menyentuh `data/stocks.js`**, jadi refresh terjadwal (A) dan `fetch_signals.py` (B) tetap aman dijalankan — edit manual tetap menang di atasnya. Catatan: `world.html` memakai `data/world-data.js` yang di-_generate_ terpisah, jadi edit manual baru tampil di sana setelah `scripts/build_world_data.py` dijalankan ulang.
+Edit manual **tidak pernah menyentuh `data/stocks.js`**, jadi refresh terjadwal (A) dan `fetch_signals.py` (B) tetap aman dijalankan — edit manual tetap menang di atasnya.
+
+**Dunia 3D ikut menyesuaikan.** `world.html` membaca `data/world-data.js` yang skornya sudah dihitung di muka, jadi `js/world/manual.js` menambal dataset itu di memori tiap page load: skor komposit, ketiga skor ter-adjust etis, verdict Aksi, dan daftar Forever Pocket dihitung ulang lewat `js/signals.js` + `js/advice.js` yang sama dengan dashboard. Hanya ticker yang benar-benar diedit yang disentuh; sisanya dibiarkan persis seperti hasil `build_world_data.py`.
 
 **Setup PAT (untuk tombol Refresh/Update Penuh/Simpan edit):** [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new) → Only select repositories `zul-zulkar/stocksSignal` → Permissions → **Contents: Read and write** + **Actions: Read and write** → Generate → paste ke modal di dashboard (disimpan di `localStorage` HP saja).
 
@@ -223,6 +225,7 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │   ├── app.js              # Render UI, views, modal, editor sinyal, gestur, tema
 │   ├── compare.js          # Logika halaman bandingkan
 │   └── world/              # Modul dunia 3D imersif (three.js, ES modules)
+│       └── manual.js       # Terapkan lapis edit manual ke dataset dunia
 │       ├── scene.js        # World golden-hour: terrain, matahari, monolit, kamera
 │       ├── curate.js       # Kurasi cast tiap babak dari dataset
 │       ├── overlay.js      # Narasi, label in-world, ticker, tweak kamera
