@@ -586,7 +586,17 @@
     <div class="ld-sub">Membangun dunia…</div>
   </div>
 
-  <script src="data/world-data.js"></script>
+  <!-- Sumber & logika yang sama persis dengan dashboard. Dataset dunia
+       dihitung saat runtime oleh js/world/data.js, harus selesai sebelum
+       module graph karena js/world/curate.js membaca WORLD_DATA saat import. -->
+  <script src="data/stocks.js"></script>
+  <script src="data/analyst.js"></script>
+  <script src="data/signals-overlay.js"></script>
+  <script src="js/signals.js"></script>
+  <script src="js/advice.js"></script>
+  <script src="js/watchlist.js"></script>
+  <script src="js/refresh.js"></script>
+  <script src="js/world/data.js"></script>
   <script type="importmap">
   {
     "imports": {

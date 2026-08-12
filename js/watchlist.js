@@ -18,6 +18,34 @@
     try { localStorage.setItem(key, JSON.stringify(val)); } catch {}
   }
 
+  // Dunia 3D dulu menyimpan watchlist-nya sendiri dengan kunci & bentuk
+  // berbeda (ss_watch / ss_port {shares, avg}), sehingga bintang di dashboard
+  // dan di dunia tidak pernah nyambung. Sekarang satu sumber; data lama
+  // diangkut sekali lalu kunci usangnya dibuang.
+  function migrateLegacyWorldKeys() {
+    try {
+      const oldWatch = localStorage.getItem("ss_watch");
+      if (oldWatch) {
+        const merged = new Set([...read(WATCH_KEY, []), ...(JSON.parse(oldWatch) || [])]);
+        write(WATCH_KEY, [...merged]);
+        localStorage.removeItem("ss_watch");
+      }
+      const oldPort = localStorage.getItem("ss_port");
+      if (oldPort) {
+        const h = read(HOLDINGS_KEY, {});
+        for (const [t, p] of Object.entries(JSON.parse(oldPort) || {})) {
+          if (h[t] || !p) continue;                      // yang baru menang
+          const qty = Number(p.shares);
+          if (!qty || qty <= 0) continue;
+          h[t] = { qty, avgPrice: Number(p.avg) || 0 };
+        }
+        write(HOLDINGS_KEY, h);
+        localStorage.removeItem("ss_port");
+      }
+    } catch {}
+  }
+  migrateLegacyWorldKeys();
+
   // ---------- Watchlist ----------
   function listWatch()        { return read(WATCH_KEY, []); }
   function isWatched(ticker)  { return listWatch().includes(ticker); }

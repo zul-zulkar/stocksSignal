@@ -45,7 +45,7 @@ Selain dashboard klasik, ada **`world.html`** — pasar saham disajikan sebagai 
 - **Klik monolit** → kartu detail 7-sinyal; tombol **🔭 Selami Lebih Dalam** memfokuskan kamera + overlay 7 cincin sinyal.
 - **Konsol "Jelajahi Semesta"** — seluruh fitur inti (cari, sektor, sortir, view Semua/Peluang/Watchlist/Dividen, watchlist + portofolio, estimator dividen) dalam estetika dunia.
 - **Tutorial 5-langkah** (muncul sekali, bisa dibuka ulang) + panel **Petunjuk (?)** (Interaksi · 7 Sinyal · Etika · Glosarium).
-- **Data nyata** — `data/world-data.js` di-_generate_ dari `data/stocks.js` + `data/analyst.js` oleh `scripts/build_world_data.py`, memakai skoring **persis sama** dengan dashboard (`js/signals.js` + `js/advice.js`) sehingga dunia tak pernah melenceng. Optimal di desktop/layar besar.
+- **Satu sumber dengan dashboard** — dunia membaca `data/stocks.js` + `data/analyst.js` yang sama dan menghitung skor lewat `js/signals.js` + `js/advice.js` yang sama, saat runtime (`js/world/data.js`). Watchlist & portofolio juga satu (`js/watchlist.js`), jadi bintang yang kamu pasang di dashboard langsung muncul di dunia. Optimal di desktop/layar besar.
 
 ---
 
@@ -199,7 +199,6 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │   ├── analyst.js          # Rekomendasi & target harga analis (yfinance)
 │   ├── signals-overlay.js  # Overlay teknikal hasil tombol Refresh (Stooq)
 │   ├── meta.js             # Status refresh terakhir
-│   └── world-data.js       # Dataset ringkas untuk world.html (auto-generated)
 ├── js/
 │   ├── signals.js          # Skor komposit 7-faktor + filter etis + Forever Pocket
 │   ├── advice.js           # Verdict Aksi (Beli/Tahan/Jual) + target/upside
@@ -208,6 +207,7 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │   ├── app.js              # Render UI, views, modal, gestur, tema, wiring
 │   ├── compare.js          # Logika halaman bandingkan
 │   └── world/              # Modul dunia 3D imersif (three.js, ES modules)
+│       └── data.js         # Bangun dataset dunia saat runtime dari pustaka bersama
 │       ├── scene.js        # World golden-hour: terrain, matahari, monolit, kamera
 │       ├── curate.js       # Kurasi cast tiap babak dari dataset
 │       ├── overlay.js      # Narasi, label in-world, ticker, tweak kamera
@@ -215,14 +215,12 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │       └── tutorial.js     # Tutorial 5-langkah + panel Petunjuk
 ├── scripts/
 │   ├── fetch_signals.py    # Refresh penuh dari laptop (yfinance) + data analis
-│   ├── build_world_data.py # Generate data/world-data.js (skoring = signals.js/advice.js)
 │   ├── review_ethics.py    # Klasifikasi etika cepat (database offline)
 │   ├── scrape_ethics.py    # Scrape etika (Who Profits/BDS/AFSC)
 │   ├── add_tickers.py      # Tambah ticker baru massal
 │   └── run_full_update.py  # Orkestrasi pipeline penuh
 ├── tests/
 │   ├── test_fetch_signals.py     # Unit test Python (unittest)
-│   ├── test_build_world_data.py  # Unit test generator world (unittest)
 │   └── js/*.test.cjs             # Unit test JS (node:test, via vm)
 ├── .github/workflows/
 │   ├── refresh.yml             # Cron Senin + dispatch (tombol Perbarui Data)
@@ -260,7 +258,7 @@ Atau pakai `scripts/add_tickers.py` (isi `scripts/new_tickers.txt`, satu ticker 
 
 Logika murni (skor, verdict aksi, watchlist, matematika refresh) punya unit test. Tidak ada build step — test berjalan dengan runner bawaan.
 
-**Python** (fungsi skoring + analis + sentimen + `update_stock_block` + generator dunia `build_world_data`):
+**Python** (fungsi skoring + analis + sentimen + `update_stock_block`):
 ```bash
 pip install "pandas>=2.0"        # untuk uji sinyal teknikal (opsional)
 python -m unittest discover -s tests -p "test_*.py" -v

@@ -31,11 +31,23 @@ const fmtUSD = (n) => n == null ? "—" : "$" + n.toLocaleString("en-US", { maxi
 const scoreFor = (o, m) => m === "loose" ? o.adjL : m === "strict" ? o.adjS : o.adjB;
 
 // ── persistence ────────────────────────────────────────────────────
+// Satu sumber dengan dashboard: js/watchlist.js. Dunia dulu punya kunci
+// sendiri (ss_watch / ss_port) sehingga bintang di sini dan di dashboard
+// tidak pernah nyambung; WATCH_LIB mengangkut data lama itu sekali saat load.
+// Adapter di bawah cuma menerjemahkan bentuk {qty, avgPrice} ↔ {shares, avg}
+// yang dipakai kode render dunia.
+const W = window.WATCH_LIB;
 const LS = {
-  get watch() { try { return new Set(JSON.parse(localStorage.getItem("ss_watch") || "[]")); } catch { return new Set(); } },
-  set watch(s) { localStorage.setItem("ss_watch", JSON.stringify([...s])); },
-  get port() { try { return JSON.parse(localStorage.getItem("ss_port") || "{}"); } catch { return {}; } },
-  set port(p) { localStorage.setItem("ss_port", JSON.stringify(p)); },
+  get watch() { return new Set(W.listWatch()); },
+  get port() {
+    const out = {};
+    for (const [t, h] of Object.entries(W.allHoldings())) {
+      out[t] = { shares: h.qty, avg: h.avgPrice };
+    }
+    return out;
+  },
+  toggle(t) { return W.toggleWatch(t); },
+  setHolding(t, shares, avg) { W.setHolding(t, shares, avg); },
 };
 
 export function initConsole(world) {
@@ -186,8 +198,9 @@ export function initConsole(world) {
   }
 
   function toggleWatch(t) {
-    if (watch.has(t)) watch.delete(t); else watch.add(t);
-    LS.watch = watch; render();
+    LS.toggle(t);
+    watch = LS.watch;
+    render();
     if (dbg.classList.contains("open") && dbg.dataset.t === t) openDetail(DATA.find((o) => o.t === t));
   }
 
@@ -246,11 +259,13 @@ export function initConsole(world) {
     if (starred) {
       const sh = $("#d-shares"), av = $("#d-avg");
       const save = () => {
-        port[o.t] = { shares: +sh.value || 0, avg: +av.value || 0 }; LS.port = port;
-        const val = (port[o.t].shares) * (o.price || 0);
-        const pl = (port[o.t].shares) * ((o.price || 0) - (port[o.t].avg || 0));
+        LS.setHolding(o.t, +sh.value || 0, +av.value || 0);
+        port = LS.port;
+        const h = port[o.t] || { shares: 0, avg: 0 };
+        const val = h.shares * (o.price || 0);
+        const pl = h.shares * ((o.price || 0) - (h.avg || 0));
         const div = val * (o.dy / 100);
-        $("#d-pl").innerHTML = port[o.t].shares > 0
+        $("#d-pl").innerHTML = h.shares > 0
           ? `<span>Nilai <b>${fmtUSD(val)}</b></span><span>P/L <b class="${pl >= 0 ? "pos" : "neg"}">${pl >= 0 ? "+" : ""}${fmtUSD(pl)}</b></span><span>Dividen/th <b class="pos">${fmtUSD(div)}</b></span>`
           : "";
       };
