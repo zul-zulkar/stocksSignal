@@ -33,9 +33,19 @@ function changeOf(ticker) {
   const ov = (window.SIGNAL_OVERLAY || {})[ticker];
   return ov && Number.isFinite(ov.changePct) ? ov.changePct : null;
 }
-function fmt(n) {
-  return (Math.round((Number(n) || 0) * 100) / 100)
-    .toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+// Format angka ala Pluang: koma sebagai desimal, titik sebagai pemisah ribuan
+// ($219,93 · +1,13%). Mata uangnya tetap USD karena sahamnya saham AS —
+// Pluang pun menampilkan harga saham AS dalam dolar.
+function nf(n, d = 2) {
+  return (Number(n) || 0).toLocaleString("id-ID",
+    { minimumFractionDigits: d, maximumFractionDigits: d });
+}
+function fmt(n) { return nf(n, 2); }
+function usd(n, d = 2) { return Number.isFinite(n) ? "$" + nf(n, d) : "—"; }
+function pct(n, d = 2) { return Number.isFinite(n) ? nf(n, d) + "%" : "—"; }
+function signedPct(n, d = 2) {
+  if (!Number.isFinite(n)) return "—";
+  return (n >= 0 ? "+" : "−") + nf(Math.abs(n), d) + "%";
 }
 function scoreCls(v) {
   if (v == null) return "";
@@ -170,10 +180,10 @@ function actionBadge(v) {
 function priceCell(price, chg) {
   const wrap = el("span", { className: "price-cell" });
   wrap.append(el("span", { className: "price-val" },
-    Number.isFinite(price) ? "$" + price.toFixed(2) : "—"));
+    usd(price)));
   if (chg != null) {
     wrap.append(el("span", { className: "price-chg " + (chg >= 0 ? "up" : "down") },
-      (chg >= 0 ? "▲" : "▼") + Math.abs(chg).toFixed(2) + "%"));
+      (chg >= 0 ? "▲" : "▼") + nf(Math.abs(chg)) + "%"));
   }
   return wrap;
 }
@@ -449,7 +459,7 @@ function renderPortfolio() {
     pfKpi("Modal", "$" + fmt(sum.cost)),
     pfKpi("Nilai kini", "$" + fmt(sum.value)),
     pfKpi("Untung/Rugi",
-      (sum.pnl >= 0 ? "+$" : "−$") + fmt(Math.abs(sum.pnl)) + " (" + sum.pnlPct.toFixed(1) + "%)", pnlCls),
+      (sum.pnl >= 0 ? "+$" : "−$") + fmt(Math.abs(sum.pnl)) + " (" + nf(sum.pnlPct, 1) + "%)", pnlCls),
     pfKpi("Dividen/th", "$" + fmt(sum.annualDividend), "up"),
   ]));
 }
@@ -475,7 +485,7 @@ function renderDividendEstimator() {
     const dy = s.fundamentals.dividendYield || 0;
     tbl.append(el("tr", {}, [
       el("td", {}, s.ticker),
-      el("td", {}, dy.toFixed(2) + "%"),
+      el("td", {}, pct(dy)),
       el("td", {}, amt ? "$" + fmt(amt * dy / 100) : "—"),
     ]));
   }
@@ -520,8 +530,8 @@ function renderForever() {
       el("div", {}, el("span", { className: "badge badge-" + badge.color }, badge.label)),
       el("div", { className: "meta" }, [
         el("div", {}, [el("strong", {}, "Sektor: "), stock.sector]),
-        el("div", {}, [el("strong", {}, "Dividen: "), dyield ? dyield.toFixed(2) + "%" : "—"]),
-        el("div", {}, [el("strong", {}, "Mkt Cap: "), "$" + stock.fundamentals.marketCapB + "B"]),
+        el("div", {}, [el("strong", {}, "Dividen: "), dyield ? pct(dyield) : "—"]),
+        el("div", {}, [el("strong", {}, "Mkt Cap: "), usd(stock.fundamentals.marketCapB, 0) + "B"]),
       ]),
     ]);
     grid.append(card);
@@ -635,10 +645,10 @@ function adviceStrip(v) {
   if (v.target) {
     detail.append(el("div", { className: "adv-target" }, [
       el("span", {}, "Target analis: "),
-      el("strong", {}, "$" + v.target),
+      el("strong", {}, usd(v.target)),
       v.upsidePct != null
         ? el("span", { className: "adv-upside " + (v.upsidePct >= 0 ? "up" : "down") },
-            "  " + (v.upsidePct >= 0 ? "+" : "") + v.upsidePct.toFixed(1) + "% upside")
+            "  " + signedPct(v.upsidePct, 1) + " upside")
         : null,
     ]));
   }
@@ -693,7 +703,7 @@ function openDetail(stock) {
         el("div", { className: "msh-lbl" }, "Etis (" + state.mode + ")"),
       ]),
       el("div", { className: "msh-item" }, [
-        el("div", { className: "msh-val flat" }, Number.isFinite(price) ? "$" + price.toFixed(2) : "—"),
+        el("div", { className: "msh-val flat" }, usd(price)),
         el("div", { className: "msh-lbl" }, "Harga"),
       ]),
       el("div", { className: "msh-item" }, [
@@ -782,7 +792,7 @@ function openDetail(stock) {
       el("table", { className: "fund-table" }, [
         fundRow("Rekomendasi", ADVICE.ratingLabel(an.rating), an.numAnalysts + " analis"),
         fundRow("Target rata-rata", an.targetMean ? "$" + an.targetMean : "—",
-          upside != null ? (upside >= 0 ? "+" : "") + upside.toFixed(1) + "% vs harga" : null),
+          upside != null ? signedPct(upside, 1) + " vs harga" : null),
         fundRow("Target tertinggi", an.targetHigh ? "$" + an.targetHigh : "—"),
         fundRow("Target terendah", an.targetLow ? "$" + an.targetLow : "—"),
       ]),
@@ -805,9 +815,9 @@ function openDetail(stock) {
   );
 
   // Fundamentals
-  const dy  = f.dividendYield ? f.dividendYield.toFixed(2) + "%" : "—";
+  const dy  = f.dividendYield ? pct(f.dividendYield) : "—";
   const pr  = f.payoutRatio   ? f.payoutRatio + "%" : "—";
-  const cap = f.marketCapB >= 1000 ? "$" + (f.marketCapB / 1000).toFixed(2) + "T" : "$" + f.marketCapB + "B";
+  const cap = f.marketCapB >= 1000 ? usd(f.marketCapB / 1000) + "T" : usd(f.marketCapB, 0) + "B";
   const capCategory = f.marketCapB >= 200 ? "Mega cap" : f.marketCapB >= 10 ? "Large cap" : f.marketCapB >= 2 ? "Mid cap" : "Small cap";
   p3.append(
     el("div", { className: "section" }, [
@@ -1053,16 +1063,17 @@ function relativeTime(ms) {
 }
 
 // ---------- Tema ----------
+// Terang = bawaan (mengikuti Pluang); gelap tetap tersedia lewat toggle.
 const THEME_KEY = "ss_theme";
-function applyTheme(t) { document.documentElement.dataset.theme = t === "light" ? "light" : "dark"; }
+function applyTheme(t) { document.documentElement.dataset.theme = t === "dark" ? "dark" : "light"; }
 function initTheme() {
-  let t = "dark";
-  try { t = localStorage.getItem(THEME_KEY) || "dark"; } catch {}
+  let t = "light";
+  try { t = localStorage.getItem(THEME_KEY) || "light"; } catch {}
   applyTheme(t);
 }
 function toggleTheme() {
-  const cur = document.documentElement.dataset.theme === "light" ? "light" : "dark";
-  const next = cur === "light" ? "dark" : "light";
+  const cur = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+  const next = cur === "dark" ? "light" : "dark";
   applyTheme(next);
   try { localStorage.setItem(THEME_KEY, next); } catch {}
 }

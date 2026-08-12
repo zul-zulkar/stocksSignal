@@ -1,5 +1,8 @@
 // compare.js — halaman perbandingan 2 saham
 (function () {
+// Format angka Indonesia, sama dengan dashboard: $219,93 · 1,13%
+const nf = (n, d = 2) => (Number(n) || 0).toLocaleString("id-ID",
+  { minimumFractionDigits: d, maximumFractionDigits: d });
 "use strict";
 
 const { compositeSignal, ethicsAdjustedScore, ethicsBadge, signalBar } = window.SIGNAL_LIB;
@@ -52,7 +55,7 @@ function pct(v) {
 
 function fmtCap(b) {
   if (!b) return "—";
-  return b >= 1000 ? "$" + (b / 1000).toFixed(2) + "T" : "$" + b + "B";
+  return b >= 1000 ? "$" + nf(b / 1000) + "T" : "$" + nf(b, 0) + "B";
 }
 
 // ── Datalist ────────────────────────────────────────────────────────────────
@@ -114,8 +117,8 @@ function renderComparison(sa, sb) {
   const fundRows = [
     ["Market Cap",   fmtCap(fA.marketCapB), fmtCap(fB.marketCapB)],
     ["Sektor",       sa.sector,             sb.sector],
-    ["Dividen Yield", fA.dividendYield ? fA.dividendYield.toFixed(2) + "%" : "—",
-                      fB.dividendYield ? fB.dividendYield.toFixed(2) + "%" : "—"],
+    ["Dividen Yield", fA.dividendYield ? nf(fA.dividendYield) + "%" : "—",
+                      fB.dividendYield ? nf(fB.dividendYield) + "%" : "—"],
     ["Payout Ratio", fA.payoutRatio ? fA.payoutRatio + "%" : "—",
                      fB.payoutRatio ? fB.payoutRatio + "%" : "—"],
     ["Skor Komposit", String(cmpA), String(cmpB)],

@@ -1,25 +1,94 @@
+/* =====================================================================
+   Token desain — mengikuti aplikasi Pluang.
+   Nilai warna diambil dari piksel screen recording aplikasinya:
+   ungu #3E26F6 (tombol Beli), hijau #28D929 & merah #EE3241 (bar
+   Analisis Teknikal), permukaan #F1F1F3, banner #ECEEFD.
+   Catatan: #28D929 terlalu terang untuk teks kecil di latar putih
+   (kontrasnya gagal), jadi teks naik/turun memakai varian yang sedikit
+   lebih pekat; warna aslinya tetap dipakai untuk bar, pill, dan isian.
+   ===================================================================== */
 :root {
+  /* Permukaan */
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --panel-2: #f1f1f3;
+  --border: #ececf0;
+  --text: #0d0d12;
+  --muted: #6b6b76;
+
+  /* Merek */
+  --brand: #3e26f6;
+  --brand-soft: #eceefd;
+  --accent: #3e26f6;
+  --accent-2: #3e26f6;
+  --on-brand: #ffffff;
+
+  /* Arah pasar */
+  --up: #0fa81b;          /* teks */
+  --down: #d92534;        /* teks */
+  --up-fill: #28d929;     /* bar, pill, isian */
+  --down-fill: #ee3241;
+  --flat: #9a9aa5;
+
+  /* Semantik badge */
+  --red: #ee3241;
+  --orange: #f0762a;
+  --yellow: #d99400;
+  --green: #0fa81b;
+  --gray: #8a8a94;
+
+  /* Bentuk */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 18px;
+  --r-pill: 999px;
+  --shadow-card: 0 1px 2px rgba(13, 13, 18, 0.04);
+  --shadow-pop: 0 12px 32px rgba(13, 13, 18, 0.14);
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bot: env(safe-area-inset-bottom, 0px);
+}
+
+/* Tema gelap — dipertahankan untuk baca malam; memakai ungu yang sama
+   tapi dinaikkan luminansinya supaya tetap terbaca di latar gelap. */
+:root[data-theme="dark"] {
   --bg: #0f1117;
   --panel: #161a23;
   --panel-2: #1d2230;
   --border: #262c3a;
   --text: #e6e8ee;
   --muted: #8a93a6;
-  --accent: #4ade80;
-  --accent-2: #38bdf8;
-  --up: #22c55e;
-  --down: #ef4444;
+
+  --brand: #7c67ff;
+  --brand-soft: #1d1a3a;
+  --accent: #7c67ff;
+  --accent-2: #7c67ff;
+  --on-brand: #ffffff;
+
+  --up: #35d94a;
+  --down: #ff5f6d;
+  --up-fill: #28d929;
+  --down-fill: #ee3241;
   --flat: #94a3b8;
+
   --red: #ef4444;
   --orange: #f97316;
   --yellow: #eab308;
-  --green: #22c55e;
+  --green: #35d94a;
   --gray: #6b7280;
-  --safe-top: env(safe-area-inset-top, 0px);
-  --safe-bot: env(safe-area-inset-bottom, 0px);
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+/* Anak grid/flex punya min-width:auto, jadi ia menolak menyusut di bawah
+   lebar min-content-nya — itu yang bikin kartu 531px di viewport 390px dan
+   memotong isi di sisi kanan. Lantai itu dilepas di sini, sekali untuk semua. */
+main, main > *, .kpi-row, .kpi, .forever-grid, .forever-card,
+.card, .controls, .controls label, .guide-panel, .guide-summary { min-width: 0; }
+.kpi .lbl, .forever-card .name, .guide-hint { overflow-wrap: anywhere; }
 
 html, body {
   margin: 0; padding: 0;
@@ -32,14 +101,14 @@ html, body {
 }
 body { padding-bottom: var(--safe-bot); }
 
-a { color: var(--accent-2); text-decoration: none; }
+a { color: var(--brand); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* ── Header ── */
 header {
-  padding: calc(20px + var(--safe-top)) 32px 20px;
+  padding: calc(18px + var(--safe-top)) 24px 16px;
   border-bottom: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--panel) 0%, var(--bg) 100%);
+  background: var(--panel);
 }
 header h1 { margin: 0 0 4px; font-size: 20px; }
 header p  { margin: 0; color: var(--muted); font-size: 12px; }
@@ -76,11 +145,11 @@ header .palestine-flag::before {
 }
 .refresh-btn {
   display: inline-flex; align-items: center; gap: 6px;
-  min-height: 36px; padding: 6px 14px;
-  background: var(--accent-2);
-  color: #0f1117;
-  border: none; border-radius: 999px;
-  font-weight: 700; font-size: 13px;
+  min-height: 40px; padding: 8px 18px;
+  background: var(--brand);
+  color: var(--on-brand);
+  border: none; border-radius: var(--r-pill);
+  font-weight: 700; font-size: 13.5px;
   cursor: pointer;
   font-family: inherit;
   transition: transform 0.1s, opacity 0.2s;
@@ -94,16 +163,15 @@ header .palestine-flag::before {
 /* Portal ke pengalaman 3D imersif (world.html) — sengaja mencolok */
 .world-link {
   display: inline-flex; align-items: center; gap: 7px;
-  min-height: 36px; padding: 6px 15px;
-  border-radius: 999px; text-decoration: none;
-  font-weight: 700; font-size: 13px; font-family: inherit;
-  color: #1a1205;
-  background: linear-gradient(135deg, #ffce7a, #9fe3b1);
-  border: 1px solid rgba(255, 206, 122, 0.55);
-  box-shadow: 0 6px 20px -8px rgba(224, 151, 47, 0.6);
-  transition: transform 0.15s, box-shadow 0.15s, filter 0.15s;
+  min-height: 40px; padding: 8px 18px;
+  border-radius: var(--r-pill); text-decoration: none;
+  font-weight: 700; font-size: 13.5px; font-family: inherit;
+  color: var(--brand);
+  background: var(--brand-soft);
+  border: 1px solid transparent;
+  transition: transform 0.15s, filter 0.15s;
 }
-.world-link:hover { transform: translateY(-1px); filter: brightness(1.04); box-shadow: 0 10px 28px -8px rgba(224, 151, 47, 0.72); }
+.world-link:hover { transform: translateY(-1px); filter: brightness(0.98); text-decoration: none; }
 .world-link:active { transform: scale(0.97); }
 .world-link .ico { font-size: 15px; line-height: 1; }
 
@@ -117,7 +185,7 @@ header .palestine-flag::before {
   border-radius: 999px;
   padding: 10px 18px;
   font-size: 13px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: var(--shadow-pop);
   z-index: 60;
   max-width: calc(100vw - 32px);
   text-align: center;
@@ -127,32 +195,32 @@ header .palestine-flag::before {
 }
 .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
 .toast-link {
-  color: var(--accent-2);
+  color: var(--brand);
   text-decoration: underline;
   font-weight: 600;
   pointer-events: auto;   /* .toast sendiri pointer-events:none */
   white-space: nowrap;
 }
 .toast.show { pointer-events: auto; }
-.toast.success { border-color: var(--green); }
-.toast.error   { border-color: var(--red);   color: #fecaca; }
+.toast.success { border-color: var(--up-fill); }
+.toast.error   { border-color: var(--down-fill); }
 
 /* PAT modal buttons */
 .pat-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 .btn-primary, .btn-secondary, .btn-danger {
   flex: 1;
-  min-height: 40px;
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 13px;
+  min-height: 46px;
+  padding: 10px 16px;
+  border-radius: var(--r-pill);
+  font-weight: 700;
+  font-size: 14px;
   cursor: pointer;
   border: 1px solid var(--border);
   font-family: inherit;
 }
-.btn-primary   { background: var(--accent-2); color: #0f1117; border-color: var(--accent-2); }
+.btn-primary   { background: var(--brand); color: var(--on-brand); border-color: var(--brand); }
 .btn-secondary { background: var(--panel-2); color: var(--text); }
-.btn-danger    { background: transparent; color: var(--red); border-color: var(--red); }
+.btn-danger    { background: transparent; color: var(--down); border-color: var(--down); }
 .btn-primary:active, .btn-secondary:active, .btn-danger:active { transform: scale(0.98); }
 
 /* ── Layout ── */
@@ -167,8 +235,9 @@ main {
 .card {
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--r-md);
   padding: 18px 20px;
+  box-shadow: var(--shadow-card);
 }
 .card h2 { margin: 0 0 12px; font-size: 15px; letter-spacing: 0.2px; }
 .card .subtitle { color: var(--muted); margin: -8px 0 12px; font-size: 12px; }
@@ -569,7 +638,7 @@ details[open] .guide-hint { opacity: 0; }
     flex-direction: column;
     align-items: stretch;
     gap: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    box-shadow: var(--shadow-pop);
   }
   .controls label {
     flex-direction: row;
@@ -794,8 +863,8 @@ details[open] .guide-hint { opacity: 0; }
   display: flex; justify-content: center;
 }
 .cmp-go-btn {
-  background: var(--accent-2); color: #0f1117;
-  border: none; border-radius: 9px;
+  background: var(--brand); color: var(--on-brand);
+  border: none; border-radius: var(--r-pill);
   padding: 11px 32px; font-size: 14px; font-weight: 700;
   cursor: pointer; transition: opacity 0.15s;
 }
@@ -1001,12 +1070,12 @@ details[open] .guide-hint { opacity: 0; }
 .view-tabs::-webkit-scrollbar { display: none; }
 .view-tab {
   flex: 1; min-width: max-content; white-space: nowrap;
-  background: var(--panel-2); border: 1px solid var(--border); color: var(--muted);
-  border-radius: 999px; padding: 8px 14px;
+  background: transparent; border: 1px solid var(--border); color: var(--text);
+  border-radius: var(--r-pill); padding: 9px 16px;
   font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
-.view-tab.active { background: var(--accent-2); color: #0f1117; border-color: var(--accent-2); }
+.view-tab.active { background: var(--text); color: var(--bg); border-color: var(--text); }
 .view-info { margin-top: 0; margin-bottom: 10px; }
 
 /* Subpanel (portofolio, dividen) */
@@ -1100,24 +1169,3 @@ details[open] .guide-hint { opacity: 0; }
   .bn-ico { font-size: 18px; line-height: 1; }
 }
 
-/* ── Tema terang ── */
-:root[data-theme="light"] {
-  --bg: #f4f6fb;
-  --panel: #ffffff;
-  --panel-2: #eef1f7;
-  --border: #d6dce8;
-  --text: #1a1f2b;
-  --muted: #5b6677;
-  --accent: #15803d;
-  --accent-2: #0369a1;
-  --up: #16a34a;
-  --down: #dc2626;
-  --flat: #64748b;
-  --red: #dc2626;
-  --orange: #ea580c;
-  --yellow: #b45309;
-  --green: #16a34a;
-  --gray: #6b7280;
-}
-:root[data-theme="light"] .stock-card:active { background: var(--panel-2); border-color: var(--accent-2); }
-:root[data-theme="light"] .toast { box-shadow: 0 8px 24px rgba(0,0,0,0.18); }

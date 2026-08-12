@@ -27,7 +27,9 @@ const TIE = {
 const RATING = { strong_buy: "Strong Buy", buy: "Buy", hold: "Hold", underperform: "Underperform", sell: "Sell" };
 const tieRank = { none: 0, low: 1, unknown: 2, medium: 3, high: 4 };
 
-const fmtUSD = (n) => n == null ? "—" : "$" + n.toLocaleString("en-US", { maximumFractionDigits: n < 10 ? 2 : 0, minimumFractionDigits: n < 10 ? 2 : 0 });
+// Angka format Indonesia, sama dengan dashboard.
+const nf = (n, d = 2) => (Number(n) || 0).toLocaleString("id-ID", { minimumFractionDigits: d, maximumFractionDigits: d });
+const fmtUSD = (n) => n == null ? "—" : "$" + nf(n, n < 10 ? 2 : 0);
 const scoreFor = (o, m) => m === "loose" ? o.adjL : m === "strict" ? o.adjS : o.adjB;
 
 // ── persistence ────────────────────────────────────────────────────
@@ -159,7 +161,7 @@ export function initConsole(world) {
         const top = list.slice(0, 6);
         $("#cn-est-out").innerHTML = amt > 0 ? top.map((o) => {
           const annual = amt * (o.dy / 100);
-          return `<div><span>${o.t}</span><b>${fmtUSD(annual)}/th</b><i>${o.dy.toFixed(1)}%</i></div>`;
+          return `<div><span>${o.t}</span><b>${fmtUSD(annual)}/th</b><i>${nf(o.dy, 1)}%</i></div>`;
         }).join("") : `<p class="cn-note">Masukkan nominal untuk estimasi dividen tahunan pada saham yield tertinggi.</p>`;
       };
       inv.oninput = calc; calc();
@@ -240,7 +242,7 @@ export function initConsole(world) {
       </div>
       <div class="d-sigs"><div class="d-sigs-h">Rincian 7 Sinyal <span>−100 … +100</span></div>${bars}</div>
       <div class="d-fund">
-        <span>Dividen <b>${o.dy.toFixed(2)}%</b></span><span>Market cap <b>$${o.cap >= 1000 ? (o.cap / 1000).toFixed(1) + "T" : o.cap + "B"}</b></span>
+        <span>Dividen <b>${nf(o.dy, 2)}%</b></span><span>Market cap <b>$${o.cap >= 1000 ? nf(o.cap / 1000, 1) + "T" : o.cap + "B"}</b></span>
       </div>
       <div class="d-actions">
         <button id="d-dive" class="d-dive">🔭 Selami Lebih Dalam</button>
@@ -320,7 +322,7 @@ export function initConsole(world) {
         <div class="dv-eth ${tie.cls}">
           <div class="dv-badge ${tie.cls}">${tie.label}</div>
           <p>${o.why || "Tidak ada catatan etika."}</p>
-          <div class="dv-dv">Dividen <b>${o.dy.toFixed(2)}%</b>&nbsp;·&nbsp;Mkt cap <b>$${o.cap >= 1000 ? (o.cap / 1000).toFixed(1) + "T" : o.cap + "B"}</b></div>
+          <div class="dv-dv">Dividen <b>${nf(o.dy, 2)}%</b>&nbsp;·&nbsp;Mkt cap <b>$${o.cap >= 1000 ? nf(o.cap / 1000, 1) + "T" : o.cap + "B"}</b></div>
         </div>
       </div>`;
     $("#dv-exit").onclick = () => { dive.classList.remove("open"); world.clearFocus && world.clearFocus(); };
