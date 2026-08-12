@@ -7,6 +7,7 @@ const { compositeSignal, ethicsAdjustedScore, ethicsBadge, signalBar,
         buildForeverPocket, SIGNAL_WEIGHTS } = window.SIGNAL_LIB;
 const ADVICE = window.ADVICE_LIB;
 const WATCH  = window.WATCH_LIB;
+const INT    = window.INTERPRET_LIB;
 
 const state = {
   mode: "balanced",
@@ -200,6 +201,12 @@ function signalSummary(signals) {
                 : bear > bull + 1 ? { label: "Bearish", cls: "down" }
                 : { label: "Netral", cls: "flat" };
 
+  const readLine = bull > bear + 1
+    ? `${bull} dari 7 faktor positif — arah dominan naik, tapi cek dulu faktor mana yang menariknya.`
+    : bear > bull + 1
+      ? `${bear} dari 7 faktor negatif — beban lebih besar daripada dukungan.`
+      : "Faktor positif dan negatif berimbang; belum ada arah yang jelas.";
+
   const bar = el("div", { className: "ss-bar" });
   for (const [n, cls] of [[bear, "bear"], [neut, "neut"], [bull, "bull"]]) {
     if (!n) continue;
@@ -219,6 +226,7 @@ function signalSummary(signals) {
       el("span", { className: "muted" }, "Netral (" + neut + ")"),
       el("span", { className: "up" }, "Bullish (" + bull + ")"),
     ]),
+    el("div", { className: "ss-read" }, readLine),
   ]);
 }
 
@@ -508,6 +516,7 @@ function renderPortfolio() {
       (sum.pnl >= 0 ? "+$" : "−$") + fmt(Math.abs(sum.pnl)) + " (" + nf(sum.pnlPct, 1) + "%)", pnlCls),
     pfKpi("Dividen/th", "$" + fmt(sum.annualDividend), "up"),
   ]));
+  box.append(el("div", { className: "stat-read" }, INT.portfolioInsight(sum)));
 }
 
 // ---------- Estimator dividen ----------
@@ -555,9 +564,19 @@ function animateNum(elm, to) {
 
 function renderKPIs() {
   const u = window.STOCK_UNIVERSE;
+  const clean = u.filter(s => ["none", "low"].includes(s.ethics.israelTie)).length;
+  const flagged = u.filter(s => s.ethics.israelTie === "high").length;
   animateNum($("#kpi-total"), u.length);
-  animateNum($("#kpi-clean"), u.filter(s => ["none", "low"].includes(s.ethics.israelTie)).length);
-  animateNum($("#kpi-flagged"), u.filter(s => s.ethics.israelTie === "high").length);
+  animateNum($("#kpi-clean"), clean);
+  animateNum($("#kpi-flagged"), flagged);
+  const read = $("#kpi-read");
+  if (read) {
+    const share = Math.round(clean / u.length * 100);
+    read.textContent =
+      `${share}% dari universe (${clean} dari ${u.length}) lolos filter etis paling ketat, ` +
+      `dan ${flagged} dikecualikan karena afiliasi kuat. Mode filter yang kamu pilih menentukan ` +
+      `mana yang muncul di daftar dan berapa poin yang dipotong dari skornya.`;
+  }
 }
 
 function renderForever() {
@@ -579,6 +598,7 @@ function renderForever() {
         el("div", {}, [el("strong", {}, "Dividen: "), dyield ? pct(dyield) : "—"]),
         el("div", {}, [el("strong", {}, "Mkt Cap: "), usd(stock.fundamentals.marketCapB, 0) + "B"]),
       ]),
+      el("div", { className: "pocket-read" }, INT.foreverInsight(stock)),
     ]);
     grid.append(card);
   }
@@ -691,7 +711,40 @@ function signalDetailRow(key, score) {
   barWrap.append(barFill);
   const desc = el("div", { className: "sd-desc" }, getSignalDesc(key, score));
   row.append(header, barWrap, desc);
+  const impact = INT.signalInsight(key, score);
+  if (impact) row.append(el("div", { className: "sd-impact" }, impact));
   return row;
+}
+
+// ---------- Kartu Insight ----------
+// Sengaja BUKAN "beli/jual". Isinya: arti angkanya, konsekuensi praktis,
+// risiko spesifik saham ini, dan hal yang perlu diverifikasi sendiri.
+function insightBlock(label, items, cls) {
+  if (!items || !items.length) return null;
+  return el("div", { className: "ins-block " + (cls || "") }, [
+    el("div", { className: "ins-label" }, label),
+    el("ul", { className: "ins-list" }, items.map(t => el("li", {}, t))),
+  ]);
+}
+
+function insightCard(stock, verdict, adj) {
+  const ins = INT.verdictInsight(stock, state.mode, verdict, adj);
+  const card = el("div", { className: "insight-card" }, [
+    el("div", { className: "ins-head" }, [
+      el("span", { className: "ins-spark", "aria-hidden": "true" }, "✦"),
+      el("span", { className: "ins-title" }, "Insight Sinyal"),
+    ]),
+    el("p", { className: "ins-headline" }, ins.headline),
+  ]);
+  const doNow = insightBlock("Yang bisa kamu lakukan", ins.doNow);
+  const watch = insightBlock("Yang perlu diwaspadai", ins.watchOut, "warn");
+  const verify = insightBlock("Cek dulu", ins.verify, "verify");
+  if (doNow) card.append(doNow);
+  if (watch) card.append(watch);
+  if (verify) card.append(verify);
+  card.append(el("p", { className: "ins-foot" },
+    "Disusun dari angka di halaman ini dengan aturan tetap — bukan AI, dan bukan nasihat investasi."));
+  return card;
 }
 
 // ---------- Advice strip ----------
@@ -793,9 +846,16 @@ function openDetail(stock) {
     ["Payout", f.payoutRatio ? pct(f.payoutRatio, 0) : "—"],
     ["Analis", an && an.numAnalysts ? an.numAnalysts + " analis" : "—"],
   ]));
+  body.append(el("div", { className: "stat-read" }, [
+    el("div", {}, INT.ethicsInsight(stock.ethics.israelTie, state.mode)),
+    el("div", {}, INT.dividendInsight(f.dividendYield || 0, f.payoutRatio || 0)),
+  ]));
 
   // Advice strip
   body.append(adviceStrip(verdict));
+
+  // Kartu Insight — menjawab "lalu aku harus bagaimana", bukan cuma "ini apa"
+  body.append(insightCard(stock, verdict, adj));
 
   // Ringkasan arah 7 sinyal — pola "Analisis Teknikal" di Pluang
   body.append(signalSummary(s));

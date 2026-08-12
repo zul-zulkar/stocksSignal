@@ -34,6 +34,8 @@ Dashboard sinyal saham AS yang tersedia di **Pluang**, dengan filter etis terhad
   - **Dividen** — diurut yield + estimator pendapatan pasif.
 - **Refresh per-saham** — tombol ↻ di kartu/modal memperbarui harga & teknikal satu saham secara instan (in-memory, tanpa PAT).
 - **⟳ Perbarui Data** — satu tombol di header memicu pipeline lengkap di GitHub Actions (`refresh.yml`) via API, lalu memantau progresnya sampai selesai (bertahan lintas reload) dan memuat ulang halaman otomatis. Butuh PAT izin **Actions: Read and write**.
+- **Insight Sinyal** — tiap saham dapat pembacaan yang menjawab *"lalu aku harus bagaimana"*, bukan cuma menampilkan angka: apa artinya, apa yang bisa kamu lakukan, apa yang perlu diwaspadai (diambil dari **faktor terlemah saham itu**, bukan teks template), dan apa yang perlu kamu cek sendiri. Baris interpretasi juga menempel di tiap faktor, KPI, kartu Forever Pocket, statistik dividen/etika, dan ringkasan portofolio. Lihat `js/interpret.js`.
+  > Dua batas yang disengaja: **bukan nasihat beli/jual** (tidak ada kalimat yang menyuruh bertransaksi — ada test yang menjaganya), dan **bukan AI** — seluruh isinya diturunkan dengan aturan tetap dari angka yang sudah ada di halaman.
 - **Mobile-friendly & interaktif** — kartu kaya (harga live, %perubahan, badge aksi), gestur **geser-tutup** modal & **tarik-untuk-refresh**, skeleton loading, animasi angka, serta **tema terang/gelap** (tersimpan).
 
 ### 🌅 Stock Signal World — pengalaman 3D imersif (baru)
@@ -202,6 +204,7 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 ├── js/
 │   ├── signals.js          # Skor komposit 7-faktor + filter etis + Forever Pocket
 │   ├── advice.js           # Verdict Aksi (Beli/Tahan/Jual) + target/upside
+│   ├── interpret.js        # Insight Sinyal: arti angka, risiko, hal yang perlu dicek
 │   ├── watchlist.js        # Watchlist & portofolio (localStorage)
 │   ├── refresh.js          # Dispatch & pantau Actions, Stooq best-effort, PAT
 │   ├── app.js              # Render UI, views, modal, gestur, tema, wiring
