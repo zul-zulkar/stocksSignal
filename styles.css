@@ -49,36 +49,41 @@
   --safe-bot: env(safe-area-inset-bottom, 0px);
 }
 
-/* Tema gelap — dipertahankan untuk baca malam; memakai ungu yang sama
-   tapi dinaikkan luminansinya supaya tetap terbaca di latar gelap. */
+/* Tema gelap — juga diambil dari piksel Pluang, dan ternyata BUKAN sekadar
+   versi gelap dari tema terang: aksennya berganti dari ungu ke hijau limau
+   #D7FD52 (7.880 piksel: tombol Beli, ikon nav aktif, tautan), latarnya
+   hitam pekat #000000 (285rb dari 310rb piksel), dan teks di atas aksen
+   jadi HITAM — kebalikan dari terang yang putih di atas ungu.
+   Merah dicerahkan sedikit dari #EE3241 agar terbaca di latar hitam;
+   nilai aslinya tetap dipakai untuk isian bar. */
 :root[data-theme="dark"] {
-  --bg: #0f1117;
-  --panel: #161a23;
-  --panel-2: #1d2230;
-  --border: #262c3a;
-  --text: #e6e8ee;
-  --muted: #8a93a6;
+  --bg: #000000;
+  --panel: #131416;
+  --panel-2: #2c2c2c;
+  --border: #2c2c2c;
+  --text: #ffffff;
+  --muted: #9a9aa4;
 
-  --brand: #7c67ff;
-  --brand-soft: #1d1a3a;
-  --accent: #7c67ff;
-  --accent-2: #7c67ff;
-  --on-brand: #ffffff;
+  --brand: #d7fd52;
+  --brand-soft: #23290f;
+  --accent: #d7fd52;
+  --accent-2: #d7fd52;
+  --on-brand: #000000;
 
-  --up: #35d94a;
-  --down: #ff5f6d;
-  --up-fill: #28d929;
+  --up: #71f19a;
+  --down: #f2606b;
+  --up-fill: #71f19a;
   --down-fill: #ee3241;
-  --flat: #94a3b8;
+  --flat: #8a8a94;
 
-  --red: #ef4444;
-  --orange: #f97316;
-  --yellow: #eab308;
-  --green: #35d94a;
-  --gray: #6b7280;
+  --red: #f2606b;
+  --orange: #f0902a;
+  --yellow: #e0c23a;
+  --green: #71f19a;
+  --gray: #8a8a94;
 
-  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.6);
+  --shadow-pop: 0 12px 32px rgba(0, 0, 0, 0.7);
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
