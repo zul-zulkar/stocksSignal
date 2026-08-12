@@ -173,6 +173,55 @@ function miniSig(label, score) {
   ]);
 }
 
+// ---------- Grid statistik kunci (pola "Key Stats" Pluang) ----------
+// Label kecil bergaris putus-putus di atas, nilai tebal di bawah, 3 kolom.
+function keyStats(pairs) {
+  return el("div", { className: "kstats" }, pairs.map(([label, value, cls]) =>
+    el("div", { className: "kstat" }, [
+      el("div", { className: "kstat-lbl" }, label),
+      el("div", { className: "kstat-val " + (cls || "") }, value),
+    ])
+  ));
+}
+
+// ---------- Ringkasan arah 7 sinyal ----------
+// Meniru blok "Analisis Teknikal" Pluang: satu pill verdict + bar tersegmen
+// dengan cacah Bearish / Netral / Bullish. Ambang ±20 sama dengan yang
+// dipakai signalBar() supaya warna di seluruh aplikasi konsisten.
+function signalSummary(signals) {
+  const keys = ["technical","momentum","sentiment","news","policy","profile","valuation"];
+  let bear = 0, neut = 0, bull = 0;
+  for (const k of keys) {
+    const v = signals[k] || 0;
+    if (v > 20) bull++; else if (v < -20) bear++; else neut++;
+  }
+  const total = keys.length;
+  const verdict = bull > bear + 1 ? { label: "Bullish", cls: "up" }
+                : bear > bull + 1 ? { label: "Bearish", cls: "down" }
+                : { label: "Netral", cls: "flat" };
+
+  const bar = el("div", { className: "ss-bar" });
+  for (const [n, cls] of [[bear, "bear"], [neut, "neut"], [bull, "bull"]]) {
+    if (!n) continue;
+    const seg = el("div", { className: "ss-seg ss-" + cls });
+    seg.style.flex = String(n / total);
+    bar.append(seg);
+  }
+
+  return el("div", { className: "signal-summary" }, [
+    el("div", { className: "ss-head" }, [
+      el("span", { className: "ss-title" }, "Ringkasan 7 Sinyal"),
+      el("span", { className: "ss-verdict " + verdict.cls }, verdict.label),
+    ]),
+    bar,
+    el("div", { className: "ss-legend" }, [
+      el("span", { className: "down" }, "Bearish (" + bear + ")"),
+      el("span", { className: "muted" }, "Netral (" + neut + ")"),
+      el("span", { className: "up" }, "Bullish (" + bull + ")"),
+    ]),
+  ]);
+}
+
 // ---------- Aksi / harga ----------
 function actionBadge(v) {
   return el("span", { className: "action-badge action-" + v.color, title: v.rationale }, v.label);
@@ -670,45 +719,75 @@ function openDetail(stock) {
   const body = $("#modal-body");
   body.innerHTML = "";
 
-  // Sector + tombol refresh per-saham
-  const sectorRow = el("div", { className: "modal-sector-row" }, [
-    el("span", { className: "modal-sector" }, stock.sector),
-  ]);
-  const refBtn = el("button", { className: "mini-refresh" }, "↻ Refresh saham ini");
+  const scoreColor = v => v >= 60 ? "up" : v >= 40 ? "flat" : "down";
+  const price = ADVICE.priceOf(stock.ticker);
+  const chg   = changeOf(stock.ticker);
+
+  // ── Hero ala Pluang: monogram + ticker, harga besar + perubahan di kiri,
+  //    grid statistik kunci di kanan (label bergaris putus-putus).
+  const refBtn = el("button", { className: "icon-btn", "aria-label": "Refresh saham ini" }, "↻");
   refBtn.addEventListener("click", async () => {
-    refBtn.disabled = true; refBtn.textContent = "↻ Memuat…";
+    refBtn.disabled = true;
     await refreshCard(stock.ticker);
     if ($("#modal-bg").classList.contains("show")) openDetail(stock);
   });
-  sectorRow.append(refBtn);
-  body.append(sectorRow);
+  const watched = WATCH.isWatched(stock.ticker);
+  const starBtn = el("button", {
+    className: "icon-btn star" + (watched ? " on" : ""), "aria-label": "Watchlist",
+  }, watched ? "★" : "☆");
+  starBtn.addEventListener("click", () => {
+    const on = WATCH.toggleWatch(stock.ticker);
+    starBtn.classList.toggle("on", on);
+    starBtn.textContent = on ? "★" : "☆";
+    renderList();
+  });
+
+  body.append(el("div", { className: "dh-id" }, [
+    el("div", { className: "sr-logo", "data-tie": stock.ethics.israelTie }, stock.ticker.slice(0, 2)),
+    el("div", { className: "dh-name" }, [
+      el("div", { className: "dh-ticker" }, stock.ticker),
+      el("div", { className: "dh-company" }, stock.name),
+    ]),
+    refBtn, starBtn,
+  ]));
+
+  // Harga besar di kiri, dua skor inti di kanan — seperti blok harga +
+  // Open/High/Low/Prev di Pluang.
+  body.append(el("div", { className: "dh-top" }, [
+    el("div", { className: "dh-price-col" }, [
+      el("div", { className: "dh-price" }, usd(price)),
+      chg != null
+        ? el("div", { className: "dh-chg " + (chg >= 0 ? "up" : "down") }, signedPct(chg))
+        : el("div", { className: "dh-chg muted" }, "perubahan harian belum tersedia"),
+    ]),
+    el("div", { className: "dh-scores" }, [
+      el("div", { className: "dh-score" }, [
+        el("span", { className: "dh-score-lbl" }, "Komposit"),
+        el("span", { className: "dh-score-val " + scoreColor(composite) }, String(composite)),
+      ]),
+      el("div", { className: "dh-score" }, [
+        el("span", { className: "dh-score-lbl" }, "Etis (" + state.mode + ")"),
+        el("span", { className: "dh-score-val " + (adj === null ? "excl" : scoreColor(adj)) },
+           adj === null ? "✗" : String(adj)),
+      ]),
+    ]),
+  ]));
+
+  // Grid statistik selebar penuh — 3 kolom seperti Key Stats Pluang.
+  body.append(keyStats([
+    ["Sektor", stock.sector],
+    ["Etika", badge.label, "tie-" + badge.color],
+    ["Dividen", f.dividendYield ? pct(f.dividendYield) : "—", f.dividendYield ? "up" : ""],
+    ["Market Cap", f.marketCapB >= 1000 ? usd(f.marketCapB / 1000, 2) + "T" : usd(f.marketCapB, 0) + "B"],
+    ["Payout", f.payoutRatio ? pct(f.payoutRatio, 0) : "—"],
+    ["Analis", an && an.numAnalysts ? an.numAnalysts + " analis" : "—"],
+  ]));
 
   // Advice strip
   body.append(adviceStrip(verdict));
 
-  // Score header strip
-  const scoreColor = v => v >= 60 ? "up" : v >= 40 ? "flat" : "down";
-  const price = ADVICE.priceOf(stock.ticker);
-  body.append(
-    el("div", { className: "modal-score-header" }, [
-      el("div", { className: "msh-item" }, [
-        el("div", { className: "msh-val " + scoreColor(composite) }, String(composite)),
-        el("div", { className: "msh-lbl" }, "Komposit"),
-      ]),
-      el("div", { className: "msh-item" }, [
-        el("div", { className: "msh-val " + (adj === null ? "excl" : scoreColor(adj)) }, adj === null ? "✗" : String(adj)),
-        el("div", { className: "msh-lbl" }, "Etis (" + state.mode + ")"),
-      ]),
-      el("div", { className: "msh-item" }, [
-        el("div", { className: "msh-val flat" }, usd(price)),
-        el("div", { className: "msh-lbl" }, "Harga"),
-      ]),
-      el("div", { className: "msh-item" }, [
-        el("span", { className: "badge badge-" + badge.color }, badge.label),
-        el("div", { className: "msh-lbl" }, "Etika"),
-      ]),
-    ])
-  );
+  // Ringkasan arah 7 sinyal — pola "Analisis Teknikal" di Pluang
+  body.append(signalSummary(s));
 
   // Tab nav
   const tabLabels = ["Ringkasan", "Grafik Harga", "Detail Sinyal", "Profil & Etika"];
