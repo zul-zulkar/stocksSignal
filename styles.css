@@ -247,38 +247,81 @@ main {
 .card h2 { margin: 0 0 12px; font-size: 15px; letter-spacing: 0.2px; }
 .card .subtitle { color: var(--muted); margin: -8px 0 12px; font-size: 12px; }
 
-/* ── Controls bar ── */
+/* ── Baris filter — chip ala Pluang, bisa digeser mendatar ────────
+   Pluang memakai deretan pill outline ("AI Stocks", "Shariah-Compliant",
+   "Geo Tensions") yang di-scroll horizontal, bukan dropdown bertumpuk. */
 .controls {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 2px 0 4px;
+  margin: 0 -4px;
+  scroll-padding: 4px;
 }
+.controls::-webkit-scrollbar { display: none; }
+.controls > * { scroll-snap-align: start; }
 .controls label {
+  display: inline-flex; align-items: center; gap: 6px;
+  flex: 0 0 auto;
   color: var(--muted);
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.controls select, .controls input[type=text] {
-  background: var(--panel-2);
-  color: var(--text);
+  font-size: 11px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.04em;
+  background: transparent;
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 10px 12px;
-  font-size: 14px;
+  border-radius: var(--r-pill);
+  padding: 0 4px 0 14px;
   min-height: 40px;
-  font-family: inherit;
+  white-space: nowrap;
 }
-.controls input[type=text] { -webkit-appearance: none; appearance: none; }
-.controls .pill {
+.controls select {
+  background: transparent;
+  color: var(--text);
+  border: none;
+  padding: 8px 10px 8px 2px;
+  font-size: 13px; font-weight: 600;
+  min-height: 38px;
+  font-family: inherit;
+  max-width: 46vw;
+  cursor: pointer;
+}
+.controls select:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+/* Pencarian: pill abu lembut dengan ikon kaca pembesar, seperti Pluang */
+.controls label.search-field {
+  flex: 1 0 190px;
+  padding: 0 14px;
   background: var(--panel-2);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 5px 12px;
+  border-color: transparent;
+  gap: 8px;
+}
+.controls label.search-field::before {
+  content: "⌕";
+  font-size: 19px; line-height: 1; color: var(--muted); font-weight: 400;
+}
+.controls input[type=text] {
+  background: transparent;
+  color: var(--text);
+  border: none;
+  padding: 9px 0;
+  font-size: 14px;
+  min-height: 38px;
+  width: 100%;
+  font-family: inherit;
+  -webkit-appearance: none; appearance: none;
+}
+.controls input[type=text]::placeholder { color: var(--muted); }
+.controls input[type=text]:focus { outline: none; }
+.controls .pill {
+  flex: 0 0 auto;
+  background: var(--panel-2);
+  border: 1px solid transparent;
+  border-radius: var(--r-pill);
+  padding: 7px 14px;
   font-size: 12px;
   color: var(--muted);
+  white-space: nowrap;
 }
 
 /* ── Desktop table ── */
@@ -341,6 +384,63 @@ tr.row-clickable:hover { background: var(--panel-2); }
   margin-bottom: 12px; gap: 8px;
 }
 .stock-card .row2 .cname { font-size: 12px; color: var(--muted); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+
+/* ── Baris saham ala Pluang ────────────────────────────────────────
+   [monogram] [ticker + nama] [harga + skor] [aksi]
+   Pluang menaruh sparkline di slot ketiga; kita tidak punya riwayat harga
+   per saham, jadi slot itu diisi skor & badge Aksi — inti produk ini. */
+.stock-row {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 4px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  -webkit-user-select: none;
+  transition: background 0.15s;
+}
+.stock-row:active { background: var(--panel-2); }
+.stock-row.excluded { opacity: 0.5; }
+
+.sr-logo {
+  width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 800; letter-spacing: -0.3px;
+  background: var(--panel-2); color: var(--muted);
+}
+/* Monogram diwarnai status etis — sinyal paling penting di produk ini,
+   terbaca sebelum angka apa pun dibaca. */
+.sr-logo[data-tie="none"],
+.sr-logo[data-tie="low"]     { background: rgba(40, 217, 41, 0.14); color: var(--green); }
+.sr-logo[data-tie="medium"]  { background: rgba(240, 118, 42, 0.16); color: var(--orange); }
+.sr-logo[data-tie="high"]    { background: rgba(238, 50, 65, 0.16);  color: var(--red); }
+
+.sr-id { min-width: 0; }
+.sr-ticker {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 15px; font-weight: 800; letter-spacing: -0.2px;
+}
+.sr-name {
+  font-size: 12px; color: var(--muted); margin-top: 1px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.sr-meta {
+  display: flex; align-items: center; gap: 6px; margin-top: 5px;
+  flex-wrap: wrap;
+}
+.sr-num { text-align: right; }
+.sr-score {
+  font-size: 19px; font-weight: 800; line-height: 1.1;
+  font-variant-numeric: tabular-nums; color: var(--brand);
+}
+.sr-score.up { color: var(--up); } .sr-score.down { color: var(--down); }
+.sr-score.flat { color: var(--text); }
+.sr-num .price-cell { display: block; font-size: 13px; }
+.sr-act { display: flex; flex-direction: column; gap: 6px; }
+.sr-act .icon-btn { width: 30px; height: 30px; font-size: 13px; }
+.analyst-mini { font-size: 11px; color: var(--muted); }
 
 .signals-mini { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
 .sig-pill { background: var(--bg); border-radius: 7px; padding: 6px 4px 5px; text-align: center; }
@@ -630,7 +730,7 @@ details[open] .guide-hint { opacity: 0; }
   .card { padding: 14px 12px; border-radius: 10px; }
   .card h2 { font-size: 14px; margin-bottom: 8px; }
 
-  /* Controls: sticky + column layout */
+  /* Baris chip menempel saat scroll — tetap mendatar, seperti Pluang */
   .controls {
     position: sticky;
     top: 0;
@@ -640,22 +740,9 @@ details[open] .guide-hint { opacity: 0; }
     border-radius: 0;
     margin: -14px -12px 12px;
     padding: 10px 12px;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-    box-shadow: var(--shadow-pop);
   }
-  .controls label {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  .controls label > span { min-width: 72px; }
   .controls select, .controls input[type=text] {
-    flex: 1;
-    font-size: 16px; /* prevent iOS auto-zoom */
-    padding: 9px 10px;
+    font-size: 16px;   /* ≥16px supaya iOS tidak auto-zoom saat fokus */
   }
   .controls .pill { display: none; }
 
@@ -935,11 +1022,8 @@ details[open] .guide-hint { opacity: 0; }
   .kpi .val { font-size: 18px; }
   .kpi .lbl { font-size: 10px; }
 
-  /* Sticky filter bar untuk akses cepat saat scroll */
+  /* Baris chip menempel saat scroll */
   .controls {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
     position: sticky;
     top: 0;
     z-index: 5;
@@ -948,11 +1032,7 @@ details[open] .guide-hint { opacity: 0; }
     padding: 12px 14px;
     border-bottom: 1px solid var(--border);
   }
-  .controls label { width: 100%; }
-  .controls select, .controls input[type=text] {
-    width: 100%;
-    font-size: 16px; /* hindari iOS zoom */
-  }
+  .controls select, .controls input[type=text] { font-size: 16px; }
   .controls .pill { display: none; }
 
   /* Sembunyikan tabel di mobile, pakai card list */

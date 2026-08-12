@@ -247,32 +247,29 @@ function renderMobileCard(stock, opts = {}) {
 
   const analystMini = (an && an.numAnalysts > 0)
     ? el("span", { className: "analyst-mini" },
-        "📊 " + ADVICE.ratingLabel(an.rating) + (an.targetMean ? " · 🎯 $" + an.targetMean : ""))
-    : el("span", { className: "analyst-mini muted" }, "analis —");
+        ADVICE.ratingLabel(an.rating) + (an.targetMean ? " · target " + usd(an.targetMean) : ""))
+    : null;
 
-  const card = el("div", { className: "stock-card" + (adj === null ? " excluded" : ""), onClick: () => openDetail(stock) }, [
-    el("div", { className: "row1" }, [
-      el("span", { className: "ticker" }, stock.ticker),
-      actionBadge(v),
-      el("span", { className: "spacer" }),
-      el("span", { className: "score" + scoreCls(adj) }, adj === null ? "✗" : String(adj)),
+  // Tata letak baris ala Pluang: [monogram] [ticker + nama] [aksi] [harga + skor].
+  // Pluang menaruh sparkline di slot ketiga; kita tidak punya riwayat harga
+  // per saham, jadi slot itu diisi hal yang justru jadi inti produk ini —
+  // badge Aksi dan skor etis — daripada memalsukan grafik.
+  const card = el("div", { className: "stock-row" + (adj === null ? " excluded" : ""), onClick: () => openDetail(stock) }, [
+    el("div", { className: "sr-logo", "data-tie": stock.ethics.israelTie }, stock.ticker.slice(0, 2)),
+    el("div", { className: "sr-id" }, [
+      el("div", { className: "sr-ticker" }, [stock.ticker, actionBadge(v)]),
+      el("div", { className: "sr-name" }, stock.name),
+      el("div", { className: "sr-meta" }, [
+        el("span", { className: "badge badge-" + badge.color }, badge.label),
+        analystMini,
+      ]),
     ]),
-    el("div", { className: "row2" }, [
-      el("span", { className: "name" }, stock.name),
-      el("span", { className: "badge badge-" + badge.color }, badge.label),
-    ]),
-    el("div", { className: "row3" }, [
+    el("div", { className: "sr-num" }, [
       priceCell(price, chg),
-      analystMini,
-      el("span", { className: "spacer" }),
-      ref, star,
+      el("div", { className: "sr-score" + scoreCls(adj) },
+        adj === null ? "✗" : String(adj)),
     ]),
-    el("div", { className: "signals-mini" }, [
-      miniSig("Tek", s.technical),
-      miniSig("Mom", s.momentum || 0),
-      miniSig("Val", s.valuation || 0),
-      miniSig("Pro", s.profile),
-    ]),
+    el("div", { className: "sr-act" }, [ref, star]),
   ]);
   if (state.view === "watchlist") card.append(holdingEditor(stock, price));
   return card;
