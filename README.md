@@ -61,7 +61,7 @@ python -m http.server 8000   # lalu buka http://localhost:8000
 
 ### 2. Cara data diperbarui
 
-Ada 4 jalur. **Untuk mengubah angka sendiri = (D). Untuk tarik data pasar = (B).**
+Ada 3 jalur. **Yang paling andal = dari laptop (B).**
 
 **A. Otomatis (terjadwal) — GitHub Actions.** `refresh.yml` jalan **tiap Senin 08:00 WIB**, `refresh-and-deploy.yml` **4× sehari** (hari kerja). Keduanya menjalankan `scripts/fetch_signals.py` (yfinance) lalu commit + deploy.
 > ⚠️ **Catatan penting:** Yahoo Finance sering **rate-limit / blokir IP datacenter GitHub**, jadi sebuah run terjadwal bisa hanya memperbarui sebagian (atau, jarang, nol) ticker. Run terjadwal berikutnya melengkapinya. Skrip punya **safeguard**: kalau 0 ticker berhasil, `data/*` **tidak ditimpa** sehingga dashboard tetap menampilkan status valid terakhir (tak muncul badge keliru "0/984").
@@ -79,28 +79,7 @@ Ini memperbarui **semua**: teknikal, momentum, berita, kualitas, valuasi, fundam
 - **Update Penuh** (header) — memicu `refresh.yml` di GitHub via API. Butuh PAT izin **Actions: Read and write**. (Tetap tunduk pada batasan yfinance↔GitHub di atas.)
 - **Refresh** & **↻ per-saham** — menarik harga+teknikal dari Stooq lewat *CORS proxy publik*. **Rapuh**: proxy sering down, dan di **Safari iOS** kerap muncul "Load failed". Untuk hasil pasti, pakai jalur A/B.
 
-**D. Edit sinyal manual dari HP (tidak butuh jaringan saat mengedit).**
-Tap sebuah saham → tab **✏️ Edit** → geser slider untuk mengubah nilai 7 faktor. Tidak ada fetch harga sama sekali, jadi jalur ini kebal terhadap masalah CORS proxy maupun rate-limit Yahoo.
-
-- Perubahan tersimpan otomatis sebagai **draft di `localStorage`**, dan efeknya langsung terlihat: komposit, radar, rekomendasi aksi, tabel, KPI, dan Forever Pocket ikut berubah.
-- Tombol **✏ Simpan N edit** muncul di header selama masih ada draft → tap untuk commit ke `data/signals-manual.js` lewat Contents API (PAT sama seperti Refresh).
-- Tombol **↺** per faktor mengembalikan satu nilai ke baseline; **↺ Reset semua faktor** membersihkan seluruh edit untuk ticker itu.
-- Ticker yang punya edit manual ditandai **✏** kecil di tabel dan kartu mobile.
-
-**Urutan lapis data** — yang di bawah menang:
-
-| Lapis | File | Isi |
-|---|---|---|
-| 1. baseline | `data/stocks.js` | 7 faktor, dari `fetch_signals.py` |
-| 2. auto | `data/signals-overlay.js` | hanya `technical`, dari Stooq |
-| 3. manual | `data/signals-manual.js` | subset bebas dari 7 faktor |
-| 4. draft | `localStorage` | edit yang belum di-commit |
-
-Edit manual **tidak pernah menyentuh `data/stocks.js`**, jadi refresh terjadwal (A) dan `fetch_signals.py` (B) tetap aman dijalankan — edit manual tetap menang di atasnya.
-
-**Dunia 3D ikut menyesuaikan.** `world.html` membaca `data/world-data.js` yang skornya sudah dihitung di muka, jadi `js/world/manual.js` menambal dataset itu di memori tiap page load: skor komposit, ketiga skor ter-adjust etis, verdict Aksi, dan daftar Forever Pocket dihitung ulang lewat `js/signals.js` + `js/advice.js` yang sama dengan dashboard. Hanya ticker yang benar-benar diedit yang disentuh; sisanya dibiarkan persis seperti hasil `build_world_data.py`.
-
-**Setup PAT (untuk tombol Refresh/Update Penuh/Simpan edit):** [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new) → Only select repositories `zul-zulkar/stocksSignal` → Permissions → **Contents: Read and write** + **Actions: Read and write** → Generate → paste ke modal di dashboard (disimpan di `localStorage` HP saja).
+**Setup PAT (untuk tombol Refresh/Update Penuh):** [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new) → Only select repositories `zul-zulkar/stocksSignal` → Permissions → **Contents: Read and write** + **Actions: Read and write** → Generate → paste ke modal di dashboard (disimpan di `localStorage` HP saja).
 
 ### 3. Pakai di Pluang
 - Buka tab **Forever Pocket** di dashboard.
@@ -214,18 +193,16 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │   ├── stocks.js           # Universe 984 ticker + dataset etika + 7 sinyal
 │   ├── analyst.js          # Rekomendasi & target harga analis (yfinance)
 │   ├── signals-overlay.js  # Overlay teknikal hasil tombol Refresh (Stooq)
-│   ├── signals-manual.js   # Edit sinyal manual dari tab "Edit" di dashboard
 │   ├── meta.js             # Status refresh terakhir
 │   └── world-data.js       # Dataset ringkas untuk world.html (auto-generated)
 ├── js/
 │   ├── signals.js          # Skor komposit 7-faktor + filter etis + Forever Pocket
 │   ├── advice.js           # Verdict Aksi (Beli/Tahan/Jual) + target/upside
 │   ├── watchlist.js        # Watchlist & portofolio (localStorage)
-│   ├── refresh.js          # Lapis data: Stooq, edit manual, commit/dispatch GitHub
-│   ├── app.js              # Render UI, views, modal, editor sinyal, gestur, tema
+│   ├── refresh.js          # Refresh Stooq + commit/dispatch GitHub
+│   ├── app.js              # Render UI, views, modal, gestur, tema, wiring
 │   ├── compare.js          # Logika halaman bandingkan
 │   └── world/              # Modul dunia 3D imersif (three.js, ES modules)
-│       └── manual.js       # Terapkan lapis edit manual ke dataset dunia
 │       ├── scene.js        # World golden-hour: terrain, matahari, monolit, kamera
 │       ├── curate.js       # Kurasi cast tiap babak dari dataset
 │       ├── overlay.js      # Narasi, label in-world, ticker, tweak kamera
@@ -284,7 +261,7 @@ pip install "pandas>=2.0"        # untuk uji sinyal teknikal (opsional)
 python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-**JavaScript** (`signals.js`, `advice.js`, `refresh.js`, `watchlist.js`, lapis manual) — butuh Node ≥ 18:
+**JavaScript** (`signals.js`, `advice.js`, `refresh.js`, `watchlist.js`) — butuh Node ≥ 18:
 ```bash
 node --test tests/js/
 ```

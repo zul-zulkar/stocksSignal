@@ -13,9 +13,6 @@
   const REPO_NAME  = "stocksSignal";
   const BRANCH     = "main";
   const PAT_KEY    = "githubPAT";
-  const DRAFT_KEY  = "signalManualDraft";
-
-  const SIGNAL_KEYS = ["technical","momentum","sentiment","news","policy","profile","valuation"];
 
   // ---------- localStorage PAT ----------
   function getPAT()        { try { return localStorage.getItem(PAT_KEY); } catch { return null; } }
@@ -295,169 +292,24 @@
     };
   }
 
-  // =====================================================================
-  // Lapis manual — edit sinyal dari HP tanpa fetch harga sama sekali.
-  // =====================================================================
-  // Nilai akhir sebuah sinyal = tumpukan 4 lapis, yang di bawah menang:
-  //   1. baseline  data/stocks.js
-  //   2. auto      data/signals-overlay.js  (hanya `technical`, dari Stooq)
-  //   3. manual    data/signals-manual.js   (subset bebas dari 7 faktor)
-  //   4. draft     localStorage             (edit yang belum di-commit)
-  // Lapis manual sengaja dipisah dari lapis auto supaya refresh Stooq/Actions
-  // tidak pernah menimpa edit tangan, dan keduanya tidak rebutan file sama.
-
-  // ---------- Draft di localStorage ----------
-  function getDraft() {
-    try {
-      const raw = localStorage.getItem(DRAFT_KEY);
-      const d = raw ? JSON.parse(raw) : {};
-      return d && typeof d === "object" ? d : {};
-    } catch { return {}; }
-  }
-  function saveDraft(draft) {
-    try { localStorage.setItem(DRAFT_KEY, JSON.stringify(draft || {})); } catch {}
-  }
-  function clearDraft() {
-    try { localStorage.removeItem(DRAFT_KEY); } catch {}
-  }
-  function draftCount() { return Object.keys(getDraft()).length; }
-
-  // Nilai baseline sebuah faktor (setelah lapis auto, sebelum lapis manual).
-  // Dipakai untuk menentukan apakah sebuah edit masih "beda dari asli".
-  function baselineSignal(ticker, key) {
-    const universe = window.STOCK_UNIVERSE || [];
-    const stock = universe.find(s => s.ticker === ticker);
-    if (!stock) return null;
-    const base = stock._base || stock.signals || {};
-    if (key === "technical") {
-      const o = (window.SIGNAL_OVERLAY || {})[ticker];
-      if (o && Number.isFinite(o.technical)) return o.technical;
-    }
-    return Number.isFinite(base[key]) ? base[key] : 0;
-  }
-
-  // Set satu faktor di draft. Mengembalikan draft yang sama (dimutasi).
-  // Kalau nilainya sama dengan baseline, key-nya dibuang — itu yang bikin
-  // tombol reset bekerja dan draft tidak menggembung oleh nilai identik.
-  function setManualSignal(draft, ticker, key, value) {
-    if (!draft || typeof draft !== "object") draft = {};
-    const entry = draft[ticker] || { signals: {} };
-    if (!entry.signals) entry.signals = {};
-
-    if (value === null || value === undefined || !Number.isFinite(Number(value))) {
-      delete entry.signals[key];
-    } else {
-      const v = clamp(Math.round(Number(value)), -100, 100);
-      if (v === baselineSignal(ticker, key)) delete entry.signals[key];
-      else entry.signals[key] = v;
-    }
-
-    const hasSignals = Object.keys(entry.signals).length > 0;
-    const hasNote = typeof entry.note === "string" && entry.note.trim() !== "";
-    if (!hasSignals && !hasNote) delete draft[ticker];
-    else {
-      entry.editedAt = new Date().toISOString();
-      draft[ticker] = entry;
-    }
-    return draft;
-  }
-
-  function setManualNote(draft, ticker, note) {
-    if (!draft || typeof draft !== "object") draft = {};
-    const entry = draft[ticker] || { signals: {} };
-    if (!entry.signals) entry.signals = {};
-    const txt = (note || "").trim();
-    if (txt) entry.note = txt; else delete entry.note;
-
-    const hasSignals = Object.keys(entry.signals).length > 0;
-    if (!hasSignals && !txt) delete draft[ticker];
-    else {
-      entry.editedAt = new Date().toISOString();
-      draft[ticker] = entry;
-    }
-    return draft;
-  }
-
-  // Buang seluruh edit manual (committed + draft) untuk satu ticker.
-  // Perlu tombstone `cleared` supaya entri di file committed ikut kalah.
-  function resetManual(draft, ticker) {
-    if (!draft || typeof draft !== "object") draft = {};
-    const committed = (window.SIGNAL_MANUAL || {})[ticker];
-    if (committed) draft[ticker] = { signals: {}, cleared: true, editedAt: new Date().toISOString() };
-    else delete draft[ticker];
-    return draft;
-  }
-
-  // Gabung file committed dengan draft. Draft menang per-key.
-  function mergedManual() {
-    const committed = window.SIGNAL_MANUAL || {};
-    const draft = getDraft();
-    const out = {};
-    for (const t of new Set([...Object.keys(committed), ...Object.keys(draft)])) {
-      const c = committed[t] || {};
-      const d = draft[t] || {};
-      const signals = d.cleared ? { ...(d.signals || {}) }
-                                : { ...(c.signals || {}), ...(d.signals || {}) };
-      const entry = { signals };
-      const note = d.cleared ? d.note : (d.note !== undefined ? d.note : c.note);
-      if (note) entry.note = note;
-      const editedAt = d.editedAt || c.editedAt;
-      if (editedAt) entry.editedAt = editedAt;
-      if (Object.keys(signals).length || entry.note) out[t] = entry;
-    }
-    return out;
-  }
-
-  // ---------- Apply semua lapis ke STOCK_UNIVERSE ----------
-  function applyLayers() {
-    const universe = window.STOCK_UNIVERSE;
-    if (!universe) return;
+  // ---------- Apply overlay ke STOCK_UNIVERSE saat load ----------
+  function applyOverlay() {
     const ov = window.SIGNAL_OVERLAY || {};
-    const man = mergedManual();
-    universe.forEach(s => {
-      // Snapshot baseline sekali. Tanpa ini, reset edit tidak bisa
-      // mengembalikan nilai asli karena s.signals sudah ditimpa.
-      if (!s._base) s._base = { ...s.signals };
-      s.signals = { ...s._base };
-
+    if (!window.STOCK_UNIVERSE) return;
+    window.STOCK_UNIVERSE.forEach(s => {
       const o = ov[s.ticker];
-      if (o && Number.isFinite(o.technical)) s.signals.technical = o.technical;
-
-      const m = man[s.ticker];
-      if (m && m.signals) {
-        for (const [k, v] of Object.entries(m.signals)) {
-          if (Number.isFinite(v)) s.signals[k] = v;
-        }
+      if (o && Number.isFinite(o.technical)) {
+        s.signals.technical = o.technical;
       }
     });
   }
 
-  // Nama lama tetap dipertahankan — dipakai js/app.js, js/compare.js, tests.
-  const applyOverlay = applyLayers;
-
-  function serializeManual(manual) {
-    const lines = ['// Edit sinyal manual dari dashboard (tab "Edit"). Aman diedit tangan juga.'];
-    lines.push('window.SIGNAL_MANUAL = ' + JSON.stringify(manual, null, 2) + ';');
-    return lines.join('\n') + '\n';
-  }
-
-  async function commitManual(pat, manual) {
-    const today = new Date().toISOString().slice(0, 10);
-    const n = Object.keys(manual).length;
-    const msg = `manual: edit sinyal ${n} ticker dari HP (${today})`;
-    await ghPutFile(pat, "data/signals-manual.js", serializeManual(manual), msg);
-  }
-
   window.REFRESH_LIB = {
-    SIGNAL_KEYS,
     getPAT, setPAT, clearPAT,
     refreshAll, refreshOne, commitOverlay,
     ghDispatchWorkflow, ghLatestRun,
-    applyOverlay, applyLayers, computeTechScore, rsi14, overlayEntry,
+    applyOverlay, computeTechScore, rsi14, overlayEntry,
     serializeOverlay, serializeMeta,
-    stooqSymbol, parseStooqCSV,
-    getDraft, saveDraft, clearDraft, draftCount,
-    baselineSignal, setManualSignal, setManualNote, resetManual,
-    mergedManual, serializeManual, commitManual
+    stooqSymbol, parseStooqCSV
   };
 })();
