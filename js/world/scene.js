@@ -10,18 +10,27 @@ import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
 
 // ---- palette -------------------------------------------------------
+// Dipetakan ke palet gelap Pluang (hitam + limau) supaya dunia memakai
+// bahasa warna yang sama dengan dashboard. Pemetaannya berdasar MAKNA,
+// bukan kemiripan rupa — hijau tetap berarti bersih, merah tetap berarti
+// ter-flag, dan limau (warna merek Pluang mode gelap) menandai peluang:
+//
+//   clean  #71F19A → sewarna badge BERSIH / teks naik di dashboard
+//   shadow #2A0F13 → turunan gelap dari merah "afiliasi kuat" #EE3241
+//   gold   #D7FD52 → warna merek Pluang mode gelap
+//   langit/pasir   → hitam & abu gelap, bukan gurun golden-hour
 const C = {
-  sand: 0xd99f5c,
-  sandDeep: 0x6e4421,
-  horizon: 0xffe6b0,
-  skyTop: 0xd99452,
-  fog: 0xd99a5e,
-  sun: 0xfff2cf,
-  clean: 0x8fd6a0,      // jade — luminous / sovereignty
-  cleanDeep: 0x4f9e6a,
-  gold: 0xffce7a,       // opportunity glow
-  shadow: 0x342b33,     // flagged
-  warn: 0xc98a5b,
+  sand: 0x1a1c20,
+  sandDeep: 0x0a0b0d,
+  horizon: 0x2b3320,
+  skyTop: 0x000000,
+  fog: 0x07080a,
+  sun: 0xd7fd52,
+  clean: 0x71f19a,      // bersih / kedaulatan
+  cleanDeep: 0x28d929,
+  gold: 0xd7fd52,       // peluang
+  shadow: 0x2a0f13,     // ter-flag
+  warn: 0xee3241,
 };
 
 // terrain height — a flat-ish central avenue flanked by dunes
@@ -61,13 +70,13 @@ export function createWorld(canvas, data) {
 
   // ---- lights ------------------------------------------------------
   const sunDir = new THREE.Vector3(58, 86, -640);
-  const key = new THREE.DirectionalLight(0xffdca0, 1.7);
+  const key = new THREE.DirectionalLight(0xe8ffa8, 1.5);
   key.position.copy(sunDir);
   scene.add(key);
   const hemi = new THREE.HemisphereLight(C.skyTop, C.sandDeep, 0.7);
   scene.add(hemi);
-  scene.add(new THREE.AmbientLight(0xffe9c8, 0.25));
-  const fill = new THREE.DirectionalLight(0xffb877, 0.5);
+  scene.add(new THREE.AmbientLight(0x9fb0c0, 0.30));
+  const fill = new THREE.DirectionalLight(0x6f7d8c, 0.45);
   fill.position.set(-40, 30, 60);
   scene.add(fill);
 
@@ -78,7 +87,7 @@ export function createWorld(canvas, data) {
     uniforms: {
       top: { value: new THREE.Color(C.skyTop) },
       mid: { value: new THREE.Color(C.horizon) },
-      bot: { value: new THREE.Color(0xf4d9a8) },
+      bot: { value: new THREE.Color(0x141812) },
     },
     vertexShader: `varying vec3 vP; void main(){ vP = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }`,
     fragmentShader: `
@@ -100,7 +109,7 @@ export function createWorld(canvas, data) {
   sun.position.copy(sunDir);
   scene.add(sun);
   const glowTex = radialTexture();
-  const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, color: 0xffcf86, transparent: true, opacity: 0.6, blending: THREE.AdditiveBlending, depthWrite: false, fog: false }));
+  const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex, color: 0xd7fd52, transparent: true, opacity: 0.55, blending: THREE.AdditiveBlending, depthWrite: false, fog: false }));
   glow.scale.set(200, 200, 1);
   glow.position.copy(sunDir);
   scene.add(glow);
@@ -111,7 +120,7 @@ export function createWorld(canvas, data) {
   tg.rotateX(-Math.PI / 2);
   const pos = tg.attributes.position;
   const colors = [];
-  const cSand = new THREE.Color(C.sand), cDeep = new THREE.Color(C.sandDeep), cWet = new THREE.Color(0x7a8a5a);
+  const cSand = new THREE.Color(C.sand), cDeep = new THREE.Color(C.sandDeep), cWet = new THREE.Color(0x22301f);
   for (let i = 0; i < pos.count; i++) {
     const x = pos.getX(i), z = pos.getZ(i) - 480; // shift so terrain spans the journey
     const y = groundY(x, z);
@@ -163,10 +172,10 @@ export function createWorld(canvas, data) {
     const by = groundY(x, z);
 
     let bodyColor, emiss, emI, rough;
-    if (opts.palette === "gold") { bodyColor = 0x4a3416; emiss = C.gold; emI = 1.4; rough = 0.4; }
-    else if (opts.palette === "clean") { bodyColor = 0x153a25; emiss = C.clean; emI = 1.7; rough = 0.34; }
-    else if (opts.palette === "shadow") { bodyColor = 0x241620; emiss = 0x2a1826; emI = 0.35; rough = 0.92; }
-    else { bodyColor = 0x2c2722; emiss = C.warn; emI = 0.8; rough = 0.6; }
+    if (opts.palette === "gold") { bodyColor = 0x2b3115; emiss = C.gold; emI = 1.4; rough = 0.4; }
+    else if (opts.palette === "clean") { bodyColor = 0x0f2a1b; emiss = C.clean; emI = 1.7; rough = 0.34; }
+    else if (opts.palette === "shadow") { bodyColor = 0x1b0d10; emiss = C.shadow; emI = 0.35; rough = 0.92; }
+    else { bodyColor = 0x241a1c; emiss = C.warn; emI = 0.55; rough = 0.6; }
 
     const geo = new THREE.BoxGeometry(w, h, w);
     geo.translate(0, h / 2, 0);
@@ -255,7 +264,7 @@ export function createWorld(canvas, data) {
   beacon.add(shaft);
   const core = new THREE.Mesh(
     new THREE.CylinderGeometry(0.7, 0.7, 120, 16),
-    new THREE.MeshBasicMaterial({ color: 0xeafff0, fog: false })
+    new THREE.MeshBasicMaterial({ color: 0xd9ffe8, fog: false })
   );
   core.position.y = groundY(bx, bz) + 60;
   beacon.add(core);
@@ -276,7 +285,7 @@ export function createWorld(canvas, data) {
     const by = groundY(x, z);
     const pillar = new THREE.Mesh(
       new THREE.CylinderGeometry(2.6, 3.4, h, 6),
-      new THREE.MeshStandardMaterial({ color: 0xe9d9b8, emissive: C.clean, emissiveIntensity: 0.35, roughness: 0.5, metalness: 0.1 })
+      new THREE.MeshStandardMaterial({ color: 0x1c2a20, emissive: C.clean, emissiveIntensity: 0.35, roughness: 0.5, metalness: 0.1 })
     );
     pillar.position.set(x, by + h / 2, z);
     pillar.userData.stock = o;
@@ -294,7 +303,7 @@ export function createWorld(canvas, data) {
     // lantern
     const lan = new THREE.Mesh(
       new THREE.SphereGeometry(1.3, 12, 12),
-      new THREE.MeshBasicMaterial({ color: 0xffe2a0, fog: false })
+      new THREE.MeshBasicMaterial({ color: C.gold, fog: false })
     );
     const lx = x * 0.4 + (Math.random() - 0.5) * 30, lz = -380 + (Math.random() - 0.5) * 60;
     lan.position.set(lx, 2 + Math.random() * 6, lz);
@@ -309,7 +318,7 @@ export function createWorld(canvas, data) {
   const ents = new THREE.InstancedMesh(entGeo, entMat, N);
   ents.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(N * 3), 3);
   const eState = [];
-  const cAmber = new THREE.Color(0xf0b878), cJade = new THREE.Color(C.clean), cGoldE = new THREE.Color(C.gold);
+  const cAmber = new THREE.Color(0x7e8a5f), cJade = new THREE.Color(C.clean), cGoldE = new THREE.Color(C.gold);
   const dummy = new THREE.Object3D();
   for (let i = 0; i < N; i++) {
     const x = (Math.random() - 0.5) * 320;
@@ -345,7 +354,7 @@ export function createWorld(canvas, data) {
     dpos[i * 3 + 2] = 80 - Math.random() * 600;
   }
   dgeo.setAttribute("position", new THREE.BufferAttribute(dpos, 3));
-  const dust = new THREE.Points(dgeo, new THREE.PointsMaterial({ color: 0xffe6b0, size: 0.7, transparent: true, opacity: 0.55, blending: THREE.AdditiveBlending, depthWrite: false, sizeAttenuation: true }));
+  const dust = new THREE.Points(dgeo, new THREE.PointsMaterial({ color: 0xd7fd52, size: 0.7, transparent: true, opacity: 0.55, blending: THREE.AdditiveBlending, depthWrite: false, sizeAttenuation: true }));
   scene.add(dust);
 
   // ---- camera path -------------------------------------------------

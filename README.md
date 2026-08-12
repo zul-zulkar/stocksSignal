@@ -38,10 +38,10 @@ Dashboard sinyal saham AS yang tersedia di **Pluang**, dengan filter etis terhad
 
 ### 🌅 Stock Signal World — pengalaman 3D imersif (baru)
 
-Selain dashboard klasik, ada **`world.html`** — pasar saham disajikan sebagai **dunia gurun _golden-hour_ yang hidup** (WebGL/three.js). Buka lewat tombol **🌅 Dunia 3D** di header dashboard; tombol **← Dashboard** mengembalikan ke tampilan klasik.
+Selain dashboard klasik, ada **`world.html`** — pasar saham disajikan sebagai **dunia malam yang hidup** (WebGL/three.js), memakai palet gelap Pluang (hitam + limau `#D7FD52`). Buka lewat tombol **🌅 Dunia 3D** di header dashboard; tombol **← Dashboard** mengembalikan ke tampilan klasik.
 
 - **Gulir = melaju** menembus kamera sinematik lewat 4 babak: **Tiba → Peluang → Etika → Forever Pocket**.
-- **Inti emosional etika** — saham berafiliasi kuat _tenggelam ke bayang_, yang bersih _menjulang sebagai pilar giok_ menuju mercusuar kedaulatan Palestina. Mode **Strict / Balanced / Loose** mengubah dunia secara langsung.
+- **Inti emosional etika** — saham berafiliasi kuat _tenggelam ke bayang_ (merah `#EE3241`, warna yang sama dengan tier afiliasi kuat di dashboard), yang bersih _menjulang sebagai pilar hijau_ (`#71F19A`, sewarna badge BERSIH) menuju mercusuar kedaulatan Palestina. Mode **Strict / Balanced / Loose** mengubah dunia secara langsung.
 - **Klik monolit** → kartu detail 7-sinyal; tombol **🔭 Selami Lebih Dalam** memfokuskan kamera + overlay 7 cincin sinyal.
 - **Konsol "Jelajahi Semesta"** — seluruh fitur inti (cari, sektor, sortir, view Semua/Peluang/Watchlist/Dividen, watchlist + portofolio, estimator dividen) dalam estetika dunia.
 - **Tutorial 5-langkah** (muncul sekali, bisa dibuka ulang) + panel **Petunjuk (?)** (Interaksi · 7 Sinyal · Etika · Glosarium).
