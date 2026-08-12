@@ -33,7 +33,7 @@ Dashboard sinyal saham AS yang tersedia di **Pluang**, dengan filter etis terhad
   - **Watchlist + Portofolio** — tandai ★, catat lembar & harga beli, lihat untung/rugi + estimasi dividen tahunan (disimpan di `localStorage`).
   - **Dividen** — diurut yield + estimator pendapatan pasif.
 - **Refresh per-saham** — tombol ↻ di kartu/modal memperbarui harga & teknikal satu saham secara instan (in-memory, tanpa PAT).
-- **Update Penuh** — tombol di header memicu pipeline lengkap di GitHub Actions (`refresh.yml`) via API; butuh PAT izin **Actions: Read and write**.
+- **⟳ Perbarui Data** — satu tombol di header memicu pipeline lengkap di GitHub Actions (`refresh.yml`) via API, lalu memantau progresnya sampai selesai (bertahan lintas reload) dan memuat ulang halaman otomatis. Butuh PAT izin **Actions: Read and write**.
 - **Mobile-friendly & interaktif** — kartu kaya (harga live, %perubahan, badge aksi), gestur **geser-tutup** modal & **tarik-untuk-refresh**, skeleton loading, animasi angka, serta **tema terang/gelap** (tersimpan).
 
 ### 🌅 Stock Signal World — pengalaman 3D imersif (baru)
@@ -75,11 +75,16 @@ git add data/ && git commit -m "data refresh" && git push
 ```
 Ini memperbarui **semua**: teknikal, momentum, berita, kualitas, valuasi, fundamental, **data analis** (`data/analyst.js`), dan sinyal sentimen turunannya. Tambahkan `--limit N` untuk uji cepat.
 
-**C. Tombol di aplikasi.**
-- **Update Penuh** (header) — memicu `refresh.yml` di GitHub via API. Butuh PAT izin **Actions: Read and write**. (Tetap tunduk pada batasan yfinance↔GitHub di atas.)
-- **Refresh** & **↻ per-saham** — menarik harga+teknikal dari Stooq lewat *CORS proxy publik*. **Rapuh**: proxy sering down, dan di **Safari iOS** kerap muncul "Load failed". Untuk hasil pasti, pakai jalur A/B.
+**C. Tombol ⟳ Perbarui Data di header — jalur manual dari HP.**
+Satu tombol yang memicu `refresh.yml` di GitHub Actions lewat API, lalu memantau progresnya. Scrape jalan **di server GitHub**, jadi tidak kena masalah CORS sama sekali.
 
-**Setup PAT (untuk tombol Refresh/Update Penuh):** [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new) → Only select repositories `zul-zulkar/stocksSignal` → Permissions → **Contents: Read and write** + **Actions: Read and write** → Generate → paste ke modal di dashboard (disimpan di `localStorage` HP saja).
+- Butuh PAT dengan izin **Actions: Read and write** (selain **Contents: Read and write**). Tombol **Uji PAT** di modal memeriksa izin itu sebelum kamu pakai, jadi tidak perlu menebak-nebak error 403.
+- Scrape 984 ticker makan **30–60 menit**. Toast menampilkan status dan waktu berjalan, plus tautan ke run-nya di GitHub. Pemantauan **bertahan lintas reload** — tab boleh ditutup, saat dibuka lagi pantauan tersambung sendiri. Begitu selesai, halaman dimuat ulang otomatis.
+- Tetap tunduk pada batasan yfinance↔GitHub di atas: kalau Yahoo rate-limit, sebagian ticker bisa tidak terupdate.
+
+**↻ per-saham & tarik-untuk-refresh** masih memakai Stooq lewat *CORS proxy publik* — **rapuh** (proxy sering down, di Safari iOS kerap "Load failed") dan hasilnya **hanya sementara di memori**, hilang saat reload. Anggap bonus, bukan andalan.
+
+**Setup PAT (untuk tombol Perbarui Data):** [github.com/settings/personal-access-tokens/new](https://github.com/settings/personal-access-tokens/new) → Only select repositories `zul-zulkar/stocksSignal` → Permissions → **Contents: Read and write** + **Actions: Read and write** → Generate → paste ke modal di dashboard (disimpan di `localStorage` HP saja).
 
 ### 3. Pakai di Pluang
 - Buka tab **Forever Pocket** di dashboard.
@@ -178,7 +183,7 @@ GitHub Pages "Deploy from a branch" diam-diam memakai Actions (workflow internal
 **Run terjadwal "gagal" / hanya sebagian ticker ter-update.**
 Wajar — Yahoo me-rate-limit IP runner GitHub. Run terjadwal berikutnya melengkapi. Kalau 0 ticker berhasil, `scripts/fetch_signals.py` **tidak menimpa** `data/*` (dashboard tetap pakai data valid terakhir). Untuk hasil pasti, jalankan dari laptop (jalur B).
 
-**Tombol Refresh / Update Penuh "Load failed" di HP.**
+**Tombol ↻ per-saham "Load failed" di HP.**
 Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / api.github.com. Coba: matikan *Prevent Cross-Site Tracking*, atau pakai browser/laptop lain. Paling pasti: jalankan workflow langsung dari **tab Actions GitHub** (tombol *Run workflow*), atau refresh dari laptop.
 
 ## 📁 Struktur file
@@ -199,7 +204,7 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │   ├── signals.js          # Skor komposit 7-faktor + filter etis + Forever Pocket
 │   ├── advice.js           # Verdict Aksi (Beli/Tahan/Jual) + target/upside
 │   ├── watchlist.js        # Watchlist & portofolio (localStorage)
-│   ├── refresh.js          # Refresh Stooq + commit/dispatch GitHub
+│   ├── refresh.js          # Dispatch & pantau Actions, Stooq best-effort, PAT
 │   ├── app.js              # Render UI, views, modal, gestur, tema, wiring
 │   ├── compare.js          # Logika halaman bandingkan
 │   └── world/              # Modul dunia 3D imersif (three.js, ES modules)
@@ -220,7 +225,7 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │   ├── test_build_world_data.py  # Unit test generator world (unittest)
 │   └── js/*.test.cjs             # Unit test JS (node:test, via vm)
 ├── .github/workflows/
-│   ├── refresh.yml             # Cron Senin + dispatch (tombol Update Penuh)
+│   ├── refresh.yml             # Cron Senin + dispatch (tombol Perbarui Data)
 │   ├── refresh-and-deploy.yml  # Cron 4×/hari + deploy Pages
 │   └── tests.yml               # Jalankan test tiap push/PR
 ├── requirements.txt

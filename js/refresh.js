@@ -273,6 +273,34 @@
     throw new Error(`Dispatch → ${res.status}: ${detail.slice(0, 200)}`);
   }
 
+  // Jadwal pemantauan pipeline. Scrape 984 ticker makan 30–60 menit, jadi
+  // polling harus rapat di awal (terasa responsif) lalu melonggar (hemat rate
+  // limit), dan baru menyerah setelah pipeline itu sendiri pasti mati —
+  // refresh.yml punya timeout-minutes: 55.
+  const DEEP_TIMEOUT_MS = 65 * 60 * 1000;
+  function pollDelay(elapsedMs) {
+    return elapsedMs < 2 * 60 * 1000 ? 10 * 1000 : 30 * 1000;
+  }
+
+  // Cek apakah PAT benar-benar punya izin Actions untuk repo ini, SEBELUM
+  // dipakai. Tanpa ini, 403 baru ketahuan setelah tombol update ditekan.
+  // → { ok, message }
+  async function ghCheckPAT(pat) {
+    if (!pat) return { ok: false, message: "Token kosong." };
+    const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}`;
+    let res;
+    try {
+      res = await fetch(url, { headers: ghHeaders(pat), cache: "no-store" });
+    } catch (e) {
+      return { ok: false, message: "Tidak bisa menghubungi api.github.com: " + e.message };
+    }
+    if (res.ok) return { ok: true, message: "Token valid · izin Actions untuk repo ini aktif." };
+    if (res.status === 401) return { ok: false, message: "Token tidak valid atau sudah kedaluwarsa." };
+    if (res.status === 403) return { ok: false, message: "Token ditolak. Tambah izin Actions: Read and write." };
+    if (res.status === 404) return { ok: false, message: "Repo/workflow tak terlihat oleh token ini. Cek Repository access & izin Actions." };
+    return { ok: false, message: `Gagal memeriksa (HTTP ${res.status}).` };
+  }
+
   // Ambil status run terbaru KHUSUS workflow refresh.yml yang dipicu manual
   // (event=workflow_dispatch) → { status, conclusion, html_url, createdAt }.
   // Penting: jangan pakai endpoint /actions/runs umum, karena bisa mengembalikan
@@ -307,7 +335,8 @@
   window.REFRESH_LIB = {
     getPAT, setPAT, clearPAT,
     refreshAll, refreshOne, commitOverlay,
-    ghDispatchWorkflow, ghLatestRun,
+    ghDispatchWorkflow, ghLatestRun, ghCheckPAT,
+    pollDelay, DEEP_TIMEOUT_MS,
     applyOverlay, computeTechScore, rsi14, overlayEntry,
     serializeOverlay, serializeMeta,
     stooqSymbol, parseStooqCSV

@@ -790,7 +790,7 @@ function openDetail(stock) {
   } else {
     p3.append(el("div", { className: "section" }, [
       el("h4", {}, "Konsensus Analis"),
-      el("p", { className: "note" }, "Data analis belum tersedia. Tap \"Update Penuh\" di atas untuk mengambilnya dari Yahoo Finance."),
+      el("p", { className: "note" }, "Data analis belum tersedia. Tap \"Perbarui Data\" di atas untuk mengambilnya dari Yahoo Finance."),
     ]));
   }
 
@@ -836,9 +836,17 @@ function openDetail(stock) {
 function closeDetail() { $("#modal-bg").classList.remove("show"); }
 
 // ---------- Toast ----------
-function showToast(text, kind = "info") {
+function showToast(text, kind = "info", link = null) {
   const t = $("#toast");
   t.textContent = text;
+  // Dibangun sebagai node, bukan innerHTML — teks pesan bisa memuat balasan
+  // mentah dari API GitHub.
+  if (link && link.href) {
+    t.append(" ");
+    const a = el("a", { href: link.href, target: "_blank", rel: "noopener", className: "toast-link" },
+                 link.label || "lihat");
+    t.append(a);
+  }
   t.className = "toast show " + kind;
 }
 function hideToast(delay = 0) {
@@ -878,72 +886,19 @@ async function refreshCard(ticker, btn) {
     window.REFRESH_LIB.applyOverlay();
     renderList();
     if (state.view === "watchlist") renderPortfolio();
-    showToast(ticker + " diperbarui (sementara). Tap Refresh untuk simpan permanen.", "success");
+    showToast(ticker + " diperbarui — sementara, hilang saat reload.", "success");
     hideToast(3500);
   } catch (e) {
-    showToast("Gagal refresh " + ticker + ": " + e.message, "error");
-    hideToast(5000);
+    // Jalur Stooq lewat CORS proxy publik memang sering mati; arahkan ke
+    // tombol yang jalan server-side dan tidak kena CORS.
+    showToast("Gagal ambil " + ticker + " (proxy Stooq sedang mati). Pakai tombol Perbarui Data di atas.", "error");
+    hideToast(6000);
   } finally {
     if (btn) { btn.disabled = false; btn.classList.remove("spinning"); }
   }
 }
 
 // ---------- Refresh global (Stooq → commit GitHub) ----------
-async function doRefresh() {
-  const lib = window.REFRESH_LIB;
-  const pat = lib.getPAT();
-  if (!pat) { openPATModal("Untuk commit hasil refresh ke GitHub, paste fine-grained PAT dulu."); return; }
-  const btn = $("#refresh-btn");
-  btn.disabled = true; btn.classList.add("loading");
-  showToast("Mengambil data 0/" + window.STOCK_UNIVERSE.length + "…", "info");
-  listSkeleton();
-  try {
-    const tickers = window.STOCK_UNIVERSE.map(s => s.ticker);
-    const { overlay, failed, firstError } = await lib.refreshAll(tickers, (done, total, failedCount) => {
-      showToast(`Mengambil data ${done}/${total}${failedCount ? ` · ${failedCount} gagal` : ""}…`, "info");
-    });
-    const updated = Object.keys(overlay).length;
-    if (updated === 0) {
-      const detail = firstError ? ` · ${firstError.ticker}: ${firstError.reason}` : "";
-      showToast("Semua fetch gagal. Cek koneksi / CORS proxy down." + detail, "error");
-      hideToast(8000);
-      renderList();
-      return;
-    }
-    showToast(`Commit ke GitHub… (${updated} ticker)`, "info");
-    const meta = {
-      lastUpdated: new Date().toISOString(),
-      tickersTotal: tickers.length,
-      tickersUpdated: updated,
-      tickersFailed: failed,
-      source: "Stooq (browser refresh)",
-    };
-    await lib.commitOverlay(pat, overlay, meta);
-    window.SIGNAL_OVERLAY = overlay;
-    window.STOCK_META = meta;
-    lib.applyOverlay();
-    renderFreshness();
-    renderKPIs();
-    renderForever();
-    renderList();
-    showToast(`Selesai · ${updated} ter-refresh${failed.length ? ` · ${failed.length} gagal` : ""}. Pages re-deploy ~1 menit.`, "success");
-    hideToast(5000);
-  } catch (err) {
-    console.error(err);
-    if (/PAT/i.test(err.message)) {
-      showToast(err.message, "error");
-      hideToast(5000);
-      openPATModal(err.message);
-    } else {
-      showToast("Gagal: " + err.message, "error");
-      hideToast(6000);
-    }
-    renderList();
-  } finally {
-    btn.disabled = false; btn.classList.remove("loading");
-  }
-}
-
 // ---------- Refresh cepat (in-memory, top visible) ----------
 async function doQuickRefresh() {
   const tickers = sortRows(currentList()).slice(0, 20).map(s => s.ticker);
@@ -955,59 +910,111 @@ async function doQuickRefresh() {
     window.REFRESH_LIB.applyOverlay();
     renderList(); renderKPIs();
     if (state.view === "watchlist") renderPortfolio();
-    showToast("Harga diperbarui (sementara).", "success");
+    showToast("Harga diperbarui — sementara, hilang saat reload.", "success");
     hideToast(2500);
   } catch (e) {
-    showToast("Gagal: " + e.message, "error");
-    hideToast(4000);
+    showToast("Proxy Stooq sedang mati. Pakai tombol Perbarui Data di atas.", "error");
+    hideToast(5000);
   }
 }
 
-// ---------- Update Penuh (trigger GitHub Actions) ----------
+// ---------- Perbarui Data (trigger + pantau GitHub Actions) ----------
+// Penanda "ada pipeline berjalan" bertahan lintas reload — scrape 984 ticker
+// makan 30–60 menit, jauh lebih lama dari umur satu tab di HP.
+const DEEP_KEY = "ss_deepRun";
+function deepMark(startedAt) {
+  try { localStorage.setItem(DEEP_KEY, String(startedAt)); } catch {}
+}
+function deepClear() {
+  try { localStorage.removeItem(DEEP_KEY); } catch {}
+}
+function deepStartedAt() {
+  try {
+    const v = Number(localStorage.getItem(DEEP_KEY));
+    return Number.isFinite(v) && v > 0 ? v : null;
+  } catch { return null; }
+}
+
 async function doDeepUpdate() {
   const lib = window.REFRESH_LIB;
   const pat = lib.getPAT();
-  if (!pat) { openPATModal("Untuk menjalankan scrape penuh di server, paste PAT (izin Actions: Read and write)."); return; }
+  if (!pat) { openPATModal("Untuk memperbarui data di server, paste PAT dengan izin Actions: Read and write."); return; }
   const btn = $("#deep-update-btn");
   btn.disabled = true; btn.classList.add("loading");
   showToast("Memicu pipeline di GitHub Actions…", "info");
   try {
     await lib.ghDispatchWorkflow(pat);
+    const startedAt = Date.now();
+    deepMark(startedAt);
     showToast("Pipeline dimulai. Memantau status…", "info");
-    pollDeep(pat, 0);
+    pollDeep(pat, startedAt);
   } catch (e) {
     showToast("Gagal memicu: " + e.message, "error");
-    hideToast(6000);
+    hideToast(8000);
     btn.disabled = false; btn.classList.remove("loading");
     if (/PAT|Actions/i.test(e.message)) openPATModal(e.message);
   }
 }
-function pollDeep(pat, tries) {
+
+const { pollDelay, DEEP_TIMEOUT_MS } = window.REFRESH_LIB;
+
+function deepElapsedLabel(elapsedMs) {
+  const m = Math.floor(elapsedMs / 60_000);
+  return m < 1 ? "baru mulai" : m + " menit";
+}
+
+function pollDeep(pat, startedAt) {
   const btn = $("#deep-update-btn");
-  if (tries > 40) {
-    showToast("Masih berjalan… cek tab Actions di GitHub.", "info");
-    hideToast(6000);
-    btn.disabled = false; btn.classList.remove("loading");
+  const stop = () => { btn.disabled = false; btn.classList.remove("loading"); deepClear(); };
+  const elapsed = Date.now() - startedAt;
+
+  if (elapsed > DEEP_TIMEOUT_MS) {
+    showToast("Pemantauan dihentikan setelah 65 menit. Cek tab Actions di GitHub.", "info");
+    hideToast(8000);
+    stop();
     return;
   }
+
   setTimeout(async () => {
     try {
       const run = await window.REFRESH_LIB.ghLatestRun(pat);
       if (run && run.status === "completed") {
-        const ok = run.conclusion === "success";
-        showToast(ok
-          ? "Scrape penuh selesai ✓ Pages re-deploy ~1 menit. Reload halaman nanti."
-          : "Pipeline gagal (" + run.conclusion + "). Cek tab Actions.", ok ? "success" : "error");
-        hideToast(8000);
-        btn.disabled = false; btn.classList.remove("loading");
+        if (run.conclusion === "success") {
+          showToast("Data diperbarui ✓ Halaman dimuat ulang…", "success");
+          stop();
+          setTimeout(() => location.reload(), 3000);
+        } else {
+          showToast("Pipeline gagal (" + run.conclusion + ").", "error",
+                    run.html_url ? { href: run.html_url, label: "lihat log" } : null);
+          hideToast(12000);
+          stop();
+        }
         return;
       }
-      if (run) showToast("Pipeline " + (run.status === "in_progress" ? "berjalan" : "antre") + "… (" + (tries + 1) + ")", "info");
-      pollDeep(pat, tries + 1);
+      if (run) {
+        const state = run.status === "in_progress" ? "berjalan" : "antre";
+        showToast(`Pipeline ${state} · ${deepElapsedLabel(Date.now() - startedAt)}…`, "info",
+                  run.html_url ? { href: run.html_url, label: "lihat progres" } : null);
+      }
+      pollDeep(pat, startedAt);
     } catch (e) {
-      pollDeep(pat, tries + 1);
+      // Gangguan jaringan sesaat jangan sampai membatalkan pemantauan.
+      pollDeep(pat, startedAt);
     }
-  }, 10000);
+  }, pollDelay(elapsed));
+}
+
+// Dipanggil saat load: kalau ada pipeline yang belum kelar, sambung pemantauan.
+function resumeDeepPoll() {
+  const startedAt = deepStartedAt();
+  if (!startedAt) return;
+  if (Date.now() - startedAt > DEEP_TIMEOUT_MS) { deepClear(); return; }
+  const pat = window.REFRESH_LIB.getPAT();
+  if (!pat) { deepClear(); return; }
+  const btn = $("#deep-update-btn");
+  btn.disabled = true; btn.classList.add("loading");
+  showToast(`Melanjutkan pantauan pipeline · ${deepElapsedLabel(Date.now() - startedAt)}…`, "info");
+  pollDeep(pat, startedAt);
 }
 
 // ---------- Freshness badge ----------
@@ -1119,7 +1126,6 @@ function init() {
   renderFreshness();
   populateSectorFilter();
 
-  $("#refresh-btn").addEventListener("click", doRefresh);
   $("#deep-update-btn").addEventListener("click", doDeepUpdate);
   $("#theme-toggle").addEventListener("click", toggleTheme);
 
@@ -1130,6 +1136,16 @@ function init() {
     closePATModal();
     showToast("PAT tersimpan di HP ini. Tap tombol yang tadi lagi.", "success");
     hideToast(3000);
+  });
+  $("#pat-test").addEventListener("click", async () => {
+    const out = $("#pat-test-result");
+    const token = $("#pat-input").value.trim() || window.REFRESH_LIB.getPAT();
+    out.style.display = "";
+    out.style.color = "var(--muted)";
+    out.textContent = "Memeriksa token…";
+    const r = await window.REFRESH_LIB.ghCheckPAT(token);
+    out.style.color = r.ok ? "var(--green)" : "var(--red)";
+    out.textContent = (r.ok ? "✓ " : "✗ ") + r.message;
   });
   $("#pat-forget").addEventListener("click", () => {
     window.REFRESH_LIB.clearPAT();
@@ -1186,6 +1202,7 @@ function init() {
   renderKPIs();
   renderForever();
   setView("all");
+  resumeDeepPoll();
 }
 
 document.addEventListener("DOMContentLoaded", init);

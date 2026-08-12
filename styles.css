@@ -126,6 +126,14 @@ header .palestine-flag::before {
   pointer-events: none;
 }
 .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+.toast-link {
+  color: var(--accent-2);
+  text-decoration: underline;
+  font-weight: 600;
+  pointer-events: auto;   /* .toast sendiri pointer-events:none */
+  white-space: nowrap;
+}
+.toast.show { pointer-events: auto; }
 .toast.success { border-color: var(--green); }
 .toast.error   { border-color: var(--red);   color: #fecaca; }
 
