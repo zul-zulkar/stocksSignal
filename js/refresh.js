@@ -65,25 +65,47 @@
     return ticker.toLowerCase().replace(/\./g, "-") + ".us";
   }
 
+  // Header: Date,Open,High,Low,Close,Volume
+  //
+  // Dulu fungsi ini hanya mengambil kolom Close dan membuang sisanya, padahal
+  // High/Low/Volume dibutuhkan ATR, Stochastic, ADX, OBV, MFI, dan VWAP —
+  // yaitu sebagian besar indikator yang kini dipakai skor teknikal. Kolomnya
+  // memang sudah ada di CSV Stooq; sebelumnya cuma tidak pernah dibaca.
   function parseStooqCSV(csv) {
-    // Header: Date,Open,High,Low,Close,Volume
+    const empty = { closes: [], open: [], high: [], low: [], volume: [], lastDate: null };
     const lines = csv.trim().split(/\r?\n/);
-    if (lines.length < 2) return { closes: [], lastDate: null };
+    if (lines.length < 2) return empty;
     const header = lines[0].toLowerCase().split(",");
-    const closeIdx = header.indexOf("close");
-    const dateIdx  = header.indexOf("date");
-    if (closeIdx < 0) return { closes: [], lastDate: null };
-    const closes = [];
+    const idx = {
+      date: header.indexOf("date"),
+      open: header.indexOf("open"),
+      high: header.indexOf("high"),
+      low: header.indexOf("low"),
+      close: header.indexOf("close"),
+      volume: header.indexOf("volume"),
+    };
+    if (idx.close < 0) return empty;
+
+    const closes = [], open = [], high = [], low = [], volume = [];
     let lastDate = null;
     for (let i = 1; i < lines.length; i++) {
       const parts = lines[i].split(",");
-      const c = parseFloat(parts[closeIdx]);
-      if (Number.isFinite(c)) {
-        closes.push(c);
-        if (dateIdx >= 0) lastDate = parts[dateIdx];
-      }
+      const c = parseFloat(parts[idx.close]);
+      if (!Number.isFinite(c)) continue;
+      // Close yang jadi penentu baris valid; kolom lain punya fallback supaya
+      // satu sel kosong tidak membuang bar yang sebenarnya bisa dipakai.
+      const num = (j, fallback) => {
+        const v = j >= 0 ? parseFloat(parts[j]) : NaN;
+        return Number.isFinite(v) ? v : fallback;
+      };
+      closes.push(c);
+      open.push(num(idx.open, c));
+      high.push(num(idx.high, c));
+      low.push(num(idx.low, c));
+      volume.push(num(idx.volume, 0));
+      if (idx.date >= 0) lastDate = parts[idx.date];
     }
-    return { closes, lastDate };
+    return { closes, open, high, low, volume, lastDate };
   }
 
   // Stooq tidak punya CORS, jadi rangkai via CORS proxy publik.

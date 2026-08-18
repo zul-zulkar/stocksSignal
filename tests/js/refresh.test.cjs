@@ -39,6 +39,39 @@ test("parseStooqCSV: ekstrak closes & lastDate", () => {
   assert.strictEqual(lastDate, "2024-01-02");
 });
 
+test("parseStooqCSV: ekstrak OHLCV penuh, bukan cuma close", () => {
+  // Regresi: versi lama membuang High/Low/Volume, padahal ATR, Stochastic,
+  // ADX, OBV, dan MFI semuanya butuh kolom-kolom itu.
+  const R = ctx().REFRESH_LIB;
+  const csv = "Date,Open,High,Low,Close,Volume\n2024-01-01,1,2,0.5,1.5,1000\n2024-01-02,1.5,2.4,1,1.8,1200\n";
+  const p = R.parseStooqCSV(csv);
+  assert.deepStrictEqual([...p.open], [1, 1.5]);
+  assert.deepStrictEqual([...p.high], [2, 2.4]);
+  assert.deepStrictEqual([...p.low], [0.5, 1]);
+  assert.deepStrictEqual([...p.volume], [1000, 1200]);
+});
+
+test("parseStooqCSV: sel kosong pakai fallback, barisnya tidak dibuang", () => {
+  // Close menentukan baris valid; satu sel bolong tidak boleh membuang bar.
+  const R = ctx().REFRESH_LIB;
+  const csv = "Date,Open,High,Low,Close,Volume\n2024-01-01,,,,1.5,\n";
+  const p = R.parseStooqCSV(csv);
+  assert.deepStrictEqual([...p.closes], [1.5]);
+  assert.deepStrictEqual([...p.high], [1.5], "high jatuh ke close");
+  assert.deepStrictEqual([...p.low], [1.5], "low jatuh ke close");
+  assert.deepStrictEqual([...p.volume], [0], "volume jatuh ke 0");
+});
+
+test("parseStooqCSV: CSV kosong/tanpa kolom close memulangkan bentuk lengkap", () => {
+  const R = ctx().REFRESH_LIB;
+  for (const csv of ["", "Date,Foo\n2024-01-01,1\n"]) {
+    const p = R.parseStooqCSV(csv);
+    assert.deepStrictEqual([...p.closes], []);
+    assert.deepStrictEqual([...p.volume], []);
+    assert.strictEqual(p.lastDate, null);
+  }
+});
+
 test("stooqSymbol: lowercase + ganti titik + .us", () => {
   const R = ctx().REFRESH_LIB;
   assert.strictEqual(R.stooqSymbol("BRK.B"), "brk-b.us");
