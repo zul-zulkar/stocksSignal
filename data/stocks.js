@@ -103,7 +103,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 766 },
-    signals: { technical: 31, momentum: 100, sentiment: 76, news: 0, policy: 5, profile: 55, valuation: -31 }
+    signals: { technical: 31, momentum: 100, sentiment: 76, news: 0, policy: 5, profile: 55, valuation: -30 }
   },
   {
     ticker: "ORCL", name: "Oracle Corp.", sector: "Technology",
@@ -1380,7 +1380,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.36, payoutRatio: 78.6, marketCapB: 137 },
-    signals: { technical: -41, momentum: -86, sentiment: 60, news: 0, policy: 0, profile: 50, valuation: 11 }
+    signals: { technical: -41, momentum: -86, sentiment: 60, news: 0, policy: 0, profile: 50, valuation: 12 }
   },
   {
     ticker: "BTI", name: "British American Tobacco p.l.c.", sector: "Consumer Defensive",
@@ -1479,7 +1479,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 5.56, payoutRatio: 147.7, marketCapB: 111 },
-    signals: { technical: 41, momentum: -42, sentiment: 24, news: 0, policy: 0, profile: 40, valuation: -6 }
+    signals: { technical: 41, momentum: -42, sentiment: 24, news: 0, policy: 0, profile: 40, valuation: -5 }
   },
   {
     ticker: "BMY", name: "Bristol-Myers Squibb Company", sector: "Healthcare",
@@ -1633,7 +1633,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.78, payoutRatio: 50.7, marketCapB: 121 },
-    signals: { technical: 47, momentum: 35, sentiment: 7, news: 0, policy: 0, profile: 60, valuation: 15 }
+    signals: { technical: 47, momentum: 35, sentiment: 7, news: 0, policy: 0, profile: 60, valuation: 16 }
   },
   {
     ticker: "CVS", name: "CVS Health Corporation", sector: "Healthcare",
@@ -5197,7 +5197,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
-    signals: { technical: -44, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: 15, valuation: 16 }
+    signals: { technical: -44, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: 15, valuation: 17 }
   },
   {
     ticker: "DKNG", name: "DraftKings Inc.", sector: "Consumer Cyclical",
