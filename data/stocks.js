@@ -2238,7 +2238,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.52, payoutRatio: 41.7, marketCapB: 82 },
-    signals: { technical: 46, momentum: -6, sentiment: 88, news: 0, policy: 0, profile: 45, valuation: 23 }
+    signals: { technical: 46, momentum: -6, sentiment: 88, news: 0, policy: 0, profile: 45, valuation: 24 }
   },
   {
     ticker: "HLT", name: "Hilton Worldwide Holdings Inc.", sector: "Consumer Cyclical",
@@ -6968,7 +6968,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 13.27, payoutRatio: 17.4, marketCapB: 2 },
-    signals: { technical: -39, momentum: -100, sentiment: 31, news: 0, policy: 0, profile: 15, valuation: 46 }
+    signals: { technical: -39, momentum: -100, sentiment: 31, news: 0, policy: 0, profile: 15, valuation: 45 }
   },
   {
     ticker: "HOG", name: "Harley-Davidson, Inc.", sector: "Consumer Cyclical",
