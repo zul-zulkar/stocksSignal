@@ -2678,7 +2678,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.14, payoutRatio: 6.9, marketCapB: 57 },
-    signals: { technical: 56, momentum: -12, sentiment: 68, news: 0, policy: 0, profile: 35, valuation: -35 }
+    signals: { technical: 56, momentum: -12, sentiment: 68, news: 0, policy: 0, profile: 35, valuation: -34 }
   },
   {
     ticker: "PSA", name: "Public Storage", sector: "Real Estate",
@@ -5890,7 +5890,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.33, payoutRatio: 23.4, marketCapB: 7 },
-    signals: { technical: -39, momentum: -100, sentiment: 45, news: 0, policy: 0, profile: 15, valuation: 44 }
+    signals: { technical: -39, momentum: -100, sentiment: 45, news: 0, policy: 0, profile: 15, valuation: 43 }
   },
   {
     ticker: "CIFR", name: "Cipher Digital Inc.", sector: "Technology",
