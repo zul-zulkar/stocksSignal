@@ -6335,7 +6335,7 @@ window.STOCK_ANALYST = {
     "ratingMean": 1.33,
     "numAnalysts": 6,
     "targetMean": 2.77,
-    "targetHigh": 3.22,
+    "targetHigh": 3.23,
     "targetLow": 2.09,
     "price": 1.83,
     "currency": "USD"
@@ -6446,7 +6446,7 @@ window.STOCK_ANALYST = {
     "numAnalysts": 3,
     "targetMean": 2.85,
     "targetHigh": 4.23,
-    "targetLow": 2.11,
+    "targetLow": 2.12,
     "price": 1.31,
     "currency": "USD"
   },
@@ -6945,7 +6945,7 @@ window.STOCK_ANALYST = {
     "ratingMean": 2.3,
     "numAnalysts": 19,
     "targetMean": 1.4,
-    "targetHigh": 2.54,
+    "targetHigh": 2.55,
     "targetLow": 0.5,
     "price": 0.92,
     "currency": "USD"
