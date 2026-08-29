@@ -6591,13 +6591,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "SEM": {
-    "rating": null,
+    "rating": "none",
     "ratingMean": null,
-    "numAnalysts": 0,
-    "targetMean": null,
-    "targetHigh": null,
-    "targetLow": null,
-    "price": null,
+    "numAnalysts": 3,
+    "targetMean": 16.5,
+    "targetHigh": 16.5,
+    "targetLow": 16.5,
+    "price": 16.51,
     "currency": "USD"
   },
   "GT": {
@@ -7061,8 +7061,8 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "ARKO": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "strong_buy",
+    "ratingMean": 1.5,
     "numAnalysts": 2,
     "targetMean": 9.0,
     "targetHigh": 11.0,
@@ -7341,8 +7341,8 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "ASPN": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.83,
     "numAnalysts": 5,
     "targetMean": 7.75,
     "targetHigh": 10.0,
