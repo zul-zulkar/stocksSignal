@@ -35,12 +35,15 @@ Dashboard sinyal saham AS yang tersedia di **Pluang**, dengan filter etis terhad
   - **Watchlist + Portofolio** — tandai ★, catat lembar & harga beli, lihat untung/rugi + estimasi dividen tahunan (disimpan di `localStorage`).
   - **Dividen** — diurut yield + estimator pendapatan pasif.
 - **Refresh per-saham** — tombol ↻ di kartu/modal memperbarui harga & teknikal satu saham secara instan (in-memory, tanpa PAT).
-- **Update Penuh** — tombol di header memicu pipeline lengkap di GitHub Actions (`refresh.yml`) via API; butuh PAT izin **Actions: Read and write**.
+- **Update Penuh** — dari menu **⋯** di header, memicu pipeline lengkap di GitHub Actions (`refresh.yml`) via API; butuh PAT izin **Actions: Read and write**.
 - **Mobile-friendly & interaktif** — kartu kaya (harga live, %perubahan, badge aksi), gestur **geser-tutup** modal & **tarik-untuk-refresh**, skeleton loading, animasi angka, serta **tema terang/gelap** (tersimpan).
+- **Layout master–detail di desktop** — daftar kartu di kiri, panel detail sticky di kanan; di bawah 1000px detail yang sama muncul sebagai bottom-sheet. Keduanya dibangun fungsi yang sama, jadi isinya tidak bisa menyimpang. Daftar memakai satu komponen kartu di semua lebar (tabel 13 kolom yang dulu ter-scroll mendatar sudah dihapus; urutan diatur lewat dropdown **Urutkan**).
+- **Panduan & glosarium di drawer** — dipanggil dari menu **⋯** di header, bukan lagi menyisip antara KPI dan daftar saham. Header sendiri tinggal judul, status kesegaran data, tombol Refresh, dan menu ⋯ (Update Penuh · Tema · Dunia 3D · Bandingkan · Panduan).
+- **Bisa dijelajahi keyboard** — kartu dan tab bisa difokus (Enter/Space membuka detail), tab pakai panah kiri/kanan dengan `aria-selected` + roving tabindex, dan **Esc** menutup lapisan teratas.
 
 ### 🌅 Stock Signal World — pengalaman 3D imersif (baru)
 
-Selain dashboard klasik, ada **`world.html`** — pasar saham disajikan sebagai **dunia gurun _golden-hour_ yang hidup** (WebGL/three.js). Buka lewat tombol **🌅 Dunia 3D** di header dashboard; tombol **← Dashboard** mengembalikan ke tampilan klasik.
+Selain dashboard klasik, ada **`world.html`** — pasar saham disajikan sebagai **dunia gurun _golden-hour_ yang hidup** (WebGL/three.js). Buka lewat menu **⋯ → 🌅 Dunia 3D** di header dashboard; tombol **← Dashboard** mengembalikan ke tampilan klasik.
 
 - **Gulir = melaju** menembus kamera sinematik lewat 4 babak: **Tiba → Peluang → Etika → Forever Pocket**.
 - **Inti emosional etika** — saham berafiliasi kuat _tenggelam ke bayang_, yang bersih _menjulang sebagai pilar giok_ menuju mercusuar kedaulatan Palestina. Mode **Strict / Balanced / Loose** mengubah dunia secara langsung.
@@ -205,11 +208,17 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │   └── world-data.js       # Dataset ringkas untuk world.html (auto-generated)
 ├── js/
 │   ├── indicators.js       # Indikator teknikal sisi-browser (port dari Python)
+│   ├── narrate.js          # Narasi deterministik (tingkat 0, tanpa LLM)
+│   ├── ai.js               # "Tanya AI" BYOK — panggil Claude dari peramban
+│   ├── lazydata.js         # Pemuat lambat indicators/fundamentals/ai-brief
+│   ├── detail.js           # Panel Analisis & Indikator
+│   ├── nav.js              # Sumber tunggal daftar view (tab + bottom-nav)
+│   ├── theme.js            # Tema terang/gelap (dipakai index & compare)
 │   ├── signals.js          # Skor komposit 7-faktor + filter etis + Forever Pocket
 │   ├── advice.js           # Verdict Aksi (Beli/Tahan/Jual) + target/upside
 │   ├── watchlist.js        # Watchlist & portofolio (localStorage)
 │   ├── refresh.js          # Refresh Stooq + commit/dispatch GitHub
-│   ├── app.js              # Render UI, views, modal, gestur, tema, wiring
+│   ├── app.js              # Render UI, views, master–detail, gestur, wiring
 │   ├── compare.js          # Logika halaman bandingkan
 │   └── world/              # Modul dunia 3D imersif (three.js, ES modules)
 │       ├── scene.js        # World golden-hour: terrain, matahari, monolit, kamera
@@ -221,6 +230,8 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │   ├── indicators.py       # Indikator teknikal + risiko + skoring teknikal
 │   ├── fetch_signals.py    # Refresh penuh (yfinance) → stocks/analyst/indicators/fundamentals
 │   ├── build_indicators.py # Regenerasi indicators.js saja (alat mandiri)
+│   ├── ai_provider.py      # Antarmuka provider AI (Anthropic / Null / lokal nanti)
+│   ├── ai_brief.py         # Brief AI bertingkat → data/ai-brief.js
 │   ├── build_world_data.py # Generate data/world-data.js (skoring = signals.js/advice.js)
 │   ├── review_ethics.py    # Klasifikasi etika cepat (database offline)
 │   ├── scrape_ethics.py    # Scrape etika (Who Profits/BDS/AFSC)
@@ -230,6 +241,7 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │   ├── test_indicators.py        # Unit test indikator + skoring teknikal
 │   ├── test_fetch_signals.py     # Unit test Python (unittest)
 │   ├── test_build_indicators.py  # Unit test generator indikator
+│   ├── test_ai_brief.py          # Unit test orkestrasi brief AI
 │   ├── test_build_world_data.py  # Unit test generator world (unittest)
 │   ├── fixtures/                 # Fixture paritas Python ↔ JS
 │   └── js/*.test.cjs             # Unit test JS (node:test, via vm)
