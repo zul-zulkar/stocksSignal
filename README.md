@@ -10,13 +10,15 @@ Dashboard sinyal saham AS yang tersedia di **Pluang**, dengan filter etis terhad
 
 - **Universe saham** populer Pluang (~984 ticker, mudah ditambah).
 - **7 faktor sinyal** per saham (masing-masing −100…+100, bobot di [Metodologi](#-metodologi-skor)):
-  - **Teknikal** — RSI(14), SMA50/SMA200 crossover, momentum 1 bulan
-  - **Momentum** — return 6 bulan relatif vs S&P 500 (Fama-French)
-  - **Sentimen** — konsensus analis (otomatis dari yfinance) & short interest
-  - **Berita** — heuristik kata-kunci dari headline yfinance
-  - **Makro/Kebijakan** — eksposur regulasi/sanksi/geopolitik (kualitatif)
-  - **Kualitas/Profil** — market cap, margin, dividen, leverage (quality factor)
-  - **Valuasi** — forward P/E vs rata-rata pasar (value factor)
+  - **Teknikal** — 8 sub-sinyal berbobot: susunan EMA + ADX, MACD, RSI, Stochastic, Bollinger %B, konfirmasi volume (OBV), Supertrend, posisi 52 minggu
+  - **Momentum** — return 6 bulan **dan** 12-1 bulan, keduanya relatif vs S&P 500 (Fama-French)
+  - **Sentimen** — konsensus analis + short interest + kepemilikan institusi
+  - **Berita** — rata-rata sentimen judul berbobot recency
+  - **Makro/Kebijakan** — eksposur regulasi/sanksi/geopolitik (kualitatif, satu-satunya yang masih manual)
+  - **Kualitas/Profil** — market cap, margin, dividen, leverage, ROE, FCF yield, likuiditas, pertumbuhan (quality factor)
+  - **Valuasi** — **relatif median sektor** pada 5 metrik (value factor)
+- **~30 indikator teknikal** per saham di `data/indicators.js` — selain yang di atas juga Ichimoku, CCI, Williams %R, MFI, VWAP, ATR, deteksi squeeze Bollinger, golden/death cross beserta umurnya, dan divergence RSI.
+- **Metrik risiko** — beta, volatilitas tahunan, max drawdown, saran stop-loss berbasis ATR, rasio risk/reward, level risiko 1–5. Sengaja **di luar** skor komposit: saham berisiko tinggi bukan otomatis "jelek", ia hanya butuh ukuran posisi berbeda.
 - **Filter etis** 3 mode:
   - `strict` – buang semua saham dengan afiliasi Israel kuat.
   - `balanced` – buang afiliasi kuat, beri penalti 25 poin untuk eksposur sedang.
@@ -105,6 +107,10 @@ Bobot 7-faktor (metodologi Fama-French momentum & quality, AQR "Quality Minus Ju
 
 Setiap sinyal di-skor **−100 … +100**. Komposit dipetakan ke skala **0 – 100**, lalu dikurangi penalti etis.
 
+**Valuasi relatif sektor.** Sebelumnya setiap saham dibandingkan dengan patokan tetap ~20× forward P/E. Patokan tetap seperti itu sebenarnya mengukur *"sektor apa ini"*, bukan *"mahal atau murah dibanding sepadannya"*: seluruh sektor yang secara struktural berdagang di kelipatan tinggi (perangkat lunak) dihukum, dan sektor yang memang selalu murah (bank, energi) dapat hadiah gratis. Sekarang tiap saham dibandingkan dengan **median sektornya sendiri** pada forward P/E, P/B, EV/EBITDA, FCF yield, dan PEG. Sektor dengan kurang dari 5 anggota berdata jatuh ke baseline absolut.
+
+**Paritas Python ↔ JavaScript.** Skor teknikal dihitung dua kali di tempat berbeda: `scripts/indicators.py` (pipeline) dan `js/indicators.js` (tombol Refresh di browser). Keduanya diuji terhadap fixture yang sama di `tests/fixtures/`, jadi tidak bisa melenceng diam-diam — tanpa itu, dashboard bisa menampilkan dua angka berbeda untuk saham yang sama tergantung siapa yang terakhir menyentuhnya.
+
 ### Rekomendasi Aksi
 Skor komposit **bukan** sinyal beli/jual mentah. `js/advice.js` menerjemahkannya jadi verdict **BELI KUAT / BELI / TAHAN / KURANGI / HINDARI** dengan menggabungkan: skor komposit, konsensus analis (`recommendationMean`), upside ke target harga, valuasi, teknikal, dan filter etis. Target harga & % upside diambil dari `data/analyst.js`.
 
@@ -192,10 +198,13 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 ├── data/
 │   ├── stocks.js           # Universe 984 ticker + dataset etika + 7 sinyal
 │   ├── analyst.js          # Rekomendasi & target harga analis (yfinance)
+│   ├── indicators.js       # ~30 indikator teknikal + blok risiko (lazy-load)
+│   ├── fundamentals.js     # Metrik fundamental untuk panel detail (lazy-load)
 │   ├── signals-overlay.js  # Overlay teknikal hasil tombol Refresh (Stooq)
 │   ├── meta.js             # Status refresh terakhir
 │   └── world-data.js       # Dataset ringkas untuk world.html (auto-generated)
 ├── js/
+│   ├── indicators.js       # Indikator teknikal sisi-browser (port dari Python)
 │   ├── signals.js          # Skor komposit 7-faktor + filter etis + Forever Pocket
 │   ├── advice.js           # Verdict Aksi (Beli/Tahan/Jual) + target/upside
 │   ├── watchlist.js        # Watchlist & portofolio (localStorage)
@@ -209,15 +218,20 @@ Browser (terutama **Safari iOS**) memblokir permintaan keluar ke CORS proxy / ap
 │       ├── console.js      # Konsol "Jelajahi Semesta" + kartu detail + dive scene
 │       └── tutorial.js     # Tutorial 5-langkah + panel Petunjuk
 ├── scripts/
-│   ├── fetch_signals.py    # Refresh penuh dari laptop (yfinance) + data analis
+│   ├── indicators.py       # Indikator teknikal + risiko + skoring teknikal
+│   ├── fetch_signals.py    # Refresh penuh (yfinance) → stocks/analyst/indicators/fundamentals
+│   ├── build_indicators.py # Regenerasi indicators.js saja (alat mandiri)
 │   ├── build_world_data.py # Generate data/world-data.js (skoring = signals.js/advice.js)
 │   ├── review_ethics.py    # Klasifikasi etika cepat (database offline)
 │   ├── scrape_ethics.py    # Scrape etika (Who Profits/BDS/AFSC)
 │   ├── add_tickers.py      # Tambah ticker baru massal
 │   └── run_full_update.py  # Orkestrasi pipeline penuh
 ├── tests/
+│   ├── test_indicators.py        # Unit test indikator + skoring teknikal
 │   ├── test_fetch_signals.py     # Unit test Python (unittest)
+│   ├── test_build_indicators.py  # Unit test generator indikator
 │   ├── test_build_world_data.py  # Unit test generator world (unittest)
+│   ├── fixtures/                 # Fixture paritas Python ↔ JS
 │   └── js/*.test.cjs             # Unit test JS (node:test, via vm)
 ├── .github/workflows/
 │   ├── refresh.yml             # Cron Senin + dispatch (tombol Update Penuh)
