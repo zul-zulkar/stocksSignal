@@ -163,15 +163,6 @@ function signalStrip(s) {
   return wrap;
 }
 
-// ---------- Mini signal pill (kartu mobile) ----------
-function miniSig(label, score) {
-  const cls = score > 20 ? "up" : score < -20 ? "down" : "flat";
-  return el("div", { className: "sig " + cls }, [
-    el("div", { className: "lbl" }, label),
-    el("div", { className: "val" }, (score >= 0 ? "+" : "") + score),
-  ]);
-}
-
 // ---------- Aksi / harga ----------
 function actionBadge(v) {
   return el("span", { className: "action-badge action-" + v.color, title: v.rationale }, v.label);

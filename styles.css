@@ -209,9 +209,11 @@ main {
   color: var(--muted);
 }
 
-/* ── Desktop table ── */
-.table-wrap { margin-top: 14px; overflow-x: auto; }
-
+/* ── Tabel ──
+   Tabel daftar saham sudah dihapus (diganti master–detail). Yang tersisa
+   memakai aturan ini: tabel fundamental dan estimator dividen. Aturan
+   header yang bisa diurut (th:hover, th.sorted, tr.row-clickable) ikut
+   dihapus — tak ada lagi tabel yang bisa diurut. */
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th, td {
   text-align: left;
@@ -222,60 +224,12 @@ th, td {
 th {
   font-weight: 600; color: var(--muted); font-size: 11px;
   text-transform: uppercase; letter-spacing: 0.4px;
-  cursor: pointer; user-select: none; white-space: nowrap;
+  user-select: none; white-space: nowrap;
 }
-th:hover { color: var(--text); }
-th.sorted { color: var(--text); }
-th.sorted::after { content: " ▾"; }
-th.sorted.asc::after { content: " ▴"; }
-tr.row-clickable { cursor: pointer; }
-tr.row-clickable:hover { background: var(--panel-2); }
 
 .ticker { font-weight: 700; }
 .name   { color: var(--muted); font-size: 12px; }
 
-/* ── Signal bar (desktop) ── */
-.bar-wrap {
-  background: var(--panel-2); border-radius: 4px; height: 6px; width: 80px;
-  overflow: hidden; display: inline-block; vertical-align: middle; margin-right: 6px;
-}
-.bar-fill { height: 100%; }
-.score-num { font-variant-numeric: tabular-nums; font-weight: 600; }
-.signal-cell { white-space: nowrap; }
-
-/* ── Mobile card list ── */
-.stocks-mobile { display: none; }
-
-.stock-card {
-  background: var(--panel-2);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 14px 16px;
-  cursor: pointer;
-  transition: border-color 0.15s, background 0.15s;
-  -webkit-user-select: none;
-}
-.stock-card:active { background: #232a3a; border-color: var(--accent-2); }
-
-.stock-card .row1 {
-  display: flex; justify-content: space-between; align-items: baseline;
-  margin-bottom: 2px;
-}
-.stock-card .row1 .ticker { font-size: 18px; font-weight: 800; letter-spacing: -0.3px; }
-.card-score { font-size: 22px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
-
-.stock-card .row2 {
-  display: flex; justify-content: space-between; align-items: center;
-  margin-bottom: 12px; gap: 8px;
-}
-.stock-card .row2 .cname { font-size: 12px; color: var(--muted); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-
-.signals-mini { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
-.sig-pill { background: var(--bg); border-radius: 7px; padding: 6px 4px 5px; text-align: center; }
-.sig-label { display: block; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 4px; }
-.sig-bar { height: 5px; background: var(--panel); border-radius: 2px; overflow: hidden; margin-bottom: 4px; }
-.sig-bar-fill { height: 100%; border-radius: 2px; }
-.sig-val { display: block; font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
 
 /* ── Badges ── */
 .badge {
@@ -446,7 +400,6 @@ details[open] .guide-hint { opacity: 0; }
 }
 
 /* Mobile stock card list (hidden on desktop) */
-.stocks-mobile { display: none; flex-direction: column; gap: 10px; }
 .stock-card {
   background: var(--panel-2);
   border: 1px solid var(--border);
@@ -454,6 +407,9 @@ details[open] .guide-hint { opacity: 0; }
   padding: 14px;
   cursor: pointer;
   transition: transform 0.1s, border-color 0.1s;
+  /* Diserap dari blok .stock-card duplikat yang dihapus di atas: satu-satunya
+     properti yang hanya ada di sana. */
+  -webkit-user-select: none;
 }
 .stock-card:active { transform: scale(0.99); border-color: var(--accent-2); }
 .stock-card .row1 {
@@ -470,29 +426,6 @@ details[open] .guide-hint { opacity: 0; }
   flex: 1; font-size: 12px; overflow: hidden;
   text-overflow: ellipsis; white-space: nowrap;
 }
-.stock-card .signals-mini {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 6px;
-  margin-top: 6px;
-}
-.stock-card .sig {
-  background: var(--panel);
-  border-radius: 6px;
-  padding: 6px 4px;
-  text-align: center;
-}
-.stock-card .sig .lbl {
-  font-size: 9px; color: var(--muted);
-  text-transform: uppercase; letter-spacing: 0.4px;
-}
-.stock-card .sig .val {
-  font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums;
-  margin-top: 2px;
-}
-.stock-card .sig.up    .val { color: var(--up); }
-.stock-card .sig.down  .val { color: var(--down); }
-.stock-card .sig.flat  .val { color: var(--text); }
 .stocks-empty { color: var(--muted); font-size: 13px; padding: 20px; text-align: center; }
 
 /* Detail modal */
@@ -545,108 +478,7 @@ details[open] .guide-hint { opacity: 0; }
 /* ════════════════════════════════════
    MOBILE  ≤ 720 px
    ════════════════════════════════════ */
-@media (max-width: 720px) {
-  header {
-    padding: 14px 16px;
-    padding-top: calc(14px + env(safe-area-inset-top, 0px));
-  }
-  header h1 { font-size: 17px; }
-  header p  { font-size: 11px; }
 
-  main { padding: 12px 12px calc(64px + env(safe-area-inset-bottom, 0px)); gap: 12px; }
-
-  .card { padding: 14px 12px; border-radius: 10px; }
-  .card h2 { font-size: 14px; margin-bottom: 8px; }
-
-  /* Controls: sticky + column layout */
-  .controls {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: var(--panel);
-    border-bottom: 1px solid var(--border);
-    border-radius: 0;
-    margin: -14px -12px 12px;
-    padding: 10px 12px;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  }
-  .controls label {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  .controls label > span { min-width: 72px; }
-  .controls select, .controls input[type=text] {
-    flex: 1;
-    font-size: 16px; /* prevent iOS auto-zoom */
-    padding: 9px 10px;
-  }
-  .controls .pill { display: none; }
-
-  /* KPI: 2 × 2 */
-  .kpi-row { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-  .kpi .val { font-size: 20px; }
-  .kpi .lbl { font-size: 9px; }
-
-  /* Forever: 2 cols, shrink on very small */
-  .forever-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-  .pocket-card { padding: 12px 10px; }
-  .pocket-card .top .ticker { font-size: 14px; }
-  .pocket-card .top .score  { font-size: 16px; }
-
-  /* Table gone, cards appear */
-  .table-wrap { display: none; }
-  .stocks-mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 4px;
-  }
-
-  /* Modal → bottom sheet */
-  .modal-bg { align-items: flex-end; }
-  .modal {
-    width: 100%; max-width: 100%; border-radius: 20px 20px 0 0;
-    padding: 8px 18px 20px;
-    padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
-    max-height: 88vh;
-    animation: slideUp 0.22s ease-out;
-    border-left: none; border-right: none; border-bottom: none;
-  }
-  .modal::before {
-    content: ""; display: block;
-    width: 40px; height: 4px;
-    background: var(--border); border-radius: 2px;
-    margin: 8px auto 14px;
-  }
-  .modal h3 { font-size: 15px; }
-  .modal .close {
-    top: 12px; right: 14px;
-    width: 36px; height: 36px; font-size: 22px;
-  }
-
-  .disclaimer { padding: 12px 12px; }
-
-  /* Guide panel mobile */
-  .guide-title { font-size: 14px; }
-  .indicator-grid { grid-template-columns: 1fr; }
-  .mode-guide-grid { grid-template-columns: 1fr; gap: 6px; }
-  .gl-item { grid-template-columns: 110px 1fr; }
-  .score-guide-grid { gap: 4px; }
-  .sg-item { padding: 6px 8px; font-size: 12px; }
-}
-
-@media (max-width: 380px) {
-  .forever-grid { grid-template-columns: 1fr; }
-  .signals-mini { gap: 4px; }
-  .sig-pill { padding: 5px 2px 4px; }
-  .gl-item { grid-template-columns: 1fr; gap: 2px; }
-  .gl-term { font-size: 11px; }
-}
 
 /* ══════════════════════════════════════════════
    MODAL TABS
@@ -711,16 +543,6 @@ details[open] .guide-hint { opacity: 0; }
   padding: 8px 0 4px;
 }
 
-.tv-chart-wrap {
-  width: 100%;
-  height: 280px;
-  background: var(--panel-2);
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  position: relative;
-}
-.tv-chart-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
 .tv-note { font-size: 12px; color: var(--muted); margin-top: 8px; text-align: center; }
 
 .fund-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 4px; }
@@ -838,84 +660,8 @@ details[open] .guide-hint { opacity: 0; }
 /* ================================================== */
 /* MOBILE                                              */
 /* ================================================== */
-@media (max-width: 720px) {
-  body { font-size: 14px; }
-  header { padding: calc(14px + var(--safe-top)) 16px 14px; }
-  header h1 { font-size: 18px; }
-  header p  { font-size: 12px; }
-  main { padding: 12px; gap: 12px; }
-  .disclaimer { padding: 14px 16px; }
-  .card { padding: 14px; }
-  .card h2 { font-size: 14px; }
-
-  .kpi-row { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-  .kpi { padding: 10px 12px; }
-  .kpi .val { font-size: 18px; }
-  .kpi .lbl { font-size: 10px; }
-
-  /* Sticky filter bar untuk akses cepat saat scroll */
-  .controls {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    background: var(--panel);
-    margin: -14px -14px 12px;
-    padding: 12px 14px;
-    border-bottom: 1px solid var(--border);
-  }
-  .controls label { width: 100%; }
-  .controls select, .controls input[type=text] {
-    width: 100%;
-    font-size: 16px; /* hindari iOS zoom */
-  }
-  .controls .pill { display: none; }
-
-  /* Sembunyikan tabel di mobile, pakai card list */
-  .table-wrap { display: none; }
-  .stocks-mobile { display: flex; }
-
-  .forever-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .pocket-card { padding: 12px; }
-  .pocket-card .top .ticker { font-size: 15px; }
-  .pocket-card .top .score  { font-size: 16px; }
-  .pocket-card .meta { font-size: 11px; }
-
-  /* Modal jadi bottom-sheet di HP */
-  .modal-bg { padding: 0; align-items: flex-end; }
-  .modal {
-    width: 100%;
-    max-width: 100%;
-    max-height: 90vh;
-    border-radius: 16px 16px 0 0;
-    border-bottom: none;
-    padding: 22px 18px calc(22px + var(--safe-bot));
-    animation: slideUp 0.2s ease-out;
-  }
-  .modal::before {
-    content: "";
-    display: block;
-    width: 40px; height: 4px;
-    background: var(--border);
-    border-radius: 2px;
-    margin: -10px auto 14px;
-  }
-  @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
-
-  .stock-card .signals-mini { gap: 4px; }
-  .stock-card .sig { padding: 5px 2px; }
-  .stock-card .sig .lbl { font-size: 8px; }
-  .stock-card .sig .val { font-size: 11px; }
-}
 
 /* HP kecil banget */
-@media (max-width: 360px) {
-  .forever-grid { grid-template-columns: 1fr; }
-  .stock-card .row1 .ticker { font-size: 16px; }
-  .stock-card .row1 .score  { font-size: 20px; }
-}
 
 /* ══════════════════════════════════════════════
    FITUR BARU — Aksi, harga, view, watchlist, tema
@@ -968,7 +714,6 @@ details[open] .guide-hint { opacity: 0; }
 .stock-card .analyst-mini.muted { color: var(--muted); }
 .stock-card .row3 .icon-btn { min-width: 34px; height: 34px; font-size: 15px; }
 .stock-card.excluded { opacity: 0.72; }
-.stock-card .signals-mini { grid-template-columns: repeat(4, 1fr); }
 
 /* Editor posisi (watchlist) */
 .holding-editor {
@@ -1075,23 +820,6 @@ details[open] .guide-hint { opacity: 0; }
 /* Bottom nav (mobile only) */
 .bottom-nav { display: none; }
 
-@media (max-width: 720px) {
-  .view-tabs { display: none; }
-  .pf-kpis { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-  .bottom-nav {
-    display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
-    background: var(--panel); border-top: 1px solid var(--border);
-    padding-bottom: var(--safe-bot);
-    box-shadow: 0 -4px 16px rgba(0,0,0,0.3);
-  }
-  .bn-item {
-    flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
-    background: none; border: none; color: var(--muted);
-    font-size: 10px; font-family: inherit; padding: 8px 0 6px; cursor: pointer;
-  }
-  .bn-item.active { color: var(--accent-2); }
-  .bn-ico { font-size: 18px; line-height: 1; }
-}
 
 /* ── Tema terang ── */
 :root[data-theme="light"] {
@@ -1350,12 +1078,7 @@ summary:focus-visible,
 .sig-seg.up   { background: var(--up); }
 .sig-seg.down { background: var(--down); }
 .sig-seg.flat { background: var(--flat); opacity: 0.55; }
-.th-signals { min-width: 96px; }
 
-/* Baris tabel kini bisa difokus keyboard. */
-tr.row-clickable:focus-visible {
-  outline: 2px solid var(--accent-2); outline-offset: -2px;
-}
 
 /* ================================================== */
 /* MENU HEADER (⋯) + DRAWER BANTUAN                    */
@@ -1429,9 +1152,130 @@ tr.row-clickable:focus-visible {
    jadi jaraknya perlu dikembalikan. */
 .drawer-body .guide-section:first-child { padding-top: 18px; }
 
+
+/* ================================================== */
+/* MOBILE (<=720px)                                    */
+/* ================================================== */
+/* Dulu tiga blok @media terpisah plus satu blok kecil, tersebar di empat
+   tempat di berkas ini. Karena CSS tanpa layer dimenangkan urutan sumber,
+   deklarasi yang tumpang tindih diam-diam saling menimpa: nilai yang
+   ditulis di blok pertama sering bukan nilai yang benar-benar berlaku.
+   Blok ini hasil penggabungannya, memakai nilai yang memang menang. */
 @media (max-width: 720px) {
+  body { font-size: 14px; }
+
+  header { padding: calc(14px + var(--safe-top)) 16px 14px; }
+  header h1 { font-size: 18px; }
+  header p  { font-size: 12px; }
+
+  /* Padding bawah menyediakan ruang untuk bottom-nav yang position:fixed.
+     Blok kedua dulu menimpanya dengan `padding: 12px` polos, sehingga kartu
+     terakhir tertutup navigasi. */
+  main { padding: 12px 12px calc(64px + var(--safe-bot)); gap: 12px; }
+
+  .card { padding: 14px; border-radius: 10px; }
+  .card h2 { font-size: 14px; margin-bottom: 8px; }
+
+  .kpi-row { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .kpi { padding: 10px 12px; }
+  .kpi .val { font-size: 18px; }
+  .kpi .lbl { font-size: 10px; }
+
+  /* Filter bar menempel di atas supaya tetap terjangkau saat men-scroll. */
+  .controls {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    margin: -14px -14px 12px;
+    padding: 12px 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  .controls label {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .controls label > span { min-width: 72px; }
+  .controls select, .controls input[type=text] {
+    flex: 1; width: 100%;
+    font-size: 16px; /* di bawah 16px iOS auto-zoom saat field difokus */
+    padding: 9px 10px;
+  }
+  .controls .pill { display: none; }
+
+  .forever-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .pocket-card { padding: 12px; }
+  .pocket-card .top .ticker { font-size: 15px; }
+  .pocket-card .top .score  { font-size: 16px; }
+  .pocket-card .meta { font-size: 11px; }
+
+  /* Modal jadi bottom-sheet */
+  .modal-bg { padding: 0; align-items: flex-end; }
+  .modal {
+    width: 100%; max-width: 100%;
+    max-height: 90vh;
+    border-radius: 16px 16px 0 0;
+    border-left: none; border-right: none; border-bottom: none;
+    padding: 22px 18px calc(22px + var(--safe-bot));
+    animation: slideUp 0.2s ease-out;
+  }
+  /* Gagang tarik di puncak sheet. */
+  .modal::before {
+    content: ""; display: block;
+    width: 40px; height: 4px;
+    background: var(--border); border-radius: 2px;
+    margin: -10px auto 14px;
+  }
+  @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+  .modal h3 { font-size: 15px; }
+  .modal .close {
+    top: 12px; right: 14px;
+    width: 36px; height: 36px; font-size: 22px;
+  }
+
+  /* Panduan (kini di dalam drawer) */
+  .indicator-grid { grid-template-columns: 1fr; }
+  .mode-guide-grid { grid-template-columns: 1fr; gap: 6px; }
+  .gl-item { grid-template-columns: 110px 1fr; }
+  .score-guide-grid { gap: 4px; }
+  .sg-item { padding: 6px 8px; font-size: 12px; }
+
   .drawer { width: 100%; border-left: none; }
   .hmenu { min-width: 190px; }
+
+  /* Navigasi: segmented tab diganti bottom-nav */
+  .view-tabs { display: none; }
+  .pf-kpis { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .bottom-nav {
+    display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    background: var(--panel); border-top: 1px solid var(--border);
+    padding-bottom: var(--safe-bot);
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.3);
+  }
+  .bn-item {
+    flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
+    background: none; border: none; color: var(--muted);
+    font-size: 10px; font-family: inherit; padding: 8px 0 6px; cursor: pointer;
+  }
+  .bn-item.active { color: var(--accent-2); }
+  .bn-ico { font-size: 18px; line-height: 1; }
+}
+
+/* Layar sangat sempit. Dulu dua blok terpisah pada 380px dan 360px yang
+   isinya tidak saling bertentangan — tidak ada alasan memisahkannya. */
+@media (max-width: 380px) {
+  .forever-grid { grid-template-columns: 1fr; }
+  .gl-item { grid-template-columns: 1fr; gap: 2px; }
+  .gl-term { font-size: 11px; }
+  .stock-card .row1 .ticker { font-size: 16px; }
+  .stock-card .row1 .score  { font-size: 20px; }
 }
 
 /* ================================================== */
