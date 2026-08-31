@@ -801,26 +801,16 @@ details[open] .guide-hint { opacity: 0; }
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 22px;
-  width: min(560px, 100%);
-  max-height: 85vh;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  /* Dulu di sini ada width:min(560px,100%) dan max-height:85vh;overflow:auto —
+     properti modal yang tersalin ke kartu halaman. Akibatnya kartu hasil
+     perbandingan lebih sempit daripada baris header tepat di atasnya, dan
+     isinya bisa ter-scroll di dalam kotaknya sendiri tanpa alasan. */
 }
-.modal h3 { margin: 0 0 4px; padding-right: 32px; }
-.modal .close {
-  position: absolute;
-  top: 8px; right: 8px;
-  width: 36px; height: 36px;
-  cursor: pointer; color: var(--muted);
-  background: none; border: none;
-  font-size: 24px; line-height: 1;
-  border-radius: 8px;
-}
-.modal .close:hover { background: var(--panel-2); color: var(--text); }
-.modal { position: relative; }
-.modal .section { margin-top: 16px; }
-.modal .section h4 { margin: 0 0 6px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
-.modal ul { margin: 4px 0 0 18px; padding: 0; }
+/* Blok .modal duplikat dihapus dari sini. Ia mendefinisikan ulang .modal h3,
+   .close, .section, dan ul yang sudah ada di ~baris 497-515, tanpa scope apa
+   pun — dan karena datang belakangan, ia menang. Yang paling terasa: tombol
+   tutup kehilangan latar, border, dan bentuk lingkarannya di SEMUA modal,
+   bukan hanya di halaman ini. */
 
 /* ================================================== */
 /* TABLET                                              */
@@ -1113,3 +1103,224 @@ details[open] .guide-hint { opacity: 0; }
 }
 :root[data-theme="light"] .stock-card:active { background: var(--panel-2); border-color: var(--accent-2); }
 :root[data-theme="light"] .toast { box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
+
+/* ═══════════════════════════════════════════════════════════════════
+   Skala jarak & radius
+   Sebelumnya tiap nilai adalah angka ajaib di tempat pemakaian
+   (18px 20px, lalu 14px, lalu 10px). Token ini dipakai oleh aturan-aturan
+   baru di bawah; aturan lama dibiarkan apa adanya agar tidak berubah
+   tampilannya tanpa sengaja.
+   ═══════════════════════════════════════════════════════════════════ */
+:root {
+  --s1: 4px;  --s2: 8px;  --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px;
+  --r1: 6px;  --r2: 10px; --r3: 14px; --r-pill: 999px;
+  color-scheme: dark light;
+}
+
+/* Ring fokus. Sebelumnya seluruh 1115 baris CSS hanya punya SATU aturan
+   :focus, jadi menavigasi dashboard ini dengan keyboard praktis membutakan.
+   :focus-visible dipakai supaya klik mouse tidak ikut memunculkan ring. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+  border-radius: var(--r1);
+}
+
+/* Hormati preferensi sistem untuk gerak. Shimmer, spin, marquee, dan
+   animasi angka semuanya berjalan terus-menerus di halaman ini. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   Halaman Bandingkan — 17 class ini dirender js/compare.js tapi TIDAK
+   pernah punya aturan CSS, jadi seluruh hasil perbandingan tampil sebagai
+   div bertumpuk tanpa gaya sama sekali.
+   ═══════════════════════════════════════════════════════════════════ */
+.cmp-headers {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3);
+}
+.cmp-stock-header {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--r3); padding: var(--s4); text-align: center;
+}
+.cmp-stock-header .ticker { font-size: 20px; font-weight: 700; letter-spacing: 0.3px; }
+.cmp-stock-header .name {
+  font-size: 12px; color: var(--muted); margin: 2px 0 var(--s2);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.cmp-stock-header .scores {
+  display: flex; justify-content: center; gap: var(--s5);
+  border-top: 1px solid var(--border); padding-top: var(--s3); margin-top: var(--s2);
+}
+.cmp-sh-score .v { font-size: 22px; font-weight: 700; line-height: 1.1; }
+.cmp-sh-score .l {
+  font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;
+}
+
+/* Baris sinyal: label + dua kolom nilai, disejajarkan dengan header. */
+.cmp-signal-row {
+  display: grid; grid-template-columns: 92px 1fr 1fr;
+  gap: var(--s3); align-items: center; padding: var(--s2) 0;
+  border-bottom: 1px solid var(--border);
+}
+.cmp-signal-row:last-child { border-bottom: none; }
+.csr-label { font-size: 12px; color: var(--muted); }
+.csr-cell {
+  display: flex; align-items: center; gap: var(--s2);
+  padding: var(--s1) var(--s2); border-radius: var(--r1);
+  border: 1px solid transparent;
+}
+/* Pemenang tiap faktor ditandai — itulah gunanya membandingkan. */
+.csr-win { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.csr-score { font-size: 13px; font-weight: 700; min-width: 38px; font-variant-numeric: tabular-nums; }
+.csr-bar { flex: 1; height: 6px; background: var(--panel-2); border-radius: var(--r-pill); overflow: hidden; }
+.csr-bar-fill { height: 100%; border-radius: var(--r-pill); }
+
+.cmp-fund-row {
+  display: grid; grid-template-columns: 116px 1fr 1fr;
+  gap: var(--s3); padding: var(--s2) 0; border-bottom: 1px solid var(--border);
+}
+.cmp-fund-row:last-child { border-bottom: none; }
+.cfr-label { font-size: 12px; color: var(--muted); }
+.cfr-val { font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.cmp-ethics-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3); }
+.cer-item {
+  background: var(--panel-2); border: 1px solid var(--border);
+  border-radius: var(--r2); padding: var(--s3);
+}
+.cer-item .rationale {
+  font-size: 12px; line-height: 1.6; color: var(--text);
+  margin-top: var(--s2);
+}
+.cmp-error {
+  background: color-mix(in srgb, var(--down) 12%, transparent);
+  border: 1px solid var(--down); color: var(--down);
+  border-radius: var(--r2); padding: var(--s3); font-size: 13px;
+}
+
+@media (max-width: 620px) {
+  /* Di layar sempit label kolom pindah ke atas agar angkanya tetap terbaca. */
+  .cmp-signal-row { grid-template-columns: 1fr 1fr; }
+  .cmp-signal-row .csr-label:first-child { grid-column: 1 / -1; }
+  .cmp-fund-row { grid-template-columns: 1fr 1fr; }
+  .cmp-fund-row .cfr-label { grid-column: 1 / -1; }
+  .cmp-headers, .cmp-ethics-row { grid-template-columns: 1fr; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   Panel Analisis — narasi aturan atau brief AI, plus Tanya AI
+   ═══════════════════════════════════════════════════════════════════ */
+.brief-slot { min-height: 90px; }
+.brief-head { display: flex; align-items: center; gap: var(--s2); flex-wrap: wrap; margin-bottom: var(--s3); }
+.src-badge {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase;
+  padding: 3px var(--s2); border-radius: var(--r-pill); border: 1px solid;
+}
+.src-ai { color: var(--accent-2); border-color: var(--accent-2); }
+.src-rule { color: var(--muted); border-color: var(--border); }
+.brief-conf { font-size: 11px; color: var(--muted); }
+.conf-tinggi { color: var(--up); }
+.conf-rendah { color: var(--flat); }
+
+.brief-lede { font-size: 14px; line-height: 1.65; margin: 0 0 var(--s4); }
+.brief-sec { margin-bottom: var(--s3); }
+.brief-sec h5 {
+  margin: 0 0 var(--s1); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.5px; color: var(--muted);
+}
+.brief-sec p { margin: 0; font-size: 13px; line-height: 1.6; }
+.brief-list { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.7; }
+.brief-list.cat-pos li::marker { color: var(--up); }
+.brief-list.cat-neg li::marker { color: var(--down); }
+.brief-levels {
+  display: flex; flex-wrap: wrap; gap: var(--s4);
+  padding: var(--s3) 0; margin-top: var(--s2);
+  border-top: 1px solid var(--border); font-size: 12px; color: var(--muted);
+}
+.brief-levels strong { color: var(--text); font-variant-numeric: tabular-nums; }
+.brief-horizon { flex-basis: 100%; }
+
+/* Tanya AI */
+.ask-box { margin-top: var(--s5); padding-top: var(--s4); border-top: 1px solid var(--border); }
+.ask-box h5 {
+  margin: 0 0 var(--s2); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.5px; color: var(--muted);
+}
+.note.warn { color: var(--orange); }
+.ask-chips { display: flex; flex-wrap: wrap; gap: var(--s2); margin-bottom: var(--s2); }
+.ask-chip {
+  font-family: inherit; font-size: 12px; cursor: pointer;
+  padding: var(--s1) var(--s3); border-radius: var(--r-pill);
+  background: var(--panel-2); border: 1px solid var(--border); color: var(--text);
+}
+.ask-chip:hover { border-color: var(--accent-2); }
+.ask-row { display: flex; gap: var(--s2); }
+.ask-input, .ask-key-input {
+  flex: 1; min-width: 0; font-family: inherit; font-size: 13px;
+  padding: var(--s2) var(--s3); border-radius: var(--r2);
+  background: var(--panel-2); border: 1px solid var(--border); color: var(--text);
+}
+.ask-key-input { width: 100%; margin-bottom: var(--s2); }
+.ask-send, .ask-setup-btn {
+  font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer;
+  padding: var(--s2) var(--s4); border: none; border-radius: var(--r2);
+  background: var(--accent-2); color: var(--bg);
+}
+.ask-send:disabled { opacity: 0.55; cursor: wait; }
+.ask-answer {
+  margin-top: var(--s3); font-size: 13px; line-height: 1.7;
+  white-space: pre-wrap; word-break: break-word;
+}
+.ask-answer.err { color: var(--down); }
+
+/* ═══════════════════════════════════════════════════════════════════
+   Panel Indikator
+   ═══════════════════════════════════════════════════════════════════ */
+.ind-group {
+  margin: var(--s4) 0 var(--s2); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.5px; color: var(--muted);
+}
+.ind-group:first-child { margin-top: 0; }
+.ind-rows { display: flex; flex-direction: column; }
+.ind-row {
+  display: grid; grid-template-columns: 1fr auto auto;
+  gap: var(--s3); align-items: center;
+  padding: var(--s2) 0; border-bottom: 1px solid var(--border);
+}
+.ind-row:last-child { border-bottom: none; }
+.ind-label { font-size: 13px; }
+.ind-label[title] { cursor: help; border-bottom: 1px dotted var(--border); }
+.ind-value { font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+/* Chip keadaan inilah yang mengubah deretan angka jadi terbaca sekilas. */
+.ind-chip {
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px;
+  padding: 2px var(--s2); border-radius: var(--r-pill); min-width: 62px; text-align: center;
+}
+.chip-bull  { color: var(--up);     background: color-mix(in srgb, var(--up) 15%, transparent); }
+.chip-bear  { color: var(--down);   background: color-mix(in srgb, var(--down) 15%, transparent); }
+.chip-flat  { color: var(--muted);  background: var(--panel-2); }
+.chip-weak  { color: var(--flat);   background: var(--panel-2); }
+.chip-watch { color: var(--orange); background: color-mix(in srgb, var(--orange) 15%, transparent); }
+
+/* Bingkai chart. .chart-wrap dan .finviz-chart dirender js/app.js tapi juga
+   tidak pernah punya aturan CSS — gambarnya masuk mentah ke modal gelap. */
+.chart-wrap {
+  border: 1px solid var(--border); border-radius: var(--r2);
+  overflow: hidden; background: var(--panel-2); min-height: 120px;
+}
+.finviz-chart { display: block; width: 100%; height: auto; }
+.tv-note { font-size: 11px; color: var(--muted); margin-top: var(--s2); }
+/* Baris skeleton tabel desktop — pasangan .skeleton-card yang sudah ada. */
+.skeleton-row td { padding: 14px 10px; border-bottom: 1px solid var(--border); }

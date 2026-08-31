@@ -6,6 +6,7 @@
 const { compositeSignal, ethicsAdjustedScore, ethicsBadge, signalBar,
         buildForeverPocket, SIGNAL_WEIGHTS } = window.SIGNAL_LIB;
 const ADVICE = window.ADVICE_LIB;
+const DETAIL = window.DETAIL_LIB;
 const WATCH  = window.WATCH_LIB;
 
 const state = {
@@ -388,8 +389,10 @@ function emptyMsg() {
 function renderList() {
   const tbody = $("#stocks-tbody");
   const mobile = $("#stocks-mobile");
-  tbody.innerHTML = "";
-  mobile.innerHTML = "";
+  // replaceChildren() jauh lebih murah daripada innerHTML="" untuk ~2000
+  // simpul, dan tidak memaksa peramban mengurai ulang HTML.
+  tbody.replaceChildren();
+  mobile.replaceChildren();
   const allowExcluded = state.view === "watchlist";
   const sorted = sortRows(currentList());
   let visible = 0;
@@ -704,7 +707,10 @@ function openDetail(stock) {
   );
 
   // Tab nav
-  const tabLabels = ["Ringkasan", "Grafik Harga", "Detail Sinyal", "Profil & Etika"];
+  // "Analisis" ditaruh pertama: itu yang paling sering ingin dilihat orang
+  // saat membuka sebuah saham, dan satu-satunya tab yang menjawab "kenapa"
+  // alih-alih hanya menampilkan angka.
+  const tabLabels = ["Analisis", "Indikator", "Ringkasan", "Grafik Harga", "Detail Sinyal", "Profil & Etika"];
   const tabNav    = el("div", { className: "modal-tabs" });
   const panels    = [];
   function switchTab(i) {
@@ -716,8 +722,17 @@ function openDetail(stock) {
   });
   body.append(tabNav);
 
-  // Panel 0: Ringkasan
-  const p0 = el("div", { className: "tab-panel" });
+  // Panel: Analisis (narasi aturan atau brief AI) + Tanya AI.
+  // Datanya dimuat lambat, jadi panel ini merender kerangkanya dulu.
+  panels.push(DETAIL.analysisPanel(stock, {
+    composite: composite, verdict: verdict, analyst: an,
+  }));
+
+  // Panel: Indikator (juga lazy)
+  panels.push(DETAIL.indicatorPanel(stock));
+
+  // Panel: Ringkasan
+  const p0 = el("div", { className: "tab-panel", style: "display:none" });
   const radarDiv = el("div", { className: "radar-wrap" });
   radarDiv.innerHTML = radarChart(s, 260);
   p0.append(radarDiv);
@@ -847,14 +862,23 @@ function hideToast(delay = 0) {
 
 // ---------- Skeleton ----------
 function listSkeleton(n = 8) {
+  // Dulu hanya mengisi daftar mobile, sehingga tabel desktop justru KOSONG
+  // total selama refresh — persis saat umpan balik paling dibutuhkan.
   const mobile = $("#stocks-mobile");
-  mobile.innerHTML = "";
+  mobile.replaceChildren();
+  const tbody = $("#stocks-tbody");
+  if (tbody) tbody.replaceChildren();
+
   for (let i = 0; i < n; i++) {
     mobile.append(el("div", { className: "stock-card skeleton-card" }, [
       el("div", { className: "skeleton sk-line w40" }),
       el("div", { className: "skeleton sk-line w70" }),
       el("div", { className: "skeleton sk-line w90" }),
     ]));
+    if (tbody) {
+      tbody.append(el("tr", { className: "skeleton-row" },
+        el("td", { colspan: "13" }, el("div", { className: "skeleton sk-line w90" }))));
+    }
   }
 }
 
@@ -1046,21 +1070,11 @@ function relativeTime(ms) {
 }
 
 // ---------- Tema ----------
-const THEME_KEY = "ss_theme";
-function applyTheme(t) { document.documentElement.dataset.theme = t === "light" ? "light" : "dark"; }
-function initTheme() {
-  let t = "dark";
-  try { t = localStorage.getItem(THEME_KEY) || "dark"; } catch {}
-  applyTheme(t);
-}
-function toggleTheme() {
-  const cur = document.documentElement.dataset.theme === "light" ? "light" : "dark";
-  const next = cur === "light" ? "dark" : "light";
-  applyTheme(next);
-  try { localStorage.setItem(THEME_KEY, next); } catch {}
-}
+// Tema ditangani js/theme.js supaya compare.html ikut menghormatinya.
+const applyTheme  = (t) => window.THEME_LIB.applyTheme(t);
+const initTheme   = () => window.THEME_LIB.initTheme();
+const toggleTheme = () => window.THEME_LIB.toggleTheme();
 
-// ---------- Gestur ----------
 function setupModalSwipe() {
   const modalBg = $("#modal-bg");
   const modal = modalBg.querySelector(".modal");
@@ -1148,8 +1162,14 @@ function init() {
     state.sector = e.target.value; renderList();
     if (state.view === "dividen") renderDividendEstimator();
   });
+  // Pencarian di-debounce: renderList() membangun satu <tr> DAN satu kartu
+  // untuk tiap saham, jadi tanpa jeda ini mengetik "AAPL" berarti membangun
+  // ~8000 subtree DOM. 180 ms cukup pendek untuk terasa langsung.
+  let searchTimer = null;
   $("#search-input").addEventListener("input", e => {
-    state.search = e.target.value; renderList();
+    const value = e.target.value;
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => { state.search = value; renderList(); }, 180);
   });
   $("#sort-select").addEventListener("change", e => {
     const v = e.target.value;

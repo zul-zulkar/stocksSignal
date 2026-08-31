@@ -138,8 +138,8 @@ function buildPanels() {
     <section class="scene scene-left" data-range="0.18,0.48">
       <div class="eyebrow gold">02 — Peluang</div>
       <h1 class="mega">Peluang yang<br>sedang <em>naik</em></h1>
-      <p class="lede"><b>${meta.opps}</b> signals across the universe read <b>BUY</b> or
-        <b>STRONG&nbsp;BUY</b>. These nine rise highest after the ethics penalty.</p>
+      <p class="lede"><b>${meta.opps}</b> sinyal di seluruh universe terbaca <b>BELI</b> atau
+        <b>BELI&nbsp;KUAT</b>. Sembilan ini yang tertinggi setelah penalti etis.</p>
       <div class="feature" id="opp-feature"></div>
     </section>
 
@@ -257,28 +257,33 @@ function setupForever() {
     </div>`).join("");
 }
 
-// ── live ticker strip (top opportunities, jittering prices) ────────
+// ── ticker strip (harga penutupan nyata, statis) ───────────────────
+//
+// Versi sebelumnya menggeser harga secara acak setiap 1,1 detik dan mewarnai
+// naik/turun dengan Math.random() > 0.5. Di layar itu terbaca persis seperti
+// data pasar live, padahal tidak ada satu pun angkanya yang nyata — dan itu
+// jenis kebohongan yang paling berbahaya di aplikasi keuangan, karena rapi
+// dan meyakinkan. Sekarang menampilkan harga penutupan terakhir apa adanya,
+// dengan arah dari perubahan yang benar-benar tercatat.
 function startTicker() {
   const strip = document.createElement("div");
   strip.className = "ticker";
-  const items = topOpps.concat(cleanRising.slice(0, 4));
-  const state = items.map((o) => ({ o, px: o.price || 50, dir: 1 }));
-  strip.innerHTML = `<div class="tk-track">${state.concat(state).map((s, i) =>
-    `<span class="tk" data-i="${i % state.length}"><b>${s.o.t}</b><em class="px"></em></span>`).join("")}</div>`;
+  const items = topOpps.concat(cleanRising.slice(0, 4)).filter((o) => o.price);
+  if (!items.length) return;
+
+  const cell = (o) => {
+    // `up` hanya diberi kelas kalau arahnya memang diketahui; tanpa data
+    // perubahan, angkanya tampil netral alih-alih diwarnai asal.
+    const chg = typeof o.chg === "number" ? o.chg : null;
+    const cls = chg === null ? "" : chg >= 0 ? " up" : " down";
+    const delta = chg === null ? "" : `<i>${chg >= 0 ? "+" : ""}${chg.toFixed(2)}%</i>`;
+    return `<span class="tk${cls}"><b>${o.t}</b><em class="px">${fmtUSD(o.price)}</em>${delta}</span>`;
+  };
+
+  const row = items.map(cell).join("");
+  // Digandakan sekali supaya animasi marquee menyambung mulus.
+  strip.innerHTML = `<div class="tk-track">${row}${row}</div>`;
   $("#overlay").appendChild(strip);
-  function tick() {
-    state.forEach((s) => {
-      const drift = (Math.random() - 0.48) * s.px * 0.0009;
-      s.px = Math.max(1, s.px + drift);
-    });
-    strip.querySelectorAll(".tk").forEach((el) => {
-      const s = state[+el.dataset.i];
-      const up = Math.random() > 0.5;
-      el.querySelector(".px").textContent = fmtUSD(s.px);
-      el.classList.toggle("up", up); el.classList.toggle("down", !up);
-    });
-  }
-  tick(); setInterval(tick, 1100);
 }
 
 // ── camera-motion Tweak panel (vanilla host protocol) ──────────────
