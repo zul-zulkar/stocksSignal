@@ -22,21 +22,36 @@
         <span class="dot" id="freshness-dot"></span>
         <span id="freshness-text">Memuat status data…</span>
       </div>
-      <a class="world-link" href="world.html" title="Masuk pengalaman 3D imersif — jelajahi pasar sebagai dunia gurun yang hidup">
-        <span class="ico" aria-hidden="true">🌅</span>
-        <span class="lbl">Dunia 3D</span>
-      </a>
+      <!-- Hanya Refresh yang tetap di header: itu satu-satunya tombol yang
+           dipakai berkali-kali sehari. Sisanya pindah ke menu ⋯ supaya
+           header berhenti jadi rak berisi lima kendali yang setara. -->
       <button class="refresh-btn" id="refresh-btn" aria-label="Refresh harga &amp; teknikal dari Stooq">
         <span class="ico" aria-hidden="true">↻</span>
         <span class="lbl">Refresh</span>
       </button>
-      <button class="refresh-btn deep" id="deep-update-btn" aria-label="Jalankan scrape penuh di GitHub Actions">
-        <span class="ico" aria-hidden="true">⟳</span>
-        <span class="lbl">Update Penuh</span>
-      </button>
-      <button class="icon-btn" id="theme-toggle" aria-label="Ganti tema terang/gelap" title="Ganti tema">
-        <span class="ico" aria-hidden="true">◐</span>
-      </button>
+      <div class="hmenu-wrap">
+        <button class="icon-btn" id="hmenu-btn" aria-label="Menu lainnya"
+                aria-haspopup="true" aria-expanded="false" aria-controls="hmenu">
+          <span class="ico" aria-hidden="true">⋯</span>
+        </button>
+        <div class="hmenu" id="hmenu" role="menu" hidden>
+          <button class="hmenu-item" id="deep-update-btn" role="menuitem">
+            <span class="ico" aria-hidden="true">⟳</span><span>Update Penuh</span>
+          </button>
+          <button class="hmenu-item" id="theme-toggle" role="menuitem">
+            <span class="ico" aria-hidden="true">◐</span><span>Ganti Tema</span>
+          </button>
+          <a class="hmenu-item" href="world.html" role="menuitem">
+            <span class="ico" aria-hidden="true">🌅</span><span>Dunia 3D</span>
+          </a>
+          <a class="hmenu-item" href="compare.html" role="menuitem">
+            <span class="ico" aria-hidden="true">⇄</span><span>Bandingkan</span>
+          </a>
+          <button class="hmenu-item" id="help-btn" role="menuitem">
+            <span class="ico" aria-hidden="true">&#9432;</span><span>Panduan &amp; Glosarium</span>
+          </button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -51,15 +66,113 @@
       </div>
     </section>
 
-    <!-- Panduan Dashboard -->
-    <section class="card" id="section-guide">
-      <details class="guide-panel">
-        <summary class="guide-summary">
-          <span class="guide-title">&#9432; Panduan &amp; Glosarium Dashboard</span>
-          <span class="guide-hint">Tap untuk buka / tutup</span>
-        </summary>
+    <!-- Forever Pocket -->
+    <section class="card" id="section-forever">
+      <h2>Forever Pocket – Kandidat Saham Long-Term</h2>
+      <p class="subtitle">Saham bersih/eksposur rendah dengan profil kualitas tinggi & yield/likuiditas memadai. Cocok dimasukkan ke fitur <em>Pocket</em> Pluang untuk akumulasi rutin (DCA).</p>
+      <div class="forever-grid" id="forever-grid"></div>
+      <p class="note">Kriteria: <strong>israelTie ∈ {none, low}</strong>, <strong>profile signal ≥ 60</strong>, dan <strong>(dividen ≥ 1% atau market cap ≥ $200B)</strong>. Diurutkan berdasar skor komposit setelah penalti etis.</p>
+    </section>
 
-        <div class="guide-body">
+    <!-- Tabel utama -->
+    <section class="card" id="section-stocks">
+      <h2>Daftar Saham &amp; Sinyal</h2>
+
+      <!-- Segmented view switcher -->
+      <div class="view-tabs" id="view-tabs" role="tablist">
+        <button class="view-tab active" data-view="all"       role="tab">📋 Semua</button>
+        <button class="view-tab"        data-view="peluang"   role="tab">🎯 Peluang</button>
+        <button class="view-tab"        data-view="watchlist" role="tab">⭐ Watchlist</button>
+        <button class="view-tab"        data-view="dividen"   role="tab">💰 Dividen</button>
+      </div>
+      <p class="view-info note" id="view-info"></p>
+
+      <!-- Panel Portofolio (view watchlist) -->
+      <div class="subpanel" id="portfolio-panel" hidden>
+        <div class="portfolio-summary" id="portfolio-summary"></div>
+        <p class="note">Isi jumlah lembar &amp; harga beli rata-rata di kartu watchlist untuk melacak untung/rugi. Data tersimpan di HP ini (localStorage).</p>
+      </div>
+
+      <!-- Panel Estimator Dividen (view dividen) -->
+      <div class="subpanel" id="dividend-panel" hidden>
+        <label class="div-est">Simulasi investasi (USD)
+          <input type="number" id="dividend-invest" inputmode="decimal" min="0" step="100" placeholder="contoh: 10000" />
+        </label>
+        <div class="dividend-est-out" id="dividend-est-out"></div>
+        <p class="note">Estimasi dividen tahunan = nominal × dividend yield. Yield bisa berubah; bukan jaminan.</p>
+      </div>
+
+      <div class="controls">
+        <label>Mode filter
+          <select id="mode-select">
+            <option value="strict">Strict — buang afiliasi kuat</option>
+            <option value="balanced" selected>Balanced — penalti sedang</option>
+            <option value="loose">Loose — tampilkan semua</option>
+          </select>
+        </label>
+        <label>Sektor
+          <select id="sector-filter"></select>
+        </label>
+        <label>Urutkan
+          <select id="sort-select">
+            <option value="adjScore-desc" selected>Skor (tinggi → rendah)</option>
+            <option value="adjScore-asc">Skor (rendah → tinggi)</option>
+            <option value="ticker-asc">Ticker (A-Z)</option>
+            <option value="ethics-asc">Etika (paling bersih dulu)</option>
+            <option value="ethics-desc">Etika (paling beresiko dulu)</option>
+            <option value="technical-desc">Teknikal (terkuat)</option>
+            <option value="profile-desc">Profil (terkuat)</option>
+          </select>
+        </label>
+        <label>Cari
+          <input type="text" id="search-input" inputmode="search" autocapitalize="characters" placeholder="Ticker atau nama…" />
+        </label>
+        <span class="pill">Klik baris/kartu untuk detail</span>
+      </div>
+
+      <div class="table-wrap" style="overflow-x:auto; margin-top: 14px;">
+        <table>
+          <thead>
+            <tr>
+              <th data-sort="ticker">Saham</th>
+              <th data-sort="action">Aksi</th>
+              <th data-sort="price">Harga</th>
+              <th data-sort="sector">Sektor</th>
+              <th data-sort="ethics">Etika</th>
+              <!-- Tujuh kolom bar sinyal digantikan satu strip ringkas.
+                   Masing-masing dulu selebar 80px plus angkanya, sehingga
+                   tabelnya ter-scroll mendatar bahkan di laptop. Nilai per
+                   faktor tetap lengkap di tab "Detail Sinyal". -->
+              <th data-sort="technical" class="th-signals">7 Faktor</th>
+              <th data-sort="adjScore">Skor</th>
+            </tr>
+          </thead>
+          <tbody id="stocks-tbody"></tbody>
+        </table>
+      </div>
+
+      <div class="stocks-mobile" id="stocks-mobile"></div>
+      <p class="note">
+        Bobot 7-faktor: Teknikal 15% · Momentum 15% · Sentimen 10% · Berita 10% · Makro 15% · Kualitas 20% · Valuasi 15%.
+        Metodologi: Fama-French momentum &amp; quality factor · AQR "Quality Minus Junk" · value framework Research Affiliates.
+        Skor 0–100 setelah penalti etis. Tap baris untuk detail sinyal lengkap.
+      </p>
+    </section>
+  </main>
+
+  <!-- Drawer bantuan.
+       Isinya sama persis dengan panduan yang dulu menyisip antara KPI dan
+       daftar saham. Yang berubah cuma tempatnya: dashboard dibuka jauh
+       lebih sering daripada panduannya dibaca, jadi panduan tidak lagi
+       menghalangi jalan menuju daftar saham. -->
+  <div class="drawer-bg" id="help-bg" hidden></div>
+  <aside class="drawer" id="help-drawer" role="dialog" aria-modal="true"
+         aria-labelledby="help-drawer-title" hidden>
+    <div class="drawer-head">
+      <h2 id="help-drawer-title">&#9432; Panduan &amp; Glosarium</h2>
+      <button class="close" id="help-close" aria-label="Tutup panduan">×</button>
+    </div>
+    <div class="drawer-body">
 
           <!-- Cara Membaca Skor -->
           <div class="guide-section">
@@ -209,107 +322,12 @@
             <p class="guide-p">Sinyal <strong>Sentimen</strong> dan <strong>Makro</strong> bersifat kualitatif — diperbarui manual sesuai kondisi terkini.</p>
           </div>
 
-        </div><!-- /guide-body -->
-      </details>
-    </section>
-
-    <!-- Forever Pocket -->
-    <section class="card" id="section-forever">
-      <h2>Forever Pocket – Kandidat Saham Long-Term</h2>
-      <p class="subtitle">Saham bersih/eksposur rendah dengan profil kualitas tinggi & yield/likuiditas memadai. Cocok dimasukkan ke fitur <em>Pocket</em> Pluang untuk akumulasi rutin (DCA).</p>
-      <div class="forever-grid" id="forever-grid"></div>
-      <p class="note">Kriteria: <strong>israelTie ∈ {none, low}</strong>, <strong>profile signal ≥ 60</strong>, dan <strong>(dividen ≥ 1% atau market cap ≥ $200B)</strong>. Diurutkan berdasar skor komposit setelah penalti etis.</p>
-    </section>
-
-    <!-- Tabel utama -->
-    <section class="card" id="section-stocks">
-      <h2>Daftar Saham &amp; Sinyal</h2>
-
-      <!-- Segmented view switcher -->
-      <div class="view-tabs" id="view-tabs" role="tablist">
-        <button class="view-tab active" data-view="all"       role="tab">📋 Semua</button>
-        <button class="view-tab"        data-view="peluang"   role="tab">🎯 Peluang</button>
-        <button class="view-tab"        data-view="watchlist" role="tab">⭐ Watchlist</button>
-        <button class="view-tab"        data-view="dividen"   role="tab">💰 Dividen</button>
-      </div>
-      <p class="view-info note" id="view-info"></p>
-
-      <!-- Panel Portofolio (view watchlist) -->
-      <div class="subpanel" id="portfolio-panel" hidden>
-        <div class="portfolio-summary" id="portfolio-summary"></div>
-        <p class="note">Isi jumlah lembar &amp; harga beli rata-rata di kartu watchlist untuk melacak untung/rugi. Data tersimpan di HP ini (localStorage).</p>
-      </div>
-
-      <!-- Panel Estimator Dividen (view dividen) -->
-      <div class="subpanel" id="dividend-panel" hidden>
-        <label class="div-est">Simulasi investasi (USD)
-          <input type="number" id="dividend-invest" inputmode="decimal" min="0" step="100" placeholder="contoh: 10000" />
-        </label>
-        <div class="dividend-est-out" id="dividend-est-out"></div>
-        <p class="note">Estimasi dividen tahunan = nominal × dividend yield. Yield bisa berubah; bukan jaminan.</p>
-      </div>
-
-      <div class="controls">
-        <label>Mode filter
-          <select id="mode-select">
-            <option value="strict">Strict — buang afiliasi kuat</option>
-            <option value="balanced" selected>Balanced — penalti sedang</option>
-            <option value="loose">Loose — tampilkan semua</option>
-          </select>
-        </label>
-        <label>Sektor
-          <select id="sector-filter"></select>
-        </label>
-        <label>Urutkan
-          <select id="sort-select">
-            <option value="adjScore-desc" selected>Skor (tinggi → rendah)</option>
-            <option value="adjScore-asc">Skor (rendah → tinggi)</option>
-            <option value="ticker-asc">Ticker (A-Z)</option>
-            <option value="ethics-asc">Etika (paling bersih dulu)</option>
-            <option value="ethics-desc">Etika (paling beresiko dulu)</option>
-            <option value="technical-desc">Teknikal (terkuat)</option>
-            <option value="profile-desc">Profil (terkuat)</option>
-          </select>
-        </label>
-        <label>Cari
-          <input type="text" id="search-input" inputmode="search" autocapitalize="characters" placeholder="Ticker atau nama…" />
-        </label>
-        <span class="pill">Klik baris/kartu untuk detail</span>
-      </div>
-
-      <div class="table-wrap" style="overflow-x:auto; margin-top: 14px;">
-        <table>
-          <thead>
-            <tr>
-              <th data-sort="ticker">Saham</th>
-              <th data-sort="action">Aksi</th>
-              <th data-sort="price">Harga</th>
-              <th data-sort="sector">Sektor</th>
-              <th data-sort="ethics">Etika</th>
-              <!-- Tujuh kolom bar sinyal digantikan satu strip ringkas.
-                   Masing-masing dulu selebar 80px plus angkanya, sehingga
-                   tabelnya ter-scroll mendatar bahkan di laptop. Nilai per
-                   faktor tetap lengkap di tab "Detail Sinyal". -->
-              <th data-sort="technical" class="th-signals">7 Faktor</th>
-              <th data-sort="adjScore">Skor</th>
-            </tr>
-          </thead>
-          <tbody id="stocks-tbody"></tbody>
-        </table>
-      </div>
-
-      <div class="stocks-mobile" id="stocks-mobile"></div>
-      <p class="note">
-        Bobot 7-faktor: Teknikal 15% · Momentum 15% · Sentimen 10% · Berita 10% · Makro 15% · Kualitas 20% · Valuasi 15%.
-        Metodologi: Fama-French momentum &amp; quality factor · AQR "Quality Minus Junk" · value framework Research Affiliates.
-        Skor 0–100 setelah penalti etis. Tap baris untuk detail sinyal lengkap.
-      </p>
-    </section>
-  </main>
-
-  <div class="disclaimer">
-    <strong>Disclaimer.</strong> Dashboard ini disusun untuk membantu pengguna menyaring saham berdasar kriteria etis pribadi (afiliasi Israel) dan agregasi sinyal publik. <em>Bukan</em> nasihat investasi atau fatwa keagamaan. <strong>Rekomendasi "Aksi" (Beli/Tahan/Jual) dan target harga merupakan gabungan model multi-faktor publik dengan konsensus analis (Yahoo Finance) — bukan jaminan, dan kondisi pasar bisa berubah sewaktu-waktu.</strong> Penilaian etika merujuk pada laporan publik BDS Movement, AFSC Investigate, Who Profits Research Center, laporan PBB OHCHR, dan media kredibel — kondisi perusahaan bisa berubah, lakukan verifikasi mandiri. Sinyal default bersifat baseline kualitatif; untuk data live jalankan <code>scripts/fetch_signals.py</code> atau tap tombol <strong>Update Penuh</strong>.
-  </div>
+          <div class="guide-section">
+            <h3 class="guide-h3">Disclaimer</h3>
+            <p class="guide-p"><strong>Disclaimer.</strong> Dashboard ini disusun untuk membantu pengguna menyaring saham berdasar kriteria etis pribadi (afiliasi Israel) dan agregasi sinyal publik. <em>Bukan</em> nasihat investasi atau fatwa keagamaan. <strong>Rekomendasi "Aksi" (Beli/Tahan/Jual) dan target harga merupakan gabungan model multi-faktor publik dengan konsensus analis (Yahoo Finance) — bukan jaminan, dan kondisi pasar bisa berubah sewaktu-waktu.</strong> Penilaian etika merujuk pada laporan publik BDS Movement, AFSC Investigate, Who Profits Research Center, laporan PBB OHCHR, dan media kredibel — kondisi perusahaan bisa berubah, lakukan verifikasi mandiri. Sinyal default bersifat baseline kualitatif; untuk data live jalankan <code>scripts/fetch_signals.py</code> atau tap tombol <strong>Update Penuh</strong>.</p>
+          </div>
+    </div>
+  </aside>
 
   <!-- Modal detail saham -->
   <div class="modal-bg" id="modal-bg">

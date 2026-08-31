@@ -897,6 +897,58 @@ function openDetail(stock) {
 
 function closeDetail() { $("#modal-bg").classList.remove("show"); }
 
+// ---------- Menu header (⋯) ----------
+// Empat kendali yang dulu berjajar di header sekarang tinggal di sini.
+function toggleMenu(open) {
+  const menu = $("#hmenu"), btn = $("#hmenu-btn");
+  const show = open === undefined ? menu.hidden : open;
+  menu.hidden = !show;
+  btn.setAttribute("aria-expanded", show ? "true" : "false");
+}
+
+// ---------- Drawer bantuan ----------
+// Panduan 150 baris dulu menyisip antara KPI dan daftar saham. Isinya sama
+// persis; yang berubah cuma ia tidak lagi menghalangi jalan.
+let helpOpener = null;
+
+function openHelp(opener) {
+  helpOpener = opener || null;
+  $("#help-bg").hidden = false;
+  $("#help-drawer").hidden = false;
+  // Scroll latar dikunci, kalau tidak halaman di belakang ikut bergeser
+  // saat drawer di-scroll sampai mentok.
+  document.body.style.overflow = "hidden";
+  $("#help-close").focus();
+}
+
+function closeHelp() {
+  $("#help-bg").hidden = true;
+  $("#help-drawer").hidden = true;
+  document.body.style.overflow = "";
+  // Mengembalikan fokus ke pemanggil: tanpa ini pengguna keyboard terlempar
+  // ke awal dokumen setiap kali menutup drawer.
+  if (helpOpener && document.contains(helpOpener)) helpOpener.focus();
+  helpOpener = null;
+}
+
+function anyLayerOpen() {
+  return !$("#help-drawer").hidden
+    || $("#modal-bg").classList.contains("show")
+    || $("#pat-modal-bg").classList.contains("show")
+    || !$("#hmenu").hidden;
+}
+
+// Satu penangan Escape untuk semua lapisan, ditutup dari yang paling atas.
+// Sebelumnya tidak ada sama sekali — bahkan modal detail pun tidak bisa
+// ditutup dari keyboard.
+function onEscape(e) {
+  if (e.key !== "Escape" || !anyLayerOpen()) return;
+  if (!$("#hmenu").hidden) { toggleMenu(false); $("#hmenu-btn").focus(); return; }
+  if (!$("#help-drawer").hidden) { closeHelp(); return; }
+  if ($("#pat-modal-bg").classList.contains("show")) { closePATModal(); return; }
+  closeDetail();
+}
+
 // ---------- Toast ----------
 function showToast(text, kind = "info") {
   const t = $("#toast");
@@ -1246,6 +1298,16 @@ function init() {
 
   $("#modal-close").addEventListener("click", closeDetail);
   $("#modal-bg").addEventListener("click", e => { if (e.target.id === "modal-bg") closeDetail(); });
+
+  $("#hmenu-btn").addEventListener("click", e => { e.stopPropagation(); toggleMenu(); });
+  // Klik di mana pun selain menu menutupnya — perilaku baku menu popup.
+  document.addEventListener("click", e => {
+    if (!$("#hmenu").hidden && !e.target.closest(".hmenu-wrap")) toggleMenu(false);
+  });
+  $("#help-btn").addEventListener("click", () => { toggleMenu(false); openHelp($("#hmenu-btn")); });
+  $("#help-close").addEventListener("click", closeHelp);
+  $("#help-bg").addEventListener("click", closeHelp);
+  document.addEventListener("keydown", onEscape);
 
   setupModalSwipe();
   setupPullToRefresh();
