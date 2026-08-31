@@ -7,6 +7,7 @@ const { compositeSignal, ethicsAdjustedScore, ethicsBadge, signalBar,
         buildForeverPocket, SIGNAL_WEIGHTS } = window.SIGNAL_LIB;
 const ADVICE = window.ADVICE_LIB;
 const DETAIL = window.DETAIL_LIB;
+const NAV    = window.NAV_LIB;
 const WATCH  = window.WATCH_LIB;
 
 const state = {
@@ -344,12 +345,6 @@ function updateSortUI() {
 }
 
 // ---------- View handling ----------
-const VIEW_INFO = {
-  all:       "Semua saham di universe, dengan skor & rekomendasi aksi.",
-  peluang:   "Hanya saham dengan rekomendasi BELI / BELI KUAT — diurut potensi terbaik.",
-  watchlist: "Saham yang kamu tandai ★. Isi posisi untuk melacak untung/rugi & dividen.",
-  dividen:   "Pembayar dividen, diurut yield tertinggi. Cocok untuk passive income.",
-};
 
 function currentList() {
   let list = window.STOCK_UNIVERSE.slice();
@@ -394,22 +389,60 @@ function renderList() {
   updateSortUI();
 }
 
+// Membangun segmented tab dan bottom-nav dari satu config (js/nav.js).
+// Keduanya dulu ditulis tangan di index.html dan disinkronkan manual.
+function renderNav() {
+  const tabs = $("#view-tabs");
+  tabs.replaceChildren(...NAV.tabSpecs(state.view).map(spec => {
+    const btn = el("button", {
+      className: "view-tab" + (spec.active ? " active" : ""),
+      role: "tab", "aria-selected": spec.ariaSelected, tabindex: spec.tabindex,
+      onClick: () => setView(spec.id),
+    }, [
+      el("span", { className: "vt-ico", "aria-hidden": "true" }, spec.ico),
+      el("span", {}, spec.label),
+    ]);
+    // Panah kiri/kanan: cara baku menjelajahi tablist. Tab modal sudah
+    // punya ini sejak cff4316; segmented tab halaman utama terlewat.
+    btn.addEventListener("keydown", (e) => {
+      const delta = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+      if (!delta) return;
+      e.preventDefault();
+      setView(NAV.neighbor(state.view, delta));
+      const next = tabs.querySelector('.view-tab[aria-selected="true"]');
+      if (next) next.focus();
+    });
+    return btn;
+  }));
+
+  const bn = $("#bottom-nav");
+  bn.replaceChildren(...NAV.navSpecs(state.view).map(spec =>
+    el("button", {
+      className: "bn-item" + (spec.active ? " active" : ""),
+      "aria-current": spec.active ? "page" : null,
+      onClick: () => setView(spec.id),
+    }, [
+      el("span", { className: "bn-ico", "aria-hidden": "true" }, spec.ico),
+      el("span", { className: "bn-lbl" }, spec.label),
+    ])
+  ));
+}
+
 function applyViewChrome() {
   $("#portfolio-panel").hidden = state.view !== "watchlist";
   $("#dividend-panel").hidden = state.view !== "dividen";
-  $("#view-info").textContent = VIEW_INFO[state.view] || "";
-  document.querySelectorAll(".view-tab").forEach(b => b.classList.toggle("active", b.dataset.view === state.view));
-  document.querySelectorAll(".bn-item").forEach(b => b.classList.toggle("active", b.dataset.view === state.view));
+  $("#view-info").textContent = NAV.infoFor(state.view);
+  renderNav();
   if (state.view === "watchlist") renderPortfolio();
   if (state.view === "dividen") renderDividendEstimator();
 }
 
 function setView(v) {
-  if (!VIEW_INFO[v]) return;
+  if (!NAV.has(v)) return;
   state.view = v;
-  if (v === "peluang")      { state.sortKey = "action";   state.sortDir = "desc"; }
-  else if (v === "dividen") { state.sortKey = "dividend"; state.sortDir = "desc"; }
-  else                      { state.sortKey = "adjScore"; state.sortDir = "desc"; }
+  const sort = NAV.sortFor(v);
+  state.sortKey = sort.key;
+  state.sortDir = sort.dir;
   applyViewChrome();
   renderList();
 }
@@ -1291,10 +1324,6 @@ function init() {
   });
   $("#dividend-invest").addEventListener("input", renderDividendEstimator);
 
-  // View tabs + bottom nav
-  document.querySelectorAll(".view-tab, .bn-item").forEach(b => {
-    b.addEventListener("click", () => setView(b.dataset.view));
-  });
 
 
   $("#modal-close").addEventListener("click", closeDetail);

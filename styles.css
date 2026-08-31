@@ -992,6 +992,9 @@ details[open] .guide-hint { opacity: 0; }
 .view-tabs { display: flex; gap: 6px; margin-bottom: 10px; overflow-x: auto; scrollbar-width: none; }
 .view-tabs::-webkit-scrollbar { display: none; }
 .view-tab {
+  /* Ikon kini elemen sendiri (renderNav), jadi jaraknya diatur gap alih-alih
+     spasi di dalam teks tombol. */
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
   flex: 1; min-width: max-content; white-space: nowrap;
   background: var(--panel-2); border: 1px solid var(--border); color: var(--muted);
   border-radius: 999px; padding: 8px 14px;
@@ -999,6 +1002,7 @@ details[open] .guide-hint { opacity: 0; }
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 .view-tab.active { background: var(--accent-2); color: #0f1117; border-color: var(--accent-2); }
+.view-tab .vt-ico { font-size: 14px; line-height: 1; }
 .view-info { margin-top: 0; margin-bottom: 10px; }
 
 /* Subpanel (portofolio, dividen) */

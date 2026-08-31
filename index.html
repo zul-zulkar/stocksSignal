@@ -79,12 +79,10 @@
       <h2>Daftar Saham &amp; Sinyal</h2>
 
       <!-- Segmented view switcher -->
-      <div class="view-tabs" id="view-tabs" role="tablist">
-        <button class="view-tab active" data-view="all"       role="tab">📋 Semua</button>
-        <button class="view-tab"        data-view="peluang"   role="tab">🎯 Peluang</button>
-        <button class="view-tab"        data-view="watchlist" role="tab">⭐ Watchlist</button>
-        <button class="view-tab"        data-view="dividen"   role="tab">💰 Dividen</button>
-      </div>
+      <!-- Diisi renderNav() dari satu config di js/nav.js, bersama
+           bottom-nav di bawah — dulu keduanya ditulis tangan di sini dan
+           disinkronkan manual. -->
+      <div class="view-tabs" id="view-tabs" role="tablist"></div>
       <p class="view-info note" id="view-info"></p>
 
       <!-- Panel Portofolio (view watchlist) -->
@@ -370,12 +368,7 @@
   <div class="ptr-indicator" id="ptr-indicator"><span class="ico">↻</span></div>
 
   <!-- Bottom navigation (mobile) -->
-  <nav class="bottom-nav" id="bottom-nav" aria-label="Navigasi tampilan">
-    <button class="bn-item active" data-view="all">      <span class="bn-ico">📋</span><span class="bn-lbl">Semua</span></button>
-    <button class="bn-item"        data-view="peluang">  <span class="bn-ico">🎯</span><span class="bn-lbl">Peluang</span></button>
-    <button class="bn-item"        data-view="watchlist"><span class="bn-ico">⭐</span><span class="bn-lbl">Watchlist</span></button>
-    <button class="bn-item"        data-view="dividen">  <span class="bn-ico">💰</span><span class="bn-lbl">Dividen</span></button>
-  </nav>
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Navigasi tampilan"></nav>
 
   <script src="data/stocks.js"></script>
   <script src="data/signals-overlay.js"></script>
@@ -390,6 +383,7 @@
   <script src="js/ai.js"></script>
   <script src="js/lazydata.js"></script>
   <script src="js/detail.js"></script>
+  <script src="js/nav.js"></script>
   <script src="js/signals.js"></script>
   <script src="js/advice.js"></script>
   <script src="js/watchlist.js"></script>
