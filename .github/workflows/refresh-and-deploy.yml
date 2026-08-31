@@ -63,6 +63,15 @@ jobs:
         run: python scripts/fetch_signals.py
         continue-on-error: true
 
+      - name: Generate AI briefs
+        # Dilewati diam-diam kalau secret tidak diset — dashboard sudah punya
+        # narasi deterministik js/narrate.js untuk setiap saham.
+        if: github.event_name != 'push' && inputs.skip_refresh != true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/ai_brief.py
+        continue-on-error: true
+
       - name: Build immersive world dataset
         if: github.event_name != 'push' && inputs.skip_refresh != true
         run: python scripts/build_world_data.py
