@@ -118,6 +118,9 @@
             <option value="adjScore-desc" selected>Skor (tinggi → rendah)</option>
             <option value="adjScore-asc">Skor (rendah → tinggi)</option>
             <option value="ticker-asc">Ticker (A-Z)</option>
+            <option value="action-desc">Aksi (Beli dulu)</option>
+            <option value="price-desc">Harga (tinggi → rendah)</option>
+            <option value="price-asc">Harga (rendah → tinggi)</option>
             <option value="ethics-asc">Etika (paling bersih dulu)</option>
             <option value="ethics-desc">Etika (paling beresiko dulu)</option>
             <option value="technical-desc">Teknikal (terkuat)</option>
@@ -127,37 +130,25 @@
         <label>Cari
           <input type="text" id="search-input" inputmode="search" autocapitalize="characters" placeholder="Ticker atau nama…" />
         </label>
-        <span class="pill">Klik baris/kartu untuk detail</span>
+        <span class="pill">Klik kartu untuk detail</span>
       </div>
 
-      <div class="table-wrap" style="overflow-x:auto; margin-top: 14px;">
-        <table>
-          <thead>
-            <tr>
-              <th data-sort="ticker">Saham</th>
-              <th data-sort="action">Aksi</th>
-              <th data-sort="price">Harga</th>
-              <th data-sort="sector">Sektor</th>
-              <th data-sort="ethics">Etika</th>
-              <!-- Tujuh kolom bar sinyal digantikan satu strip ringkas.
-                   Masing-masing dulu selebar 80px plus angkanya, sehingga
-                   tabelnya ter-scroll mendatar bahkan di laptop. Nilai per
-                   faktor tetap lengkap di tab "Detail Sinyal". -->
-              <th data-sort="technical" class="th-signals">7 Faktor</th>
-              <th data-sort="adjScore">Skor</th>
-            </tr>
-          </thead>
-          <tbody id="stocks-tbody"></tbody>
-        </table>
-      </div>
-
-      <div class="stocks-mobile" id="stocks-mobile"></div>
+      <!-- Daftar kartu dipakai di semua lebar. Tabel desktop dihapus:
+           di layout master–detail ia tinggal kebagian ~55% lebar, dan
+           kartu memuat informasi yang sama tanpa memaksa mata melompat
+           antar kolom. Sorting lewat header kolom pindah ke #sort-select. -->
+      <div class="stock-list" id="stock-list"></div>
       <p class="note">
         Bobot 7-faktor: Teknikal 15% · Momentum 15% · Sentimen 10% · Berita 10% · Makro 15% · Kualitas 20% · Valuasi 15%.
         Metodologi: Fama-French momentum &amp; quality factor · AQR "Quality Minus Junk" · value framework Research Affiliates.
         Skor 0–100 setelah penalti etis. Tap baris untuk detail sinyal lengkap.
       </p>
     </section>
+
+    <!-- Panel detail desktop. Di <1000px ia disembunyikan CSS dan detail
+         tetap muncul sebagai modal — keduanya dirender buildDetail() yang
+         sama, jadi tak ada dua salinan yang lambat laun menyimpang. -->
+    <aside class="detail-pane" id="detail-pane" aria-live="polite"></aside>
   </main>
 
   <!-- Drawer bantuan.

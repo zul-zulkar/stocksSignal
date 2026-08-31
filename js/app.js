@@ -10,6 +10,7 @@ const DETAIL = window.DETAIL_LIB;
 const WATCH  = window.WATCH_LIB;
 
 const state = {
+  selected: null,
   mode: "balanced",
   search: "",
   sector: "ALL",
@@ -142,19 +143,6 @@ function getSignalDesc(key, score) {
   return "—";
 }
 
-// ---------- Signal bar ----------
-function signalCell(score) {
-  const { pct, color } = signalBar(score);
-  const wrap = el("span", { className: "signal-cell" });
-  const barWrap = el("span", { className: "bar-wrap" });
-  const barFill = el("div",  { className: "bar-fill" });
-  barFill.style.width = pct + "%";
-  barFill.style.background = color;
-  barWrap.append(barFill);
-  wrap.append(barWrap, el("span", { className: "score-num" }, (score >= 0 ? "+" : "") + score));
-  return wrap;
-}
-
 // ---------- Strip 7 sinyal (satu kolom, menggantikan tujuh) ----------
 const STRIP_KEYS = ["technical", "momentum", "sentiment", "news", "policy", "profile", "valuation"];
 function signalStrip(s) {
@@ -198,42 +186,11 @@ function priceCell(price, chg) {
   return wrap;
 }
 
-// ---------- Desktop table row ----------
-function renderRow(stock, opts = {}) {
-  const adj = ethicsAdjustedScore(stock, state.mode);
-  if (adj === null && !opts.allowExcluded) return null;
-  const badge = ethicsBadge(stock.ethics.israelTie);
-  const v = ADVICE.actionVerdict(stock, state.mode);
-  const s = stock.signals;
-  const price = ADVICE.priceOf(stock.ticker);
-  const chg = changeOf(stock.ticker);
-  // Baris tabel dulu hanya bisa diklik. Dengan tabindex + penanganan
-  // Enter/Space, seluruh daftar jadi bisa dijelajahi dari keyboard.
-  const row = el("tr", {
-    className: "row-clickable", tabindex: "0", role: "button",
-    "aria-label": stock.ticker + " — " + stock.name,
-    onClick: () => openDetail(stock),
-  }, [
-    el("td", {}, [
-      el("div", { className: "ticker" }, stock.ticker),
-      el("div", { className: "name" }, stock.name),
-    ]),
-    el("td", {}, actionBadge(v)),
-    el("td", {}, priceCell(price, chg)),
-    el("td", {}, stock.sector),
-    el("td", {}, el("span", { className: "badge badge-" + badge.color }, badge.label)),
-    el("td", {}, signalStrip(s)),
-    el("td", {}, el("span", { className: "score-num" + (adj === null ? " excl" : "") },
-      adj === null ? "✗" : String(adj))),
-  ]);
-  row.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openDetail(stock); }
-  });
-  return row;
-}
-
-// ---------- Mobile card (rich) ----------
-function renderMobileCard(stock, opts = {}) {
+// ---------- Baris saham (satu komponen untuk semua lebar) ----------
+// Dulu ada dua: renderRow() untuk <tr> desktop dan renderMobileCard() untuk
+// kartu. Keduanya menghitung delapan nilai yang sama dan wajib disunting
+// berpasangan. Dengan tabel dihapus, tinggal satu.
+function renderStockRow(stock, opts = {}) {
   const adj = ethicsAdjustedScore(stock, state.mode);
   if (adj === null && !opts.allowExcluded) return null;
   const badge = ethicsBadge(stock.ethics.israelTie);
@@ -264,7 +221,12 @@ function renderMobileCard(stock, opts = {}) {
         "📊 " + ADVICE.ratingLabel(an.rating) + (an.targetMean ? " · 🎯 $" + an.targetMean : ""))
     : el("span", { className: "analyst-mini muted" }, "analis —");
 
-  const card = el("div", { className: "stock-card" + (adj === null ? " excluded" : ""), onClick: () => openDetail(stock) }, [
+  const card = el("div", {
+    className: "stock-card" + (adj === null ? " excluded" : ""),
+    tabindex: "0", role: "button",
+    "aria-label": stock.ticker + " — " + stock.name,
+    onClick: () => showDetail(stock, card),
+  }, [
     el("div", { className: "row1" }, [
       el("span", { className: "ticker" }, stock.ticker),
       actionBadge(v),
@@ -281,13 +243,18 @@ function renderMobileCard(stock, opts = {}) {
       el("span", { className: "spacer" }),
       ref, star,
     ]),
-    el("div", { className: "signals-mini" }, [
-      miniSig("Tek", s.technical),
-      miniSig("Mom", s.momentum || 0),
-      miniSig("Val", s.valuation || 0),
-      miniSig("Pro", s.profile),
+    // Strip 7 segmen menggantikan empat pill: memuat seluruh faktor, bukan
+    // empat yang dipilih sembarang, dan memakan tempat lebih sedikit.
+    el("div", { className: "row4" }, [
+      signalStrip(s),
+      el("span", { className: "spacer" }),
+      el("span", { className: "sector-mini" }, stock.sector),
     ]),
   ]);
+  card.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); showDetail(stock, card); }
+  });
+  card.dataset.ticker = stock.ticker;
   if (state.view === "watchlist") card.append(holdingEditor(stock, price));
   return card;
 }
@@ -366,11 +333,9 @@ function sortRows(stocks) {
   });
 }
 
+// Dulu menyorot <th> yang aktif sekaligus menyinkronkan dropdown. Dengan
+// tabel dihapus, dropdown adalah satu-satunya kendali urutan.
 function updateSortUI() {
-  document.querySelectorAll("th[data-sort]").forEach(th => {
-    th.classList.toggle("sorted", th.dataset.sort === state.sortKey);
-    th.classList.toggle("asc", th.dataset.sort === state.sortKey && state.sortDir === "asc");
-  });
   const sel = $("#sort-select");
   if (sel) {
     const v = state.sortKey + "-" + state.sortDir;
@@ -410,25 +375,21 @@ function emptyMsg() {
 }
 
 function renderList() {
-  const tbody = $("#stocks-tbody");
-  const mobile = $("#stocks-mobile");
+  const list = $("#stock-list");
   // replaceChildren() jauh lebih murah daripada innerHTML="" untuk ~2000
   // simpul, dan tidak memaksa peramban mengurai ulang HTML.
-  tbody.replaceChildren();
-  mobile.replaceChildren();
+  list.replaceChildren();
   const allowExcluded = state.view === "watchlist";
   const sorted = sortRows(currentList());
   let visible = 0;
   for (const s of sorted) {
-    const row = renderRow(s, { allowExcluded });
-    const card = renderMobileCard(s, { allowExcluded });
-    if (row) { tbody.append(row); visible++; }
-    if (card) mobile.append(card);
+    const card = renderStockRow(s, { allowExcluded });
+    if (card) { list.append(card); visible++; }
   }
-  if (!visible) {
-    mobile.append(el("div", { className: "stocks-empty" }, emptyMsg()));
-    tbody.append(el("tr", {}, el("td", { colspan: "7", className: "stocks-empty" }, emptyMsg())));
-  }
+  if (!visible) list.append(el("div", { className: "stocks-empty" }, emptyMsg()));
+  // Saham yang sedang tampil di panel bisa saja tersaring keluar; kalau
+  // masih ada, sorotannya dipulihkan setelah render ulang.
+  if (state.selected) markSelected(state.selected);
   $("#kpi-visible").textContent = visible;
   updateSortUI();
 }
@@ -437,7 +398,6 @@ function applyViewChrome() {
   $("#portfolio-panel").hidden = state.view !== "watchlist";
   $("#dividend-panel").hidden = state.view !== "dividen";
   $("#view-info").textContent = VIEW_INFO[state.view] || "";
-  $("#section-stocks").classList.toggle("force-cards", state.view === "watchlist");
   document.querySelectorAll(".view-tab").forEach(b => b.classList.toggle("active", b.dataset.view === state.view));
   document.querySelectorAll(".bn-item").forEach(b => b.classList.toggle("active", b.dataset.view === state.view));
   if (state.view === "watchlist") renderPortfolio();
@@ -675,7 +635,12 @@ function adviceStrip(v) {
 }
 
 // ---------- Modal detail ----------
-function openDetail(stock) {
+// Membangun isi panel detail dan memulangkannya, tanpa menyentuh DOM
+// halaman. Dua pemanggil memakainya: modal (sempit) dan panel sticky
+// (lebar). Sebelum dipisah, seluruh isi tab tertulis langsung ke
+// #modal-body — menambah panel kedua berarti menyalin 200 baris ini dan
+// berharap dua salinannya tidak menyimpang.
+function buildDetail(stock) {
   stock = UNIVERSE_BY_TICKER[stock.ticker] || stock;
   const adj       = ethicsAdjustedScore(stock, state.mode);
   const badge     = ethicsBadge(stock.ethics.israelTie);
@@ -685,9 +650,7 @@ function openDetail(stock) {
   const verdict   = ADVICE.actionVerdict(stock, state.mode);
   const an        = ADVICE.analystOf(stock.ticker);
 
-  $("#modal-title").textContent = stock.ticker + " — " + stock.name;
-  const body = $("#modal-body");
-  body.innerHTML = "";
+  const body = el("div", { className: "detail-body" });
 
   // Sector + tombol refresh per-saham
   const sectorRow = el("div", { className: "modal-sector-row" }, [
@@ -697,7 +660,7 @@ function openDetail(stock) {
   refBtn.addEventListener("click", async () => {
     refBtn.disabled = true; refBtn.textContent = "↻ Memuat…";
     await refreshCard(stock.ticker);
-    if ($("#modal-bg").classList.contains("show")) openDetail(stock);
+    showDetail(stock);
   });
   sectorRow.append(refBtn);
   body.append(sectorRow);
@@ -892,7 +855,65 @@ function openDetail(stock) {
   panels.push(p3);
 
   panels.forEach(p => body.append(p));
-  $("#modal-bg").classList.add("show");
+  return { title: stock.ticker + " — " + stock.name, node: body };
+}
+
+// ---------- Dua jalur tampilan, satu isi ----------
+// >=1000px detail tampil di panel sticky di samping daftar; di bawah itu
+// sebagai modal. Isinya sama persis — keduanya memanggil buildDetail().
+const WIDE = window.matchMedia("(min-width: 1000px)");
+
+function showDetail(stock, card) {
+  state.selected = stock.ticker;
+  markSelected(stock.ticker, card);
+  const { title, node } = buildDetail(stock);
+  if (WIDE.matches) {
+    const pane = $("#detail-pane");
+    pane.replaceChildren(el("h3", { className: "detail-title" }, title), node);
+    pane.scrollTop = 0;
+  } else {
+    $("#modal-title").textContent = title;
+    $("#modal-body").replaceChildren(node);
+    $("#modal-bg").classList.add("show");
+  }
+}
+
+// Nama lama dipertahankan: dipanggil dari beberapa tempat lain.
+function openDetail(stock) { showDetail(stock); }
+
+function markSelected(ticker, card) {
+  const list = $("#stock-list");
+  if (!list) return;
+  list.querySelectorAll(".stock-card.selected").forEach(c => {
+    c.classList.remove("selected");
+    c.removeAttribute("aria-current");
+  });
+  const target = card || list.querySelector('.stock-card[data-ticker="' + ticker + '"]');
+  if (target) {
+    target.classList.add("selected");
+    target.setAttribute("aria-current", "true");
+  }
+}
+
+function paneEmpty() {
+  $("#detail-pane").replaceChildren(
+    el("div", { className: "pane-empty" }, "Pilih saham di sebelah kiri untuk melihat analisis, indikator, dan grafiknya.")
+  );
+}
+
+// Memutar layar atau mengubah ukuran jendela melintasi 1000px tidak boleh
+// meninggalkan detail di lapisan yang sudah tak terlihat.
+function onWidthChange() {
+  if (WIDE.matches) {
+    $("#modal-bg").classList.remove("show");
+    if (state.selected) {
+      const s = UNIVERSE_BY_TICKER[state.selected];
+      if (s) { const { title, node } = buildDetail(s);
+               $("#detail-pane").replaceChildren(el("h3", { className: "detail-title" }, title), node); }
+    } else paneEmpty();
+  } else {
+    $("#detail-pane").replaceChildren();
+  }
 }
 
 function closeDetail() { $("#modal-bg").classList.remove("show"); }
@@ -961,23 +982,14 @@ function hideToast(delay = 0) {
 
 // ---------- Skeleton ----------
 function listSkeleton(n = 8) {
-  // Dulu hanya mengisi daftar mobile, sehingga tabel desktop justru KOSONG
-  // total selama refresh — persis saat umpan balik paling dibutuhkan.
-  const mobile = $("#stocks-mobile");
-  mobile.replaceChildren();
-  const tbody = $("#stocks-tbody");
-  if (tbody) tbody.replaceChildren();
-
+  const list = $("#stock-list");
+  list.replaceChildren();
   for (let i = 0; i < n; i++) {
-    mobile.append(el("div", { className: "stock-card skeleton-card" }, [
+    list.append(el("div", { className: "stock-card skeleton-card" }, [
       el("div", { className: "skeleton sk-line w40" }),
       el("div", { className: "skeleton sk-line w70" }),
       el("div", { className: "skeleton sk-line w90" }),
     ]));
-    if (tbody) {
-      tbody.append(el("tr", { className: "skeleton-row" },
-        el("td", { colspan: "7" }, el("div", { className: "skeleton sk-line w90" }))));
-    }
   }
 }
 
@@ -1284,17 +1296,6 @@ function init() {
     b.addEventListener("click", () => setView(b.dataset.view));
   });
 
-  document.querySelectorAll("th[data-sort]").forEach(th => {
-    th.addEventListener("click", () => {
-      const k = th.dataset.sort;
-      if (state.sortKey === k) {
-        state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
-      } else {
-        state.sortKey = k; state.sortDir = "desc";
-      }
-      renderList();
-    });
-  });
 
   $("#modal-close").addEventListener("click", closeDetail);
   $("#modal-bg").addEventListener("click", e => { if (e.target.id === "modal-bg") closeDetail(); });
@@ -1312,9 +1313,12 @@ function init() {
   setupModalSwipe();
   setupPullToRefresh();
 
+  WIDE.addEventListener("change", onWidthChange);
+
   renderKPIs();
   renderForever();
   setView("all");
+  if (WIDE.matches) paneEmpty();
 }
 
 document.addEventListener("DOMContentLoaded", init);

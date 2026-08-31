@@ -158,7 +158,11 @@ main {
   padding: 20px 88px 20px 28px;
   padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
   display: grid;
-  grid-template-columns: 1fr;
+  /* minmax(0, 1fr), bukan 1fr: `1fr` berarti minmax(auto, 1fr), dan minimum
+     `auto` melarang kolom menyusut di bawah lebar min-content isinya. Satu
+     kartu berisi teks panjang tak terpatahkan sudah cukup membuat seluruh
+     halaman ter-scroll mendatar di HP — 543px pada viewport 390px. */
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
 }
 
@@ -1014,9 +1018,6 @@ details[open] .guide-hint { opacity: 0; }
 .dividend-est-out { margin-top: 12px; }
 .div-est-table th { padding: 6px 0; }
 
-/* Paksa tampilan kartu untuk view watchlist (juga di desktop) */
-#section-stocks.force-cards .table-wrap { display: none; }
-#section-stocks.force-cards .stocks-mobile { display: flex; flex-direction: column; gap: 10px; }
 
 /* Advice strip (modal) */
 .advice-strip {
@@ -1427,4 +1428,72 @@ tr.row-clickable:focus-visible {
 @media (max-width: 720px) {
   .drawer { width: 100%; border-left: none; }
   .hmenu { min-width: 190px; }
+}
+
+/* ================================================== */
+/* MASTER–DETAIL (desktop)                             */
+/* ================================================== */
+
+/* Daftar kartu kini dipakai di semua lebar; tabel desktop dihapus. */
+.stock-list { display: flex; flex-direction: column; gap: 10px; }
+
+.stock-card .row4 {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 10px; padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.stock-card .row4 .spacer { flex: 1; }
+.sector-mini {
+  font-size: 11px; color: var(--muted);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 45%;
+}
+
+.stock-card:focus-visible {
+  outline: 2px solid var(--accent-2); outline-offset: 2px;
+}
+.stock-card.selected {
+  border-color: var(--accent-2);
+  box-shadow: inset 3px 0 0 var(--accent-2);
+}
+
+/* Panel detail disembunyikan di bawah 1000px: di sana detail muncul sebagai
+   modal. Elemennya dikosongkan JS supaya tidak menyisakan salinan DOM. */
+.detail-pane { display: none; }
+
+@media (min-width: 1000px) {
+  main {
+    /* Kolom kanan diberi lebar tetap, bukan pecahan: panel detail berisi
+       tabel indikator dan grafik yang punya lebar minimum masuk akal,
+       sedangkan daftar kartu menyusut dengan anggun. */
+    grid-template-columns: minmax(0, 1fr) 400px;
+    align-items: start;
+  }
+  /* Semua kartu selain daftar saham tetap selebar kolom kiri. */
+  main > .card { grid-column: 1; }
+
+  .detail-pane {
+    display: block;
+    grid-column: 2;
+    grid-row: 1 / -1;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .detail-title { margin: 0 0 6px; font-size: 16px; }
+  .pane-empty {
+    color: var(--muted); font-size: 13px; line-height: 1.7;
+    padding: 28px 8px; text-align: center;
+  }
+  /* Panel lebih sempit daripada modal, jadi tab dibiarkan membungkus alih-alih
+     memaksa scroll mendatar di dalam kotak yang sudah sempit. */
+  .detail-pane .modal-tabs { flex-wrap: wrap; overflow-x: visible; }
+}
+
+@media (min-width: 1280px) {
+  main { grid-template-columns: minmax(0, 1fr) 460px; }
 }
