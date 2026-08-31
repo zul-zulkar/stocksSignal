@@ -11,6 +11,7 @@ import json
 import sys
 import tempfile
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -403,3 +404,70 @@ class JRound(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class FundamentalsBlock(unittest.TestCase):
+    """
+    Diambil dari .info yang sudah ditarik untuk skoring — tanpa satu pun
+    request tambahan. Itulah alasan tidak ada build_fundamentals.py terpisah.
+    """
+
+    def test_extracts_known_fields(self):
+        b = fs.fundamentals_block({
+            "returnOnEquity": 0.234567, "forwardPE": 18.4,
+            "currentRatio": 1.83, "shortPercentOfFloat": 0.0412,
+        })
+        self.assertEqual(b["roe"], 0.2346)      # rasio → 4 desimal
+        self.assertEqual(b["forwardPE"], 18.4)  # kelipatan → 2 desimal
+        self.assertEqual(b["currentRatio"], 1.83)
+        self.assertEqual(b["shortPctFloat"], 0.0412)
+
+    def test_derives_fcf_yield(self):
+        b = fs.fundamentals_block({"freeCashflow": 5e9, "marketCap": 1e11})
+        self.assertEqual(b["fcfYield"], 0.05)
+
+    def test_fcf_yield_needs_both_parts(self):
+        self.assertNotIn("fcfYield", fs.fundamentals_block({"freeCashflow": 5e9}))
+        self.assertNotIn("fcfYield", fs.fundamentals_block({"marketCap": 1e11}))
+
+    def test_missing_fields_are_omitted_not_null(self):
+        # 984 ticker x puluhan null adalah pemborosan murni di file terkirim.
+        self.assertEqual(fs.fundamentals_block({}), {})
+
+    def test_ignores_unknown_and_unparseable_values(self):
+        # Masukan memakai kunci yfinance ("returnOnAssets"), bukan nama
+        # kunci keluaran ("roa") — pemetaannya ada di FUNDAMENTAL_FIELDS.
+        b = fs.fundamentals_block({"nope": 1, "forwardPE": "n/a", "returnOnAssets": 0.11})
+        self.assertEqual(b, {"roa": 0.11})
+
+    def test_output_is_json_serialisable(self):
+        payload = json.dumps(fs.fundamentals_block({"returnOnEquity": 0.2, "peg": 1.4}))
+        self.assertIn("roe", payload)
+
+
+class WriteFundamentals(unittest.TestCase):
+    def _tmp(self):
+        return Path(tempfile.mkdtemp()) / "fundamentals.js"
+
+    def test_writes_parseable_global(self):
+        tmp = self._tmp()
+        with mock.patch.object(fs, "FUNDAMENTALS_JS", tmp):
+            fs.write_fundamentals({"AAPL": {"roe": 0.5}})
+        self.assertIn("window.STOCK_FUNDAMENTALS", tmp.read_text(encoding="utf-8"))
+
+    def test_preserves_untouched_tickers(self):
+        # --limit tidak boleh menghapus sisa universe.
+        tmp = self._tmp()
+        with mock.patch.object(fs, "FUNDAMENTALS_JS", tmp):
+            fs.write_fundamentals({"AAPL": {"roe": 0.5}, "MSFT": {"roe": 0.4}})
+            fs.write_fundamentals({"AAPL": {"roe": 0.9}})
+            raw = tmp.read_text(encoding="utf-8")
+        data = json.loads(raw.split("window.STOCK_FUNDAMENTALS = ")[1].rstrip().rstrip(";\n").rstrip(";"))
+        self.assertEqual(data["AAPL"]["roe"], 0.9)
+        self.assertEqual(data["MSFT"]["roe"], 0.4)
+
+    def test_empty_update_writes_nothing(self):
+        tmp = self._tmp()
+        with mock.patch.object(fs, "FUNDAMENTALS_JS", tmp):
+            fs.write_fundamentals({})
+        self.assertFalse(tmp.exists())
