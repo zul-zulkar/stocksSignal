@@ -155,6 +155,25 @@ function signalCell(score) {
   return wrap;
 }
 
+// ---------- Strip 7 sinyal (satu kolom, menggantikan tujuh) ----------
+const STRIP_KEYS = ["technical", "momentum", "sentiment", "news", "policy", "profile", "valuation"];
+function signalStrip(s) {
+  const wrap = el("span", { className: "sig-strip" });
+  for (const key of STRIP_KEYS) {
+    const v = s[key] || 0;
+    const meta = SIGNAL_META[key] || { label: key };
+    const seg = el("span", {
+      className: "sig-seg " + (v > 20 ? "up" : v < -20 ? "down" : "flat"),
+      title: meta.label + ": " + (v >= 0 ? "+" : "") + v,
+    });
+    // Tinggi segmen mengikuti besaran, warnanya mengikuti arah — jadi pola
+    // tujuh faktor terbaca sekilas tanpa harus membaca tujuh angka.
+    seg.style.setProperty("--h", Math.max(18, Math.min(100, Math.abs(v))) + "%");
+    wrap.append(seg);
+  }
+  return wrap;
+}
+
 // ---------- Mini signal pill (kartu mobile) ----------
 function miniSig(label, score) {
   const cls = score > 20 ? "up" : score < -20 ? "down" : "flat";
@@ -188,7 +207,13 @@ function renderRow(stock, opts = {}) {
   const s = stock.signals;
   const price = ADVICE.priceOf(stock.ticker);
   const chg = changeOf(stock.ticker);
-  return el("tr", { className: "row-clickable", onClick: () => openDetail(stock) }, [
+  // Baris tabel dulu hanya bisa diklik. Dengan tabindex + penanganan
+  // Enter/Space, seluruh daftar jadi bisa dijelajahi dari keyboard.
+  const row = el("tr", {
+    className: "row-clickable", tabindex: "0", role: "button",
+    "aria-label": stock.ticker + " — " + stock.name,
+    onClick: () => openDetail(stock),
+  }, [
     el("td", {}, [
       el("div", { className: "ticker" }, stock.ticker),
       el("div", { className: "name" }, stock.name),
@@ -197,16 +222,14 @@ function renderRow(stock, opts = {}) {
     el("td", {}, priceCell(price, chg)),
     el("td", {}, stock.sector),
     el("td", {}, el("span", { className: "badge badge-" + badge.color }, badge.label)),
-    el("td", {}, signalCell(s.technical)),
-    el("td", {}, signalCell(s.momentum || 0)),
-    el("td", {}, signalCell(s.sentiment)),
-    el("td", {}, signalCell(s.news)),
-    el("td", {}, signalCell(s.policy)),
-    el("td", {}, signalCell(s.profile)),
-    el("td", {}, signalCell(s.valuation || 0)),
+    el("td", {}, signalStrip(s)),
     el("td", {}, el("span", { className: "score-num" + (adj === null ? " excl" : "") },
       adj === null ? "✗" : String(adj))),
   ]);
+  row.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openDetail(stock); }
+  });
+  return row;
 }
 
 // ---------- Mobile card (rich) ----------
@@ -404,7 +427,7 @@ function renderList() {
   }
   if (!visible) {
     mobile.append(el("div", { className: "stocks-empty" }, emptyMsg()));
-    tbody.append(el("tr", {}, el("td", { colspan: "13", className: "stocks-empty" }, emptyMsg())));
+    tbody.append(el("tr", {}, el("td", { colspan: "7", className: "stocks-empty" }, emptyMsg())));
   }
   $("#kpi-visible").textContent = visible;
   updateSortUI();
@@ -714,11 +737,35 @@ function openDetail(stock) {
   const tabNav    = el("div", { className: "modal-tabs" });
   const panels    = [];
   function switchTab(i) {
-    tabNav.querySelectorAll(".tab-btn").forEach((b, j) => b.classList.toggle("active", j === i));
+    tabNav.querySelectorAll(".tab-btn").forEach((b, j) => {
+      const on = j === i;
+      b.classList.toggle("active", on);
+      // Tab tanpa aria-selected terbaca pembaca layar sebagai tujuh tombol
+      // biasa, tanpa petunjuk mana yang sedang aktif. Roving tabindex
+      // membuat Tab melompati grupnya alih-alih menelusuri satu per satu.
+      b.setAttribute("aria-selected", on ? "true" : "false");
+      b.tabIndex = on ? 0 : -1;
+    });
     panels.forEach((p, j) => p.style.display = j === i ? "" : "none");
   }
+  tabNav.setAttribute("role", "tablist");
   tabLabels.forEach((lbl, i) => {
-    tabNav.append(el("button", { className: "tab-btn" + (i === 0 ? " active" : ""), onClick: () => switchTab(i) }, lbl));
+    const btn = el("button", {
+      className: "tab-btn" + (i === 0 ? " active" : ""),
+      role: "tab", "aria-selected": i === 0 ? "true" : "false",
+      tabindex: i === 0 ? "0" : "-1",
+      onClick: () => switchTab(i),
+    }, lbl);
+    // Panah kiri/kanan adalah cara baku menjelajahi tablist.
+    btn.addEventListener("keydown", (e) => {
+      const delta = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+      if (!delta) return;
+      e.preventDefault();
+      const next = (i + delta + tabLabels.length) % tabLabels.length;
+      switchTab(next);
+      tabNav.querySelectorAll(".tab-btn")[next].focus();
+    });
+    tabNav.append(btn);
   });
   body.append(tabNav);
 
@@ -877,7 +924,7 @@ function listSkeleton(n = 8) {
     ]));
     if (tbody) {
       tbody.append(el("tr", { className: "skeleton-row" },
-        el("td", { colspan: "13" }, el("div", { className: "skeleton sk-line w90" }))));
+        el("td", { colspan: "7" }, el("div", { className: "skeleton sk-line w90" }))));
     }
   }
 }

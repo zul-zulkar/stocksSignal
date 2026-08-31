@@ -1324,3 +1324,24 @@ summary:focus-visible,
 .tv-note { font-size: 11px; color: var(--muted); margin-top: var(--s2); }
 /* Baris skeleton tabel desktop — pasangan .skeleton-card yang sudah ada. */
 .skeleton-row td { padding: 14px 10px; border-bottom: 1px solid var(--border); }
+
+/* Strip 7 sinyal — menggantikan tujuh kolom bar terpisah di tabel desktop.
+   Tinggi tiap segmen mengikuti besaran sinyal, warnanya mengikuti arah,
+   jadi polanya terbaca sekilas tanpa membaca tujuh angka. */
+.sig-strip {
+  display: inline-flex; align-items: flex-end; gap: 3px;
+  height: 26px; padding: 0 2px;
+}
+.sig-seg {
+  width: 7px; height: var(--h, 30%); min-height: 4px;
+  border-radius: 2px; background: var(--flat); cursor: help;
+}
+.sig-seg.up   { background: var(--up); }
+.sig-seg.down { background: var(--down); }
+.sig-seg.flat { background: var(--flat); opacity: 0.55; }
+.th-signals { min-width: 96px; }
+
+/* Baris tabel kini bisa difokus keyboard. */
+tr.row-clickable:focus-visible {
+  outline: 2px solid var(--accent-2); outline-offset: -2px;
+}
