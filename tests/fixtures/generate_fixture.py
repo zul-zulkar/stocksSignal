@@ -97,6 +97,11 @@ def main() -> int:
         "volRatio": ind.volume_ratio(volume),
         "pos52w": ind.position_52w(close),
         "cross": ind.cross_state(close),
+        "supertrend": ind.supertrend(high, low, close),
+        # Skor teknikal ikut dikunci: inilah angka yang benar-benar dilihat
+        # pengguna, dan yang paling merugikan kalau kedua sisi melenceng.
+        "techParts": ind.technical_parts(ind.compute_all(df)),
+        "techScore": ind.technical_score(ind.compute_all(df)),
     }
     (HERE / "indicators_expected.json").write_text(
         json.dumps(expected, indent=2, sort_keys=True), encoding="utf-8"

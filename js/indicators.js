@@ -194,6 +194,45 @@
     };
   }
 
+  // Supertrend(10,3) → level dan arah (1 bullish / −1 bearish).
+  // Wajib ada di sini: technicalParts() memberinya bobot 10, jadi tanpa port
+  // ini skor JS akan meleset 10 poin dari skor Python tanpa ada yang tahu.
+  function supertrend(high, low, close, period, mult) {
+    period = period || 10; mult = mult || 3;
+    if (!close || close.length < period + 1) return { value: null, dir: null };
+
+    const atrS = wilder(trueRange(high, low, close), period);
+    const n = close.length;
+    const upperBasic = [], lowerBasic = [];
+    for (let i = 0; i < n; i++) {
+      const hl2 = (high[i] + low[i]) / 2;
+      upperBasic.push(hl2 + mult * atrS[i]);
+      lowerBasic.push(hl2 - mult * atrS[i]);
+    }
+
+    const finalUpper = new Array(n).fill(0);
+    const finalLower = new Array(n).fill(0);
+    const direction = new Array(n).fill(1);
+    for (let i = 0; i < n; i++) {
+      if (i === 0 || !isNum(upperBasic[i]) || !isNum(lowerBasic[i])) {
+        finalUpper[i] = isNum(upperBasic[i]) ? upperBasic[i] : 0;
+        finalLower[i] = isNum(lowerBasic[i]) ? lowerBasic[i] : 0;
+        continue;
+      }
+      finalUpper[i] = (upperBasic[i] < finalUpper[i - 1] || close[i - 1] > finalUpper[i - 1])
+        ? upperBasic[i] : finalUpper[i - 1];
+      finalLower[i] = (lowerBasic[i] > finalLower[i - 1] || close[i - 1] < finalLower[i - 1])
+        ? lowerBasic[i] : finalLower[i - 1];
+      if (close[i] > finalUpper[i]) direction[i] = 1;
+      else if (close[i] < finalLower[i]) direction[i] = -1;
+      else direction[i] = direction[i - 1];
+    }
+
+    const d = direction[n - 1];
+    const value = d === 1 ? finalLower[n - 1] : finalUpper[n - 1];
+    return { value: isNum(value) ? value : null, dir: d };
+  }
+
   function crossState(close, fast, slow) {
     fast = fast || 50; slow = slow || 200;
     if (!close || close.length < slow + 2) return { state: null, daysSince: null };
@@ -356,6 +395,7 @@
       sma200: sma(close, 200),
       macd: macd(close),
       adx: adx(high, low, close),
+      supertrend: supertrend(high, low, close),
       cross: crossState(close),
       rsi: rsi(close),
       stoch: stochastic(high, low, close),
@@ -370,12 +410,103 @@
     };
   }
 
+  // ── skoring teknikal ────────────────────────────────────────────────
+  // Port persis dari technical_parts()/technical_score() di scripts/indicators.py.
+  // Tanpa ini, tombol Refresh di HP akan menilai teknikal dengan rumus berbeda
+  // dari pipeline — dashboard yang sama menampilkan dua angka berbeda untuk
+  // saham yang sama, tergantung siapa yang terakhir menyentuhnya.
+
+  const TECH_WEIGHTS = {
+    trend: 25,       // susunan EMA, dikuatkan/dilemahkan oleh ADX
+    macd: 15,
+    rsi: 15,
+    stoch: 10,
+    bollinger: 10,
+    volume: 10,      // konfirmasi OBV + rasio volume
+    supertrend: 10,
+    position: 5,     // posisi dalam rentang 52 minggu
+  };
+
+  // Padanan jround() Python: setengah-ke-atas, sama seperti Math.round().
+  const jround = (x) => Math.floor(x + 0.5);
+  const clamp = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
+
+  // `!= null` menangkap null maupun undefined sekaligus: Python memulangkan
+  // None untuk kunci yang hilang, JS memulangkan undefined.
+  const has = (x) => x != null;
+
+  function technicalParts(p) {
+    const parts = {};
+    if (!p) return parts;
+    const price = p.price;
+
+    // Tren: susunan harga/EMA50/EMA200, diskalakan keyakinan ADX.
+    const e50 = p.ema50, e200 = p.ema200;
+    if (price && e50 && e200) {
+      let raw;
+      if (price > e50 && e50 > e200) raw = 1.0;
+      else if (price < e50 && e50 < e200) raw = -1.0;
+      else if (price > e200) raw = 0.4;
+      else raw = -0.4;
+      const adxVal = (p.adx || {}).adx;
+      // ADX di bawah 20 artinya pasar menyamping — susunan EMA di situ
+      // sering berupa derau, jadi keyakinannya dipangkas.
+      const conv = !has(adxVal) ? 1.0 : (adxVal >= 25 ? 1.0 : adxVal >= 20 ? 0.7 : 0.4);
+      parts.trend = raw * conv * TECH_WEIGHTS.trend;
+    }
+
+    const hist = (p.macd || {}).hist;
+    if (has(hist) && price) {
+      parts.macd = clamp((hist / price) * 100, -1, 1) * TECH_WEIGHTS.macd;
+    }
+
+    if (has(p.rsi)) {
+      parts.rsi = clamp((50 - p.rsi) / 20, -1, 1) * TECH_WEIGHTS.rsi;
+    }
+
+    const k = (p.stoch || {}).k;
+    if (has(k)) parts.stoch = clamp((50 - k) / 30, -1, 1) * TECH_WEIGHTS.stoch;
+
+    const pctB = (p.bollinger || {}).pctB;
+    if (has(pctB)) parts.bollinger = clamp((50 - pctB) / 50, -1, 1) * TECH_WEIGHTS.bollinger;
+
+    if (has(p.obvSlope)) {
+      let v = clamp(p.obvSlope * 3, -1, 1);
+      if (p.volRatio) v *= clamp(0.5 + p.volRatio / 2, 0.5, 1.5);
+      parts.volume = clamp(v, -1, 1) * TECH_WEIGHTS.volume;
+    }
+
+    const dir = (p.supertrend || {}).dir;
+    if (dir) parts.supertrend = dir * TECH_WEIGHTS.supertrend;
+
+    const pos = (p.pos52w || {}).pct;
+    if (has(pos)) parts.position = ((pos - 50) / 50) * TECH_WEIGHTS.position;
+
+    return parts;
+  }
+
+  function technicalScore(indicators) {
+    const parts = technicalParts(indicators);
+    const keys = Object.keys(parts);
+    if (!keys.length) return 0;
+    let sum = 0;
+    for (const key of keys) sum += parts[key];
+    return clamp(jround(sum), -100, 100);
+  }
+
+  // Jalur nyaman untuk js/refresh.js: dari OHLCV mentah langsung ke skor.
+  function scoreFromBars(bars) {
+    return technicalScore(computeAll(bars));
+  }
+
   window.INDICATOR_LIB = {
     // primitif (diekspos untuk pengujian paritas)
     ewm, wilder, emaSeries, rollingMean, rollingStd, rollingMax, rollingMin,
     diff, quantile,
     // indikator
-    ema, sma, macd, adx, crossState, rsi, stochastic, bollinger,
+    ema, sma, macd, adx, supertrend, crossState, rsi, stochastic, bollinger,
+    // skoring
+    TECH_WEIGHTS, technicalParts, technicalScore, scoreFromBars, jround,
     atr, trueRange, obv, volumeRatio, position52w, distanceFrom,
     computeAll,
   };

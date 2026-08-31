@@ -28,9 +28,6 @@ jobs:
       - name: Fetch live signals
         run: python scripts/fetch_signals.py
 
-      - name: Build technical indicators
-        run: python scripts/build_indicators.py
-
       - name: Build immersive world dataset
         run: python scripts/build_world_data.py
 

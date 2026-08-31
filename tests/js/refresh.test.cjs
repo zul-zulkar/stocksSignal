@@ -4,6 +4,9 @@ const { makeWindow, load } = require("./_loader.cjs");
 
 function ctx() {
   const c = makeWindow();
+  // Urutan sama seperti index.html: refresh.js kini bergantung pada
+  // window.INDICATOR_LIB untuk seluruh matematika teknikalnya.
+  load(c, "js/indicators.js");
   load(c, "js/refresh.js");
   return c;
 }

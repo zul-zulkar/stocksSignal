@@ -675,3 +675,134 @@ def _risk_level(vol: Optional[float], bt: Optional[float], mdd: Optional[float])
     else:
         level = 5
     return level, _RISK_LABELS[level]
+
+
+# ── skoring teknikal ──────────────────────────────────────────────────────
+# Ditempatkan di sini, bukan di fetch_signals.py, karena skor teknikal murni
+# turunan dari indikator di atas — dan js/indicators.js memuat port persisnya.
+# Sepasang berkas yang bercermin membuat jaminan paritas mudah dipegang.
+
+def jround(x: float) -> int:
+    """
+    Pembulatan setengah-ke-atas, sama seperti Math.round() di JS.
+
+    round() bawaan Python membulatkan ke genap terdekat (round(0.5) == 0),
+    jadi memakainya akan membuat skor di sini berbeda satu poin dari skor
+    yang dihitung sisi JS. build_world_data.py sudah menangani jebakan yang
+    sama lewat helper bernama sama.
+    """
+    return int(math.floor(x + 0.5))
+
+
+def clamp(x: float, lo: float, hi: float) -> float:
+    return max(lo, min(hi, x))
+
+
+# Bobot sub-sinyal teknikal; totalnya 100 supaya hasil akhirnya langsung
+# terbaca sebagai skala -100..+100.
+TECH_WEIGHTS = {
+    "trend": 25,       # susunan EMA, dikuatkan/dilemahkan oleh ADX
+    "macd": 15,
+    "rsi": 15,
+    "stoch": 10,
+    "bollinger": 10,
+    "volume": 10,      # konfirmasi OBV + rasio volume
+    "supertrend": 10,
+    "position": 5,     # posisi dalam rentang 52 minggu
+}
+
+
+def technical_parts(p: dict) -> dict:
+    """
+    Uraikan skor teknikal jadi sub-skor bernama, dari payload indicators.
+
+    Fungsi murni dict→dict: tidak butuh pandas maupun jaringan, jadi bisa
+    diuji langsung dan dipakai UI untuk menjelaskan "kenapa skornya segini"
+    alih-alih hanya menampilkan satu angka tanpa konteks.
+
+    Catatan soal arah: sebagian sub-sinyal bersifat mean-reversion (RSI,
+    Stochastic, %B — oversold dianggap positif) dan sebagian trend-following
+    (susunan EMA, Supertrend, posisi 52 minggu — kuat dianggap positif).
+    Keduanya memang saling meniadakan, dan itu disengaja: skor lama pun sudah
+    mencampur keduanya (cross_score trend-following + rsi_score mean-reverting),
+    jadi maknanya tetap konsisten dengan angka yang sudah tersimpan.
+    """
+    parts: dict[str, float] = {}
+    if not p:
+        return {}
+
+    price = p.get("price")
+
+    # Tren: susunan harga/EMA50/EMA200, lalu diskalakan keyakinan ADX.
+    e50, e200 = p.get("ema50"), p.get("ema200")
+    if price and e50 and e200:
+        if price > e50 > e200:
+            raw = 1.0
+        elif price < e50 < e200:
+            raw = -1.0
+        elif price > e200:
+            raw = 0.4
+        else:
+            raw = -0.4
+        adx_val = (p.get("adx") or {}).get("adx")
+        # ADX di bawah 20 artinya pasar menyamping — susunan EMA di situ
+        # sering berupa derau, jadi keyakinannya dipangkas.
+        conv = 1.0 if adx_val is None else (1.0 if adx_val >= 25 else 0.7 if adx_val >= 20 else 0.4)
+        parts["trend"] = raw * conv * TECH_WEIGHTS["trend"]
+
+    # MACD: histogram dinormalisasi ke persen harga agar setara antar-saham.
+    hist_val = (p.get("macd") or {}).get("hist")
+    if hist_val is not None and price:
+        parts["macd"] = clamp(hist_val / price * 100, -1, 1) * TECH_WEIGHTS["macd"]
+
+    # RSI: kontinu di seluruh rentang. Rumus lama melompat dari +16 ke +40
+    # tepat di RSI 30 — dua saham nyaris identik bisa terpaut 24 poin.
+    r = p.get("rsi")
+    if r is not None:
+        parts["rsi"] = clamp((50 - r) / 20.0, -1, 1) * TECH_WEIGHTS["rsi"]
+
+    k = (p.get("stoch") or {}).get("k")
+    if k is not None:
+        parts["stoch"] = clamp((50 - k) / 30.0, -1, 1) * TECH_WEIGHTS["stoch"]
+
+    pct_b = (p.get("bollinger") or {}).get("pctB")
+    if pct_b is not None:
+        parts["bollinger"] = clamp((50 - pct_b) / 50.0, -1, 1) * TECH_WEIGHTS["bollinger"]
+
+    # Volume: arah dari OBV, diperkuat kalau volumenya memang di atas normal.
+    slope = p.get("obvSlope")
+    if slope is not None:
+        v = clamp(slope * 3, -1, 1)
+        ratio = p.get("volRatio")
+        if ratio:
+            v *= clamp(0.5 + ratio / 2, 0.5, 1.5)
+        parts["volume"] = clamp(v, -1, 1) * TECH_WEIGHTS["volume"]
+
+    d = (p.get("supertrend") or {}).get("dir")
+    if d:
+        parts["supertrend"] = d * TECH_WEIGHTS["supertrend"]
+
+    pos = (p.get("pos52w") or {}).get("pct")
+    if pos is not None:
+        parts["position"] = ((pos - 50) / 50.0) * TECH_WEIGHTS["position"]
+
+    # Sengaja TIDAK dibulatkan di sini. technical_score() menjumlahkan
+    # nilai-nilai ini, dan round() Python membulatkan ke genap sementara
+    # Math.round() JS setengah-ke-atas — membulatkan di jalur skor akan
+    # menanam selisih satu poin antara kedua implementasi. Pembulatan untuk
+    # penyimpanan sudah ditangani compact() di build_indicators.py.
+    return parts
+
+
+def technical_score(indicators: dict) -> int:
+    """
+    Skor teknikal -100..+100 dari payload indicators.
+
+    Menggantikan rumus tiga-input lama (RSI + crossover SMA + momentum 1
+    bulan). Menerima dict indikator, bukan DataFrame, supaya riwayat harga
+    hanya perlu diambil sekali per ticker.
+    """
+    parts = technical_parts(indicators)
+    if not parts:
+        return 0
+    return int(clamp(jround(sum(parts.values())), -100, 100))

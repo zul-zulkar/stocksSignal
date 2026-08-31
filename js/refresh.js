@@ -21,43 +21,37 @@
 
   // ---------- Math helpers ----------
   const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
-  const avg = arr => arr.reduce((s, x) => s + x, 0) / arr.length;
 
-  // Wilder's RSI (sama dengan ewm(alpha=1/period) di Python pandas)
+  // RSI didelegasikan ke js/indicators.js, bukan diimplementasi ulang.
+  // Salinan Wilder yang berdiri sendiri di sini persis jenis duplikasi yang
+  // membuat kedua sisi bisa melenceng diam-diam.
   function rsi14(closes) {
-    const period = 14;
-    if (closes.length < period + 1) return 50;
-    let up = 0, down = 0;
-    for (let i = 1; i <= period; i++) {
-      const d = closes[i] - closes[i - 1];
-      if (d > 0) up += d; else down -= d;
-    }
-    up /= period; down /= period;
-    const alpha = 1 / period;
-    for (let i = period + 1; i < closes.length; i++) {
-      const d = closes[i] - closes[i - 1];
-      const u = d > 0 ? d : 0;
-      const v = d < 0 ? -d : 0;
-      up   = up   * (1 - alpha) + u * alpha;
-      down = down * (1 - alpha) + v * alpha;
-    }
-    if (down === 0) return 100;
-    const rs = up / down;
-    return 100 - 100 / (1 + rs);
+    const LIB = window.INDICATOR_LIB;
+    if (!LIB) return 50;
+    const v = LIB.rsi(closes);
+    return v === null ? 50 : v;
   }
 
-  function computeTechScore(closes) {
-    if (!closes || closes.length < 200) return 0;
-    const sma50  = avg(closes.slice(-50));
-    const sma200 = avg(closes.slice(-200));
-    const crossScore = sma50 > sma200 ? 40 : -40;
-    const r = rsi14(closes);
-    const rsiScore = r < 30 ? 40
-                   : r > 70 ? -40
-                   : Math.round((50 - r) * 0.8);
-    const mom = (closes[closes.length - 1] / closes[closes.length - 22] - 1) * 100;
-    const momScore = clamp(Math.round(mom), -20, 20);
-    return clamp(crossScore + rsiScore + momScore, -100, 100);
+  // Skor teknikal dari OHLCV penuh, lewat js/indicators.js.
+  //
+  // Sebelumnya fungsi ini punya rumus sendiri (crossover SMA + RSI + momentum
+  // 1 bulan) yang sudah tidak lagi cocok dengan pipeline Python — jadi skor
+  // yang muncul setelah menekan Refresh berbeda dari skor yang tersimpan,
+  // untuk saham yang sama. Sekarang keduanya memanggil matematika yang sama,
+  // dan fixture bersama di tests/fixtures/ menjaganya tetap begitu.
+  //
+  // Sekalian memperbaiki off-by-one lama: momentum memakai indeks -22
+  // (22 bar) padahal sisi Python memakai -21.
+  function computeTechScore(bars) {
+    const LIB = window.INDICATOR_LIB;
+    if (!LIB) return 0;   // indicators.js gagal dimuat — jangan mengarang angka
+    // Terima array closes polos demi kompatibilitas pemanggil lama; indikator
+    // berbasis high/low/volume otomatis kosong dan tidak ikut menyumbang skor.
+    const input = Array.isArray(bars)
+      ? { close: bars, high: bars, low: bars, volume: null }
+      : bars;
+    if (!input || !input.close || input.close.length < 200) return 0;
+    return LIB.scoreFromBars(input);
   }
 
   // ---------- Stooq fetch ----------
@@ -150,13 +144,18 @@
     try { return new URL(u).host; } catch { return "?"; }
   }
 
-  // Bangun entri overlay (technical + harga + perubahan) dari deret closes.
-  function overlayEntry(closes, lastDate) {
+  // Bangun entri overlay (technical + harga + perubahan) dari hasil parse.
+  // Menerima objek OHLCV penuh, atau array closes polos untuk pemanggil lama.
+  function overlayEntry(bars, lastDate) {
+    const closes = Array.isArray(bars) ? bars : bars.closes;
     const lastClose = closes[closes.length - 1];
     const prevClose = closes.length >= 2 ? closes[closes.length - 2] : lastClose;
     const changePct = prevClose ? (lastClose / prevClose - 1) * 100 : 0;
+    const input = Array.isArray(bars)
+      ? closes
+      : { close: closes, high: bars.high, low: bars.low, volume: bars.volume };
     return {
-      technical: computeTechScore(closes),
+      technical: computeTechScore(input),
       lastClose,
       prevClose,
       changePct: Math.round(changePct * 100) / 100,
@@ -170,7 +169,7 @@
     if (!parsed || parsed.closes.length < 200) {
       throw new Error(`data tidak cukup untuk ${ticker} (butuh ≥200 hari)`);
     }
-    return overlayEntry(parsed.closes, parsed.lastDate);
+    return overlayEntry(parsed, parsed.lastDate);
   }
 
   // ---------- Refresh orchestrator ----------
@@ -188,7 +187,7 @@
       results.forEach((r, idx) => {
         const ticker = batch[idx];
         if (r.status === "fulfilled" && r.value.closes.length >= 200) {
-          overlay[ticker] = overlayEntry(r.value.closes, r.value.lastDate);
+          overlay[ticker] = overlayEntry(r.value, r.value.lastDate);
         } else {
           failed.push(ticker);
           const reason = r.status === "rejected"

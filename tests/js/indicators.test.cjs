@@ -106,6 +106,43 @@ test("paritas: golden/death cross cocok dengan fixture Python", () => {
   assert.strictEqual(c.daysSince, expected.cross.daysSince, "cross.daysSince");
 });
 
+test("paritas: Supertrend cocok dengan fixture Python", () => {
+  const s = IND.supertrend(H, L, C);
+  closeTo(s.value, expected.supertrend.value, "supertrend.value");
+  assert.strictEqual(s.dir, expected.supertrend.dir, "supertrend.dir");
+});
+
+test("paritas: skor teknikal cocok dengan fixture Python", () => {
+  // Inilah angka yang benar-benar dilihat pengguna. Uji ini yang menangkap
+  // Supertrend hilang dari computeAll() sisi JS — skornya meleset 10 poin
+  // sementara seluruh indikator individualnya cocok sempurna.
+  const ind = IND.computeAll({ high: H, low: L, close: C, volume: V });
+  assert.strictEqual(IND.technicalScore(ind), expected.techScore, "techScore");
+});
+
+test("paritas: rincian sub-skor teknikal cocok dengan fixture Python", () => {
+  const parts = IND.technicalParts(IND.computeAll({ high: H, low: L, close: C, volume: V }));
+  assert.deepStrictEqual(
+    Object.keys(parts).sort(),
+    Object.keys(expected.techParts).sort(),
+    "sub-skor yang muncul harus sama"
+  );
+  for (const [name, want] of Object.entries(expected.techParts)) {
+    closeTo(parts[name], want, `techParts.${name}`);
+  }
+});
+
+test("bobot teknikal berjumlah 100 di kedua sisi", () => {
+  const total = Object.values(IND.TECH_WEIGHTS).reduce((a, b) => a + b, 0);
+  assert.strictEqual(total, 100);
+});
+
+test("jround membulatkan setengah-ke-atas seperti Python jround()", () => {
+  assert.strictEqual(IND.jround(0.5), 1);
+  assert.strictEqual(IND.jround(2.5), 3);
+  assert.strictEqual(IND.jround(-0.5), 0);
+});
+
 test("fixture cukup panjang untuk semua indikator", () => {
   // Fixture yang dipendekkan diam-diam membuat indikator jadi null dan
   // uji paritas kehilangan taringnya.
