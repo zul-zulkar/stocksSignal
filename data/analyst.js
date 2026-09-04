@@ -871,10 +871,10 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "TTE": {
-    "rating": "strong_buy",
-    "ratingMean": 1.0,
+    "rating": "buy",
+    "ratingMean": 2.33,
     "numAnalysts": 10,
-    "targetMean": 95.1,
+    "targetMean": 96.2,
     "targetHigh": 108.0,
     "targetLow": 81.0,
     "price": 88.59,
@@ -4054,9 +4054,9 @@ window.STOCK_ANALYST = {
     "rating": "buy",
     "ratingMean": 1.58,
     "numAnalysts": 22,
-    "targetMean": 45.66,
-    "targetHigh": 57.6,
-    "targetLow": 38.0,
+    "targetMean": 52.48,
+    "targetHigh": 60.0,
+    "targetLow": 39.0,
     "price": 40.2,
     "currency": "USD"
   },
@@ -5253,8 +5253,8 @@ window.STOCK_ANALYST = {
   "MBLY": {
     "rating": "none",
     "ratingMean": null,
-    "numAnalysts": 27,
-    "targetMean": 12.11,
+    "numAnalysts": 26,
+    "targetMean": 12.15,
     "targetHigh": 27.0,
     "targetLow": 6.95,
     "price": 8.56,

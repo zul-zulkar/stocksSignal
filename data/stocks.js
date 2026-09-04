@@ -1006,7 +1006,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.75, payoutRatio: 49.3, marketCapB: 196 },
-    signals: { technical: 41, momentum: -10, sentiment: 100, news: 0, policy: 0, profile: 40, valuation: 33 }
+    signals: { technical: 41, momentum: -10, sentiment: 34, news: 0, policy: 0, profile: 40, valuation: 33 }
   },
   {
     ticker: "NEE", name: "NextEra Energy, Inc.", sector: "Utilities",
@@ -4504,7 +4504,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 23 },
-    signals: { technical: 36, momentum: 13, sentiment: 71, news: 0, policy: 0, profile: 10, valuation: -70 }
+    signals: { technical: 36, momentum: 13, sentiment: 71, news: 0, policy: 0, profile: 10, valuation: -67 }
   },
   {
     ticker: "LI", name: "Li Auto Inc.", sector: "Consumer Cyclical",
@@ -5978,7 +5978,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.52, payoutRatio: 119.1, marketCapB: 6 },
-    signals: { technical: -36, momentum: -96, sentiment: -15, news: 0, policy: 0, profile: 15, valuation: 28 }
+    signals: { technical: -36, momentum: -96, sentiment: -15, news: 0, policy: 0, profile: 15, valuation: 24 }
   },
   {
     ticker: "ADT", name: "ADT Inc.", sector: "Industrials",
@@ -6286,7 +6286,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
-    signals: { technical: 52, momentum: 100, sentiment: 49, news: 0, policy: 0, profile: 25, valuation: -9 }
+    signals: { technical: 52, momentum: 100, sentiment: 49, news: 0, policy: 0, profile: 25, valuation: -10 }
   },
   {
     ticker: "CRSP", name: "CRISPR Therapeutics AG", sector: "Healthcare",
