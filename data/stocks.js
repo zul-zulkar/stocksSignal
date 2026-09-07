@@ -5978,7 +5978,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.68, payoutRatio: 119.1, marketCapB: 6 },
-    signals: { technical: -36, momentum: -96, sentiment: -15, news: 0, policy: 0, profile: 10, valuation: 24 }
+    signals: { technical: -36, momentum: -96, sentiment: -15, news: 0, policy: 0, profile: 10, valuation: 25 }
   },
   {
     ticker: "ADT", name: "ADT Inc.", sector: "Industrials",
