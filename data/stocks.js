@@ -4944,7 +4944,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.75, payoutRatio: 53.2, marketCapB: 12 },
-    signals: { technical: -34, momentum: -96, sentiment: 30, news: 0, policy: 0, profile: 25, valuation: 25 }
+    signals: { technical: -34, momentum: -96, sentiment: 10, news: 0, policy: 0, profile: 25, valuation: 25 }
   },
   {
     ticker: "APTV", name: "Aptiv PLC", sector: "Consumer Cyclical",
