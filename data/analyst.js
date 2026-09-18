@@ -4741,8 +4741,8 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "AFG": {
-    "rating": "buy",
-    "ratingMean": 2.43,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 6,
     "targetMean": 155.83,
     "targetHigh": 175.0,
@@ -5642,7 +5642,7 @@ window.STOCK_ANALYST = {
   },
   "BC": {
     "rating": "buy",
-    "ratingMean": 2.05,
+    "ratingMean": 2.1,
     "numAnalysts": 17,
     "targetMean": 90.71,
     "targetHigh": 120.0,
@@ -6421,9 +6421,9 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "ADMA": {
-    "rating": "none",
-    "ratingMean": null,
-    "numAnalysts": 5,
+    "rating": "buy",
+    "ratingMean": 1.75,
+    "numAnalysts": 4,
     "targetMean": 17.0,
     "targetHigh": 21.0,
     "targetLow": 12.0,
@@ -6741,8 +6741,8 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "AMLX": {
-    "rating": "strong_buy",
-    "ratingMean": 1.17,
+    "rating": "none",
+    "ratingMean": null,
     "numAnalysts": 11,
     "targetMean": 42.36,
     "targetHigh": 57.0,
@@ -6971,8 +6971,8 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "AMPL": {
-    "rating": "none",
-    "ratingMean": null,
+    "rating": "buy",
+    "ratingMean": 1.75,
     "numAnalysts": 11,
     "targetMean": 13.77,
     "targetHigh": 18.0,
@@ -7641,13 +7641,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "SLAI": {
-    "rating": null,
+    "rating": "none",
     "ratingMean": null,
     "numAnalysts": 0,
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": null,
+    "price": 3.72,
     "currency": "USD"
   },
   "BNGO": {
