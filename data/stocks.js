@@ -1182,7 +1182,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.22, payoutRatio: 21.5, marketCapB: 185 },
-    signals: { technical: 37, momentum: -19, sentiment: 64, news: 0, policy: 0, profile: 60, valuation: 18 }
+    signals: { technical: 37, momentum: -19, sentiment: 64, news: 0, policy: 0, profile: 60, valuation: 19 }
   },
   {
     ticker: "UNP", name: "Union Pacific Corporation", sector: "Industrials",
@@ -1644,7 +1644,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.99, payoutRatio: 70.2, marketCapB: 112 },
-    signals: { technical: 75, momentum: 16, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: 29 }
+    signals: { technical: 75, momentum: 16, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: 29 }
   },
   {
     ticker: "MDT", name: "Medtronic plc", sector: "Healthcare",
@@ -2513,7 +2513,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.04, payoutRatio: 39.0, marketCapB: 73 },
-    signals: { technical: 33, momentum: 28, sentiment: 78, news: 0, policy: 0, profile: 45, valuation: -38 }
+    signals: { technical: 33, momentum: 28, sentiment: 78, news: 0, policy: 0, profile: 45, valuation: -39 }
   },
   {
     ticker: "KEYS", name: "Keysight Technologies, Inc.", sector: "Technology",
@@ -2623,7 +2623,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.2, payoutRatio: 92.4, marketCapB: 55 },
-    signals: { technical: 75, momentum: -43, sentiment: 20, news: 0, policy: 0, profile: 35, valuation: 10 }
+    signals: { technical: 75, momentum: -43, sentiment: 7, news: 0, policy: 0, profile: 35, valuation: 10 }
   },
   {
     ticker: "ALL", name: "The Allstate Corporation", sector: "Financial Services",
@@ -3294,7 +3294,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.44, payoutRatio: 56.3, marketCapB: 40 },
-    signals: { technical: 43, momentum: 15, sentiment: 0, news: 0, policy: 0, profile: 20, valuation: 16 }
+    signals: { technical: 43, momentum: 15, sentiment: 0, news: 0, policy: 0, profile: 20, valuation: 15 }
   },
   {
     ticker: "ALC", name: "Alcon Inc.", sector: "Healthcare",
@@ -4229,7 +4229,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 16 },
-    signals: { technical: -45, momentum: -100, sentiment: -2, news: 0, policy: 0, profile: -10, valuation: 51 }
+    signals: { technical: -45, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 51 }
   },
   {
     ticker: "SOFI", name: "SoFi Technologies, Inc.", sector: "Financial Services",
@@ -4680,7 +4680,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -50, momentum: -100, sentiment: -10, news: 0, policy: 0, profile: 15, valuation: 25 }
+    signals: { technical: -50, momentum: -100, sentiment: -10, news: 0, policy: 0, profile: 15, valuation: 24 }
   },
   {
     ticker: "H", name: "Hyatt Hotels Corporation", sector: "Consumer Cyclical",
@@ -6033,7 +6033,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: 38, momentum: 73, sentiment: 28, news: 0, policy: 0, profile: 5, valuation: 28 }
+    signals: { technical: 38, momentum: 73, sentiment: 31, news: 0, policy: 0, profile: 5, valuation: 28 }
   },
   {
     ticker: "DBX", name: "Dropbox, Inc.", sector: "Technology",
