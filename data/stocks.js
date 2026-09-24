@@ -370,7 +370,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.56, payoutRatio: 52.5, marketCapB: 666 },
+    fundamentals: { dividendYield: 2.56, payoutRatio: 52.5, marketCapB: 667 },
     signals: { technical: 40, momentum: -58, sentiment: 34, news: 0, policy: 0, profile: 55, valuation: 15 }
   },
 
@@ -406,7 +406,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 156 },
-    signals: { technical: -36, momentum: -52, sentiment: 76, news: 0, policy: -25, profile: 10, valuation: -84 }
+    signals: { technical: -36, momentum: -52, sentiment: 76, news: 0, policy: -25, profile: 10, valuation: -80 }
   },
   {
     ticker: "GD", name: "General Dynamics", sector: "Industrials",
@@ -719,8 +719,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.6, payoutRatio: 21.7, marketCapB: 1056 },
-    signals: { technical: 32, momentum: 41, sentiment: 68, news: 0, policy: 0, profile: 65, valuation: -15 }
+    fundamentals: { dividendYield: 0.6, payoutRatio: 21.7, marketCapB: 1054 },
+    signals: { technical: 32, momentum: 40, sentiment: 68, news: 0, policy: 0, profile: 65, valuation: -14 }
   },
   {
     ticker: "MU", name: "Micron Technology, Inc.", sector: "Technology",
@@ -961,8 +961,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.26, payoutRatio: 21.5, marketCapB: 207 },
-    signals: { technical: -34, momentum: -50, sentiment: 42, news: 0, policy: 0, profile: 50, valuation: 14 }
+    fundamentals: { dividendYield: 1.26, payoutRatio: 21.5, marketCapB: 206 },
+    signals: { technical: -35, momentum: -50, sentiment: 42, news: 0, policy: 0, profile: 50, valuation: 14 }
   },
   {
     ticker: "ANET", name: "Arista Networks, Inc.", sector: "Technology",
@@ -1501,7 +1501,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.2, payoutRatio: 69.7, marketCapB: 117 },
-    signals: { technical: 46, momentum: -57, sentiment: 18, news: 0, policy: 0, profile: 40, valuation: 59 }
+    signals: { technical: 46, momentum: -57, sentiment: 20, news: 0, policy: 0, profile: 40, valuation: 59 }
   },
   {
     ticker: "NEM", name: "Newmont Corporation", sector: "Basic Materials",
@@ -1897,7 +1897,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 105 },
-    signals: { technical: 37, momentum: -29, sentiment: 72, news: 0, policy: 0, profile: 40, valuation: -26 }
+    signals: { technical: 37, momentum: -29, sentiment: 72, news: 0, policy: 0, profile: 40, valuation: -27 }
   },
   {
     ticker: "JCI", name: "Johnson Controls International plc", sector: "Industrials",
@@ -2040,7 +2040,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.55, payoutRatio: 31.6, marketCapB: 81 },
-    signals: { technical: 42, momentum: -35, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: 24 }
+    signals: { technical: 42, momentum: -35, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: 23 }
   },
   {
     ticker: "MCO", name: "Moody's Corporation", sector: "Financial Services",
@@ -2084,7 +2084,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.44, payoutRatio: 48.0, marketCapB: 87 },
-    signals: { technical: 35, momentum: 7, sentiment: 54, news: 0, policy: 0, profile: 35, valuation: -4 }
+    signals: { technical: 34, momentum: 8, sentiment: 54, news: 0, policy: 0, profile: 35, valuation: -4 }
   },
   {
     ticker: "NET", name: "Cloudflare, Inc.", sector: "Technology",
@@ -2392,7 +2392,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.22, payoutRatio: 46.3, marketCapB: 72 },
-    signals: { technical: 42, momentum: 2, sentiment: 38, news: 0, policy: 0, profile: 45, valuation: 3 }
+    signals: { technical: 42, momentum: 2, sentiment: 100, news: 0, policy: 0, profile: 45, valuation: 3 }
   },
   {
     ticker: "APD", name: "Air Products and Chemicals, Inc.", sector: "Basic Materials",
@@ -2832,7 +2832,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.96, payoutRatio: 33.6, marketCapB: 29 },
-    signals: { technical: -37, momentum: -100, sentiment: 39, news: 0, policy: 0, profile: 30, valuation: 27 }
+    signals: { technical: -36, momentum: -100, sentiment: 39, news: 0, policy: 0, profile: 30, valuation: 27 }
   },
   {
     ticker: "STM", name: "STMicroelectronics N.V.", sector: "Technology",
@@ -2876,7 +2876,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.58, payoutRatio: 61.7, marketCapB: 50 },
-    signals: { technical: 26, momentum: -23, sentiment: 56, news: 0, policy: 0, profile: 45, valuation: 30 }
+    signals: { technical: 26, momentum: -22, sentiment: 56, news: 0, policy: 0, profile: 45, valuation: 30 }
   },
   {
     ticker: "GRMN", name: "Garmin Ltd.", sector: "Technology",
@@ -2887,7 +2887,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.46, payoutRatio: 38.7, marketCapB: 57 },
-    signals: { technical: 32, momentum: 11, sentiment: 22, news: 0, policy: 0, profile: 45, valuation: -20 }
+    signals: { technical: 32, momentum: 12, sentiment: 22, news: 0, policy: 0, profile: 45, valuation: -20 }
   },
   {
     ticker: "EBAY", name: "eBay Inc.", sector: "Consumer Cyclical",
@@ -3162,7 +3162,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 66 },
-    signals: { technical: 47, momentum: 100, sentiment: 44, news: 0, policy: 0, profile: 10, valuation: 0 }
+    signals: { technical: 47, momentum: 100, sentiment: 50, news: 0, policy: 0, profile: 10, valuation: 0 }
   },
   {
     ticker: "CCI", name: "Crown Castle Inc.", sector: "Real Estate",
@@ -3745,7 +3745,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.26, payoutRatio: 96.3, marketCapB: 25 },
-    signals: { technical: -7, momentum: -98, sentiment: 40, news: 0, policy: 0, profile: 10, valuation: 16 }
+    signals: { technical: -7, momentum: -98, sentiment: 44, news: 0, policy: 0, profile: 10, valuation: 16 }
   },
   {
     ticker: "KHC", name: "The Kraft Heinz Company", sector: "Consumer Defensive",
@@ -5681,7 +5681,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 7.67, payoutRatio: 26.5, marketCapB: 7 },
-    signals: { technical: -47, momentum: -98, sentiment: 50, news: 0, policy: 0, profile: 5, valuation: 51 }
+    signals: { technical: -47, momentum: -98, sentiment: 50, news: 0, policy: 0, profile: 5, valuation: 50 }
   },
   {
     ticker: "AOS", name: "A. O. Smith Corporation", sector: "Industrials",
@@ -8805,7 +8805,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.98, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 38, momentum: 6, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
+    signals: { technical: 39, momentum: 6, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "DIA", name: "State Street SPDR Dow Jones Industrial Average ETF Trust", sector: "Other",
@@ -8915,7 +8915,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.03, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 38, momentum: -2, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    signals: { technical: 38, momentum: -1, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
     ticker: "LQD", name: "iShares iBoxx $ Investment Grade Corporate Bond ETF", sector: "Other",
@@ -10840,7 +10840,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.6, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 41, momentum: -26, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    signals: { technical: 42, momentum: -26, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
     ticker: "XDTE", name: "Roundhill S&P 500 0DTE Covered Call Strategy ETF", sector: "Other",
