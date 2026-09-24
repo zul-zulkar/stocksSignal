@@ -6361,13 +6361,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "UA": {
-    "rating": null,
+    "rating": "none",
     "ratingMean": null,
     "numAnalysts": 0,
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": null,
+    "price": 4.45,
     "currency": "USD"
   },
   "SEDG": {
@@ -6981,13 +6981,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "OXLC": {
-    "rating": null,
+    "rating": "none",
     "ratingMean": null,
-    "numAnalysts": 0,
-    "targetMean": null,
-    "targetHigh": null,
-    "targetLow": null,
-    "price": null,
+    "numAnalysts": 1,
+    "targetMean": 12.5,
+    "targetHigh": 12.5,
+    "targetLow": 12.5,
+    "price": 8.8,
     "currency": "USD"
   },
   "CRON": {
@@ -7701,13 +7701,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "QVCAQ": {
-    "rating": null,
+    "rating": "none",
     "ratingMean": null,
     "numAnalysts": 0,
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": null,
+    "price": 0.03,
     "currency": "USD"
   },
   "XXII": {
@@ -7751,13 +7751,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "ACP": {
-    "rating": null,
+    "rating": "none",
     "ratingMean": null,
     "numAnalysts": 0,
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": null,
+    "price": 4.5,
     "currency": "USD"
   },
   "SLV": {
