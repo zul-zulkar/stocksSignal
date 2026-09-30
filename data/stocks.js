@@ -3019,7 +3019,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.51, payoutRatio: 42.1, marketCapB: 39 },
-    signals: { technical: -37, momentum: -57, sentiment: 75, news: 0, policy: 0, profile: 45, valuation: -11 }
+    signals: { technical: -37, momentum: -57, sentiment: 75, news: 0, policy: 0, profile: 45, valuation: -12 }
   },
   {
     ticker: "XYZ", name: "Block, Inc.", sector: "Technology",
@@ -8585,7 +8585,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 14.97, payoutRatio: 140.9, marketCapB: 1 },
-    signals: { technical: -37, momentum: -99, sentiment: 0, news: 0, policy: 0, profile: 5, valuation: 0 }
+    signals: { technical: -39, momentum: -97, sentiment: 0, news: 0, policy: 0, profile: 5, valuation: 0 }
   },
   {
     ticker: "SLV", name: "iShares Silver Trust", sector: "Other",
