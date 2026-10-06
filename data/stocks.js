@@ -37,7 +37,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.76, payoutRatio: 19.8, marketCapB: 3900 },
-    signals: { technical: 33, momentum: 78, sentiment: 84, news: 0, policy: 10, profile: 65, valuation: -6 }
+    signals: { technical: 33, momentum: 78, sentiment: 86, news: 0, policy: 10, profile: 65, valuation: -6 }
   },
   {
     ticker: "GOOGL", name: "Alphabet Inc. (Google)", sector: "Technology",
@@ -258,7 +258,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public reporting"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.95, payoutRatio: 35.0, marketCapB: 836 },
+    fundamentals: { dividendYield: 0.95, payoutRatio: 35.0, marketCapB: 834 },
     signals: { technical: -36, momentum: -100, sentiment: 74, news: 0, policy: 5, profile: 40, valuation: -37 }
   },
   {
@@ -635,7 +635,7 @@ window.STOCK_UNIVERSE = [
       sources: ["UN OHCHR database", "HRW report 2018"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.06, payoutRatio: 17.8, marketCapB: 119 },
+    fundamentals: { dividendYield: 1.06, payoutRatio: 17.8, marketCapB: 123 },
     signals: { technical: 62, momentum: -87, sentiment: 74, news: 0, policy: -10, profile: 60, valuation: 21 }
   },
   {
@@ -672,7 +672,7 @@ window.STOCK_UNIVERSE = [
       sources: ["SCHD holdings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.0, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.24, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 50, momentum: -34, sentiment: 25, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -683,7 +683,7 @@ window.STOCK_UNIVERSE = [
       sources: ["VYM holdings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.22, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.37, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 46, momentum: -40, sentiment: 25, news: 0, policy: 0, profile: -10, valuation: 0 }
   }
 ,
@@ -775,7 +775,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.9, payoutRatio: 53.6, marketCapB: 331 },
-    signals: { technical: 43, momentum: -13, sentiment: 17, news: 0, policy: 0, profile: 60, valuation: 29 }
+    signals: { technical: 43, momentum: -13, sentiment: 17, news: 0, policy: 0, profile: 60, valuation: 30 }
   },
   {
     ticker: "AMAT", name: "Applied Materials, Inc.", sector: "Technology",
@@ -797,7 +797,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.42, payoutRatio: 32.3, marketCapB: 299 },
-    signals: { technical: 68, momentum: -15, sentiment: 36, news: 0, policy: 0, profile: 45, valuation: 18 }
+    signals: { technical: 68, momentum: -15, sentiment: 36, news: 0, policy: 0, profile: 45, valuation: 17 }
   },
   {
     ticker: "GE", name: "GE Aerospace", sector: "Industrials",
@@ -907,7 +907,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.49, payoutRatio: 26.2, marketCapB: 246 },
-    signals: { technical: 40, momentum: -59, sentiment: 57, news: 0, policy: 0, profile: 60, valuation: 29 }
+    signals: { technical: 40, momentum: -59, sentiment: 60, news: 0, policy: 0, profile: 60, valuation: 29 }
   },
   {
     ticker: "LIN", name: "Linde plc", sector: "Basic Materials",
@@ -1115,7 +1115,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 208 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 206 },
     signals: { technical: 36, momentum: 64, sentiment: 66, news: 0, policy: 0, profile: 40, valuation: -100 }
   },
   {
@@ -1214,7 +1214,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.58, payoutRatio: 78.7, marketCapB: 173 },
+    fundamentals: { dividendYield: 2.58, payoutRatio: 78.7, marketCapB: 174 },
     signals: { technical: 40, momentum: -63, sentiment: 78, news: 0, policy: 0, profile: 50, valuation: 10 }
   },
   {
@@ -1236,7 +1236,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 95 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 94 },
     signals: { technical: -42, momentum: -100, sentiment: 71, news: 0, policy: 0, profile: 35, valuation: 19 }
   },
   {
@@ -1490,7 +1490,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.12, payoutRatio: 55.3, marketCapB: 120 },
-    signals: { technical: 44, momentum: -51, sentiment: 27, news: 0, policy: 0, profile: 35, valuation: 33 }
+    signals: { technical: 44, momentum: -51, sentiment: 23, news: 0, policy: 0, profile: 35, valuation: 33 }
   },
   {
     ticker: "PGR", name: "The Progressive Corporation", sector: "Financial Services",
@@ -1731,7 +1731,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.73, payoutRatio: 10.1, marketCapB: 94 },
+    fundamentals: { dividendYield: 0.73, payoutRatio: 10.1, marketCapB: 96 },
     signals: { technical: -39, momentum: -95, sentiment: 52, news: 0, policy: 0, profile: 15, valuation: 19 }
   },
   {
@@ -2039,7 +2039,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.44, payoutRatio: 31.6, marketCapB: 81 },
+    fundamentals: { dividendYield: 2.44, payoutRatio: 31.6, marketCapB: 80 },
     signals: { technical: 40, momentum: -48, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: 24 }
   },
   {
@@ -2149,7 +2149,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.89, payoutRatio: 31.4, marketCapB: 76 },
+    fundamentals: { dividendYield: 2.89, payoutRatio: 31.4, marketCapB: 77 },
     signals: { technical: 39, momentum: -58, sentiment: 33, news: 0, policy: 0, profile: 45, valuation: 31 }
   },
   {
@@ -2193,7 +2193,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.78, payoutRatio: 20.6, marketCapB: 73 },
+    fundamentals: { dividendYield: 0.78, payoutRatio: 20.6, marketCapB: 72 },
     signals: { technical: 46, momentum: -42, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: -15 }
   },
   {
@@ -2259,8 +2259,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.95, payoutRatio: 13.5, marketCapB: 122 },
-    signals: { technical: 11, momentum: 100, sentiment: 31, news: 0, policy: 0, profile: 30, valuation: 33 }
+    fundamentals: { dividendYield: 0.95, payoutRatio: 13.5, marketCapB: 127 },
+    signals: { technical: 11, momentum: 100, sentiment: 31, news: 0, policy: 0, profile: 30, valuation: 34 }
   },
   {
     ticker: "MSI", name: "Motorola Solutions, Inc.", sector: "Technology",
@@ -2535,7 +2535,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.33, payoutRatio: 30.4, marketCapB: 66 },
-    signals: { technical: 39, momentum: -4, sentiment: 50, news: 0, policy: 0, profile: 45, valuation: 38 }
+    signals: { technical: 39, momentum: -4, sentiment: 50, news: 0, policy: 0, profile: 45, valuation: 37 }
   },
   {
     ticker: "AZO", name: "AutoZone, Inc.", sector: "Consumer Cyclical",
@@ -2887,7 +2887,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.49, payoutRatio: 38.7, marketCapB: 55 },
-    signals: { technical: 42, momentum: 2, sentiment: 22, news: 0, policy: 0, profile: 45, valuation: -16 }
+    signals: { technical: 42, momentum: 2, sentiment: 22, news: 0, policy: 0, profile: 45, valuation: -17 }
   },
   {
     ticker: "EBAY", name: "eBay Inc.", sector: "Consumer Cyclical",
@@ -3151,7 +3151,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 29 },
-    signals: { technical: -45, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: 10, valuation: 7 }
+    signals: { technical: -45, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: 10, valuation: 6 }
   },
   {
     ticker: "NBIS", name: "Nebius Group N.V.", sector: "Communication Services",
@@ -3161,7 +3161,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 63 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 59 },
     signals: { technical: 41, momentum: 100, sentiment: 60, news: 0, policy: 0, profile: 10, valuation: 0 }
   },
   {
@@ -3172,7 +3172,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.4, payoutRatio: 172.8, marketCapB: 30 },
+    fundamentals: { dividendYield: 6.4, payoutRatio: 172.8, marketCapB: 29 },
     signals: { technical: -37, momentum: -100, sentiment: 44, news: 0, policy: 0, profile: 45, valuation: -9 }
   },
   {
@@ -3184,7 +3184,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.67, payoutRatio: 26.9, marketCapB: 44 },
-    signals: { technical: 38, momentum: 25, sentiment: 100, news: 0, policy: 0, profile: 45, valuation: 35 }
+    signals: { technical: 38, momentum: 25, sentiment: 100, news: 0, policy: 0, profile: 45, valuation: 34 }
   },
   {
     ticker: "GFI", name: "Gold Fields Limited", sector: "Basic Materials",
@@ -3249,7 +3249,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 26 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 25 },
     signals: { technical: -41, momentum: -100, sentiment: 64, news: 0, policy: 0, profile: -15, valuation: -96 }
   },
   {
@@ -3602,7 +3602,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 36 },
-    signals: { technical: 42, momentum: 19, sentiment: 84, news: 0, policy: 0, profile: 0, valuation: 36 }
+    signals: { technical: 42, momentum: 19, sentiment: 84, news: 0, policy: 0, profile: 0, valuation: 37 }
   },
   {
     ticker: "EXR", name: "Extra Space Storage Inc.", sector: "Real Estate",
@@ -3865,7 +3865,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.26, payoutRatio: 27.5, marketCapB: 26 },
+    fundamentals: { dividendYield: 2.26, payoutRatio: 27.5, marketCapB: 28 },
     signals: { technical: -44, momentum: -76, sentiment: 40, news: 0, policy: 0, profile: 35, valuation: 32 }
   },
   {
@@ -4173,7 +4173,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.24, payoutRatio: 20.0, marketCapB: 26 },
+    fundamentals: { dividendYield: 0.24, payoutRatio: 20.0, marketCapB: 25 },
     signals: { technical: 45, momentum: 77, sentiment: 62, news: 0, policy: 0, profile: 15, valuation: -39 }
   },
   {
@@ -4207,7 +4207,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 29 },
-    signals: { technical: 42, momentum: 79, sentiment: 68, news: 0, policy: 0, profile: 10, valuation: -77 }
+    signals: { technical: 42, momentum: 79, sentiment: 68, news: 0, policy: 0, profile: 10, valuation: -78 }
   },
   {
     ticker: "ASTS", name: "AST SpaceMobile, Inc.", sector: "Technology",
@@ -5043,7 +5043,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -50, momentum: -68, sentiment: 32, news: 0, policy: 0, profile: 0, valuation: 20 }
+    signals: { technical: -50, momentum: -68, sentiment: 31, news: 0, policy: 0, profile: 0, valuation: 20 }
   },
   {
     ticker: "OKLO", name: "Oklo Inc.", sector: "Utilities",
@@ -5636,7 +5636,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Boston Globe (2019)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 14 },
     signals: { technical: 40, momentum: 100, sentiment: 53, news: 0, policy: 0, profile: -25, valuation: -21 }
   },
   {
@@ -5758,7 +5758,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: 46, momentum: 3, sentiment: 38, news: 0, policy: 0, profile: -25, valuation: 39 }
+    signals: { technical: 46, momentum: 3, sentiment: 38, news: 0, policy: 0, profile: -25, valuation: 38 }
   },
   {
     ticker: "NUVL", name: "Nuvalent, Inc.", sector: "Healthcare",
@@ -5867,8 +5867,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company HQ: Tel Aviv, Israel", "Who Profits", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.08, payoutRatio: 79.4, marketCapB: 0 },
-    signals: { technical: -44, momentum: -75, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 25 }
+    fundamentals: { dividendYield: 4.08, payoutRatio: 79.4, marketCapB: 7 },
+    signals: { technical: -44, momentum: -75, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 25 }
   },
   {
     ticker: "RIOT", name: "Riot Platforms, Inc.", sector: "Financial Services",
@@ -6077,7 +6077,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.34, payoutRatio: 133.3, marketCapB: 5 },
-    signals: { technical: -14, momentum: -100, sentiment: 56, news: 0, policy: 0, profile: 0, valuation: 33 }
+    signals: { technical: -14, momentum: -100, sentiment: 56, news: 0, policy: 0, profile: 0, valuation: 34 }
   },
   {
     ticker: "CZR", name: "Caesars Entertainment, Inc.", sector: "Consumer Cyclical",
@@ -6693,7 +6693,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 3 },
-    signals: { technical: -45, momentum: -100, sentiment: 58, news: 0, policy: 0, profile: 25, valuation: -48 }
+    signals: { technical: -45, momentum: -100, sentiment: 58, news: 0, policy: 0, profile: 25, valuation: -50 }
   },
   {
     ticker: "ACMR", name: "ACM Research, Inc.", sector: "Technology",
@@ -7264,8 +7264,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.42, payoutRatio: 12.0, marketCapB: 0 },
-    signals: { technical: 6, momentum: 87, sentiment: 100, news: 0, policy: 0, profile: 15, valuation: 39 }
+    fundamentals: { dividendYield: 2.42, payoutRatio: 12.0, marketCapB: 3 },
+    signals: { technical: 6, momentum: 87, sentiment: 100, news: 0, policy: 0, profile: 35, valuation: 39 }
   },
   {
     ticker: "QUBT", name: "Quantum Computing Inc.", sector: "Technology",
@@ -8233,7 +8233,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 39, momentum: 100, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 18 }
+    signals: { technical: 39, momentum: 100, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "HRTX", name: "Heron Therapeutics, Inc.", sector: "Healthcare",
@@ -8475,7 +8475,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 62, momentum: 20, sentiment: 100, news: 0, policy: 0, profile: -45, valuation: 0 }
+    signals: { technical: 62, momentum: 21, sentiment: 100, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "SMX", name: "SMX (Security Matters) Public Limited Company", sector: "Industrials",
@@ -8606,7 +8606,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.82, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.93, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 46, momentum: -23, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8617,7 +8617,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.51, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 6.85, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -4, momentum: -87, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8628,7 +8628,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.48, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.56, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 42, momentum: -28, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8639,7 +8639,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.73, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 5.0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -6, momentum: -94, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8650,7 +8650,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.04, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.17, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -2, momentum: -74, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8672,7 +8672,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.2, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.18, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 36, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -8683,7 +8683,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.97, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.14, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -3, momentum: -80, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8694,7 +8694,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.34, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.51, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -3, momentum: -78, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8705,7 +8705,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.06, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.08, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -40, momentum: -68, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8716,7 +8716,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.42, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.47, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -29, momentum: -69, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8727,7 +8727,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.81, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 5.05, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -7, momentum: -80, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8749,7 +8749,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.15, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.19, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -2, momentum: -69, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8760,7 +8760,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.58, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.68, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -30, momentum: -66, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8771,7 +8771,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.73, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.64, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 41, momentum: -25, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8782,7 +8782,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.39, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.38, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 40, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -8793,7 +8793,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.49, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.5, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -46, momentum: -30, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -8804,7 +8804,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.98, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.99, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 33, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -8815,7 +8815,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.38, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.42, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 43, momentum: -25, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8826,7 +8826,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.37, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.48, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 37, momentum: -40, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8837,7 +8837,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.49, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.52, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 41, momentum: -10, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8848,7 +8848,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.4, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.55, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 47, momentum: -31, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8859,7 +8859,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.59, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.73, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 45, momentum: -59, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8870,7 +8870,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.83, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.07, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -37, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8881,7 +8881,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.77, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.86, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -38, momentum: -50, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -8892,7 +8892,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.61, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.77, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 41, momentum: -62, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8903,7 +8903,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.9, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.98, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 40, momentum: -18, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -8914,7 +8914,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.03, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.06, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 35, momentum: -1, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8925,7 +8925,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.67, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.91, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -3, momentum: -80, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8936,7 +8936,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.36, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.38, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 31, momentum: 87, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -8947,7 +8947,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.6, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.8, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 73, momentum: -63, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8958,7 +8958,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.92, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -40, momentum: -73, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8969,7 +8969,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.29, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.05, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 35, momentum: -18, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -8991,7 +8991,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.64, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.72, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 36, momentum: -84, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9002,7 +9002,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.11, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.24, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 39, momentum: -40, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9013,7 +9013,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.49, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.41, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 40, momentum: -27, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9024,7 +9024,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.53, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.58, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 42, momentum: -36, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9035,7 +9035,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.2, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.48, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -41, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9046,7 +9046,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.4, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.41, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 37, momentum: -8, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9057,7 +9057,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.34, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.05, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 48, momentum: -41, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9068,7 +9068,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.18, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.33, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 51, momentum: -70, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9079,7 +9079,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.66, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 5.12, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 73, momentum: -67, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9101,7 +9101,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.98, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.27, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 44, momentum: -50, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9112,7 +9112,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.78, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.8, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 38, momentum: 12, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9145,7 +9145,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.52, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.62, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 41, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9156,7 +9156,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.84, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.04, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -34, momentum: -67, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9167,7 +9167,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 10.38, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 9.45, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -40, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9189,7 +9189,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 46.24, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 34.44, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -47, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9200,7 +9200,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 38.16, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 28.64, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -46, momentum: 11, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9222,7 +9222,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.74, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.69, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 49, momentum: -58, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9233,7 +9233,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.01, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.06, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 48, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9244,7 +9244,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.89, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 5.08, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -3, momentum: -77, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9255,7 +9255,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.51, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.34, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 39, momentum: -24, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9266,7 +9266,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.71, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 5.71, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 28, momentum: -33, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9277,7 +9277,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.07, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.94, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 13, momentum: -19, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9288,7 +9288,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.88, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.73, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -30, momentum: -23, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9299,7 +9299,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.47, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.56, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -1, momentum: -66, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9310,7 +9310,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 10.84, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 11.05, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 34, momentum: -26, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9321,7 +9321,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.14, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 5.36, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -4, momentum: -71, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9332,7 +9332,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.29, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.22, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 40, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9343,7 +9343,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.12, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.11, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 36, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9354,7 +9354,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.63, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.65, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -28, momentum: -63, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9365,7 +9365,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 8.01, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 8.5, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -41, momentum: -99, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9376,7 +9376,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.0, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.09, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -39, momentum: -78, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9387,7 +9387,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.88, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 6.14, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -2, momentum: -69, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9420,7 +9420,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.44, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.43, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 31, momentum: 36, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9464,7 +9464,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.19, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.53, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 73, momentum: -66, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9486,7 +9486,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.71, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.82, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -2, momentum: -72, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9497,7 +9497,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.2, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.21, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 34, momentum: 4, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9530,7 +9530,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.37, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.39, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 30, momentum: 21, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9552,7 +9552,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 11.66, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 8.59, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -39, momentum: 51, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9563,7 +9563,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.84, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.99, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -2, momentum: -75, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9574,7 +9574,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 29.93, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 29.08, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -48, momentum: -59, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9585,7 +9585,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.29, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.4, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 42, momentum: -38, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9596,7 +9596,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.55, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.53, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 37, momentum: -10, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9607,7 +9607,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.92, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.88, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 32, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9618,7 +9618,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.43, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.68, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 43, momentum: -38, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9651,7 +9651,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.07, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.27, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 37, momentum: -16, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9662,7 +9662,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.7, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 5.46, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -18, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9673,7 +9673,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.72, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.66, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 34, momentum: -4, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9684,7 +9684,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.51, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.68, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -37, momentum: -79, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9695,7 +9695,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.57, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 5.21, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -45, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9706,7 +9706,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.83, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.98, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 40, momentum: -59, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9717,7 +9717,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.3, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.75, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -52, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9728,8 +9728,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.77, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -38, momentum: -60, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
+    fundamentals: { dividendYield: 1.22, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: -38, momentum: -60, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
     ticker: "VOO", name: "Vanguard S&P 500 ETF", sector: "Other",
@@ -9739,7 +9739,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.04, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.06, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 34, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9761,7 +9761,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.07, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.33, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -45, momentum: -85, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9772,7 +9772,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.45, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.42, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 35, momentum: -31, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9783,7 +9783,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.05, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.19, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -2, momentum: -75, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9816,7 +9816,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 7.97, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 8.16, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -36, momentum: -59, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9827,7 +9827,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.06, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.1, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 33, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9838,7 +9838,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.78, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.91, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 40, momentum: -51, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9849,7 +9849,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.56, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.59, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 34, momentum: 17, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9860,7 +9860,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.61, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 6.83, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -2, momentum: -70, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9871,7 +9871,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.42, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.36, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 32, momentum: 28, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9882,7 +9882,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.1, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.22, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 48, momentum: -59, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9893,7 +9893,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.72, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.77, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 35, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9915,7 +9915,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.82, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.83, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 44, momentum: -16, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9926,7 +9926,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.5, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.52, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 35, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9948,7 +9948,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.06, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.66, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -46, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -9959,8 +9959,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.06, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -47, momentum: -34, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
+    fundamentals: { dividendYield: 1.02, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: -47, momentum: -34, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
     ticker: "TAN", name: "Invesco Solar ETF", sector: "Other",
@@ -9981,7 +9981,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 37.74, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 38.34, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -42, momentum: -61, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -9992,7 +9992,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.67, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.03, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -16, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -10003,7 +10003,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.22, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 1.29, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 44, momentum: -39, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -10025,8 +10025,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.99, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -2, momentum: -68, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 7.13, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: -2, momentum: -68, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "DBC", name: "Invesco DB Commodity Index Tracking Fund", sector: "Other",
@@ -10036,7 +10036,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.38, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.3, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 40, momentum: -23, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -10047,7 +10047,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.71, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.73, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 35, momentum: 45, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10058,7 +10058,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.65, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.7, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -31, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10069,7 +10069,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.19, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.16, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -26, momentum: -59, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -10080,7 +10080,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.36, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0.43, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 42, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10102,7 +10102,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.21, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 6.36, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -31, momentum: -64, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -10113,8 +10113,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -47, momentum: -24, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
+    fundamentals: { dividendYield: 2.67, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: -47, momentum: -24, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
     ticker: "MSTY", name: "Yieldmax MSTR Option Income Strategy ETF", sector: "Other",
@@ -10124,7 +10124,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 24.46, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 27.06, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -42, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10135,7 +10135,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.98, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 4.71, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -2, momentum: -78, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -10146,7 +10146,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.88, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.01, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 44, momentum: -48, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
@@ -10168,7 +10168,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.01, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 33, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10179,7 +10179,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.66, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -42, momentum: -74, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10201,8 +10201,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.59, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -5, momentum: -88, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: -5, momentum: -88, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "CWEB", name: "Direxion Daily CSI China Internet Bull 2X Shares", sector: "Other",
@@ -10212,8 +10212,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.99, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -46, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: -46, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "VUG", name: "Vanguard Growth Index Fund ETF Shares", sector: "Other",
@@ -10223,7 +10223,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.38, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 31, momentum: 22, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10235,7 +10235,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -42, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 59 }
+    signals: { technical: -42, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "AMZY", name: "YieldMax AMZN Option Income Strategy ETF", sector: "Other",
@@ -10245,7 +10245,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 19.49, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -40, momentum: -81, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10256,8 +10256,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.76, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 49, momentum: -58, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 49, momentum: -58, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "AVUV", name: "Avantis US Small Cap Value ETF", sector: "Other",
@@ -10267,8 +10267,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.25, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 41, momentum: -33, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 41, momentum: -33, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "AVDV", name: "Avantis International Small Cap Value ETF", sector: "Other",
@@ -10278,8 +10278,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.61, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 40, momentum: -33, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 40, momentum: -33, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "DRIV", name: "Global X Autonomous & Electric Vehicles ETF", sector: "Other",
@@ -10289,7 +10289,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.63, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -41, momentum: -29, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10300,7 +10300,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 39.75, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -41, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10311,7 +10311,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 63.17, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -39, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10322,8 +10322,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.95, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 42, momentum: 1, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 42, momentum: 1, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "QCLN", name: "First Trust NASDAQ Clean Edge Green Energy Index Fund", sector: "Other",
@@ -10333,7 +10333,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.17, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -42, momentum: -30, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10344,7 +10344,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 29.82, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -42, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10355,8 +10355,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.4, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 49, momentum: -57, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 49, momentum: -57, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "YMAG", name: "YieldMax Magnificent 7 Fund of Option Income ETFs", sector: "Other",
@@ -10366,7 +10366,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 40.41, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -43, momentum: -69, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10377,8 +10377,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.47, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 37, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 37, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "HLAL", name: "Wahed FTSE USA Shariah ETF", sector: "Other",
@@ -10388,7 +10388,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.44, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 29, momentum: 30, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10399,8 +10399,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.49, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -38, momentum: -78, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: -38, momentum: -78, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "SPUS", name: "SP Funds S&P 500 Sharia Industry Exclusions ETF", sector: "Other",
@@ -10410,7 +10410,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.52, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 30, momentum: 23, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10421,8 +10421,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.49, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 35, momentum: 60, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 35, momentum: 60, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "VNM", name: "VanEck Vietnam ETF", sector: "Other",
@@ -10432,7 +10432,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.21, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -37, momentum: -66, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10443,7 +10443,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.36, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 33, momentum: 8, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10454,8 +10454,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.88, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 72, momentum: -75, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 72, momentum: -75, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "VOOG", name: "Vanguard S&P 500 Growth Index Fund ETF Shares", sector: "Other",
@@ -10465,7 +10465,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.45, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 31, momentum: 26, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10476,8 +10476,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.01, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 73, momentum: -41, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 73, momentum: -41, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "VUSB", name: "Vanguard Ultra-Short Bond ETF", sector: "Other",
@@ -10487,8 +10487,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.31, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -26, momentum: -59, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: -26, momentum: -59, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "SDIV", name: "Global X SuperDividend ETF", sector: "Other",
@@ -10498,7 +10498,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 9.02, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -35, momentum: -78, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10509,8 +10509,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.47, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 42, momentum: -42, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 42, momentum: -42, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "MGK", name: "Vanguard Mega Cap Growth Index Fund", sector: "Other",
@@ -10520,7 +10520,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.33, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 29, momentum: 29, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10531,8 +10531,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.38, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 48, momentum: -57, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 48, momentum: -57, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "QDTE", name: "Roundhill Innovation-100 0DTE Covered Call Strategy ETF", sector: "Other",
@@ -10542,7 +10542,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 7.29, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -47, momentum: -32, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10553,7 +10553,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.09, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 36, momentum: 12, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10575,7 +10575,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 50.86, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -39, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10586,8 +10586,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.68, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 44, momentum: -38, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 44, momentum: -38, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "WEAT", name: "Teucrium Wheat Fund", sector: "Other",
@@ -10608,7 +10608,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.24, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 31, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10619,7 +10619,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.05, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: 42, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
@@ -10641,8 +10641,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.09, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 36, momentum: -69, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: 36, momentum: -69, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "EZA", name: "iShares MSCI South Africa ETF", sector: "Other",
@@ -10652,7 +10652,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 7.15, payoutRatio: 0, marketCapB: 0 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
     signals: { technical: -38, momentum: -83, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
