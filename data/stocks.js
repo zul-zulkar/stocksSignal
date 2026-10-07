@@ -885,7 +885,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.54, payoutRatio: 41.5, marketCapB: 272 },
-    signals: { technical: 44, momentum: 1, sentiment: 44, news: 0, policy: 0, profile: 60, valuation: 13 }
+    signals: { technical: 44, momentum: 1, sentiment: 44, news: 0, policy: 0, profile: 60, valuation: 12 }
   },
   {
     ticker: "SHEL", name: "Shell plc", sector: "Energy",
@@ -2590,7 +2590,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.17, payoutRatio: 25.6, marketCapB: 57 },
-    signals: { technical: 44, momentum: -49, sentiment: -10, news: 0, policy: 0, profile: 45, valuation: 14 }
+    signals: { technical: 44, momentum: -49, sentiment: -10, news: 0, policy: 0, profile: 45, valuation: 15 }
   },
   {
     ticker: "MPLX", name: "MPLX LP", sector: "Energy",
@@ -2656,7 +2656,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.97, payoutRatio: 22.8, marketCapB: 58 },
-    signals: { technical: 37, momentum: 16, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: 24 }
+    signals: { technical: 37, momentum: 16, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: 25 }
   },
   {
     ticker: "GWW", name: "W.W. Grainger, Inc.", sector: "Industrials",
@@ -4064,7 +4064,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.95, payoutRatio: 125.3, marketCapB: 18 },
-    signals: { technical: -36, momentum: -100, sentiment: 23, news: 0, policy: 0, profile: 10, valuation: 22 }
+    signals: { technical: -36, momentum: -100, sentiment: 23, news: 0, policy: 0, profile: 10, valuation: 21 }
   },
   {
     ticker: "TROW", name: "T. Rowe Price Group, Inc.", sector: "Financial Services",
@@ -5472,7 +5472,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 50.0, marketCapB: 6 },
-    signals: { technical: -47, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -25, valuation: 0 }
+    signals: { technical: -46, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "APLD", name: "Applied Digital Corporation", sector: "Technology",
@@ -7034,7 +7034,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: -43, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -25, valuation: -14 }
+    signals: { technical: -43, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -25, valuation: -15 }
   },
   {
     ticker: "UA", name: "Under Armour, Inc.", sector: "Consumer Cyclical",
@@ -8398,7 +8398,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -31, momentum: -100, sentiment: 75, news: 0, policy: 0, profile: -20, valuation: 0 }
+    signals: { technical: -32, momentum: -100, sentiment: 75, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "PRTS", name: "CarParts.com, Inc.", sector: "Consumer Cyclical",
