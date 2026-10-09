@@ -6981,13 +6981,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "OXLC": {
-    "rating": "none",
+    "rating": null,
     "ratingMean": null,
-    "numAnalysts": 1,
-    "targetMean": 12.5,
-    "targetHigh": 12.5,
-    "targetLow": 12.5,
-    "price": 8.53,
+    "numAnalysts": 0,
+    "targetMean": null,
+    "targetHigh": null,
+    "targetLow": null,
+    "price": null,
     "currency": "USD"
   },
   "CRON": {
@@ -7701,13 +7701,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "QVCAQ": {
-    "rating": "none",
+    "rating": null,
     "ratingMean": null,
     "numAnalysts": 0,
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 0.03,
+    "price": null,
     "currency": "USD"
   },
   "XXII": {
@@ -7751,13 +7751,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "ACP": {
-    "rating": "none",
+    "rating": null,
     "ratingMean": null,
     "numAnalysts": 0,
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 4.36,
+    "price": null,
     "currency": "USD"
   },
   "SLV": {
