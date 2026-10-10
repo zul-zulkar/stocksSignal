@@ -6127,7 +6127,7 @@ window.STOCK_ANALYST = {
     "targetMean": 31.0,
     "targetHigh": 31.0,
     "targetLow": 31.0,
-    "price": 30.66,
+    "price": 30.52,
     "currency": "USD"
   },
   "ZIM": {
@@ -6295,7 +6295,7 @@ window.STOCK_ANALYST = {
     "ratingMean": 2.38,
     "numAnalysts": 15,
     "targetMean": 11.7,
-    "targetHigh": 14.63,
+    "targetHigh": 14.62,
     "targetLow": 7.24,
     "price": 11.16,
     "currency": "USD"

@@ -895,7 +895,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.12, payoutRatio: 32.6, marketCapB: 285 },
+    fundamentals: { dividendYield: 3.23, payoutRatio: 32.6, marketCapB: 285 },
     signals: { technical: 29, momentum: -17, sentiment: 40, news: 0, policy: 0, profile: 40, valuation: 31 }
   },
   {
@@ -6659,7 +6659,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.42, payoutRatio: 37.4, marketCapB: 4 },
+    fundamentals: { dividendYield: 1.38, payoutRatio: 37.4, marketCapB: 4 },
     signals: { technical: -39, momentum: -100, sentiment: 55, news: 0, policy: 0, profile: 25, valuation: -19 }
   },
   {
@@ -6747,7 +6747,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 11.03, payoutRatio: 39.9, marketCapB: 4 },
+    fundamentals: { dividendYield: 11.36, payoutRatio: 39.9, marketCapB: 4 },
     signals: { technical: 41, momentum: 60, sentiment: 75, news: 0, policy: 0, profile: 25, valuation: 32 }
   },
   {
@@ -6781,7 +6781,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 3 },
-    signals: { technical: -42, momentum: -82, sentiment: -100, news: 0, policy: 0, profile: 15, valuation: 12 }
+    signals: { technical: -42, momentum: -84, sentiment: -100, news: 0, policy: 0, profile: 15, valuation: 13 }
   },
   {
     ticker: "ZIM", name: "ZIM Integrated Shipping Services Ltd.", sector: "Industrials",
@@ -6868,7 +6868,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.67, payoutRatio: 55.2, marketCapB: 3 },
+    fundamentals: { dividendYield: 2.68, payoutRatio: 55.2, marketCapB: 3 },
     signals: { technical: 43, momentum: -14, sentiment: -17, news: 0, policy: 0, profile: 35, valuation: -4 }
   },
   {
@@ -6923,7 +6923,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 14.85, payoutRatio: 76.4, marketCapB: 2 },
+    fundamentals: { dividendYield: 15.38, payoutRatio: 76.4, marketCapB: 2 },
     signals: { technical: -44, momentum: -100, sentiment: -30, news: 0, policy: 0, profile: -30, valuation: 47 }
   },
   {
@@ -6956,7 +6956,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.17, payoutRatio: 40.4, marketCapB: 3 },
+    fundamentals: { dividendYield: 6.33, payoutRatio: 40.4, marketCapB: 3 },
     signals: { technical: 39, momentum: 22, sentiment: 70, news: 0, policy: 0, profile: 35, valuation: 34 }
   },
   {
@@ -7133,7 +7133,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 176.7, marketCapB: 1 },
-    signals: { technical: -45, momentum: -100, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 44 }
+    signals: { technical: -46, momentum: -100, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 44 }
   },
   {
     ticker: "LCID", name: "Lucid Group, Inc.", sector: "Consumer Cyclical",
@@ -7242,7 +7242,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 21.38, payoutRatio: 70.9, marketCapB: 2 },
+    fundamentals: { dividendYield: 21.67, payoutRatio: 70.9, marketCapB: 2 },
     signals: { technical: -13, momentum: -100, sentiment: 34, news: 0, policy: 0, profile: -10, valuation: 45 }
   },
   {
@@ -7385,7 +7385,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.42, payoutRatio: 81.4, marketCapB: 2 },
+    fundamentals: { dividendYield: 5.45, payoutRatio: 81.4, marketCapB: 2 },
     signals: { technical: 39, momentum: -17, sentiment: 25, news: 0, policy: 0, profile: 35, valuation: -20 }
   },
   {
@@ -7671,7 +7671,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.49, payoutRatio: 84.9, marketCapB: 1 },
+    fundamentals: { dividendYield: 4.59, payoutRatio: 84.9, marketCapB: 1 },
     signals: { technical: 34, momentum: -68, sentiment: -4, news: 0, policy: 0, profile: -20, valuation: 23 }
   },
   {
@@ -8023,7 +8023,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.6, payoutRatio: 22.3, marketCapB: 0 },
+    fundamentals: { dividendYield: 3.55, payoutRatio: 22.3, marketCapB: 0 },
     signals: { technical: -39, momentum: -100, sentiment: 84, news: 0, policy: 0, profile: -5, valuation: 40 }
   },
   {
@@ -8067,7 +8067,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.94, payoutRatio: 28.2, marketCapB: 1 },
+    fundamentals: { dividendYield: 2.89, payoutRatio: 28.2, marketCapB: 1 },
     signals: { technical: 40, momentum: 100, sentiment: 50, news: 0, policy: 0, profile: 15, valuation: 18 }
   },
   {
@@ -8111,7 +8111,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 19.19, payoutRatio: 388.6, marketCapB: 0 },
+    fundamentals: { dividendYield: 18.88, payoutRatio: 388.6, marketCapB: 0 },
     signals: { technical: -41, momentum: -37, sentiment: 0, news: 0, policy: 0, profile: -45, valuation: 31 }
   },
   {
@@ -8475,7 +8475,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 60, momentum: 27, sentiment: 100, news: 0, policy: 0, profile: -45, valuation: 0 }
+    signals: { technical: 60, momentum: 28, sentiment: 100, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "SMX", name: "SMX (Security Matters) Public Limited Company", sector: "Industrials",
@@ -8519,7 +8519,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -38, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -45, valuation: 0 }
+    signals: { technical: -39, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "QVCAQ", name: "QVC Group Inc.", sector: "Consumer Cyclical",
