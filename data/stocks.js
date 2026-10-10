@@ -8584,7 +8584,7 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 15.1, payoutRatio: 153.5, marketCapB: 1 },
+    fundamentals: { dividendYield: 15.14, payoutRatio: 153.5, marketCapB: 1 },
     signals: { technical: -34, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: 5, valuation: 0 }
   },
   {
