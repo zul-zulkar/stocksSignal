@@ -797,7 +797,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.46, payoutRatio: 32.3, marketCapB: 285 },
-    signals: { technical: 70, momentum: -42, sentiment: 34, news: 0, policy: 0, profile: 45, valuation: 19 }
+    signals: { technical: 70, momentum: -42, sentiment: 34, news: 0, policy: 0, profile: 45, valuation: 20 }
   },
   {
     ticker: "GE", name: "GE Aerospace", sector: "Industrials",
@@ -1083,7 +1083,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.66, payoutRatio: 46.4, marketCapB: 192 },
-    signals: { technical: 40, momentum: 11, sentiment: 40, news: 0, policy: 0, profile: 60, valuation: 14 }
+    signals: { technical: 40, momentum: 11, sentiment: 40, news: 0, policy: 0, profile: 60, valuation: 15 }
   },
   {
     ticker: "SAN", name: "Banco Santander, S.A.", sector: "Financial Services",
@@ -1897,7 +1897,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 108 },
-    signals: { technical: 33, momentum: -36, sentiment: 70, news: 0, policy: 0, profile: 40, valuation: -32 }
+    signals: { technical: 33, momentum: -36, sentiment: 70, news: 0, policy: 0, profile: 40, valuation: -31 }
   },
   {
     ticker: "JCI", name: "Johnson Controls International plc", sector: "Industrials",
@@ -2315,7 +2315,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.74, payoutRatio: 28.2, marketCapB: 119 },
-    signals: { technical: 12, momentum: 100, sentiment: 40, news: 0, policy: 0, profile: 35, valuation: 29 }
+    signals: { technical: 12, momentum: 100, sentiment: 40, news: 0, policy: 0, profile: 35, valuation: 30 }
   },
   {
     ticker: "NU", name: "Nu Holdings Ltd.", sector: "Financial Services",
@@ -2392,7 +2392,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.17, payoutRatio: 46.3, marketCapB: 72 },
-    signals: { technical: 40, momentum: 1, sentiment: 38, news: 0, policy: 0, profile: 45, valuation: 2 }
+    signals: { technical: 40, momentum: 1, sentiment: 38, news: 0, policy: 0, profile: 45, valuation: 3 }
   },
   {
     ticker: "APD", name: "Air Products and Chemicals, Inc.", sector: "Basic Materials",
@@ -2513,7 +2513,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.08, payoutRatio: 39.2, marketCapB: 68 },
-    signals: { technical: 42, momentum: -3, sentiment: 75, news: 0, policy: 0, profile: 45, valuation: -34 }
+    signals: { technical: 42, momentum: -3, sentiment: 75, news: 0, policy: 0, profile: 45, valuation: -33 }
   },
   {
     ticker: "KEYS", name: "Keysight Technologies, Inc.", sector: "Technology",
@@ -3151,7 +3151,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 30 },
-    signals: { technical: -39, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: 10, valuation: 6 }
+    signals: { technical: -39, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: 10, valuation: 5 }
   },
   {
     ticker: "NBIS", name: "Nebius Group N.V.", sector: "Communication Services",
@@ -4218,7 +4218,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 16 },
-    signals: { technical: -20, momentum: -100, sentiment: 23, news: 0, policy: 0, profile: 0, valuation: 0 }
+    signals: { technical: -20, momentum: -100, sentiment: 19, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "CHTR", name: "Charter Communications, Inc.", sector: "Communication Services",
@@ -4273,7 +4273,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 17 },
-    signals: { technical: -37, momentum: -98, sentiment: 84, news: 0, policy: 0, profile: 5, valuation: 7 }
+    signals: { technical: -37, momentum: -98, sentiment: 85, news: 0, policy: 0, profile: 5, valuation: 7 }
   },
   {
     ticker: "DKS", name: "DICK'S Sporting Goods, Inc.", sector: "Consumer Cyclical",
@@ -5054,7 +5054,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: -18, momentum: -100, sentiment: 44, news: 0, policy: 0, profile: 0, valuation: 0 }
+    signals: { technical: -18, momentum: -100, sentiment: 42, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "SWK", name: "Stanley Black & Decker, Inc.", sector: "Industrials",
@@ -5197,7 +5197,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: -60, momentum: -31, sentiment: 64, news: 0, policy: 0, profile: 15, valuation: 7 }
+    signals: { technical: -60, momentum: -31, sentiment: 64, news: 0, policy: 0, profile: 15, valuation: 8 }
   },
   {
     ticker: "DKNG", name: "DraftKings Inc.", sector: "Consumer Cyclical",
@@ -5901,7 +5901,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: -20, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: -15, valuation: -100 }
+    signals: { technical: -20, momentum: -100, sentiment: 78, news: 0, policy: 0, profile: -15, valuation: -100 }
   },
   {
     ticker: "CAG", name: "Conagra Brands, Inc.", sector: "Consumer Defensive",
@@ -6968,7 +6968,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 10.19, payoutRatio: 18.5, marketCapB: 3 },
-    signals: { technical: -36, momentum: -53, sentiment: 31, news: 0, policy: 0, profile: 15, valuation: 43 }
+    signals: { technical: -36, momentum: -53, sentiment: 31, news: 0, policy: 0, profile: 15, valuation: 42 }
   },
   {
     ticker: "HOG", name: "Harley-Davidson, Inc.", sector: "Consumer Cyclical",
@@ -7738,7 +7738,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1 },
-    signals: { technical: 43, momentum: 27, sentiment: 75, news: 0, policy: 0, profile: 5, valuation: 0 }
+    signals: { technical: 43, momentum: 27, sentiment: 80, news: 0, policy: 0, profile: 5, valuation: 0 }
   },
   {
     ticker: "AMPH", name: "Amphastar Pharmaceuticals, Inc.", sector: "Healthcare",
