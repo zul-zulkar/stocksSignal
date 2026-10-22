@@ -48,7 +48,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.26, payoutRatio: 4.3, marketCapB: 3965 },
-    signals: { technical: 48, momentum: -42, sentiment: 81, news: 0, policy: 0, profile: 65, valuation: -2 }
+    signals: { technical: 48, momentum: -42, sentiment: 81, news: 0, policy: 0, profile: 65, valuation: -3 }
   },
   {
     ticker: "AMZN", name: "Amazon.com Inc.", sector: "Consumer Cyclical",
@@ -1842,7 +1842,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.88, payoutRatio: 81.7, marketCapB: 86 },
-    signals: { technical: 42, momentum: -30, sentiment: 80, news: 0, policy: 0, profile: 30, valuation: -19 }
+    signals: { technical: 42, momentum: -30, sentiment: 80, news: 0, policy: 0, profile: 30, valuation: -20 }
   },
   {
     ticker: "WM", name: "Waste Management, Inc.", sector: "Industrials",
@@ -1875,7 +1875,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.96, payoutRatio: 14.5, marketCapB: 89 },
-    signals: { technical: 39, momentum: -63, sentiment: 64, news: 0, policy: 0, profile: 35, valuation: 15 }
+    signals: { technical: 39, momentum: -63, sentiment: 64, news: 0, policy: 0, profile: 35, valuation: 14 }
   },
   {
     ticker: "UPS", name: "United Parcel Service, Inc.", sector: "Industrials",
@@ -5087,7 +5087,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 18 },
-    signals: { technical: 34, momentum: 100, sentiment: 3, news: 0, policy: 0, profile: 15, valuation: -41 }
+    signals: { technical: 34, momentum: 100, sentiment: 3, news: 0, policy: 0, profile: 15, valuation: -40 }
   },
   {
     ticker: "GME", name: "GameStop Corp.", sector: "Consumer Cyclical",
@@ -6374,7 +6374,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: -38, momentum: -64, sentiment: 34, news: 0, policy: 0, profile: 15, valuation: 16 }
+    signals: { technical: -38, momentum: -64, sentiment: 34, news: 0, policy: 0, profile: 15, valuation: 15 }
   },
   {
     ticker: "ACHR", name: "Archer Aviation Inc.", sector: "Industrials",
@@ -6638,7 +6638,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: 27, momentum: 100, sentiment: 54, news: 0, policy: 0, profile: -25, valuation: 0 }
+    signals: { technical: 26, momentum: 100, sentiment: 54, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "ELF", name: "e.l.f. Beauty, Inc.", sector: "Consumer Defensive",
@@ -6957,7 +6957,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 6.52, payoutRatio: 40.4, marketCapB: 3 },
-    signals: { technical: 41, momentum: 37, sentiment: 70, news: 0, policy: 0, profile: 35, valuation: 35 }
+    signals: { technical: 41, momentum: 37, sentiment: 70, news: 0, policy: 0, profile: 35, valuation: 36 }
   },
   {
     ticker: "PAGS", name: "PagSeguro Digital Ltd.", sector: "Technology",
@@ -7133,7 +7133,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 176.7, marketCapB: 1 },
-    signals: { technical: 0, momentum: 0, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 45 }
+    signals: { technical: -20, momentum: -100, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 45 }
   },
   {
     ticker: "LCID", name: "Lucid Group, Inc.", sector: "Consumer Cyclical",
