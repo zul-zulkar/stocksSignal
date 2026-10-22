@@ -7044,8 +7044,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: -33, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -45, valuation: 23 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
+    signals: { technical: -33, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "SEDG", name: "SolarEdge Technologies, Inc.", sector: "Technology",

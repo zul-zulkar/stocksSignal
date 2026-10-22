@@ -6361,13 +6361,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "UA": {
-    "rating": "none",
+    "rating": null,
     "ratingMean": null,
     "numAnalysts": 0,
     "targetMean": null,
     "targetHigh": null,
     "targetLow": null,
-    "price": 4.57,
+    "price": null,
     "currency": "USD"
   },
   "SEDG": {
