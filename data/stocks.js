@@ -474,7 +474,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.66, payoutRatio: 22.1, marketCapB: 754 },
-    signals: { technical: 40, momentum: 39, sentiment: 78, news: 0, policy: 5, profile: 65, valuation: -20 }
+    signals: { technical: 40, momentum: 39, sentiment: 78, news: 0, policy: 5, profile: 65, valuation: -10 }
   },
   {
     ticker: "MA", name: "Mastercard Inc.", sector: "Financial Services",
@@ -1765,7 +1765,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 94 },
-    signals: { technical: -41, momentum: -14, sentiment: 82, news: 0, policy: 0, profile: 35, valuation: -45 }
+    signals: { technical: -41, momentum: -14, sentiment: 82, news: 0, policy: 0, profile: 35, valuation: -44 }
   },
   {
     ticker: "MAR", name: "Marriott International, Inc.", sector: "Consumer Cyclical",
