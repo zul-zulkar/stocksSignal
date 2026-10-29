@@ -896,7 +896,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.98, payoutRatio: 32.6, marketCapB: 299 },
-    signals: { technical: 41, momentum: 28, sentiment: 40, news: 0, policy: 0, profile: 40, valuation: 31 }
+    signals: { technical: 41, momentum: 28, sentiment: 40, news: 0, policy: 0, profile: 40, valuation: 29 }
   },
   {
     ticker: "WFC", name: "Wells Fargo & Company", sector: "Financial Services",
