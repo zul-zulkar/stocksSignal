@@ -25,8 +25,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Apple Israel R&D press", "Who Profits database"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.31, payoutRatio: 12.0, marketCapB: 5092 },
-    signals: { technical: 36, momentum: 59, sentiment: 38, news: 0, policy: 15, profile: 65, valuation: -49 }
+    fundamentals: { dividendYield: 0.31, payoutRatio: 12.0, marketCapB: 5009 },
+    signals: { technical: 40, momentum: 64, sentiment: 38, news: 0, policy: 15, profile: 65, valuation: -47 }
   },
   {
     ticker: "MSFT", name: "Microsoft Corp.", sector: "Technology",
@@ -36,8 +36,8 @@ window.STOCK_UNIVERSE = [
       sources: ["+972 Magazine", "Who Profits", "AP News (2024)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.74, payoutRatio: 19.8, marketCapB: 3937 },
-    signals: { technical: 39, momentum: 70, sentiment: 84, news: 0, policy: 10, profile: 65, valuation: -5 }
+    fundamentals: { dividendYield: 0.74, payoutRatio: 19.0, marketCapB: 3865 },
+    signals: { technical: 41, momentum: 70, sentiment: 80, news: 0, policy: 10, profile: 65, valuation: -4 }
   },
   {
     ticker: "GOOGL", name: "Alphabet Inc. (Google)", sector: "Technology",
@@ -47,8 +47,8 @@ window.STOCK_UNIVERSE = [
       sources: ["The Intercept", "Time Magazine", "BDS Movement"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.27, payoutRatio: 4.3, marketCapB: 3471 },
-    signals: { technical: -16, momentum: -100, sentiment: 81, news: 0, policy: 0, profile: 65, valuation: 3 }
+    fundamentals: { dividendYield: 0.31, payoutRatio: 4.3, marketCapB: 3416 },
+    signals: { technical: -19, momentum: -100, sentiment: 82, news: 0, policy: 0, profile: 65, valuation: 4 }
   },
   {
     ticker: "AMZN", name: "Amazon.com Inc.", sector: "Consumer Cyclical",
@@ -58,8 +58,8 @@ window.STOCK_UNIVERSE = [
       sources: ["The Guardian", "Project Nimbus docs", "BDS Movement"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2630 },
-    signals: { technical: 46, momentum: -52, sentiment: 84, news: 0, policy: 5, profile: 55, valuation: -9 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2574 },
+    signals: { technical: 45, momentum: -57, sentiment: 84, news: 0, policy: 5, profile: 55, valuation: -8 }
   },
   {
     ticker: "META", name: "Meta Platforms Inc.", sector: "Communication Services",
@@ -69,8 +69,8 @@ window.STOCK_UNIVERSE = [
       sources: ["BSR independent report 2022", "Human Rights Watch"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.34, payoutRatio: 7.2, marketCapB: 1597 },
-    signals: { technical: 39, momentum: -13, sentiment: 80, news: 0, policy: 5, profile: 65, valuation: 7 }
+    fundamentals: { dividendYield: 0.34, payoutRatio: 7.2, marketCapB: 1572 },
+    signals: { technical: 38, momentum: -13, sentiment: 80, news: 0, policy: 5, profile: 65, valuation: 8 }
   },
   {
     ticker: "NVDA", name: "NVIDIA Corp.", sector: "Technology",
@@ -80,8 +80,8 @@ window.STOCK_UNIVERSE = [
       sources: ["NVIDIA Israel press", "Mellanox acquisition"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.46, payoutRatio: 3.5, marketCapB: 5159 },
-    signals: { technical: 39, momentum: 2, sentiment: 86, news: 0, policy: 10, profile: 65, valuation: 19 }
+    fundamentals: { dividendYield: 0.47, payoutRatio: 3.5, marketCapB: 4872 },
+    signals: { technical: 40, momentum: -10, sentiment: 86, news: 0, policy: 10, profile: 65, valuation: 21 }
   },
   {
     ticker: "INTC", name: "Intel Corp.", sector: "Technology",
@@ -91,8 +91,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Reuters", "Times of Israel", "Investopedia"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 487 },
-    signals: { technical: 26, momentum: -47, sentiment: 26, news: 0, policy: -5, profile: 0, valuation: -67 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 338 },
+    signals: { technical: 60, momentum: -100, sentiment: 26, news: 0, policy: -5, profile: 0, valuation: -27 }
   },
   {
     ticker: "AMD", name: "Advanced Micro Devices", sector: "Technology",
@@ -102,8 +102,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AMD investor docs"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 925 },
-    signals: { technical: 32, momentum: 100, sentiment: 76, news: 0, policy: 5, profile: 55, valuation: -46 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 811 },
+    signals: { technical: 29, momentum: 100, sentiment: 76, news: 0, policy: 5, profile: 55, valuation: -33 }
   },
   {
     ticker: "ORCL", name: "Oracle Corp.", sector: "Technology",
@@ -113,8 +113,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Forbes", "TechCrunch", "Oracle Israel press"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.38, payoutRatio: 31.4, marketCapB: 423 },
-    signals: { technical: -41, momentum: -85, sentiment: 71, news: 0, policy: 10, profile: 45, valuation: 22 }
+    fundamentals: { dividendYield: 1.43, payoutRatio: 31.4, marketCapB: 394 },
+    signals: { technical: -45, momentum: -100, sentiment: 71, news: 0, policy: 10, profile: 45, valuation: 24 }
   },
   {
     ticker: "IBM", name: "International Business Machines", sector: "Technology",
@@ -124,8 +124,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Edwin Black 'IBM and the Holocaust'", "IBM Israel press"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.67, payoutRatio: 57.5, marketCapB: 244 },
-    signals: { technical: -66, momentum: 14, sentiment: 36, news: 0, policy: 0, profile: 50, valuation: 1 }
+    fundamentals: { dividendYield: 2.62, payoutRatio: 57.5, marketCapB: 242 },
+    signals: { technical: -40, momentum: 22, sentiment: 36, news: 0, policy: 0, profile: 50, valuation: 2 }
   },
   {
     ticker: "CRM", name: "Salesforce Inc.", sector: "Technology",
@@ -135,8 +135,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Salesforce press"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.73, payoutRatio: 15.7, marketCapB: 190 },
-    signals: { technical: 43, momentum: 62, sentiment: 65, news: 0, policy: 0, profile: 50, valuation: 16 }
+    fundamentals: { dividendYield: 0.76, payoutRatio: 15.7, marketCapB: 189 },
+    signals: { technical: 44, momentum: 62, sentiment: 65, news: 0, policy: 0, profile: 50, valuation: 17 }
   },
   {
     ticker: "ADBE", name: "Adobe Inc.", sector: "Technology",
@@ -147,7 +147,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 97 },
-    signals: { technical: 42, momentum: -26, sentiment: 4, news: 0, policy: 0, profile: 35, valuation: 32 }
+    signals: { technical: 44, momentum: -21, sentiment: 4, news: 0, policy: 0, profile: 35, valuation: 32 }
   },
   {
     ticker: "TSM", name: "Taiwan Semiconductor Mfg.", sector: "Technology",
@@ -157,8 +157,8 @@ window.STOCK_UNIVERSE = [
       sources: ["TSMC annual report"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.86, payoutRatio: 24.5, marketCapB: 2240 },
-    signals: { technical: 36, momentum: 6, sentiment: 81, news: 0, policy: 10, profile: 65, valuation: 4 }
+    fundamentals: { dividendYield: 0.87, payoutRatio: 24.5, marketCapB: 2086 },
+    signals: { technical: 36, momentum: -15, sentiment: 81, news: 0, policy: 10, profile: 65, valuation: 8 }
   },
   {
     ticker: "BABA", name: "Alibaba Group", sector: "Consumer Cyclical",
@@ -168,8 +168,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.04, payoutRatio: 25.4, marketCapB: 248 },
-    signals: { technical: -33, momentum: -100, sentiment: 84, news: 0, policy: -15, profile: 40, valuation: 27 }
+    fundamentals: { dividendYield: 1.05, payoutRatio: 25.4, marketCapB: 243 },
+    signals: { technical: -7, momentum: -100, sentiment: 84, news: 0, policy: -15, profile: 40, valuation: 28 }
   },
   {
     ticker: "ASML", name: "ASML Holding NV", sector: "Technology",
@@ -179,8 +179,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ASML annual report"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.56, payoutRatio: 22.3, marketCapB: 646 },
-    signals: { technical: 33, momentum: 35, sentiment: 82, news: 0, policy: 5, profile: 65, valuation: -20 }
+    fundamentals: { dividendYield: 0.56, payoutRatio: 22.3, marketCapB: 592 },
+    signals: { technical: 33, momentum: 20, sentiment: 82, news: 0, policy: 5, profile: 65, valuation: -13 }
   },
 
   // ---------- KONSUMER & RITEL ----------
@@ -192,8 +192,8 @@ window.STOCK_UNIVERSE = [
       sources: ["BDS Movement", "Reuters", "AP News"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.44, payoutRatio: 142.8, marketCapB: 120 },
-    signals: { technical: -69, momentum: -23, sentiment: 31, news: 0, policy: -20, profile: 40, valuation: -41 }
+    fundamentals: { dividendYield: 2.39, payoutRatio: 142.8, marketCapB: 119 },
+    signals: { technical: -43, momentum: -17, sentiment: 31, news: 0, policy: -20, profile: 40, valuation: -23 }
   },
   {
     ticker: "MCD", name: "McDonald's Corp.", sector: "Consumer Cyclical",
@@ -203,8 +203,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Reuters", "BDS Movement", "Financial Times"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.08, payoutRatio: 59.7, marketCapB: 182 },
-    signals: { technical: -42, momentum: -56, sentiment: 47, news: 0, policy: -15, profile: 60, valuation: 3 }
+    fundamentals: { dividendYield: 3.0, payoutRatio: 59.7, marketCapB: 183 },
+    signals: { technical: -44, momentum: -45, sentiment: 47, news: 0, policy: -15, profile: 60, valuation: 3 }
   },
   {
     ticker: "KO", name: "The Coca-Cola Company", sector: "Consumer Defensive",
@@ -214,8 +214,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits database", "BDS Movement"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.31, payoutRatio: 62.0, marketCapB: 399 },
-    signals: { technical: 41, momentum: 37, sentiment: 64, news: 0, policy: -10, profile: 60, valuation: -19 }
+    fundamentals: { dividendYield: 2.28, payoutRatio: 62.0, marketCapB: 406 },
+    signals: { technical: 40, momentum: 53, sentiment: 64, news: 0, policy: -10, profile: 60, valuation: -20 }
   },
   {
     ticker: "PEP", name: "PepsiCo Inc.", sector: "Consumer Defensive",
@@ -225,8 +225,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits", "BDS Movement"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.46, payoutRatio: 73.0, marketCapB: 182 },
-    signals: { technical: -37, momentum: -72, sentiment: 17, news: 0, policy: -10, profile: 35, valuation: 13 }
+    fundamentals: { dividendYield: 4.42, payoutRatio: 73.0, marketCapB: 188 },
+    signals: { technical: -41, momentum: -50, sentiment: 17, news: 0, policy: -10, profile: 35, valuation: 11 }
   },
   {
     ticker: "DIS", name: "The Walt Disney Co.", sector: "Communication Services",
@@ -236,8 +236,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Variety", "BDS Movement"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.38, payoutRatio: 30.9, marketCapB: 192 },
-    signals: { technical: 43, momentum: 2, sentiment: 76, news: 0, policy: -5, profile: 40, valuation: 15 }
+    fundamentals: { dividendYield: 1.35, payoutRatio: 30.9, marketCapB: 191 },
+    signals: { technical: 42, momentum: 15, sentiment: 76, news: 0, policy: -5, profile: 40, valuation: 15 }
   },
   {
     ticker: "NFLX", name: "Netflix Inc.", sector: "Communication Services",
@@ -248,7 +248,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 258 },
-    signals: { technical: -33, momentum: -100, sentiment: 54, news: 0, policy: 5, profile: 50, valuation: 10 }
+    signals: { technical: -32, momentum: -100, sentiment: 54, news: 0, policy: 5, profile: 50, valuation: 10 }
   },
   {
     ticker: "WMT", name: "Walmart Inc.", sector: "Consumer Defensive",
@@ -258,8 +258,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public reporting"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.83, payoutRatio: 35.0, marketCapB: 965 },
-    signals: { technical: -39, momentum: -48, sentiment: 74, news: 0, policy: 5, profile: 40, valuation: -52 }
+    fundamentals: { dividendYield: 0.82, payoutRatio: 35.0, marketCapB: 984 },
+    signals: { technical: -62, momentum: -32, sentiment: 74, news: 0, policy: 5, profile: 40, valuation: -55 }
   },
   {
     ticker: "COST", name: "Costco Wholesale", sector: "Consumer Defensive",
@@ -269,8 +269,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Costco filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.6, payoutRatio: 26.7, marketCapB: 441 },
-    signals: { technical: -41, momentum: -27, sentiment: 54, news: 0, policy: 10, profile: 25, valuation: -59 }
+    fundamentals: { dividendYield: 0.59, payoutRatio: 26.7, marketCapB: 452 },
+    signals: { technical: -44, momentum: -13, sentiment: 54, news: 0, policy: 10, profile: 25, valuation: -62 }
   },
   {
     ticker: "TGT", name: "Target Corp.", sector: "Consumer Defensive",
@@ -280,8 +280,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public reporting"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.11, payoutRatio: 47.3, marketCapB: 69 },
-    signals: { technical: 39, momentum: 36, sentiment: 26, news: 0, policy: 0, profile: 20, valuation: 12 }
+    fundamentals: { dividendYield: 3.06, payoutRatio: 47.3, marketCapB: 69 },
+    signals: { technical: 39, momentum: 49, sentiment: 26, news: 0, policy: 0, profile: 20, valuation: 11 }
   },
   {
     ticker: "HD", name: "Home Depot Inc.", sector: "Consumer Cyclical",
@@ -291,8 +291,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Forbes", "Public donor records"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.93, payoutRatio: 64.8, marketCapB: 328 },
-    signals: { technical: -38, momentum: -17, sentiment: 56, news: 0, policy: 5, profile: 25, valuation: -1 }
+    fundamentals: { dividendYield: 2.83, payoutRatio: 64.8, marketCapB: 329 },
+    signals: { technical: -38, momentum: 2, sentiment: 56, news: 0, policy: 5, profile: 25, valuation: -1 }
   },
   {
     ticker: "LOW", name: "Lowe's Companies Inc.", sector: "Consumer Cyclical",
@@ -302,8 +302,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.52, payoutRatio: 41.0, marketCapB: 116 },
-    signals: { technical: -38, momentum: -59, sentiment: 63, news: 0, policy: 5, profile: 40, valuation: 12 }
+    fundamentals: { dividendYield: 2.41, payoutRatio: 41.0, marketCapB: 117 },
+    signals: { technical: -38, momentum: -37, sentiment: 63, news: 0, policy: 5, profile: 40, valuation: 11 }
   },
   {
     ticker: "NKE", name: "Nike Inc.", sector: "Consumer Cyclical",
@@ -313,8 +313,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Reuters", "Times of Israel"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.41, payoutRatio: 78.8, marketCapB: 57 },
-    signals: { technical: -39, momentum: -67, sentiment: 6, news: 0, policy: 0, profile: 25, valuation: -14 }
+    fundamentals: { dividendYield: 4.27, payoutRatio: 78.8, marketCapB: 58 },
+    signals: { technical: -35, momentum: -49, sentiment: 6, news: 0, policy: 0, profile: 25, valuation: -14 }
   },
   {
     ticker: "PG", name: "Procter & Gamble", sector: "Consumer Defensive",
@@ -324,8 +324,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.75, payoutRatio: 64.6, marketCapB: 372 },
-    signals: { technical: 42, momentum: 7, sentiment: 46, news: 0, policy: 5, profile: 50, valuation: -5 }
+    fundamentals: { dividendYield: 2.71, payoutRatio: 64.6, marketCapB: 377 },
+    signals: { technical: 41, momentum: 29, sentiment: 46, news: 0, policy: 5, profile: 50, valuation: -6 }
   },
   {
     ticker: "CL", name: "Colgate-Palmolive", sector: "Consumer Defensive",
@@ -335,8 +335,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.31, payoutRatio: 82.3, marketCapB: 74 },
-    signals: { technical: -35, momentum: 0, sentiment: 45, news: 0, policy: 5, profile: 10, valuation: -8 }
+    fundamentals: { dividendYield: 2.28, payoutRatio: 82.3, marketCapB: 77 },
+    signals: { technical: -36, momentum: 26, sentiment: 45, news: 0, policy: 5, profile: 10, valuation: -10 }
   },
   {
     ticker: "KMB", name: "Kimberly-Clark", sector: "Consumer Defensive",
@@ -346,8 +346,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.72, payoutRatio: 100.2, marketCapB: 37 },
-    signals: { technical: -35, momentum: 19, sentiment: 26, news: 0, policy: 5, profile: 20, valuation: 15 }
+    fundamentals: { dividendYield: 4.65, payoutRatio: 100.2, marketCapB: 36 },
+    signals: { technical: -34, momentum: 32, sentiment: 26, news: 0, policy: 5, profile: 20, valuation: 15 }
   },
 
   // ---------- ENERGI ----------
@@ -359,8 +359,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Reuters", "Who Profits", "BDS Movement"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.11, payoutRatio: 67.2, marketCapB: 454 },
-    signals: { technical: 36, momentum: 48, sentiment: 66, news: 0, policy: -10, profile: 40, valuation: 15 }
+    fundamentals: { dividendYield: 3.08, payoutRatio: 67.2, marketCapB: 461 },
+    signals: { technical: 13, momentum: 58, sentiment: 66, news: 0, policy: -10, profile: 40, valuation: 15 }
   },
   {
     ticker: "XOM", name: "Exxon Mobil Corp.", sector: "Energy",
@@ -370,8 +370,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.26, payoutRatio: 52.5, marketCapB: 754 },
-    signals: { technical: 37, momentum: 43, sentiment: 29, news: 0, policy: 0, profile: 55, valuation: 14 }
+    fundamentals: { dividendYield: 2.25, payoutRatio: 52.5, marketCapB: 767 },
+    signals: { technical: 13, momentum: 55, sentiment: 29, news: 0, policy: 0, profile: 55, valuation: 13 }
   },
 
   // ---------- DEFENCE / INDUSTRIAL ----------
@@ -383,8 +383,8 @@ window.STOCK_UNIVERSE = [
       sources: ["US DoD records", "Stockholm SIPRI"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.29, payoutRatio: 49.0, marketCapB: 149 },
-    signals: { technical: -60, momentum: 62, sentiment: 35, news: 0, policy: -25, profile: 25, valuation: 1 }
+    fundamentals: { dividendYield: 2.24, payoutRatio: 49.0, marketCapB: 148 },
+    signals: { technical: -60, momentum: 61, sentiment: 35, news: 0, policy: -25, profile: 25, valuation: 2 }
   },
   {
     ticker: "RTX", name: "RTX Corp. (Raytheon)", sector: "Industrials",
@@ -394,8 +394,8 @@ window.STOCK_UNIVERSE = [
       sources: ["SIPRI", "Reuters"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.49, payoutRatio: 45.9, marketCapB: 269 },
-    signals: { technical: -41, momentum: 26, sentiment: 54, news: 0, policy: -20, profile: 40, valuation: -14 }
+    fundamentals: { dividendYield: 1.46, payoutRatio: 45.9, marketCapB: 271 },
+    signals: { technical: -41, momentum: 38, sentiment: 54, news: 0, policy: -20, profile: 40, valuation: -14 }
   },
   {
     ticker: "BA", name: "Boeing Co.", sector: "Industrials",
@@ -405,8 +405,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AP News", "Washington Post"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 137 },
-    signals: { technical: -37, momentum: -100, sentiment: 78, news: 0, policy: -25, profile: 15, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 135 },
+    signals: { technical: -37, momentum: -92, sentiment: 78, news: 0, policy: -25, profile: 15, valuation: -100 }
   },
   {
     ticker: "GD", name: "General Dynamics", sector: "Industrials",
@@ -416,8 +416,8 @@ window.STOCK_UNIVERSE = [
       sources: ["SIPRI", "US DoD"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.79, payoutRatio: 37.7, marketCapB: 100 },
-    signals: { technical: -69, momentum: 1, sentiment: 46, news: 0, policy: -20, profile: 40, valuation: 0 }
+    fundamentals: { dividendYield: 1.72, payoutRatio: 37.7, marketCapB: 101 },
+    signals: { technical: -67, momentum: 8, sentiment: 46, news: 0, policy: -20, profile: 40, valuation: 0 }
   },
   {
     ticker: "NOC", name: "Northrop Grumman", sector: "Industrials",
@@ -427,8 +427,8 @@ window.STOCK_UNIVERSE = [
       sources: ["SIPRI"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.79, payoutRatio: 30.2, marketCapB: 80 },
-    signals: { technical: -37, momentum: -25, sentiment: 50, news: 0, policy: -20, profile: 35, valuation: 3 }
+    fundamentals: { dividendYield: 1.76, payoutRatio: 30.2, marketCapB: 80 },
+    signals: { technical: -35, momentum: -20, sentiment: 50, news: 0, policy: -20, profile: 35, valuation: 4 }
   },
   {
     ticker: "CAT", name: "Caterpillar Inc.", sector: "Industrials",
@@ -438,8 +438,8 @@ window.STOCK_UNIVERSE = [
       sources: ["BDS Movement", "Human Rights Watch"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.91, payoutRatio: 26.0, marketCapB: 298 },
-    signals: { technical: -20, momentum: -100, sentiment: 50, news: 0, policy: -15, profile: 25, valuation: 0 }
+    fundamentals: { dividendYield: 1.01, payoutRatio: 26.0, marketCapB: 286 },
+    signals: { technical: -20, momentum: -100, sentiment: 50, news: 0, policy: -15, profile: 35, valuation: 2 }
   },
 
   // ---------- FINANCIAL ----------
@@ -451,8 +451,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Bloomberg", "Don't Buy Into Occupation report"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.95, payoutRatio: 25.7, marketCapB: 912 },
-    signals: { technical: 37, momentum: 10, sentiment: 48, news: 0, policy: 5, profile: 75, valuation: 19 }
+    fundamentals: { dividendYield: 1.92, payoutRatio: 25.7, marketCapB: 892 },
+    signals: { technical: 42, momentum: 14, sentiment: 48, news: 0, policy: 5, profile: 75, valuation: 20 }
   },
   {
     ticker: "BAC", name: "Bank of America", sector: "Financial Services",
@@ -462,8 +462,8 @@ window.STOCK_UNIVERSE = [
       sources: ["DBIO 2023 report"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.52, payoutRatio: 25.9, marketCapB: 354 },
-    signals: { technical: 49, momentum: -35, sentiment: 76, news: 0, policy: 0, profile: 60, valuation: 30 }
+    fundamentals: { dividendYield: 2.5, payoutRatio: 25.9, marketCapB: 345 },
+    signals: { technical: 73, momentum: -30, sentiment: 76, news: 0, policy: 0, profile: 60, valuation: 31 }
   },
   {
     ticker: "V", name: "Visa Inc.", sector: "Financial Services",
@@ -473,8 +473,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.67, payoutRatio: 22.1, marketCapB: 767 },
-    signals: { technical: 40, momentum: 61, sentiment: 78, news: 0, policy: 5, profile: 65, valuation: -11 }
+    fundamentals: { dividendYield: 0.65, payoutRatio: 22.1, marketCapB: 776 },
+    signals: { technical: 15, momentum: 74, sentiment: 78, news: 0, policy: 5, profile: 65, valuation: -12 }
   },
   {
     ticker: "MA", name: "Mastercard Inc.", sector: "Financial Services",
@@ -484,8 +484,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.57, payoutRatio: 17.9, marketCapB: 557 },
-    signals: { technical: 40, momentum: 71, sentiment: 78, news: 0, policy: 5, profile: 50, valuation: -22 }
+    fundamentals: { dividendYield: 0.55, payoutRatio: 17.9, marketCapB: 556 },
+    signals: { technical: 15, momentum: 72, sentiment: 78, news: 0, policy: 5, profile: 50, valuation: -23 }
   },
   {
     ticker: "BRK.B", name: "Berkshire Hathaway", sector: "Financial Services",
@@ -495,8 +495,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Berkshire annual letters"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1160 },
-    signals: { technical: 35, momentum: 25, sentiment: 50, news: 0, policy: 5, profile: 65, valuation: -12 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1164 },
+    signals: { technical: 34, momentum: 37, sentiment: 50, news: 0, policy: 5, profile: 65, valuation: -12 }
   },
 
   // ---------- HEALTHCARE / PHARMA ----------
@@ -508,8 +508,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.98, payoutRatio: 80.1, marketCapB: 662 },
-    signals: { technical: 36, momentum: 47, sentiment: 55, news: 0, policy: 5, profile: 65, valuation: -11 }
+    fundamentals: { dividendYield: 1.95, payoutRatio: 80.1, marketCapB: 663 },
+    signals: { technical: 37, momentum: 60, sentiment: 55, news: 0, policy: 5, profile: 65, valuation: -11 }
   },
   {
     ticker: "PFE", name: "Pfizer Inc.", sector: "Healthcare",
@@ -519,8 +519,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Reuters", "BMJ"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.84, payoutRatio: 226.3, marketCapB: 171 },
-    signals: { technical: 37, momentum: 23, sentiment: 25, news: 0, policy: 0, profile: 40, valuation: 28 }
+    fundamentals: { dividendYield: 5.74, payoutRatio: 226.3, marketCapB: 174 },
+    signals: { technical: 36, momentum: 37, sentiment: 25, news: 0, policy: 0, profile: 40, valuation: 28 }
   },
   {
     ticker: "MRK", name: "Merck & Co.", sector: "Healthcare",
@@ -530,8 +530,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.41, payoutRatio: 266.7, marketCapB: 361 },
-    signals: { technical: 40, momentum: 78, sentiment: 59, news: 0, policy: 5, profile: 35, valuation: 12 }
+    fundamentals: { dividendYield: 2.32, payoutRatio: 266.7, marketCapB: 370 },
+    signals: { technical: 38, momentum: 92, sentiment: 59, news: 0, policy: 5, profile: 35, valuation: 11 }
   },
   {
     ticker: "ABBV", name: "AbbVie Inc.", sector: "Healthcare",
@@ -541,8 +541,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.42, payoutRatio: 190.4, marketCapB: 514 },
-    signals: { technical: 36, momentum: 100, sentiment: 66, news: 0, policy: 5, profile: 55, valuation: 6 }
+    fundamentals: { dividendYield: 2.38, payoutRatio: 190.4, marketCapB: 521 },
+    signals: { technical: 12, momentum: 100, sentiment: 66, news: 0, policy: 5, profile: 55, valuation: 5 }
   },
   {
     ticker: "UNH", name: "UnitedHealth Group", sector: "Healthcare",
@@ -552,8 +552,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.28, payoutRatio: 57.6, marketCapB: 369 },
-    signals: { technical: 45, momentum: 15, sentiment: 69, news: 0, policy: 5, profile: 35, valuation: 7 }
+    fundamentals: { dividendYield: 2.26, payoutRatio: 57.6, marketCapB: 367 },
+    signals: { technical: 44, momentum: 17, sentiment: 69, news: 0, policy: 5, profile: 35, valuation: 7 }
   },
   {
     ticker: "NVO", name: "Novo Nordisk (ADR)", sector: "Healthcare",
@@ -563,8 +563,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.69, payoutRatio: 45.1, marketCapB: 173 },
-    signals: { technical: -35, momentum: -58, sentiment: 15, news: 0, policy: 5, profile: 60, valuation: 25 }
+    fundamentals: { dividendYield: 4.59, payoutRatio: 45.1, marketCapB: 176 },
+    signals: { technical: -36, momentum: -49, sentiment: 15, news: 0, policy: 5, profile: 60, valuation: 25 }
   },
 
   // ---------- TELECOM & UTIL ----------
@@ -576,8 +576,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.36, payoutRatio: 59.4, marketCapB: 141 },
-    signals: { technical: -40, momentum: -88, sentiment: 46, news: 0, policy: 5, profile: 50, valuation: 35 }
+    fundamentals: { dividendYield: 5.31, payoutRatio: 59.4, marketCapB: 144 },
+    signals: { technical: -42, momentum: -75, sentiment: 46, news: 0, policy: 5, profile: 50, valuation: 35 }
   },
   {
     ticker: "VZ", name: "Verizon Communications", sector: "Communication Services",
@@ -587,8 +587,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.55, payoutRatio: 72.8, marketCapB: 181 },
-    signals: { technical: 40, momentum: -53, sentiment: 44, news: 0, policy: 5, profile: 50, valuation: 35 }
+    fundamentals: { dividendYield: 6.48, payoutRatio: 72.8, marketCapB: 187 },
+    signals: { technical: 39, momentum: -33, sentiment: 44, news: 0, policy: 5, profile: 50, valuation: 34 }
   },
 
   // ---------- AUTO & TRANSPORT ----------
@@ -600,8 +600,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Reuters", "Public reporting"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1594 },
-    signals: { technical: -37, momentum: -11, sentiment: 34, news: 0, policy: -5, profile: 40, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1560 },
+    signals: { technical: -40, momentum: -14, sentiment: 35, news: 0, policy: -5, profile: 40, valuation: -100 }
   },
   {
     ticker: "F", name: "Ford Motor Co.", sector: "Consumer Cyclical",
@@ -611,8 +611,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.12, payoutRatio: 64.1, marketCapB: 49 },
-    signals: { technical: -41, momentum: -9, sentiment: 32, news: 0, policy: 0, profile: -20, valuation: 40 }
+    fundamentals: { dividendYield: 4.85, payoutRatio: 64.1, marketCapB: 49 },
+    signals: { technical: -38, momentum: 3, sentiment: 32, news: 0, policy: 0, profile: -20, valuation: 40 }
   },
   {
     ticker: "GM", name: "General Motors", sector: "Consumer Cyclical",
@@ -622,8 +622,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.87, payoutRatio: 15.1, marketCapB: 73 },
-    signals: { technical: 41, momentum: 21, sentiment: 69, news: 0, policy: 0, profile: -5, valuation: 42 }
+    fundamentals: { dividendYield: 0.84, payoutRatio: 15.1, marketCapB: 74 },
+    signals: { technical: 41, momentum: 35, sentiment: 69, news: 0, policy: 0, profile: -5, valuation: 42 }
   },
 
   // ---------- AIRLINES & TRAVEL ----------
@@ -635,8 +635,8 @@ window.STOCK_UNIVERSE = [
       sources: ["UN OHCHR database", "HRW report 2018"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.14, payoutRatio: 17.8, marketCapB: 113 },
-    signals: { technical: -35, momentum: -60, sentiment: 73, news: 0, policy: -10, profile: 60, valuation: 23 }
+    fundamentals: { dividendYield: 1.12, payoutRatio: 17.8, marketCapB: 115 },
+    signals: { technical: -33, momentum: -50, sentiment: 73, news: 0, policy: -10, profile: 60, valuation: 24 }
   },
   {
     ticker: "ABNB", name: "Airbnb Inc.", sector: "Consumer Cyclical",
@@ -646,8 +646,8 @@ window.STOCK_UNIVERSE = [
       sources: ["HRW", "UN OHCHR"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 100 },
-    signals: { technical: 45, momentum: 35, sentiment: 49, news: 0, policy: -15, profile: 35, valuation: -20 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 98 },
+    signals: { technical: 46, momentum: 45, sentiment: 49, news: 0, policy: -15, profile: 35, valuation: -19 }
   },
 
   // ---------- REIT / DIVIDEND ----------
@@ -659,8 +659,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public filings"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.79, payoutRatio: 234.7, marketCapB: 54 },
-    signals: { technical: -38, momentum: -57, sentiment: 22, news: 0, policy: 5, profile: 45, valuation: -50 }
+    fundamentals: { dividendYield: 5.7, payoutRatio: 234.7, marketCapB: 54 },
+    signals: { technical: -39, momentum: -48, sentiment: 22, news: 0, policy: 5, profile: 45, valuation: -50 }
   },
 
   // ---------- ETF ----------
@@ -673,7 +673,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.24, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 9, momentum: 16, sentiment: 25, news: 0, policy: 0, profile: -10, valuation: 0 }
+    signals: { technical: 9, momentum: 28, sentiment: 25, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
     ticker: "VYM", name: "Vanguard High Dividend Yield ETF", sector: "ETF",
@@ -684,7 +684,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.37, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 31, momentum: -4, sentiment: 25, news: 0, policy: 0, profile: -10, valuation: 0 }
+    signals: { technical: 36, momentum: 1, sentiment: 25, news: 0, policy: 0, profile: -10, valuation: 0 }
   }
 ,
 
@@ -697,8 +697,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.28, payoutRatio: 4.3, marketCapB: 3453 },
-    signals: { technical: -15, momentum: -100, sentiment: 81, news: 0, policy: 0, profile: 65, valuation: 4 }
+    fundamentals: { dividendYield: 0.31, payoutRatio: 4.3, marketCapB: 3394 },
+    signals: { technical: -18, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: 65, valuation: 5 }
   },
   {
     ticker: "AVGO", name: "Broadcom Inc.", sector: "Technology",
@@ -708,8 +708,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.74, payoutRatio: 32.4, marketCapB: 1647 },
-    signals: { technical: -40, momentum: -82, sentiment: 88, news: 0, policy: 0, profile: 65, valuation: 6 }
+    fundamentals: { dividendYield: 0.75, payoutRatio: 32.4, marketCapB: 1531 },
+    signals: { technical: -41, momentum: -92, sentiment: 88, news: 0, policy: 0, profile: 65, valuation: 10 }
   },
   {
     ticker: "LLY", name: "Eli Lilly and Company", sector: "Healthcare",
@@ -719,8 +719,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.54, payoutRatio: 21.7, marketCapB: 1225 },
-    signals: { technical: 19, momentum: 100, sentiment: 70, news: 0, policy: 0, profile: 65, valuation: -26 }
+    fundamentals: { dividendYield: 0.5, payoutRatio: 21.7, marketCapB: 1267 },
+    signals: { technical: 20, momentum: 100, sentiment: 70, news: 0, policy: 0, profile: 65, valuation: -26 }
   },
   {
     ticker: "MU", name: "Micron Technology, Inc.", sector: "Technology",
@@ -730,8 +730,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.06, payoutRatio: 0.7, marketCapB: 1057 },
-    signals: { technical: 28, momentum: 100, sentiment: 82, news: 0, policy: 0, profile: 65, valuation: 46 }
+    fundamentals: { dividendYield: 0.06, payoutRatio: 0.7, marketCapB: 978 },
+    signals: { technical: 28, momentum: 100, sentiment: 82, news: 0, policy: 0, profile: 65, valuation: 47 }
   },
   {
     ticker: "CSCO", name: "Cisco Systems, Inc.", sector: "Technology",
@@ -741,8 +741,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits (partial)", "AFSC Investigate", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.52, payoutRatio: 49.9, marketCapB: 428 },
-    signals: { technical: 42, momentum: 38, sentiment: 57, news: 0, policy: 0, profile: 60, valuation: 2 }
+    fundamentals: { dividendYield: 1.55, payoutRatio: 49.9, marketCapB: 408 },
+    signals: { technical: 42, momentum: 23, sentiment: 57, news: 0, policy: 0, profile: 60, valuation: 4 }
   },
   {
     ticker: "PLTR", name: "Palantir Technologies Inc.", sector: "Technology",
@@ -752,8 +752,8 @@ window.STOCK_UNIVERSE = [
       sources: ["The Guardian (2024)", "AFSC Investigate", "Drop Palantir campaign", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 472 },
-    signals: { technical: 41, momentum: 98, sentiment: 55, news: 0, policy: 0, profile: 50, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 443 },
+    signals: { technical: 44, momentum: 71, sentiment: 56, news: 0, policy: 0, profile: 50, valuation: -100 }
   },
   {
     ticker: "LRCX", name: "Lam Research Corporation", sector: "Technology",
@@ -763,8 +763,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.52, payoutRatio: 16.5, marketCapB: 318 },
-    signals: { technical: 29, momentum: -25, sentiment: 81, news: 0, policy: 0, profile: 50, valuation: -2 }
+    fundamentals: { dividendYield: 0.52, payoutRatio: 16.5, marketCapB: 292 },
+    signals: { technical: 34, momentum: -48, sentiment: 81, news: 0, policy: 0, profile: 50, valuation: 2 }
   },
   {
     ticker: "HSBC", name: "HSBC Holdings plc", sector: "Financial Services",
@@ -774,8 +774,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (financial)", "Who Profits (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.34, payoutRatio: 53.6, marketCapB: 296 },
-    signals: { technical: 71, momentum: -41, sentiment: 34, news: 0, policy: 0, profile: 60, valuation: 32 }
+    fundamentals: { dividendYield: 4.33, payoutRatio: 53.6, marketCapB: 291 },
+    signals: { technical: 69, momentum: -34, sentiment: 34, news: 0, policy: 0, profile: 60, valuation: 32 }
   },
   {
     ticker: "AMAT", name: "Applied Materials, Inc.", sector: "Technology",
@@ -785,8 +785,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.51, payoutRatio: 16.5, marketCapB: 335 },
-    signals: { technical: 25, momentum: 5, sentiment: 78, news: 0, policy: 0, profile: 50, valuation: -8 }
+    fundamentals: { dividendYield: 0.5, payoutRatio: 16.5, marketCapB: 305 },
+    signals: { technical: 31, momentum: -21, sentiment: 78, news: 0, policy: 0, profile: 50, valuation: -2 }
   },
   {
     ticker: "MS", name: "Morgan Stanley", sector: "Financial Services",
@@ -796,8 +796,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits (financial)", "AFSC Investigate", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.42, payoutRatio: 32.3, marketCapB: 297 },
-    signals: { technical: 41, momentum: -22, sentiment: 34, news: 0, policy: 0, profile: 45, valuation: 18 }
+    fundamentals: { dividendYield: 2.42, payoutRatio: 32.3, marketCapB: 285 },
+    signals: { technical: 43, momentum: -25, sentiment: 34, news: 0, policy: 0, profile: 45, valuation: 19 }
   },
   {
     ticker: "GE", name: "GE Aerospace", sector: "Industrials",
@@ -807,8 +807,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate", "Federation of American Scientists", "Defense contracts", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.62, payoutRatio: 20.2, marketCapB: 325 },
-    signals: { technical: -43, momentum: 8, sentiment: 76, news: 0, policy: 0, profile: 40, valuation: -40 }
+    fundamentals: { dividendYield: 0.6, payoutRatio: 20.2, marketCapB: 312 },
+    signals: { technical: -39, momentum: 8, sentiment: 76, news: 0, policy: 0, profile: 40, valuation: -36 }
   },
   {
     ticker: "GEV", name: "GE Vernova Inc.", sector: "Industrials",
@@ -818,8 +818,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.23, payoutRatio: 4.6, marketCapB: 235 },
-    signals: { technical: -46, momentum: -77, sentiment: 74, news: 0, policy: 0, profile: 50, valuation: -43 }
+    fundamentals: { dividendYield: 0.23, payoutRatio: 4.6, marketCapB: 225 },
+    signals: { technical: -45, momentum: -85, sentiment: 76, news: 0, policy: 0, profile: 50, valuation: -38 }
   },
   {
     ticker: "AZN", name: "AstraZeneca PLC", sector: "Healthcare",
@@ -829,8 +829,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.89, payoutRatio: 46.9, marketCapB: 270 },
-    signals: { technical: -41, momentum: -41, sentiment: 58, news: 0, policy: 0, profile: 50, valuation: 13 }
+    fundamentals: { dividendYield: 1.84, payoutRatio: 46.9, marketCapB: 290 },
+    signals: { technical: -61, momentum: -9, sentiment: 58, news: 0, policy: 0, profile: 50, valuation: 10 }
   },
   {
     ticker: "NVS", name: "Novartis AG", sector: "Healthcare",
@@ -840,8 +840,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.04, payoutRatio: 90.5, marketCapB: 304 },
-    signals: { technical: -41, momentum: 10, sentiment: 17, news: 0, policy: 0, profile: 50, valuation: 11 }
+    fundamentals: { dividendYield: 2.94, payoutRatio: 90.5, marketCapB: 306 },
+    signals: { technical: -66, momentum: 23, sentiment: 17, news: 0, policy: 0, profile: 50, valuation: 10 }
   },
   {
     ticker: "GS", name: "The Goldman Sachs Group, Inc.", sector: "Financial Services",
@@ -851,8 +851,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits", "AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.16, payoutRatio: 26.2, marketCapB: 270 },
-    signals: { technical: -40, momentum: -21, sentiment: 27, news: 0, policy: 0, profile: 45, valuation: 22 }
+    fundamentals: { dividendYield: 2.16, payoutRatio: 26.2, marketCapB: 257 },
+    signals: { technical: -36, momentum: -24, sentiment: 27, news: 0, policy: 0, profile: 45, valuation: 24 }
   },
   {
     ticker: "PM", name: "Philip Morris International Inc.", sector: "Consumer Defensive",
@@ -862,8 +862,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.16, payoutRatio: 87.7, marketCapB: 325 },
-    signals: { technical: 39, momentum: 61, sentiment: 66, news: 0, policy: 0, profile: 60, valuation: -9 }
+    fundamentals: { dividendYield: 3.07, payoutRatio: 87.7, marketCapB: 326 },
+    signals: { technical: 40, momentum: 62, sentiment: 66, news: 0, policy: 0, profile: 60, valuation: -9 }
   },
   {
     ticker: "TXN", name: "Texas Instruments Incorporated", sector: "Technology",
@@ -873,8 +873,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "Who Profits (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.96, payoutRatio: 73.7, marketCapB: 286 },
-    signals: { technical: 11, momentum: 15, sentiment: 49, news: 0, policy: 0, profile: 60, valuation: -21 }
+    fundamentals: { dividendYield: 1.94, payoutRatio: 73.7, marketCapB: 270 },
+    signals: { technical: 36, momentum: 1, sentiment: 49, news: 0, policy: 0, profile: 60, valuation: -17 }
   },
   {
     ticker: "RY", name: "Royal Bank of Canada", sector: "Financial Services",
@@ -884,8 +884,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.45, payoutRatio: 41.5, marketCapB: 285 },
-    signals: { technical: 34, momentum: 26, sentiment: 44, news: 0, policy: 0, profile: 60, valuation: 11 }
+    fundamentals: { dividendYield: 2.44, payoutRatio: 41.5, marketCapB: 279 },
+    signals: { technical: 41, momentum: 28, sentiment: 44, news: 0, policy: 0, profile: 60, valuation: 12 }
   },
   {
     ticker: "SHEL", name: "Shell plc", sector: "Energy",
@@ -895,8 +895,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.97, payoutRatio: 32.6, marketCapB: 306 },
-    signals: { technical: 38, momentum: 47, sentiment: 40, news: 0, policy: 0, profile: 40, valuation: 30 }
+    fundamentals: { dividendYield: 2.9, payoutRatio: 26.2, marketCapB: 307 },
+    signals: { technical: 37, momentum: 56, sentiment: 40, news: 0, policy: 0, profile: 50, valuation: 30 }
   },
   {
     ticker: "WFC", name: "Wells Fargo & Company", sector: "Financial Services",
@@ -906,8 +906,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.39, payoutRatio: 26.1, marketCapB: 255 },
-    signals: { technical: 40, momentum: -6, sentiment: 61, news: 0, policy: 0, profile: 60, valuation: 28 }
+    fundamentals: { dividendYield: 2.36, payoutRatio: 26.1, marketCapB: 249 },
+    signals: { technical: 43, momentum: 0, sentiment: 61, news: 0, policy: 0, profile: 60, valuation: 28 }
   },
   {
     ticker: "LIN", name: "Linde plc", sector: "Basic Materials",
@@ -917,8 +917,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.26, payoutRatio: 40.0, marketCapB: 232 },
-    signals: { technical: -41, momentum: -25, sentiment: 66, news: 0, policy: 0, profile: 60, valuation: -17 }
+    fundamentals: { dividendYield: 1.27, payoutRatio: 40.0, marketCapB: 236 },
+    signals: { technical: -48, momentum: -1, sentiment: 66, news: 0, policy: 0, profile: 50, valuation: -19 }
   },
   {
     ticker: "KLAC", name: "KLA Corporation", sector: "Technology",
@@ -928,8 +928,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.6, payoutRatio: 21.9, marketCapB: 218 },
-    signals: { technical: -53, momentum: -32, sentiment: 58, news: 0, policy: 0, profile: 50, valuation: -11 }
+    fundamentals: { dividendYield: 0.55, payoutRatio: 21.9, marketCapB: 205 },
+    signals: { technical: -52, momentum: -44, sentiment: 62, news: 0, policy: 0, profile: 50, valuation: -6 }
   },
   {
     ticker: "ARM", name: "Arm Holdings plc", sector: "Technology",
@@ -939,8 +939,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 244 },
-    signals: { technical: 26, momentum: 5, sentiment: 52, news: 0, policy: 0, profile: 50, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 213 },
+    signals: { technical: 33, momentum: -21, sentiment: 52, news: 0, policy: 0, profile: 50, valuation: -100 }
   },
   {
     ticker: "TM", name: "Toyota Motor Corporation", sector: "Consumer Cyclical",
@@ -950,8 +950,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.22, payoutRatio: 25.9, marketCapB: 232 },
-    signals: { technical: -39, momentum: -8, sentiment: 75, news: 0, policy: 0, profile: 40, valuation: 22 }
+    fundamentals: { dividendYield: 3.19, payoutRatio: 25.9, marketCapB: 230 },
+    signals: { technical: -37, momentum: -3, sentiment: 75, news: 0, policy: 0, profile: 40, valuation: 22 }
   },
   {
     ticker: "AXP", name: "American Express Company", sector: "Financial Services",
@@ -961,8 +961,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.2, payoutRatio: 15.3, marketCapB: 217 },
-    signals: { technical: -40, momentum: -18, sentiment: 40, news: 0, policy: 0, profile: 50, valuation: 11 }
+    fundamentals: { dividendYield: 1.17, payoutRatio: 15.3, marketCapB: 213 },
+    signals: { technical: -37, momentum: -17, sentiment: 40, news: 0, policy: 0, profile: 50, valuation: 12 }
   },
   {
     ticker: "ANET", name: "Arista Networks, Inc.", sector: "Technology",
@@ -972,8 +972,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 232 },
-    signals: { technical: 35, momentum: 0, sentiment: 86, news: 0, policy: 0, profile: 50, valuation: -45 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 212 },
+    signals: { technical: 32, momentum: -25, sentiment: 86, news: 0, policy: 0, profile: 50, valuation: -36 }
   },
   {
     ticker: "C", name: "Citigroup Inc.", sector: "Financial Services",
@@ -983,8 +983,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (financial)", "Who Profits (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.16, payoutRatio: 25.9, marketCapB: 208 },
-    signals: { technical: 40, momentum: -26, sentiment: 68, news: 0, policy: 0, profile: 60, valuation: 31 }
+    fundamentals: { dividendYield: 2.13, payoutRatio: 25.9, marketCapB: 200 },
+    signals: { technical: 43, momentum: -28, sentiment: 68, news: 0, policy: 0, profile: 60, valuation: 32 }
   },
   {
     ticker: "TMUS", name: "T-Mobile US, Inc.", sector: "Communication Services",
@@ -994,8 +994,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.19, payoutRatio: 41.2, marketCapB: 157 },
-    signals: { technical: -38, momentum: -100, sentiment: 70, news: 0, policy: 0, profile: 35, valuation: 29 }
+    fundamentals: { dividendYield: 3.18, payoutRatio: 39.3, marketCapB: 167 },
+    signals: { technical: -43, momentum: -78, sentiment: 70, news: 0, policy: 0, profile: 35, valuation: 27 }
   },
   {
     ticker: "TTE", name: "TotalEnergies SE", sector: "Energy",
@@ -1005,8 +1005,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company disclosures", "Reuters", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.31, payoutRatio: 49.6, marketCapB: 207 },
-    signals: { technical: 40, momentum: -18, sentiment: 40, news: 0, policy: 0, profile: 40, valuation: 35 }
+    fundamentals: { dividendYield: 4.27, payoutRatio: 40.0, marketCapB: 209 },
+    signals: { technical: 39, momentum: -5, sentiment: 45, news: 0, policy: 0, profile: 50, valuation: 35 }
   },
   {
     ticker: "NEE", name: "NextEra Energy, Inc.", sector: "Utilities",
@@ -1016,8 +1016,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.08, payoutRatio: 43.9, marketCapB: 172 },
-    signals: { technical: -41, momentum: -73, sentiment: 55, news: 0, policy: 0, profile: 60, valuation: 3 }
+    fundamentals: { dividendYield: 3.03, payoutRatio: 43.9, marketCapB: 177 },
+    signals: { technical: -44, momentum: -55, sentiment: 55, news: 0, policy: 0, profile: 60, valuation: 2 }
   },
   {
     ticker: "BHP", name: "BHP Group Limited", sector: "Basic Materials",
@@ -1027,8 +1027,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.82, payoutRatio: 68.8, marketCapB: 208 },
-    signals: { technical: 41, momentum: -10, sentiment: 12, news: 0, policy: 0, profile: 50, valuation: 8 }
+    fundamentals: { dividendYield: 4.84, payoutRatio: 68.8, marketCapB: 200 },
+    signals: { technical: 42, momentum: -12, sentiment: 12, news: 0, policy: 0, profile: 50, valuation: 10 }
   },
   {
     ticker: "SAP", name: "SAP SE", sector: "Technology",
@@ -1038,8 +1038,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.24, payoutRatio: 36.5, marketCapB: 270 },
-    signals: { technical: 39, momentum: 100, sentiment: 69, news: 0, policy: 0, profile: 60, valuation: -13 }
+    fundamentals: { dividendYield: 1.25, payoutRatio: 36.5, marketCapB: 271 },
+    signals: { technical: 40, momentum: 100, sentiment: 69, news: 0, policy: 0, profile: 60, valuation: -13 }
   },
   {
     ticker: "ADI", name: "Analog Devices, Inc.", sector: "Technology",
@@ -1049,8 +1049,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.03, payoutRatio: 49.6, marketCapB: 210 },
-    signals: { technical: 35, momentum: 7, sentiment: 80, news: 0, policy: 0, profile: 60, valuation: -18 }
+    fundamentals: { dividendYield: 1.02, payoutRatio: 49.6, marketCapB: 197 },
+    signals: { technical: 37, momentum: -7, sentiment: 80, news: 0, policy: 0, profile: 60, valuation: -14 }
   },
   {
     ticker: "QCOM", name: "QUALCOMM Incorporated", sector: "Technology",
@@ -1060,8 +1060,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company R&D disclosures", "Who Profits (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.01, payoutRatio: 41.5, marketCapB: 198 },
-    signals: { technical: 36, momentum: -6, sentiment: 22, news: 0, policy: 0, profile: 60, valuation: 5 }
+    fundamentals: { dividendYield: 1.98, payoutRatio: 41.5, marketCapB: 173 },
+    signals: { technical: 38, momentum: -28, sentiment: 22, news: 0, policy: 0, profile: 60, valuation: 12 }
   },
   {
     ticker: "AMGN", name: "Amgen Inc.", sector: "Healthcare",
@@ -1071,8 +1071,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.23, payoutRatio: 60.9, marketCapB: 249 },
-    signals: { technical: 38, momentum: 100, sentiment: 18, news: 0, policy: 0, profile: 45, valuation: 3 }
+    fundamentals: { dividendYield: 2.19, payoutRatio: 60.9, marketCapB: 254 },
+    signals: { technical: 16, momentum: 100, sentiment: 18, news: 0, policy: 0, profile: 45, valuation: 2 }
   },
   {
     ticker: "TD", name: "The Toronto-Dominion Bank", sector: "Financial Services",
@@ -1082,8 +1082,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.52, payoutRatio: 46.4, marketCapB: 208 },
-    signals: { technical: 8, momentum: 39, sentiment: 40, news: 0, policy: 0, profile: 60, valuation: 12 }
+    fundamentals: { dividendYield: 2.52, payoutRatio: 46.4, marketCapB: 202 },
+    signals: { technical: 40, momentum: 39, sentiment: 40, news: 0, policy: 0, profile: 60, valuation: 13 }
   },
   {
     ticker: "SAN", name: "Banco Santander, S.A.", sector: "Financial Services",
@@ -1093,8 +1093,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.38, payoutRatio: 25.9, marketCapB: 169 },
-    signals: { technical: 69, momentum: -31, sentiment: 17, news: 0, policy: 0, profile: 60, valuation: 34 }
+    fundamentals: { dividendYield: 2.37, payoutRatio: 25.9, marketCapB: 161 },
+    signals: { technical: 64, momentum: -27, sentiment: 17, news: 0, policy: 0, profile: 60, valuation: 36 }
   },
   {
     ticker: "TJX", name: "The TJX Companies, Inc.", sector: "Consumer Cyclical",
@@ -1104,8 +1104,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.39, payoutRatio: 32.5, marketCapB: 156 },
-    signals: { technical: -36, momentum: -55, sentiment: 72, news: 0, policy: 0, profile: 40, valuation: -13 }
+    fundamentals: { dividendYield: 1.36, payoutRatio: 32.5, marketCapB: 157 },
+    signals: { technical: -35, momentum: -42, sentiment: 72, news: 0, policy: 0, profile: 40, valuation: -13 }
   },
   {
     ticker: "SHOP", name: "Shopify Inc.", sector: "Technology",
@@ -1115,8 +1115,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 217 },
-    signals: { technical: 48, momentum: 79, sentiment: 65, news: 0, policy: 0, profile: 40, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 199 },
+    signals: { technical: 47, momentum: 54, sentiment: 65, news: 0, policy: 0, profile: 40, valuation: -100 }
   },
   {
     ticker: "ETN", name: "Eaton Corporation plc", sector: "Industrials",
@@ -1126,8 +1126,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.12, payoutRatio: 43.5, marketCapB: 153 },
-    signals: { technical: 34, momentum: -47, sentiment: 72, news: 0, policy: 0, profile: 50, valuation: -12 }
+    fundamentals: { dividendYield: 1.12, payoutRatio: 43.5, marketCapB: 142 },
+    signals: { technical: 35, momentum: -59, sentiment: 72, news: 0, policy: 0, profile: 50, valuation: -7 }
   },
   {
     ticker: "BLK", name: "BlackRock, Inc.", sector: "Financial Services",
@@ -1137,8 +1137,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate", "BlackRock shareholder records", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.98, payoutRatio: 52.4, marketCapB: 191 },
-    signals: { technical: 37, momentum: 13, sentiment: 80, news: 0, policy: 0, profile: 60, valuation: 5 }
+    fundamentals: { dividendYield: 1.95, payoutRatio: 52.4, marketCapB: 185 },
+    signals: { technical: 43, momentum: 11, sentiment: 80, news: 0, policy: 0, profile: 60, valuation: 7 }
   },
   {
     ticker: "GILD", name: "Gilead Sciences, Inc.", sector: "Healthcare",
@@ -1148,8 +1148,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.06, payoutRatio: 43.5, marketCapB: 205 },
-    signals: { technical: 37, momentum: 63, sentiment: 66, news: 0, policy: 0, profile: -5, valuation: 9 }
+    fundamentals: { dividendYield: 1.98, payoutRatio: 43.5, marketCapB: 214 },
+    signals: { technical: 19, momentum: 83, sentiment: 66, news: 0, policy: 0, profile: -5, valuation: 7 }
   },
   {
     ticker: "STX", name: "Seagate Technology Holdings plc", sector: "Technology",
@@ -1159,8 +1159,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.44, payoutRatio: 21.1, marketCapB: 161 },
-    signals: { technical: 24, momentum: -34, sentiment: 77, news: 0, policy: 0, profile: 50, valuation: 27 }
+    fundamentals: { dividendYield: 0.43, payoutRatio: 21.1, marketCapB: 145 },
+    signals: { technical: 31, momentum: -65, sentiment: 77, news: 0, policy: 0, profile: 50, valuation: 30 }
   },
   {
     ticker: "ISRG", name: "Intuitive Surgical, Inc.", sector: "Healthcare",
@@ -1170,8 +1170,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 159 },
-    signals: { technical: -42, momentum: -29, sentiment: 62, news: 0, policy: 0, profile: 50, valuation: -48 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 154 },
+    signals: { technical: -34, momentum: -28, sentiment: 62, news: 0, policy: 0, profile: 50, valuation: -44 }
   },
   {
     ticker: "SCHW", name: "The Charles Schwab Corporation", sector: "Financial Services",
@@ -1181,8 +1181,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.44, payoutRatio: 21.5, marketCapB: 155 },
-    signals: { technical: 46, momentum: -30, sentiment: 58, news: 0, policy: 0, profile: 60, valuation: 25 }
+    fundamentals: { dividendYield: 1.43, payoutRatio: 21.5, marketCapB: 152 },
+    signals: { technical: 71, momentum: -29, sentiment: 58, news: 0, policy: 0, profile: 60, valuation: 26 }
   },
   {
     ticker: "UNP", name: "Union Pacific Corporation", sector: "Industrials",
@@ -1192,8 +1192,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.91, payoutRatio: 43.4, marketCapB: 179 },
-    signals: { technical: 36, momentum: 21, sentiment: 64, news: 0, policy: 0, profile: 60, valuation: -2 }
+    fundamentals: { dividendYield: 1.88, payoutRatio: 43.4, marketCapB: 180 },
+    signals: { technical: 33, momentum: 34, sentiment: 64, news: 0, policy: 0, profile: 60, valuation: -3 }
   },
   {
     ticker: "DE", name: "Deere & Company", sector: "Industrials",
@@ -1203,8 +1203,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits (partial)", "Media reports", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.01, payoutRatio: 36.0, marketCapB: 178 },
-    signals: { technical: 36, momentum: 25, sentiment: 54, news: 0, policy: 0, profile: 35, valuation: -26 }
+    fundamentals: { dividendYield: 0.98, payoutRatio: 36.0, marketCapB: 181 },
+    signals: { technical: 32, momentum: 36, sentiment: 54, news: 0, policy: 0, profile: 25, valuation: -28 }
   },
   {
     ticker: "ABT", name: "Abbott Laboratories", sector: "Healthcare",
@@ -1214,8 +1214,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.46, payoutRatio: 78.7, marketCapB: 181 },
-    signals: { technical: 44, momentum: 33, sentiment: 73, news: 0, policy: 0, profile: 40, valuation: 7 }
+    fundamentals: { dividendYield: 2.41, payoutRatio: 78.7, marketCapB: 184 },
+    signals: { technical: 41, momentum: 54, sentiment: 73, news: 0, policy: 0, profile: 40, valuation: 6 }
   },
   {
     ticker: "BX", name: "Blackstone Inc.", sector: "Financial Services",
@@ -1225,8 +1225,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.47, payoutRatio: 111.2, marketCapB: 144 },
-    signals: { technical: -38, momentum: -37, sentiment: 46, news: 0, policy: 0, profile: 60, valuation: 10 }
+    fundamentals: { dividendYield: 4.34, payoutRatio: 111.2, marketCapB: 141 },
+    signals: { technical: -36, momentum: -29, sentiment: 46, news: 0, policy: 0, profile: 60, valuation: 12 }
   },
   {
     ticker: "APP", name: "AppLovin Corporation", sector: "Communication Services",
@@ -1236,8 +1236,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 86 },
-    signals: { technical: -37, momentum: -100, sentiment: 71, news: 0, policy: 0, profile: 35, valuation: 22 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 76 },
+    signals: { technical: -15, momentum: -100, sentiment: 71, news: 0, policy: 0, profile: 35, valuation: 26 }
   },
   {
     ticker: "UBER", name: "Uber Technologies, Inc.", sector: "Technology",
@@ -1247,8 +1247,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 134 },
-    signals: { technical: -33, momentum: -64, sentiment: 71, news: 0, policy: 0, profile: 40, valuation: 15 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 133 },
+    signals: { technical: -32, momentum: -56, sentiment: 71, news: 0, policy: 0, profile: 40, valuation: 15 }
   },
   {
     ticker: "COP", name: "ConocoPhillips", sector: "Energy",
@@ -1258,8 +1258,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.25, payoutRatio: 43.7, marketCapB: 180 },
-    signals: { technical: 43, momentum: 49, sentiment: 55, news: 0, policy: 0, profile: 50, valuation: 18 }
+    fundamentals: { dividendYield: 2.24, payoutRatio: 43.7, marketCapB: 184 },
+    signals: { technical: 20, momentum: 59, sentiment: 55, news: 0, policy: 0, profile: 50, valuation: 17 }
   },
   {
     ticker: "PANW", name: "Palo Alto Networks, Inc.", sector: "Technology",
@@ -1269,8 +1269,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (partial)", "Reuters (2023)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 311 },
-    signals: { technical: 37, momentum: 100, sentiment: 64, news: 0, policy: 0, profile: 25, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 295 },
+    signals: { technical: 34, momentum: 100, sentiment: 64, news: 0, policy: 0, profile: 25, valuation: -100 }
   },
   {
     ticker: "WDC", name: "Western Digital Corporation", sector: "Technology",
@@ -1280,8 +1280,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.18, payoutRatio: 1.9, marketCapB: 148 },
-    signals: { technical: 26, momentum: -50, sentiment: 73, news: 0, policy: 0, profile: 50, valuation: 30 }
+    fundamentals: { dividendYield: 0.18, payoutRatio: 1.9, marketCapB: 136 },
+    signals: { technical: 33, momentum: -75, sentiment: 73, news: 0, policy: 0, profile: 50, valuation: 32 }
   },
   {
     ticker: "BUD", name: "Anheuser-Busch InBev SA/NV", sector: "Consumer Defensive",
@@ -1291,8 +1291,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.66, payoutRatio: 29.0, marketCapB: 157 },
-    signals: { technical: 49, momentum: -5, sentiment: 71, news: 0, policy: 0, profile: 50, valuation: 11 }
+    fundamentals: { dividendYield: 1.69, payoutRatio: 27.4, marketCapB: 158 },
+    signals: { technical: 49, momentum: 12, sentiment: 71, news: 0, policy: 0, profile: 50, valuation: 10 }
   },
   {
     ticker: "MRVL", name: "Marvell Technology, Inc.", sector: "Technology",
@@ -1302,8 +1302,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.1, payoutRatio: 7.9, marketCapB: 196 },
-    signals: { technical: 30, momentum: 85, sentiment: 82, news: 0, policy: 0, profile: 50, valuation: -29 }
+    fundamentals: { dividendYield: 0.11, payoutRatio: 7.9, marketCapB: 172 },
+    signals: { technical: 33, momentum: 39, sentiment: 82, news: 0, policy: 0, profile: 50, valuation: -18 }
   },
   {
     ticker: "SCCO", name: "Southern Copper Corporation", sector: "Basic Materials",
@@ -1313,8 +1313,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.68, payoutRatio: 53.9, marketCapB: 162 },
-    signals: { technical: 41, momentum: 25, sentiment: -39, news: 0, policy: 0, profile: 60, valuation: -15 }
+    fundamentals: { dividendYield: 2.71, payoutRatio: 53.9, marketCapB: 149 },
+    signals: { technical: 39, momentum: 11, sentiment: -39, news: 0, policy: 0, profile: 60, valuation: -9 }
   },
   {
     ticker: "DELL", name: "Dell Technologies Inc.", sector: "Technology",
@@ -1324,8 +1324,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company R&D disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.51, payoutRatio: 13.4, marketCapB: 302 },
-    signals: { technical: 33, momentum: 100, sentiment: 57, news: 0, policy: 0, profile: 30, valuation: 12 }
+    fundamentals: { dividendYield: 0.53, payoutRatio: 13.4, marketCapB: 264 },
+    signals: { technical: 32, momentum: 100, sentiment: 57, news: 0, policy: 0, profile: 30, valuation: 18 }
   },
   {
     ticker: "GLW", name: "Corning Incorporated", sector: "Technology",
@@ -1335,8 +1335,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.85, payoutRatio: 51.4, marketCapB: 111 },
-    signals: { technical: -51, momentum: -84, sentiment: 75, news: 0, policy: 0, profile: 40, valuation: -25 }
+    fundamentals: { dividendYield: 0.87, payoutRatio: 51.4, marketCapB: 104 },
+    signals: { technical: -48, momentum: -96, sentiment: 75, news: 0, policy: 0, profile: 40, valuation: -20 }
   },
   {
     ticker: "PBR", name: "Petróleo Brasileiro S.A. - Petrobras", sector: "Energy",
@@ -1346,8 +1346,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.49, payoutRatio: 28.9, marketCapB: 141 },
-    signals: { technical: 52, momentum: -22, sentiment: 68, news: 0, policy: 0, profile: 60, valuation: 44 }
+    fundamentals: { dividendYield: 6.53, payoutRatio: 28.9, marketCapB: 141 },
+    signals: { technical: 49, momentum: -17, sentiment: 68, news: 0, policy: 0, profile: 60, valuation: 44 }
   },
   {
     ticker: "HON", name: "Honeywell International Inc.", sector: "Industrials",
@@ -1357,8 +1357,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate", "Defense contract records", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.28, payoutRatio: 38.9, marketCapB: 70 },
-    signals: { technical: -49, momentum: -23, sentiment: 50, news: 0, policy: 0, profile: 35, valuation: -7 }
+    fundamentals: { dividendYield: 1.26, payoutRatio: 38.9, marketCapB: 70 },
+    signals: { technical: -46, momentum: -15, sentiment: 50, news: 0, policy: 0, profile: 35, valuation: -6 }
   },
   {
     ticker: "PLD", name: "Prologis, Inc.", sector: "Real Estate",
@@ -1368,8 +1368,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.42, payoutRatio: 93.0, marketCapB: 124 },
-    signals: { technical: -38, momentum: -54, sentiment: 62, news: 0, policy: 0, profile: 60, valuation: -61 }
+    fundamentals: { dividendYield: 3.34, payoutRatio: 93.0, marketCapB: 125 },
+    signals: { technical: -39, momentum: -40, sentiment: 62, news: 0, policy: 0, profile: 60, valuation: -61 }
   },
   {
     ticker: "UL", name: "Unilever PLC", sector: "Consumer Defensive",
@@ -1379,8 +1379,8 @@ window.STOCK_UNIVERSE = [
       sources: ["BBC News (2021-2022)", "BDS Movement", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.32, payoutRatio: 46.4, marketCapB: 138 },
-    signals: { technical: 46, momentum: 2, sentiment: 60, news: 0, policy: 0, profile: 50, valuation: 10 }
+    fundamentals: { dividendYield: 3.25, payoutRatio: 46.4, marketCapB: 142 },
+    signals: { technical: 44, momentum: 24, sentiment: 60, news: 0, policy: 0, profile: 50, valuation: 8 }
   },
   {
     ticker: "BTI", name: "British American Tobacco p.l.c.", sector: "Consumer Defensive",
@@ -1390,8 +1390,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.58, payoutRatio: 84.0, marketCapB: 131 },
-    signals: { technical: -39, momentum: -9, sentiment: 78, news: 0, policy: 0, profile: 60, valuation: 24 }
+    fundamentals: { dividendYield: 5.47, payoutRatio: 84.0, marketCapB: 132 },
+    signals: { technical: -39, momentum: 2, sentiment: 78, news: 0, policy: 0, profile: 60, valuation: 24 }
   },
   {
     ticker: "CB", name: "Chubb Limited", sector: "Financial Services",
@@ -1401,8 +1401,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.15, payoutRatio: 13.9, marketCapB: 138 },
-    signals: { technical: 38, momentum: 14, sentiment: 26, news: 0, policy: 0, profile: 50, valuation: 23 }
+    fundamentals: { dividendYield: 1.13, payoutRatio: 13.9, marketCapB: 139 },
+    signals: { technical: 38, momentum: 24, sentiment: 26, news: 0, policy: 0, profile: 50, valuation: 22 }
   },
   {
     ticker: "SPGI", name: "S&P Global Inc.", sector: "Financial Services",
@@ -1412,8 +1412,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.86, payoutRatio: 22.1, marketCapB: 134 },
-    signals: { technical: 18, momentum: 24, sentiment: 82, news: 0, policy: 0, profile: 50, valuation: -8 }
+    fundamentals: { dividendYield: 0.84, payoutRatio: 22.1, marketCapB: 135 },
+    signals: { technical: 20, momentum: 36, sentiment: 82, news: 0, policy: 0, profile: 50, valuation: -9 }
   },
   {
     ticker: "VRT", name: "Vertiv Holdings Co", sector: "Industrials",
@@ -1423,8 +1423,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.1, payoutRatio: 4.7, marketCapB: 95 },
-    signals: { technical: -46, momentum: -100, sentiment: 82, news: 0, policy: 0, profile: 25, valuation: -18 }
+    fundamentals: { dividendYield: 0.1, payoutRatio: 4.7, marketCapB: 88 },
+    signals: { technical: -49, momentum: -100, sentiment: 82, news: 0, policy: 0, profile: 25, valuation: -12 }
   },
   {
     ticker: "MO", name: "Altria Group, Inc.", sector: "Consumer Defensive",
@@ -1434,8 +1434,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.08, payoutRatio: 89.3, marketCapB: 128 },
-    signals: { technical: 41, momentum: -12, sentiment: 18, news: 0, policy: 0, profile: 60, valuation: 20 }
+    fundamentals: { dividendYield: 5.79, payoutRatio: 89.3, marketCapB: 131 },
+    signals: { technical: 16, momentum: 7, sentiment: 18, news: 0, policy: 0, profile: 60, valuation: 20 }
   },
   {
     ticker: "DHR", name: "Danaher Corporation", sector: "Healthcare",
@@ -1445,8 +1445,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.68, payoutRatio: 25.2, marketCapB: 167 },
-    signals: { technical: 39, momentum: 94, sentiment: 77, news: 0, policy: 0, profile: 40, valuation: -16 }
+    fundamentals: { dividendYield: 0.68, payoutRatio: 25.2, marketCapB: 162 },
+    signals: { technical: 42, momentum: 92, sentiment: 77, news: 0, policy: 0, profile: 40, valuation: -14 }
   },
   {
     ticker: "BBVA", name: "Banco Bilbao Vizcaya Argentaria, S.A.", sector: "Financial Services",
@@ -1456,8 +1456,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.5, payoutRatio: 49.7, marketCapB: 134 },
-    signals: { technical: 46, momentum: 14, sentiment: -17, news: 0, policy: 0, profile: 60, valuation: 33 }
+    fundamentals: { dividendYield: 4.6, payoutRatio: 47.6, marketCapB: 128 },
+    signals: { technical: 67, momentum: 23, sentiment: -17, news: 0, policy: 0, profile: 60, valuation: 34 }
   },
   {
     ticker: "COF", name: "Capital One Financial Corporation", sector: "Financial Services",
@@ -1467,8 +1467,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.56, payoutRatio: 19.3, marketCapB: 128 },
-    signals: { technical: 39, momentum: 6, sentiment: 72, news: 0, policy: 0, profile: 60, valuation: 33 }
+    fundamentals: { dividendYield: 1.53, payoutRatio: 19.3, marketCapB: 124 },
+    signals: { technical: 43, momentum: 5, sentiment: 72, news: 0, policy: 0, profile: 60, valuation: 34 }
   },
   {
     ticker: "ENB", name: "Enbridge Inc.", sector: "Energy",
@@ -1478,8 +1478,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.77, payoutRatio: 147.7, marketCapB: 110 },
-    signals: { technical: -44, momentum: -56, sentiment: 42, news: 0, policy: 0, profile: 40, valuation: -5 }
+    fundamentals: { dividendYield: 5.68, payoutRatio: 147.7, marketCapB: 110 },
+    signals: { technical: -44, momentum: -48, sentiment: 42, news: 0, policy: 0, profile: 40, valuation: -5 }
   },
   {
     ticker: "BMY", name: "Bristol-Myers Squibb Company", sector: "Healthcare",
@@ -1489,8 +1489,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.16, payoutRatio: 55.3, marketCapB: 125 },
-    signals: { technical: 40, momentum: -4, sentiment: 25, news: 0, policy: 0, profile: 35, valuation: 32 }
+    fundamentals: { dividendYield: 4.1, payoutRatio: 55.3, marketCapB: 129 },
+    signals: { technical: 38, momentum: 16, sentiment: 26, news: 0, policy: 0, profile: 35, valuation: 31 }
   },
   {
     ticker: "PGR", name: "The Progressive Corporation", sector: "Financial Services",
@@ -1500,8 +1500,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.18, payoutRatio: 69.7, marketCapB: 133 },
-    signals: { technical: 38, momentum: 28, sentiment: 18, news: 0, policy: 0, profile: 40, valuation: 17 }
+    fundamentals: { dividendYield: 0.17, payoutRatio: 69.7, marketCapB: 135 },
+    signals: { technical: 37, momentum: 40, sentiment: 18, news: 0, policy: 0, profile: 40, valuation: 17 }
   },
   {
     ticker: "NEM", name: "Newmont Corporation", sector: "Basic Materials",
@@ -1511,8 +1511,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.91, payoutRatio: 11.9, marketCapB: 116 },
-    signals: { technical: 43, momentum: -12, sentiment: 68, news: 0, policy: 0, profile: 50, valuation: 26 }
+    fundamentals: { dividendYield: 0.93, payoutRatio: 11.9, marketCapB: 109 },
+    signals: { technical: 43, momentum: -27, sentiment: 68, news: 0, policy: 0, profile: 50, valuation: 28 }
   },
   {
     ticker: "SONY", name: "Sony Group Corporation", sector: "Technology",
@@ -1522,8 +1522,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.63, payoutRatio: 12.9, marketCapB: 149 },
-    signals: { technical: 40, momentum: 73, sentiment: 62, news: 0, policy: 0, profile: 0, valuation: -4 }
+    fundamentals: { dividendYield: 0.62, payoutRatio: 12.9, marketCapB: 147 },
+    signals: { technical: 42, momentum: 77, sentiment: 62, news: 0, policy: 0, profile: 0, valuation: -3 }
   },
   {
     ticker: "CRWD", name: "CrowdStrike Holdings, Inc.", sector: "Technology",
@@ -1533,8 +1533,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 267 },
-    signals: { technical: 35, momentum: 100, sentiment: 65, news: 0, policy: 0, profile: 25, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 252 },
+    signals: { technical: 33, momentum: 100, sentiment: 65, news: 0, policy: 0, profile: 25, valuation: -100 }
   },
   {
     ticker: "SYK", name: "Stryker Corporation", sector: "Healthcare",
@@ -1544,8 +1544,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.16, payoutRatio: 36.1, marketCapB: 120 },
-    signals: { technical: -38, momentum: -3, sentiment: 64, news: 0, policy: 0, profile: 50, valuation: 3 }
+    fundamentals: { dividendYield: 1.13, payoutRatio: 36.1, marketCapB: 112 },
+    signals: { technical: -33, momentum: -13, sentiment: 64, news: 0, policy: 0, profile: 50, valuation: 7 }
   },
   {
     ticker: "SNY", name: "Sanofi", sector: "Healthcare",
@@ -1555,8 +1555,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.73, payoutRatio: 127.5, marketCapB: 103 },
-    signals: { technical: -44, momentum: -43, sentiment: 46, news: 0, policy: 0, profile: 40, valuation: 35 }
+    fundamentals: { dividendYield: 5.61, payoutRatio: 127.5, marketCapB: 107 },
+    signals: { technical: -44, momentum: -6, sentiment: 46, news: 0, policy: 0, profile: 40, valuation: 34 }
   },
   {
     ticker: "CEG", name: "Constellation Energy Corporation", sector: "Utilities",
@@ -1566,8 +1566,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.66, payoutRatio: 15.9, marketCapB: 94 },
-    signals: { technical: -37, momentum: -69, sentiment: 72, news: 0, policy: 0, profile: 25, valuation: 0 }
+    fundamentals: { dividendYield: 0.64, payoutRatio: 15.9, marketCapB: 92 },
+    signals: { technical: -36, momentum: -78, sentiment: 72, news: 0, policy: 0, profile: 25, valuation: 1 }
   },
   {
     ticker: "PWR", name: "Quanta Services, Inc.", sector: "Industrials",
@@ -1577,8 +1577,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.07, payoutRatio: 4.9, marketCapB: 95 },
-    signals: { technical: 35, momentum: -70, sentiment: 78, news: 0, policy: 0, profile: 10, valuation: -35 }
+    fundamentals: { dividendYield: 0.07, payoutRatio: 4.9, marketCapB: 92 },
+    signals: { technical: 33, momentum: -79, sentiment: 80, news: 0, policy: 0, profile: 10, valuation: -29 }
   },
   {
     ticker: "ACN", name: "Accenture plc", sector: "Technology",
@@ -1588,8 +1588,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.81, payoutRatio: 48.1, marketCapB: 151 },
-    signals: { technical: 44, momentum: 100, sentiment: 34, news: 0, policy: 0, profile: 50, valuation: 13 }
+    fundamentals: { dividendYield: 2.77, payoutRatio: 48.1, marketCapB: 158 },
+    signals: { technical: 20, momentum: 100, sentiment: 34, news: 0, policy: 0, profile: 50, valuation: 11 }
   },
   {
     ticker: "INTU", name: "Intuit Inc.", sector: "Technology",
@@ -1599,8 +1599,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.68, payoutRatio: 29.2, marketCapB: 89 },
-    signals: { technical: -28, momentum: -79, sentiment: 47, news: 0, policy: 0, profile: 45, valuation: 23 }
+    fundamentals: { dividendYield: 1.67, payoutRatio: 29.2, marketCapB: 91 },
+    signals: { technical: -28, momentum: -70, sentiment: 47, news: 0, policy: 0, profile: 45, valuation: 22 }
   },
   {
     ticker: "VRTX", name: "Vertex Pharmaceuticals Incorporated", sector: "Healthcare",
@@ -1610,8 +1610,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 137 },
-    signals: { technical: 37, momentum: 68, sentiment: 67, news: 0, policy: 0, profile: 50, valuation: -19 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 142 },
+    signals: { technical: 36, momentum: 84, sentiment: 67, news: 0, policy: 0, profile: 50, valuation: -22 }
   },
   {
     ticker: "EQIX", name: "Equinix, Inc.", sector: "Real Estate",
@@ -1621,8 +1621,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.07, payoutRatio: 126.8, marketCapB: 102 },
-    signals: { technical: 36, momentum: -37, sentiment: 77, news: 0, policy: 0, profile: 50, valuation: -95 }
+    fundamentals: { dividendYield: 1.99, payoutRatio: 121.1, marketCapB: 100 },
+    signals: { technical: 39, momentum: -37, sentiment: 77, news: 0, policy: 0, profile: 50, valuation: -90 }
   },
   {
     ticker: "BMO", name: "Bank of Montreal", sector: "Financial Services",
@@ -1632,8 +1632,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.8, payoutRatio: 54.4, marketCapB: 122 },
-    signals: { technical: 33, momentum: 28, sentiment: 14, news: 0, policy: 0, profile: 60, valuation: 14 }
+    fundamentals: { dividendYield: 2.78, payoutRatio: 54.4, marketCapB: 118 },
+    signals: { technical: 41, momentum: 29, sentiment: 14, news: 0, policy: 0, profile: 60, valuation: 16 }
   },
   {
     ticker: "CVS", name: "CVS Health Corporation", sector: "Healthcare",
@@ -1643,8 +1643,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.96, payoutRatio: 70.0, marketCapB: 116 },
-    signals: { technical: 47, momentum: 10, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: 28 }
+    fundamentals: { dividendYield: 2.94, payoutRatio: 70.0, marketCapB: 116 },
+    signals: { technical: 44, momentum: 19, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: 28 }
   },
   {
     ticker: "MDT", name: "Medtronic plc", sector: "Healthcare",
@@ -1654,8 +1654,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.04, payoutRatio: 70.0, marketCapB: 124 },
-    signals: { technical: 43, momentum: 48, sentiment: 62, news: 0, policy: 0, profile: 50, valuation: 14 }
+    fundamentals: { dividendYield: 2.97, payoutRatio: 70.0, marketCapB: 124 },
+    signals: { technical: 43, momentum: 61, sentiment: 62, news: 0, policy: 0, profile: 50, valuation: 14 }
   },
   {
     ticker: "GSK", name: "GSK plc", sector: "Healthcare",
@@ -1665,8 +1665,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.73, payoutRatio: 63.3, marketCapB: 98 },
-    signals: { technical: -35, momentum: -41, sentiment: 28, news: 0, policy: 0, profile: 35, valuation: 30 }
+    fundamentals: { dividendYield: 3.73, payoutRatio: 63.3, marketCapB: 99 },
+    signals: { technical: -36, momentum: -24, sentiment: 28, news: 0, policy: 0, profile: 35, valuation: 29 }
   },
   {
     ticker: "DUK", name: "Duke Energy Corporation", sector: "Utilities",
@@ -1676,8 +1676,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.51, payoutRatio: 64.2, marketCapB: 98 },
-    signals: { technical: -43, momentum: -29, sentiment: 46, news: 0, policy: 0, profile: 35, valuation: 7 }
+    fundamentals: { dividendYield: 3.45, payoutRatio: 64.2, marketCapB: 100 },
+    signals: { technical: -68, momentum: -14, sentiment: 46, news: 0, policy: 0, profile: 35, valuation: 6 }
   },
   {
     ticker: "MCK", name: "McKesson Corporation", sector: "Healthcare",
@@ -1687,8 +1687,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.39, payoutRatio: 8.8, marketCapB: 114 },
-    signals: { technical: 44, momentum: 45, sentiment: 72, news: 0, policy: 0, profile: 25, valuation: 1 }
+    fundamentals: { dividendYield: 0.38, payoutRatio: 8.8, marketCapB: 117 },
+    signals: { technical: 41, momentum: 63, sentiment: 72, news: 0, policy: 0, profile: 25, valuation: 0 }
   },
   {
     ticker: "EQNR", name: "Equinor ASA", sector: "Energy",
@@ -1698,8 +1698,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.27, payoutRatio: 31.5, marketCapB: 113 },
-    signals: { technical: 43, momentum: 43, sentiment: 0, news: 0, policy: 0, profile: 40, valuation: 29 }
+    fundamentals: { dividendYield: 3.28, payoutRatio: 31.5, marketCapB: 115 },
+    signals: { technical: 42, momentum: 43, sentiment: 0, news: 0, policy: 0, profile: 40, valuation: 30 }
   },
   {
     ticker: "CNQ", name: "Canadian Natural Resources Limited", sector: "Energy",
@@ -1709,8 +1709,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.21, payoutRatio: 43.2, marketCapB: 114 },
-    signals: { technical: 40, momentum: 35, sentiment: 30, news: 0, policy: 0, profile: 60, valuation: 22 }
+    fundamentals: { dividendYield: 3.19, payoutRatio: 43.2, marketCapB: 115 },
+    signals: { technical: 15, momentum: 41, sentiment: 30, news: 0, policy: 0, profile: 60, valuation: 22 }
   },
   {
     ticker: "CMCSA", name: "Comcast Corporation", sector: "Communication Services",
@@ -1720,8 +1720,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.12, payoutRatio: 41.8, marketCapB: 79 },
-    signals: { technical: -38, momentum: -82, sentiment: 19, news: 0, policy: 0, profile: 25, valuation: 41 }
+    fundamentals: { dividendYield: 5.93, payoutRatio: 41.8, marketCapB: 82 },
+    signals: { technical: -39, momentum: -66, sentiment: 19, news: 0, policy: 0, profile: 25, valuation: 40 }
   },
   {
     ticker: "HCA", name: "HCA Healthcare, Inc.", sector: "Healthcare",
@@ -1731,8 +1731,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.67, payoutRatio: 10.1, marketCapB: 104 },
-    signals: { technical: -39, momentum: 12, sentiment: 50, news: 0, policy: 0, profile: 30, valuation: 14 }
+    fundamentals: { dividendYield: 0.65, payoutRatio: 10.2, marketCapB: 106 },
+    signals: { technical: -39, momentum: 23, sentiment: 50, news: 0, policy: 0, profile: 30, valuation: 14 }
   },
   {
     ticker: "HWM", name: "Howmet Aerospace Inc.", sector: "Industrials",
@@ -1742,8 +1742,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.29, payoutRatio: 10.3, marketCapB: 82 },
-    signals: { technical: -44, momentum: -69, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: -34 }
+    fundamentals: { dividendYield: 0.27, payoutRatio: 10.3, marketCapB: 80 },
+    signals: { technical: -45, momentum: -71, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: -31 }
   },
   {
     ticker: "BNS", name: "The Bank of Nova Scotia", sector: "Financial Services",
@@ -1753,8 +1753,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.43, payoutRatio: 58.0, marketCapB: 116 },
-    signals: { technical: 33, momentum: 51, sentiment: 22, news: 0, policy: 0, profile: 60, valuation: 17 }
+    fundamentals: { dividendYield: 3.4, payoutRatio: 58.0, marketCapB: 114 },
+    signals: { technical: 39, momentum: 56, sentiment: 22, news: 0, policy: 0, profile: 60, valuation: 18 }
   },
   {
     ticker: "CDNS", name: "Cadence Design Systems, Inc.", sector: "Technology",
@@ -1764,8 +1764,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 94 },
-    signals: { technical: -48, momentum: -20, sentiment: 84, news: 0, policy: 0, profile: 35, valuation: -44 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 89 },
+    signals: { technical: -45, momentum: -40, sentiment: 84, news: 0, policy: 0, profile: 35, valuation: -38 }
   },
   {
     ticker: "MAR", name: "Marriott International, Inc.", sector: "Consumer Cyclical",
@@ -1775,8 +1775,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.74, payoutRatio: 28.4, marketCapB: 104 },
-    signals: { technical: 38, momentum: 19, sentiment: 40, news: 0, policy: 0, profile: 50, valuation: -31 }
+    fundamentals: { dividendYield: 0.73, payoutRatio: 28.4, marketCapB: 105 },
+    signals: { technical: 36, momentum: 36, sentiment: 40, news: 0, policy: 0, profile: 50, valuation: -31 }
   },
   {
     ticker: "NOW", name: "ServiceNow, Inc.", sector: "Technology",
@@ -1786,8 +1786,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 113 },
-    signals: { technical: 60, momentum: 45, sentiment: 78, news: 0, policy: 0, profile: 40, valuation: -5 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 108 },
+    signals: { technical: 60, momentum: 26, sentiment: 78, news: 0, policy: 0, profile: 30, valuation: -2 }
   },
   {
     ticker: "FDX", name: "FedEx Corporation", sector: "Industrials",
@@ -1797,8 +1797,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.6, payoutRatio: 31.3, marketCapB: 73 },
-    signals: { technical: 39, momentum: -32, sentiment: 60, news: 0, policy: 0, profile: 20, valuation: 15 }
+    fundamentals: { dividendYield: 1.59, payoutRatio: 31.3, marketCapB: 74 },
+    signals: { technical: -45, momentum: 17, sentiment: 60, news: 0, policy: 0, profile: 20, valuation: 14 }
   },
   {
     ticker: "MELI", name: "MercadoLibre, Inc.", sector: "Consumer Cyclical",
@@ -1808,8 +1808,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 84 },
-    signals: { technical: 52, momentum: -56, sentiment: 75, news: 0, policy: 0, profile: 15, valuation: -29 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 82 },
+    signals: { technical: 76, momentum: -52, sentiment: 75, news: 0, policy: 0, profile: 15, valuation: -26 }
   },
   {
     ticker: "SNPS", name: "Synopsys, Inc.", sector: "Technology",
@@ -1819,8 +1819,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 94 },
-    signals: { technical: -48, momentum: -21, sentiment: 86, news: 0, policy: 0, profile: 25, valuation: -19 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 88 },
+    signals: { technical: -45, momentum: -40, sentiment: 86, news: 0, policy: 0, profile: 25, valuation: -14 }
   },
   {
     ticker: "KKR", name: "KKR & Co. Inc.", sector: "Financial Services",
@@ -1830,8 +1830,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.84, payoutRatio: 24.0, marketCapB: 88 },
-    signals: { technical: -41, momentum: -47, sentiment: 70, news: 0, policy: 0, profile: 25, valuation: 20 }
+    fundamentals: { dividendYield: 0.81, payoutRatio: 24.0, marketCapB: 87 },
+    signals: { technical: -38, momentum: -45, sentiment: 70, news: 0, policy: 0, profile: 25, valuation: 20 }
   },
   {
     ticker: "WMB", name: "The Williams Companies, Inc.", sector: "Energy",
@@ -1841,8 +1841,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.83, payoutRatio: 81.7, marketCapB: 92 },
-    signals: { technical: -39, momentum: -25, sentiment: 80, news: 0, policy: 0, profile: 30, valuation: -25 }
+    fundamentals: { dividendYield: 2.8, payoutRatio: 81.7, marketCapB: 90 },
+    signals: { technical: -40, momentum: -23, sentiment: 80, news: 0, policy: 0, profile: 30, valuation: -24 }
   },
   {
     ticker: "WM", name: "Waste Management, Inc.", sector: "Industrials",
@@ -1852,8 +1852,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.68, payoutRatio: 48.0, marketCapB: 92 },
-    signals: { technical: -32, momentum: -19, sentiment: 62, news: 0, policy: 0, profile: 20, valuation: -17 }
+    fundamentals: { dividendYield: 1.64, payoutRatio: 48.0, marketCapB: 93 },
+    signals: { technical: -35, momentum: -5, sentiment: 62, news: 0, policy: 0, profile: 20, valuation: -18 }
   },
   {
     ticker: "BK", name: "The Bank of New York Mellon Corporation", sector: "Financial Services",
@@ -1874,8 +1874,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.0, payoutRatio: 14.5, marketCapB: 89 },
-    signals: { technical: 44, momentum: -36, sentiment: 59, news: 0, policy: 0, profile: 45, valuation: 15 }
+    fundamentals: { dividendYield: 1.02, payoutRatio: 14.3, marketCapB: 82 },
+    signals: { technical: 42, momentum: -48, sentiment: 59, news: 0, policy: 0, profile: 45, valuation: 18 }
   },
   {
     ticker: "UPS", name: "United Parcel Service, Inc.", sector: "Industrials",
@@ -1885,8 +1885,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.21, payoutRatio: 121.9, marketCapB: 91 },
-    signals: { technical: -66, momentum: -23, sentiment: 42, news: 0, policy: 0, profile: 5, valuation: 20 }
+    fundamentals: { dividendYield: 6.11, payoutRatio: 121.9, marketCapB: 92 },
+    signals: { technical: -64, momentum: 25, sentiment: 42, news: 0, policy: 0, profile: 5, valuation: 19 }
   },
   {
     ticker: "SPOT", name: "Spotify Technology S.A.", sector: "Communication Services",
@@ -1896,8 +1896,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 115 },
-    signals: { technical: 48, momentum: 64, sentiment: 64, news: 0, policy: 0, profile: 40, valuation: -37 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 121 },
+    signals: { technical: 49, momentum: 97, sentiment: 64, news: 0, policy: 0, profile: 40, valuation: -42 }
   },
   {
     ticker: "JCI", name: "Johnson Controls International plc", sector: "Industrials",
@@ -1907,8 +1907,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.02, payoutRatio: 45.2, marketCapB: 96 },
-    signals: { technical: 36, momentum: 7, sentiment: 50, news: 0, policy: 0, profile: 35, valuation: -4 }
+    fundamentals: { dividendYield: 1.01, payoutRatio: 45.2, marketCapB: 89 },
+    signals: { technical: 37, momentum: -8, sentiment: 50, news: 0, policy: 0, profile: 35, valuation: 0 }
   },
   {
     ticker: "USB", name: "U.S. Bancorp", sector: "Financial Services",
@@ -1918,8 +1918,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.62, payoutRatio: 41.5, marketCapB: 94 },
-    signals: { technical: 37, momentum: 3, sentiment: 60, news: 0, policy: 0, profile: 45, valuation: 28 }
+    fundamentals: { dividendYield: 3.56, payoutRatio: 41.5, marketCapB: 92 },
+    signals: { technical: 43, momentum: 8, sentiment: 60, news: 0, policy: 0, profile: 45, valuation: 29 }
   },
   {
     ticker: "ADP", name: "Automatic Data Processing, Inc.", sector: "Technology",
@@ -1929,8 +1929,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.38, payoutRatio: 60.7, marketCapB: 113 },
-    signals: { technical: 46, momentum: 89, sentiment: 11, news: 0, policy: 0, profile: 60, valuation: -3 }
+    fundamentals: { dividendYield: 2.38, payoutRatio: 60.7, marketCapB: 117 },
+    signals: { technical: 46, momentum: 100, sentiment: 11, news: 0, policy: 0, profile: 60, valuation: -5 }
   },
   {
     ticker: "SLB", name: "SLB N.V.", sector: "Energy",
@@ -1940,8 +1940,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.2, payoutRatio: 56.8, marketCapB: 79 },
-    signals: { technical: 41, momentum: -40, sentiment: 74, news: 0, policy: 0, profile: 25, valuation: 7 }
+    fundamentals: { dividendYield: 2.19, payoutRatio: 56.8, marketCapB: 79 },
+    signals: { technical: 42, momentum: -29, sentiment: 74, news: 0, policy: 0, profile: 25, valuation: 8 }
   },
   {
     ticker: "AMT", name: "American Tower Corporation", sector: "Real Estate",
@@ -1951,8 +1951,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.9, payoutRatio: 99.6, marketCapB: 86 },
-    signals: { technical: -32, momentum: -14, sentiment: 74, news: 0, policy: 0, profile: 30, valuation: -19 }
+    fundamentals: { dividendYield: 3.85, payoutRatio: 99.6, marketCapB: 88 },
+    signals: { technical: -34, momentum: 0, sentiment: 74, news: 0, policy: 0, profile: 30, valuation: -20 }
   },
   {
     ticker: "BSX", name: "Boston Scientific Corporation", sector: "Healthcare",
@@ -1962,8 +1962,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 62 },
-    signals: { technical: -35, momentum: -100, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: 20 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 61 },
+    signals: { technical: -32, momentum: -100, sentiment: 58, news: 0, policy: 0, profile: 25, valuation: 20 }
   },
   {
     ticker: "CSX", name: "CSX Corporation", sector: "Industrials",
@@ -1973,8 +1973,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.08, payoutRatio: 28.6, marketCapB: 97 },
-    signals: { technical: 37, momentum: 30, sentiment: 54, news: 0, policy: 0, profile: 45, valuation: -7 }
+    fundamentals: { dividendYield: 1.07, payoutRatio: 28.6, marketCapB: 96 },
+    signals: { technical: 36, momentum: 37, sentiment: 54, news: 0, policy: 0, profile: 45, valuation: -6 }
   },
   {
     ticker: "ING", name: "ING Groep N.V.", sector: "Financial Services",
@@ -1984,8 +1984,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.02, payoutRatio: 48.0, marketCapB: 92 },
-    signals: { technical: 45, momentum: 20, sentiment: 17, news: 0, policy: 0, profile: 45, valuation: 30 }
+    fundamentals: { dividendYield: 4.1, payoutRatio: 48.1, marketCapB: 89 },
+    signals: { technical: 45, momentum: 25, sentiment: 17, news: 0, policy: 0, profile: 45, valuation: 31 }
   },
   {
     ticker: "E", name: "Eni S.p.A.", sector: "Energy",
@@ -1995,8 +1995,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.09, payoutRatio: 45.8, marketCapB: 86 },
-    signals: { technical: 41, momentum: 1, sentiment: -10, news: 0, policy: 0, profile: 25, valuation: 32 }
+    fundamentals: { dividendYield: 4.06, payoutRatio: 45.8, marketCapB: 86 },
+    signals: { technical: 40, momentum: 10, sentiment: -10, news: 0, policy: 0, profile: 25, valuation: 32 }
   },
   {
     ticker: "FCX", name: "Freeport-McMoRan Inc.", sector: "Basic Materials",
@@ -2006,8 +2006,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.9, payoutRatio: 29.6, marketCapB: 95 },
-    signals: { technical: 45, momentum: 33, sentiment: 61, news: 0, policy: 0, profile: 25, valuation: 14 }
+    fundamentals: { dividendYield: 0.91, payoutRatio: 29.6, marketCapB: 89 },
+    signals: { technical: 66, momentum: 21, sentiment: 61, news: 0, policy: 0, profile: 25, valuation: 17 }
   },
   {
     ticker: "MRSH", name: "Marsh & McLennan Companies, Inc.", sector: "Financial Services",
@@ -2017,8 +2017,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.06, payoutRatio: 44.1, marketCapB: 94 },
-    signals: { technical: 40, momentum: 39, sentiment: 24, news: 0, policy: 0, profile: 35, valuation: 8 }
+    fundamentals: { dividendYield: 2.01, payoutRatio: 44.1, marketCapB: 96 },
+    signals: { technical: 18, momentum: 51, sentiment: 24, news: 0, policy: 0, profile: 35, valuation: 7 }
   },
   {
     ticker: "BCS", name: "Barclays PLC", sector: "Financial Services",
@@ -2028,8 +2028,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.69, payoutRatio: 23.0, marketCapB: 77 },
-    signals: { technical: -40, momentum: -26, sentiment: 38, news: 0, policy: 0, profile: 45, valuation: 38 }
+    fundamentals: { dividendYield: 2.67, payoutRatio: 23.0, marketCapB: 73 },
+    signals: { technical: -36, momentum: -27, sentiment: 38, news: 0, policy: 0, profile: 45, valuation: 39 }
   },
   {
     ticker: "SU", name: "Suncor Energy Inc.", sector: "Energy",
@@ -2040,7 +2040,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.19, payoutRatio: 31.6, marketCapB: 92 },
-    signals: { technical: 43, momentum: 27, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: 26 }
+    signals: { technical: 42, momentum: 34, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: 26 }
   },
   {
     ticker: "MCO", name: "Moody's Corporation", sector: "Financial Services",
@@ -2050,8 +2050,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (partial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.86, payoutRatio: 24.6, marketCapB: 84 },
-    signals: { technical: 43, momentum: 1, sentiment: 64, news: 0, policy: 0, profile: 20, valuation: -18 }
+    fundamentals: { dividendYield: 0.84, payoutRatio: 24.6, marketCapB: 85 },
+    signals: { technical: 44, momentum: 15, sentiment: 64, news: 0, policy: 0, profile: 20, valuation: -18 }
   },
   {
     ticker: "MDLZ", name: "Mondelez International, Inc.", sector: "Consumer Defensive",
@@ -2061,8 +2061,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.36, payoutRatio: 73.5, marketCapB: 80 },
-    signals: { technical: 47, momentum: -16, sentiment: 55, news: 0, policy: 0, profile: 25, valuation: 4 }
+    fundamentals: { dividendYield: 3.33, payoutRatio: 73.5, marketCapB: 84 },
+    signals: { technical: 42, momentum: 4, sentiment: 55, news: 0, policy: 0, profile: 25, valuation: 2 }
   },
   {
     ticker: "MPWR", name: "Monolithic Power Systems, Inc.", sector: "Technology",
@@ -2072,8 +2072,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.66, payoutRatio: 43.3, marketCapB: 59 },
-    signals: { technical: -45, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: 35, valuation: -41 }
+    fundamentals: { dividendYield: 0.67, payoutRatio: 43.3, marketCapB: 58 },
+    signals: { technical: -50, momentum: -98, sentiment: 86, news: 0, policy: 0, profile: 35, valuation: -40 }
   },
   {
     ticker: "EMR", name: "Emerson Electric Co.", sector: "Industrials",
@@ -2083,8 +2083,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.32, payoutRatio: 48.0, marketCapB: 95 },
-    signals: { technical: 7, momentum: 58, sentiment: 54, news: 0, policy: 0, profile: 35, valuation: -10 }
+    fundamentals: { dividendYield: 1.3, payoutRatio: 48.0, marketCapB: 92 },
+    signals: { technical: 38, momentum: 54, sentiment: 54, news: 0, policy: 0, profile: 35, valuation: -7 }
   },
   {
     ticker: "NET", name: "Cloudflare, Inc.", sector: "Technology",
@@ -2094,8 +2094,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 110 },
-    signals: { technical: 33, momentum: 100, sentiment: 53, news: 0, policy: 0, profile: -15, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 99 },
+    signals: { technical: 32, momentum: 62, sentiment: 53, news: 0, policy: 0, profile: -30, valuation: -100 }
   },
   {
     ticker: "DASH", name: "DoorDash, Inc.", sector: "Consumer Cyclical",
@@ -2106,7 +2106,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 78 },
-    signals: { technical: 44, momentum: -16, sentiment: 70, news: 0, policy: 0, profile: 15, valuation: -5 }
+    signals: { technical: 40, momentum: -1, sentiment: 70, news: 0, policy: 0, profile: 15, valuation: -6 }
   },
   {
     ticker: "MNST", name: "Monster Beverage Corporation", sector: "Consumer Defensive",
@@ -2116,8 +2116,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 91 },
-    signals: { technical: 43, momentum: 44, sentiment: 48, news: 0, policy: 0, profile: 35, valuation: -46 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 92 },
+    signals: { technical: 40, momentum: 69, sentiment: 48, news: 0, policy: 0, profile: 35, valuation: -48 }
   },
   {
     ticker: "APO", name: "Apollo Global Management, Inc.", sector: "Financial Services",
@@ -2127,8 +2127,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (financial)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.98, payoutRatio: 75.0, marketCapB: 70 },
-    signals: { technical: -40, momentum: -52, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: 26 }
+    fundamentals: { dividendYield: 1.9, payoutRatio: 75.0, marketCapB: 69 },
+    signals: { technical: -38, momentum: -49, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: 27 }
   },
   {
     ticker: "CI", name: "The Cigna Group", sector: "Healthcare",
@@ -2138,8 +2138,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.12, payoutRatio: 25.4, marketCapB: 79 },
-    signals: { technical: 47, momentum: -4, sentiment: 60, news: 0, policy: 0, profile: 20, valuation: 33 }
+    fundamentals: { dividendYield: 2.09, payoutRatio: 25.4, marketCapB: 79 },
+    signals: { technical: 45, momentum: 8, sentiment: 60, news: 0, policy: 0, profile: 20, valuation: 33 }
   },
   {
     ticker: "EOG", name: "EOG Resources, Inc.", sector: "Energy",
@@ -2149,8 +2149,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.54, payoutRatio: 31.4, marketCapB: 85 },
-    signals: { technical: 39, momentum: 33, sentiment: 32, news: 0, policy: 0, profile: 45, valuation: 29 }
+    fundamentals: { dividendYield: 2.52, payoutRatio: 31.4, marketCapB: 88 },
+    signals: { technical: 16, momentum: 38, sentiment: 32, news: 0, policy: 0, profile: 45, valuation: 29 }
   },
   {
     ticker: "AEP", name: "American Electric Power Company, Inc.", sector: "Utilities",
@@ -2160,8 +2160,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.03, payoutRatio: 62.1, marketCapB: 70 },
-    signals: { technical: -41, momentum: -40, sentiment: 60, news: 0, policy: 0, profile: 35, valuation: 3 }
+    fundamentals: { dividendYield: 3.0, payoutRatio: 62.1, marketCapB: 71 },
+    signals: { technical: -43, momentum: -24, sentiment: 60, news: 0, policy: 0, profile: 35, valuation: 2 }
   },
   {
     ticker: "MMM", name: "3M Company", sector: "Industrials",
@@ -2171,8 +2171,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.81, payoutRatio: 45.8, marketCapB: 91 },
-    signals: { technical: 37, momentum: 58, sentiment: 40, news: 0, policy: 0, profile: 20, valuation: 6 }
+    fundamentals: { dividendYield: 1.76, payoutRatio: 45.8, marketCapB: 90 },
+    signals: { technical: 41, momentum: 60, sentiment: 40, news: 0, policy: 0, profile: 20, valuation: 7 }
   },
   {
     ticker: "VLO", name: "Valero Energy Corporation", sector: "Energy",
@@ -2182,8 +2182,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.24, payoutRatio: 10.8, marketCapB: 107 },
-    signals: { technical: 44, momentum: 100, sentiment: 25, news: 0, policy: 0, profile: 40, valuation: 38 }
+    fundamentals: { dividendYield: 1.25, payoutRatio: 10.8, marketCapB: 110 },
+    signals: { technical: 43, momentum: 100, sentiment: 25, news: 0, policy: 0, profile: 40, valuation: 37 }
   },
   {
     ticker: "ROST", name: "Ross Stores, Inc.", sector: "Consumer Cyclical",
@@ -2193,8 +2193,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.78, payoutRatio: 20.6, marketCapB: 74 },
-    signals: { technical: 40, momentum: -17, sentiment: 68, news: 0, policy: 0, profile: 25, valuation: -17 }
+    fundamentals: { dividendYield: 0.77, payoutRatio: 20.6, marketCapB: 73 },
+    signals: { technical: 41, momentum: -10, sentiment: 68, news: 0, policy: 0, profile: 25, valuation: -16 }
   },
   {
     ticker: "ITW", name: "Illinois Tool Works Inc.", sector: "Industrials",
@@ -2204,8 +2204,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.49, payoutRatio: 58.4, marketCapB: 80 },
-    signals: { technical: 36, momentum: 11, sentiment: -12, news: 0, policy: 0, profile: 20, valuation: -8 }
+    fundamentals: { dividendYield: 2.44, payoutRatio: 58.4, marketCapB: 80 },
+    signals: { technical: 37, momentum: 21, sentiment: -12, news: 0, policy: 0, profile: 20, valuation: -8 }
   },
   {
     ticker: "REGN", name: "Regeneron Pharmaceuticals, Inc.", sector: "Healthcare",
@@ -2215,8 +2215,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Public statements", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.46, payoutRatio: 9.0, marketCapB: 84 },
-    signals: { technical: 42, momentum: 33, sentiment: 59, news: 0, policy: 0, profile: 35, valuation: 20 }
+    fundamentals: { dividendYield: 0.46, payoutRatio: 9.0, marketCapB: 94 },
+    signals: { technical: 20, momentum: 81, sentiment: 59, news: 0, policy: 0, profile: 35, valuation: 16 }
   },
   {
     ticker: "ECL", name: "Ecolab Inc.", sector: "Basic Materials",
@@ -2226,8 +2226,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.0, payoutRatio: 38.1, marketCapB: 84 },
-    signals: { technical: 10, momentum: 30, sentiment: 75, news: 0, policy: 0, profile: 35, valuation: -35 }
+    fundamentals: { dividendYield: 0.97, payoutRatio: 38.1, marketCapB: 85 },
+    signals: { technical: 10, momentum: 44, sentiment: 75, news: 0, policy: 0, profile: 25, valuation: -36 }
   },
   {
     ticker: "NTES", name: "NetEase, Inc.", sector: "Communication Services",
@@ -2237,8 +2237,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.61, payoutRatio: 41.8, marketCapB: 72 },
-    signals: { technical: -33, momentum: -39, sentiment: 88, news: 0, policy: 0, profile: 45, valuation: 28 }
+    fundamentals: { dividendYield: 2.61, payoutRatio: 41.8, marketCapB: 73 },
+    signals: { technical: -33, momentum: -23, sentiment: 88, news: 0, policy: 0, profile: 45, valuation: 28 }
   },
   {
     ticker: "HLT", name: "Hilton Worldwide Holdings Inc.", sector: "Consumer Cyclical",
@@ -2248,8 +2248,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.17, payoutRatio: 8.1, marketCapB: 79 },
-    signals: { technical: 41, momentum: 17, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: -42 }
+    fundamentals: { dividendYield: 0.17, payoutRatio: 8.1, marketCapB: 80 },
+    signals: { technical: 39, momentum: 33, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: -42 }
   },
   {
     ticker: "MPC", name: "Marathon Petroleum Corporation", sector: "Energy",
@@ -2259,8 +2259,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.91, payoutRatio: 13.5, marketCapB: 126 },
-    signals: { technical: 45, momentum: 100, sentiment: 31, news: 0, policy: 0, profile: 30, valuation: 38 }
+    fundamentals: { dividendYield: 1.02, payoutRatio: 13.5, marketCapB: 129 },
+    signals: { technical: 44, momentum: 100, sentiment: 31, news: 0, policy: 0, profile: 40, valuation: 38 }
   },
   {
     ticker: "MSI", name: "Motorola Solutions, Inc.", sector: "Technology",
@@ -2270,8 +2270,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.0, payoutRatio: 37.2, marketCapB: 81 },
-    signals: { technical: 9, momentum: 20, sentiment: 68, news: 0, policy: 0, profile: 20, valuation: -15 }
+    fundamentals: { dividendYield: 0.98, payoutRatio: 37.2, marketCapB: 82 },
+    signals: { technical: 10, momentum: 27, sentiment: 68, news: 0, policy: 0, profile: 10, valuation: -16 }
   },
   {
     ticker: "KMI", name: "Kinder Morgan, Inc.", sector: "Energy",
@@ -2281,8 +2281,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.55, payoutRatio: 72.8, marketCapB: 76 },
-    signals: { technical: -36, momentum: -7, sentiment: 50, news: 0, policy: 0, profile: 35, valuation: -5 }
+    fundamentals: { dividendYield: 3.5, payoutRatio: 72.8, marketCapB: 75 },
+    signals: { technical: -37, momentum: -3, sentiment: 50, news: 0, policy: 0, profile: 35, valuation: -5 }
   },
   {
     ticker: "RCL", name: "Royal Caribbean Cruises Ltd.", sector: "Consumer Cyclical",
@@ -2292,8 +2292,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.01, payoutRatio: 32.5, marketCapB: 83 },
-    signals: { technical: -40, momentum: 33, sentiment: 76, news: 0, policy: 0, profile: 45, valuation: 14 }
+    fundamentals: { dividendYield: 1.93, payoutRatio: 32.5, marketCapB: 82 },
+    signals: { technical: -42, momentum: 44, sentiment: 76, news: 0, policy: 0, profile: 45, valuation: 15 }
   },
   {
     ticker: "NSC", name: "Norfolk Southern Corporation", sector: "Industrials",
@@ -2303,8 +2303,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.6, payoutRatio: 45.3, marketCapB: 77 },
-    signals: { technical: 37, momentum: 5, sentiment: 22, news: 0, policy: 0, profile: 45, valuation: -10 }
+    fundamentals: { dividendYield: 1.58, payoutRatio: 45.3, marketCapB: 77 },
+    signals: { technical: 35, momentum: 16, sentiment: 22, news: 0, policy: 0, profile: 45, valuation: -10 }
   },
   {
     ticker: "PSX", name: "Phillips 66", sector: "Energy",
@@ -2314,8 +2314,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.94, payoutRatio: 16.1, marketCapB: 107 },
-    signals: { technical: 44, momentum: 100, sentiment: 40, news: 0, policy: 0, profile: 40, valuation: 32 }
+    fundamentals: { dividendYield: 1.94, payoutRatio: 16.1, marketCapB: 110 },
+    signals: { technical: 43, momentum: 100, sentiment: 40, news: 0, policy: 0, profile: 40, valuation: 32 }
   },
   {
     ticker: "NU", name: "Nu Holdings Ltd.", sector: "Financial Services",
@@ -2325,8 +2325,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 58 },
-    signals: { technical: -36, momentum: -77, sentiment: 70, news: 0, policy: 0, profile: 35, valuation: 27 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 56 },
+    signals: { technical: -39, momentum: -78, sentiment: 70, news: 0, policy: 0, profile: 35, valuation: 29 }
   },
   {
     ticker: "DLR", name: "Digital Realty Trust, Inc.", sector: "Real Estate",
@@ -2336,8 +2336,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.71, payoutRatio: 236.9, marketCapB: 69 },
-    signals: { technical: -42, momentum: -52, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: -100 }
+    fundamentals: { dividendYield: 2.67, payoutRatio: 236.9, marketCapB: 67 },
+    signals: { technical: -40, momentum: -50, sentiment: 78, news: 0, policy: 0, profile: 35, valuation: -100 }
   },
   {
     ticker: "NOK", name: "Nokia Oyj", sector: "Technology",
@@ -2347,8 +2347,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.46, payoutRatio: 100.2, marketCapB: 52 },
-    signals: { technical: -49, momentum: -100, sentiment: 69, news: 0, policy: 0, profile: 20, valuation: 2 }
+    fundamentals: { dividendYield: 1.45, payoutRatio: 100.2, marketCapB: 47 },
+    signals: { technical: -52, momentum: -100, sentiment: 69, news: 0, policy: 0, profile: 20, valuation: 7 }
   },
   {
     ticker: "VALE", name: "Vale S.A.", sector: "Basic Materials",
@@ -2358,8 +2358,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 7.35, payoutRatio: 159.1, marketCapB: 48 },
-    signals: { technical: -16, momentum: -100, sentiment: 34, news: 0, policy: 0, profile: 10, valuation: 42 }
+    fundamentals: { dividendYield: 7.54, payoutRatio: 159.1, marketCapB: 48 },
+    signals: { technical: -17, momentum: -100, sentiment: 34, news: 0, policy: 0, profile: 10, valuation: 42 }
   },
   {
     ticker: "BKR", name: "Baker Hughes Company", sector: "Energy",
@@ -2369,8 +2369,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.68, payoutRatio: 31.6, marketCapB: 54 },
-    signals: { technical: -36, momentum: -92, sentiment: 66, news: 0, policy: 0, profile: 35, valuation: 3 }
+    fundamentals: { dividendYield: 1.69, payoutRatio: 31.6, marketCapB: 54 },
+    signals: { technical: -38, momentum: -85, sentiment: 66, news: 0, policy: 0, profile: 35, valuation: 3 }
   },
   {
     ticker: "CTAS", name: "Cintas Corporation", sector: "Industrials",
@@ -2380,8 +2380,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.98, payoutRatio: 36.9, marketCapB: 87 },
-    signals: { technical: 43, momentum: 72, sentiment: 40, news: 0, policy: 0, profile: 25, valuation: -46 }
+    fundamentals: { dividendYield: 0.95, payoutRatio: 36.9, marketCapB: 88 },
+    signals: { technical: 44, momentum: 93, sentiment: 40, news: 0, policy: 0, profile: 25, valuation: -47 }
   },
   {
     ticker: "CNI", name: "Canadian National Railway Company", sector: "Industrials",
@@ -2392,7 +2392,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.08, payoutRatio: 46.3, marketCapB: 75 },
-    signals: { technical: 39, momentum: 13, sentiment: 36, news: 0, policy: 0, profile: 45, valuation: 1 }
+    signals: { technical: 37, momentum: 29, sentiment: 36, news: 0, policy: 0, profile: 45, valuation: 1 }
   },
   {
     ticker: "APD", name: "Air Products and Chemicals, Inc.", sector: "Basic Materials",
@@ -2402,8 +2402,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.36, payoutRatio: 75.7, marketCapB: 69 },
-    signals: { technical: 14, momentum: -10, sentiment: 56, news: 0, policy: 0, profile: -5, valuation: -4 }
+    fundamentals: { dividendYield: 2.32, payoutRatio: 75.7, marketCapB: 70 },
+    signals: { technical: 12, momentum: 1, sentiment: 56, news: 0, policy: 0, profile: -5, valuation: -5 }
   },
   {
     ticker: "AON", name: "Aon plc", sector: "Financial Services",
@@ -2413,8 +2413,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.04, payoutRatio: 17.1, marketCapB: 68 },
-    signals: { technical: -39, momentum: -11, sentiment: 43, news: 0, policy: 0, profile: 30, valuation: 12 }
+    fundamentals: { dividendYield: 1.02, payoutRatio: 17.1, marketCapB: 69 },
+    signals: { technical: -60, momentum: -6, sentiment: 43, news: 0, policy: 0, profile: 30, valuation: 11 }
   },
   {
     ticker: "ASX", name: "ASE Technology Holding Co., Ltd.", sector: "Technology",
@@ -2424,8 +2424,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.95, payoutRatio: 50.0, marketCapB: 98 },
-    signals: { technical: 36, momentum: 100, sentiment: 100, news: 0, policy: 0, profile: 15, valuation: -2 }
+    fundamentals: { dividendYield: 0.94, payoutRatio: 39.8, marketCapB: 85 },
+    signals: { technical: 28, momentum: 48, sentiment: 100, news: 0, policy: 0, profile: 15, valuation: 6 }
   },
   {
     ticker: "HOOD", name: "Robinhood Markets, Inc.", sector: "Financial Services",
@@ -2435,8 +2435,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 82 },
-    signals: { technical: 35, momentum: 58, sentiment: 67, news: 0, policy: 0, profile: 20, valuation: -21 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 74 },
+    signals: { technical: 60, momentum: 10, sentiment: 67, news: 0, policy: 0, profile: 20, valuation: -13 }
   },
   {
     ticker: "SPG", name: "Simon Property Group, Inc.", sector: "Real Estate",
@@ -2446,8 +2446,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.21, payoutRatio: 62.1, marketCapB: 82 },
-    signals: { technical: 35, momentum: 0, sentiment: 26, news: 0, policy: 0, profile: 30, valuation: -35 }
+    fundamentals: { dividendYield: 4.13, payoutRatio: 62.1, marketCapB: 83 },
+    signals: { technical: 34, momentum: 11, sentiment: 26, news: 0, policy: 0, profile: 30, valuation: -36 }
   },
   {
     ticker: "FIX", name: "Comfort Systems USA, Inc.", sector: "Industrials",
@@ -2457,8 +2457,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.3, payoutRatio: 6.5, marketCapB: 47 },
-    signals: { technical: -51, momentum: -100, sentiment: 90, news: 0, policy: 0, profile: 25, valuation: 0 }
+    fundamentals: { dividendYield: 0.3, payoutRatio: 6.5, marketCapB: 43 },
+    signals: { technical: -47, momentum: -100, sentiment: 90, news: 0, policy: 0, profile: 25, valuation: 5 }
   },
   {
     ticker: "MFC", name: "Manulife Financial Corporation", sector: "Financial Services",
@@ -2468,8 +2468,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.04, payoutRatio: 50.1, marketCapB: 75 },
-    signals: { technical: 38, momentum: 29, sentiment: 44, news: 0, policy: 0, profile: 45, valuation: 21 }
+    fundamentals: { dividendYield: 3.01, payoutRatio: 50.1, marketCapB: 74 },
+    signals: { technical: 40, momentum: 36, sentiment: 44, news: 0, policy: 0, profile: 45, valuation: 22 }
   },
   {
     ticker: "B", name: "Barrick Mining Corporation", sector: "Basic Materials",
@@ -2479,8 +2479,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.76, payoutRatio: 23.8, marketCapB: 64 },
-    signals: { technical: 43, momentum: -23, sentiment: 52, news: 0, policy: 0, profile: 45, valuation: 32 }
+    fundamentals: { dividendYield: 1.81, payoutRatio: 23.8, marketCapB: 60 },
+    signals: { technical: 44, momentum: -33, sentiment: 52, news: 0, policy: 0, profile: 45, valuation: 34 }
   },
   {
     ticker: "FTNT", name: "Fortinet, Inc.", sector: "Technology",
@@ -2490,8 +2490,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 102 },
-    signals: { technical: 60, momentum: 100, sentiment: 5, news: 0, policy: 0, profile: 50, valuation: -50 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 99 },
+    signals: { technical: 60, momentum: 100, sentiment: 3, news: 0, policy: 0, profile: 35, valuation: -44 }
   },
   {
     ticker: "MSTR", name: "Strategy Inc", sector: "Technology",
@@ -2501,8 +2501,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 60 },
-    signals: { technical: 31, momentum: -89, sentiment: 88, news: 0, policy: 0, profile: 10, valuation: 42 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 55 },
+    signals: { technical: 29, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: 10, valuation: 43 }
   },
   {
     ticker: "RACE", name: "Ferrari N.V.", sector: "Consumer Cyclical",
@@ -2512,8 +2512,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.07, payoutRatio: 39.2, marketCapB: 70 },
-    signals: { technical: 41, momentum: 34, sentiment: 75, news: 0, policy: 0, profile: 45, valuation: -36 }
+    fundamentals: { dividendYield: 1.06, payoutRatio: 39.2, marketCapB: 69 },
+    signals: { technical: 41, momentum: 39, sentiment: 75, news: 0, policy: 0, profile: 45, valuation: -35 }
   },
   {
     ticker: "KEYS", name: "Keysight Technologies, Inc.", sector: "Technology",
@@ -2523,8 +2523,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 56 },
-    signals: { technical: 34, momentum: -43, sentiment: 71, news: 0, policy: 0, profile: 25, valuation: -11 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 52 },
+    signals: { technical: 32, momentum: -61, sentiment: 71, news: 0, policy: 0, profile: 25, valuation: -5 }
   },
   {
     ticker: "DB", name: "Deutsche Bank Aktiengesellschaft", sector: "Financial Services",
@@ -2534,8 +2534,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits (partial)", "AFSC Investigate", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.47, payoutRatio: 30.0, marketCapB: 65 },
-    signals: { technical: 36, momentum: 17, sentiment: 50, news: 0, policy: 0, profile: 45, valuation: 37 }
+    fundamentals: { dividendYield: 3.34, payoutRatio: 30.0, marketCapB: 62 },
+    signals: { technical: 38, momentum: 18, sentiment: 50, news: 0, policy: 0, profile: 45, valuation: 38 }
   },
   {
     ticker: "AZO", name: "AutoZone, Inc.", sector: "Consumer Cyclical",
@@ -2545,8 +2545,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 50 },
-    signals: { technical: -35, momentum: -64, sentiment: 76, news: 0, policy: 0, profile: 25, valuation: 11 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 51 },
+    signals: { technical: -35, momentum: -46, sentiment: 76, news: 0, policy: 0, profile: 25, valuation: 10 }
   },
   {
     ticker: "FANG", name: "Diamondback Energy, Inc.", sector: "Energy",
@@ -2556,8 +2556,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.13, payoutRatio: 79.1, marketCapB: 58 },
-    signals: { technical: 42, momentum: -24, sentiment: 75, news: 0, policy: 0, profile: 25, valuation: 30 }
+    fundamentals: { dividendYield: 2.13, payoutRatio: 79.1, marketCapB: 59 },
+    signals: { technical: 41, momentum: -19, sentiment: 75, news: 0, policy: 0, profile: 25, valuation: 29 }
   },
   {
     ticker: "LHX", name: "L3Harris Technologies, Inc.", sector: "Industrials",
@@ -2567,8 +2567,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate", "Who Profits", "Defense contracts", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.92, payoutRatio: 49.4, marketCapB: 52 },
-    signals: { technical: -64, momentum: -59, sentiment: 57, news: 0, policy: 0, profile: 25, valuation: -1 }
+    fundamentals: { dividendYield: 1.8, payoutRatio: 49.4, marketCapB: 52 },
+    signals: { technical: -63, momentum: -49, sentiment: 57, news: 0, policy: 0, profile: 25, valuation: -1 }
   },
   {
     ticker: "OXY", name: "Occidental Petroleum Corporation", sector: "Energy",
@@ -2578,8 +2578,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.78, payoutRatio: 28.4, marketCapB: 63 },
-    signals: { technical: 40, momentum: 1, sentiment: 40, news: 0, policy: 0, profile: 45, valuation: 22 }
+    fundamentals: { dividendYield: 1.78, payoutRatio: 28.4, marketCapB: 64 },
+    signals: { technical: 39, momentum: 3, sentiment: 40, news: 0, policy: 0, profile: 45, valuation: 21 }
   },
   {
     ticker: "AFL", name: "Aflac Incorporated", sector: "Financial Services",
@@ -2589,8 +2589,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.0, payoutRatio: 25.6, marketCapB: 62 },
-    signals: { technical: 38, momentum: 8, sentiment: -10, news: 0, policy: 0, profile: 45, valuation: 11 }
+    fundamentals: { dividendYield: 1.98, payoutRatio: 25.6, marketCapB: 62 },
+    signals: { technical: 37, momentum: 16, sentiment: -10, news: 0, policy: 0, profile: 45, valuation: 10 }
   },
   {
     ticker: "MPLX", name: "MPLX LP", sector: "Energy",
@@ -2600,8 +2600,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 8.22, payoutRatio: 90.0, marketCapB: 61 },
-    signals: { technical: 37, momentum: -3, sentiment: 30, news: 0, policy: 0, profile: 35, valuation: 22 }
+    fundamentals: { dividendYield: 8.09, payoutRatio: 90.0, marketCapB: 61 },
+    signals: { technical: 37, momentum: 0, sentiment: 30, news: 0, policy: 0, profile: 35, valuation: 22 }
   },
   {
     ticker: "WPM", name: "Wheaton Precious Metals Corp.", sector: "Basic Materials",
@@ -2611,8 +2611,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.62, payoutRatio: 16.0, marketCapB: 56 },
-    signals: { technical: 43, momentum: -29, sentiment: 84, news: 0, policy: 0, profile: 35, valuation: -15 }
+    fundamentals: { dividendYield: 0.63, payoutRatio: 16.0, marketCapB: 52 },
+    signals: { technical: 64, momentum: -42, sentiment: 84, news: 0, policy: 0, profile: 35, valuation: -9 }
   },
   {
     ticker: "D", name: "Dominion Energy, Inc.", sector: "Utilities",
@@ -2622,8 +2622,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.15, payoutRatio: 92.4, marketCapB: 57 },
-    signals: { technical: -40, momentum: -16, sentiment: 25, news: 0, policy: 0, profile: 35, valuation: 8 }
+    fundamentals: { dividendYield: 4.1, payoutRatio: 92.4, marketCapB: 59 },
+    signals: { technical: -43, momentum: 4, sentiment: 25, news: 0, policy: 0, profile: 35, valuation: 7 }
   },
   {
     ticker: "ALL", name: "The Allstate Corporation", sector: "Financial Services",
@@ -2633,8 +2633,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.73, payoutRatio: 8.3, marketCapB: 65 },
-    signals: { technical: 45, momentum: 37, sentiment: 28, news: 0, policy: 0, profile: 35, valuation: 32 }
+    fundamentals: { dividendYield: 1.69, payoutRatio: 8.3, marketCapB: 66 },
+    signals: { technical: 43, momentum: 46, sentiment: 28, news: 0, policy: 0, profile: 35, valuation: 32 }
   },
   {
     ticker: "CVNA", name: "Carvana Co.", sector: "Consumer Cyclical",
@@ -2644,8 +2644,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 76 },
-    signals: { technical: -42, momentum: -58, sentiment: 50, news: 0, policy: 0, profile: 15, valuation: -30 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 77 },
+    signals: { technical: -43, momentum: -42, sentiment: 50, news: 0, policy: 0, profile: 15, valuation: -32 }
   },
   {
     ticker: "CVE", name: "Cenovus Energy Inc.", sector: "Energy",
@@ -2655,8 +2655,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.92, payoutRatio: 22.8, marketCapB: 59 },
-    signals: { technical: 41, momentum: 9, sentiment: 75, news: 0, policy: 0, profile: 35, valuation: 31 }
+    fundamentals: { dividendYield: 1.93, payoutRatio: 22.8, marketCapB: 60 },
+    signals: { technical: 39, momentum: 12, sentiment: 75, news: 0, policy: 0, profile: 35, valuation: 31 }
   },
   {
     ticker: "GWW", name: "W.W. Grainger, Inc.", sector: "Industrials",
@@ -2666,8 +2666,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.74, payoutRatio: 23.6, marketCapB: 65 },
-    signals: { technical: 34, momentum: 42, sentiment: 10, news: 0, policy: 0, profile: 15, valuation: -20 }
+    fundamentals: { dividendYield: 0.73, payoutRatio: 23.6, marketCapB: 64 },
+    signals: { technical: 38, momentum: 47, sentiment: 10, news: 0, policy: 0, profile: 15, valuation: -19 }
   },
   {
     ticker: "TER", name: "Teradyne, Inc.", sector: "Technology",
@@ -2677,8 +2677,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.17, payoutRatio: 6.9, marketCapB: 46 },
-    signals: { technical: 33, momentum: -70, sentiment: 68, news: 0, policy: 0, profile: 35, valuation: -15 }
+    fundamentals: { dividendYield: 0.18, payoutRatio: 6.9, marketCapB: 42 },
+    signals: { technical: 60, momentum: -84, sentiment: 68, news: 0, policy: 0, profile: 35, valuation: -7 }
   },
   {
     ticker: "PSA", name: "Public Storage", sector: "Real Estate",
@@ -2688,8 +2688,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.87, payoutRatio: 126.2, marketCapB: 59 },
-    signals: { technical: -43, momentum: -5, sentiment: 25, news: 0, policy: 0, profile: 45, valuation: -35 }
+    fundamentals: { dividendYield: 3.78, payoutRatio: 126.2, marketCapB: 61 },
+    signals: { technical: -66, momentum: 17, sentiment: 25, news: 0, policy: 0, profile: 45, valuation: -38 }
   },
   {
     ticker: "AME", name: "AMETEK, Inc.", sector: "Industrials",
@@ -2699,8 +2699,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.55, payoutRatio: 19.0, marketCapB: 58 },
-    signals: { technical: 35, momentum: 8, sentiment: 62, news: 0, policy: 0, profile: 35, valuation: -19 }
+    fundamentals: { dividendYield: 0.54, payoutRatio: 19.0, marketCapB: 55 },
+    signals: { technical: 40, momentum: 0, sentiment: 62, news: 0, policy: 0, profile: 35, valuation: -16 }
   },
   {
     ticker: "SE", name: "Sea Limited", sector: "Consumer Cyclical",
@@ -2710,8 +2710,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 47 },
-    signals: { technical: 61, momentum: -59, sentiment: 85, news: 0, policy: 0, profile: 15, valuation: 14 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 45 },
+    signals: { technical: 60, momentum: -59, sentiment: 85, news: 0, policy: 0, profile: 15, valuation: 16 }
   },
   {
     ticker: "VST", name: "Vistra Corp.", sector: "Utilities",
@@ -2721,8 +2721,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.64, payoutRatio: 15.3, marketCapB: 47 },
-    signals: { technical: -36, momentum: -53, sentiment: 85, news: 0, policy: 0, profile: 10, valuation: 19 }
+    fundamentals: { dividendYield: 0.65, payoutRatio: 15.3, marketCapB: 46 },
+    signals: { technical: -35, momentum: -66, sentiment: 85, news: 0, policy: 0, profile: 10, valuation: 20 }
   },
   {
     ticker: "NDAQ", name: "Nasdaq, Inc.", sector: "Financial Services",
@@ -2733,7 +2733,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.1, payoutRatio: 31.7, marketCapB: 59 },
-    signals: { technical: 15, momentum: 29, sentiment: 58, news: 0, policy: 0, profile: 45, valuation: -6 }
+    signals: { technical: 17, momentum: 37, sentiment: 58, news: 0, policy: 0, profile: 45, valuation: -7 }
   },
   {
     ticker: "ADSK", name: "Autodesk, Inc.", sector: "Technology",
@@ -2743,8 +2743,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company disclosures", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 51 },
-    signals: { technical: -29, momentum: -26, sentiment: 72, news: 0, policy: 0, profile: 35, valuation: 8 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 52 },
+    signals: { technical: -30, momentum: -17, sentiment: 72, news: 0, policy: 0, profile: 35, valuation: 7 }
   },
   {
     ticker: "XEL", name: "Xcel Energy Inc.", sector: "Utilities",
@@ -2754,8 +2754,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.07, payoutRatio: 63.7, marketCapB: 49 },
-    signals: { technical: -40, momentum: -36, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: 7 }
+    fundamentals: { dividendYield: 3.0, payoutRatio: 63.7, marketCapB: 50 },
+    signals: { technical: -43, momentum: -19, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: 6 }
   },
   {
     ticker: "NUE", name: "Nucor Corporation", sector: "Basic Materials",
@@ -2765,8 +2765,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.82, payoutRatio: 17.8, marketCapB: 62 },
-    signals: { technical: 41, momentum: 49, sentiment: 62, news: 0, policy: 0, profile: 15, valuation: 20 }
+    fundamentals: { dividendYield: 0.81, payoutRatio: 17.8, marketCapB: 61 },
+    signals: { technical: 43, momentum: 49, sentiment: 62, news: 0, policy: 0, profile: 15, valuation: 21 }
   },
   {
     ticker: "MCHP", name: "Microchip Technology Incorporated", sector: "Technology",
@@ -2776,8 +2776,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.29, payoutRatio: 267.6, marketCapB: 44 },
-    signals: { technical: -45, momentum: -68, sentiment: 73, news: 0, policy: 0, profile: 25, valuation: 7 }
+    fundamentals: { dividendYield: 2.24, payoutRatio: 267.6, marketCapB: 41 },
+    signals: { technical: -45, momentum: -84, sentiment: 73, news: 0, policy: 0, profile: 25, valuation: 10 }
   },
   {
     ticker: "EA", name: "Electronic Arts Inc.", sector: "Communication Services",
@@ -2798,8 +2798,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.33, payoutRatio: 65.4, marketCapB: 49 },
-    signals: { technical: -38, momentum: -30, sentiment: 15, news: 0, policy: 0, profile: 35, valuation: 16 }
+    fundamentals: { dividendYield: 4.29, payoutRatio: 65.4, marketCapB: 51 },
+    signals: { technical: -35, momentum: -7, sentiment: 15, news: 0, policy: 0, profile: 35, valuation: 15 }
   },
   {
     ticker: "COIN", name: "Coinbase Global, Inc.", sector: "Financial Services",
@@ -2809,8 +2809,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 42 },
-    signals: { technical: 32, momentum: -75, sentiment: 52, news: 0, policy: 0, profile: -15, valuation: -99 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 36 },
+    signals: { technical: 60, momentum: -100, sentiment: 52, news: 0, policy: 0, profile: -15, valuation: -76 }
   },
   {
     ticker: "DDOG", name: "Datadog, Inc.", sector: "Technology",
@@ -2820,8 +2820,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 95 },
-    signals: { technical: 37, momentum: 100, sentiment: 78, news: 0, policy: 0, profile: 10, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 83 },
+    signals: { technical: 33, momentum: 100, sentiment: 78, news: 0, policy: 0, profile: 10, valuation: -100 }
   },
   {
     ticker: "ZTS", name: "Zoetis Inc.", sector: "Healthcare",
@@ -2831,8 +2831,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.72, payoutRatio: 33.9, marketCapB: 33 },
-    signals: { technical: -32, momentum: -100, sentiment: 22, news: 0, policy: 0, profile: 30, valuation: 23 }
+    fundamentals: { dividendYield: 2.69, payoutRatio: 33.9, marketCapB: 33 },
+    signals: { technical: -34, momentum: -100, sentiment: 22, news: 0, policy: 0, profile: 30, valuation: 22 }
   },
   {
     ticker: "STM", name: "STMicroelectronics N.V.", sector: "Technology",
@@ -2842,8 +2842,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.74, payoutRatio: 900.0, marketCapB: 45 },
-    signals: { technical: 33, momentum: -56, sentiment: 54, news: 0, policy: 0, profile: 10, valuation: 0 }
+    fundamentals: { dividendYield: 0.72, payoutRatio: 63.2, marketCapB: 41 },
+    signals: { technical: 26, momentum: -73, sentiment: 54, news: 0, policy: 0, profile: 10, valuation: 8 }
   },
   {
     ticker: "CLS", name: "Celestica Inc.", sector: "Technology",
@@ -2853,8 +2853,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 36 },
-    signals: { technical: -54, momentum: -100, sentiment: 88, news: 0, policy: 0, profile: 15, valuation: 21 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 32 },
+    signals: { technical: -50, momentum: -100, sentiment: 88, news: 0, policy: 0, profile: 15, valuation: 25 }
   },
   {
     ticker: "SNOW", name: "Snowflake Inc.", sector: "Technology",
@@ -2864,8 +2864,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 117 },
-    signals: { technical: 37, momentum: 100, sentiment: 77, news: 0, policy: 0, profile: 0, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 105 },
+    signals: { technical: 38, momentum: 100, sentiment: 77, news: 0, policy: 0, profile: 0, valuation: -100 }
   },
   {
     ticker: "AU", name: "AngloGold Ashanti plc", sector: "Basic Materials",
@@ -2875,8 +2875,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.18, payoutRatio: 61.7, marketCapB: 43 },
-    signals: { technical: 41, momentum: -50, sentiment: 56, news: 0, policy: 0, profile: 45, valuation: 32 }
+    fundamentals: { dividendYield: 5.31, payoutRatio: 61.7, marketCapB: 40 },
+    signals: { technical: 63, momentum: -60, sentiment: 56, news: 0, policy: 0, profile: 45, valuation: 34 }
   },
   {
     ticker: "GRMN", name: "Garmin Ltd.", sector: "Technology",
@@ -2886,8 +2886,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.54, payoutRatio: 37.5, marketCapB: 54 },
-    signals: { technical: 42, momentum: 28, sentiment: 28, news: 0, policy: 0, profile: 45, valuation: -13 }
+    fundamentals: { dividendYield: 1.5, payoutRatio: 37.5, marketCapB: 53 },
+    signals: { technical: 44, momentum: 33, sentiment: 28, news: 0, policy: 0, profile: 45, valuation: -12 }
   },
   {
     ticker: "EBAY", name: "eBay Inc.", sector: "Consumer Cyclical",
@@ -2897,8 +2897,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.05, payoutRatio: 25.3, marketCapB: 54 },
-    signals: { technical: 43, momentum: 32, sentiment: 22, news: 0, policy: 0, profile: 35, valuation: 6 }
+    fundamentals: { dividendYield: 1.02, payoutRatio: 25.3, marketCapB: 54 },
+    signals: { technical: 42, momentum: 22, sentiment: 25, news: 0, policy: 0, profile: 35, valuation: 6 }
   },
   {
     ticker: "CAH", name: "Cardinal Health, Inc.", sector: "Healthcare",
@@ -2908,8 +2908,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.84, payoutRatio: 28.3, marketCapB: 58 },
-    signals: { technical: 42, momentum: 72, sentiment: 74, news: 0, policy: 0, profile: 10, valuation: 6 }
+    fundamentals: { dividendYield: 0.82, payoutRatio: 28.3, marketCapB: 59 },
+    signals: { technical: 42, momentum: 78, sentiment: 74, news: 0, policy: 0, profile: 10, valuation: 6 }
   },
   {
     ticker: "ROK", name: "Rockwell Automation, Inc.", sector: "Industrials",
@@ -2919,8 +2919,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.24, payoutRatio: 51.0, marketCapB: 50 },
-    signals: { technical: 33, momentum: 13, sentiment: 36, news: 0, policy: 0, profile: 35, valuation: -30 }
+    fundamentals: { dividendYield: 1.22, payoutRatio: 51.0, marketCapB: 48 },
+    signals: { technical: 36, momentum: 12, sentiment: 36, news: 0, policy: 0, profile: 35, valuation: -27 }
   },
   {
     ticker: "RKLB", name: "Rocket Lab Corporation", sector: "Industrials",
@@ -2930,8 +2930,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 38 },
-    signals: { technical: -54, momentum: -100, sentiment: 70, news: 0, policy: 0, profile: -15, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 34 },
+    signals: { technical: -51, momentum: -100, sentiment: 70, news: 0, policy: 0, profile: -15, valuation: 0 }
   },
   {
     ticker: "PYPL", name: "PayPal Holdings, Inc.", sector: "Financial Services",
@@ -2941,8 +2941,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Human Rights Watch (2021)", "Mondoweiss", "Electronic Intifada", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.99, payoutRatio: 10.7, marketCapB: 47 },
-    signals: { technical: 42, momentum: 20, sentiment: 4, news: 0, policy: 0, profile: 25, valuation: 30 }
+    fundamentals: { dividendYield: 0.98, payoutRatio: 10.7, marketCapB: 47 },
+    signals: { technical: 42, momentum: 28, sentiment: 3, news: 0, policy: 0, profile: 25, valuation: 30 }
   },
   {
     ticker: "DAL", name: "Delta Air Lines, Inc.", sector: "Industrials",
@@ -2952,8 +2952,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.07, payoutRatio: 15.5, marketCapB: 54 },
-    signals: { technical: 35, momentum: 38, sentiment: 84, news: 0, policy: 0, profile: 20, valuation: 26 }
+    fundamentals: { dividendYield: 1.05, payoutRatio: 15.5, marketCapB: 52 },
+    signals: { technical: 36, momentum: 34, sentiment: 84, news: 0, policy: 0, profile: 20, valuation: 27 }
   },
   {
     ticker: "IDXX", name: "IDEXX Laboratories, Inc.", sector: "Healthcare",
@@ -2963,8 +2963,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 45 },
-    signals: { technical: -41, momentum: -17, sentiment: 47, news: 0, policy: 0, profile: 35, valuation: -43 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 44 },
+    signals: { technical: -37, momentum: -17, sentiment: 47, news: 0, policy: 0, profile: 35, valuation: -40 }
   },
   {
     ticker: "DEO", name: "Diageo plc", sector: "Consumer Defensive",
@@ -2974,8 +2974,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.17, payoutRatio: 106.5, marketCapB: 51 },
-    signals: { technical: 48, momentum: 26, sentiment: 38, news: 0, policy: 0, profile: 25, valuation: 21 }
+    fundamentals: { dividendYield: 2.19, payoutRatio: 106.5, marketCapB: 52 },
+    signals: { technical: 45, momentum: 48, sentiment: 38, news: 0, policy: 0, profile: 25, valuation: 20 }
   },
   {
     ticker: "MT", name: "ArcelorMittal S.A.", sector: "Basic Materials",
@@ -2985,8 +2985,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.0, payoutRatio: 24.3, marketCapB: 46 },
-    signals: { technical: 42, momentum: 6, sentiment: 50, news: 0, policy: 0, profile: 20, valuation: 33 }
+    fundamentals: { dividendYield: 0.97, payoutRatio: 24.3, marketCapB: 45 },
+    signals: { technical: 43, momentum: 6, sentiment: 50, news: 0, policy: 0, profile: 10, valuation: 34 }
   },
   {
     ticker: "YUM", name: "Yum! Brands, Inc.", sector: "Consumer Cyclical",
@@ -2996,8 +2996,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Times of Israel (2023)", "BDS Movement campaign", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.0, payoutRatio: 36.8, marketCapB: 42 },
-    signals: { technical: -39, momentum: -30, sentiment: 43, news: 0, policy: 0, profile: 45, valuation: -7 }
+    fundamentals: { dividendYield: 1.94, payoutRatio: 36.8, marketCapB: 43 },
+    signals: { technical: -39, momentum: -11, sentiment: 43, news: 0, policy: 0, profile: 45, valuation: -8 }
   },
   {
     ticker: "ODFL", name: "Old Dominion Freight Line, Inc.", sector: "Industrials",
@@ -3008,7 +3008,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.67, payoutRatio: 21.9, marketCapB: 36 },
-    signals: { technical: -33, momentum: -76, sentiment: 38, news: 0, policy: 0, profile: 35, valuation: -16 }
+    signals: { technical: -34, momentum: -49, sentiment: 38, news: 0, policy: 0, profile: 35, valuation: -16 }
   },
   {
     ticker: "MSCI", name: "MSCI Inc.", sector: "Financial Services",
@@ -3018,8 +3018,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.36, payoutRatio: 42.0, marketCapB: 45 },
-    signals: { technical: -40, momentum: -5, sentiment: 75, news: 0, policy: 0, profile: 45, valuation: -22 }
+    fundamentals: { dividendYield: 1.33, payoutRatio: 42.0, marketCapB: 45 },
+    signals: { technical: -38, momentum: 7, sentiment: 75, news: 0, policy: 0, profile: 45, valuation: -23 }
   },
   {
     ticker: "XYZ", name: "Block, Inc.", sector: "Technology",
@@ -3029,8 +3029,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 46 },
-    signals: { technical: 43, momentum: 1, sentiment: 72, news: 0, policy: 0, profile: 10, valuation: 15 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 45 },
+    signals: { technical: 44, momentum: 0, sentiment: 72, news: 0, policy: 0, profile: 10, valuation: 16 }
   },
   {
     ticker: "DHI", name: "D.R. Horton, Inc.", sector: "Consumer Cyclical",
@@ -3040,8 +3040,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.26, payoutRatio: 16.7, marketCapB: 41 },
-    signals: { technical: -40, momentum: -30, sentiment: 12, news: 0, policy: 0, profile: 25, valuation: 20 }
+    fundamentals: { dividendYield: 1.23, payoutRatio: 16.7, marketCapB: 41 },
+    signals: { technical: -37, momentum: -11, sentiment: 12, news: 0, policy: 0, profile: 25, valuation: 21 }
   },
   {
     ticker: "BDX", name: "Becton, Dickinson and Company", sector: "Healthcare",
@@ -3051,8 +3051,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.15, payoutRatio: 72.5, marketCapB: 54 },
-    signals: { technical: 39, momentum: 86, sentiment: 44, news: 0, policy: 0, profile: 20, valuation: 15 }
+    fundamentals: { dividendYield: 2.12, payoutRatio: 72.5, marketCapB: 54 },
+    signals: { technical: 41, momentum: 100, sentiment: 44, news: 0, policy: 0, profile: 20, valuation: 15 }
   },
   {
     ticker: "CMG", name: "Chipotle Mexican Grill, Inc.", sector: "Consumer Cyclical",
@@ -3062,8 +3062,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 40 },
-    signals: { technical: -45, momentum: -39, sentiment: 60, news: 0, policy: 0, profile: 10, valuation: -8 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 41 },
+    signals: { technical: -46, momentum: -14, sentiment: 60, news: 0, policy: 0, profile: 10, valuation: -12 }
   },
   {
     ticker: "AIG", name: "American International Group, Inc.", sector: "Financial Services",
@@ -3073,8 +3073,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.5, payoutRatio: 33.9, marketCapB: 43 },
-    signals: { technical: 38, momentum: -11, sentiment: 34, news: 0, policy: 0, profile: 35, valuation: 32 }
+    fundamentals: { dividendYield: 2.46, payoutRatio: 33.9, marketCapB: 43 },
+    signals: { technical: 39, momentum: 1, sentiment: 34, news: 0, policy: 0, profile: 35, valuation: 32 }
   },
   {
     ticker: "KR", name: "The Kroger Co.", sector: "Consumer Defensive",
@@ -3084,8 +3084,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.4, payoutRatio: 77.8, marketCapB: 39 },
-    signals: { technical: -39, momentum: -31, sentiment: 52, news: 0, policy: 0, profile: 5, valuation: 23 }
+    fundamentals: { dividendYield: 2.37, payoutRatio: 77.8, marketCapB: 39 },
+    signals: { technical: -38, momentum: -19, sentiment: 52, news: 0, policy: 0, profile: 5, valuation: 23 }
   },
   {
     ticker: "TRI", name: "Thomson Reuters Corporation", sector: "Industrials",
@@ -3095,8 +3095,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.26, payoutRatio: 66.4, marketCapB: 50 },
-    signals: { technical: 47, momentum: 54, sentiment: 60, news: 0, policy: 0, profile: 45, valuation: -11 }
+    fundamentals: { dividendYield: 2.25, payoutRatio: 66.4, marketCapB: 52 },
+    signals: { technical: 48, momentum: 65, sentiment: 60, news: 0, policy: 0, profile: 45, valuation: -12 }
   },
   {
     ticker: "BIDU", name: "Baidu, Inc.", sector: "Communication Services",
@@ -3106,8 +3106,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 27 },
-    signals: { technical: -36, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: -15, valuation: 26 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 26 },
+    signals: { technical: -9, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: -15, valuation: 27 }
   },
   {
     ticker: "ED", name: "Consolidated Edison, Inc.", sector: "Utilities",
@@ -3117,8 +3117,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.11, payoutRatio: 57.2, marketCapB: 43 },
-    signals: { technical: -43, momentum: -7, sentiment: -10, news: 0, policy: 0, profile: 35, valuation: 6 }
+    fundamentals: { dividendYield: 3.07, payoutRatio: 57.2, marketCapB: 43 },
+    signals: { technical: -67, momentum: 7, sentiment: -10, news: 0, policy: 0, profile: 35, valuation: 5 }
   },
   {
     ticker: "JD", name: "JD.com, Inc.", sector: "Consumer Cyclical",
@@ -3128,8 +3128,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.93, payoutRatio: 70.4, marketCapB: 35 },
-    signals: { technical: -34, momentum: -70, sentiment: 76, news: 0, policy: 0, profile: 20, valuation: 40 }
+    fundamentals: { dividendYield: 3.9, payoutRatio: 70.4, marketCapB: 35 },
+    signals: { technical: -33, momentum: -63, sentiment: 76, news: 0, policy: 0, profile: 20, valuation: 40 }
   },
   {
     ticker: "TTWO", name: "Take-Two Interactive Software, Inc.", sector: "Communication Services",
@@ -3140,7 +3140,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 36 },
-    signals: { technical: -33, momentum: -57, sentiment: 90, news: 0, policy: 0, profile: -15, valuation: 3 }
+    signals: { technical: -31, momentum: -66, sentiment: 90, news: 0, policy: 0, profile: -15, valuation: 4 }
   },
   {
     ticker: "ALNY", name: "Alnylam Pharmaceuticals, Inc.", sector: "Healthcare",
@@ -3150,8 +3150,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 23 },
-    signals: { technical: -20, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: 10, valuation: 17 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 22 },
+    signals: { technical: -20, momentum: -100, sentiment: 64, news: 0, policy: 0, profile: 35, valuation: 18 }
   },
   {
     ticker: "NBIS", name: "Nebius Group N.V.", sector: "Communication Services",
@@ -3161,8 +3161,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 44 },
-    signals: { technical: 27, momentum: 15, sentiment: 59, news: 0, policy: 0, profile: 10, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 38 },
+    signals: { technical: 32, momentum: -63, sentiment: 59, news: 0, policy: 0, profile: 10, valuation: 0 }
   },
   {
     ticker: "CCI", name: "Crown Castle Inc.", sector: "Real Estate",
@@ -3172,8 +3172,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.84, payoutRatio: 172.8, marketCapB: 38 },
-    signals: { technical: -60, momentum: -24, sentiment: 43, news: 0, policy: 0, profile: 45, valuation: -30 }
+    fundamentals: { dividendYield: 4.78, payoutRatio: 172.8, marketCapB: 38 },
+    signals: { technical: -60, momentum: -18, sentiment: 43, news: 0, policy: 0, profile: 45, valuation: -31 }
   },
   {
     ticker: "KB", name: "KB Financial Group Inc.", sector: "Financial Services",
@@ -3183,8 +3183,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.87, payoutRatio: 26.9, marketCapB: 40 },
-    signals: { technical: 44, momentum: -9, sentiment: 100, news: 0, policy: 0, profile: 45, valuation: 37 }
+    fundamentals: { dividendYield: 2.89, payoutRatio: 26.9, marketCapB: 39 },
+    signals: { technical: 43, momentum: 4, sentiment: 100, news: 0, policy: 0, profile: 45, valuation: 38 }
   },
   {
     ticker: "GFI", name: "Gold Fields Limited", sector: "Basic Materials",
@@ -3194,8 +3194,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.94, payoutRatio: 31.8, marketCapB: 31 },
-    signals: { technical: -34, momentum: -77, sentiment: 56, news: 0, policy: 0, profile: 45, valuation: 38 }
+    fundamentals: { dividendYield: 6.13, payoutRatio: 31.8, marketCapB: 29 },
+    signals: { technical: -36, momentum: -91, sentiment: 56, news: 0, policy: 0, profile: 45, valuation: 40 }
   },
   {
     ticker: "HPE", name: "Hewlett Packard Enterprise Company", sector: "Technology",
@@ -3205,8 +3205,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits database", "AFSC Investigate", "Don't Buy Into Occupation report", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.94, payoutRatio: 28.7, marketCapB: 78 },
-    signals: { technical: 34, momentum: 100, sentiment: 50, news: 0, policy: 0, profile: 15, valuation: 22 }
+    fundamentals: { dividendYield: 0.97, payoutRatio: 28.7, marketCapB: 71 },
+    signals: { technical: 28, momentum: 100, sentiment: 50, news: 0, policy: 0, profile: 15, valuation: 25 }
   },
   {
     ticker: "IRM", name: "Iron Mountain Incorporated", sector: "Real Estate",
@@ -3216,8 +3216,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.99, payoutRatio: 241.2, marketCapB: 35 },
-    signals: { technical: -41, momentum: -45, sentiment: 66, news: 0, policy: 0, profile: 25, valuation: -70 }
+    fundamentals: { dividendYield: 2.92, payoutRatio: 241.2, marketCapB: 34 },
+    signals: { technical: -40, momentum: -49, sentiment: 66, news: 0, policy: 0, profile: 25, valuation: -66 }
   },
   {
     ticker: "PUK", name: "Prudential plc", sector: "Financial Services",
@@ -3227,8 +3227,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.29, payoutRatio: 18.7, marketCapB: 30 },
-    signals: { technical: -39, momentum: -86, sentiment: 88, news: 0, policy: 0, profile: 45, valuation: 14 }
+    fundamentals: { dividendYield: 2.28, payoutRatio: 18.7, marketCapB: 30 },
+    signals: { technical: -40, momentum: -69, sentiment: 88, news: 0, policy: 0, profile: 45, valuation: 13 }
   },
   {
     ticker: "LYV", name: "Live Nation Entertainment, Inc.", sector: "Communication Services",
@@ -3239,7 +3239,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 41 },
-    signals: { technical: 37, momentum: 18, sentiment: 68, news: 0, policy: 0, profile: -5, valuation: -100 }
+    signals: { technical: 37, momentum: 25, sentiment: 68, news: 0, policy: 0, profile: -5, valuation: -100 }
   },
   {
     ticker: "CPNG", name: "Coupang, Inc.", sector: "Consumer Cyclical",
@@ -3250,7 +3250,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 26 },
-    signals: { technical: -36, momentum: -100, sentiment: 64, news: 0, policy: 0, profile: -15, valuation: -97 }
+    signals: { technical: -36, momentum: -100, sentiment: 64, news: 0, policy: 0, profile: -15, valuation: -94 }
   },
   {
     ticker: "HSY", name: "The Hershey Company", sector: "Consumer Defensive",
@@ -3260,8 +3260,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.55, payoutRatio: 77.1, marketCapB: 32 },
-    signals: { technical: -32, momentum: -62, sentiment: 26, news: 0, policy: 0, profile: 35, valuation: 11 }
+    fundamentals: { dividendYield: 3.62, payoutRatio: 77.1, marketCapB: 33 },
+    signals: { technical: -36, momentum: -47, sentiment: 26, news: 0, policy: 0, profile: 35, valuation: 8 }
   },
   {
     ticker: "CCL", name: "Carnival Corporation & plc", sector: "Consumer Cyclical",
@@ -3271,8 +3271,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.6, payoutRatio: 19.8, marketCapB: 39 },
-    signals: { technical: -39, momentum: 4, sentiment: 72, news: 0, policy: 0, profile: 35, valuation: 26 }
+    fundamentals: { dividendYield: 1.56, payoutRatio: 19.8, marketCapB: 39 },
+    signals: { technical: -42, momentum: 22, sentiment: 72, news: 0, policy: 0, profile: 35, valuation: 26 }
   },
   {
     ticker: "JBL", name: "Jabil Inc.", sector: "Technology",
@@ -3282,8 +3282,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.11, payoutRatio: 3.3, marketCapB: 30 },
-    signals: { technical: -42, momentum: -75, sentiment: 80, news: 0, policy: 0, profile: -5, valuation: 21 }
+    fundamentals: { dividendYield: 0.11, payoutRatio: 3.3, marketCapB: 28 },
+    signals: { technical: -43, momentum: -86, sentiment: 80, news: 0, policy: 0, profile: -5, valuation: 23 }
   },
   {
     ticker: "ADM", name: "Archer-Daniels-Midland Company", sector: "Consumer Defensive",
@@ -3293,8 +3293,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.69, payoutRatio: 56.4, marketCapB: 37 },
-    signals: { technical: 49, momentum: -16, sentiment: 0, news: 0, policy: 0, profile: 20, valuation: 19 }
+    fundamentals: { dividendYield: 2.73, payoutRatio: 56.4, marketCapB: 37 },
+    signals: { technical: 47, momentum: -13, sentiment: 0, news: 0, policy: 0, profile: 20, valuation: 19 }
   },
   {
     ticker: "ALC", name: "Alcon Inc.", sector: "Healthcare",
@@ -3305,7 +3305,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.51, payoutRatio: 26.6, marketCapB: 34 },
-    signals: { technical: -42, momentum: -35, sentiment: 68, news: 0, policy: 0, profile: 15, valuation: 6 }
+    signals: { technical: -42, momentum: -25, sentiment: 68, news: 0, policy: 0, profile: 15, valuation: 5 }
   },
   {
     ticker: "NTR", name: "Nutrien Ltd.", sector: "Basic Materials",
@@ -3315,8 +3315,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.19, payoutRatio: 44.3, marketCapB: 33 },
-    signals: { technical: 45, momentum: -52, sentiment: 36, news: 0, policy: 0, profile: 25, valuation: 19 }
+    fundamentals: { dividendYield: 3.21, payoutRatio: 44.3, marketCapB: 33 },
+    signals: { technical: 42, momentum: -44, sentiment: 36, news: 0, policy: 0, profile: 25, valuation: 18 }
   },
   {
     ticker: "LVS", name: "Las Vegas Sands Corp.", sector: "Consumer Cyclical",
@@ -3326,8 +3326,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.31, payoutRatio: 47.1, marketCapB: 24 },
-    signals: { technical: -36, momentum: -100, sentiment: 60, news: 0, policy: 0, profile: 35, valuation: 24 }
+    fundamentals: { dividendYield: 3.24, payoutRatio: 47.1, marketCapB: 24 },
+    signals: { technical: -34, momentum: -100, sentiment: 60, news: 0, policy: 0, profile: 35, valuation: 24 }
   },
   {
     ticker: "SYY", name: "Sysco Corporation", sector: "Consumer Defensive",
@@ -3337,8 +3337,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.68, payoutRatio: 59.3, marketCapB: 41 },
-    signals: { technical: 40, momentum: 15, sentiment: 36, news: 0, policy: 0, profile: 5, valuation: 14 }
+    fundamentals: { dividendYield: 2.67, payoutRatio: 59.3, marketCapB: 41 },
+    signals: { technical: 39, momentum: 31, sentiment: 36, news: 0, policy: 0, profile: 5, valuation: 13 }
   },
   {
     ticker: "KGC", name: "Kinross Gold Corporation", sector: "Basic Materials",
@@ -3348,8 +3348,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.7, payoutRatio: 5.5, marketCapB: 26 },
-    signals: { technical: -37, momentum: -100, sentiment: 58, news: 0, policy: 0, profile: 35, valuation: 35 }
+    fundamentals: { dividendYield: 0.74, payoutRatio: 5.9, marketCapB: 23 },
+    signals: { technical: -17, momentum: -100, sentiment: 58, news: 0, policy: 0, profile: 35, valuation: 37 }
   },
   {
     ticker: "HAL", name: "Halliburton Company", sector: "Energy",
@@ -3359,8 +3359,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.9, payoutRatio: 28.6, marketCapB: 30 },
-    signals: { technical: -41, momentum: -68, sentiment: 66, news: 0, policy: 0, profile: 25, valuation: 23 }
+    fundamentals: { dividendYield: 1.89, payoutRatio: 28.6, marketCapB: 30 },
+    signals: { technical: -41, momentum: -63, sentiment: 66, news: 0, policy: 0, profile: 25, valuation: 23 }
   },
   {
     ticker: "PRU", name: "Prudential Financial, Inc.", sector: "Financial Services",
@@ -3370,8 +3370,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.85, payoutRatio: 49.8, marketCapB: 40 },
-    signals: { technical: 40, momentum: 39, sentiment: -20, news: 0, policy: 0, profile: 25, valuation: 34 }
+    fundamentals: { dividendYield: 4.79, payoutRatio: 49.8, marketCapB: 40 },
+    signals: { technical: 42, momentum: 47, sentiment: -20, news: 0, policy: 0, profile: 25, valuation: 34 }
   },
   {
     ticker: "CRDO", name: "Credo Technology Group Holding Ltd", sector: "Technology",
@@ -3381,8 +3381,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 31 },
-    signals: { technical: 25, momentum: -57, sentiment: 82, news: 0, policy: 0, profile: 35, valuation: 8 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 27 },
+    signals: { technical: 30, momentum: -79, sentiment: 82, news: 0, policy: 0, profile: 35, valuation: 14 }
   },
   {
     ticker: "HBAN", name: "Huntington Bancshares Incorporated", sector: "Financial Services",
@@ -3392,8 +3392,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.95, payoutRatio: 50.8, marketCapB: 32 },
-    signals: { technical: -42, momentum: -35, sentiment: 60, news: 0, policy: 0, profile: 45, valuation: 32 }
+    fundamentals: { dividendYield: 3.88, payoutRatio: 50.8, marketCapB: 32 },
+    signals: { technical: -38, momentum: -25, sentiment: 60, news: 0, policy: 0, profile: 45, valuation: 33 }
   },
   {
     ticker: "TCOM", name: "Trip.com Group Limited", sector: "Consumer Cyclical",
@@ -3403,8 +3403,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 24 },
-    signals: { technical: -33, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: 31 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 25 },
+    signals: { technical: -36, momentum: -98, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: 31 }
   },
   {
     ticker: "PAYX", name: "Paychex, Inc.", sector: "Technology",
@@ -3414,8 +3414,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.4, payoutRatio: 90.1, marketCapB: 39 },
-    signals: { technical: 49, momentum: 35, sentiment: 0, news: 0, policy: 0, profile: 45, valuation: 8 }
+    fundamentals: { dividendYield: 4.35, payoutRatio: 90.1, marketCapB: 40 },
+    signals: { technical: 50, momentum: 56, sentiment: 0, news: 0, policy: 0, profile: 45, valuation: 7 }
   },
   {
     ticker: "WDAY", name: "Workday, Inc.", sector: "Technology",
@@ -3426,7 +3426,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 47 },
-    signals: { technical: 44, momentum: 100, sentiment: 34, news: 0, policy: 0, profile: 25, valuation: 15 }
+    signals: { technical: 45, momentum: 100, sentiment: 34, news: 0, policy: 0, profile: 25, valuation: 15 }
   },
   {
     ticker: "NRG", name: "NRG Energy, Inc.", sector: "Utilities",
@@ -3436,8 +3436,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.96, payoutRatio: 47.9, marketCapB: 21 },
-    signals: { technical: -36, momentum: -100, sentiment: 75, news: 0, policy: 0, profile: 5, valuation: 32 }
+    fundamentals: { dividendYield: 1.95, payoutRatio: 47.9, marketCapB: 20 },
+    signals: { technical: -33, momentum: -100, sentiment: 75, news: 0, policy: 0, profile: -5, valuation: 33 }
   },
   {
     ticker: "AXON", name: "Axon Enterprise, Inc.", sector: "Industrials",
@@ -3447,8 +3447,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 36 },
-    signals: { technical: -39, momentum: 7, sentiment: 66, news: 0, policy: 0, profile: 15, valuation: -64 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 34 },
+    signals: { technical: -37, momentum: 9, sentiment: 66, news: 0, policy: 0, profile: 15, valuation: -60 }
   },
   {
     ticker: "A", name: "Agilent Technologies, Inc.", sector: "Healthcare",
@@ -3458,8 +3458,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.56, payoutRatio: 20.0, marketCapB: 51 },
-    signals: { technical: 35, momentum: 100, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: -20 }
+    fundamentals: { dividendYield: 0.56, payoutRatio: 20.0, marketCapB: 49 },
+    signals: { technical: 41, momentum: 100, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: -17 }
   },
   {
     ticker: "RBLX", name: "Roblox Corporation", sector: "Communication Services",
@@ -3469,8 +3469,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 37 },
-    signals: { technical: -26, momentum: 31, sentiment: 34, news: 0, policy: 0, profile: -30, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 30 },
+    signals: { technical: -34, momentum: -57, sentiment: 34, news: 0, policy: 0, profile: -30, valuation: 0 }
   },
   {
     ticker: "RDDT", name: "Reddit, Inc.", sector: "Communication Services",
@@ -3480,8 +3480,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 25 },
-    signals: { technical: -38, momentum: -96, sentiment: 53, news: 0, policy: 0, profile: 35, valuation: 19 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 17 },
+    signals: { technical: -20, momentum: -100, sentiment: 53, news: 0, policy: 0, profile: 25, valuation: 32 }
   },
   {
     ticker: "MTB", name: "M&T Bank Corporation", sector: "Financial Services",
@@ -3491,8 +3491,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.72, payoutRatio: 31.7, marketCapB: 32 },
-    signals: { technical: 40, momentum: -10, sentiment: 12, news: 0, policy: 0, profile: 45, valuation: 28 }
+    fundamentals: { dividendYield: 2.68, payoutRatio: 31.7, marketCapB: 32 },
+    signals: { technical: 43, momentum: -7, sentiment: 12, news: 0, policy: 0, profile: 45, valuation: 28 }
   },
   {
     ticker: "VICI", name: "VICI Properties Inc.", sector: "Real Estate",
@@ -3502,8 +3502,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 7.66, payoutRatio: 70.0, marketCapB: 27 },
-    signals: { technical: -41, momentum: -69, sentiment: 56, news: 0, policy: 0, profile: 35, valuation: 35 }
+    fundamentals: { dividendYield: 7.5, payoutRatio: 83.8, marketCapB: 27 },
+    signals: { technical: -39, momentum: -58, sentiment: 56, news: 0, policy: 0, profile: 35, valuation: 35 }
   },
   {
     ticker: "DVN", name: "Devon Energy Corporation", sector: "Energy",
@@ -3513,8 +3513,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.5, payoutRatio: 22.7, marketCapB: 56 },
-    signals: { technical: 41, momentum: -18, sentiment: 88, news: 0, policy: 0, profile: 35, valuation: 31 }
+    fundamentals: { dividendYield: 2.5, payoutRatio: 22.7, marketCapB: 57 },
+    signals: { technical: 39, momentum: -10, sentiment: 88, news: 0, policy: 0, profile: 35, valuation: 31 }
   },
   {
     ticker: "ATO", name: "Atmos Energy Corporation", sector: "Utilities",
@@ -3524,8 +3524,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.36, payoutRatio: 46.1, marketCapB: 29 },
-    signals: { technical: -41, momentum: -53, sentiment: 15, news: 0, policy: 0, profile: 45, valuation: 3 }
+    fundamentals: { dividendYield: 2.34, payoutRatio: 46.1, marketCapB: 29 },
+    signals: { technical: -43, momentum: -41, sentiment: 15, news: 0, policy: 0, profile: 45, valuation: 2 }
   },
   {
     ticker: "MTZ", name: "MasTec, Inc.", sector: "Industrials",
@@ -3536,7 +3536,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 14 },
-    signals: { technical: -42, momentum: -100, sentiment: 90, news: 0, policy: 0, profile: 0, valuation: 16 }
+    signals: { technical: -43, momentum: -100, sentiment: 90, news: 0, policy: 0, profile: 0, valuation: 16 }
   },
   {
     ticker: "UMC", name: "United Microelectronics Corporation", sector: "Technology",
@@ -3546,8 +3546,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.13, payoutRatio: 37.5, marketCapB: 45 },
-    signals: { technical: 34, momentum: 100, sentiment: -12, news: 0, policy: 0, profile: 45, valuation: -1 }
+    fundamentals: { dividendYield: 2.22, payoutRatio: 37.5, marketCapB: 41 },
+    signals: { technical: 60, momentum: 70, sentiment: -12, news: 0, policy: 0, profile: 45, valuation: 4 }
   },
   {
     ticker: "ZM", name: "Zoom Communications, Inc.", sector: "Technology",
@@ -3558,7 +3558,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 28 },
-    signals: { technical: 42, momentum: -41, sentiment: 58, news: 0, policy: 0, profile: 35, valuation: 13 }
+    signals: { technical: 43, momentum: -54, sentiment: 58, news: 0, policy: 0, profile: 35, valuation: 15 }
   },
   {
     ticker: "DOV", name: "Dover Corporation", sector: "Industrials",
@@ -3568,8 +3568,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.01, payoutRatio: 24.3, marketCapB: 28 },
-    signals: { technical: -69, momentum: -45, sentiment: 71, news: 0, policy: 0, profile: 35, valuation: 6 }
+    fundamentals: { dividendYield: 1.0, payoutRatio: 24.3, marketCapB: 28 },
+    signals: { technical: -44, momentum: -35, sentiment: 71, news: 0, policy: 0, profile: 35, valuation: 7 }
   },
   {
     ticker: "RJF", name: "Raymond James Financial, Inc.", sector: "Financial Services",
@@ -3579,8 +3579,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.37, payoutRatio: 18.5, marketCapB: 31 },
-    signals: { technical: 37, momentum: -11, sentiment: 28, news: 0, policy: 0, profile: 35, valuation: 30 }
+    fundamentals: { dividendYield: 1.34, payoutRatio: 18.5, marketCapB: 30 },
+    signals: { technical: 44, momentum: -17, sentiment: 28, news: 0, policy: 0, profile: 35, valuation: 31 }
   },
   {
     ticker: "EXPE", name: "Expedia Group, Inc.", sector: "Consumer Cyclical",
@@ -3590,8 +3590,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.7, payoutRatio: 11.0, marketCapB: 34 },
-    signals: { technical: 47, momentum: 18, sentiment: 42, news: 0, policy: 0, profile: 10, valuation: 25 }
+    fundamentals: { dividendYield: 0.68, payoutRatio: 11.0, marketCapB: 34 },
+    signals: { technical: 46, momentum: 33, sentiment: 42, news: 0, policy: 0, profile: 10, valuation: 25 }
   },
   {
     ticker: "UAL", name: "United Airlines Holdings, Inc.", sector: "Industrials",
@@ -3601,8 +3601,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 34 },
-    signals: { technical: -45, momentum: 23, sentiment: 84, news: 0, policy: 0, profile: 15, valuation: 33 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 33 },
+    signals: { technical: -46, momentum: 27, sentiment: 84, news: 0, policy: 0, profile: 15, valuation: 34 }
   },
   {
     ticker: "EXR", name: "Extra Space Storage Inc.", sector: "Real Estate",
@@ -3612,8 +3612,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.48, payoutRatio: 143.1, marketCapB: 33 },
-    signals: { technical: -68, momentum: -4, sentiment: 43, news: 0, policy: 0, profile: 45, valuation: -33 }
+    fundamentals: { dividendYield: 4.32, payoutRatio: 143.1, marketCapB: 34 },
+    signals: { technical: -66, momentum: 14, sentiment: 43, news: 0, policy: 0, profile: 45, valuation: -34 }
   },
   {
     ticker: "RMD", name: "ResMed Inc.", sector: "Healthcare",
@@ -3623,8 +3623,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.06, payoutRatio: 23.0, marketCapB: 36 },
-    signals: { technical: 14, momentum: 55, sentiment: 35, news: 0, policy: 0, profile: 45, valuation: 2 }
+    fundamentals: { dividendYield: 1.04, payoutRatio: 23.0, marketCapB: 32 },
+    signals: { technical: 50, momentum: 18, sentiment: 35, news: 0, policy: 0, profile: 45, valuation: 7 }
   },
   {
     ticker: "OTIS", name: "Otis Worldwide Corporation", sector: "Industrials",
@@ -3634,8 +3634,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.42, payoutRatio: 43.7, marketCapB: 28 },
-    signals: { technical: -36, momentum: -33, sentiment: 34, news: 0, policy: 0, profile: 35, valuation: 10 }
+    fundamentals: { dividendYield: 2.36, payoutRatio: 43.7, marketCapB: 29 },
+    signals: { technical: -36, momentum: -16, sentiment: 34, news: 0, policy: 0, profile: 35, valuation: 9 }
   },
   {
     ticker: "EC", name: "Ecopetrol S.A.", sector: "Energy",
@@ -3645,8 +3645,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.67, payoutRatio: 36.1, marketCapB: 36 },
-    signals: { technical: 46, momentum: 57, sentiment: -32, news: 0, policy: 0, profile: 35, valuation: 34 }
+    fundamentals: { dividendYield: 3.76, payoutRatio: 36.1, marketCapB: 35 },
+    signals: { technical: 44, momentum: 58, sentiment: -32, news: 0, policy: 0, profile: 35, valuation: 34 }
   },
   {
     ticker: "DOW", name: "Dow Inc.", sector: "Basic Materials",
@@ -3656,8 +3656,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.1, payoutRatio: 700.0, marketCapB: 24 },
-    signals: { technical: -60, momentum: -77, sentiment: 20, news: 0, policy: 0, profile: -5, valuation: 5 }
+    fundamentals: { dividendYield: 4.16, payoutRatio: 700.0, marketCapB: 25 },
+    signals: { technical: -60, momentum: -65, sentiment: 20, news: 0, policy: 0, profile: -5, valuation: 3 }
   },
   {
     ticker: "TPR", name: "Tapestry, Inc.", sector: "Consumer Cyclical",
@@ -3667,8 +3667,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.66, payoutRatio: 22.0, marketCapB: 23 },
-    signals: { technical: -43, momentum: -80, sentiment: 60, news: 0, policy: 0, profile: 20, valuation: 20 }
+    fundamentals: { dividendYield: 1.57, payoutRatio: 22.0, marketCapB: 23 },
+    signals: { technical: -41, momentum: -70, sentiment: 60, news: 0, policy: 0, profile: 20, valuation: 20 }
   },
   {
     ticker: "EL", name: "The Estée Lauder Companies Inc.", sector: "Consumer Defensive",
@@ -3678,8 +3678,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.28, payoutRatio: 280.0, marketCapB: 39 },
-    signals: { technical: 48, momentum: 100, sentiment: 36, news: 0, policy: 0, profile: 5, valuation: -22 }
+    fundamentals: { dividendYield: 1.29, payoutRatio: 280.0, marketCapB: 39 },
+    signals: { technical: 46, momentum: 96, sentiment: 36, news: 0, policy: 0, profile: 5, valuation: -22 }
   },
   {
     ticker: "HUM", name: "Humana Inc.", sector: "Healthcare",
@@ -3689,8 +3689,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.86, payoutRatio: 33.5, marketCapB: 50 },
-    signals: { technical: 46, momentum: 100, sentiment: 52, news: 0, policy: 0, profile: 10, valuation: -13 }
+    fundamentals: { dividendYield: 0.85, payoutRatio: 33.5, marketCapB: 49 },
+    signals: { technical: 45, momentum: 100, sentiment: 52, news: 0, policy: 0, profile: 10, valuation: -12 }
   },
   {
     ticker: "TWLO", name: "Twilio Inc.", sector: "Technology",
@@ -3700,8 +3700,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 37 },
-    signals: { technical: 28, momentum: 83, sentiment: 66, news: 0, policy: 0, profile: 35, valuation: -46 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 31 },
+    signals: { technical: 60, momentum: 6, sentiment: 66, news: 0, policy: 0, profile: 35, valuation: -29 }
   },
   {
     ticker: "BIIB", name: "Biogen Inc.", sector: "Healthcare",
@@ -3712,7 +3712,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 37 },
-    signals: { technical: 41, momentum: 88, sentiment: 58, news: 0, policy: 0, profile: 10, valuation: 13 }
+    signals: { technical: 42, momentum: 100, sentiment: 61, news: 0, policy: 0, profile: 10, valuation: 13 }
   },
   {
     ticker: "XYL", name: "Xylem Inc.", sector: "Industrials",
@@ -3722,8 +3722,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.95, payoutRatio: 37.5, marketCapB: 21 },
-    signals: { technical: -10, momentum: -93, sentiment: 52, news: 0, policy: 0, profile: 35, valuation: 14 }
+    fundamentals: { dividendYield: 1.9, payoutRatio: 37.5, marketCapB: 21 },
+    signals: { technical: -37, momentum: -78, sentiment: 52, news: 0, policy: 0, profile: 35, valuation: 12 }
   },
   {
     ticker: "RYAAY", name: "Ryanair Holdings plc", sector: "Industrials",
@@ -3733,8 +3733,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.72, payoutRatio: 24.6, marketCapB: 28 },
-    signals: { technical: -40, momentum: -29, sentiment: 84, news: 0, policy: 0, profile: 35, valuation: 18 }
+    fundamentals: { dividendYield: 1.68, payoutRatio: 24.6, marketCapB: 27 },
+    signals: { technical: -40, momentum: -17, sentiment: 84, news: 0, policy: 0, profile: 35, valuation: 18 }
   },
   {
     ticker: "FE", name: "FirstEnergy Corp.", sector: "Utilities",
@@ -3744,8 +3744,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.02, payoutRatio: 96.3, marketCapB: 27 },
-    signals: { technical: -44, momentum: -23, sentiment: 50, news: 0, policy: 0, profile: 10, valuation: 12 }
+    fundamentals: { dividendYield: 3.97, payoutRatio: 87.9, marketCapB: 27 },
+    signals: { technical: -44, momentum: -12, sentiment: 50, news: 0, policy: 0, profile: 10, valuation: 11 }
   },
   {
     ticker: "KHC", name: "The Kraft Heinz Company", sector: "Consumer Defensive",
@@ -3755,8 +3755,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Historical records", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 6.71, payoutRatio: 73.1, marketCapB: 28 },
-    signals: { technical: 45, momentum: -1, sentiment: -2, news: 0, policy: 0, profile: -5, valuation: 25 }
+    fundamentals: { dividendYield: 6.69, payoutRatio: 73.1, marketCapB: 29 },
+    signals: { technical: 44, momentum: 15, sentiment: -2, news: 0, policy: 0, profile: -5, valuation: 24 }
   },
   {
     ticker: "CNC", name: "Centene Corporation", sector: "Healthcare",
@@ -3767,7 +3767,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 34 },
-    signals: { technical: 49, momentum: 72, sentiment: 31, news: 0, policy: 0, profile: 10, valuation: 22 }
+    signals: { technical: 47, momentum: 74, sentiment: 31, news: 0, policy: 0, profile: 10, valuation: 22 }
   },
   {
     ticker: "FOX", name: "Fox Corporation", sector: "Communication Services",
@@ -3777,8 +3777,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.03, payoutRatio: 14.6, marketCapB: 24 },
-    signals: { technical: 44, momentum: -20, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: 31 }
+    fundamentals: { dividendYield: 1.01, payoutRatio: 14.6, marketCapB: 24 },
+    signals: { technical: 44, momentum: -16, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: 32 }
   },
   {
     ticker: "FOXA", name: "Fox Corporation", sector: "Communication Services",
@@ -3788,8 +3788,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.92, payoutRatio: 14.6, marketCapB: 27 },
-    signals: { technical: 45, momentum: -16, sentiment: 58, news: 0, policy: 0, profile: 15, valuation: 26 }
+    fundamentals: { dividendYield: 0.9, payoutRatio: 14.6, marketCapB: 27 },
+    signals: { technical: 44, momentum: -12, sentiment: 58, news: 0, policy: 0, profile: 15, valuation: 27 }
   },
   {
     ticker: "SYF", name: "Synchrony Financial", sector: "Financial Services",
@@ -3799,8 +3799,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.8, payoutRatio: 12.9, marketCapB: 25 },
-    signals: { technical: 38, momentum: -17, sentiment: 52, news: 0, policy: 0, profile: 45, valuation: 37 }
+    fundamentals: { dividendYield: 1.77, payoutRatio: 12.9, marketCapB: 24 },
+    signals: { technical: 42, momentum: -12, sentiment: 52, news: 0, policy: 0, profile: 45, valuation: 38 }
   },
   {
     ticker: "FN", name: "Fabrinet", sector: "Technology",
@@ -3810,8 +3810,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: -53, momentum: -100, sentiment: 61, news: 0, policy: 0, profile: 15, valuation: 12 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
+    signals: { technical: -48, momentum: -100, sentiment: 61, news: 0, policy: 0, profile: 15, valuation: 16 }
   },
   {
     ticker: "DG", name: "Dollar General Corporation", sector: "Consumer Defensive",
@@ -3821,8 +3821,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.87, payoutRatio: 30.6, marketCapB: 29 },
-    signals: { technical: 47, momentum: 22, sentiment: 34, news: 0, policy: 0, profile: 20, valuation: 13 }
+    fundamentals: { dividendYield: 1.81, payoutRatio: 30.6, marketCapB: 29 },
+    signals: { technical: 47, momentum: 33, sentiment: 34, news: 0, policy: 0, profile: 20, valuation: 12 }
   },
   {
     ticker: "CINF", name: "Cincinnati Financial Corporation", sector: "Financial Services",
@@ -3832,8 +3832,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.1, payoutRatio: 21.6, marketCapB: 28 },
-    signals: { technical: 12, momentum: 18, sentiment: 25, news: 0, policy: 0, profile: 45, valuation: 0 }
+    fundamentals: { dividendYield: 2.07, payoutRatio: 21.6, marketCapB: 28 },
+    signals: { technical: 12, momentum: 31, sentiment: 25, news: 0, policy: 0, profile: 45, valuation: 0 }
   },
   {
     ticker: "PHG", name: "Koninklijke Philips N.V.", sector: "Healthcare",
@@ -3843,8 +3843,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.75, payoutRatio: 75.5, marketCapB: 27 },
-    signals: { technical: -42, momentum: -10, sentiment: 20, news: 0, policy: 0, profile: 25, valuation: 17 }
+    fundamentals: { dividendYield: 3.74, payoutRatio: 75.5, marketCapB: 26 },
+    signals: { technical: -40, momentum: -6, sentiment: 20, news: 0, policy: 0, profile: 25, valuation: 17 }
   },
   {
     ticker: "AWK", name: "American Water Works Company, Inc.", sector: "Utilities",
@@ -3854,8 +3854,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.54, payoutRatio: 58.5, marketCapB: 28 },
-    signals: { technical: 39, momentum: 16, sentiment: 19, news: 0, policy: 0, profile: 45, valuation: -4 }
+    fundamentals: { dividendYield: 2.52, payoutRatio: 59.6, marketCapB: 29 },
+    signals: { technical: 36, momentum: 32, sentiment: 19, news: 0, policy: 0, profile: 45, valuation: -6 }
   },
   {
     ticker: "CTSH", name: "Cognizant Technology Solutions Corporation", sector: "Technology",
@@ -3865,8 +3865,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.99, payoutRatio: 27.5, marketCapB: 30 },
-    signals: { technical: 44, momentum: 41, sentiment: 40, news: 0, policy: 0, profile: 35, valuation: 30 }
+    fundamentals: { dividendYield: 2.11, payoutRatio: 27.5, marketCapB: 29 },
+    signals: { technical: 49, momentum: 71, sentiment: 40, news: 0, policy: 0, profile: 35, valuation: 28 }
   },
   {
     ticker: "VRSN", name: "VeriSign, Inc.", sector: "Technology",
@@ -3876,8 +3876,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.06, payoutRatio: 34.4, marketCapB: 27 },
-    signals: { technical: 41, momentum: 18, sentiment: 50, news: 0, policy: 0, profile: 45, valuation: -23 }
+    fundamentals: { dividendYield: 1.06, payoutRatio: 34.4, marketCapB: 28 },
+    signals: { technical: 39, momentum: 26, sentiment: 50, news: 0, policy: 0, profile: 45, valuation: -24 }
   },
   {
     ticker: "BNTX", name: "BioNTech SE", sector: "Healthcare",
@@ -3888,7 +3888,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 22 },
-    signals: { technical: 38, momentum: -51, sentiment: 64, news: 0, policy: 0, profile: -15, valuation: 0 }
+    signals: { technical: 39, momentum: -54, sentiment: 64, news: 0, policy: 0, profile: -15, valuation: 0 }
   },
   {
     ticker: "FTAI", name: "FTAI Aviation Ltd.", sector: "Industrials",
@@ -3898,8 +3898,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.2, payoutRatio: 32.6, marketCapB: 20 },
-    signals: { technical: -35, momentum: -83, sentiment: 82, news: 0, policy: 0, profile: 20, valuation: 16 }
+    fundamentals: { dividendYield: 1.02, payoutRatio: 32.6, marketCapB: 19 },
+    signals: { technical: -35, momentum: -93, sentiment: 82, news: 0, policy: 0, profile: 10, valuation: 19 }
   },
   {
     ticker: "LYB", name: "LyondellBasell Industries N.V.", sector: "Basic Materials",
@@ -3909,8 +3909,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.11, payoutRatio: 748.6, marketCapB: 21 },
-    signals: { technical: -34, momentum: -65, sentiment: 5, news: 0, policy: 0, profile: -5, valuation: 29 }
+    fundamentals: { dividendYield: 4.22, payoutRatio: 748.6, marketCapB: 22 },
+    signals: { technical: -38, momentum: -51, sentiment: 5, news: 0, policy: 0, profile: -5, valuation: 27 }
   },
   {
     ticker: "FIS", name: "Fidelity National Information Services, Inc.", sector: "Technology",
@@ -3920,8 +3920,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.82, payoutRatio: 25.8, marketCapB: 19 },
-    signals: { technical: -32, momentum: -88, sentiment: 38, news: 0, policy: 0, profile: 35, valuation: 43 }
+    fundamentals: { dividendYield: 4.72, payoutRatio: 25.8, marketCapB: 20 },
+    signals: { technical: -31, momentum: -78, sentiment: 38, news: 0, policy: 0, profile: 35, valuation: 42 }
   },
   {
     ticker: "PPG", name: "PPG Industries, Inc.", sector: "Basic Materials",
@@ -3931,8 +3931,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.5, payoutRatio: 40.3, marketCapB: 27 },
-    signals: { technical: -66, momentum: 16, sentiment: 44, news: 0, policy: 0, profile: 25, valuation: 18 }
+    fundamentals: { dividendYield: 2.47, payoutRatio: 40.3, marketCapB: 26 },
+    signals: { technical: -67, momentum: 31, sentiment: 44, news: 0, policy: 0, profile: 25, valuation: 18 }
   },
   {
     ticker: "KEY", name: "KeyCorp", sector: "Financial Services",
@@ -3942,8 +3942,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.87, payoutRatio: 47.7, marketCapB: 23 },
-    signals: { technical: -44, momentum: -28, sentiment: 52, news: 0, policy: 0, profile: 45, valuation: 30 }
+    fundamentals: { dividendYield: 3.82, payoutRatio: 47.7, marketCapB: 22 },
+    signals: { technical: -38, momentum: -26, sentiment: 52, news: 0, policy: 0, profile: 45, valuation: 31 }
   },
   {
     ticker: "DXCM", name: "DexCom, Inc.", sector: "Healthcare",
@@ -3953,8 +3953,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 30 },
-    signals: { technical: 41, momentum: 78, sentiment: 83, news: 0, policy: 0, profile: 35, valuation: -16 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 31 },
+    signals: { technical: 37, momentum: 100, sentiment: 83, news: 0, policy: 0, profile: 35, valuation: -19 }
   },
   {
     ticker: "JBHT", name: "J.B. Hunt Transport Services, Inc.", sector: "Industrials",
@@ -3965,7 +3965,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.81, payoutRatio: 25.2, marketCapB: 21 },
-    signals: { technical: -35, momentum: -58, sentiment: 50, news: 0, policy: 0, profile: 15, valuation: -7 }
+    signals: { technical: -38, momentum: -42, sentiment: 50, news: 0, policy: 0, profile: 15, valuation: -6 }
   },
   {
     ticker: "TEAM", name: "Atlassian Corporation", sector: "Technology",
@@ -3975,8 +3975,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 52 },
-    signals: { technical: 48, momentum: 100, sentiment: 72, news: 0, policy: 0, profile: -15, valuation: -30 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 48 },
+    signals: { technical: 47, momentum: 100, sentiment: 72, news: 0, policy: 0, profile: -15, valuation: -24 }
   },
   {
     ticker: "ULTA", name: "Ulta Beauty, Inc.", sector: "Consumer Cyclical",
@@ -3986,8 +3986,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 28 },
-    signals: { technical: 20, momentum: 50, sentiment: 59, news: 0, policy: 0, profile: 15, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 27 },
+    signals: { technical: 43, momentum: 62, sentiment: 59, news: 0, policy: 0, profile: 15, valuation: 0 }
   },
   {
     ticker: "ALB", name: "Albemarle Corporation", sector: "Basic Materials",
@@ -3997,8 +3997,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.69, payoutRatio: 600.0, marketCapB: 11 },
-    signals: { technical: -39, momentum: -100, sentiment: 56, news: 0, policy: 0, profile: 10, valuation: 33 }
+    fundamentals: { dividendYield: 1.76, payoutRatio: 600.0, marketCapB: 11 },
+    signals: { technical: -38, momentum: -100, sentiment: 56, news: 0, policy: 0, profile: 10, valuation: 34 }
   },
   {
     ticker: "FSLR", name: "First Solar, Inc.", sector: "Technology",
@@ -4008,8 +4008,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 19 },
-    signals: { technical: -36, momentum: -77, sentiment: 60, news: 0, policy: 0, profile: 25, valuation: 37 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 18 },
+    signals: { technical: -35, momentum: -80, sentiment: 60, news: 0, policy: 0, profile: 25, valuation: 38 }
   },
   {
     ticker: "CHD", name: "Church & Dwight Co., Inc.", sector: "Consumer Defensive",
@@ -4019,8 +4019,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.17, payoutRatio: 38.6, marketCapB: 25 },
-    signals: { technical: 41, momentum: 12, sentiment: 36, news: 0, policy: 0, profile: 35, valuation: -18 }
+    fundamentals: { dividendYield: 1.16, payoutRatio: 38.6, marketCapB: 26 },
+    signals: { technical: 39, momentum: 39, sentiment: 36, news: 0, policy: 0, profile: 35, valuation: -20 }
   },
   {
     ticker: "PHM", name: "PulteGroup, Inc.", sector: "Consumer Cyclical",
@@ -4030,8 +4030,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.87, payoutRatio: 11.1, marketCapB: 24 },
-    signals: { technical: -43, momentum: -8, sentiment: 45, news: 0, policy: 0, profile: 25, valuation: 20 }
+    fundamentals: { dividendYield: 0.84, payoutRatio: 11.1, marketCapB: 24 },
+    signals: { technical: -42, momentum: 10, sentiment: 45, news: 0, policy: 0, profile: 25, valuation: 20 }
   },
   {
     ticker: "AFRM", name: "Affirm Holdings, Inc.", sector: "Financial Services",
@@ -4041,8 +4041,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 25 },
-    signals: { technical: 44, momentum: 13, sentiment: 72, news: 0, policy: 0, profile: 35, valuation: 15 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 24 },
+    signals: { technical: 42, momentum: 4, sentiment: 72, news: 0, policy: 0, profile: 35, valuation: 17 }
   },
   {
     ticker: "ZS", name: "Zscaler, Inc.", sector: "Technology",
@@ -4052,8 +4052,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 40 },
-    signals: { technical: 50, momentum: 100, sentiment: 69, news: 0, policy: 0, profile: -15, valuation: -72 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 38 },
+    signals: { technical: 55, momentum: 100, sentiment: 69, news: 0, policy: 0, profile: -15, valuation: -65 }
   },
   {
     ticker: "TSN", name: "Tyson Foods, Inc.", sector: "Consumer Defensive",
@@ -4063,8 +4063,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.69, payoutRatio: 125.3, marketCapB: 20 },
-    signals: { technical: -38, momentum: -61, sentiment: 23, news: 0, policy: 0, profile: 10, valuation: 16 }
+    fundamentals: { dividendYield: 3.63, payoutRatio: 125.3, marketCapB: 20 },
+    signals: { technical: -43, momentum: -70, sentiment: 23, news: 0, policy: 0, profile: 20, valuation: 15 }
   },
   {
     ticker: "TROW", name: "T. Rowe Price Group, Inc.", sector: "Financial Services",
@@ -4074,8 +4074,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.0, payoutRatio: 51.6, marketCapB: 23 },
-    signals: { technical: 33, momentum: -12, sentiment: -18, news: 0, policy: 0, profile: 45, valuation: 28 }
+    fundamentals: { dividendYield: 4.88, payoutRatio: 51.6, marketCapB: 22 },
+    signals: { technical: 40, momentum: -14, sentiment: -18, news: 0, policy: 0, profile: 45, valuation: 29 }
   },
   {
     ticker: "WIT", name: "Wipro Limited", sector: "Technology",
@@ -4085,8 +4085,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.21, payoutRatio: 60.6, marketCapB: 21 },
-    signals: { technical: -34, momentum: -9, sentiment: -57, news: 0, policy: 0, profile: 35, valuation: 17 }
+    fundamentals: { dividendYield: 4.11, payoutRatio: 60.6, marketCapB: 21 },
+    signals: { technical: -60, momentum: 14, sentiment: -57, news: 0, policy: 0, profile: 35, valuation: 16 }
   },
   {
     ticker: "NTAP", name: "NetApp, Inc.", sector: "Technology",
@@ -4096,8 +4096,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.93, payoutRatio: 29.3, marketCapB: 43 },
-    signals: { technical: 40, momentum: 100, sentiment: 36, news: 0, policy: 0, profile: 25, valuation: 1 }
+    fundamentals: { dividendYield: 0.95, payoutRatio: 29.3, marketCapB: 39 },
+    signals: { technical: 35, momentum: 100, sentiment: 36, news: 0, policy: 0, profile: 25, valuation: 7 }
   },
   {
     ticker: "NMR", name: "Nomura Holdings, Inc.", sector: "Financial Services",
@@ -4107,8 +4107,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.56, payoutRatio: 36.9, marketCapB: 28 },
-    signals: { technical: 38, momentum: 48, sentiment: 100, news: 0, policy: 0, profile: 20, valuation: 9 }
+    fundamentals: { dividendYield: 3.42, payoutRatio: 16.9, marketCapB: 27 },
+    signals: { technical: 39, momentum: 50, sentiment: 100, news: 0, policy: 0, profile: 20, valuation: 10 }
   },
   {
     ticker: "RL", name: "Ralph Lauren Corporation", sector: "Consumer Cyclical",
@@ -4118,8 +4118,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.03, payoutRatio: 23.5, marketCapB: 24 },
-    signals: { technical: -45, momentum: 12, sentiment: 72, news: 0, policy: 0, profile: 35, valuation: 2 }
+    fundamentals: { dividendYield: 1.0, payoutRatio: 23.5, marketCapB: 24 },
+    signals: { technical: -43, momentum: 22, sentiment: 72, news: 0, policy: 0, profile: 35, valuation: 3 }
   },
   {
     ticker: "OMC", name: "Omnicom Group Inc.", sector: "Communication Services",
@@ -4129,8 +4129,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.11, payoutRatio: 323.2, marketCapB: 23 },
-    signals: { technical: 44, momentum: -5, sentiment: 46, news: 0, policy: 0, profile: 20, valuation: 38 }
+    fundamentals: { dividendYield: 3.95, payoutRatio: 323.2, marketCapB: 23 },
+    signals: { technical: 45, momentum: 4, sentiment: 46, news: 0, policy: 0, profile: 20, valuation: 38 }
   },
   {
     ticker: "TEF", name: "TEF", sector: "Other",
@@ -4151,8 +4151,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.4, payoutRatio: 37.9, marketCapB: 20 },
-    signals: { technical: -44, momentum: -33, sentiment: -28, news: 0, policy: 0, profile: 20, valuation: 10 }
+    fundamentals: { dividendYield: 2.34, payoutRatio: 37.9, marketCapB: 21 },
+    signals: { technical: -41, momentum: -7, sentiment: -28, news: 0, policy: 0, profile: 20, valuation: 10 }
   },
   {
     ticker: "FUTU", name: "Futu Holdings Limited", sector: "Financial Services",
@@ -4162,8 +4162,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.55, payoutRatio: 25.8, marketCapB: 14 },
-    signals: { technical: -36, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: 35 }
+    fundamentals: { dividendYield: 2.56, payoutRatio: 25.8, marketCapB: 14 },
+    signals: { technical: -33, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: 35, valuation: 36 }
   },
   {
     ticker: "ENTG", name: "Entegris, Inc.", sector: "Technology",
@@ -4173,8 +4173,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.25, payoutRatio: 20.0, marketCapB: 24 },
-    signals: { technical: 35, momentum: 18, sentiment: 66, news: 0, policy: 0, profile: 15, valuation: -34 }
+    fundamentals: { dividendYield: 0.25, payoutRatio: 20.0, marketCapB: 23 },
+    signals: { technical: 31, momentum: 15, sentiment: 66, news: 0, policy: 0, profile: 25, valuation: -22 }
   },
   {
     ticker: "WSM", name: "Williams-Sonoma, Inc.", sector: "Consumer Cyclical",
@@ -4184,8 +4184,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.22, payoutRatio: 29.1, marketCapB: 31 },
-    signals: { technical: 39, momentum: 100, sentiment: 39, news: 0, policy: 0, profile: 35, valuation: -14 }
+    fundamentals: { dividendYield: 1.17, payoutRatio: 29.1, marketCapB: 30 },
+    signals: { technical: 43, momentum: 100, sentiment: 39, news: 0, policy: 0, profile: 35, valuation: -12 }
   },
   {
     ticker: "DGX", name: "Quest Diagnostics Incorporated", sector: "Healthcare",
@@ -4195,8 +4195,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.4, payoutRatio: 25.1, marketCapB: 28 },
-    signals: { technical: 9, momentum: 81, sentiment: 47, news: 0, policy: 0, profile: 25, valuation: -3 }
+    fundamentals: { dividendYield: 1.36, payoutRatio: 25.1, marketCapB: 28 },
+    signals: { technical: 33, momentum: 88, sentiment: 47, news: 0, policy: 0, profile: 25, valuation: -2 }
   },
   {
     ticker: "MDB", name: "MongoDB, Inc.", sector: "Technology",
@@ -4206,8 +4206,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 31 },
-    signals: { technical: 47, momentum: 100, sentiment: 70, news: 0, policy: 0, profile: 10, valuation: -86 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 28 },
+    signals: { technical: 42, momentum: 83, sentiment: 70, news: 0, policy: 0, profile: 10, valuation: -70 }
   },
   {
     ticker: "ASTS", name: "AST SpaceMobile, Inc.", sector: "Technology",
@@ -4217,8 +4217,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 17 },
-    signals: { technical: -52, momentum: -100, sentiment: 23, news: 0, policy: 0, profile: 0, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
+    signals: { technical: -48, momentum: -100, sentiment: 23, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "CHTR", name: "Charter Communications, Inc.", sector: "Communication Services",
@@ -4229,7 +4229,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 14 },
-    signals: { technical: -39, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 53 }
+    signals: { technical: -38, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 53 }
   },
   {
     ticker: "SOFI", name: "SoFi Technologies, Inc.", sector: "Financial Services",
@@ -4239,8 +4239,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 23 },
-    signals: { technical: -41, momentum: 1, sentiment: 24, news: 0, policy: 0, profile: 25, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 21 },
+    signals: { technical: -39, momentum: -10, sentiment: 24, news: 0, policy: 0, profile: 25, valuation: 4 }
   },
   {
     ticker: "CHRW", name: "C.H. Robinson Worldwide, Inc.", sector: "Industrials",
@@ -4250,8 +4250,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.98, payoutRatio: 47.9, marketCapB: 15 },
-    signals: { technical: -43, momentum: -100, sentiment: 70, news: 0, policy: 0, profile: 10, valuation: 8 }
+    fundamentals: { dividendYield: 1.98, payoutRatio: 47.9, marketCapB: 14 },
+    signals: { technical: -45, momentum: -93, sentiment: 70, news: 0, policy: 0, profile: 10, valuation: 10 }
   },
   {
     ticker: "ILMN", name: "Illumina, Inc.", sector: "Healthcare",
@@ -4261,8 +4261,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 44 },
-    signals: { technical: 38, momentum: 100, sentiment: 24, news: 0, policy: 0, profile: 25, valuation: -82 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 35 },
+    signals: { technical: 35, momentum: 100, sentiment: 24, news: 0, policy: 0, profile: 25, valuation: -53 }
   },
   {
     ticker: "AS", name: "Amer Sports, Inc.", sector: "Consumer Cyclical",
@@ -4273,7 +4273,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 17 },
-    signals: { technical: -36, momentum: -79, sentiment: 85, news: 0, policy: 0, profile: 5, valuation: 6 }
+    signals: { technical: -36, momentum: -60, sentiment: 85, news: 0, policy: 0, profile: 5, valuation: 6 }
   },
   {
     ticker: "DKS", name: "DICK'S Sporting Goods, Inc.", sector: "Consumer Cyclical",
@@ -4283,8 +4283,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.67, payoutRatio: 53.5, marketCapB: 14 },
-    signals: { technical: -35, momentum: -100, sentiment: 35, news: 0, policy: 0, profile: 10, valuation: 27 }
+    fundamentals: { dividendYield: 3.52, payoutRatio: 53.5, marketCapB: 14 },
+    signals: { technical: -37, momentum: -100, sentiment: 35, news: 0, policy: 0, profile: 10, valuation: 27 }
   },
   {
     ticker: "BURL", name: "Burlington Stores, Inc.", sector: "Consumer Cyclical",
@@ -4295,7 +4295,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
-    signals: { technical: -42, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: -10, valuation: 6 }
+    signals: { technical: -42, momentum: -92, sentiment: 66, news: 0, policy: 0, profile: -10, valuation: 7 }
   },
   {
     ticker: "GPN", name: "Global Payments Inc.", sector: "Industrials",
@@ -4305,8 +4305,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.2, payoutRatio: 46.9, marketCapB: 23 },
-    signals: { technical: 42, momentum: 38, sentiment: 39, news: 0, policy: 0, profile: -5, valuation: 44 }
+    fundamentals: { dividendYield: 1.17, payoutRatio: 46.9, marketCapB: 25 },
+    signals: { technical: 20, momentum: 93, sentiment: 39, news: 0, policy: 0, profile: -5, valuation: 42 }
   },
   {
     ticker: "RIVN", name: "Rivian Automotive, Inc.", sector: "Consumer Cyclical",
@@ -4317,7 +4317,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 17 },
-    signals: { technical: -20, momentum: -100, sentiment: 24, news: 0, policy: 0, profile: -25, valuation: 0 }
+    signals: { technical: -18, momentum: -82, sentiment: 24, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "SNA", name: "Snap-on Incorporated", sector: "Industrials",
@@ -4327,8 +4327,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.74, payoutRatio: 50.7, marketCapB: 19 },
-    signals: { technical: -35, momentum: -41, sentiment: 27, news: 0, policy: 0, profile: 25, valuation: 8 }
+    fundamentals: { dividendYield: 2.72, payoutRatio: 50.7, marketCapB: 18 },
+    signals: { technical: -34, momentum: -29, sentiment: 27, news: 0, policy: 0, profile: 25, valuation: 8 }
   },
   {
     ticker: "EXPD", name: "Expeditors International of Washington, Inc.", sector: "Industrials",
@@ -4339,7 +4339,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.82, payoutRatio: 23.0, marketCapB: 26 },
-    signals: { technical: 38, momentum: 93, sentiment: -8, news: 0, policy: 0, profile: 15, valuation: -13 }
+    signals: { technical: 35, momentum: 100, sentiment: -8, news: 0, policy: 0, profile: 15, valuation: -13 }
   },
   {
     ticker: "PKG", name: "Packaging Corporation of America", sector: "Consumer Cyclical",
@@ -4349,8 +4349,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.42, payoutRatio: 68.3, marketCapB: 23 },
-    signals: { technical: 36, momentum: 33, sentiment: 55, news: 0, policy: 0, profile: 25, valuation: 6 }
+    fundamentals: { dividendYield: 2.36, payoutRatio: 68.3, marketCapB: 23 },
+    signals: { technical: 37, momentum: 40, sentiment: 55, news: 0, policy: 0, profile: 25, valuation: 6 }
   },
   {
     ticker: "INCY", name: "Incyte Corporation", sector: "Healthcare",
@@ -4361,7 +4361,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 24 },
-    signals: { technical: 40, momentum: 45, sentiment: 38, news: 0, policy: 0, profile: 35, valuation: 19 }
+    signals: { technical: 38, momentum: 64, sentiment: 41, news: 0, policy: 0, profile: 15, valuation: 18 }
   },
   {
     ticker: "LNT", name: "Alliant Energy Corporation", sector: "Utilities",
@@ -4371,8 +4371,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.08, payoutRatio: 66.0, marketCapB: 18 },
-    signals: { technical: -42, momentum: -37, sentiment: 50, news: 0, policy: 0, profile: 25, valuation: 2 }
+    fundamentals: { dividendYield: 3.03, payoutRatio: 66.0, marketCapB: 19 },
+    signals: { technical: -68, momentum: -22, sentiment: 50, news: 0, policy: 0, profile: 25, valuation: 1 }
   },
   {
     ticker: "HPQ", name: "HP Inc.", sector: "Technology",
@@ -4382,8 +4382,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits (partial)", "BDS Movement", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.7, payoutRatio: 45.4, marketCapB: 29 },
-    signals: { technical: 40, momentum: 100, sentiment: -20, news: 0, policy: 0, profile: 20, valuation: 29 }
+    fundamentals: { dividendYield: 3.77, payoutRatio: 45.4, marketCapB: 25 },
+    signals: { technical: 39, momentum: 100, sentiment: -20, news: 0, policy: 0, profile: 20, valuation: 33 }
   },
   {
     ticker: "DD", name: "DuPont de Nemours, Inc.", sector: "Basic Materials",
@@ -4393,8 +4393,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.73, payoutRatio: 81.5, marketCapB: 19 },
-    signals: { technical: -47, momentum: -18, sentiment: 70, news: 0, policy: 0, profile: 10, valuation: 7 }
+    fundamentals: { dividendYield: 1.71, payoutRatio: 81.5, marketCapB: 19 },
+    signals: { technical: -45, momentum: -7, sentiment: 70, news: 0, policy: 0, profile: 10, valuation: 7 }
   },
   {
     ticker: "LUV", name: "Southwest Airlines Co.", sector: "Industrials",
@@ -4404,8 +4404,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.66, payoutRatio: 35.1, marketCapB: 21 },
-    signals: { technical: -45, momentum: 19, sentiment: 28, news: 0, policy: 0, profile: 20, valuation: 28 }
+    fundamentals: { dividendYield: 1.65, payoutRatio: 35.1, marketCapB: 21 },
+    signals: { technical: -42, momentum: 16, sentiment: 28, news: 0, policy: 0, profile: 20, valuation: 29 }
   },
   {
     ticker: "CF", name: "CF Industries Holdings, Inc.", sector: "Basic Materials",
@@ -4415,8 +4415,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.0, payoutRatio: 14.8, marketCapB: 18 },
-    signals: { technical: 45, momentum: -35, sentiment: 9, news: 0, policy: 0, profile: 35, valuation: 28 }
+    fundamentals: { dividendYield: 2.03, payoutRatio: 14.8, marketCapB: 19 },
+    signals: { technical: 42, momentum: -25, sentiment: 9, news: 0, policy: 0, profile: 35, valuation: 27 }
   },
   {
     ticker: "DLTR", name: "Dollar Tree, Inc.", sector: "Consumer Defensive",
@@ -4427,7 +4427,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 25 },
-    signals: { technical: 43, momentum: 100, sentiment: 24, news: 0, policy: 0, profile: 0, valuation: 9 }
+    signals: { technical: 45, momentum: 100, sentiment: 24, news: 0, policy: 0, profile: 0, valuation: 9 }
   },
   {
     ticker: "GIS", name: "General Mills, Inc.", sector: "Consumer Defensive",
@@ -4437,8 +4437,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 7.38, payoutRatio: 59.4, marketCapB: 18 },
-    signals: { technical: -34, momentum: -36, sentiment: -2, news: 0, policy: 0, profile: -25, valuation: 28 }
+    fundamentals: { dividendYield: 7.32, payoutRatio: 59.4, marketCapB: 18 },
+    signals: { technical: -36, momentum: -15, sentiment: -2, news: 0, policy: 0, profile: -25, valuation: 27 }
   },
   {
     ticker: "FFIV", name: "F5, Inc.", sector: "Technology",
@@ -4448,8 +4448,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 21 },
-    signals: { technical: 62, momentum: 18, sentiment: 19, news: 0, policy: 0, profile: 35, valuation: 5 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 19 },
+    signals: { technical: 60, momentum: -10, sentiment: 12, news: 0, policy: 0, profile: 25, valuation: 9 }
   },
   {
     ticker: "BEKE", name: "KE Holdings Inc.", sector: "Real Estate",
@@ -4459,8 +4459,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.59, payoutRatio: 46.4, marketCapB: 19 },
-    signals: { technical: 43, momentum: -15, sentiment: 80, news: 0, policy: 0, profile: 15, valuation: 18 }
+    fundamentals: { dividendYield: 1.58, payoutRatio: 46.4, marketCapB: 19 },
+    signals: { technical: 43, momentum: -11, sentiment: 80, news: 0, policy: 0, profile: 15, valuation: 18 }
   },
   {
     ticker: "MRNA", name: "Moderna, Inc.", sector: "Healthcare",
@@ -4470,8 +4470,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 89 },
-    signals: { technical: 51, momentum: 100, sentiment: 4, news: 0, policy: 0, profile: -15, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 88 },
+    signals: { technical: 50, momentum: 100, sentiment: 4, news: 0, policy: 0, profile: -15, valuation: 0 }
   },
   {
     ticker: "TSCO", name: "Tractor Supply Company", sector: "Consumer Cyclical",
@@ -4481,8 +4481,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.04, payoutRatio: 49.0, marketCapB: 18 },
-    signals: { technical: -37, momentum: -24, sentiment: 45, news: 0, policy: 0, profile: 0, valuation: 11 }
+    fundamentals: { dividendYield: 2.85, payoutRatio: 49.0, marketCapB: 18 },
+    signals: { technical: -35, momentum: 0, sentiment: 45, news: 0, policy: 0, profile: 0, valuation: 10 }
   },
   {
     ticker: "CG", name: "The Carlyle Group Inc.", sector: "Financial Services",
@@ -4492,8 +4492,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.58, payoutRatio: 144.3, marketCapB: 14 },
-    signals: { technical: -46, momentum: -82, sentiment: 38, news: 0, policy: 0, profile: 25, valuation: 35 }
+    fundamentals: { dividendYield: 3.45, payoutRatio: 144.3, marketCapB: 14 },
+    signals: { technical: -42, momentum: -83, sentiment: 38, news: 0, policy: 0, profile: 25, valuation: 35 }
   },
   {
     ticker: "IOT", name: "Samsara Inc.", sector: "Technology",
@@ -4504,7 +4504,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 24 },
-    signals: { technical: 44, momentum: 99, sentiment: 73, news: 0, policy: 0, profile: 10, valuation: -71 }
+    signals: { technical: 41, momentum: 100, sentiment: 73, news: 0, policy: 0, profile: 10, valuation: -70 }
   },
   {
     ticker: "LI", name: "Li Auto Inc.", sector: "Consumer Cyclical",
@@ -4515,7 +4515,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -36, momentum: -100, sentiment: 29, news: 0, policy: 0, profile: -25, valuation: -26 }
+    signals: { technical: -32, momentum: -100, sentiment: 29, news: 0, policy: 0, profile: -25, valuation: -25 }
   },
   {
     ticker: "VTRS", name: "Viatris Inc.", sector: "Healthcare",
@@ -4525,8 +4525,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.56, payoutRatio: 960.0, marketCapB: 22 },
-    signals: { technical: 36, momentum: 69, sentiment: 50, news: 0, policy: 0, profile: -5, valuation: 38 }
+    fundamentals: { dividendYield: 2.5, payoutRatio: 960.0, marketCapB: 22 },
+    signals: { technical: 37, momentum: 68, sentiment: 50, news: 0, policy: 0, profile: -5, valuation: 38 }
   },
   {
     ticker: "AMCR", name: "Amcor plc", sector: "Consumer Cyclical",
@@ -4536,8 +4536,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.69, payoutRatio: 108.7, marketCapB: 22 },
-    signals: { technical: 12, momentum: 60, sentiment: 50, news: 0, policy: 0, profile: 20, valuation: 27 }
+    fundamentals: { dividendYield: 5.52, payoutRatio: 108.7, marketCapB: 22 },
+    signals: { technical: 12, momentum: 75, sentiment: 50, news: 0, policy: 0, profile: 20, valuation: 27 }
   },
   {
     ticker: "CDW", name: "CDW Corporation", sector: "Technology",
@@ -4547,8 +4547,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.55, payoutRatio: 30.2, marketCapB: 21 },
-    signals: { technical: 46, momentum: 48, sentiment: 60, news: 0, policy: 0, profile: 5, valuation: 18 }
+    fundamentals: { dividendYield: 1.53, payoutRatio: 30.2, marketCapB: 19 },
+    signals: { technical: 53, momentum: 15, sentiment: 60, news: 0, policy: 0, profile: -5, valuation: 23 }
   },
   {
     ticker: "YUMC", name: "Yum China Holdings, Inc.", sector: "Consumer Cyclical",
@@ -4558,8 +4558,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company separation disclosure", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.61, payoutRatio: 38.8, marketCapB: 15 },
-    signals: { technical: -38, momentum: -47, sentiment: 82, news: 0, policy: 0, profile: 15, valuation: 19 }
+    fundamentals: { dividendYield: 2.57, payoutRatio: 38.8, marketCapB: 15 },
+    signals: { technical: -37, momentum: -28, sentiment: 82, news: 0, policy: 0, profile: 15, valuation: 19 }
   },
   {
     ticker: "HOLX", name: "Hologic, Inc.", sector: "Healthcare",
@@ -4580,8 +4580,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 14 },
-    signals: { technical: -51, momentum: -100, sentiment: 82, news: 0, policy: 0, profile: 0, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
+    signals: { technical: -46, momentum: -100, sentiment: 82, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "ESS", name: "Essex Property Trust, Inc.", sector: "Real Estate",
@@ -4591,8 +4591,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.96, payoutRatio: 191.8, marketCapB: 18 },
-    signals: { technical: 45, momentum: -20, sentiment: 21, news: 0, policy: 0, profile: 25, valuation: -67 }
+    fundamentals: { dividendYield: 3.91, payoutRatio: 191.8, marketCapB: 18 },
+    signals: { technical: 44, momentum: -14, sentiment: 21, news: 0, policy: 0, profile: 25, valuation: -67 }
   },
   {
     ticker: "NLY", name: "Annaly Capital Management, Inc.", sector: "Real Estate",
@@ -4602,8 +4602,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 16.4, payoutRatio: 201.4, marketCapB: 14 },
-    signals: { technical: -35, momentum: -86, sentiment: 54, news: 0, policy: 0, profile: 10, valuation: 42 }
+    fundamentals: { dividendYield: 16.24, payoutRatio: 201.4, marketCapB: 15 },
+    signals: { technical: -33, momentum: -74, sentiment: 54, news: 0, policy: 0, profile: 10, valuation: 42 }
   },
   {
     ticker: "BIP", name: "Brookfield Infrastructure Partners L.P.", sector: "Utilities",
@@ -4613,8 +4613,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.94, payoutRatio: 285.5, marketCapB: 30 },
-    signals: { technical: -40, momentum: -11, sentiment: 68, news: 0, policy: 0, profile: 5, valuation: -35 }
+    fundamentals: { dividendYield: 4.87, payoutRatio: 285.5, marketCapB: 29 },
+    signals: { technical: -41, momentum: -3, sentiment: 68, news: 0, policy: 0, profile: 5, valuation: -34 }
   },
   {
     ticker: "SMCI", name: "Super Micro Computer, Inc.", sector: "Technology",
@@ -4624,8 +4624,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 22 },
-    signals: { technical: 28, momentum: 67, sentiment: 3, news: 0, policy: 0, profile: 15, valuation: 41 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 20 },
+    signals: { technical: 30, momentum: 26, sentiment: 3, news: 0, policy: 0, profile: 15, valuation: 43 }
   },
   {
     ticker: "THC", name: "Tenet Healthcare Corporation", sector: "Healthcare",
@@ -4636,7 +4636,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 22 },
-    signals: { technical: 42, momentum: 100, sentiment: 72, news: 0, policy: 0, profile: 25, valuation: 21 }
+    signals: { technical: 39, momentum: 100, sentiment: 72, news: 0, policy: 0, profile: 25, valuation: 21 }
   },
   {
     ticker: "ZBH", name: "Zimmer Biomet Holdings, Inc.", sector: "Healthcare",
@@ -4646,8 +4646,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.0, payoutRatio: 23.3, marketCapB: 19 },
-    signals: { technical: 43, momentum: 35, sentiment: 26, news: 0, policy: 0, profile: 15, valuation: 27 }
+    fundamentals: { dividendYield: 0.98, payoutRatio: 23.3, marketCapB: 18 },
+    signals: { technical: 46, momentum: 34, sentiment: 26, news: 0, policy: 0, profile: 5, valuation: 28 }
   },
   {
     ticker: "NIO", name: "NIO Inc.", sector: "Consumer Cyclical",
@@ -4658,7 +4658,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: -34, momentum: -100, sentiment: 56, news: 0, policy: 0, profile: -40, valuation: -19 }
+    signals: { technical: -32, momentum: -100, sentiment: 56, news: 0, policy: 0, profile: -40, valuation: -16 }
   },
   {
     ticker: "BEN", name: "Franklin Resources, Inc.", sector: "Financial Services",
@@ -4668,8 +4668,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.16, payoutRatio: 89.1, marketCapB: 16 },
-    signals: { technical: 37, momentum: 5, sentiment: 19, news: 0, policy: 0, profile: 15, valuation: 29 }
+    fundamentals: { dividendYield: 4.08, payoutRatio: 89.1, marketCapB: 16 },
+    signals: { technical: 40, momentum: 1, sentiment: 19, news: 0, policy: 0, profile: 15, valuation: 30 }
   },
   {
     ticker: "LULU", name: "lululemon athletica inc.", sector: "Consumer Cyclical",
@@ -4679,8 +4679,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 13 },
-    signals: { technical: -36, momentum: -81, sentiment: -12, news: 0, policy: 0, profile: 15, valuation: 21 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
+    signals: { technical: -34, momentum: -71, sentiment: -12, news: 0, policy: 0, profile: 15, valuation: 22 }
   },
   {
     ticker: "H", name: "Hyatt Hotels Corporation", sector: "Consumer Cyclical",
@@ -4690,8 +4690,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.35, payoutRatio: 74.1, marketCapB: 17 },
-    signals: { technical: -66, momentum: 19, sentiment: 58, news: 0, policy: 0, profile: 0, valuation: -53 }
+    fundamentals: { dividendYield: 0.33, payoutRatio: 74.1, marketCapB: 17 },
+    signals: { technical: -38, momentum: 29, sentiment: 58, news: 0, policy: 0, profile: 5, valuation: -50 }
   },
   {
     ticker: "AKAM", name: "Akamai Technologies, Inc.", sector: "Technology",
@@ -4701,8 +4701,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 14 },
-    signals: { technical: -47, momentum: -36, sentiment: 50, news: 0, policy: 0, profile: 5, valuation: 16 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 13 },
+    signals: { technical: -48, momentum: -59, sentiment: 50, news: 0, policy: 0, profile: 5, valuation: 19 }
   },
   {
     ticker: "IREN", name: "IREN Limited", sector: "Financial Services",
@@ -4712,8 +4712,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -47, momentum: -100, sentiment: 72, news: 0, policy: 0, profile: -25, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
+    signals: { technical: -20, momentum: -100, sentiment: 72, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "GRAB", name: "Grab Holdings Limited", sector: "Technology",
@@ -4724,7 +4724,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -41, momentum: -100, sentiment: 90, news: 0, policy: 0, profile: 15, valuation: 0 }
+    signals: { technical: -40, momentum: -99, sentiment: 90, news: 0, policy: 0, profile: 15, valuation: 1 }
   },
   {
     ticker: "XPEV", name: "XPeng Inc.", sector: "Consumer Cyclical",
@@ -4735,7 +4735,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: -36, momentum: -100, sentiment: 60, news: 0, policy: 0, profile: -25, valuation: 0 }
+    signals: { technical: -34, momentum: -100, sentiment: 60, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "SITM", name: "SiTime Corporation", sector: "Technology",
@@ -4745,8 +4745,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
-    signals: { technical: 28, momentum: -64, sentiment: 75, news: 0, policy: 0, profile: 0, valuation: -38 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 13 },
+    signals: { technical: 34, momentum: -94, sentiment: 75, news: 0, policy: 0, profile: 0, valuation: -26 }
   },
   {
     ticker: "JLL", name: "Jones Lang LaSalle Incorporated", sector: "Real Estate",
@@ -4757,7 +4757,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 16 },
-    signals: { technical: 40, momentum: 17, sentiment: 58, news: 0, policy: 0, profile: 0, valuation: 22 }
+    signals: { technical: 41, momentum: 29, sentiment: 58, news: 0, policy: 0, profile: 0, valuation: 22 }
   },
   {
     ticker: "WMG", name: "Warner Music Group Corp.", sector: "Communication Services",
@@ -4767,8 +4767,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.7, payoutRatio: 60.8, marketCapB: 16 },
-    signals: { technical: 46, momentum: 7, sentiment: 74, news: 0, policy: 0, profile: 0, valuation: 13 }
+    fundamentals: { dividendYield: 2.63, payoutRatio: 60.8, marketCapB: 16 },
+    signals: { technical: 48, momentum: 11, sentiment: 74, news: 0, policy: 0, profile: 0, valuation: 13 }
   },
   {
     ticker: "GPC", name: "Genuine Parts Company", sector: "Consumer Cyclical",
@@ -4778,8 +4778,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.5, payoutRatio: 1622.1, marketCapB: 17 },
-    signals: { technical: 45, momentum: 32, sentiment: 41, news: 0, policy: 0, profile: 10, valuation: 14 }
+    fundamentals: { dividendYield: 3.47, payoutRatio: 1622.1, marketCapB: 17 },
+    signals: { technical: 44, momentum: 39, sentiment: 41, news: 0, policy: 0, profile: 10, valuation: 15 }
   },
   {
     ticker: "DECK", name: "Deckers Outdoor Corporation", sector: "Consumer Cyclical",
@@ -4790,7 +4790,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -36, momentum: -82, sentiment: 22, news: 0, policy: 0, profile: 15, valuation: 29 }
+    signals: { technical: -36, momentum: -68, sentiment: 22, news: 0, policy: 0, profile: 15, valuation: 29 }
   },
   {
     ticker: "LOGI", name: "Logitech International S.A.", sector: "Technology",
@@ -4800,8 +4800,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.69, payoutRatio: 30.8, marketCapB: 14 },
-    signals: { technical: 42, momentum: -24, sentiment: 15, news: 0, policy: 0, profile: 25, valuation: 11 }
+    fundamentals: { dividendYield: 1.67, payoutRatio: 30.8, marketCapB: 13 },
+    signals: { technical: 42, momentum: -37, sentiment: 15, news: 0, policy: 0, profile: 25, valuation: 13 }
   },
   {
     ticker: "HII", name: "Huntington Ingalls Industries, Inc.", sector: "Industrials",
@@ -4811,8 +4811,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate (defense sector)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.02, payoutRatio: 32.7, marketCapB: 12 },
-    signals: { technical: -65, momentum: -63, sentiment: 46, news: 0, policy: 0, profile: 15, valuation: 14 }
+    fundamentals: { dividendYield: 1.78, payoutRatio: 32.7, marketCapB: 12 },
+    signals: { technical: -62, momentum: -58, sentiment: 46, news: 0, policy: 0, profile: 15, valuation: 14 }
   },
   {
     ticker: "MOD", name: "Modine Manufacturing Company", sector: "Consumer Cyclical",
@@ -4823,7 +4823,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -48, momentum: -100, sentiment: 95, news: 0, policy: 0, profile: 0, valuation: 18 }
+    signals: { technical: -45, momentum: -100, sentiment: 95, news: 0, policy: 0, profile: 0, valuation: 20 }
   },
   {
     ticker: "TKO", name: "TKO Group Holdings, Inc.", sector: "Communication Services",
@@ -4833,8 +4833,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.82, payoutRatio: 108.7, marketCapB: 34 },
-    signals: { technical: -39, momentum: -35, sentiment: 80, news: 0, policy: 0, profile: 20, valuation: -54 }
+    fundamentals: { dividendYield: 1.77, payoutRatio: 108.7, marketCapB: 34 },
+    signals: { technical: -39, momentum: -27, sentiment: 80, news: 0, policy: 0, profile: 20, valuation: -54 }
   },
   {
     ticker: "TME", name: "Tencent Music Entertainment Group", sector: "Communication Services",
@@ -4844,8 +4844,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.88, payoutRatio: 29.6, marketCapB: 14 },
-    signals: { technical: -33, momentum: -49, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: 35 }
+    fundamentals: { dividendYield: 2.87, payoutRatio: 29.6, marketCapB: 14 },
+    signals: { technical: -33, momentum: -42, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: 35 }
   },
   {
     ticker: "ARCC", name: "Ares Capital Corporation", sector: "Financial Services",
@@ -4855,8 +4855,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 10.36, payoutRatio: 157.4, marketCapB: 14 },
-    signals: { technical: 36, momentum: -24, sentiment: 69, news: 0, policy: 0, profile: 25, valuation: 30 }
+    fundamentals: { dividendYield: 10.04, payoutRatio: 157.4, marketCapB: 14 },
+    signals: { technical: 38, momentum: -19, sentiment: 77, news: 0, policy: 0, profile: 25, valuation: 30 }
   },
   {
     ticker: "ASND", name: "Ascendis Pharma A/S", sector: "Healthcare",
@@ -4866,8 +4866,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 17 },
-    signals: { technical: 37, momentum: 25, sentiment: 84, news: 0, policy: 0, profile: 25, valuation: -15 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 16 },
+    signals: { technical: 39, momentum: 15, sentiment: 84, news: 0, policy: 0, profile: 25, valuation: -15 }
   },
   {
     ticker: "MKC", name: "McCormick & Company, Incorporated", sector: "Consumer Defensive",
@@ -4877,8 +4877,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.17, payoutRatio: 34.2, marketCapB: 13 },
-    signals: { technical: -33, momentum: -45, sentiment: 36, news: 0, policy: 0, profile: 25, valuation: 16 }
+    fundamentals: { dividendYield: 4.1, payoutRatio: 34.2, marketCapB: 13 },
+    signals: { technical: -35, momentum: -18, sentiment: 36, news: 0, policy: 0, profile: 25, valuation: 15 }
   },
   {
     ticker: "HAS", name: "Hasbro, Inc.", sector: "Consumer Cyclical",
@@ -4888,8 +4888,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.36, payoutRatio: 50.1, marketCapB: 17 },
-    signals: { technical: 20, momentum: 62, sentiment: 78, news: 0, policy: 0, profile: 10, valuation: 8 }
+    fundamentals: { dividendYield: 2.34, payoutRatio: 50.1, marketCapB: 17 },
+    signals: { technical: 20, momentum: 71, sentiment: 78, news: 0, policy: 0, profile: 10, valuation: 8 }
   },
   {
     ticker: "OKTA", name: "Okta, Inc.", sector: "Technology",
@@ -4899,8 +4899,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 39 },
-    signals: { technical: 37, momentum: 100, sentiment: 67, news: 0, policy: 0, profile: 15, valuation: -92 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 36 },
+    signals: { technical: 38, momentum: 100, sentiment: 67, news: 0, policy: 0, profile: 15, valuation: -80 }
   },
   {
     ticker: "ALLY", name: "Ally Financial Inc.", sector: "Financial Services",
@@ -4910,8 +4910,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.61, payoutRatio: 28.2, marketCapB: 12 },
-    signals: { technical: -41, momentum: -51, sentiment: 61, news: 0, policy: 0, profile: 25, valuation: 40 }
+    fundamentals: { dividendYield: 3.53, payoutRatio: 28.2, marketCapB: 12 },
+    signals: { technical: -35, momentum: -55, sentiment: 61, news: 0, policy: 0, profile: 25, valuation: 41 }
   },
   {
     ticker: "BBIO", name: "BridgeBio Pharma, Inc.", sector: "Healthcare",
@@ -4921,8 +4921,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 14 },
-    signals: { technical: -42, momentum: -12, sentiment: 76, news: 0, policy: 0, profile: -25, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
+    signals: { technical: -45, momentum: 10, sentiment: 76, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "NBIX", name: "Neurocrine Biosciences, Inc.", sector: "Healthcare",
@@ -4933,7 +4933,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
-    signals: { technical: -40, momentum: 14, sentiment: 80, news: 0, policy: 0, profile: 25, valuation: 23 }
+    signals: { technical: -44, momentum: 16, sentiment: 80, news: 0, policy: 0, profile: 25, valuation: 23 }
   },
   {
     ticker: "SNN", name: "Smith & Nephew plc", sector: "Healthcare",
@@ -4943,8 +4943,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.64, payoutRatio: 53.2, marketCapB: 13 },
-    signals: { technical: -40, momentum: -30, sentiment: 8, news: 0, policy: 0, profile: 25, valuation: 22 }
+    fundamentals: { dividendYield: 2.61, payoutRatio: 53.2, marketCapB: 12 },
+    signals: { technical: -34, momentum: -28, sentiment: 8, news: 0, policy: 0, profile: 25, valuation: 22 }
   },
   {
     ticker: "APTV", name: "Aptiv PLC", sector: "Consumer Cyclical",
@@ -4955,7 +4955,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: -39, momentum: -100, sentiment: 68, news: 0, policy: 0, profile: 0, valuation: 39 }
+    signals: { technical: -37, momentum: -100, sentiment: 68, news: 0, policy: 0, profile: 0, valuation: 39 }
   },
   {
     ticker: "ALGN", name: "Align Technology, Inc.", sector: "Healthcare",
@@ -4966,7 +4966,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -41, momentum: -69, sentiment: 38, news: 0, policy: 0, profile: 5, valuation: 22 }
+    signals: { technical: -35, momentum: -61, sentiment: 38, news: 0, policy: 0, profile: 15, valuation: 23 }
   },
   {
     ticker: "NYT", name: "The New York Times Company", sector: "Communication Services",
@@ -4977,7 +4977,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.33, payoutRatio: 32.1, marketCapB: 11 },
-    signals: { technical: -37, momentum: -61, sentiment: 65, news: 0, policy: 0, profile: 25, valuation: -6 }
+    signals: { technical: -36, momentum: -50, sentiment: 65, news: 0, policy: 0, profile: 25, valuation: -7 }
   },
   {
     ticker: "FIVE", name: "Five Below, Inc.", sector: "Consumer Cyclical",
@@ -4987,8 +4987,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 14 },
-    signals: { technical: 36, momentum: 0, sentiment: 62, news: 0, policy: 0, profile: 15, valuation: -6 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 13 },
+    signals: { technical: 40, momentum: -6, sentiment: 62, news: 0, policy: 0, profile: 15, valuation: -4 }
   },
   {
     ticker: "BBY", name: "Best Buy Co., Inc.", sector: "Consumer Cyclical",
@@ -4998,8 +4998,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.96, payoutRatio: 63.6, marketCapB: 21 },
-    signals: { technical: 42, momentum: 100, sentiment: 10, news: 0, policy: 0, profile: 20, valuation: 18 }
+    fundamentals: { dividendYield: 3.83, payoutRatio: 63.6, marketCapB: 20 },
+    signals: { technical: 45, momentum: 100, sentiment: 10, news: 0, policy: 0, profile: 10, valuation: 20 }
   },
   {
     ticker: "AGNC", name: "AGNC Investment Corp.", sector: "Real Estate",
@@ -5009,8 +5009,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 16.23, payoutRatio: 73.5, marketCapB: 11 },
-    signals: { technical: -38, momentum: -83, sentiment: 16, news: 0, policy: 0, profile: 10, valuation: 41 }
+    fundamentals: { dividendYield: 16.09, payoutRatio: 73.5, marketCapB: 10 },
+    signals: { technical: -34, momentum: -74, sentiment: 16, news: 0, policy: 0, profile: 10, valuation: 41 }
   },
   {
     ticker: "SMMT", name: "Summit Therapeutics Inc.", sector: "Healthcare",
@@ -5020,8 +5020,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 13 },
-    signals: { technical: -43, momentum: -20, sentiment: 62, news: 0, policy: 0, profile: 0, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
+    signals: { technical: -45, momentum: -42, sentiment: 62, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "AEG", name: "Aegon Ltd.", sector: "Financial Services",
@@ -5031,8 +5031,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.9, payoutRatio: 61.5, marketCapB: 12 },
-    signals: { technical: 43, momentum: -19, sentiment: 25, news: 0, policy: 0, profile: 15, valuation: 33 }
+    fundamentals: { dividendYield: 5.85, payoutRatio: 61.5, marketCapB: 12 },
+    signals: { technical: 47, momentum: -11, sentiment: 25, news: 0, policy: 0, profile: 15, valuation: 33 }
   },
   {
     ticker: "HUBS", name: "HubSpot, Inc.", sector: "Technology",
@@ -5043,7 +5043,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: 50, momentum: -23, sentiment: 25, news: 0, policy: 0, profile: 0, valuation: 17 }
+    signals: { technical: 49, momentum: -34, sentiment: 25, news: 0, policy: 0, profile: 0, valuation: 18 }
   },
   {
     ticker: "OKLO", name: "Oklo Inc.", sector: "Utilities",
@@ -5054,7 +5054,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: -46, momentum: -100, sentiment: 42, news: 0, policy: 0, profile: 0, valuation: 0 }
+    signals: { technical: -20, momentum: -100, sentiment: 42, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "SWK", name: "Stanley Black & Decker, Inc.", sector: "Industrials",
@@ -5064,8 +5064,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.35, payoutRatio: 81.2, marketCapB: 16 },
-    signals: { technical: 15, momentum: 83, sentiment: 26, news: 0, policy: 0, profile: 10, valuation: 10 }
+    fundamentals: { dividendYield: 3.24, payoutRatio: 81.2, marketCapB: 16 },
+    signals: { technical: 12, momentum: 100, sentiment: 26, news: 0, policy: 0, profile: 10, valuation: 11 }
   },
   {
     ticker: "CHKP", name: "Check Point Software Technologies Ltd.", sector: "Technology",
@@ -5075,8 +5075,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Who Profits", "Company headquarters: Tel Aviv", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 16 },
-    signals: { technical: -35, momentum: 90, sentiment: 31, news: 0, policy: 0, profile: 25, valuation: 19 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
+    signals: { technical: -32, momentum: 77, sentiment: 31, news: 0, policy: 0, profile: 25, valuation: 20 }
   },
   {
     ticker: "MEDP", name: "Medpace Holdings, Inc.", sector: "Healthcare",
@@ -5086,8 +5086,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 19 },
-    signals: { technical: 42, momentum: 100, sentiment: 3, news: 0, policy: 0, profile: 15, valuation: -42 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 18 },
+    signals: { technical: 45, momentum: 100, sentiment: 3, news: 0, policy: 0, profile: 15, valuation: -38 }
   },
   {
     ticker: "GME", name: "GameStop Corp.", sector: "Consumer Cyclical",
@@ -5098,7 +5098,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: 43, momentum: -54, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: 21 }
+    signals: { technical: 41, momentum: -19, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: 21 }
   },
   {
     ticker: "U", name: "Unity Software Inc.", sector: "Technology",
@@ -5108,8 +5108,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 17 },
-    signals: { technical: 39, momentum: 100, sentiment: 79, news: 0, policy: 0, profile: -25, valuation: -7 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 16 },
+    signals: { technical: 38, momentum: 97, sentiment: 79, news: 0, policy: 0, profile: -25, valuation: -3 }
   },
   {
     ticker: "HRL", name: "Hormel Foods Corporation", sector: "Consumer Defensive",
@@ -5119,8 +5119,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.68, payoutRatio: 188.3, marketCapB: 12 },
-    signals: { technical: -40, momentum: -29, sentiment: 20, news: 0, policy: 0, profile: 10, valuation: 19 }
+    fundamentals: { dividendYield: 5.6, payoutRatio: 188.3, marketCapB: 12 },
+    signals: { technical: -43, momentum: -2, sentiment: 20, news: 0, policy: 0, profile: 10, valuation: 18 }
   },
   {
     ticker: "ALLE", name: "Allegion plc", sector: "Industrials",
@@ -5130,7 +5130,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.22, payoutRatio: 26.9, marketCapB: 16 },
+    fundamentals: { dividendYield: 1.18, payoutRatio: 26.9, marketCapB: 16 },
     signals: { technical: 20, momentum: 100, sentiment: 59, news: 0, policy: 0, profile: 25, valuation: 4 }
   },
   {
@@ -5142,7 +5142,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -32, momentum: -27, sentiment: 49, news: 0, policy: 0, profile: 5, valuation: 35 }
+    signals: { technical: -31, momentum: -46, sentiment: 49, news: 0, policy: 0, profile: 5, valuation: 36 }
   },
   {
     ticker: "AMH", name: "American Homes 4 Rent", sector: "Real Estate",
@@ -5152,8 +5152,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.23, payoutRatio: 100.0, marketCapB: 13 },
-    signals: { technical: 41, momentum: -26, sentiment: 50, news: 0, policy: 0, profile: 35, valuation: -81 }
+    fundamentals: { dividendYield: 4.18, payoutRatio: 100.0, marketCapB: 13 },
+    signals: { technical: 40, momentum: -18, sentiment: 50, news: 0, policy: 0, profile: 35, valuation: -82 }
   },
   {
     ticker: "GDDY", name: "GoDaddy Inc.", sector: "Technology",
@@ -5163,8 +5163,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 13 },
-    signals: { technical: 47, momentum: 50, sentiment: 28, news: 0, policy: 0, profile: 0, valuation: 31 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
+    signals: { technical: 48, momentum: 87, sentiment: 28, news: 0, policy: 0, profile: 0, valuation: 28 }
   },
   {
     ticker: "IVZ", name: "Invesco Ltd.", sector: "Financial Services",
@@ -5174,8 +5174,8 @@ window.STOCK_UNIVERSE = [
       sources: ["ETF classification (auto)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.0, payoutRatio: 56.5, marketCapB: 13 },
-    signals: { technical: 38, momentum: 17, sentiment: 34, news: 0, policy: 0, profile: -15, valuation: 33 }
+    fundamentals: { dividendYield: 2.96, payoutRatio: 56.5, marketCapB: 12 },
+    signals: { technical: 41, momentum: 2, sentiment: 34, news: 0, policy: 0, profile: -15, valuation: 34 }
   },
   {
     ticker: "WMS", name: "Advanced Drainage Systems, Inc.", sector: "Industrials",
@@ -5185,8 +5185,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.61, payoutRatio: 12.6, marketCapB: 10 },
-    signals: { technical: -45, momentum: -46, sentiment: 91, news: 0, policy: 0, profile: 15, valuation: 4 }
+    fundamentals: { dividendYield: 0.59, payoutRatio: 12.6, marketCapB: 10 },
+    signals: { technical: -43, momentum: -29, sentiment: 91, news: 0, policy: 0, profile: 15, valuation: 4 }
   },
   {
     ticker: "ONON", name: "On Holding AG", sector: "Consumer Cyclical",
@@ -5197,7 +5197,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -32, momentum: -39, sentiment: 64, news: 0, policy: 0, profile: 15, valuation: 12 }
+    signals: { technical: -35, momentum: -20, sentiment: 64, news: 0, policy: 0, profile: 15, valuation: 10 }
   },
   {
     ticker: "DKNG", name: "DraftKings Inc.", sector: "Consumer Cyclical",
@@ -5208,7 +5208,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
-    signals: { technical: -33, momentum: -55, sentiment: 76, news: 0, policy: 0, profile: -40, valuation: 23 }
+    signals: { technical: -30, momentum: -57, sentiment: 75, news: 0, policy: 0, profile: -40, valuation: 23 }
   },
   {
     ticker: "TTD", name: "The Trade Desk, Inc.", sector: "Communication Services",
@@ -5219,7 +5219,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 6 },
-    signals: { technical: -35, momentum: -100, sentiment: -5, news: 0, policy: 0, profile: 15, valuation: 21 }
+    signals: { technical: -33, momentum: -100, sentiment: -5, news: 0, policy: 0, profile: 15, valuation: 23 }
   },
   {
     ticker: "NTNX", name: "Nutanix, Inc.", sector: "Technology",
@@ -5229,8 +5229,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 19 },
-    signals: { technical: 39, momentum: 100, sentiment: 50, news: 0, policy: 0, profile: 10, valuation: -19 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 18 },
+    signals: { technical: 41, momentum: 100, sentiment: 50, news: 0, policy: 0, profile: 10, valuation: -14 }
   },
   {
     ticker: "DPZ", name: "Domino's Pizza, Inc.", sector: "Consumer Cyclical",
@@ -5240,8 +5240,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.57, payoutRatio: 42.5, marketCapB: 10 },
-    signals: { technical: -36, momentum: -47, sentiment: 40, news: 0, policy: 0, profile: 25, valuation: 14 }
+    fundamentals: { dividendYield: 2.55, payoutRatio: 42.5, marketCapB: 10 },
+    signals: { technical: -37, momentum: -32, sentiment: 40, news: 0, policy: 0, profile: 25, valuation: 14 }
   },
   {
     ticker: "WYNN", name: "Wynn Resorts, Limited", sector: "Consumer Cyclical",
@@ -5251,8 +5251,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.4, payoutRatio: 24.0, marketCapB: 8 },
-    signals: { technical: -37, momentum: -100, sentiment: 90, news: 0, policy: 0, profile: 15, valuation: 12 }
+    fundamentals: { dividendYield: 1.35, payoutRatio: 24.0, marketCapB: 8 },
+    signals: { technical: -36, momentum: -100, sentiment: 90, news: 0, policy: 0, profile: 15, valuation: 11 }
   },
   {
     ticker: "AFG", name: "American Financial Group, Inc.", sector: "Financial Services",
@@ -5262,8 +5262,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.58, payoutRatio: 30.1, marketCapB: 13 },
-    signals: { technical: 36, momentum: 31, sentiment: 28, news: 0, policy: 0, profile: 25, valuation: 22 }
+    fundamentals: { dividendYield: 2.53, payoutRatio: 30.1, marketCapB: 13 },
+    signals: { technical: 35, momentum: 40, sentiment: 28, news: 0, policy: 0, profile: 25, valuation: 21 }
   },
   {
     ticker: "ACM", name: "AECOM", sector: "Industrials",
@@ -5273,8 +5273,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.99, payoutRatio: 41.9, marketCapB: 8 },
-    signals: { technical: -44, momentum: -100, sentiment: 77, news: 0, policy: 0, profile: 10, valuation: 29 }
+    fundamentals: { dividendYield: 1.95, payoutRatio: 41.9, marketCapB: 8 },
+    signals: { technical: -42, momentum: -100, sentiment: 77, news: 0, policy: 0, profile: 10, valuation: 29 }
   },
   {
     ticker: "DOCN", name: "DigitalOcean Holdings, Inc.", sector: "Technology",
@@ -5284,8 +5284,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: 28, momentum: -31, sentiment: 76, news: 0, policy: 0, profile: 10, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
+    signals: { technical: 34, momentum: -83, sentiment: 76, news: 0, policy: 0, profile: 10, valuation: -82 }
   },
   {
     ticker: "CHWY", name: "Chewy, Inc.", sector: "Consumer Cyclical",
@@ -5296,7 +5296,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: -24, momentum: -83, sentiment: 56, news: 0, policy: 0, profile: -15, valuation: 26 }
+    signals: { technical: -27, momentum: -64, sentiment: 56, news: 0, policy: 0, profile: -15, valuation: 26 }
   },
   {
     ticker: "SNAP", name: "Snap Inc.", sector: "Communication Services",
@@ -5306,8 +5306,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
-    signals: { technical: 46, momentum: -54, sentiment: 17, news: 0, policy: 0, profile: -40, valuation: 38 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
+    signals: { technical: 46, momentum: -66, sentiment: 17, news: 0, policy: 0, profile: -40, valuation: 39 }
   },
   {
     ticker: "CAVA", name: "CAVA Group, Inc.", sector: "Consumer Cyclical",
@@ -5318,7 +5318,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -40, momentum: -100, sentiment: 59, news: 0, policy: 0, profile: 0, valuation: -100 }
+    signals: { technical: -39, momentum: -100, sentiment: 59, news: 0, policy: 0, profile: 0, valuation: -100 }
   },
   {
     ticker: "CLX", name: "The Clorox Company", sector: "Consumer Defensive",
@@ -5328,8 +5328,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.76, payoutRatio: 103.1, marketCapB: 11 },
-    signals: { technical: -35, momentum: -16, sentiment: -11, news: 0, policy: 0, profile: 0, valuation: 16 }
+    fundamentals: { dividendYield: 5.64, payoutRatio: 103.1, marketCapB: 11 },
+    signals: { technical: -35, momentum: -6, sentiment: -10, news: 0, policy: 0, profile: 0, valuation: 16 }
   },
   {
     ticker: "WULF", name: "TeraWulf Inc.", sector: "Financial Services",
@@ -5340,7 +5340,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 6 },
-    signals: { technical: -51, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: -15, valuation: 0 }
+    signals: { technical: -52, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: -15, valuation: 0 }
   },
   {
     ticker: "SWKS", name: "Skyworks Solutions, Inc.", sector: "Technology",
@@ -5350,8 +5350,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 147.1, marketCapB: 21 },
-    signals: { technical: 34, momentum: 73, sentiment: 4, news: 0, policy: 0, profile: 15, valuation: 14 }
+    fundamentals: { dividendYield: 0, payoutRatio: 147.1, marketCapB: 20 },
+    signals: { technical: 35, momentum: 65, sentiment: 4, news: 0, policy: 0, profile: 15, valuation: 16 }
   },
   {
     ticker: "ZG", name: "Zillow Group, Inc.", sector: "Communication Services",
@@ -5362,7 +5362,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -29, momentum: -100, sentiment: 34, news: 0, policy: 0, profile: 0, valuation: 27 }
+    signals: { technical: -28, momentum: -100, sentiment: 34, news: 0, policy: 0, profile: 0, valuation: 27 }
   },
   {
     ticker: "Z", name: "Zillow Group, Inc.", sector: "Communication Services",
@@ -5383,8 +5383,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.57, payoutRatio: 205.6, marketCapB: 13 },
-    signals: { technical: 46, momentum: 78, sentiment: 45, news: 0, policy: 0, profile: 10, valuation: 25 }
+    fundamentals: { dividendYield: 3.55, payoutRatio: 205.6, marketCapB: 14 },
+    signals: { technical: 43, momentum: 99, sentiment: 45, news: 0, policy: 0, profile: 10, valuation: 24 }
   },
   {
     ticker: "AES", name: "The AES Corporation", sector: "Utilities",
@@ -5394,8 +5394,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.7, payoutRatio: 26.4, marketCapB: 11 },
-    signals: { technical: 25, momentum: -4, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 41 }
+    fundamentals: { dividendYield: 4.68, payoutRatio: 26.4, marketCapB: 11 },
+    signals: { technical: 47, momentum: -2, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 41 }
   },
   {
     ticker: "DVA", name: "DaVita Inc.", sector: "Healthcare",
@@ -5406,7 +5406,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: 40, momentum: 68, sentiment: 31, news: 0, policy: 0, profile: -10, valuation: 26 }
+    signals: { technical: 42, momentum: 51, sentiment: 31, news: 0, policy: 0, profile: -10, valuation: 27 }
   },
   {
     ticker: "GTLS", name: "Chart Industries, Inc.", sector: "Industrials",
@@ -5427,8 +5427,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.83, payoutRatio: 14.8, marketCapB: 10 },
-    signals: { technical: 41, momentum: -20, sentiment: 34, news: 0, policy: 0, profile: 35, valuation: 45 }
+    fundamentals: { dividendYield: 4.96, payoutRatio: 14.8, marketCapB: 9 },
+    signals: { technical: 63, momentum: -41, sentiment: 34, news: 0, policy: 0, profile: 35, valuation: 47 }
   },
   {
     ticker: "IT", name: "Gartner, Inc.", sector: "Technology",
@@ -5439,7 +5439,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 14 },
-    signals: { technical: 45, momentum: 100, sentiment: 6, news: 0, policy: 0, profile: 15, valuation: 18 }
+    signals: { technical: 48, momentum: 100, sentiment: 6, news: 0, policy: 0, profile: 15, valuation: 18 }
   },
   {
     ticker: "MGM", name: "MGM Resorts International", sector: "Consumer Cyclical",
@@ -5450,7 +5450,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -36, momentum: -100, sentiment: 35, news: 0, policy: 0, profile: -15, valuation: 6 }
+    signals: { technical: -37, momentum: -90, sentiment: 35, news: 0, policy: 0, profile: -15, valuation: 3 }
   },
   {
     ticker: "RVTY", name: "Revvity, Inc.", sector: "Healthcare",
@@ -5460,8 +5460,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.17, payoutRatio: 13.4, marketCapB: 18 },
-    signals: { technical: 11, momentum: 100, sentiment: 30, news: 0, policy: 0, profile: 5, valuation: -24 }
+    fundamentals: { dividendYield: 0.17, payoutRatio: 13.4, marketCapB: 17 },
+    signals: { technical: 40, momentum: 100, sentiment: 30, news: 0, policy: 0, profile: 5, valuation: -19 }
   },
   {
     ticker: "LUMN", name: "Lumen Technologies, Inc.", sector: "Communication Services",
@@ -5472,7 +5472,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 50.0, marketCapB: 5 },
-    signals: { technical: -47, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -25, valuation: 0 }
+    signals: { technical: -50, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "APLD", name: "Applied Digital Corporation", sector: "Technology",
@@ -5482,8 +5482,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 6 },
-    signals: { technical: -52, momentum: -100, sentiment: 81, news: 0, policy: 0, profile: -25, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
+    signals: { technical: -49, momentum: -100, sentiment: 81, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "BAH", name: "Booz Allen Hamilton Holding Corporation", sector: "Industrials",
@@ -5493,8 +5493,8 @@ window.STOCK_UNIVERSE = [
       sources: ["AFSC Investigate", "Federal contracts database", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.83, payoutRatio: 36.0, marketCapB: 10 },
-    signals: { technical: -61, momentum: 2, sentiment: 20, news: 0, policy: 0, profile: 0, valuation: 22 }
+    fundamentals: { dividendYield: 2.8, payoutRatio: 36.0, marketCapB: 11 },
+    signals: { technical: -60, momentum: 30, sentiment: 20, news: 0, policy: 0, profile: 0, valuation: 20 }
   },
   {
     ticker: "DOCU", name: "DocuSign, Inc.", sector: "Technology",
@@ -5505,7 +5505,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
-    signals: { technical: 46, momentum: 100, sentiment: 12, news: 0, policy: 0, profile: 5, valuation: 13 }
+    signals: { technical: 48, momentum: 100, sentiment: 12, news: 0, policy: 0, profile: 5, valuation: 12 }
   },
   {
     ticker: "CNM", name: "Core & Main, Inc.", sector: "Industrials",
@@ -5516,7 +5516,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: -46, momentum: -55, sentiment: 40, news: 0, policy: 0, profile: 5, valuation: 22 }
+    signals: { technical: -45, momentum: -46, sentiment: 40, news: 0, policy: 0, profile: 5, valuation: 22 }
   },
   {
     ticker: "SIRI", name: "Sirius XM Holdings Inc.", sector: "Communication Services",
@@ -5526,8 +5526,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.95, payoutRatio: 43.2, marketCapB: 10 },
-    signals: { technical: 39, momentum: -4, sentiment: 18, news: 0, policy: 0, profile: 25, valuation: 33 }
+    fundamentals: { dividendYield: 3.77, payoutRatio: 43.2, marketCapB: 10 },
+    signals: { technical: 38, momentum: 9, sentiment: 18, news: 0, policy: 0, profile: 25, valuation: 33 }
   },
   {
     ticker: "CUBE", name: "CubeSmart", sector: "Real Estate",
@@ -5537,8 +5537,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.26, payoutRatio: 144.5, marketCapB: 9 },
-    signals: { technical: -44, momentum: -14, sentiment: 34, news: 0, policy: 0, profile: 35, valuation: -17 }
+    fundamentals: { dividendYield: 5.16, payoutRatio: 144.5, marketCapB: 10 },
+    signals: { technical: -67, momentum: 13, sentiment: 34, news: 0, policy: 0, profile: 35, valuation: -20 }
   },
   {
     ticker: "GAP", name: "The Gap, Inc.", sector: "Consumer Cyclical",
@@ -5548,8 +5548,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.18, payoutRatio: 20.5, marketCapB: 8 },
-    signals: { technical: -42, momentum: -46, sentiment: 34, news: 0, policy: 0, profile: 15, valuation: 33 }
+    fundamentals: { dividendYield: 3.06, payoutRatio: 20.5, marketCapB: 8 },
+    signals: { technical: -39, momentum: -36, sentiment: 34, news: 0, policy: 0, profile: 15, valuation: 34 }
   },
   {
     ticker: "MTCH", name: "Match Group, Inc.", sector: "Communication Services",
@@ -5559,8 +5559,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.9, payoutRatio: 27.7, marketCapB: 10 },
-    signals: { technical: 47, momentum: 11, sentiment: 35, news: 0, policy: 0, profile: 35, valuation: 32 }
+    fundamentals: { dividendYield: 1.88, payoutRatio: 27.7, marketCapB: 10 },
+    signals: { technical: 47, momentum: 12, sentiment: 35, news: 0, policy: 0, profile: 35, valuation: 32 }
   },
   {
     ticker: "BILI", name: "Bilibili Inc.", sector: "Communication Services",
@@ -5571,7 +5571,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: -12, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: 0, valuation: 29 }
+    signals: { technical: -12, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: 0, valuation: 30 }
   },
   {
     ticker: "BAX", name: "Baxter International Inc.", sector: "Healthcare",
@@ -5581,8 +5581,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.16, payoutRatio: 154.7, marketCapB: 12 },
-    signals: { technical: 47, momentum: 99, sentiment: 6, news: 0, policy: 0, profile: -25, valuation: 25 }
+    fundamentals: { dividendYield: 0.17, payoutRatio: 154.7, marketCapB: 12 },
+    signals: { technical: 48, momentum: 100, sentiment: 6, news: 0, policy: 0, profile: -25, valuation: 26 }
   },
   {
     ticker: "WAL", name: "Western Alliance Bancorporation", sector: "Financial Services",
@@ -5592,8 +5592,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.21, payoutRatio: 18.5, marketCapB: 8 },
-    signals: { technical: -43, momentum: -34, sentiment: 60, news: 0, policy: 0, profile: 35, valuation: 38 }
+    fundamentals: { dividendYield: 2.16, payoutRatio: 18.5, marketCapB: 8 },
+    signals: { technical: -40, momentum: -32, sentiment: 60, news: 0, policy: 0, profile: 35, valuation: 38 }
   },
   {
     ticker: "AGCO", name: "AGCO Corporation", sector: "Industrials",
@@ -5603,8 +5603,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.17, payoutRatio: 16.2, marketCapB: 8 },
-    signals: { technical: -42, momentum: -52, sentiment: 28, news: 0, policy: 0, profile: 15, valuation: 16 }
+    fundamentals: { dividendYield: 1.11, payoutRatio: 16.2, marketCapB: 8 },
+    signals: { technical: -45, momentum: -46, sentiment: 28, news: 0, policy: 0, profile: 10, valuation: 15 }
   },
   {
     ticker: "CELH", name: "Celsius Holdings, Inc.", sector: "Consumer Defensive",
@@ -5615,7 +5615,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -37, momentum: -77, sentiment: 62, news: 0, policy: 0, profile: 0, valuation: 10 }
+    signals: { technical: -35, momentum: -61, sentiment: 62, news: 0, policy: 0, profile: 0, valuation: 8 }
   },
   {
     ticker: "HUT", name: "Hut 8 Corp.", sector: "Financial Services",
@@ -5625,8 +5625,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: 29, momentum: -68, sentiment: 82, news: 0, policy: 0, profile: -40, valuation: 0 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
+    signals: { technical: 33, momentum: -100, sentiment: 82, news: 0, policy: 0, profile: -40, valuation: 0 }
   },
   {
     ticker: "W", name: "Wayfair Inc.", sector: "Consumer Cyclical",
@@ -5636,8 +5636,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Boston Globe (2019)", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 16 },
-    signals: { technical: 18, momentum: 100, sentiment: 52, news: 0, policy: 0, profile: -25, valuation: -32 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 15 },
+    signals: { technical: 46, momentum: 100, sentiment: 52, news: 0, policy: 0, profile: -25, valuation: -27 }
   },
   {
     ticker: "TECH", name: "Bio-Techne Corporation", sector: "Healthcare",
@@ -5648,7 +5648,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.44, payoutRatio: 27.6, marketCapB: 11 },
-    signals: { technical: 32, momentum: 84, sentiment: -7, news: 0, policy: 0, profile: 15, valuation: -34 }
+    signals: { technical: 33, momentum: 93, sentiment: -7, news: 0, policy: 0, profile: 15, valuation: -34 }
   },
   {
     ticker: "NCLH", name: "Norwegian Cruise Line Holdings Ltd.", sector: "Consumer Cyclical",
@@ -5659,7 +5659,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: -60, momentum: -33, sentiment: 31, news: 0, policy: 0, profile: -10, valuation: 22 }
+    signals: { technical: -37, momentum: -12, sentiment: 31, news: 0, policy: 0, profile: -10, valuation: 24 }
   },
   {
     ticker: "LEVI", name: "Levi Strauss & Co.", sector: "Consumer Cyclical",
@@ -5669,8 +5669,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.96, payoutRatio: 38.2, marketCapB: 9 },
-    signals: { technical: -67, momentum: -17, sentiment: 68, news: 0, policy: 0, profile: 15, valuation: 19 }
+    fundamentals: { dividendYield: 2.83, payoutRatio: 38.2, marketCapB: 9 },
+    signals: { technical: -42, momentum: -10, sentiment: 68, news: 0, policy: 0, profile: 15, valuation: 19 }
   },
   {
     ticker: "SBSW", name: "Sibanye Stillwater Limited", sector: "Basic Materials",
@@ -5680,8 +5680,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 8.6, payoutRatio: 26.8, marketCapB: 7 },
-    signals: { technical: -37, momentum: -100, sentiment: 50, news: 0, policy: 0, profile: 5, valuation: 48 }
+    fundamentals: { dividendYield: 8.76, payoutRatio: 26.8, marketCapB: 6 },
+    signals: { technical: -15, momentum: -100, sentiment: 50, news: 0, policy: 0, profile: 5, valuation: 49 }
   },
   {
     ticker: "AOS", name: "A. O. Smith Corporation", sector: "Industrials",
@@ -5691,8 +5691,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.5, payoutRatio: 39.6, marketCapB: 9 },
-    signals: { technical: -41, momentum: -5, sentiment: 7, news: 0, policy: 0, profile: 25, valuation: 12 }
+    fundamentals: { dividendYield: 2.39, payoutRatio: 39.6, marketCapB: 8 },
+    signals: { technical: -41, momentum: 9, sentiment: 7, news: 0, policy: 0, profile: 25, valuation: 12 }
   },
   {
     ticker: "MANH", name: "Manhattan Associates, Inc.", sector: "Technology",
@@ -5703,7 +5703,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 14 },
-    signals: { technical: 43, momentum: 100, sentiment: 68, news: 0, policy: 0, profile: 15, valuation: -56 }
+    signals: { technical: 20, momentum: 100, sentiment: 68, news: 0, policy: 0, profile: 15, valuation: -60 }
   },
   {
     ticker: "ACI", name: "Albertsons Companies, Inc.", sector: "Consumer Defensive",
@@ -5713,8 +5713,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.17, payoutRatio: 364.7, marketCapB: 6 },
-    signals: { technical: -30, momentum: -99, sentiment: 8, news: 0, policy: 0, profile: -30, valuation: 36 }
+    fundamentals: { dividendYield: 5.32, payoutRatio: 364.7, marketCapB: 6 },
+    signals: { technical: -31, momentum: -85, sentiment: 8, news: 0, policy: 0, profile: -30, valuation: 36 }
   },
   {
     ticker: "CRL", name: "Charles River Laboratories International, Inc.", sector: "Healthcare",
@@ -5724,8 +5724,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 18 },
-    signals: { technical: 20, momentum: 100, sentiment: 68, news: 0, policy: 0, profile: -25, valuation: -28 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 17 },
+    signals: { technical: 49, momentum: 100, sentiment: 68, news: 0, policy: 0, profile: -25, valuation: -22 }
   },
   {
     ticker: "NE", name: "Noble Corporation plc", sector: "Energy",
@@ -5735,8 +5735,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.25, payoutRatio: 606.1, marketCapB: 8 },
-    signals: { technical: 44, momentum: -42, sentiment: 29, news: 0, policy: 0, profile: 10, valuation: -14 }
+    fundamentals: { dividendYield: 4.22, payoutRatio: 606.1, marketCapB: 8 },
+    signals: { technical: -33, momentum: -32, sentiment: 29, news: 0, policy: 0, profile: 10, valuation: -16 }
   },
   {
     ticker: "CYTK", name: "Cytokinetics, Incorporated", sector: "Healthcare",
@@ -5747,7 +5747,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: -41, momentum: -22, sentiment: 76, news: 0, policy: 0, profile: 0, valuation: 0 }
+    signals: { technical: -41, momentum: -31, sentiment: 75, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "AAL", name: "American Airlines Group Inc.", sector: "Industrials",
@@ -5758,7 +5758,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: -43, momentum: 3, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 19 }
+    signals: { technical: -41, momentum: -1, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 20 }
   },
   {
     ticker: "NUVL", name: "Nuvalent, Inc.", sector: "Healthcare",
@@ -5780,7 +5780,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: -46, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: 0, valuation: 0 }
+    signals: { technical: -20, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "RIG", name: "Transocean Ltd.", sector: "Energy",
@@ -5790,8 +5790,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -60, momentum: -29, sentiment: 34, news: 0, policy: 0, profile: -25, valuation: -7 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
+    signals: { technical: -60, momentum: -16, sentiment: 34, news: 0, policy: 0, profile: -25, valuation: -9 }
   },
   {
     ticker: "VFC", name: "V.F. Corporation", sector: "Consumer Cyclical",
@@ -5801,8 +5801,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.09, payoutRatio: 39.1, marketCapB: 7 },
-    signals: { technical: -60, momentum: -34, sentiment: 29, news: 0, policy: 0, profile: -5, valuation: 18 }
+    fundamentals: { dividendYield: 1.96, payoutRatio: 39.1, marketCapB: 7 },
+    signals: { technical: -60, momentum: -18, sentiment: 29, news: 0, policy: 0, profile: -5, valuation: 19 }
   },
   {
     ticker: "SYM", name: "Symbotic Inc.", sector: "Industrials",
@@ -5812,8 +5812,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 23 },
-    signals: { technical: -45, momentum: -100, sentiment: 39, news: 0, policy: 0, profile: 10, valuation: -90 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 22 },
+    signals: { technical: -45, momentum: -100, sentiment: 39, news: 0, policy: 0, profile: 10, valuation: -88 }
   },
   {
     ticker: "MBLY", name: "Mobileye Global Inc.", sector: "Consumer Cyclical",
@@ -5824,7 +5824,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: -41, momentum: -100, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 20 }
+    signals: { technical: -20, momentum: -100, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 24 }
   },
   {
     ticker: "UEC", name: "Uranium Energy Corp.", sector: "Energy",
@@ -5835,7 +5835,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: -47, momentum: -100, sentiment: 64, news: 0, policy: 0, profile: 0, valuation: 0 }
+    signals: { technical: -48, momentum: -100, sentiment: 64, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "ARE", name: "Alexandria Real Estate Equities, Inc.", sector: "Real Estate",
@@ -5845,8 +5845,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 7.22, payoutRatio: 689.5, marketCapB: 7 },
-    signals: { technical: -41, momentum: -28, sentiment: -6, news: 0, policy: 0, profile: -25, valuation: 0 }
+    fundamentals: { dividendYield: 7.09, payoutRatio: 689.5, marketCapB: 7 },
+    signals: { technical: -42, momentum: -25, sentiment: -6, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "BIO", name: "Bio-Rad Laboratories, Inc.", sector: "Healthcare",
@@ -5857,7 +5857,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
-    signals: { technical: 39, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: 5, valuation: -58 }
+    signals: { technical: 40, momentum: 100, sentiment: 0, news: 0, policy: 0, profile: 5, valuation: -53 }
   },
   {
     ticker: "ICL", name: "ICL Group Ltd", sector: "Basic Materials",
@@ -5867,8 +5867,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company HQ: Tel Aviv, Israel", "Who Profits", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.41, payoutRatio: 79.4, marketCapB: 6 },
-    signals: { technical: -32, momentum: -74, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 28 }
+    fundamentals: { dividendYield: 4.48, payoutRatio: 79.4, marketCapB: 6 },
+    signals: { technical: -34, momentum: -72, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 28 }
   },
   {
     ticker: "RIOT", name: "Riot Platforms, Inc.", sector: "Financial Services",
@@ -5879,7 +5879,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: -49, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: -25, valuation: 0 }
+    signals: { technical: -45, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: -25, valuation: 0 }
   },
   {
     ticker: "VIPS", name: "Vipshop Holdings Limited", sector: "Consumer Cyclical",
@@ -5889,8 +5889,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.96, payoutRatio: 21.1, marketCapB: 6 },
-    signals: { technical: -38, momentum: -63, sentiment: 40, news: 0, policy: 0, profile: 15, valuation: 44 }
+    fundamentals: { dividendYield: 4.87, payoutRatio: 21.1, marketCapB: 6 },
+    signals: { technical: -38, momentum: -47, sentiment: 40, news: 0, policy: 0, profile: 15, valuation: 44 }
   },
   {
     ticker: "CIFR", name: "Cipher Digital Inc.", sector: "Technology",
@@ -5901,7 +5901,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 3 },
-    signals: { technical: -20, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: -15, valuation: -50 }
+    signals: { technical: -20, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: -15, valuation: -35 }
   },
   {
     ticker: "CAG", name: "Conagra Brands, Inc.", sector: "Consumer Defensive",
@@ -5911,8 +5911,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 5.03, payoutRatio: 79.6, marketCapB: 7 },
-    signals: { technical: -33, momentum: -21, sentiment: -22, news: 0, policy: 0, profile: -15, valuation: 31 }
+    fundamentals: { dividendYield: 4.97, payoutRatio: 79.6, marketCapB: 7 },
+    signals: { technical: -34, momentum: 0, sentiment: -22, news: 0, policy: 0, profile: -15, valuation: 30 }
   },
   {
     ticker: "GXO", name: "GXO Logistics, Inc.", sector: "Industrials",
@@ -5923,7 +5923,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 6 },
-    signals: { technical: -44, momentum: -59, sentiment: 88, news: 0, policy: 0, profile: -15, valuation: 17 }
+    signals: { technical: -46, momentum: 11, sentiment: 88, news: 0, policy: 0, profile: -15, valuation: 17 }
   },
   {
     ticker: "CORZ", name: "Core Scientific, Inc.", sector: "Technology",
@@ -5933,8 +5933,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: -48, momentum: -100, sentiment: 84, news: 0, policy: 0, profile: 0, valuation: -100 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
+    signals: { technical: -51, momentum: -100, sentiment: 84, news: 0, policy: 0, profile: 0, valuation: -100 }
   },
   {
     ticker: "HIMS", name: "Hims & Hers Health, Inc.", sector: "Healthcare",
@@ -5944,8 +5944,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: 39, momentum: 4, sentiment: 14, news: 0, policy: 0, profile: -40, valuation: -60 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 6 },
+    signals: { technical: 39, momentum: -22, sentiment: 14, news: 0, policy: 0, profile: -40, valuation: -48 }
   },
   {
     ticker: "PAYC", name: "Paycom Software, Inc.", sector: "Technology",
@@ -5955,8 +5955,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.57, payoutRatio: 15.9, marketCapB: 12 },
-    signals: { technical: 43, momentum: 100, sentiment: 22, news: 0, policy: 0, profile: 25, valuation: 3 }
+    fundamentals: { dividendYield: 0.58, payoutRatio: 15.9, marketCapB: 12 },
+    signals: { technical: 47, momentum: 100, sentiment: 22, news: 0, policy: 0, profile: 25, valuation: 4 }
   },
   {
     ticker: "AXTI", name: "AXT, Inc.", sector: "Technology",
@@ -5966,8 +5966,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: 22, momentum: -100, sentiment: 70, news: 0, policy: 0, profile: 0, valuation: -21 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 3 },
+    signals: { technical: 28, momentum: -100, sentiment: 70, news: 0, policy: 0, profile: 0, valuation: -9 }
   },
   {
     ticker: "CPB", name: "The Campbell's Company", sector: "Consumer Defensive",
@@ -5977,8 +5977,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.86, payoutRatio: 119.1, marketCapB: 6 },
-    signals: { technical: -39, momentum: -18, sentiment: -15, news: 0, policy: 0, profile: 10, valuation: 25 }
+    fundamentals: { dividendYield: 4.76, payoutRatio: 119.1, marketCapB: 6 },
+    signals: { technical: -40, momentum: 0, sentiment: -15, news: 0, policy: 0, profile: 10, valuation: 24 }
   },
   {
     ticker: "ADT", name: "ADT Inc.", sector: "Industrials",
@@ -5988,8 +5988,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.97, payoutRatio: 30.1, marketCapB: 7 },
-    signals: { technical: -60, momentum: 79, sentiment: 25, news: 0, policy: 0, profile: 10, valuation: 29 }
+    fundamentals: { dividendYield: 2.23, payoutRatio: 30.1, marketCapB: 7 },
+    signals: { technical: -60, momentum: 100, sentiment: 10, news: 0, policy: 0, profile: 10, valuation: 29 }
   },
   {
     ticker: "NICE", name: "NICE Ltd.", sector: "Technology",
@@ -6000,7 +6000,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: 39, momentum: -16, sentiment: 54, news: 0, policy: 0, profile: 15, valuation: 32 }
+    signals: { technical: 40, momentum: -42, sentiment: 54, news: 0, policy: 0, profile: 15, valuation: 32 }
   },
   {
     ticker: "LW", name: "Lamb Weston Holdings, Inc.", sector: "Consumer Defensive",
@@ -6010,8 +6010,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.84, payoutRatio: 82.5, marketCapB: 7 },
-    signals: { technical: 53, momentum: 49, sentiment: 25, news: 0, policy: 0, profile: -5, valuation: 14 }
+    fundamentals: { dividendYield: 2.85, payoutRatio: 82.5, marketCapB: 7 },
+    signals: { technical: 50, momentum: 75, sentiment: 25, news: 0, policy: 0, profile: -5, valuation: 13 }
   },
   {
     ticker: "ACT", name: "Enact Holdings, Inc.", sector: "Financial Services",
@@ -6021,7 +6021,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.01, payoutRatio: 18.4, marketCapB: 7 },
+    fundamentals: { dividendYield: 2.0, payoutRatio: 18.4, marketCapB: 6 },
     signals: { technical: 43, momentum: 20, sentiment: 8, news: 0, policy: 0, profile: 35, valuation: 31 }
   },
   {
@@ -6033,7 +6033,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: 47, momentum: 100, sentiment: 27, news: 0, policy: 0, profile: 25, valuation: 20 }
+    signals: { technical: 53, momentum: 100, sentiment: 27, news: 0, policy: 0, profile: 25, valuation: 21 }
   },
   {
     ticker: "DBX", name: "Dropbox, Inc.", sector: "Technology",
@@ -6044,7 +6044,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: 43, momentum: 100, sentiment: -28, news: 0, policy: 0, profile: 15, valuation: 27 }
+    signals: { technical: 45, momentum: 100, sentiment: -28, news: 0, policy: 0, profile: 15, valuation: 27 }
   },
   {
     ticker: "EPAM", name: "EPAM Systems, Inc.", sector: "Technology",
@@ -6055,7 +6055,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -35, momentum: 43, sentiment: 40, news: 0, policy: 0, profile: 5, valuation: 31 }
+    signals: { technical: -35, momentum: 70, sentiment: 40, news: 0, policy: 0, profile: 5, valuation: 30 }
   },
   {
     ticker: "RGTI", name: "Rigetti Computing, Inc.", sector: "Technology",
@@ -6066,7 +6066,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: -51, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: 0, valuation: 0 }
+    signals: { technical: -46, momentum: -100, sentiment: 66, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "FLG", name: "Flagstar Bank, National Association", sector: "Financial Services",
@@ -6076,8 +6076,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.39, payoutRatio: 133.3, marketCapB: 4 },
-    signals: { technical: -37, momentum: -100, sentiment: 56, news: 0, policy: 0, profile: 0, valuation: 16 }
+    fundamentals: { dividendYield: 0.38, payoutRatio: 133.3, marketCapB: 4 },
+    signals: { technical: -37, momentum: -96, sentiment: 56, news: 0, policy: 0, profile: 0, valuation: 16 }
   },
   {
     ticker: "CZR", name: "Caesars Entertainment, Inc.", sector: "Consumer Cyclical",
@@ -6088,7 +6088,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 6 },
-    signals: { technical: 40, momentum: -13, sentiment: 3, news: 0, policy: 0, profile: -40, valuation: -100 }
+    signals: { technical: 42, momentum: 3, sentiment: 3, news: 0, policy: 0, profile: -40, valuation: -100 }
   },
   {
     ticker: "OTEX", name: "Open Text Corporation", sector: "Technology",
@@ -6098,8 +6098,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.13, payoutRatio: 42.6, marketCapB: 7 },
-    signals: { technical: 46, momentum: 32, sentiment: 8, news: 0, policy: 0, profile: 25, valuation: 41 }
+    fundamentals: { dividendYield: 4.14, payoutRatio: 42.6, marketCapB: 6 },
+    signals: { technical: 51, momentum: 32, sentiment: 8, news: 0, policy: 0, profile: 25, valuation: 41 }
   },
   {
     ticker: "PATH", name: "UiPath, Inc.", sector: "Technology",
@@ -6110,7 +6110,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: 43, momentum: 74, sentiment: 7, news: 0, policy: 0, profile: 25, valuation: 15 }
+    signals: { technical: 44, momentum: 68, sentiment: 7, news: 0, policy: 0, profile: 25, valuation: 15 }
   },
   {
     ticker: "OSCR", name: "Oscar Health, Inc.", sector: "Healthcare",
@@ -6120,8 +6120,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
-    signals: { technical: 47, momentum: 100, sentiment: 9, news: 0, policy: 0, profile: 0, valuation: 18 }
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
+    signals: { technical: 45, momentum: 100, sentiment: 9, news: 0, policy: 0, profile: 0, valuation: 19 }
   },
   {
     ticker: "YOU", name: "Clear Secure, Inc.", sector: "Technology",
@@ -6131,8 +6131,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.26, payoutRatio: 36.9, marketCapB: 5 },
-    signals: { technical: -40, momentum: -75, sentiment: 34, news: 0, policy: 0, profile: 25, valuation: 6 }
+    fundamentals: { dividendYield: 1.24, payoutRatio: 36.9, marketCapB: 5 },
+    signals: { technical: -38, momentum: -76, sentiment: 34, news: 0, policy: 0, profile: 25, valuation: 7 }
   },
   {
     ticker: "LYFT", name: "Lyft, Inc.", sector: "Technology",
@@ -6143,7 +6143,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 6 },
-    signals: { technical: 47, momentum: 23, sentiment: 25, news: 0, policy: 0, profile: 25, valuation: 37 }
+    signals: { technical: 47, momentum: 29, sentiment: 25, news: 0, policy: 0, profile: 25, valuation: 37 }
   },
   {
     ticker: "DLB", name: "Dolby Laboratories, Inc.", sector: "Industrials",
@@ -6153,8 +6153,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.34, payoutRatio: 60.0, marketCapB: 6 },
-    signals: { technical: 38, momentum: 9, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: 18 }
+    fundamentals: { dividendYield: 2.29, payoutRatio: 60.0, marketCapB: 6 },
+    signals: { technical: 42, momentum: 3, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: 19 }
   },
   {
     ticker: "KMX", name: "CarMax, Inc.", sector: "Consumer Cyclical",
@@ -6165,7 +6165,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: 36, momentum: 100, sentiment: 18, news: 0, policy: 0, profile: -15, valuation: 12 }
+    signals: { technical: 38, momentum: 100, sentiment: 18, news: 0, policy: 0, profile: -15, valuation: 13 }
   },
   {
     ticker: "TGTX", name: "TG Therapeutics, Inc.", sector: "Healthcare",
@@ -6176,7 +6176,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: 39, momentum: 100, sentiment: 75, news: 0, policy: 0, profile: 25, valuation: -4 }
+    signals: { technical: 37, momentum: 100, sentiment: 75, news: 0, policy: 0, profile: 25, valuation: -7 }
   },
   {
     ticker: "GLBE", name: "Global-E Online Ltd.", sector: "Consumer Cyclical",
@@ -6187,7 +6187,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: 37, momentum: 99, sentiment: 81, news: 0, policy: 0, profile: 15, valuation: -5 }
+    signals: { technical: 42, momentum: 74, sentiment: 81, news: 0, policy: 0, profile: 15, valuation: -2 }
   },
   {
     ticker: "MATX", name: "Matson, Inc.", sector: "Industrials",
@@ -6197,8 +6197,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.66, payoutRatio: 9.7, marketCapB: 7 },
-    signals: { technical: 42, momentum: 79, sentiment: 88, news: 0, policy: 0, profile: 15, valuation: 19 }
+    fundamentals: { dividendYield: 0.67, payoutRatio: 9.7, marketCapB: 7 },
+    signals: { technical: 42, momentum: 87, sentiment: 88, news: 0, policy: 0, profile: 15, valuation: 20 }
   },
   {
     ticker: "OPEN", name: "Opendoor Technologies Inc.", sector: "Real Estate",
