@@ -2193,7 +2193,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.78, payoutRatio: 20.6, marketCapB: 75 },
+    fundamentals: { dividendYield: 0.78, payoutRatio: 20.6, marketCapB: 74 },
     signals: { technical: 40, momentum: -17, sentiment: 68, news: 0, policy: 0, profile: 25, valuation: -17 }
   },
   {
@@ -2259,7 +2259,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.91, payoutRatio: 13.5, marketCapB: 121 },
+    fundamentals: { dividendYield: 0.91, payoutRatio: 13.5, marketCapB: 126 },
     signals: { technical: 45, momentum: 100, sentiment: 31, news: 0, policy: 0, profile: 30, valuation: 38 }
   },
   {
@@ -2491,7 +2491,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 102 },
-    signals: { technical: 60, momentum: 100, sentiment: 5, news: 0, policy: 0, profile: 50, valuation: -47 }
+    signals: { technical: 60, momentum: 100, sentiment: 5, news: 0, policy: 0, profile: 50, valuation: -50 }
   },
   {
     ticker: "MSTR", name: "Strategy Inc", sector: "Technology",
@@ -2678,7 +2678,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.17, payoutRatio: 6.9, marketCapB: 46 },
-    signals: { technical: 33, momentum: -70, sentiment: 68, news: 0, policy: 0, profile: 35, valuation: -14 }
+    signals: { technical: 33, momentum: -70, sentiment: 68, news: 0, policy: 0, profile: 35, valuation: -15 }
   },
   {
     ticker: "PSA", name: "Public Storage", sector: "Real Estate",
@@ -2766,7 +2766,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.82, payoutRatio: 17.8, marketCapB: 62 },
-    signals: { technical: 41, momentum: 49, sentiment: 62, news: 0, policy: 0, profile: 15, valuation: 21 }
+    signals: { technical: 41, momentum: 49, sentiment: 62, news: 0, policy: 0, profile: 15, valuation: 20 }
   },
   {
     ticker: "MCHP", name: "Microchip Technology Incorporated", sector: "Technology",
@@ -3063,7 +3063,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 40 },
-    signals: { technical: -45, momentum: -39, sentiment: 60, news: 0, policy: 0, profile: 10, valuation: -9 }
+    signals: { technical: -45, momentum: -39, sentiment: 60, news: 0, policy: 0, profile: 10, valuation: -8 }
   },
   {
     ticker: "AIG", name: "American International Group, Inc.", sector: "Financial Services",
@@ -3161,7 +3161,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 47 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 44 },
     signals: { technical: 27, momentum: 15, sentiment: 59, news: 0, policy: 0, profile: 10, valuation: 0 }
   },
   {
@@ -3172,7 +3172,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.84, payoutRatio: 172.8, marketCapB: 39 },
+    fundamentals: { dividendYield: 4.84, payoutRatio: 172.8, marketCapB: 38 },
     signals: { technical: -60, momentum: -24, sentiment: 43, news: 0, policy: 0, profile: 45, valuation: -30 }
   },
   {
@@ -3767,7 +3767,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 34 },
-    signals: { technical: 49, momentum: 72, sentiment: 31, news: 0, policy: 0, profile: 10, valuation: 21 }
+    signals: { technical: 49, momentum: 72, sentiment: 31, news: 0, policy: 0, profile: 10, valuation: 22 }
   },
   {
     ticker: "FOX", name: "Fox Corporation", sector: "Communication Services",
@@ -3865,7 +3865,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.99, payoutRatio: 27.5, marketCapB: 28 },
+    fundamentals: { dividendYield: 1.99, payoutRatio: 27.5, marketCapB: 30 },
     signals: { technical: 44, momentum: 41, sentiment: 40, news: 0, policy: 0, profile: 35, valuation: 30 }
   },
   {
@@ -4129,7 +4129,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.11, payoutRatio: 323.2, marketCapB: 22 },
+    fundamentals: { dividendYield: 4.11, payoutRatio: 323.2, marketCapB: 23 },
     signals: { technical: 44, momentum: -5, sentiment: 46, news: 0, policy: 0, profile: 20, valuation: 38 }
   },
   {
@@ -4624,7 +4624,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 23 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 22 },
     signals: { technical: 28, momentum: 67, sentiment: 3, news: 0, policy: 0, profile: 15, valuation: 41 }
   },
   {
@@ -5450,7 +5450,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -36, momentum: -100, sentiment: 35, news: 0, policy: 0, profile: -15, valuation: 11 }
+    signals: { technical: -36, momentum: -100, sentiment: 35, news: 0, policy: 0, profile: -15, valuation: 6 }
   },
   {
     ticker: "RVTY", name: "Revvity, Inc.", sector: "Healthcare",
@@ -5802,7 +5802,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.09, payoutRatio: 39.1, marketCapB: 7 },
-    signals: { technical: -60, momentum: -34, sentiment: 29, news: 0, policy: 0, profile: -5, valuation: 20 }
+    signals: { technical: -60, momentum: -34, sentiment: 29, news: 0, policy: 0, profile: -5, valuation: 18 }
   },
   {
     ticker: "SYM", name: "Symbotic Inc.", sector: "Industrials",
@@ -5867,8 +5867,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company HQ: Tel Aviv, Israel", "Who Profits", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.41, payoutRatio: 79.4, marketCapB: 0 },
-    signals: { technical: -32, momentum: -74, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 28 }
+    fundamentals: { dividendYield: 4.41, payoutRatio: 79.4, marketCapB: 6 },
+    signals: { technical: -32, momentum: -74, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 28 }
   },
   {
     ticker: "RIOT", name: "Riot Platforms, Inc.", sector: "Financial Services",
@@ -6318,7 +6318,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company HQ: Tel Aviv, Israel", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 3 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
     signals: { technical: 45, momentum: -33, sentiment: 41, news: 0, policy: 0, profile: -25, valuation: 25 }
   },
   {
@@ -6550,7 +6550,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: -51, momentum: -100, sentiment: 55, news: 0, policy: 0, profile: 15, valuation: -14 }
+    signals: { technical: -51, momentum: -100, sentiment: 55, news: 0, policy: 0, profile: 15, valuation: -20 }
   },
   {
     ticker: "SMR", name: "NuScale Power Corporation", sector: "Industrials",
@@ -6846,7 +6846,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
     signals: { technical: 48, momentum: 100, sentiment: 91, news: 0, policy: 0, profile: 0, valuation: -1 }
   },
   {
@@ -7264,8 +7264,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.52, payoutRatio: 12.0, marketCapB: 0 },
-    signals: { technical: 39, momentum: 86, sentiment: 100, news: 0, policy: 0, profile: 15, valuation: 40 }
+    fundamentals: { dividendYield: 2.52, payoutRatio: 12.0, marketCapB: 3 },
+    signals: { technical: 39, momentum: 86, sentiment: 100, news: 0, policy: 0, profile: 35, valuation: 40 }
   },
   {
     ticker: "QUBT", name: "Quantum Computing Inc.", sector: "Technology",
@@ -9300,7 +9300,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.56, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -47, momentum: -27, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
+    signals: { technical: -48, momentum: -27, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 0 }
   },
   {
     ticker: "JEPQ", name: "JPMorgan Nasdaq Equity Premium Income ETF", sector: "Other",
