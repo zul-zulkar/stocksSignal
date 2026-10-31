@@ -2810,7 +2810,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 38 },
-    signals: { technical: 34, momentum: -100, sentiment: 52, news: 0, policy: 0, profile: -15, valuation: -82 }
+    signals: { technical: 34, momentum: -100, sentiment: 52, news: 0, policy: 0, profile: -15, valuation: -86 }
   },
   {
     ticker: "DDOG", name: "Datadog, Inc.", sector: "Technology",
@@ -2843,7 +2843,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.72, payoutRatio: 63.2, marketCapB: 42 },
-    signals: { technical: 26, momentum: -68, sentiment: 54, news: 0, policy: 0, profile: 10, valuation: 6 }
+    signals: { technical: 26, momentum: -68, sentiment: 54, news: 0, policy: 0, profile: 10, valuation: 8 }
   },
   {
     ticker: "CLS", name: "Celestica Inc.", sector: "Technology",
@@ -2887,7 +2887,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.5, payoutRatio: 37.5, marketCapB: 53 },
-    signals: { technical: 44, momentum: 30, sentiment: 28, news: 0, policy: 0, profile: 45, valuation: -12 }
+    signals: { technical: 44, momentum: 30, sentiment: 28, news: 0, policy: 0, profile: 45, valuation: -11 }
   },
   {
     ticker: "EBAY", name: "eBay Inc.", sector: "Consumer Cyclical",
@@ -3998,7 +3998,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.76, payoutRatio: 600.0, marketCapB: 11 },
-    signals: { technical: -38, momentum: -100, sentiment: 56, news: 0, policy: 0, profile: 10, valuation: 34 }
+    signals: { technical: -38, momentum: -100, sentiment: 56, news: 0, policy: 0, profile: 10, valuation: 33 }
   },
   {
     ticker: "FSLR", name: "First Solar, Inc.", sector: "Technology",
@@ -4691,7 +4691,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.33, payoutRatio: 74.1, marketCapB: 17 },
-    signals: { technical: -38, momentum: 27, sentiment: 58, news: 0, policy: 0, profile: 5, valuation: -50 }
+    signals: { technical: -38, momentum: 27, sentiment: 58, news: 0, policy: 0, profile: 5, valuation: -51 }
   },
   {
     ticker: "AKAM", name: "Akamai Technologies, Inc.", sector: "Technology",
@@ -5142,7 +5142,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 11 },
-    signals: { technical: -31, momentum: -41, sentiment: 49, news: 0, policy: 0, profile: 5, valuation: 35 }
+    signals: { technical: -31, momentum: -41, sentiment: 49, news: 0, policy: 0, profile: 5, valuation: 34 }
   },
   {
     ticker: "AMH", name: "American Homes 4 Rent", sector: "Real Estate",
@@ -5604,7 +5604,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.11, payoutRatio: 16.2, marketCapB: 8 },
-    signals: { technical: -46, momentum: -46, sentiment: 28, news: 0, policy: 0, profile: 10, valuation: 15 }
+    signals: { technical: -46, momentum: -46, sentiment: 28, news: 0, policy: 0, profile: 10, valuation: 14 }
   },
   {
     ticker: "CELH", name: "Celsius Holdings, Inc.", sector: "Consumer Defensive",
@@ -5824,7 +5824,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: -44, momentum: -100, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 23 }
+    signals: { technical: -44, momentum: -100, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 22 }
   },
   {
     ticker: "UEC", name: "Uranium Energy Corp.", sector: "Energy",
@@ -5967,7 +5967,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: 26, momentum: -100, sentiment: 70, news: 0, policy: 0, profile: 0, valuation: -14 }
+    signals: { technical: 26, momentum: -100, sentiment: 70, news: 0, policy: 0, profile: 0, valuation: -2 }
   },
   {
     ticker: "CPB", name: "The Campbell's Company", sector: "Consumer Defensive",
@@ -7155,7 +7155,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1 },
-    signals: { technical: -20, momentum: -100, sentiment: 84, news: 0, policy: 0, profile: -60, valuation: -8 }
+    signals: { technical: -20, momentum: -100, sentiment: 84, news: 0, policy: 0, profile: -60, valuation: -71 }
   },
   {
     ticker: "HTO", name: "H2O America", sector: "Utilities",
@@ -7705,7 +7705,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1 },
-    signals: { technical: -20, momentum: -100, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 47 }
+    signals: { technical: -20, momentum: -100, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 43 }
   },
   {
     ticker: "AMPL", name: "Amplitude, Inc.", sector: "Technology",
