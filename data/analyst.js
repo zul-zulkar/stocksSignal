@@ -134,9 +134,9 @@ window.STOCK_ANALYST = {
     "rating": "strong_buy",
     "ratingMean": 1.32,
     "numAnalysts": 41,
-    "targetMean": 186.26,
-    "targetHigh": 240.53,
-    "targetLow": 96.12,
+    "targetMean": 186.02,
+    "targetHigh": 240.22,
+    "targetLow": 96.0,
     "price": 98.04,
     "currency": "USD"
   },

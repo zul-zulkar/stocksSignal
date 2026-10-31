@@ -193,7 +193,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.39, payoutRatio: 142.8, marketCapB: 118 },
-    signals: { technical: -41, momentum: -21, sentiment: 31, news: 0, policy: -20, profile: 40, valuation: -22 }
+    signals: { technical: -41, momentum: -21, sentiment: 31, news: 0, policy: -20, profile: 40, valuation: -23 }
   },
   {
     ticker: "MCD", name: "McDonald's Corp.", sector: "Consumer Cyclical",
