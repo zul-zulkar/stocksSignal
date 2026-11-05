@@ -1468,7 +1468,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.53, payoutRatio: 19.6, marketCapB: 127 },
-    signals: { technical: 42, momentum: 7, sentiment: 72, news: 0, policy: 0, profile: 60, valuation: 34 }
+    signals: { technical: 0, momentum: 0, sentiment: 72, news: 0, policy: 0, profile: 60, valuation: 34 }
   },
   {
     ticker: "ENB", name: "Enbridge Inc.", sector: "Energy",
