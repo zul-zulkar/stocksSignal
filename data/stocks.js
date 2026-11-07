@@ -3921,7 +3921,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 5.99, payoutRatio: 25.7, marketCapB: 15 },
-    signals: { technical: -40, momentum: -100, sentiment: 28, news: 0, policy: 0, profile: 35, valuation: 47 }
+    signals: { technical: -40, momentum: -100, sentiment: 28, news: 0, policy: 0, profile: 35, valuation: 46 }
   },
   {
     ticker: "PPG", name: "PPG Industries, Inc.", sector: "Basic Materials",
@@ -4129,7 +4129,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.67, payoutRatio: 323.2, marketCapB: 25 },
+    fundamentals: { dividendYield: 3.67, payoutRatio: 323.2, marketCapB: 24 },
     signals: { technical: 41, momentum: 51, sentiment: 46, news: 0, policy: 0, profile: 20, valuation: 36 }
   },
   {
@@ -4173,7 +4173,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.32, payoutRatio: 15.6, marketCapB: 19 },
+    fundamentals: { dividendYield: 0.32, payoutRatio: 15.6, marketCapB: 20 },
     signals: { technical: 29, momentum: -45, sentiment: 66, news: 0, policy: 0, profile: 15, valuation: -8 }
   },
   {
@@ -4823,7 +4823,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: -20, momentum: -100, sentiment: 95, news: 0, policy: 0, profile: 0, valuation: 29 }
+    signals: { technical: -20, momentum: -100, sentiment: 95, news: 0, policy: 0, profile: 0, valuation: 30 }
   },
   {
     ticker: "TKO", name: "TKO Group Holdings, Inc.", sector: "Communication Services",
@@ -6671,7 +6671,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.08, payoutRatio: 55.6, marketCapB: 3 },
-    signals: { technical: -33, momentum: -39, sentiment: -4, news: 0, policy: 0, profile: -5, valuation: 24 }
+    signals: { technical: -33, momentum: -39, sentiment: -4, news: 0, policy: 0, profile: -5, valuation: 23 }
   },
   {
     ticker: "BOX", name: "Box, Inc.", sector: "Technology",
@@ -7264,8 +7264,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.69, payoutRatio: 12.0, marketCapB: 3 },
-    signals: { technical: 68, momentum: 38, sentiment: 100, news: 0, policy: 0, profile: 35, valuation: 41 }
+    fundamentals: { dividendYield: 2.69, payoutRatio: 12.0, marketCapB: 0 },
+    signals: { technical: 68, momentum: 38, sentiment: 100, news: 0, policy: 0, profile: 15, valuation: 41 }
   },
   {
     ticker: "QUBT", name: "Quantum Computing Inc.", sector: "Technology",
@@ -8244,7 +8244,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -56, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -60, valuation: 0 }
+    signals: { technical: -55, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -60, valuation: 0 }
   },
   {
     ticker: "ARQQ", name: "Arqit Quantum Inc.", sector: "Technology",
@@ -8376,7 +8376,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -36, momentum: -48, sentiment: 84, news: 0, policy: 0, profile: -20, valuation: 0 }
+    signals: { technical: -35, momentum: -47, sentiment: 84, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "GGR", name: "Gogoro Inc.", sector: "Consumer Cyclical",
