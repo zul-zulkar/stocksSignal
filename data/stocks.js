@@ -2248,8 +2248,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.16, payoutRatio: 8.1, marketCapB: 83 },
-    signals: { technical: 38, momentum: 56, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: -47 }
+    fundamentals: { dividendYield: 0.16, payoutRatio: 8.1, marketCapB: 84 },
+    signals: { technical: 38, momentum: 56, sentiment: 57, news: 0, policy: 0, profile: 35, valuation: -48 }
   },
   {
     ticker: "MPC", name: "Marathon Petroleum Corporation", sector: "Energy",
@@ -3778,7 +3778,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.97, payoutRatio: 12.1, marketCapB: 26 },
-    signals: { technical: 42, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: 30 }
+    signals: { technical: 42, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: 25, valuation: 28 }
   },
   {
     ticker: "FOXA", name: "Fox Corporation", sector: "Communication Services",
@@ -7155,7 +7155,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1 },
-    signals: { technical: -48, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: -60, valuation: -73 }
+    signals: { technical: -49, momentum: -100, sentiment: 86, news: 0, policy: 0, profile: -60, valuation: -73 }
   },
   {
     ticker: "HTO", name: "H2O America", sector: "Utilities",
@@ -7518,7 +7518,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: 51, momentum: 100, sentiment: 22, news: 0, policy: 0, profile: -25, valuation: -47 }
+    signals: { technical: 51, momentum: 100, sentiment: 22, news: 0, policy: 0, profile: -25, valuation: -39 }
   },
   {
     ticker: "ASAN", name: "Asana, Inc.", sector: "Technology",
@@ -7550,7 +7550,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.17, payoutRatio: 21.5, marketCapB: 3 },
+    fundamentals: { dividendYield: 2.01, payoutRatio: 21.5, marketCapB: 3 },
     signals: { technical: 48, momentum: 100, sentiment: -16, news: 0, policy: 0, profile: 10, valuation: 12 }
   },
   {
@@ -8023,7 +8023,7 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.1, payoutRatio: 22.3, marketCapB: 0 },
+    fundamentals: { dividendYield: 2.91, payoutRatio: 22.3, marketCapB: 0 },
     signals: { technical: -33, momentum: -48, sentiment: 84, news: 0, policy: 0, profile: -5, valuation: 35 }
   },
   {
@@ -8486,7 +8486,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 0, momentum: 0, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
+    signals: { technical: -46, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "ATER", name: "Aterian, Inc.", sector: "Consumer Cyclical",
