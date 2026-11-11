@@ -258,7 +258,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public reporting"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.79, payoutRatio: 35.0, marketCapB: 999 },
+    fundamentals: { dividendYield: 0.79, payoutRatio: 35.0, marketCapB: 996 },
     signals: { technical: -39, momentum: -18, sentiment: 74, news: 0, policy: 5, profile: 40, valuation: -56 }
   },
   {
@@ -564,7 +564,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.34, payoutRatio: 45.4, marketCapB: 179 },
-    signals: { technical: -37, momentum: -48, sentiment: 15, news: 0, policy: 5, profile: 60, valuation: 24 }
+    signals: { technical: -37, momentum: -48, sentiment: 15, news: 0, policy: 5, profile: 60, valuation: 23 }
   },
 
   // ---------- TELECOM & UTIL ----------
@@ -1831,7 +1831,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.81, payoutRatio: 24.0, marketCapB: 93 },
-    signals: { technical: -33, momentum: 8, sentiment: 70, news: 0, policy: 0, profile: 25, valuation: 18 }
+    signals: { technical: -33, momentum: 8, sentiment: 70, news: 0, policy: 0, profile: 25, valuation: 17 }
   },
   {
     ticker: "WMB", name: "The Williams Companies, Inc.", sector: "Energy",
@@ -2083,7 +2083,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.4, payoutRatio: 46.4, marketCapB: 93 },
+    fundamentals: { dividendYield: 1.4, payoutRatio: 46.4, marketCapB: 94 },
     signals: { technical: 38, momentum: 68, sentiment: 55, news: 0, policy: 0, profile: 35, valuation: -2 }
   },
   {
@@ -2106,7 +2106,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 78 },
-    signals: { technical: 36, momentum: 61, sentiment: 72, news: 0, policy: 0, profile: 15, valuation: -6 }
+    signals: { technical: 36, momentum: 61, sentiment: 72, news: 0, policy: 0, profile: 15, valuation: -10 }
   },
   {
     ticker: "MNST", name: "Monster Beverage Corporation", sector: "Consumer Defensive",
@@ -2193,7 +2193,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.75, payoutRatio: 20.6, marketCapB: 77 },
+    fundamentals: { dividendYield: 0.75, payoutRatio: 20.6, marketCapB: 76 },
     signals: { technical: 41, momentum: 39, sentiment: 68, news: 0, policy: 0, profile: 25, valuation: -19 }
   },
   {
@@ -3140,7 +3140,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 42 },
-    signals: { technical: -39, momentum: -6, sentiment: 90, news: 0, policy: 0, profile: -15, valuation: -5 }
+    signals: { technical: -39, momentum: -6, sentiment: 90, news: 0, policy: 0, profile: -15, valuation: -6 }
   },
   {
     ticker: "ALNY", name: "Alnylam Pharmaceuticals, Inc.", sector: "Healthcare",
@@ -3161,7 +3161,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 36 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 34 },
     signals: { technical: 30, momentum: -100, sentiment: 59, news: 0, policy: 0, profile: 10, valuation: 0 }
   },
   {
@@ -4129,7 +4129,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 3.62, payoutRatio: 323.2, marketCapB: 24 },
+    fundamentals: { dividendYield: 3.62, payoutRatio: 323.2, marketCapB: 25 },
     signals: { technical: 38, momentum: 62, sentiment: 46, news: 0, policy: 0, profile: 20, valuation: 35 }
   },
   {
@@ -5758,7 +5758,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: -37, momentum: 33, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 15 }
+    signals: { technical: -37, momentum: 33, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 14 }
   },
   {
     ticker: "NUVL", name: "Nuvalent, Inc.", sector: "Healthcare",
@@ -5867,8 +5867,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company HQ: Tel Aviv, Israel", "Who Profits", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.39, payoutRatio: 79.4, marketCapB: 0 },
-    signals: { technical: -41, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 27 }
+    fundamentals: { dividendYield: 4.39, payoutRatio: 79.4, marketCapB: 6 },
+    signals: { technical: -41, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 27 }
   },
   {
     ticker: "RIOT", name: "Riot Platforms, Inc.", sector: "Financial Services",
@@ -5934,7 +5934,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: -51, momentum: -100, sentiment: 84, news: 0, policy: 0, profile: -25, valuation: -57 }
+    signals: { technical: -51, momentum: -100, sentiment: 84, news: 0, policy: 0, profile: -25, valuation: -100 }
   },
   {
     ticker: "HIMS", name: "Hims & Hers Health, Inc.", sector: "Healthcare",
@@ -5945,7 +5945,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: 60, momentum: -72, sentiment: 14, news: 0, policy: 0, profile: -40, valuation: -33 }
+    signals: { technical: 60, momentum: -72, sentiment: 14, news: 0, policy: 0, profile: -40, valuation: -45 }
   },
   {
     ticker: "PAYC", name: "Paycom Software, Inc.", sector: "Technology",
@@ -6318,7 +6318,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company HQ: Tel Aviv, Israel", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 3 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
     signals: { technical: 43, momentum: 51, sentiment: 41, news: 0, policy: 0, profile: -25, valuation: 31 }
   },
   {
@@ -6979,7 +6979,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.19, payoutRatio: 40.4, marketCapB: 3 },
-    signals: { technical: 20, momentum: 100, sentiment: 24, news: 0, policy: 0, profile: -15, valuation: 11 }
+    signals: { technical: 20, momentum: 100, sentiment: 24, news: 0, policy: 0, profile: -15, valuation: 10 }
   },
   {
     ticker: "SLNO", name: "Soleno Therapeutics, Inc.", sector: "Healthcare",
@@ -7001,7 +7001,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: -42, momentum: -98, sentiment: 78, news: 0, policy: 0, profile: 5, valuation: 36 }
+    signals: { technical: -42, momentum: -98, sentiment: 78, news: 0, policy: 0, profile: 5, valuation: 35 }
   },
   {
     ticker: "RLX", name: "RLX Technology Inc.", sector: "Consumer Defensive",
@@ -7264,8 +7264,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.72, payoutRatio: 12.0, marketCapB: 0 },
-    signals: { technical: 70, momentum: 33, sentiment: 100, news: 0, policy: 0, profile: 15, valuation: 41 }
+    fundamentals: { dividendYield: 2.72, payoutRatio: 12.0, marketCapB: 3 },
+    signals: { technical: 70, momentum: 33, sentiment: 100, news: 0, policy: 0, profile: 35, valuation: 41 }
   },
   {
     ticker: "QUBT", name: "Quantum Computing Inc.", sector: "Technology",
@@ -8156,7 +8156,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 44, momentum: -40, sentiment: 34, news: 0, policy: 0, profile: -35, valuation: 43 }
+    signals: { technical: 44, momentum: -40, sentiment: 34, news: 0, policy: 0, profile: -35, valuation: 42 }
   },
   {
     ticker: "MLAC", name: "Mountain Lake Acquisition Corp.", sector: "Other",
