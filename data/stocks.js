@@ -103,7 +103,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 845 },
-    signals: { technical: 27, momentum: 48, sentiment: 81, news: 0, policy: 5, profile: 55, valuation: -27 }
+    signals: { technical: 27, momentum: 48, sentiment: 80, news: 0, policy: 5, profile: 55, valuation: -27 }
   },
   {
     ticker: "ORCL", name: "Oracle Corp.", sector: "Technology",
@@ -1512,7 +1512,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.83, payoutRatio: 11.9, marketCapB: 125 },
-    signals: { technical: 40, momentum: 0, sentiment: 68, news: 0, policy: 0, profile: 50, valuation: 23 }
+    signals: { technical: 40, momentum: 0, sentiment: 66, news: 0, policy: 0, profile: 50, valuation: 23 }
   },
   {
     ticker: "SONY", name: "Sony Group Corporation", sector: "Technology",
@@ -2359,7 +2359,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 7.04, payoutRatio: 527.0, marketCapB: 49 },
-    signals: { technical: -44, momentum: -100, sentiment: 34, news: 0, policy: 0, profile: 10, valuation: 40 }
+    signals: { technical: -44, momentum: -100, sentiment: 32, news: 0, policy: 0, profile: 10, valuation: 40 }
   },
   {
     ticker: "BKR", name: "Baker Hughes Company", sector: "Energy",
@@ -2480,7 +2480,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.66, payoutRatio: 24.2, marketCapB: 65 },
-    signals: { technical: -42, momentum: -41, sentiment: 52, news: 0, policy: 0, profile: 45, valuation: 31 }
+    signals: { technical: -42, momentum: -41, sentiment: 50, news: 0, policy: 0, profile: 45, valuation: 31 }
   },
   {
     ticker: "FTNT", name: "Fortinet, Inc.", sector: "Technology",
@@ -2887,7 +2887,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.44, payoutRatio: 37.5, marketCapB: 56 },
-    signals: { technical: 41, momentum: 77, sentiment: 28, news: 0, policy: 0, profile: 45, valuation: -15 }
+    signals: { technical: 41, momentum: 77, sentiment: 22, news: 0, policy: 0, profile: 45, valuation: -15 }
   },
   {
     ticker: "EBAY", name: "eBay Inc.", sector: "Consumer Cyclical",
@@ -6176,7 +6176,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
-    signals: { technical: 45, momentum: 100, sentiment: 75, news: 0, policy: 0, profile: 15, valuation: -12 }
+    signals: { technical: 45, momentum: 100, sentiment: 72, news: 0, policy: 0, profile: 15, valuation: -12 }
   },
   {
     ticker: "GLBE", name: "Global-E Online Ltd.", sector: "Consumer Cyclical",
@@ -8244,7 +8244,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -51, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -60, valuation: 0 }
+    signals: { technical: -52, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -60, valuation: 0 }
   },
   {
     ticker: "ARQQ", name: "Arqit Quantum Inc.", sector: "Technology",
