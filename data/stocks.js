@@ -2711,7 +2711,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 45 },
-    signals: { technical: -47, momentum: -59, sentiment: 84, news: 0, policy: 0, profile: 15, valuation: 14 }
+    signals: { technical: -47, momentum: -59, sentiment: 84, news: 0, policy: 0, profile: 15, valuation: 13 }
   },
   {
     ticker: "VST", name: "Vistra Corp.", sector: "Utilities",
@@ -3316,7 +3316,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.05, payoutRatio: 47.9, marketCapB: 34 },
-    signals: { technical: 40, momentum: -1, sentiment: 36, news: 0, policy: 0, profile: 25, valuation: 18 }
+    signals: { technical: 40, momentum: -1, sentiment: 36, news: 0, policy: 0, profile: 25, valuation: 17 }
   },
   {
     ticker: "LVS", name: "Las Vegas Sands Corp.", sector: "Consumer Cyclical",
@@ -4416,7 +4416,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.96, payoutRatio: 14.8, marketCapB: 18 },
-    signals: { technical: 38, momentum: -4, sentiment: 9, news: 0, policy: 0, profile: 35, valuation: 27 }
+    signals: { technical: 38, momentum: -4, sentiment: 9, news: 0, policy: 0, profile: 35, valuation: 28 }
   },
   {
     ticker: "DLTR", name: "Dollar Tree, Inc.", sector: "Consumer Defensive",
@@ -5208,7 +5208,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 10 },
-    signals: { technical: -33, momentum: -78, sentiment: 64, news: 0, policy: 0, profile: -40, valuation: 18 }
+    signals: { technical: -33, momentum: -78, sentiment: 64, news: 0, policy: 0, profile: -40, valuation: 17 }
   },
   {
     ticker: "TTD", name: "The Trade Desk, Inc.", sector: "Communication Services",
@@ -5758,7 +5758,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 9 },
-    signals: { technical: -30, momentum: 31, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 16 }
+    signals: { technical: -30, momentum: 31, sentiment: 36, news: 0, policy: 0, profile: -25, valuation: 15 }
   },
   {
     ticker: "NUVL", name: "Nuvalent, Inc.", sector: "Healthcare",
@@ -7683,7 +7683,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1 },
-    signals: { technical: -42, momentum: -66, sentiment: 31, news: 0, policy: 0, profile: -45, valuation: 19 }
+    signals: { technical: -42, momentum: -65, sentiment: 31, news: 0, policy: 0, profile: -45, valuation: 19 }
   },
   {
     ticker: "TDOC", name: "Teladoc Health, Inc.", sector: "Healthcare",
@@ -8376,7 +8376,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -25, momentum: 22, sentiment: 84, news: 0, policy: 0, profile: -20, valuation: 0 }
+    signals: { technical: -25, momentum: 24, sentiment: 84, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "GGR", name: "Gogoro Inc.", sector: "Consumer Cyclical",
