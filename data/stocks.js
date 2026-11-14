@@ -709,7 +709,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.71, payoutRatio: 32.4, marketCapB: 1656 },
-    signals: { technical: -37, momentum: -65, sentiment: 88, news: 0, policy: 0, profile: 65, valuation: 6 }
+    signals: { technical: -37, momentum: -65, sentiment: 86, news: 0, policy: 0, profile: 65, valuation: 6 }
   },
   {
     ticker: "LLY", name: "Eli Lilly and Company", sector: "Healthcare",
@@ -742,7 +742,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.65, payoutRatio: 49.9, marketCapB: 377 },
-    signals: { technical: 40, momentum: -72, sentiment: 57, news: 0, policy: 0, profile: 60, valuation: 11 }
+    signals: { technical: 40, momentum: -72, sentiment: 56, news: 0, policy: 0, profile: 60, valuation: 11 }
   },
   {
     ticker: "PLTR", name: "Palantir Technologies Inc.", sector: "Technology",
