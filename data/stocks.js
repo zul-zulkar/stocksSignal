@@ -2689,7 +2689,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.6, payoutRatio: 126.2, marketCapB: 62 },
-    signals: { technical: -41, momentum: 33, sentiment: 23, news: 0, policy: 0, profile: 45, valuation: -47 }
+    signals: { technical: -41, momentum: 33, sentiment: 25, news: 0, policy: 0, profile: 45, valuation: -47 }
   },
   {
     ticker: "AME", name: "AMETEK, Inc.", sector: "Industrials",
@@ -2997,7 +2997,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.88, payoutRatio: 23.8, marketCapB: 43 },
-    signals: { technical: -44, momentum: 12, sentiment: 40, news: 0, policy: 0, profile: 45, valuation: -12 }
+    signals: { technical: -44, momentum: 12, sentiment: 38, news: 0, policy: 0, profile: 45, valuation: -12 }
   },
   {
     ticker: "ODFL", name: "Old Dominion Freight Line, Inc.", sector: "Industrials",
@@ -3437,7 +3437,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.94, payoutRatio: 32.6, marketCapB: 20 },
-    signals: { technical: -46, momentum: -82, sentiment: 80, news: 0, policy: 0, profile: 5, valuation: 30 }
+    signals: { technical: -46, momentum: -82, sentiment: 78, news: 0, policy: 0, profile: 5, valuation: 30 }
   },
   {
     ticker: "AXON", name: "Axon Enterprise, Inc.", sector: "Industrials",
@@ -3591,7 +3591,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.74, payoutRatio: 10.8, marketCapB: 31 },
-    signals: { technical: 36, momentum: 59, sentiment: 39, news: 0, policy: 0, profile: 25, valuation: 28 }
+    signals: { technical: 36, momentum: 59, sentiment: 40, news: 0, policy: 0, profile: 25, valuation: 28 }
   },
   {
     ticker: "UAL", name: "United Airlines Holdings, Inc.", sector: "Industrials",
@@ -3866,7 +3866,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.07, payoutRatio: 23.7, marketCapB: 28 },
-    signals: { technical: 38, momentum: 68, sentiment: 40, news: 0, policy: 0, profile: 35, valuation: 29 }
+    signals: { technical: 38, momentum: 68, sentiment: 36, news: 0, policy: 0, profile: 35, valuation: 29 }
   },
   {
     ticker: "VRSN", name: "VeriSign, Inc.", sector: "Technology",
@@ -3998,7 +3998,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.73, payoutRatio: 39.2, marketCapB: 11 },
-    signals: { technical: -35, momentum: -100, sentiment: 57, news: 0, policy: 0, profile: 25, valuation: 25 }
+    signals: { technical: -35, momentum: -100, sentiment: 57, news: 0, policy: 0, profile: 25, valuation: 23 }
   },
   {
     ticker: "FSLR", name: "First Solar, Inc.", sector: "Technology",
@@ -4955,7 +4955,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: -40, momentum: -96, sentiment: 62, news: 0, policy: 0, profile: 0, valuation: 40 }
+    signals: { technical: -40, momentum: -96, sentiment: 60, news: 0, policy: 0, profile: 0, valuation: 40 }
   },
   {
     ticker: "ALGN", name: "Align Technology, Inc.", sector: "Healthcare",
@@ -6616,7 +6616,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 3 },
-    signals: { technical: -35, momentum: -38, sentiment: 55, news: 0, policy: 0, profile: 25, valuation: 6 }
+    signals: { technical: -35, momentum: -38, sentiment: 55, news: 0, policy: 0, profile: 25, valuation: 8 }
   },
   {
     ticker: "MNDY", name: "monday.com Ltd.", sector: "Technology",
@@ -7034,7 +7034,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: -35, momentum: -14, sentiment: 4, news: 0, policy: 0, profile: -25, valuation: -21 }
+    signals: { technical: -35, momentum: -14, sentiment: 4, news: 0, policy: 0, profile: -25, valuation: -22 }
   },
   {
     ticker: "UA", name: "Under Armour, Inc.", sector: "Consumer Cyclical",
