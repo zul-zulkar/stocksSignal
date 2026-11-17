@@ -81,7 +81,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.61, payoutRatio: 3.5, marketCapB: 3770 },
-    signals: { technical: 60, momentum: -100, sentiment: 68, news: 0, policy: 10, profile: 65, valuation: 30 }
+    signals: { technical: 60, momentum: -100, sentiment: 66, news: 0, policy: 10, profile: 65, valuation: 30 }
   },
   {
     ticker: "INTC", name: "Intel Corp.", sector: "Technology",
@@ -215,7 +215,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.14, payoutRatio: 62.0, marketCapB: 428 },
-    signals: { technical: 6, momentum: 68, sentiment: 66, news: 0, policy: -10, profile: 60, valuation: -24 }
+    signals: { technical: 6, momentum: 68, sentiment: 64, news: 0, policy: -10, profile: 60, valuation: -24 }
   },
   {
     ticker: "PEP", name: "PepsiCo Inc.", sector: "Consumer Defensive",
@@ -270,7 +270,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.53, payoutRatio: 26.7, marketCapB: 494 },
-    signals: { technical: -69, momentum: 3, sentiment: 51, news: 0, policy: 10, profile: 25, valuation: -73 }
+    signals: { technical: -69, momentum: 3, sentiment: 49, news: 0, policy: 10, profile: 25, valuation: -73 }
   },
   {
     ticker: "TGT", name: "Target Corp.", sector: "Consumer Defensive",
@@ -1138,7 +1138,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.87, payoutRatio: 51.0, marketCapB: 185 },
-    signals: { technical: 41, momentum: 49, sentiment: 80, news: 0, policy: 0, profile: 60, valuation: 4 }
+    signals: { technical: 41, momentum: 49, sentiment: 82, news: 0, policy: 0, profile: 60, valuation: 4 }
   },
   {
     ticker: "GILD", name: "Gilead Sciences, Inc.", sector: "Healthcare",
@@ -1699,7 +1699,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.63, payoutRatio: 31.5, marketCapB: 97 },
-    signals: { technical: 37, momentum: 0, sentiment: -15, news: 0, policy: 0, profile: 25, valuation: 35 }
+    signals: { technical: 37, momentum: 0, sentiment: -7, news: 0, policy: 0, profile: 25, valuation: 35 }
   },
   {
     ticker: "CNQ", name: "Canadian Natural Resources Limited", sector: "Energy",
@@ -2557,7 +2557,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.55, payoutRatio: 57.2, marketCapB: 50 },
-    signals: { technical: 39, momentum: -51, sentiment: 72, news: 0, policy: 0, profile: 35, valuation: 35 }
+    signals: { technical: 39, momentum: -51, sentiment: 74, news: 0, policy: 0, profile: 35, valuation: 35 }
   },
   {
     ticker: "LHX", name: "L3Harris Technologies, Inc.", sector: "Industrials",
@@ -2579,7 +2579,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.91, payoutRatio: 23.2, marketCapB: 57 },
-    signals: { technical: 38, momentum: -21, sentiment: 40, news: 0, policy: 0, profile: 45, valuation: 27 }
+    signals: { technical: 38, momentum: -21, sentiment: 36, news: 0, policy: 0, profile: 45, valuation: 27 }
   },
   {
     ticker: "AFL", name: "Aflac Incorporated", sector: "Financial Services",
@@ -2722,7 +2722,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.69, payoutRatio: 12.4, marketCapB: 44 },
-    signals: { technical: -49, momentum: -14, sentiment: 81, news: 0, policy: 0, profile: 10, valuation: 18 }
+    signals: { technical: -49, momentum: -14, sentiment: 82, news: 0, policy: 0, profile: 10, valuation: 18 }
   },
   {
     ticker: "NDAQ", name: "Nasdaq, Inc.", sector: "Financial Services",
@@ -2766,7 +2766,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.89, payoutRatio: 14.3, marketCapB: 57 },
-    signals: { technical: 40, momentum: 43, sentiment: 68, news: 0, policy: 0, profile: 15, valuation: 26 }
+    signals: { technical: 40, momentum: 43, sentiment: 74, news: 0, policy: 0, profile: 15, valuation: 26 }
   },
   {
     ticker: "MCHP", name: "Microchip Technology Incorporated", sector: "Technology",
@@ -2843,7 +2843,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.77, payoutRatio: 63.2, marketCapB: 40 },
-    signals: { technical: -38, momentum: -93, sentiment: 64, news: 0, policy: 0, profile: 10, valuation: 11 }
+    signals: { technical: -38, momentum: -93, sentiment: 69, news: 0, policy: 0, profile: 10, valuation: 11 }
   },
   {
     ticker: "CLS", name: "Celestica Inc.", sector: "Technology",
@@ -3118,7 +3118,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.93, payoutRatio: 56.4, marketCapB: 45 },
-    signals: { technical: 11, momentum: 39, sentiment: -10, news: 0, policy: 0, profile: 35, valuation: 3 }
+    signals: { technical: 11, momentum: 39, sentiment: -8, news: 0, policy: 0, profile: 35, valuation: 3 }
   },
   {
     ticker: "JD", name: "JD.com, Inc.", sector: "Consumer Cyclical",
@@ -3679,7 +3679,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.25, payoutRatio: 140.0, marketCapB: 39 },
-    signals: { technical: 40, momentum: 100, sentiment: 36, news: 0, policy: 0, profile: 5, valuation: -20 }
+    signals: { technical: 40, momentum: 100, sentiment: 38, news: 0, policy: 0, profile: 5, valuation: -20 }
   },
   {
     ticker: "HUM", name: "Humana Inc.", sector: "Healthcare",
@@ -3690,7 +3690,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.79, payoutRatio: 34.5, marketCapB: 55 },
-    signals: { technical: 37, momentum: 100, sentiment: 52, news: 0, policy: 0, profile: 10, valuation: -14 }
+    signals: { technical: 37, momentum: 100, sentiment: 54, news: 0, policy: 0, profile: 10, valuation: -14 }
   },
   {
     ticker: "TWLO", name: "Twilio Inc.", sector: "Technology",
@@ -4460,7 +4460,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.55, payoutRatio: 46.4, marketCapB: 20 },
-    signals: { technical: 37, momentum: -4, sentiment: 80, news: 0, policy: 0, profile: 25, valuation: 16 }
+    signals: { technical: 37, momentum: -4, sentiment: 80, news: 0, policy: 0, profile: 25, valuation: 17 }
   },
   {
     ticker: "MRNA", name: "Moderna, Inc.", sector: "Healthcare",
@@ -4702,7 +4702,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 12 },
-    signals: { technical: -36, momentum: -100, sentiment: 48, news: 0, policy: 0, profile: 5, valuation: 23 }
+    signals: { technical: -36, momentum: -100, sentiment: 46, news: 0, policy: 0, profile: 5, valuation: 23 }
   },
   {
     ticker: "IREN", name: "IREN Limited", sector: "Financial Services",
@@ -4834,7 +4834,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.62, payoutRatio: 84.2, marketCapB: 36 },
-    signals: { technical: -34, momentum: -7, sentiment: 78, news: 0, policy: 0, profile: 25, valuation: -70 }
+    signals: { technical: -34, momentum: -7, sentiment: 80, news: 0, policy: 0, profile: 25, valuation: -70 }
   },
   {
     ticker: "TME", name: "Tencent Music Entertainment Group", sector: "Communication Services",
@@ -5065,7 +5065,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.97, payoutRatio: 59.7, marketCapB: 17 },
-    signals: { technical: 49, momentum: 100, sentiment: 26, news: 0, policy: 0, profile: 15, valuation: 8 }
+    signals: { technical: 49, momentum: 100, sentiment: 20, news: 0, policy: 0, profile: 15, valuation: 8 }
   },
   {
     ticker: "CHKP", name: "Check Point Software Technologies Ltd.", sector: "Technology",
@@ -5274,7 +5274,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.76, payoutRatio: 41.9, marketCapB: 9 },
-    signals: { technical: -60, momentum: 3, sentiment: 77, news: 0, policy: 0, profile: 10, valuation: 25 }
+    signals: { technical: -60, momentum: 3, sentiment: 77, news: 0, policy: 0, profile: 10, valuation: 29 }
   },
   {
     ticker: "DOCN", name: "DigitalOcean Holdings, Inc.", sector: "Technology",
@@ -6583,7 +6583,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: 20, momentum: 100, sentiment: 52, news: 0, policy: 0, profile: 0, valuation: 22 }
+    signals: { technical: 20, momentum: 100, sentiment: 57, news: 0, policy: 0, profile: 0, valuation: 22 }
   },
   {
     ticker: "COCO", name: "The Vita Coco Company, Inc.", sector: "Consumer Defensive",
@@ -7177,7 +7177,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 29.6, marketCapB: 2 },
-    signals: { technical: -29, momentum: -30, sentiment: 15, news: 0, policy: 0, profile: -45, valuation: 38 }
+    signals: { technical: -29, momentum: -29, sentiment: 15, news: 0, policy: 0, profile: -45, valuation: 38 }
   },
   {
     ticker: "CPRI", name: "Capri Holdings Limited", sector: "Consumer Cyclical",
@@ -7309,7 +7309,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1 },
-    signals: { technical: -30, momentum: -93, sentiment: 15, news: 0, policy: 0, profile: -60, valuation: 0 }
+    signals: { technical: -31, momentum: -93, sentiment: 15, news: 0, policy: 0, profile: -60, valuation: 0 }
   },
   {
     ticker: "AGRO", name: "Adecoagro S.A.", sector: "Consumer Defensive",
@@ -7408,7 +7408,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 6.14, payoutRatio: 223.1, marketCapB: 1 },
-    signals: { technical: -33, momentum: -100, sentiment: 9, news: 0, policy: 0, profile: -50, valuation: 43 }
+    signals: { technical: -33, momentum: -100, sentiment: 3, news: 0, policy: 0, profile: -50, valuation: 43 }
   },
   {
     ticker: "MQ", name: "Marqeta, Inc.", sector: "Technology",
