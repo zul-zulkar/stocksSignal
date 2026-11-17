@@ -1831,7 +1831,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.8, payoutRatio: 22.3, marketCapB: 88 },
-    signals: { technical: -31, momentum: 6, sentiment: 70, news: 0, policy: 0, profile: 25, valuation: 20 }
+    signals: { technical: -31, momentum: 6, sentiment: 71, news: 0, policy: 0, profile: 25, valuation: 20 }
   },
   {
     ticker: "WMB", name: "The Williams Companies, Inc.", sector: "Energy",
@@ -2128,7 +2128,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.82, payoutRatio: 75.0, marketCapB: 71 },
-    signals: { technical: -33, momentum: -31, sentiment: 62, news: 0, policy: 0, profile: -5, valuation: 26 }
+    signals: { technical: -33, momentum: -31, sentiment: 63, news: 0, policy: 0, profile: -5, valuation: 26 }
   },
   {
     ticker: "CI", name: "The Cigna Group", sector: "Healthcare",
@@ -2644,7 +2644,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 106 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 178 },
     signals: { technical: -23, momentum: 35, sentiment: 52, news: 0, policy: 0, profile: 30, valuation: -40 }
   },
   {
@@ -5571,7 +5571,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 5 },
-    signals: { technical: -38, momentum: -100, sentiment: 85, news: 0, policy: 0, profile: 0, valuation: 29 }
+    signals: { technical: -38, momentum: -100, sentiment: 82, news: 0, policy: 0, profile: 0, valuation: 29 }
   },
   {
     ticker: "BAX", name: "Baxter International Inc.", sector: "Healthcare",
@@ -6550,7 +6550,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: -43, momentum: -100, sentiment: 60, news: 0, policy: 0, profile: 15, valuation: -6 }
+    signals: { technical: -43, momentum: -100, sentiment: 62, news: 0, policy: 0, profile: 15, valuation: -6 }
   },
   {
     ticker: "SMR", name: "NuScale Power Corporation", sector: "Industrials",
@@ -7287,7 +7287,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 2 },
-    signals: { technical: -27, momentum: -50, sentiment: 66, news: 0, policy: 0, profile: -45, valuation: -22 }
+    signals: { technical: -27, momentum: -50, sentiment: 66, news: 0, policy: 0, profile: -45, valuation: -46 }
   },
   {
     ticker: "SEM", name: "Select Medical Holdings Corporation", sector: "Healthcare",
@@ -7463,7 +7463,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: 45, momentum: 100, sentiment: 92, news: 0, policy: 0, profile: 0, valuation: 0 }
+    signals: { technical: 45, momentum: 100, sentiment: 91, news: 0, policy: 0, profile: 0, valuation: 0 }
   },
   {
     ticker: "WOLF", name: "Wolfspeed, Inc.", sector: "Technology",
