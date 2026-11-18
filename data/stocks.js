@@ -3129,7 +3129,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.63, payoutRatio: 70.4, marketCapB: 34 },
-    signals: { technical: -35, momentum: -67, sentiment: 76, news: 0, policy: 0, profile: 20, valuation: 40 }
+    signals: { technical: -35, momentum: -67, sentiment: 76, news: 0, policy: 0, profile: 20, valuation: 41 }
   },
   {
     ticker: "TTWO", name: "Take-Two Interactive Software, Inc.", sector: "Communication Services",
@@ -7727,7 +7727,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 24.07, payoutRatio: 546.7, marketCapB: 0 },
-    signals: { technical: -20, momentum: -100, sentiment: 100, news: 0, policy: 0, profile: -45, valuation: 56 }
+    signals: { technical: -20, momentum: -100, sentiment: 100, news: 0, policy: 0, profile: -45, valuation: 55 }
   },
   {
     ticker: "CRON", name: "Cronos Group Inc.", sector: "Healthcare",
