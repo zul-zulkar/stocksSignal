@@ -258,7 +258,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public reporting"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.78, payoutRatio: 35.0, marketCapB: 1014 },
+    fundamentals: { dividendYield: 0.78, payoutRatio: 35.0, marketCapB: 1010 },
     signals: { technical: -43, momentum: 21, sentiment: 75, news: 0, policy: 5, profile: 40, valuation: -58 }
   },
   {
@@ -303,7 +303,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.27, payoutRatio: 41.0, marketCapB: 125 },
-    signals: { technical: -34, momentum: 13, sentiment: 57, news: 0, policy: 5, profile: 40, valuation: 7 }
+    signals: { technical: -34, momentum: 13, sentiment: 57, news: 0, policy: 5, profile: 40, valuation: 8 }
   },
   {
     ticker: "NKE", name: "Nike Inc.", sector: "Consumer Cyclical",
@@ -314,7 +314,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.57, payoutRatio: 78.8, marketCapB: 54 },
-    signals: { technical: -38, momentum: -55, sentiment: 3, news: 0, policy: 0, profile: 25, valuation: -17 }
+    signals: { technical: -38, momentum: -55, sentiment: 3, news: 0, policy: 0, profile: 25, valuation: -16 }
   },
   {
     ticker: "PG", name: "Procter & Gamble", sector: "Consumer Defensive",
@@ -1104,7 +1104,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.48, payoutRatio: 32.5, marketCapB: 154 },
+    fundamentals: { dividendYield: 1.48, payoutRatio: 32.5, marketCapB: 155 },
     signals: { technical: -45, momentum: -30, sentiment: 65, news: 0, policy: 0, profile: 40, valuation: -12 }
   },
   {
@@ -1842,7 +1842,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.11, payoutRatio: 81.7, marketCapB: 84 },
-    signals: { technical: -42, momentum: -38, sentiment: 80, news: 0, policy: 0, profile: 45, valuation: -18 }
+    signals: { technical: -42, momentum: -38, sentiment: 80, news: 0, policy: 0, profile: 45, valuation: -19 }
   },
   {
     ticker: "WM", name: "Waste Management, Inc.", sector: "Industrials",
@@ -2645,7 +2645,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 180 },
-    signals: { technical: -24, momentum: 43, sentiment: 54, news: 0, policy: 0, profile: 30, valuation: -40 }
+    signals: { technical: -24, momentum: 43, sentiment: 54, news: 0, policy: 0, profile: 30, valuation: -41 }
   },
   {
     ticker: "CVE", name: "Cenovus Energy Inc.", sector: "Energy",
@@ -5824,7 +5824,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
-    signals: { technical: -46, momentum: -100, sentiment: 28, news: 0, policy: 0, profile: -25, valuation: 27 }
+    signals: { technical: -47, momentum: -100, sentiment: 28, news: 0, policy: 0, profile: -25, valuation: 27 }
   },
   {
     ticker: "UEC", name: "Uranium Energy Corp.", sector: "Energy",
@@ -5867,8 +5867,8 @@ window.STOCK_UNIVERSE = [
       sources: ["Company HQ: Tel Aviv, Israel", "Who Profits", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 4.51, payoutRatio: 82.4, marketCapB: 0 },
-    signals: { technical: -12, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -10, valuation: 32 }
+    fundamentals: { dividendYield: 4.51, payoutRatio: 82.4, marketCapB: 5 },
+    signals: { technical: -12, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: 10, valuation: 32 }
   },
   {
     ticker: "RIOT", name: "Riot Platforms, Inc.", sector: "Financial Services",
@@ -6154,7 +6154,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.45, payoutRatio: 60.0, marketCapB: 5 },
-    signals: { technical: 71, momentum: 22, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: 22 }
+    signals: { technical: 71, momentum: 22, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: 24 }
   },
   {
     ticker: "KMX", name: "CarMax, Inc.", sector: "Consumer Cyclical",
@@ -6318,7 +6318,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company HQ: Tel Aviv, Israel", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 3 },
+    fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 4 },
     signals: { technical: 32, momentum: 55, sentiment: 34, news: 0, policy: 0, profile: -25, valuation: 29 }
   },
   {
@@ -7264,8 +7264,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.72, payoutRatio: 12.0, marketCapB: 0 },
-    signals: { technical: 46, momentum: 39, sentiment: 100, news: 0, policy: 0, profile: 15, valuation: 42 }
+    fundamentals: { dividendYield: 2.72, payoutRatio: 12.0, marketCapB: 3 },
+    signals: { technical: 46, momentum: 39, sentiment: 100, news: 0, policy: 0, profile: 35, valuation: 42 }
   },
   {
     ticker: "QUBT", name: "Quantum Computing Inc.", sector: "Technology",
@@ -8244,7 +8244,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -52, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -60, valuation: 0 }
+    signals: { technical: -53, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -60, valuation: 0 }
   },
   {
     ticker: "ARQQ", name: "Arqit Quantum Inc.", sector: "Technology",
@@ -8475,7 +8475,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 32, momentum: -63, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 0 }
+    signals: { technical: 32, momentum: -62, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "SMX", name: "SMX (Security Matters) Public Limited Company", sector: "Industrials",
