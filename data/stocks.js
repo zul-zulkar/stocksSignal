@@ -258,7 +258,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Public reporting"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.78, payoutRatio: 35.0, marketCapB: 1000 },
+    fundamentals: { dividendYield: 0.78, payoutRatio: 35.0, marketCapB: 1003 },
     signals: { technical: -43, momentum: 29, sentiment: 75, news: 0, policy: 5, profile: 40, valuation: -57 }
   },
   {
@@ -918,7 +918,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 1.25, payoutRatio: 41.8, marketCapB: 234 },
-    signals: { technical: -40, momentum: 8, sentiment: 66, news: 0, policy: 0, profile: 50, valuation: -18 }
+    signals: { technical: -40, momentum: 8, sentiment: 69, news: 0, policy: 0, profile: 50, valuation: -18 }
   },
   {
     ticker: "KLAC", name: "KLA Corporation", sector: "Technology",
@@ -1104,7 +1104,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 1.37, payoutRatio: 32.5, marketCapB: 154 },
+    fundamentals: { dividendYield: 1.37, payoutRatio: 32.5, marketCapB: 153 },
     signals: { technical: -46, momentum: -26, sentiment: 65, news: 0, policy: 0, profile: 40, valuation: -12 }
   },
   {
@@ -2193,7 +2193,7 @@ window.STOCK_UNIVERSE = [
       sources: ["Company filings", "(auto-klasifikasi, perlu verifikasi)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 0.78, payoutRatio: 20.6, marketCapB: 70 },
+    fundamentals: { dividendYield: 0.78, payoutRatio: 20.6, marketCapB: 71 },
     signals: { technical: 40, momentum: -7, sentiment: 69, news: 0, policy: 0, profile: 25, valuation: -13 }
   },
   {
@@ -3140,7 +3140,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 39 },
-    signals: { technical: -39, momentum: -14, sentiment: 90, news: 0, policy: 0, profile: -15, valuation: -1 }
+    signals: { technical: -39, momentum: -14, sentiment: 90, news: 0, policy: 0, profile: -15, valuation: -2 }
   },
   {
     ticker: "ALNY", name: "Alnylam Pharmaceuticals, Inc.", sector: "Healthcare",
@@ -7264,8 +7264,8 @@ window.STOCK_UNIVERSE = [
       sources: ["(auto-default: tidak ada laporan spesifik ditemukan)"],
       palestineSupport: "none"
     },
-    fundamentals: { dividendYield: 2.73, payoutRatio: 12.0, marketCapB: 3 },
-    signals: { technical: 47, momentum: 49, sentiment: 100, news: 0, policy: 0, profile: 35, valuation: 42 }
+    fundamentals: { dividendYield: 2.73, payoutRatio: 12.0, marketCapB: 0 },
+    signals: { technical: 47, momentum: 49, sentiment: 100, news: 0, policy: 0, profile: 15, valuation: 42 }
   },
   {
     ticker: "QUBT", name: "Quantum Computing Inc.", sector: "Technology",
@@ -8244,7 +8244,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -43, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -60, valuation: 0 }
+    signals: { technical: -44, momentum: -100, sentiment: 0, news: 0, policy: 0, profile: -60, valuation: 0 }
   },
   {
     ticker: "ARQQ", name: "Arqit Quantum Inc.", sector: "Technology",
