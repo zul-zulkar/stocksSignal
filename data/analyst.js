@@ -2491,13 +2491,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "EA": {
-    "rating": null,
-    "ratingMean": null,
-    "numAnalysts": 0,
-    "targetMean": null,
-    "targetHigh": null,
-    "targetLow": null,
-    "price": null,
+    "rating": "hold",
+    "ratingMean": 2.88,
+    "numAnalysts": 13,
+    "targetMean": 205.46,
+    "targetHigh": 210.0,
+    "targetLow": 168.0,
+    "price": 209.7,
     "currency": "USD"
   },
   "INFY": {
@@ -5201,13 +5201,13 @@ window.STOCK_ANALYST = {
     "currency": "USD"
   },
   "NUVL": {
-    "rating": null,
-    "ratingMean": null,
-    "numAnalysts": 0,
-    "targetMean": null,
-    "targetHigh": null,
-    "targetLow": null,
-    "price": null,
+    "rating": "hold",
+    "ratingMean": 3.0,
+    "numAnalysts": 9,
+    "targetMean": 124.0,
+    "targetHigh": 124.0,
+    "targetLow": 124.0,
+    "price": 123.96,
     "currency": "USD"
   },
   "QBTS": {
