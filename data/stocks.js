@@ -1424,7 +1424,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.15, payoutRatio: 4.7, marketCapB: 72 },
-    signals: { technical: -41, momentum: -100, sentiment: 80, news: 0, policy: 0, profile: 25, valuation: 3 }
+    signals: { technical: -41, momentum: -100, sentiment: 81, news: 0, policy: 0, profile: 25, valuation: 3 }
   },
   {
     ticker: "MO", name: "Altria Group, Inc.", sector: "Consumer Defensive",
@@ -2931,7 +2931,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 33 },
-    signals: { technical: -41, momentum: -100, sentiment: 69, news: 0, policy: 0, profile: -15, valuation: 0 }
+    signals: { technical: -41, momentum: -100, sentiment: 62, news: 0, policy: 0, profile: -15, valuation: 0 }
   },
   {
     ticker: "PYPL", name: "PayPal Holdings, Inc.", sector: "Financial Services",
@@ -3459,7 +3459,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0.62, payoutRatio: 20.0, marketCapB: 50 },
-    signals: { technical: 38, momentum: 100, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: -18 }
+    signals: { technical: 38, momentum: 100, sentiment: 62, news: 0, policy: 0, profile: 25, valuation: -10 }
   },
   {
     ticker: "RBLX", name: "Roblox Corporation", sector: "Communication Services",
@@ -4955,7 +4955,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 8 },
-    signals: { technical: -45, momentum: -100, sentiment: 60, news: 0, policy: 0, profile: 0, valuation: 41 }
+    signals: { technical: -45, momentum: -100, sentiment: 63, news: 0, policy: 0, profile: 0, valuation: 41 }
   },
   {
     ticker: "ALGN", name: "Align Technology, Inc.", sector: "Healthcare",
@@ -7309,7 +7309,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 1 },
-    signals: { technical: -40, momentum: -100, sentiment: 15, news: 0, policy: 0, profile: -60, valuation: 0 }
+    signals: { technical: -41, momentum: -100, sentiment: 15, news: 0, policy: 0, profile: -60, valuation: 0 }
   },
   {
     ticker: "AGRO", name: "Adecoagro S.A.", sector: "Consumer Defensive",
@@ -7331,7 +7331,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 11.75, payoutRatio: 127.1, marketCapB: 1 },
-    signals: { technical: -14, momentum: -100, sentiment: 22, news: 0, policy: 0, profile: -15, valuation: 45 }
+    signals: { technical: -14, momentum: -100, sentiment: 22, news: 0, policy: 0, profile: -15, valuation: 44 }
   },
   {
     ticker: "BBAI", name: "BigBear.ai Holdings, Inc.", sector: "Technology",
@@ -8398,7 +8398,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: -37, momentum: -100, sentiment: 75, news: 0, policy: 0, profile: -20, valuation: 0 }
+    signals: { technical: -38, momentum: -100, sentiment: 75, news: 0, policy: 0, profile: -20, valuation: 0 }
   },
   {
     ticker: "PRTS", name: "CarParts.com, Inc.", sector: "Consumer Cyclical",
@@ -8475,7 +8475,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 0 },
-    signals: { technical: 60, momentum: -96, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 0 }
+    signals: { technical: 60, momentum: -95, sentiment: 50, news: 0, policy: 0, profile: -45, valuation: 0 }
   },
   {
     ticker: "SMX", name: "SMX (Security Matters) Public Limited Company", sector: "Industrials",
