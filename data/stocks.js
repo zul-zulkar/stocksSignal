@@ -1710,7 +1710,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.93, payoutRatio: 36.4, marketCapB: 89 },
-    signals: { technical: 60, momentum: -2, sentiment: 39, news: 0, policy: 0, profile: 45, valuation: 29 }
+    signals: { technical: 60, momentum: -2, sentiment: 39, news: 0, policy: 0, profile: 45, valuation: 28 }
   },
   {
     ticker: "CMCSA", name: "Comcast Corporation", sector: "Communication Services",
@@ -2579,7 +2579,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 2.08, payoutRatio: 23.2, marketCapB: 53 },
-    signals: { technical: 63, momentum: -11, sentiment: 36, news: 0, policy: 0, profile: 45, valuation: 30 }
+    signals: { technical: 63, momentum: -11, sentiment: 36, news: 0, policy: 0, profile: 45, valuation: 29 }
   },
   {
     ticker: "AFL", name: "Aflac Incorporated", sector: "Financial Services",
@@ -4823,7 +4823,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 0, payoutRatio: 0, marketCapB: 7 },
-    signals: { technical: -36, momentum: -100, sentiment: 100, news: 0, policy: 0, profile: 0, valuation: 18 }
+    signals: { technical: -36, momentum: -100, sentiment: 100, news: 0, policy: 0, profile: 0, valuation: 19 }
   },
   {
     ticker: "TKO", name: "TKO Group Holdings, Inc.", sector: "Communication Services",
