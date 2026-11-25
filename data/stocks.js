@@ -4383,7 +4383,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 4.15, payoutRatio: 45.4, marketCapB: 25 },
-    signals: { technical: 31, momentum: 54, sentiment: -17, news: 0, policy: 0, profile: 20, valuation: 33 }
+    signals: { technical: 31, momentum: 54, sentiment: -17, news: 0, policy: 0, profile: 20, valuation: 35 }
   },
   {
     ticker: "DD", name: "DuPont de Nemours, Inc.", sector: "Basic Materials",
