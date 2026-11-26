@@ -1380,7 +1380,7 @@ window.STOCK_UNIVERSE = [
       palestineSupport: "none"
     },
     fundamentals: { dividendYield: 3.2, payoutRatio: 46.4, marketCapB: 144 },
-    signals: { technical: 38, momentum: 78, sentiment: 60, news: 0, policy: 0, profile: 50, valuation: 7 }
+    signals: { technical: 38, momentum: 78, sentiment: 60, news: 0, policy: 0, profile: 50, valuation: 8 }
   },
   {
     ticker: "BTI", name: "British American Tobacco p.l.c.", sector: "Consumer Defensive",
